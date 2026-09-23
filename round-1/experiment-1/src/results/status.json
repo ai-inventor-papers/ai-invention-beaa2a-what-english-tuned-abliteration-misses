@@ -1,0 +1,20 @@
+{
+ "gams": {
+  "trials_complete": 116,
+  "pruned_trials": [
+   116
+  ],
+  "status": "RESUMABLE_AT_116",
+  "matched_budget_note": "both models were run to exactly 116 COMPLETE trials; GaMS additionally carries one PRUNED trial (116) from the SIGINT that enforced the cap, excluded everywhere",
+  "journal": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/checkpoints/gams/cjvt--GaMS3-12B-Instruct.jsonl",
+  "resume_cmd": "uv run method.py --stages phaseB_gams"
+ },
+ "gemma": {
+  "trials_complete": 116,
+  "pruned_trials": [],
+  "status": "RESUMABLE_AT_116",
+  "matched_budget_note": "both models were run to exactly 116 COMPLETE trials; GaMS additionally carries one PRUNED trial (116) from the SIGINT that enforced the cap, excluded everywhere",
+  "journal": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/checkpoints/gemma/google--gemma-3-12b-it.jsonl",
+  "resume_cmd": "uv run method.py --stages phaseB_gemma"
+ }
+}

@@ -1,0 +1,27 @@
+{
+ "decided_at": "2026-09-23T15:44Z, after GaMS trials 0-2",
+ "measured": {
+  "mean_trial_s": 39.3,
+  "peak_vram_gb": 15.1,
+  "vram_limit_gb": 22.5,
+  "model_load_s": 330
+ },
+ "remaining_wall_min_at_decision": 268,
+ "plan_default": "200 trials per model (Heretic default) = 131 min GPU per model = 262 min for two models",
+ "decision": "The full 2 x 200-trial budget does NOT fit alongside the four-checkpoint evaluation. Per fallback F3 the optimizer budget is REDUCED SYMMETRICALLY instead of asymmetrically: both models get 60 TPE startup trials + the same number of TPE trials in the resume, chosen from the clock after both phase-A runs finish. Equal budget in both models is the property the core comparison depends on, so an unequal 200-vs-60 split is rejected even though it would use more GPU time.",
+ "consequence": "Selections are made from a matched but SMALLER-than-default budget and are labelled accordingly; each journal stays resumable to 200 via `uv run method.py --stages phaseB_<tag>`.",
+ "reserved_for_evaluation_min": 65,
+ "reserved_for_analysis_and_writeup_min": 35,
+ "final_matched_budget": {
+  "trials_per_model": 116,
+  "composition": "60 TPE startup trials (identical draws in both models) + 56 TPE trials",
+  "how_it_was_enforced": "Heretic restores the phase-A settings on resume, so the stored n_additional_trials=140 overrode the CLI value and the GaMS resume headed for 200 trials. GaMS was stopped with SIGINT after 116 complete trials (Heretic's objective_wrapper turns KeyboardInterrupt into study.stop() plus one PRUNED trial - trial 116 - which is recorded and excluded from every analysis). The driver then gained --stop-at-trials, and Gemma was run to exactly the same 116 complete trials, so the two optimizer budgets are equal by construction.",
+  "pruned_trials": {
+   "gams": [
+    116
+   ],
+   "gemma": []
+  },
+  "deviation_from_plan": "200 trials per model was the plan; 116 per model is what the wall clock allowed alongside the four-checkpoint evaluation. The reduction is SYMMETRIC - an unequal budget would have broken the matched design that the whole comparison rests on. Both journals remain resumable to 200."
+ }
+}
