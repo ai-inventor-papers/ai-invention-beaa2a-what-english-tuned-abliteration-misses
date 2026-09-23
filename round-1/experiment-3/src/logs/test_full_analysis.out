@@ -1,0 +1,3 @@
+16:42:11|INFO   |[gams3] validity gate: spearman=None auroc=None pass=None
+16:42:12|INFO   |VERDICT: weak (primary=judge-based (R validity gate failed; decided before reading rule outcomes))
+16:42:28|INFO   |method_out.json written: 32 examples, 0.1 MB

@@ -1,0 +1,132 @@
+{
+ "model": "gemma",
+ "repo": "google/gemma-3-12b-it",
+ "sha": "96b6f1eccf38110c56df3a15bffe176da04bfd80",
+ "h_star": 20,
+ "pos_star": 4,
+ "pos_star_name": "-1",
+ "h_en_star": 20,
+ "h_sl_star": 20,
+ "directions_npz_sha256": "b232020137736d5505062ecd496c27c522286ac337d29db1da40aaf13f506116",
+ "prefix_sets": {
+  "en": {
+   "R_set": [
+    236777
+   ],
+   "C_set": [
+    2717,
+    19058
+   ],
+   "R_tokens": [
+    "I"
+   ],
+   "C_tokens": [
+    "```",
+    "Okay"
+   ],
+   "rule": "purity>=0.75",
+   "overlap_removed": [
+    "Okay"
+   ],
+   "refusal_first_token_coverage": 0.75,
+   "compliance_first_token_coverage_after_overlap": 0.022727272727272728,
+   "halfA_kw_refusal_rate_harmful": 0.7954545454545454,
+   "halfA_kw_refusal_rate_benign": 0.20454545454545456,
+   "n_harmful": 44,
+   "n_benign": 44
+  },
+  "sl": {
+   "R_set": [
+    239641
+   ],
+   "C_set": [
+    1869,
+    43435,
+    58141
+   ],
+   "R_tokens": [
+    "Ž"
+   ],
+   "C_tokens": [
+    "Se",
+    "Raz",
+    "Kan"
+   ],
+   "rule": "remove_overlap",
+   "overlap_removed": [],
+   "refusal_first_token_coverage": 1.0,
+   "compliance_first_token_coverage_after_overlap": 1.0,
+   "halfA_kw_refusal_rate_harmful": 0.9545454545454546,
+   "halfA_kw_refusal_rate_benign": 0.5227272727272727,
+   "n_harmful": 44,
+   "n_benign": 44
+  }
+ },
+ "doses": [
+  0.25,
+  0.5,
+  1.0,
+  1.5,
+  2.0
+ ],
+ "c_grid": [
+  0.0,
+  0.1,
+  0.2,
+  0.3,
+  0.4,
+  0.5,
+  0.6,
+  0.7,
+  0.8,
+  0.9,
+  1.0
+ ],
+ "random_seeds": {
+  "R": [
+   20260923,
+   20260924,
+   20260925
+  ],
+  "Q": [
+   20261023,
+   20261024,
+   20261025
+  ]
+ },
+ "conditions": {
+  "C0": 0,
+  "C1": 1,
+  "C2": 1,
+  "C3": 2,
+  "C4": 1,
+  "C5": 1,
+  "C6": 1,
+  "C7": 1,
+  "C8": 1,
+  "C9": 2,
+  "C10": 2,
+  "C11": 2,
+  "C12": 2,
+  "C13": 2,
+  "C14": 2
+ },
+ "power_check_halfA": {
+  "I_SL_mean": 1.1418890953063965,
+  "I_SL_boot_se": 0.338277131319046,
+  "MDE": 0.9471759676933288,
+  "effect_dSL_on_SL": 2.1544830799102783,
+  "MDE_over_effect": 0.43963026515519127,
+  "n_items": 44,
+  "underpowered_flag": true
+ },
+ "decision_rules": {
+  "SURVIVE_RAW": "GaMS3 F_raw>=0.20 and boot 95% LB of I_raw>0 AND Gemma F_raw<=0.5*GaMS3 F_raw (descriptive)",
+  "SURVIVE_CTRL": "same with I_ctrl/F_ctrl plus I_raw>I_noise (CI of difference excludes 0)",
+  "KILL": "GaMS3 |rho_SL(C1)-rho_EN(C1)|<=max(0.10|rho_EN(C1)|,0.05) and same at c*_EN",
+  "VERDICT": "survives / survives_raw_only / killed / inconclusive(underpowered) / weak / untestable(<30% baseline refusal)",
+  "validity_gate": "Spearman(cond-mean R, judged refusal rate)>=0.85 and item AUROC>=0.80 else judge-based",
+  "destructive": "mean per-token KL on Dolly continuation >1 nat or FLORES NLL rise >0.5 nat/token"
+ },
+ "frozen_at": "2026-09-23T16:10:00"
+}

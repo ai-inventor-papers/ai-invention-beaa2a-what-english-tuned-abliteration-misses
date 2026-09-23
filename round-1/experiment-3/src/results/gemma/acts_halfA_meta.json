@@ -1,0 +1,1382 @@
+[
+ {
+  "semantic_id": "jbb_2",
+  "kind": "jbb_harmful",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "jbb_2",
+  "kind": "jbb_harmful",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "jbb_3",
+  "kind": "jbb_harmful",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "jbb_3",
+  "kind": "jbb_harmful",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "jbb_7",
+  "kind": "jbb_harmful",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "jbb_7",
+  "kind": "jbb_harmful",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "jbb_8",
+  "kind": "jbb_harmful",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "jbb_8",
+  "kind": "jbb_harmful",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "jbb_14",
+  "kind": "jbb_harmful",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "jbb_14",
+  "kind": "jbb_harmful",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "jbb_15",
+  "kind": "jbb_harmful",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "jbb_15",
+  "kind": "jbb_harmful",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "jbb_16",
+  "kind": "jbb_harmful",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "jbb_16",
+  "kind": "jbb_harmful",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "jbb_17",
+  "kind": "jbb_harmful",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "jbb_17",
+  "kind": "jbb_harmful",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "jbb_18",
+  "kind": "jbb_harmful",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "jbb_18",
+  "kind": "jbb_harmful",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "jbb_19",
+  "kind": "jbb_harmful",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "jbb_19",
+  "kind": "jbb_harmful",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "jbb_22",
+  "kind": "jbb_harmful",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "jbb_22",
+  "kind": "jbb_harmful",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "jbb_29",
+  "kind": "jbb_harmful",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "jbb_29",
+  "kind": "jbb_harmful",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "jbb_31",
+  "kind": "jbb_harmful",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "jbb_31",
+  "kind": "jbb_harmful",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "jbb_32",
+  "kind": "jbb_harmful",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "jbb_32",
+  "kind": "jbb_harmful",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "jbb_33",
+  "kind": "jbb_harmful",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "jbb_33",
+  "kind": "jbb_harmful",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "jbb_34",
+  "kind": "jbb_harmful",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "jbb_34",
+  "kind": "jbb_harmful",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "jbb_36",
+  "kind": "jbb_harmful",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "jbb_36",
+  "kind": "jbb_harmful",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "jbb_37",
+  "kind": "jbb_harmful",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "jbb_37",
+  "kind": "jbb_harmful",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "jbb_43",
+  "kind": "jbb_harmful",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "jbb_43",
+  "kind": "jbb_harmful",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "jbb_44",
+  "kind": "jbb_harmful",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "jbb_44",
+  "kind": "jbb_harmful",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "jbb_46",
+  "kind": "jbb_harmful",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "jbb_46",
+  "kind": "jbb_harmful",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "jbb_48",
+  "kind": "jbb_harmful",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "jbb_48",
+  "kind": "jbb_harmful",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "jbb_51",
+  "kind": "jbb_harmful",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "jbb_51",
+  "kind": "jbb_harmful",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "jbb_53",
+  "kind": "jbb_harmful",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "jbb_53",
+  "kind": "jbb_harmful",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "jbb_54",
+  "kind": "jbb_harmful",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "jbb_54",
+  "kind": "jbb_harmful",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "jbb_55",
+  "kind": "jbb_harmful",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "jbb_55",
+  "kind": "jbb_harmful",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "jbb_57",
+  "kind": "jbb_harmful",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "jbb_57",
+  "kind": "jbb_harmful",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "jbb_58",
+  "kind": "jbb_harmful",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "jbb_58",
+  "kind": "jbb_harmful",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "jbb_59",
+  "kind": "jbb_harmful",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "jbb_59",
+  "kind": "jbb_harmful",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "jbb_60",
+  "kind": "jbb_harmful",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "jbb_60",
+  "kind": "jbb_harmful",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "jbb_62",
+  "kind": "jbb_harmful",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "jbb_62",
+  "kind": "jbb_harmful",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "jbb_69",
+  "kind": "jbb_harmful",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "jbb_69",
+  "kind": "jbb_harmful",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "jbb_71",
+  "kind": "jbb_harmful",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "jbb_71",
+  "kind": "jbb_harmful",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "jbb_72",
+  "kind": "jbb_harmful",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "jbb_72",
+  "kind": "jbb_harmful",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "jbb_74",
+  "kind": "jbb_harmful",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "jbb_74",
+  "kind": "jbb_harmful",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "jbb_80",
+  "kind": "jbb_harmful",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "jbb_80",
+  "kind": "jbb_harmful",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "jbb_82",
+  "kind": "jbb_harmful",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "jbb_82",
+  "kind": "jbb_harmful",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "jbb_84",
+  "kind": "jbb_harmful",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "jbb_84",
+  "kind": "jbb_harmful",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "jbb_87",
+  "kind": "jbb_harmful",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "jbb_87",
+  "kind": "jbb_harmful",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "jbb_89",
+  "kind": "jbb_harmful",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "jbb_89",
+  "kind": "jbb_harmful",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "jbb_92",
+  "kind": "jbb_harmful",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "jbb_92",
+  "kind": "jbb_harmful",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "jbb_94",
+  "kind": "jbb_harmful",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "jbb_94",
+  "kind": "jbb_harmful",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "jbb_96",
+  "kind": "jbb_harmful",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "jbb_96",
+  "kind": "jbb_harmful",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "jbb_97",
+  "kind": "jbb_harmful",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "jbb_97",
+  "kind": "jbb_harmful",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "jbb_2",
+  "kind": "jbb_benign",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "jbb_2",
+  "kind": "jbb_benign",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "jbb_3",
+  "kind": "jbb_benign",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "jbb_3",
+  "kind": "jbb_benign",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "jbb_7",
+  "kind": "jbb_benign",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "jbb_7",
+  "kind": "jbb_benign",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "jbb_8",
+  "kind": "jbb_benign",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "jbb_8",
+  "kind": "jbb_benign",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "jbb_14",
+  "kind": "jbb_benign",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "jbb_14",
+  "kind": "jbb_benign",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "jbb_15",
+  "kind": "jbb_benign",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "jbb_15",
+  "kind": "jbb_benign",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "jbb_16",
+  "kind": "jbb_benign",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "jbb_16",
+  "kind": "jbb_benign",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "jbb_17",
+  "kind": "jbb_benign",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "jbb_17",
+  "kind": "jbb_benign",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "jbb_18",
+  "kind": "jbb_benign",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "jbb_18",
+  "kind": "jbb_benign",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "jbb_19",
+  "kind": "jbb_benign",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "jbb_19",
+  "kind": "jbb_benign",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "jbb_22",
+  "kind": "jbb_benign",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "jbb_22",
+  "kind": "jbb_benign",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "jbb_29",
+  "kind": "jbb_benign",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "jbb_29",
+  "kind": "jbb_benign",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "jbb_31",
+  "kind": "jbb_benign",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "jbb_31",
+  "kind": "jbb_benign",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "jbb_32",
+  "kind": "jbb_benign",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "jbb_32",
+  "kind": "jbb_benign",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "jbb_33",
+  "kind": "jbb_benign",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "jbb_33",
+  "kind": "jbb_benign",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "jbb_34",
+  "kind": "jbb_benign",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "jbb_34",
+  "kind": "jbb_benign",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "jbb_36",
+  "kind": "jbb_benign",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "jbb_36",
+  "kind": "jbb_benign",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "jbb_37",
+  "kind": "jbb_benign",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "jbb_37",
+  "kind": "jbb_benign",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "jbb_43",
+  "kind": "jbb_benign",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "jbb_43",
+  "kind": "jbb_benign",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "jbb_44",
+  "kind": "jbb_benign",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "jbb_44",
+  "kind": "jbb_benign",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "jbb_46",
+  "kind": "jbb_benign",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "jbb_46",
+  "kind": "jbb_benign",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "jbb_48",
+  "kind": "jbb_benign",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "jbb_48",
+  "kind": "jbb_benign",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "jbb_51",
+  "kind": "jbb_benign",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "jbb_51",
+  "kind": "jbb_benign",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "jbb_53",
+  "kind": "jbb_benign",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "jbb_53",
+  "kind": "jbb_benign",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "jbb_54",
+  "kind": "jbb_benign",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "jbb_54",
+  "kind": "jbb_benign",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "jbb_55",
+  "kind": "jbb_benign",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "jbb_55",
+  "kind": "jbb_benign",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "jbb_57",
+  "kind": "jbb_benign",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "jbb_57",
+  "kind": "jbb_benign",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "jbb_58",
+  "kind": "jbb_benign",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "jbb_58",
+  "kind": "jbb_benign",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "jbb_59",
+  "kind": "jbb_benign",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "jbb_59",
+  "kind": "jbb_benign",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "jbb_60",
+  "kind": "jbb_benign",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "jbb_60",
+  "kind": "jbb_benign",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "jbb_62",
+  "kind": "jbb_benign",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "jbb_62",
+  "kind": "jbb_benign",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "jbb_69",
+  "kind": "jbb_benign",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "jbb_69",
+  "kind": "jbb_benign",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "jbb_71",
+  "kind": "jbb_benign",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "jbb_71",
+  "kind": "jbb_benign",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "jbb_72",
+  "kind": "jbb_benign",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "jbb_72",
+  "kind": "jbb_benign",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "jbb_74",
+  "kind": "jbb_benign",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "jbb_74",
+  "kind": "jbb_benign",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "jbb_80",
+  "kind": "jbb_benign",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "jbb_80",
+  "kind": "jbb_benign",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "jbb_82",
+  "kind": "jbb_benign",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "jbb_82",
+  "kind": "jbb_benign",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "jbb_84",
+  "kind": "jbb_benign",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "jbb_84",
+  "kind": "jbb_benign",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "jbb_87",
+  "kind": "jbb_benign",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "jbb_87",
+  "kind": "jbb_benign",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "jbb_89",
+  "kind": "jbb_benign",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "jbb_89",
+  "kind": "jbb_benign",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "jbb_92",
+  "kind": "jbb_benign",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "jbb_92",
+  "kind": "jbb_benign",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "jbb_94",
+  "kind": "jbb_benign",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "jbb_94",
+  "kind": "jbb_benign",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "jbb_96",
+  "kind": "jbb_benign",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "jbb_96",
+  "kind": "jbb_benign",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "jbb_97",
+  "kind": "jbb_benign",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "jbb_97",
+  "kind": "jbb_benign",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "dolly_3901",
+  "kind": "dolly",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "dolly_3901",
+  "kind": "dolly",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "dolly_308",
+  "kind": "dolly",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "dolly_308",
+  "kind": "dolly",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "dolly_5015",
+  "kind": "dolly",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "dolly_5015",
+  "kind": "dolly",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "dolly_1309",
+  "kind": "dolly",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "dolly_1309",
+  "kind": "dolly",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "dolly_7830",
+  "kind": "dolly",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "dolly_7830",
+  "kind": "dolly",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "dolly_11379",
+  "kind": "dolly",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "dolly_11379",
+  "kind": "dolly",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "dolly_7088",
+  "kind": "dolly",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "dolly_7088",
+  "kind": "dolly",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "dolly_5819",
+  "kind": "dolly",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "dolly_5819",
+  "kind": "dolly",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "dolly_10707",
+  "kind": "dolly",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "dolly_10707",
+  "kind": "dolly",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "dolly_8024",
+  "kind": "dolly",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "dolly_8024",
+  "kind": "dolly",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "dolly_7921",
+  "kind": "dolly",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "dolly_7921",
+  "kind": "dolly",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "dolly_3752",
+  "kind": "dolly",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "dolly_3752",
+  "kind": "dolly",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "dolly_3783",
+  "kind": "dolly",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "dolly_3783",
+  "kind": "dolly",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "dolly_7425",
+  "kind": "dolly",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "dolly_7425",
+  "kind": "dolly",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "dolly_14162",
+  "kind": "dolly",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "dolly_14162",
+  "kind": "dolly",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "dolly_12604",
+  "kind": "dolly",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "dolly_12604",
+  "kind": "dolly",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "dolly_9357",
+  "kind": "dolly",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "dolly_9357",
+  "kind": "dolly",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "dolly_7524",
+  "kind": "dolly",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "dolly_7524",
+  "kind": "dolly",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "dolly_14885",
+  "kind": "dolly",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "dolly_14885",
+  "kind": "dolly",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "dolly_9619",
+  "kind": "dolly",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "dolly_9619",
+  "kind": "dolly",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "dolly_1992",
+  "kind": "dolly",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "dolly_1992",
+  "kind": "dolly",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "dolly_12739",
+  "kind": "dolly",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "dolly_12739",
+  "kind": "dolly",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "dolly_9981",
+  "kind": "dolly",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "dolly_9981",
+  "kind": "dolly",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "dolly_4401",
+  "kind": "dolly",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "dolly_4401",
+  "kind": "dolly",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "dolly_4864",
+  "kind": "dolly",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "dolly_4864",
+  "kind": "dolly",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "dolly_7498",
+  "kind": "dolly",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "dolly_7498",
+  "kind": "dolly",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "dolly_13329",
+  "kind": "dolly",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "dolly_13329",
+  "kind": "dolly",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "dolly_11390",
+  "kind": "dolly",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "dolly_11390",
+  "kind": "dolly",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "dolly_12547",
+  "kind": "dolly",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "dolly_12547",
+  "kind": "dolly",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "dolly_7204",
+  "kind": "dolly",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "dolly_7204",
+  "kind": "dolly",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "dolly_5767",
+  "kind": "dolly",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "dolly_5767",
+  "kind": "dolly",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "dolly_13047",
+  "kind": "dolly",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "dolly_13047",
+  "kind": "dolly",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "dolly_71",
+  "kind": "dolly",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "dolly_71",
+  "kind": "dolly",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "dolly_7805",
+  "kind": "dolly",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "dolly_7805",
+  "kind": "dolly",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "dolly_1088",
+  "kind": "dolly",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "dolly_1088",
+  "kind": "dolly",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "dolly_4572",
+  "kind": "dolly",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "dolly_4572",
+  "kind": "dolly",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "dolly_10828",
+  "kind": "dolly",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "dolly_10828",
+  "kind": "dolly",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "dolly_5617",
+  "kind": "dolly",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "dolly_5617",
+  "kind": "dolly",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "dolly_10002",
+  "kind": "dolly",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "dolly_10002",
+  "kind": "dolly",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "dolly_4501",
+  "kind": "dolly",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "dolly_4501",
+  "kind": "dolly",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "dolly_9696",
+  "kind": "dolly",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "dolly_9696",
+  "kind": "dolly",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "dolly_10781",
+  "kind": "dolly",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "dolly_10781",
+  "kind": "dolly",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "dolly_9304",
+  "kind": "dolly",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "dolly_9304",
+  "kind": "dolly",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "dolly_8974",
+  "kind": "dolly",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "dolly_8974",
+  "kind": "dolly",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "dolly_5680",
+  "kind": "dolly",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "dolly_5680",
+  "kind": "dolly",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "dolly_10277",
+  "kind": "dolly",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "dolly_10277",
+  "kind": "dolly",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "dolly_559",
+  "kind": "dolly",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "dolly_559",
+  "kind": "dolly",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "dolly_1070",
+  "kind": "dolly",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "dolly_1070",
+  "kind": "dolly",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "dolly_39",
+  "kind": "dolly",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "dolly_39",
+  "kind": "dolly",
+  "lang": "sl"
+ },
+ {
+  "semantic_id": "dolly_13967",
+  "kind": "dolly",
+  "lang": "en"
+ },
+ {
+  "semantic_id": "dolly_13967",
+  "kind": "dolly",
+  "lang": "sl"
+ }
+]
