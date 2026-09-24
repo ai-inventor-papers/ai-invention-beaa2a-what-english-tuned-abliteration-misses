@@ -1,0 +1,271 @@
+{
+ "REF": "R",
+ "gates": {
+  "floor_150": false,
+  "ref_valid": true
+ },
+ "claim1_refusal_visible_TOST": {
+  "trait": "R",
+  "gap_ci90": [
+   0.005823164279876564,
+   0.0534460911143822
+  ],
+  "holds": true,
+  "status": "exploratory"
+ },
+ "damage_blind": {
+  "K": {
+   "conditions": {
+    "gap_ge_0.10": true,
+    "holm_LB_gt_0": true,
+    "B_ci_excludes_0": false,
+    "gap_mm_ge_0.10": true,
+    "sign_stable_halves": true,
+    "sign_stable_simex": true
+   },
+   "blind": false,
+   "reliable": true,
+   "MDE": 0.3335975453707824,
+   "no_signal": false,
+   "label": "not blind",
+   "status": "exploratory"
+  },
+  "N": {
+   "conditions": {
+    "gap_ge_0.10": false,
+    "holm_LB_gt_0": false,
+    "B_ci_excludes_0": false,
+    "gap_mm_ge_0.10": true,
+    "sign_stable_halves": false,
+    "sign_stable_simex": false
+   },
+   "blind": false,
+   "reliable": false,
+   "MDE": 266.62409226380225,
+   "no_signal": true,
+   "label": "no signal to predict",
+   "status": "exploratory"
+  },
+  "M": {
+   "conditions": {
+    "gap_ge_0.10": true,
+    "holm_LB_gt_0": false,
+    "B_ci_excludes_0": false,
+    "gap_mm_ge_0.10": true,
+    "sign_stable_halves": false,
+    "sign_stable_simex": true
+   },
+   "blind": false,
+   "reliable": false,
+   "MDE": 3713.4370229720516,
+   "no_signal": true,
+   "label": "no signal to predict",
+   "status": "exploratory"
+  }
+ },
+ "damage_blind_any": false,
+ "carrier_hits": {
+  "R:D": false,
+  "R:P": false,
+  "R:H": false,
+  "R:realized": false,
+  "R1:D": false,
+  "R1:P": false,
+  "R1:H": false,
+  "R1:realized": false,
+  "Rb:D": false,
+  "Rb:P": false,
+  "Rb:H": false,
+  "Rb:realized": false,
+  "K:D": false,
+  "K:P": false,
+  "K:H": false,
+  "K:realized": false,
+  "N:D": false,
+  "N:P": false,
+  "N:H": false,
+  "N:realized": false,
+  "M:D": false,
+  "M:P": false,
+  "M:H": false,
+  "M:realized": false
+ },
+ "carrier_any": false,
+ "forecast_coverage_ge_85": {
+  "R": {
+   "E_TPE": false,
+   "E_R": null
+  },
+  "R1": {
+   "E_TPE": true,
+   "E_R": null
+  },
+  "Rb": {
+   "E_TPE": false,
+   "E_R": null
+  },
+  "K": {
+   "E_TPE": false,
+   "E_R": null
+  },
+  "N": {
+   "E_TPE": false,
+   "E_R": null
+  },
+  "M": {
+   "E_TPE": false,
+   "E_R": null
+  }
+ },
+ "forecast_all_meet_85": false,
+ "carrier_status": "exploratory",
+ "frozen_predictions_scorecard": {
+  "G1": {
+   "gap_R_ci90": [
+    0.005823164279876564,
+    0.0534460911143822
+   ],
+   "holds": true
+  },
+  "G2": {
+   "gap_Rb_ci90": [
+    0.009307091616752984,
+    0.11772170720013131
+   ],
+   "holds": false
+  },
+  "G3": {
+   "per_trait": {
+    "K": {
+     "Gap": 0.19126821691063955,
+     "B_t": 0.0880165293408528,
+     "B_t_ci95": [
+      -0.033906105634847555,
+      0.4165313499719385
+     ],
+     "holds_point": true,
+     "holds_with_B_ci": false
+    },
+    "N": {
+     "Gap": -0.5805948756265843,
+     "B_t": -0.08908002929014437,
+     "B_t_ci95": [
+      -2.6959773303576156,
+      1.653463280814906
+     ],
+     "holds_point": false,
+     "holds_with_B_ci": false
+    },
+    "M": {
+     "Gap": 0.286254272440152,
+     "B_t": -0.11974977623494448,
+     "B_t_ci95": [
+      -1.691492450129596,
+      1.61970660728804
+     ],
+     "holds_point": false,
+     "holds_with_B_ci": false
+    }
+   },
+   "holds_point": true,
+   "holds_with_B_ci": false
+  },
+  "G4": {
+   "per_trait": {
+    "R": {
+     "dR2_D_given_S0": 0.04932343523721646,
+     "ci95": [
+      -0.05111345520844086,
+      0.12040645280123309
+     ],
+     "holds": false
+    },
+    "R1": {
+     "dR2_D_given_S0": -0.08135195392609729,
+     "ci95": [
+      -0.22142744833802014,
+      0.05543210082463315
+     ],
+     "holds": false
+    },
+    "Rb": {
+     "dR2_D_given_S0": 0.015756529019450502,
+     "ci95": [
+      -0.03263783762453954,
+      0.08175040188229912
+     ],
+     "holds": false
+    },
+    "K": {
+     "dR2_D_given_S0": 0.03617472725425841,
+     "ci95": [
+      -0.07504563748535346,
+      0.12095261640670497
+     ],
+     "holds": false
+    },
+    "N": {
+     "dR2_D_given_S0": 0.1084013326697717,
+     "ci95": [
+      -0.10165309389900466,
+      0.12872106118383028
+     ],
+     "holds": false
+    },
+    "M": {
+     "dR2_D_given_S0": -0.023055372701536903,
+     "ci95": [
+      -0.08553823763046807,
+      0.038745323064236226
+     ],
+     "holds": false
+    }
+   },
+   "holds_any": false
+  },
+  "G5": {
+   "rule_labels_defined": true,
+   "rule_counts": {
+    "en": 9,
+    "sl": 14
+   },
+   "judge_defined": true,
+   "judge_counts": {
+    "en": 7,
+    "sl": 10
+   },
+   "holds_rule": false,
+   "holds_judge": false
+  },
+  "G6": {
+   "coverage_90PI": {
+    "R": {
+     "E_TPE": 0.6785714285714286,
+     "E_R": null
+    },
+    "R1": {
+     "E_TPE": 0.8571428571428571,
+     "E_R": null
+    },
+    "Rb": {
+     "E_TPE": 0.6964285714285714,
+     "E_R": null
+    },
+    "K": {
+     "E_TPE": 0.7321428571428571,
+     "E_R": null
+    },
+    "N": {
+     "E_TPE": 0.6071428571428571,
+     "E_R": null
+    },
+    "M": {
+     "E_TPE": 0.8214285714285714,
+     "E_R": null
+    }
+   },
+   "holds_all": false,
+   "share_trait_sets_meeting_85": 0.08333333333333333
+  }
+ }
+}

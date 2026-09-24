@@ -1,0 +1,18 @@
+entries:
+  - path: .venv/
+    delete: regenerable
+    source: "uv venv .venv --python 3.12 && uv pip install --python .venv/bin/python torch==2.11.0+cu128 torchvision==0.26.0+cu128 --index-url https://download.pytorch.org/whl/cu128 && uv pip install --python .venv/bin/python -r pyproject.toml && uv pip install --python .venv/bin/python -e third_party/heretic --no-deps"
+  - path: __pycache__/
+    delete: regenerable
+    source: "created automatically on import (e.g. .venv/bin/python -c 'import method')"
+  - path: third_party/heretic/src/heretic/__pycache__/
+    delete: regenerable
+    source: "created automatically on import of heretic (.venv/bin/python -c 'import heretic')"
+  - path: cache/x_acts_en.pt
+    delete: regenerable
+    source: "rm results/baseline_done.json && .venv/bin/python method.py --stages stage0d   (recomputes the X_SET exposure cache, geometry, K cache and baseline traits)"
+  - path: cache/x_acts_sl.pt
+    delete: regenerable
+    source: "rm results/baseline_done.json && .venv/bin/python method.py --stages stage0d"
+  - path: cache/k_cache.pt
+    keep: original-model Dolly continuations + top-256 log-probs that every K trait in the panel is measured against (24 MB, host-1 GPU numerics)

@@ -1,0 +1,8 @@
+{
+ "n_compared": 166,
+ "max_abs_diff": 0.03493762016296342,
+ "mean_abs_diff": 0.00938157360237763,
+ "n_within_2e-3": 32,
+ "pass": false,
+ "note": "our batched right-padded FLORES NLL (Heretic PeftModel, zeroed LoRA) vs EXP3 C0 per-item NLL (own 4-bit load, eager attention) on the shared half-B ids"
+}

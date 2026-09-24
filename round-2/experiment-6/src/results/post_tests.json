@@ -1,0 +1,38 @@
+{
+ "U4_formula_vs_peft_path": {
+  "n_modules": 12,
+  "max_rel_diff": 1.8721317474046373e-07,
+  "pass": true
+ },
+ "U4_realized_vs_cached_core": {
+  "realized_E_en_xset": 19.395917139833312,
+  "realized_E_sl_xset": 18.48294445600666,
+  "cached_E_en": 21.53594970703125,
+  "cached_E_sl": 17.294118881225586,
+  "note": "cached exposure uses ORIGINAL-model module inputs; the realized value uses the edited model's own inputs (upstream edits shift them), so equality is not expected - ratio reported"
+ },
+ "U5_truncated_vs_full_KL": {
+  "edit": "E0_002",
+  "mean_full": 0.006066400557756424,
+  "mean_trunc": 0.0062238359823822975,
+  "ratio_trunc_over_full": 1.0259519815444946,
+  "pass": true,
+  "note": "truncated reference from the stage0d cache (batched); full reference recomputed here (different batch shapes add bf16 noise to both)"
+ },
+ "U7_diagnostic": {
+  "same_length_no_padding_vs_bs1": {
+   "n_seq": 8,
+   "max_abs": 0.270906925201416,
+   "mean_abs": 0.042959555983543396
+  },
+  "padded_mixed_vs_bs1": {
+   "n_seq": 40,
+   "max_abs": 0.2802281379699707,
+   "mean_abs": 0.04214755445718765,
+   "per_seq_mean_nll_max_abs_diff": 0.048571109771728516
+  },
+  "batched_repeat_bit_identical": true,
+  "interpretation": "if unpadded same-length batches differ from batch size 1 by the same magnitude as padded batches, the difference is batch-shape numerics (bf16 / NF4 GEMM tiling), not an attention-mask error"
+ },
+ "t": 1790223545.2691574
+}
