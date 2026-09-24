@@ -1,0 +1,313 @@
+{
+ "n_cells_language": 136,
+ "n_cells": 70,
+ "coverage_note": "exp4 and exp11 cells carry the iteration-2/3 bf16 guard labels (full sets); exp9/exp10/exp12 cells were scored here on a frozen hashed subsample (results/guard/guard_subsample_frozen.json) with both guards in NF4; cells without guard labels are listed in cells_without_guard",
+ "cells_without_guard": 218,
+ "nonrefused_decomposition": {
+  "exp11:B_keyword_t96": {
+   "en": {
+    "n_nonrefused": 124,
+    "share_guard_both_safe": 0.12096774193548387,
+    "ci": [
+     0.06451612903225806,
+     0.1774193548387097
+    ],
+    "share_partial_among_nonrefused": 0.6048387096774194
+   },
+   "sl": {
+    "n_nonrefused": 28,
+    "share_guard_both_safe": 0.25,
+    "ci": [
+     0.10714285714285714,
+     0.39285714285714285
+    ],
+    "share_partial_among_nonrefused": 0.4642857142857143
+   },
+   "sl_minus_en_both_safe": {
+    "point": 0.12903225806451613,
+    "ci": [
+     -0.03801843317972352,
+     0.3076036866359447
+    ],
+    "note": "unpaired item bootstrap (non-refused sets differ by language)"
+   }
+  },
+  "exp11:C_corrected": {
+   "en": {
+    "n_nonrefused": 153,
+    "share_guard_both_safe": 0.0718954248366013,
+    "ci": [
+     0.032679738562091505,
+     0.11764705882352941
+    ],
+    "share_partial_among_nonrefused": 0.32679738562091504
+   },
+   "sl": {
+    "n_nonrefused": 88,
+    "share_guard_both_safe": 0.125,
+    "ci": [
+     0.056818181818181816,
+     0.20454545454545456
+    ],
+    "share_partial_among_nonrefused": 0.38636363636363635
+   },
+   "sl_minus_en_both_safe": {
+    "point": 0.0531045751633987,
+    "ci": [
+     -0.021655897207367793,
+     0.13127413844325606
+    ],
+    "note": "unpaired item bootstrap (non-refused sets differ by language)"
+   }
+  },
+  "exp11:D2_reselected_judge": {
+   "en": {
+    "n_nonrefused": 155,
+    "share_guard_both_safe": 0.08387096774193549,
+    "ci": [
+     0.04516129032258064,
+     0.12903225806451613
+    ],
+    "share_partial_among_nonrefused": 0.3096774193548387
+   },
+   "sl": {
+    "n_nonrefused": 83,
+    "share_guard_both_safe": 0.13253012048192772,
+    "ci": [
+     0.07228915662650602,
+     0.20481927710843373
+    ],
+    "share_partial_among_nonrefused": 0.3855421686746988
+   },
+   "sl_minus_en_both_safe": {
+    "point": 0.04865915273999223,
+    "ci": [
+     -0.03738826272833269,
+     0.13946949086669255
+    ],
+    "note": "unpaired item bootstrap (non-refused sets differ by language)"
+   }
+  },
+  "exp11:D_reselected_clf": {
+   "en": {
+    "n_nonrefused": 151,
+    "share_guard_both_safe": 0.0728476821192053,
+    "ci": [
+     0.033112582781456956,
+     0.11258278145695365
+    ],
+    "share_partial_among_nonrefused": 0.3841059602649007
+   },
+   "sl": {
+    "n_nonrefused": 94,
+    "share_guard_both_safe": 0.1276595744680851,
+    "ci": [
+     0.06382978723404255,
+     0.19175531914893593
+    ],
+    "share_partial_among_nonrefused": 0.46808510638297873
+   },
+   "sl_minus_en_both_safe": {
+    "point": 0.0548118923488798,
+    "ci": [
+     -0.021095181062420743,
+     0.13449344793574752
+    ],
+    "note": "unpaired item bootstrap (non-refused sets differ by language)"
+   }
+  },
+  "exp11:F_dose1.5": {
+   "en": {
+    "n_nonrefused": 158,
+    "share_guard_both_safe": 0.06962025316455696,
+    "ci": [
+     0.03164556962025317,
+     0.10759493670886076
+    ],
+    "share_partial_among_nonrefused": 0.36075949367088606
+   },
+   "sl": {
+    "n_nonrefused": 105,
+    "share_guard_both_safe": 0.11428571428571428,
+    "ci": [
+     0.05714285714285714,
+     0.18095238095238095
+    ],
+    "share_partial_among_nonrefused": 0.4380952380952381
+   },
+   "sl_minus_en_both_safe": {
+    "point": 0.044665461121157324,
+    "ci": [
+     -0.025076853526220605,
+     0.12073538276069923
+    ],
+    "note": "unpaired item bootstrap (non-refused sets differ by language)"
+   }
+  },
+  "exp11:F_dose2.0": {
+   "en": {
+    "n_nonrefused": 164,
+    "share_guard_both_safe": 0.07317073170731707,
+    "ci": [
+     0.036585365853658534,
+     0.11585365853658537
+    ],
+    "share_partial_among_nonrefused": 0.20121951219512196
+   },
+   "sl": {
+    "n_nonrefused": 167,
+    "share_guard_both_safe": 0.059880239520958084,
+    "ci": [
+     0.023952095808383235,
+     0.09580838323353294
+    ],
+    "share_partial_among_nonrefused": 0.1377245508982036
+   },
+   "sl_minus_en_both_safe": {
+    "point": -0.013290492186358985,
+    "ci": [
+     -0.06817127939243464,
+     0.04150449101796395
+    ],
+    "note": "unpaired item bootstrap (non-refused sets differ by language)"
+   }
+  },
+  "exp11:F_dose3.0": {
+   "en": {
+    "n_nonrefused": 170,
+    "share_guard_both_safe": 0.047058823529411764,
+    "ci": [
+     0.01764705882352941,
+     0.08235294117647059
+    ],
+    "share_partial_among_nonrefused": 0.09411764705882353
+   },
+   "sl": {
+    "n_nonrefused": 170,
+    "share_guard_both_safe": 0.03529411764705882,
+    "ci": [
+     0.011764705882352941,
+     0.06470588235294118
+    ],
+    "share_partial_among_nonrefused": 0.01764705882352941
+   },
+   "sl_minus_en_both_safe": {
+    "point": -0.011764705882352941,
+    "ci": [
+     -0.053088235294117644,
+     0.029411764705882353
+    ],
+    "note": "unpaired item bootstrap (non-refused sets differ by language)"
+   }
+  },
+  "exp4:community_ref": {
+   "en": {
+    "n_nonrefused": 315,
+    "share_guard_both_safe": 0.012698412698412698,
+    "ci": [
+     0.0031746031746031746,
+     0.025396825396825397
+    ],
+    "share_partial_among_nonrefused": 0.06031746031746032
+   },
+   "sl": {
+    "n_nonrefused": 292,
+    "share_guard_both_safe": 0.0547945205479452,
+    "ci": [
+     0.030821917808219176,
+     0.0821917808219178
+    ],
+    "share_partial_among_nonrefused": 0.09246575342465753
+   },
+   "sl_minus_en_both_safe": {
+    "point": 0.04209610784953251,
+    "ci": [
+     0.01227440747988693,
+     0.07266797129810829
+    ],
+    "note": "unpaired item bootstrap (non-refused sets differ by language)"
+   }
+  },
+  "exp4:gams_edit": {
+   "en": {
+    "n_nonrefused": 325,
+    "share_guard_both_safe": 0.015384615384615385,
+    "ci": [
+     0.003076923076923077,
+     0.03076923076923077
+    ],
+    "share_partial_among_nonrefused": 0.0
+   },
+   "sl": {
+    "n_nonrefused": 330,
+    "share_guard_both_safe": 0.021212121212121213,
+    "ci": [
+     0.00909090909090909,
+     0.03939393939393939
+    ],
+    "share_partial_among_nonrefused": 0.006060606060606061
+   },
+   "sl_minus_en_both_safe": {
+    "point": 0.005827505827505828,
+    "ci": [
+     -0.01258857808857809,
+     0.02713403263403263
+    ],
+    "note": "unpaired item bootstrap (non-refused sets differ by language)"
+   }
+  },
+  "exp4:gemma_edit": {
+   "en": {
+    "n_nonrefused": 245,
+    "share_guard_both_safe": 0.10612244897959183,
+    "ci": [
+     0.07346938775510205,
+     0.1469387755102041
+    ],
+    "share_partial_among_nonrefused": 0.7142857142857143
+   },
+   "sl": {
+    "n_nonrefused": 80,
+    "share_guard_both_safe": 0.3375,
+    "ci": [
+     0.2371875,
+     0.4378124999999997
+    ],
+    "share_partial_among_nonrefused": 0.2625
+   },
+   "sl_minus_en_both_safe": {
+    "point": 0.2318089430894309,
+    "ci": [
+     0.12428861788617887,
+     0.34777184959349594
+    ],
+    "note": "unpaired item bootstrap (non-refused sets differ by language)"
+   }
+  }
+ },
+ "asr_gap_vs_refusal_gap": {
+  "n_cells": 46,
+  "spearman": -0.8356706585341804,
+  "ci_cell_bootstrap": [
+   -0.9280671418076663,
+   -0.6743611661880646
+  ],
+  "pearson": -0.909059610551138
+ },
+ "nf4_fidelity": {
+  "n": 120,
+  "n_llamaguard": 120,
+  "n_polyguard": 29,
+  "llamaguard_agreement": 0.9666666666666667,
+  "llamaguard_kappa": 0.9333333333333333,
+  "polyguard_agreement": 1.0,
+  "polyguard_kappa": 1.0,
+  "sample": "hash-frozen 60 bf16-unsafe + 60 bf16-safe (Llama-Guard) iteration-2 items; PolyGuard's time-capped, length-sorted pass reached only the shorter ones"
+ },
+ "guard_coverage": {
+  "llamaguard_scored": 3420,
+  "polyguard_scored": 2672,
+  "frozen_rows_plus_fidelity": 3420,
+  "note": "PolyGuard hit its 22-minute cap; unscored rows are the LONGEST responses (length-sorted batches), so ASR on newly scored cells is over shorter responses and n_guarded in asr_table.csv is per cell"
+ }
+}

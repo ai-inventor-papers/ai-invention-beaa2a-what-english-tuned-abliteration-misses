@@ -1,0 +1,89 @@
+{
+ "per_source_language": {
+  "exp10|en": {
+   "cells": 57,
+   "max_invalid_share": 0.925,
+   "mean_glotlid": 0.8144041187791188,
+   "min_glotlid": 0.6121951219512195,
+   "max_truncation": 0.9024390243902439
+  },
+  "exp10|sl": {
+   "cells": 57,
+   "max_invalid_share": 0.975,
+   "mean_glotlid": 0.8621607946331747,
+   "min_glotlid": 0.05,
+   "max_truncation": 0.926829268292683
+  },
+  "exp11|en": {
+   "cells": 8,
+   "max_invalid_share": 0.0,
+   "mean_glotlid": 0.7793592945385224,
+   "min_glotlid": 0.7305290787643728,
+   "max_truncation": 0.8352941176470589
+  },
+  "exp11|sl": {
+   "cells": 8,
+   "max_invalid_share": 0.0,
+   "mean_glotlid": 0.9259173601453013,
+   "min_glotlid": 0.9017161270102447,
+   "max_truncation": 0.8411764705882353
+  },
+  "exp12|de": {
+   "cells": 34,
+   "max_invalid_share": 0.6829268292682927,
+   "mean_glotlid": 0.7523058547143914,
+   "min_glotlid": 0.29065040650406504,
+   "max_truncation": 1.0
+  },
+  "exp12|en": {
+   "cells": 92,
+   "max_invalid_share": 0.08333333333333333,
+   "mean_glotlid": 0.8938677364988041,
+   "min_glotlid": 0.579861111111111,
+   "max_truncation": 1.0
+  },
+  "exp12|lt": {
+   "cells": 34,
+   "max_invalid_share": 0.9024390243902439,
+   "mean_glotlid": 0.8028271609826487,
+   "min_glotlid": 0.16260162601626016,
+   "max_truncation": 1.0
+  },
+  "exp12|sl": {
+   "cells": 38,
+   "max_invalid_share": 0.7317073170731707,
+   "mean_glotlid": 0.8754190661698283,
+   "min_glotlid": 0.2682926829268293,
+   "max_truncation": 0.975609756097561
+  },
+  "exp4|en": {
+   "cells": 5,
+   "max_invalid_share": 0.0,
+   "mean_glotlid": 0.7837271765024438,
+   "min_glotlid": 0.636322018247152,
+   "max_truncation": 0.7878787878787878
+  },
+  "exp4|sl": {
+   "cells": 5,
+   "max_invalid_share": 0.0,
+   "mean_glotlid": 0.9337887092705275,
+   "min_glotlid": 0.8907511747511747,
+   "max_truncation": 0.8272727272727273
+  },
+  "exp9|en": {
+   "cells": 122,
+   "max_invalid_share": 0.024390243902439025,
+   "mean_glotlid": 0.7664742685327067,
+   "min_glotlid": 0.6212121212121212,
+   "max_truncation": 0.975609756097561
+  },
+  "exp9|sl": {
+   "cells": 122,
+   "max_invalid_share": 0.0,
+   "mean_glotlid": 0.9289996974483886,
+   "min_glotlid": 0.8045876887340303,
+   "max_truncation": 1.0
+  }
+ },
+ "provenance": "cis-lmu/glotlid model.bin (line-level, lines with >= 12 letters)"
+}

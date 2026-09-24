@@ -1,0 +1,57 @@
+[
+ {
+  "source": "exp9",
+  "artifact": "art_ex4hbgThhJaL",
+  "claimed": 27784,
+  "rows_loaded": 27784,
+  "rows_with_workhorse_label": 27784,
+  "rows_without_label": 0,
+  "rows_missing_response": 0,
+  "rows_with_gpt41": 600,
+  "cells": 122
+ },
+ {
+  "source": "exp10",
+  "artifact": "art_xLy2vVlI7OEL",
+  "claimed": 10690,
+  "rows_loaded": 10690,
+  "rows_with_workhorse_label": 10690,
+  "rows_without_label": 0,
+  "rows_missing_response": 0,
+  "rows_with_gpt41": 302,
+  "cells": 57
+ },
+ {
+  "source": "exp11",
+  "artifact": "art_0XmNBGkzsJc_",
+  "claimed": 3680,
+  "rows_loaded": 3680,
+  "rows_with_workhorse_label": 3680,
+  "rows_without_label": 0,
+  "rows_missing_response": 0,
+  "rows_with_gpt41": 0,
+  "cells": 8
+ },
+ {
+  "source": "exp12",
+  "artifact": "art_kfCCWf7o8eJ9",
+  "claimed": 9199,
+  "rows_loaded": 9912,
+  "rows_with_workhorse_label": 9912,
+  "rows_without_label": 0,
+  "rows_missing_response": 0,
+  "rows_with_gpt41": 0,
+  "cells": 96
+ },
+ {
+  "source": "exp4",
+  "artifact": "art_m6pglf516e2r",
+  "claimed": 4800,
+  "rows_loaded": 4800,
+  "rows_with_workhorse_label": 4799,
+  "rows_without_label": 1,
+  "rows_missing_response": 0,
+  "rows_with_gpt41": 716,
+  "cells": 5
+ }
+]

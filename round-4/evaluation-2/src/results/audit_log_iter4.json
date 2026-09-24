@@ -1,0 +1,123 @@
+{
+ "blocks": [
+  {
+   "block": "exp9_counts",
+   "status": "ok",
+   "seconds": 5.89,
+   "rows": 2
+  },
+  {
+   "block": "exp9_judge_cert",
+   "status": "ok",
+   "seconds": 0.14,
+   "rows": 1
+  },
+  {
+   "block": "exp9_band_density",
+   "status": "ok",
+   "seconds": 0.19,
+   "rows": 5
+  },
+  {
+   "block": "exp9_matched_groups",
+   "status": "ok",
+   "seconds": 0.03,
+   "rows": 16
+  },
+  {
+   "block": "exp9_index_and_lobo",
+   "status": "ok",
+   "seconds": 0.02,
+   "rows": 6
+  },
+  {
+   "block": "exp9_s5x",
+   "status": "ok",
+   "seconds": 0.06,
+   "rows": 3
+  },
+  {
+   "block": "exp10_all",
+   "status": "ok",
+   "seconds": 1.58,
+   "rows": 22
+  },
+  {
+   "block": "exp11_table",
+   "status": "ok",
+   "seconds": 0.35,
+   "rows": 24
+  },
+  {
+   "block": "exp11_selection",
+   "status": "ok",
+   "seconds": 0.04,
+   "rows": 9
+  },
+  {
+   "block": "exp12_all",
+   "status": "ok",
+   "seconds": 0.12,
+   "rows": 10
+  },
+  {
+   "block": "eval1_ledger",
+   "status": "ok",
+   "seconds": 0.04,
+   "rows": 4
+  },
+  {
+   "block": "placebo_leakage_and_kappa",
+   "status": "ok",
+   "seconds": 0.17,
+   "rows": 0
+  }
+ ],
+ "summary": {
+  "n_checked": 102,
+  "verdicts": {
+   "match": 97,
+   "misdescribed": 3,
+   "mismatch": 2
+  },
+  "mismatch_or_misdescribed_rate": 0.049019607843137254,
+  "wilson_95": [
+   0.021117285132196968,
+   0.1096592715336131
+  ],
+  "prior_audited_half_rate": 0.055,
+  "placebos": {
+   "real_pb2_sl": -0.10476190476190478,
+   "real_pb3": -0.07142857142857145,
+   "a_cell_label_shuffle_within_item": 0.0005714285714285719,
+   "b_language_label_shuffle": 0.0010476190476190455,
+   "c_dose_shuffled_spearman": -0.002282948576779776,
+   "c_real_spearman_logE_SL": 0.18695170765678928,
+   "d_dev_vs_conf_overlap": 0,
+   "d_dev_as_conf_fires_LEAKAGE": true,
+   "e_judge_label_permutation_kappa": 0.004904674344333676,
+   "e_real_kappa": 0.8641246491822316,
+   "collapse_checks": {
+    "a_cell_label_shuffle": true,
+    "b_language_label_shuffle": true,
+    "c_dose_shuffled": true,
+    "d_leakage_detector_fires": true,
+    "e_kappa_permutation": true
+   },
+   "reference_values": {
+    "artifact_placebos": [
+     0.003,
+     -0.001,
+     0.023
+    ],
+    "artifact_real": [
+     -0.105,
+     -0.071
+    ]
+   }
+  },
+  "seconds": 8.6,
+  "seed": 20260924,
+  "B": 2000
+ }
+}
