@@ -1,0 +1,2 @@
+== freezeO 20:08:41
+[92m20:08:50[0m|INFO   |[96mmain[0m| outside frozen: eligible ['en', 'sl', 'de']; groups [('QG1', 0.211), ('QG2', 0.232), ('QG3', 0.139)]
