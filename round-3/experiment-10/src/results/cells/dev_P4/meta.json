@@ -1,0 +1,13 @@
+{
+ "cell": "dev_P4",
+ "part": "A",
+ "kind": "activation_layerwise",
+ "hidden_indices": [
+  1,
+  2,
+  3,
+  4
+ ],
+ "control": null,
+ "c": 1.0
+}
