@@ -1,0 +1,71 @@
+{
+ "source": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_7/protocol/frozen_predictions.json",
+ "predictions": {
+  "P-a": "Gap_R >= 0.10 with 95% bootstrap LB > 0 (confirmatory refusal trait chosen by the validity gate)",
+  "P-b": "Gap_Rb >= 0.10 (benign over-refusal R_seq on benign twins)",
+  "P-c": "delta-R2(P | b1+b2+b3+Omega+D) >= 0.05 with LB > 0 AND delta-R2(b1 | P) < 0.05 on y_spec(R*) and y_spec(Rb)",
+  "P-d": "margin-matched Gap_R >= 0.10"
+ },
+ "verdicts": {
+  "P-a": {
+   "verdict": "NOT CONFIRMED",
+   "Gap_R": 0.0544580884427156,
+   "ci95": [
+    0.02212155462301784,
+    0.128174171464388
+   ],
+   "trait": "R1"
+  },
+  "P-b": {
+   "verdict": "UNTESTABLE (exploratory estimate reported)",
+   "reasons": [
+    "Rb validity gate failed -> exploratory"
+   ],
+   "exploratory_outcome": "NOT CONFIRMED-like",
+   "Gap_Rb": 0.01760464319017979,
+   "ci95": [
+    0.010625442820273234,
+    0.04348318948298045
+   ]
+  },
+  "P-c": {
+   "verdict": "NOT CONFIRMED",
+   "detail": {
+    "R1": {
+     "dR2_P_given_base": 0.00406004718909414,
+     "dR2_P_given_base_ci95": [
+      -0.08526538926983088,
+      0.05615522251018056
+     ],
+     "dR2_b1_given_P": 0.0033015872489567943,
+     "dR2_b1_given_P_ci95": [
+      -0.059489370238544434,
+      0.025874114717126008
+     ]
+    },
+    "Rb": {
+     "dR2_P_given_base": 0.026625474990418452,
+     "dR2_P_given_base_ci95": [
+      -0.08532559282093874,
+      0.13320433832174747
+     ],
+     "dR2_b1_given_P": 0.04564200112116312,
+     "dR2_b1_given_P_ci95": [
+      -0.08353989466336828,
+      0.16508050446135294
+     ]
+    }
+   },
+   "note": null,
+   "caveat": "correlational across random edits: P 'predicts', it cannot be said to 'carry'"
+  },
+  "P-d": {
+   "verdict": "NOT CONFIRMED",
+   "Gap_margin_matched": 0.057288622128691125,
+   "ci95_edit_boot": [
+    0.02920971663732026,
+    0.13025009928561318
+   ]
+  }
+ }
+}

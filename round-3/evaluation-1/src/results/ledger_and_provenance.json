@@ -1,0 +1,350 @@
+{
+ "dead_end_ledger": [
+  {
+   "item": "iter-1 gen_art_experiment_2",
+   "planned_where": "iteration 1",
+   "status": "NOT RUN (empty workspace)",
+   "reason": "pod produced no files",
+   "number": "1 files",
+   "source": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_2"
+  },
+  {
+   "item": "iter-1 gen_art_experiment_4",
+   "planned_where": "iteration 1",
+   "status": "NOT RUN (empty workspace)",
+   "reason": "pod produced no files",
+   "number": "1 files",
+   "source": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_4"
+  },
+  {
+   "item": "P2 Sobol sensitivity bands",
+   "planned_where": "exp6/exp7 plans",
+   "status": "NOT RUN",
+   "reason": "cut for time",
+   "number": "–",
+   "source": "exp6/exp7 deviations"
+  },
+  {
+   "item": "English-only-vs-full forecast",
+   "planned_where": "exp6",
+   "status": "NOT RUN",
+   "reason": "cut; conformal forecast met 85% coverage in only 50% of trait x holdout cells",
+   "number": "coverage 50%",
+   "source": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_6/results/analysis_results.json forecast"
+  },
+  {
+   "item": "language-orthogonalised matched-efficacy arm",
+   "planned_where": "exp8",
+   "status": "NOT RUN",
+   "reason": "cut for time",
+   "number": "–",
+   "source": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/deviations.json"
+  },
+  {
+   "item": "Gemini second judge",
+   "planned_where": "exp1 (judge_sl.py)",
+   "status": "NOT RUN (budget block, HTTP 403 daily key limit)",
+   "reason": "OpenRouter key limit",
+   "number": "0 judgements",
+   "source": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/results/judge_sl.json"
+  },
+  {
+   "item": "exposure differential D as gap carrier",
+   "planned_where": "exp6/exp7",
+   "status": "CLOSED (failed)",
+   "reason": "dR2(D | S0) ~ 0 or negative for every trait",
+   "number": "K: dR2 -0.011 [-0.058, 0.027] (exp6); Gemma +0.004 (exp7 P-c)",
+   "source": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_6/README.md ; /ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_7/results/analysis.json verdicts.P-c"
+  },
+  {
+   "item": "static b1/b2/b3 and LSAR Omega predictors",
+   "planned_where": "exp6/exp7",
+   "status": "CLOSED (failed)",
+   "reason": "CV R2 <= 0",
+   "number": "CV R2 <= 0",
+   "source": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_6/results/analysis_results.json carrier"
+  },
+  {
+   "item": "r_prior false-refusal direction (Wang et al. style)",
+   "planned_where": "exp8 F1",
+   "status": "CLOSED (failed; KILL a/c fired)",
+   "reason": "cut not larger than random or shuffled controls",
+   "number": "cut .036 [-.037,.109] < best random .074 < shuffled .135",
+   "source": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/report_tables.md"
+  },
+  {
+   "item": "thin-margin rival explanation",
+   "planned_where": "exp7 P-d / exp6 margin_matched",
+   "status": "CLOSED",
+   "reason": "margin-matched gap stays small",
+   "number": "margin-matched Gap +.057 [.029,.130] Gemma; +.131 GaMS3",
+   "source": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_7/results/analysis.json verdicts.P-d"
+  },
+  {
+   "item": "language-identity direction (A4)",
+   "planned_where": "exp8",
+   "status": "WORKS BUT UNUSABLE",
+   "reason": "cuts SL residual .315 but destroys language modelling",
+   "number": "SL harmful .86 -> .55; FLORES dNLL +2.02 EN / +1.93 SL",
+   "source": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/report_tables.md"
+  },
+  {
+   "item": "exp3 raw-energy-matched random ablations (T7)",
+   "planned_where": "iter-1 exp3",
+   "status": "LESSON",
+   "reason": "energy-matched random directions at every layer/position are destructive, so their refusal drops are collateral",
+   "number": "see deviations.json",
+   "source": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_3/results/deviations.json"
+  },
+  {
+   "item": "B3 batching certification",
+   "planned_where": "exp4 smoke",
+   "status": "FAILED (reported)",
+   "reason": "batched vs single generations not identical",
+   "number": "see smoke/*.json",
+   "source": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/results/smoke"
+  },
+  {
+   "item": "gpt-4.1 primary judge coverage",
+   "planned_where": "exp4/exp6/exp8",
+   "status": "PARTIAL (budget block)",
+   "reason": "OpenRouter daily key limit",
+   "number": "exp4 716/3,840; exp6 1,130/2,140; exp8 5,298/12,136 (arm-prioritised)",
+   "source": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/results/judge_blocked.json"
+  }
+ ],
+ "pending_human_review": [
+  {
+   "path": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/results/human_packet/packet.csv",
+   "n": 200,
+   "language_mix": {
+    "sl": 100,
+    "en": 100
+   },
+   "status": "PENDING native review",
+   "note": "blinded EN/SL behaviour packet (class, harmful, language_ok); NOT yet labelled by a native speaker"
+  },
+  {
+   "path": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_5/results/native_review_packet_c1u.csv",
+   "n": 120,
+   "language_mix": {
+    "en": 60,
+    "sl": 60
+   },
+   "status": "PENDING native review",
+   "note": "native-review packet for C1 utility/refusal replies; key in *_KEY.csv"
+  },
+  {
+   "path": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_dataset_1/data/native_review_packet.csv",
+   "n": 250,
+   "language_mix": {
+    "en->sl": 229,
+    "sl->en": 21
+   },
+   "status": "PENDING native review",
+   "note": "translation adequacy/fluency/trigger-preservation packet"
+  },
+  {
+   "path": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/results/sl_label_sample.json",
+   "n": 40,
+   "language_mix": {
+    "sl": 40
+   },
+   "status": "EXECUTOR-labelled (NOT native)",
+   "note": "labeller: artifact executor (NOT a native speaker) - NATIVE_REVIEW_PENDING"
+  },
+  {
+   "path": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/results/executor_audit.json",
+   "n": 30,
+   "language_mix": "EN+SL",
+   "status": "EXECUTOR check (NOT native)",
+   "note": "30-item executor check of the judge (kappa .67 5-way / .93 binary as reported by exp4)"
+  }
+ ],
+ "translation_provenance": [
+  {
+   "set": "S1_heretic",
+   "n_rows": 2000,
+   "n_sl": 1000,
+   "translation_methods": {
+    "pod_file(google/gemini-2.5-flash)": 785,
+    "pod_file(facebook/nllb-200-distilled-1.3B@7be3e24664b38ce1cac29b8aeed6911aa0cf0576)": 100,
+    "gemini25flash_screenspec": 98,
+    "pod_file(facebook/nllb-200-distilled-1.3B (fallback: gemini chrF<40))": 9,
+    "pod_file(facebook/nllb-200-distilled-1.3B (fallback))": 6,
+    "gpt41": 2
+   },
+   "mean_bt_chrf": 79.70461,
+   "n_chrf": 1000
+  },
+  {
+   "set": "S2_semantic",
+   "n_rows": 1664,
+   "n_sl": 832,
+   "translation_methods": {
+    "gemini25flash_screenspec": 422,
+    "pod_file(google/gemini-2.5-flash)": 399,
+    "pod_file(facebook/nllb-200-distilled-1.3B (fallback))": 4,
+    "pod_file(facebook/nllb-200-distilled-1.3B (fallback: gemini chrF<40))": 3,
+    "gpt41": 3,
+    "nllb13b": 1
+   },
+   "mean_bt_chrf": 79.1650360576923,
+   "n_chrf": 832
+  },
+  {
+   "set": "S3_dolly",
+   "n_rows": 200,
+   "n_sl": 100,
+   "translation_methods": {
+    "pod_file(google/gemini-2.5-flash)": 96,
+    "pod_file(facebook/nllb-200-distilled-1.3B (fallback: gemini chrF<40))": 4
+   },
+   "mean_bt_chrf": 76.6012,
+   "n_chrf": 100
+  },
+  {
+   "set": "S3_flores_dev",
+   "n_rows": 400,
+   "n_sl": 200,
+   "translation_methods": {
+    "original": 200
+   },
+   "mean_bt_chrf": null,
+   "n_chrf": 0
+  },
+  {
+   "set": "S3_jbb",
+   "n_rows": 340,
+   "n_sl": 170,
+   "translation_methods": {
+    "pod_file(google/gemini-2.5-flash)": 167,
+    "pod_file(facebook/nllb-200-distilled-1.3B (fallback))": 2,
+    "pod_file(facebook/nllb-200-distilled-1.3B (fallback: gemini chrF<40))": 1
+   },
+   "mean_bt_chrf": 77.43023529411764,
+   "n_chrf": 170
+  },
+  {
+   "set": "S3_mc",
+   "n_rows": 240,
+   "n_sl": 120,
+   "translation_methods": {
+    "original": 120
+   },
+   "mean_bt_chrf": null,
+   "n_chrf": 0
+  },
+  {
+   "set": "S4_strongreject_pairs",
+   "n_rows": 1028,
+   "n_sl": 514,
+   "translation_methods": {
+    "gpt41": 514
+   },
+   "mean_bt_chrf": 80.09496108949416,
+   "n_chrf": 514
+  },
+  {
+   "set": "S5X_refuseu_crosstrans",
+   "n_rows": 1400,
+   "n_sl": 700,
+   "translation_methods": {
+    "gpt41": 700
+   },
+   "mean_bt_chrf": 78.86614285714286,
+   "n_chrf": 700
+  },
+  {
+   "set": "S5_refuseu",
+   "n_rows": 2800,
+   "n_sl": 1400,
+   "translation_methods": {
+    "original": 1400
+   },
+   "mean_bt_chrf": null,
+   "n_chrf": 0
+  },
+  {
+   "set": "S6_xstest",
+   "n_rows": 900,
+   "n_sl": 450,
+   "translation_methods": {
+    "gpt41": 449,
+    "nllb13b": 1
+   },
+   "mean_bt_chrf": 78.53722222222223,
+   "n_chrf": 450
+  },
+  {
+   "set": "S7_arc_challenge",
+   "n_rows": 2184,
+   "n_sl": 1092,
+   "translation_methods": {
+    "original": 1092
+   },
+   "mean_bt_chrf": null,
+   "n_chrf": 0
+  },
+  {
+   "set": "S7_boolq",
+   "n_rows": 6540,
+   "n_sl": 3270,
+   "translation_methods": {
+    "original": 3270
+   },
+   "mean_bt_chrf": null,
+   "n_chrf": 0
+  },
+  {
+   "set": "S7_flores_devtest",
+   "n_rows": 2024,
+   "n_sl": 1012,
+   "translation_methods": {
+    "original": 1012
+   },
+   "mean_bt_chrf": null,
+   "n_chrf": 0
+  },
+  {
+   "set": "S7_hellaswag",
+   "n_rows": 19924,
+   "n_sl": 9962,
+   "translation_methods": {
+    "original": 9962
+   },
+   "mean_bt_chrf": null,
+   "n_chrf": 0
+  },
+  {
+   "set": "S7_openbookqa",
+   "n_rows": 1000,
+   "n_sl": 500,
+   "translation_methods": {
+    "original": 500
+   },
+   "mean_bt_chrf": null,
+   "n_chrf": 0
+  },
+  {
+   "set": "S7_piqa",
+   "n_rows": 3518,
+   "n_sl": 1759,
+   "translation_methods": {
+    "original": 1759
+   },
+   "mean_bt_chrf": null,
+   "n_chrf": 0
+  },
+  {
+   "set": "S7_winogrande",
+   "n_rows": 2534,
+   "n_sl": 1267,
+   "translation_methods": {
+    "original": 1267
+   },
+   "mean_bt_chrf": null,
+   "n_chrf": 0
+  }
+ ]
+}
