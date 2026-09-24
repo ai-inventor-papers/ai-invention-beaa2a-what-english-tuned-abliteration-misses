@@ -1,0 +1,53 @@
+{
+ "note": "pcs = top-100 harmless PC basis per hidden index; used only to draw matched random controls; regenerable with `uv run code/run_model.py --model <m> --phase dev` (build_directions)",
+ "models": {
+  "gemma": {
+   "size_mb_before": 80.5,
+   "size_mb_after": 5.3,
+   "pcs_moved_to": "results/gemma/harmless_pcs.npy",
+   "pcs_mb": 75.3,
+   "kept_keys": [
+    "dEN_fresh",
+    "dSL",
+    "dDE",
+    "dLT",
+    "good_mean_en",
+    "dEN",
+    "h_star",
+    "vdirs"
+   ]
+  },
+  "mistral": {
+   "size_mb_before": 57.9,
+   "size_mb_after": 3.8,
+   "pcs_moved_to": "results/mistral/harmless_pcs.npy",
+   "pcs_mb": 54.1,
+   "kept_keys": [
+    "dEN_fresh",
+    "dSL",
+    "dDE",
+    "dLT",
+    "good_mean_en",
+    "dEN",
+    "h_star",
+    "vdirs"
+   ]
+  },
+  "qwen3": {
+   "size_mb_before": 64.9,
+   "size_mb_after": 4.2,
+   "pcs_moved_to": "results/qwen3/harmless_pcs.npy",
+   "pcs_mb": 60.6,
+   "kept_keys": [
+    "dEN_fresh",
+    "dSL",
+    "dDE",
+    "dLT",
+    "good_mean_en",
+    "dEN",
+    "h_star",
+    "vdirs"
+   ]
+  }
+ }
+}

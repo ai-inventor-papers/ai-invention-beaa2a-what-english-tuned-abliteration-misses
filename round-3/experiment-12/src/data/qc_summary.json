@@ -1,0 +1,23 @@
+{
+ "de": {
+  "n": 290,
+  "qc_pass": 0.8586206896551725,
+  "median_chrf_gemini_bt": null,
+  "median_chrf_nllb_bt": 75.3807890598537,
+  "median_labse": 0.8405680656433105,
+  "lid_ok": 1.0,
+  "bt_refused": 0
+ },
+ "lt": {
+  "n": 290,
+  "qc_pass": 0.8620689655172413,
+  "median_chrf_gemini_bt": null,
+  "median_chrf_nllb_bt": 66.55569060852798,
+  "median_labse": 0.8541605472564697,
+  "lid_ok": 1.0,
+  "bt_refused": 0
+ },
+ "F_X_fires_for_lt": false,
+ "qc_note": "gemini-2.5-flash back-translation unavailable: the run-level OpenRouter budget was exhausted before this step; qc_pass uses the NLLB round-trip chrF++ (same-system BT, optimistic) + LaBSE + GlotLID",
+ "native_review": "PENDING"
+}
