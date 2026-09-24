@@ -1,0 +1,30 @@
+{
+ "n_distinct_defects": 13,
+ "n_distinct_material": 9,
+ "groups": [
+  "G1 exp14 nested-R2 table printed under exp13 and read as cumulative",
+  "G10 7.2% guard-safe misattributed",
+  "G11 exp10 kappa 0.54 misattributed",
+  "G12 'critical band differs' contradicted",
+  "G13 ASR gap 'smaller' contradicted",
+  "G2 exp14 SL contrasts labelled EN",
+  "G3 exp13 failure reason stated backwards",
+  "G4 exp11 wrong trial-level counts",
+  "G5 exp11 README MAE not reproduced by saved table",
+  "G6 keyword proxy rule version",
+  "G7 Qwen3 replication item subset",
+  "G8 exp13 SL kappa",
+  "G9 exp15 judge identity"
+ ],
+ "material": [
+  "G1 exp14 nested-R2 table printed under exp13 and read as cumulative",
+  "G10 7.2% guard-safe misattributed",
+  "G11 exp10 kappa 0.54 misattributed",
+  "G12 'critical band differs' contradicted",
+  "G13 ASR gap 'smaller' contradicted",
+  "G2 exp14 SL contrasts labelled EN",
+  "G3 exp13 failure reason stated backwards",
+  "G4 exp11 wrong trial-level counts",
+  "G9 exp15 judge identity"
+ ]
+}

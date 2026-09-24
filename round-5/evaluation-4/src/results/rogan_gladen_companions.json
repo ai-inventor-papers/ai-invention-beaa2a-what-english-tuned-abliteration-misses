@@ -1,0 +1,36 @@
+[
+ {
+  "claim": "E13.RG.CF_G3_hiO_L16-31.sl",
+  "rg_rate": 0.0,
+  "note": "raw 0.267; companion required because the SL within-edited gate (0.80) is missed"
+ },
+ {
+  "claim": "E13.RG.CF_dose_G3loO_x2.sl",
+  "rg_rate": 0.895618,
+  "note": "raw 0.917; companion required because the SL within-edited gate (0.80) is missed"
+ },
+ {
+  "claim": "E14.A1_ship.en_strict (EN gate missed)",
+  "raw": 0.3,
+  "rg_rate": 0.0,
+  "note": "carried from exp14 cells.csv (Se 1.00 / Sp 0.70 vs gpt-4.1)"
+ },
+ {
+  "claim": "E14.A2_swap.en_strict (EN gate missed)",
+  "raw": 0.4857142857142857,
+  "rg_rate": 0.2607142857142858,
+  "note": "carried from exp14 cells.csv (Se 1.00 / Sp 0.70 vs gpt-4.1)"
+ },
+ {
+  "claim": "E14.C_B2_E3.en_strict (EN gate missed)",
+  "raw": 0.42857142857142855,
+  "rg_rate": 0.1785714285714286,
+  "note": "carried from exp14 cells.csv (Se 1.00 / Sp 0.70 vs gpt-4.1)"
+ },
+ {
+  "claim": "E14.C_B3_E3.en_strict (EN gate missed)",
+  "raw": 0.6714285714285714,
+  "rg_rate": 0.5276785714285712,
+  "note": "carried from exp14 cells.csv (Se 1.00 / Sp 0.70 vs gpt-4.1)"
+ }
+]

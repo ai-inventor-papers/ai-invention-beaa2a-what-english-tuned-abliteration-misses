@@ -1,0 +1,7 @@
+23:17:34 | INFO | running lint_paths.py
+23:17:42 | INFO | lint_paths.py exit code 0
+23:17:42 | INFO | running rederive_iter5.py
+23:17:50 | INFO | rederive_iter5.py exit code 0
+23:17:50 | INFO | first-pass audited numbers n=136, defects k=21, rate=0.154 [0.10326798417235714, 0.22454223211127292], material=14
+23:17:56 | INFO | eval_out.json: 241 examples
+23:17:56 | INFO | done
