@@ -1,0 +1,4 @@
+# This artifact is web research only: it produced nothing but small text files
+# (markdown, CSV, JSON and one Python script). There are no large binaries and
+# no cache directories, so no path needs a keep/delete decision.
+entries: []

@@ -1,0 +1,54 @@
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://github.com/p-e-w/heretic/pull/444
+Type: HTML
+Pattern: merged|commits into|benchmark|scorer (37 matches in 11882 chars)
+
+--- Content ---
+
+6477:...ions  ](/p-e-w/heretic/discussions)
+  * [ Actions  ](/p-e-w/heretic/actions)
+  * [ Projects  ](/p-e-w/heretic/projects)
+  * [ Security and quality  ](/p-e-w/heretic/security)
+  * [ Insights  ](/p-e-w/heretic/pulse)
+
+
+
+[](/p-e-w/heretic)
+
+# feat: add benchmark scorer \- #444
+
+#444
+
+Merged
+
+[p-e-w](/p-e-w) merged 3 commits into
+
+[master](/p-e-w/heretic/tree/master)p-e-w/heretic:masterfrom 
+
+[benchmark-scorer](/p-e-w/heretic/tree/benchmark-scorer)p-e-w/heretic:benchmark-scorerCopy head branch name to clipboard
+
+Sep 3, 2026
+
+[Conversation](/p-e-w/heretic/pull/444)[Commits3 (3)](/p-e-w/heretic/pull/444/commits)[Checks](/p-e-w/heretic/pull/444/checks)[Files changed](/p-e-w/heretic/pull/444/files)
+
+Merged
+
+## 
+
+feat: add benchmark scorer#444
+
+[p-e-w](/p-e-w) merged 3 commits into
+
+[master](/p-e-w/heretic/tree/master)p-e-w/heretic:masterfrom 
+
+[benchmark-scorer](/p-e-w/heretic/tree/benchmark-scorer)p-e-w/heretic:benchmark-scorerCopy head branch name to clipboard
+
+## Conversation
+
+[ ](/p-e-w)
+
+### 
+
+**[p-e-w](/p...
+--
+[22 more matches not shown]

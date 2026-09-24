@@ -1,0 +1,196 @@
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://github.com/p-e-w/heretic/releases
+Type: HTML
+Pattern: v[0-9]+\.[0-9]+|benchmark|scorer|multilingual|language (52 matches in 28826 chars)
+
+--- Content ---
+
+6541:...heretic/security)
+  * [ Insights  ](/p-e-w/heretic/pulse)
+
+
+
+# Releases: p-e-w/heretic
+
+[Releases](/p-e-w/heretic/releases) [Tags](/p-e-w/heretic/tags)
+
+Releases · p-e-w/heretic
+
+## Release list
+
+  * v1.4.0 
+  * v1.3.0 
+  * v1.2.0 
+  * v1.1.0 
+  * v1.0.1 
+
+
+
+Jump to release
+
+  * v1.4.0 
+  * v1.3.0 
+  * v1.2.0 
+  * v1.1.0 
+  * v1.0.1 
+
+
+
+## v1.4.0
+
+[v1.4.0](/p-e-w/heretic/releases/tag/v1.4.0) [Latest](/p-e-w/heretic/releases/latest)
+
+[Latest](/p-e-w/heretic/releases/latest)
+
+Compare
+
+#  Choose a tag to compare 
+
+## Sorry, something went wrong.
+
+Filter 
+
+Loading
+
+## Sorry, something went wrong.
+
+###  Uh oh! 
+
+There was an error while loading. [Please reload this page]().
+
+## No results found
+
+[View all tags](/p-e-w/heretic/tags)
+
+[p-e-w](/p-e-w) released this  14 Jun 12:55 
+
+[ v1.4.0  ](/p-e-w/heretic/tree/v1.4.0)
+
+[ `6ea3b8d`](/p-e-w/heretic/commit/6ea3b8d778d047b4b3b7c5b843e21c5bea98ee8d)
+
+This commit was signed with the committer’s **verified signature**. 
+
+[ ](/p-e-w) [p-e-w](/p-e-w) Philipp Emanuel Wei...
+--
+11140:...3](https://github.com/p-e-w/heretic/pull/353)
+  * [@umran666](https://github.com/umran666) made their first contribution in [#356](https://github.com/p-e-w/heretic/pull/356)
+
+
+
+**Full Changelog** : [`v1.3.0...v1.4.0`](https://github.com/p-e-w/heretic/compare/v1.3.0...v1.4.0)
+
+### Contributors
+
+  * [ ](https://github.com/ricyoung)
+  * [ ](https://github.com/anrp)
+  * [ ](https://github.com/p-e-w)
+  * [ ](https://github.com/kabachuha)
+  * [ ](https://github.com/coder310...
+--
+12503:..., umran666, Chroma01, kevATin, and lin72h reacted with rocket emoji
+
+All reactions
+
+  * 👍 8 reactions
+  * 😄 3 reactions
+  * 🎉 7 reactions
+  * ❤️ 8 reactions
+  * 🚀 6 reactions
+
+
+
+19 people reacted
+
+## v1.3.0
+
+[v1.3.0](/p-e-w/heretic/releases/tag/v1.3.0)
+
+Compare
+
+#  Choose a tag to compare 
+
+## Sorry, something went wrong.
+
+Filter 
+
+Loading
+
+## Sorry, something went wrong.
+
+###  Uh oh! 
+
+There was an error while loading. [Please reload this page]().
+
+## No results found
+
+[View all tags](/p-e-w/heretic/tags)
+
+[p-e-w](/p-e-w) released this  05 May 14:36 
+
+[ v1.3.0  ](/p-e-w/heretic/tree/v1.3.0)
+
+[ `9b7624d`](/p-e-w/heretic/commit/9b7624ddfa69d97dde13615768566fd93c74f82c)
+
+This commit was signed with the committer’s **verified signature**. 
+
+[ ](/p-e-w) [p-e-w](/p-e-w) Philipp Emanuel Wei...
+--
+15328:...ann](https://github.com/AWuhrmann) fixed the example value for the `max_memory` setting in [#284](https://github.com/p-e-w/heretic/pull/284)
+  * [@p-e-w](https://github.com/p-e-w) added an integrated benchmarking system, made the response prefix logic configurable, implemented multiple infrastructure improvements, and fixed various minor issues
+
+
+
+## New Contributors
+
+  * [@cpagac](https://github.com/cpaga...
+--
+16563:...239](https://github.com/p-e-w/heretic/pull/239)
+  * [@olekssy](https://github.com/olekssy) made their first contribution in [#301](https://github.com/p-e-w/heretic/pull/301)
+
+
+
+**Full Changelog** : [`v1.2.0...v1.3.0`](https://github.com/p-e-w/heretic/compare/v1.2.0...v1.3.0)
+
+### Contributors
+
+  * [ ](https://github.com/farolone)
+  * [ ](https://github.com/p-e-w)
+  * [ ](https://github.com/olekssy)
+  * [ ](https://github.com/Diplo2by)
+  * [ ](https://github.com/AWuhrm...
+--
+17774:... Vinay-Umrethe, sneak-o-matic, and Chroma01 reacted with rocket emoji
+
+All reactions
+
+  * 👍 8 reactions
+  * 😄 1 reaction
+  * 🎉 7 reactions
+  * ❤️ 1 reaction
+  * 🚀 6 reactions
+
+
+
+16 people reacted
+
+## v1.2.0
+
+[v1.2.0](/p-e-w/heretic/releases/tag/v1.2.0)
+
+Compare
+
+#  Choose a tag to compare 
+
+## Sorry, something went wrong.
+
+Filter 
+
+Loading
+
+## Sorry, something went wrong.
+
+###  Uh oh! 
+
+There was an e...
+--
+[22 more matches not shown]

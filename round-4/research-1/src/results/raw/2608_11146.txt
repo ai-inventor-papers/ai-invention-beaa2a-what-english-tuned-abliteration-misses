@@ -1,0 +1,41 @@
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/abs/2608.11146
+Type: HTML
+Pattern: Abstract (1 matches in 8556 chars)
+
+--- Content ---
+
+2073:...h * [Advanced search](https://arxiv.org/search/advanced)
+
+# Computer Science > Computation and Language
+
+**arXiv:2608.11146** (cs) 
+
+[Submitted on 11 Aug 2026]
+
+# Title:The Illusion of Cross-Lingual Safety in Low-Resource Languages
+
+Authors:[Abigail Oppong](https://arxiv.org/search/cs?searchtype=author&query=Oppong,+A), [P Sam Sahil](https://arxiv.org/search/cs?searchtype=author&query=Sahil,+P+S), [Tadesse Destaw Belay](https://arxiv.org/search/cs?searchtype=author&query=Belay,+T+D), [Maryam Ibrahim Mukhtar](https://arxiv.org/search/cs?searchtype=author&query=Mukhtar,+M+I), [Esmael Ahmed Abdu](https://arxiv.org/search/cs?searchtype=author&query=Abdu,+E+A), [Tassallah Abdullahi](https://arxiv.org/search/cs?searchtype=author&query=Abdullahi,+T), [Jessica Oparebea](https://arxiv.org/search/cs?searchtype=author&query=Oparebea,+J), [Saminu Mohammad Aliyu](https://arxiv.org/search/cs?searchtype=author&query=Aliyu,+S+M), [Idris Abdulmumin](https://arxiv.org/search/cs?searchtype=author&query=Abdulmumin,+I), [Abubakar Juma Chilala](https://arxiv.org/search/cs?searchtype=author&query=Chilala,+A+J), [Nicholaus Dismas Ladislaus](https://arxiv.org/search/cs?searchtype=author&query=Ladislaus,+N+D), [Alfred Malengo Kondoro](https://arxiv.org/search/cs?searchtype=author&query=Kondoro,+A+M), [Lemofouet Valdini Douglace](https://arxiv.org/search/cs?searchtype=author&query=Douglace,+L+V), [Shamsuddeen Hassan Muhammad](https://arxiv.org/search/cs?searchtype=author&query=Muhammad,+S+H), [Seid Muhie Yimam](https://arxiv.org/search/cs?searchtype=author&query=Yimam,+S+M)
+
+View a PDF of the paper titled The Illusion of Cross-Lingual Safety in Low-Resource Languages, by Abigail Oppong and 14 other authors
+
+[View PDF](/pdf/2608.11146) [HTML (experimental)](https://arxiv.org/html/2608.11146v1)
+
+> Abstract:Safety alignment in large language models (LLMs) is largely developed in English, assuming these safeguards generalize across multilingual settings. However, this assumption remains underexplored and exposes a vulnerability in low-resource languages. We investigate cross-lingual safety transfer in four African languages, Twi, Hausa, Amharic, and Swahili, using LoDNA, a new safety dataset that pairs literal translations with culturally localized prompts. To move beyond generation-based evaluation, we propose a latent geometric framework that probes hidden-state refusal representations in LLMs. Our experimental results show that cross-lingual safety transfer is severely limited; harmful prompts retain less than 10% of the English refusal signal across most language-model pairs. Literal and localized prompts are semantically aligned (cosine 0.95-0.996) but drift across layers, suggesting models encode the concepts without routing them to safety mechanisms. These findings demonstrate that current multilingual safety alignment is superficial, providing strong evidence against the assumption of a universal, language-agnostic harm manifold within the specific low-resource languages studied. Warning: This paper contains example data that may be offensive or harmful. 
+
+Subjects: |  Computation and Language (cs.CL)  
+---|---  
+Cite as: | [arXiv:2608.11146](https://arxiv.org/abs/2608.11146) [cs.CL]  
+  | (or  [arXiv:2608.11146v1](https://arxiv.org/abs/2608.11146v1) [cs.CL] for this version)   
+  |  <https://doi.org/10.48550/arXiv.2608.11146> Focus to learn more arXiv-issued DOI via DataCite  
+  
+## Submission history
+
+From: Idris Abdulmumin [[view email](/show-email/9b3aa39d/2608.11146)]   
+**[v1]** Tue, 11 Aug 2026 17:05:26 UTC (14,884 KB)  
+
+
+Full-text links:
+
+## Access Paper:
+...

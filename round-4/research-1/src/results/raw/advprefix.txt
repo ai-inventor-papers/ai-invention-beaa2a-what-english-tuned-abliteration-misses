@@ -1,0 +1,80 @@
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/pdf/2412.10321
+Type: PDF
+Pattern: misspecif|even when|incomplete|nuanced (62 matches in 56635 chars)
+
+--- Content ---
+
+28:AdvPrefix: An Objective for Nuanced LLM Jailbreaks
+Sicheng Zhu∗
+University of Maryland, College Park
+sczhu@umd.edu
+Brandon Amos
+FAIR, Meta
+bda@meta.com
+Yuandong Tian
+FAIR, Meta
+yuandong@meta.com
+Chuan Guo†
+FAIR, Meta
+chuanguo@meta.com
+Ivan Evtimov†
+FAIR, Meta
+ivanevtimov@meta.com
+Abstract
+Many jailbreak attacks on large language models (LLMs) rely on a common
+objective: making the model respond with the prefix “Sure, here is (harmful
+request)”. While straightforward, this objective has two limitations: limited control
+over model behaviors, yielding incomplete or unrealistic jailbroken responses, and
+a rigid format that hinders optimization. We introduce AdvPrefix, a plug-and-
+play prefix-forcing objective that selects one or more model-dependent prefixes
+by combining two criteria: high prefilling attack success rates and low negative
+log-likelihood. AdvPrefix integrates seamlessly into existing jailbreak attacks to
+mitigate the previous limitations for free. For example, replacing GCG’s default
+prefixes on Llama-3 improves nuanced attack success rates from 14% to 80%,
+revealing that current safety alignment fails to generalize to new prefixes. Code and
+selected prefixes are released in github.com/facebookresearch/jailbreak-objectives.
+Warning: This paper includes language that could be considered inappropriate or
+harmful.
+1
+...
+--
+2539:...component of automated jailbreaks is their optimization objective. Many attacks [Zou et al.,
+2023, Liu et al., 2023a, Andriushchenko et al., 2024, Wu et al., 2025] aim to elicit a generic prefix like
+“Sure, here is [harmful request]”. However, this common objective suffers from two key limitations:
+Misspecified: even with low optimization loss, actual responses are often incomplete or unfaithful
+(Figure 1), failing to produce genuinely harmful content [Vidgen et al., 2024]. Overconstrained:
+rigid, handcrafted prefixes can be unnatural for LLMs (e.g., Llama-3 prefers “Here...” rather than
+“Sure...”), complicating optimization [Zhang et al., 2025b]. These issues are particularl...
+--
+3971:...xes using uncensored LLMs
+and selecting model-dependent prefixes based on two criteria.
+While recent works explore alternative jailbreak objectives [Jia et al., 2024, Xie et al., 2024, Zhou
+and Wang, 2024, Thompson and Sklar, 2024, Sclar et al., 2025, Zhang et al., 2025a], systematically
+addressing misspecification and overconstraint remains challenging, hindered by difficulties in
+estimating autoregressive model’s rare behaviors [Jones et al., 2025] and by hard token constraints in
+jailbreak threat models. In this paper, we propose AdvPrefix, an adaptive prefix-forcing objective that
+addresses these limitations. Our contributions are as follows:
+Nuanced evaluation (§2). We first meta-evaluate three existing jailbreak evaluation methods
+[Mazeika et al., 2024, Souly et al., 2024, Chao et al., 2024], counting only complete and faithful
+responses as successful jailbreaks (Figure 6). We find that while StrongReject [Souly et al., 2024]
+is relatively accurate, others can overestimate attack success rates (ASR) by up to 30% (Figure 2).
+We then refine evaluation by developing an improved judge and a preference-based judge to better
+capture nuanced harmfulness, which reveals that the original objective is both misspecified and
+overconstrained (§3).
+New objective (§4). We propose a new prefix-forcing objective that uses model-dependent prefixes
+selected based on two criteria: high prefilling ASR (to ensure they lead to complete and faithful
+harmful responses, reducing misspecification) and low initial negative log-likelihood (NLL) (to ensure
+they are easy to elicit, mitigating overconstraints). The objective also supports using multiple target
+prefixes for a single request to further simplify optimization. Our approach includes an automatic
+pipeline for selecting these prefixes from either rule-based constructions or uncensored LLMs (not
+necessarily the uncensored target LLM), while seamlessly integrating into existing attacks.
+Empirical findings (§5). Integrating AdvPrefix into GCG and AutoDAN [Zhu et al., 2023] signif-
+icantly increases nuanced ASR across Llama-2, 3, 3.1, and Gemma-2. For instance, GCG’s ASR
+on Llama-3 improves from 16% to 70%, highlighting that current safety alignments struggle to
+generalize to unseen prefixes. By addressing misspecification, AdvPrefix uniquely benefits from
+stronger optimization, enabling further ASR gains (to 80% on Llama-3 with full prompt optimization).
+Preference evaluations also show responses elicited by our objective are substantially more harmful
+(comparable to some uncensored LLMs)3. Our objective impr...
+--
+[50 more matches not shown]

@@ -1,0 +1,97 @@
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/pdf/2607.02714v1
+Type: PDF
+Pattern: middle layer|2-3|2–3|two to three|two or three|few layers|as effective as|all layers|single layer (6 matches in 46580 chars)
+
+--- Content ---
+
+16170:...t support extraction of middle-layer activations), and direct safetensors
+modification for weight application. The pipeline is written fully in Python.
+3.2
+Layer Selection Strategies
+Layer selection is a critical element of the process. Arditi et al. found that abliterating a narrow local
+region of 2–3 middle layers can be as effective as ablating across all layers, and applied their technique
+to all layers’ WO and Wout plus the embedding matrix. We found that this does not generalize to
+the broader set of modern models in our study: refusal in many architectures is distributed more
+widely, particularly in MoE models with hundreds of experts per layer. Thus, in our main experiment
+we opted for uniform...
+--
+39281:...
+(Al), Google (Go), Microsoft (Ms), Mistral (Mi), Moonshot (Mo), DeepSeek (DS), Zhipu (Zh), Allen
+AI (AA).
+Model
+Params
+Arch
+Dev
+Safety
+License
+Class
+Qwen3-0.6B
+0.6B
+Dense
+Al
+GRPO
+Apache 2.0
+Partial
+Gemma-3-1B
+1B
+Dense
+Go
+BOND+
+Gemma
+High
+Llama-3.2-1B
+1.3B
+Dense
+Me
+PPO+DPO
+Llama 3.2 CL
+High
+Llama-3.2-3B
+3.2B
+Dense
+Me
+PPO+DPO
+Llama 3.2 CL
+High
+Phi-4-mini
+3.8B
+Dense
+Ms
+DPO+GOAT
+MIT
+High
+OLMoE-1B-7B
+7B/1B
+MoE
+AA
+DPO
+Apache 2.0
+High
+Llama-3.1-8B
+8B
+Dense
+Me
+PPO+DPO
+Llama 3.1 CL
+High
+Qwen3-8B
+8.2B
+Dense
+Al
+GRPO
+Apache 2.0
+High
+Gemma-3-12B
+12B
+Dense
+Go
+BOND+
+Gemma
+Partial
+Phi-4
+14B
+Dense
+Ms
+DPO+GOAT
+MI...

@@ -1,0 +1,550 @@
+[
+ {
+  "index": 1,
+  "url": "https://arxiv.org/abs/2406.11717",
+  "title": "Refusal in Language Models Is Mediated by a Single Direction",
+  "summary": "Establishes the single-direction result and the all-layer/all-position default this run's placement question departs from.",
+  "supporting_passages": [
+   {
+    "quote": "we show that refusal is mediated by a one-dimensional subspace, across 13 popular open-source chat models up to 72B parameters in size",
+    "locator": "abstract"
+   }
+  ],
+  "authors": [
+   "Andy Arditi",
+   "Oscar Obeso",
+   "Aaquib Syed",
+   "Daniel Paleka",
+   "Nina Panickssery",
+   "Wes Gurnee",
+   "Neel Nanda"
+  ],
+  "year": 2024
+ },
+ {
+  "index": 2,
+  "url": "https://arxiv.org/pdf/2406.11717v3",
+  "title": "Refusal in Language Models Is Mediated by a Single Direction (full text, v3)",
+  "summary": "Full text used to check whether Arditi et al. anywhere claim that a narrow region of 2-3 middle layers suffices; they specify all-layer ablation and orthogonalisation of every residual-stream writer.",
+  "supporting_passages": [
+   {
+    "quote": "activations at all layers and all token positions",
+    "locator": "Sec. 3.1"
+   },
+   {
+    "quote": "In a transformer architecture, the matrices that write to the residual stream are: the embedding matrix,",
+    "locator": "Sec. 4.1"
+   }
+  ]
+ },
+ {
+  "index": 3,
+  "url": "https://arxiv.org/abs/2505.17306",
+  "title": "Refusal Direction is Universal Across Safety-Aligned Languages",
+  "summary": "The direction-universality result this run's cross-lingual claim is positioned against; 14 languages, Slovene not among them.",
+  "supporting_passages": [
+   {
+    "quote": "a vector extracted from English can bypass refusals in other languages with near-perfect effectiveness, without any additional fine-tuning",
+    "locator": "abstract"
+   }
+  ],
+  "year": 2025
+ },
+ {
+  "index": 4,
+  "url": "https://arxiv.org/pdf/2505.17306",
+  "title": "Refusal Direction is Universal Across Safety-Aligned Languages (full text)",
+  "summary": "Full text confirming the intervention is all-layer, all-position activation ablation, and listing the 14 languages and three instruct model families evaluated.",
+  "supporting_passages": [
+   {
+    "quote": "ablation is applied across all layers and token positions to comprehensively eliminate refusal",
+    "locator": "Sec. 3"
+   }
+  ]
+ },
+ {
+  "index": 5,
+  "url": "https://arxiv.org/abs/2301.04213",
+  "title": "Does Localization Inform Editing? Surprising Differences in Causality-Based Localization vs. Knowledge Editing in Language Models",
+  "summary": "The canonical prior statement that a localisation measurement does not tell you where to make a weight edit; factual knowledge, ROME/MEMIT, English.",
+  "supporting_passages": [
+   {
+    "quote": "localization conclusions from representation denoising (also known as Causal Tracing) do not provide any insight into which model MLP layer would be best to edit in order to override an existing stored fact with a new one",
+    "locator": "abstract"
+   }
+  ],
+  "authors": [
+   "Peter Hase",
+   "Mohit Bansal",
+   "Been Kim",
+   "Asma Ghandeharioun"
+  ],
+  "year": 2023
+ },
+ {
+  "index": 6,
+  "url": "https://arxiv.org/abs/2609.22135",
+  "title": "Read-Best Is Not Steer-Best: A Probing-Steering Layer Dissociation in Omni-Modal Large Language Models",
+  "summary": "Effect-based site selection: probe-best and steer-best layers dissociate, causally tested in three omni-modal models on emotion; not refusal, not language, not weight edits.",
+  "supporting_passages": [
+   {
+    "quote": "Probe-best layers vary widely across architectures, while steering-effective layers consistently fall within a narrow mid-to-late range of normalized depth.",
+    "locator": "abstract"
+   }
+  ],
+  "year": 2026
+ },
+ {
+  "index": 7,
+  "url": "https://arxiv.org/abs/2608.05164",
+  "title": "Cross-Architecture Steering Transfer in Language Models: A Systematic Empirical Study",
+  "summary": "Cross-model steering transfer via SAE feature alignment over 15 semantic domains; establishes a scale threshold for transferability, but studies neither refusal nor language.",
+  "supporting_passages": [
+   {
+    "quote": "Cross-model steering vectors (B3-TI) achieve a 71.0% win rate across 15 supervised concepts versus 68.0% for same-model native vectors",
+    "locator": "abstract"
+   }
+  ],
+  "year": 2026
+ },
+ {
+  "index": 8,
+  "url": "https://arxiv.org/abs/2606.00926",
+  "title": "Refit the Probe: Single-Direction Ablation Is Not a Necessity Test",
+  "summary": "Shows in text LMs that readability and ablation damage peak at different depths, and that single-direction ablation does not establish necessity.",
+  "supporting_passages": [
+   {
+    "quote": "The correction also separates where a variable is most readable from where deleting it does most damage, and those are not the same layer in any pretrained model we study.",
+    "locator": "abstract"
+   }
+  ],
+  "year": 2026
+ },
+ {
+  "index": 9,
+  "url": "https://arxiv.org/html/2606.00926",
+  "title": "Refit the Probe (HTML full text)",
+  "summary": "Body sentence making the probe-best vs ablation-best separation explicit and noting Hase et al. reach the same shape from another pair of measurements.",
+  "supporting_passages": [
+   {
+    "quote": "the layer with the highest probe accuracy is not the layer with the largest ablation response, in every pretrained model we ran, and a profile is fixed by neither measurement alone",
+    "locator": "discussion section"
+   }
+  ]
+ },
+ {
+  "index": 10,
+  "url": "https://arxiv.org/abs/2604.15557",
+  "title": "Predicting Where Steering Vectors Succeed",
+  "summary": "A cheap training-free predictor of steering effectiveness and layer choice; the kind of instrument this run tried and failed to build in weight-edit space, never raced here.",
+  "supporting_passages": [
+   {
+    "quote": "peak $A_{\\mathrm{lin}}$ predicts steering effectiveness at $\\rho = +0.86$ to $+0.91$ and layer selection at $\\rho = +0.63$ to $+0.92$",
+    "locator": "abstract"
+   }
+  ],
+  "authors": [
+   "Jayadev Billa"
+  ],
+  "year": 2026
+ },
+ {
+  "index": 11,
+  "url": "https://arxiv.org/abs/2609.14151",
+  "title": "Signatures of Steerability in Activation Space of Language Models",
+  "summary": "Cheap separability statistics predict steerability; supports the view that simple diagnostics can beat elaborate geometry.",
+  "supporting_passages": [
+   {
+    "quote": "simple separation metrics strongly correlate with the downstream steerability of language models across diverse settings, even after controlling for layers and dataset effects",
+    "locator": "abstract"
+   }
+  ]
+ },
+ {
+  "index": 12,
+  "url": "https://arxiv.org/html/2609.04721",
+  "title": "Locating and Steering Refusal Beyond Attention",
+  "summary": "The nearest published statement that direction cosine is unreliable as a transfer predictor - for cross-architecture transport, with a mapped-random control.",
+  "supporting_passages": [
+   {
+    "quote": "source direction can map to a high cosine, up to 0.515 across our pairs",
+    "locator": "Appendix A.6"
+   },
+   {
+    "quote": "A cross-architecture transfer claim should therefore rest on the structural and behavioral specificity controls, not on a geometric similarity score.",
+    "locator": "Appendix A.6"
+   }
+  ]
+ },
+ {
+  "index": 13,
+  "url": "https://arxiv.org/html/2607.02714v2",
+  "title": "Not All Refusals Are Equal: How Safety Alignment Fails Cybersecurity at Scale (HTML v2)",
+  "summary": "Contains the inherited '2-3 middle layers' sentence in Sec. 3.2 as an attribution to Arditi et al., immediately followed by the authors' statement that it does not generalise.",
+  "supporting_passages": [
+   {
+    "quote": "abliterating a narrow local region of 2\u20133 middle layers can be as effective as ablating across all layers",
+    "locator": "Sec. 3.2, Layer Selection Strategies"
+   },
+   {
+    "quote": "We found that this does not generalize to the broader set of modern models in our study: refusal in many architectures is distributed more widely",
+    "locator": "Sec. 3.2"
+   }
+  ],
+  "year": 2026
+ },
+ {
+  "index": 14,
+  "url": "https://arxiv.org/pdf/2607.02714v2",
+  "title": "Not All Refusals Are Equal (PDF v2)",
+  "summary": "Same Sec. 3.2 in the PDF, plus the layer-selection comparison: uniform spread beat signal-norm-based selection by up to ~70pp of additional refusal reduction across 24 models.",
+  "supporting_passages": [
+   {
+    "quote": "substantially outperform norm-based selection (targeting layers with the highest refusal signal norm)",
+    "locator": "Sec. 3.2"
+   }
+  ]
+ },
+ {
+  "index": 15,
+  "url": "https://arxiv.org/abs/2608.01414",
+  "title": "No Single Neuron of Failure: Distributed Safety Alignment Against White-Box Attacks",
+  "summary": "Training-time defence that makes safety redundantly distributed; the distributed-safety line this run's depth localisation is positioned against.",
+  "supporting_passages": [
+   {
+    "quote": "we propose distributed safety alignment (DSA), which redundantly encodes safety capabilities across multiple computational neurons",
+    "locator": "abstract"
+   }
+  ],
+  "year": 2026
+ },
+ {
+  "index": 16,
+  "url": "https://arxiv.org/abs/2608.11583",
+  "title": "Localizing Safety Alignment: MLP Layers and Mid-Network Blocks Encode Refusal Behavior in Large Language Models",
+  "summary": "Weight-space localisation of refusal to mid-network MLP blocks, with an explicitly non-additive composition - the closest published parallel to this run's concentrate-beats-spread result.",
+  "supporting_passages": [
+   {
+    "quote": "the block spanning layers 8-11 is selected first in all six greedy searches over model-dataset pairs",
+    "locator": "abstract"
+   },
+   {
+    "quote": "in five of six greedy trajectories, adding more aligned blocks can reduce refusal performance",
+    "locator": "abstract"
+   }
+  ],
+  "year": 2026
+ },
+ {
+  "index": 17,
+  "url": "https://arxiv.org/abs/2608.08032",
+  "title": "Decided Upstream, Written Late: Locating and Pricing the Cross-Lingual Refusal Circuit of a Multilingual MoE",
+  "summary": "Cross-lingual mechanism paper: harm detection is shared and mid-network while the refusal write is late and orthogonal; independent support for shared representation with language-specific execution.",
+  "supporting_passages": [
+   {
+    "quote": "Harm is encoded as an internal direction that is nearly language-invariant in mid-network",
+    "locator": "abstract"
+   }
+  ],
+  "year": 2026
+ },
+ {
+  "index": 18,
+  "url": "https://arxiv.org/pdf/2608.08032",
+  "title": "Decided Upstream, Written Late (PDF)",
+  "summary": "Body evidence that the language-shared harm signal is realised through near-disjoint expert sets by the output.",
+  "supporting_passages": [
+   {
+    "quote": "routing Jaccard between Indic languages and English collapses from 0.43 at L11 to 0.03 at L18",
+    "locator": "Appendix C"
+   }
+  ]
+ },
+ {
+  "index": 19,
+  "url": "https://arxiv.org/abs/2402.10260",
+  "title": "A StrongREJECT for Empty Jailbreaks",
+  "summary": "Establishes that existing non-refusal/substring evaluation overstates jailbreak success relative to human judgement.",
+  "supporting_passages": [
+   {
+    "quote": "we find that existing evaluation methods significantly overstate jailbreak effectiveness compared to human judgments and the StrongREJECT evaluator",
+    "locator": "abstract"
+   }
+  ],
+  "year": 2024
+ },
+ {
+  "index": 20,
+  "url": "https://arxiv.org/pdf/2402.10260",
+  "title": "A StrongREJECT for Empty Jailbreaks (full text)",
+  "summary": "Body sentence naming string matching for non-refusal as the most biased automated evaluator tested.",
+  "supporting_passages": [
+   {
+    "quote": "Most of the baseline automated evaluators overestimate how effective jailbreak methods are on",
+    "locator": "Sec. 3.2"
+   }
+  ]
+ },
+ {
+  "index": 21,
+  "url": "https://arxiv.org/pdf/2308.01263",
+  "title": "XSTest: A Test Suite for Identifying Exaggerated Safety Behaviours in Large Language Models",
+  "summary": "Source of the partial-compliance class as a first-class annotation category alongside full compliance and full refusal.",
+  "supporting_passages": [
+   {
+    "quote": "Partial refusal is any combination of refusal and compliance within the same response.",
+    "locator": "Table 4 caption"
+   }
+  ],
+  "year": 2024
+ },
+ {
+  "index": 22,
+  "url": "https://arxiv.org/abs/2609.00498",
+  "title": "Validity-Aware Jailbreak Evaluation for Large Language Models",
+  "summary": "Shows that enforcing validity reclassifies a large share of previously labelled jailbreak successes as invalid; motivates an explicit INVALID class.",
+  "supporting_passages": [
+   {
+    "quote": "reclassifies 22.1\\%--51.0\\% of sampled prior-labeled successes as invalid across three of four public benchmarks",
+    "locator": "abstract"
+   }
+  ],
+  "year": 2026
+ },
+ {
+  "index": 23,
+  "url": "https://arxiv.org/abs/2412.10321",
+  "title": "AdvPrefix: An Objective for Nuanced LLM Jailbreaks",
+  "summary": "The closest neighbour on the SELECTION side: a misspecified objective inside an optimiser yields low loss without the intended behaviour, and repairing it changes what the search finds.",
+  "supporting_passages": [
+   {
+    "quote": "this objective has two limitations: limited control over model behaviors, yielding incomplete or unrealistic jailbroken responses, and a rigid format that hinders optimization",
+    "locator": "abstract"
+   }
+  ],
+  "authors": [
+   "Sicheng Zhu",
+   "Brandon Amos",
+   "Yuandong Tian",
+   "Chuan Guo",
+   "Ivan Evtimov"
+  ],
+  "year": 2024
+ },
+ {
+  "index": 24,
+  "url": "https://arxiv.org/abs/2606.25487",
+  "title": "How Reliable Is Your Jailbreak Judge? Calibration and Adversarial Robustness of Automated ASR Scoring",
+  "summary": "Shows automated ASR judges disagree with humans and each other and are attackable; supports reporting judge-sensitivity ranges rather than a single number.",
+  "supporting_passages": [
+   {
+    "quote": "Wrappers that leave the harmful text untouched and only add benign framing flip every LLM-judge between 57% and 100% of the time",
+    "locator": "abstract"
+   }
+  ],
+  "year": 2026
+ },
+ {
+  "index": 25,
+  "url": "https://arxiv.org/abs/2407.03211",
+  "title": "How Does Quantization Affect Multilingual LLMs?",
+  "summary": "Automatic metrics severely underestimate non-English degradation relative to human evaluation; bounds this run's automatic-only utility reading under NF4.",
+  "supporting_passages": [
+   {
+    "quote": "a 1.7% average drop in Japanese across automatic tasks corresponds to a 16.0% drop reported by human evaluators on realistic prompts",
+    "locator": "abstract"
+   }
+  ],
+  "year": 2024
+ },
+ {
+  "index": 26,
+  "url": "https://arxiv.org/abs/2608.22490",
+  "title": "Who Pays More for Safety? Measuring the Disparate Cost of Safety Alignment across Languages",
+  "summary": "Uses abliterated checkpoints as the unaligned counterfactual across languages - the practice this run's negative bears on.",
+  "supporting_passages": [
+   {
+    "quote": "non-English users consistently bear a higher Safety Cost than English users",
+    "locator": "abstract"
+   }
+  ],
+  "year": 2026
+ },
+ {
+  "index": 27,
+  "url": "https://arxiv.org/abs/2606.07535",
+  "title": "Multilingual Refusal Alignment for Safer Large Language Models (RefusEU)",
+  "summary": "Source of the official EN/SL evaluation data used by this run, and a second instance of abliteration used as an unaligned reference.",
+  "supporting_passages": [
+   {
+    "quote": "aligning models exclusively in English is insufficient to ensure cross-lingual safety, even for the same harm categories",
+    "locator": "abstract"
+   }
+  ],
+  "year": 2026
+ },
+ {
+  "index": 28,
+  "url": "https://arxiv.org/abs/2609.22144",
+  "title": "Multilingual Safety Signals Are Multi-Layered: Filtering Safety-Degrading Data for Safer LLMs",
+  "summary": "The neighbour that most narrows this run's language-conditioned depth delta: language-specific safety-sensitive layers across 18 languages.",
+  "supporting_passages": [
+   {
+    "quote": "sensitive layers are only partially shared across languages, with safety-relevant signals often distributed across multiple layers",
+    "locator": "abstract"
+   }
+  ],
+  "year": 2026
+ },
+ {
+  "index": 29,
+  "url": "https://arxiv.org/abs/2605.23036",
+  "title": "Multilingual Steering by Design: Multilingual Sparse Autoencoders and Principled Layer Selection",
+  "summary": "A language-aware a priori layer-selection rule already exists for SAE-based language control, though not for safety.",
+  "supporting_passages": [
+   {
+    "quote": "steering layer-selection rule based on the intersection of multilingual alignment and language separability, which predicts effective intervention depths without exhaustive layerwise search",
+    "locator": "abstract"
+   }
+  ],
+  "year": 2026
+ },
+ {
+  "index": 30,
+  "url": "https://arxiv.org/abs/2608.11146",
+  "title": "The Illusion of Cross-Lingual Safety in Low-Resource Languages",
+  "summary": "Main published counterweight to direction universality; cross-lingual safety transfer is severely limited in four African languages.",
+  "supporting_passages": [
+   {
+    "quote": "harmful prompts retain less than 10% of the English refusal signal across most language-model pairs",
+    "locator": "abstract"
+   }
+  ],
+  "year": 2026
+ },
+ {
+  "index": 31,
+  "url": "https://arxiv.org/abs/2606.01196",
+  "title": "Low-Resource Safety Failures Are Action Failures, Not Representation Failures",
+  "summary": "Separates representation from action for cross-lingual safety and repairs by recalibration; supports this run's information-vs-mapping reading.",
+  "supporting_passages": [
+   {
+    "quote": "The relevant representation is present. Yet harmful refusal drops from 87.9% to 43.9%.",
+    "locator": "abstract"
+   }
+  ],
+  "year": 2026
+ },
+ {
+  "index": 32,
+  "url": "https://arxiv.org/abs/2608.24988",
+  "title": "Does Fine-Tuning Undo Activation Steering? Behavioural Recovery Without Weight-Edit Reversal",
+  "summary": "Published geometry/behaviour dissociation for a weight-embedded steering edit: geometry intact, behaviour reverted.",
+  "supporting_passages": [
+   {
+    "quote": "the weight edit survives almost untouched even where behaviour reverts: mean vector recovery is $\\rho = 0.004$",
+    "locator": "abstract"
+   }
+  ],
+  "year": 2026
+ },
+ {
+  "index": 33,
+  "url": "https://arxiv.org/pdf/2608.29936",
+  "title": "When Safety Speaks a Language: A Mechanistic Analysis of Safety-Language Identity Entanglement in LLMs",
+  "summary": "Safety features are entangled with language identity, so ablating them affects the output language - independent support for this run's language-identity dead end.",
+  "supporting_passages": [
+   {
+    "quote": "ablating safety features impacts not only harmful response rates but also target language",
+    "locator": "abstract"
+   }
+  ],
+  "year": 2026
+ },
+ {
+  "index": 34,
+  "url": "https://arxiv.org/html/2407.12404v1",
+  "title": "Analyzing the Generalization and Reliability of Steering Vectors",
+  "summary": "Steering effects are volatile across inputs and brittle out of distribution; grounds the refusal to treat one direction's effect as a stable model property.",
+  "supporting_passages": [
+   {
+    "quote": "In-distribution, steerability is highly variable across different inputs.",
+    "locator": "abstract"
+   }
+  ],
+  "year": 2024
+ },
+ {
+  "index": 35,
+  "url": "https://github.com/p-e-w/heretic",
+  "title": "Heretic: Fully automatic censorship removal for language models",
+  "summary": "The tool this run builds on; its objective is stated as co-minimising refusal count and KL divergence.",
+  "supporting_passages": [
+   {
+    "quote": "Heretic finds high-quality abliteration parameters by co-minimizing the number of refusals and the KL divergence from the original model.",
+    "locator": "README, overview section"
+   }
+  ]
+ },
+ {
+  "index": 36,
+  "url": "https://raw.githubusercontent.com/p-e-w/heretic/master/config.default.toml",
+  "title": "Heretic config.default.toml (master, accessed 2026-09-24)",
+  "summary": "Shows that the default optimisation objective on master is still the substring KeywordRate scorer plus KL divergence, over an English prompt set, with scorers now a plugin list.",
+  "supporting_passages": [
+   {
+    "quote": "{ plugin = \"heretic.scorers.keyword_rate.KeywordRate\", optimization = \"minimize\"}",
+    "locator": "scorers list"
+   }
+  ]
+ },
+ {
+  "index": 37,
+  "url": "https://github.com/p-e-w/heretic/pull/444",
+  "title": "Heretic PR #444: feat: add benchmark scorer",
+  "summary": "Merged benchmark scorer, dated; evidence that scorer plurality now exists in the tool.",
+  "supporting_passages": [
+   {
+    "quote": "feat: add benchmark scorer",
+    "locator": "pull request title; page shows 'Merged' and 'Sep 3, 2026'"
+   }
+  ]
+ },
+ {
+  "index": 38,
+  "url": "https://github.com/p-e-w/heretic/pull/445",
+  "title": "Heretic PR #445: feat: support specifying a dataset's specific config/subset",
+  "summary": "Merged dataset config/subset selection, which is what makes a multilingual construction set usable from the CLI.",
+  "supporting_passages": [
+   {
+    "quote": "feat: support specifying a dataset's specific config/subset",
+    "locator": "pull request title; page shows 'Merged' and 'Sep 5, 2026'"
+   }
+  ]
+ },
+ {
+  "index": 39,
+  "url": "https://huggingface.co/datasets/heretic-org/Multilingual-Harmless-Harmful",
+  "title": "heretic-org/Multilingual-Harmless-Harmful (dataset card, accessed 2026-09-24)",
+  "summary": "The community multilingual construction set for Heretic: nine subsets of 832 rows, with no Slovene and no Slavic language other than Russian.",
+  "supporting_passages": [
+   {
+    "quote": "bengali (832 rows)english (832 rows)french (832 rows)hindi (832 rows)italian (832 rows)korean (832 rows)marathi (832 rows)russian (832 rows)tamil (832 rows)",
+    "locator": "dataset viewer subset list"
+   }
+  ]
+ },
+ {
+  "index": 40,
+  "url": "https://www.lesswrong.com/posts/Sj92Atv6qwNn5JxbF/refusal-is-redundantly-distributed-not-localized-a-per-layer",
+  "title": "Refusal Is Redundantly Distributed, Not Localized: A Per-Layer Ablation Study on Llama-3.1-8B",
+  "summary": "Non-peer-reviewed per-layer replication showing no single layer is necessary for refusal in one English model.",
+  "supporting_passages": [
+   {
+    "quote": "ablating every layer except 12 performs identically to ablating all 32",
+    "locator": "TL;DR"
+   }
+  ],
+  "year": 2026
+ }
+]

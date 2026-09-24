@@ -1,0 +1,30 @@
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/html/2609.22135
+Type: HTML
+Pattern: weight|permanent|editing|abliterat|refusal (7 matches in 77499 chars)
+
+--- Content ---
+
+10703:...ation Engineering and Activation Steering
+
+Representation engineering, introduced by Zou et al. [67], treats high-level concepts as linear directions in activation space and intervenes on behavior by editing the residual stream. A family of methods in this vein extracts concept directions from contrastive activations and injects them additively, covering truthfulness, general behavior steering, and style or emotion control [27, 54, 41, 23], with roots in controllable text generation [10, 22, 24] and extensions to function vectors, in-context vectors, and refusal or conditional steering [53, 33, 4, 25]. Almost all of these treat steering as _single-layer_ injection with the layer chosen by probing signal or empirical search, tacitly assuming that where a conc...
+--
+12056:...uned lens [6] calibrates this readout, while linear probes are the standard tool for reading intermediate layers [2, 19, 5]. At the circuit level, FFN key-value memories [16, 15], factual-association editing [36], circuit analyses [57, 9], and sparse-autoencoder studies support a picture in which concepts exist as decomposable directions, aligning with the linear representation hypothesis [43, 42] and su...
+--
+15191:...LLM backbone, tokenizer, and modality-encoder lineage, so conclusions that hold across them are not easily attributed to shared components. All analyses are performed at inference time, with no model weights updated.
+
+### III-B Data
+
+The main analysis uses a self-constructed, fixed tri-modal sample set, M3: 5 emotions (anger / calm / fear / joy / sadness) ×\times 3 modalities (text / audio / image) ×\ti...
+--
+56484:...ot learning.  Advances in neural information processing systems 35, pp. 23716–23736.  Cited by: §II-C. 
+  * [4] A. Arditi, O. Obeso, A. Syed, D. Paleka, N. Panickssery, W. Gurnee, and N. Nanda (2024) Refusal in language models is mediated by a single direction.  Advances in Neural Information Processing Systems 37, pp. 136037–136083.  Cited by: §II-A. 
+  * [5] Y. Belinkov (2022) Probing classifiers: prom...
+--
+61424:...mputational Linguistics: EMNLP 2021,  pp. 4929–4952.  Cited by: §II-A. 
+  * [25] B. W. Lee, I. Padhi, K. Natesan Ramamurthy, E. Miehling, P. Dognin, M. Nagireddy, and A. Dhurandhar (2025) Programming refusal with conditional activation steering.  In International conference on learning representations,  Vol. 2025, pp. 90960–90985.  Cited by: §II-A. 
+  * [26] J. Li, D. Li, S. Savarese, and S. Hoi (2023) B...
+--
+63951:... describing and measuring individual differences in temperament.  Current psychology 14 (4), pp. 261–292.  Cited by: §II-C. 
+  * [36] K. Meng, D. Bau, A. Andonian, and Y. Belinkov (2022) Locating and editing factual associations in gpt.  Advances in neural information processing systems 35, pp. 17359–17372.  Cited by: §II-B. 
+  * [37] S. Merity, C. Xiong, J. Bradbury, and R. Socher (2016) Pointer sentine...
