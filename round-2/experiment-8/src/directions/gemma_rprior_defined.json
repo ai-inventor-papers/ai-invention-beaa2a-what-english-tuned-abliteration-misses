@@ -1,0 +1,22 @@
+{
+ "defined": true,
+ "n_refused_harmless": 30,
+ "counts": {
+  "en|jbb_benign|refused": 3,
+  "en|jbb_benign|complied": 41,
+  "en|jbb_benign|malformed": 0,
+  "en|jbb_benign|empty": 0,
+  "en|dolly|refused": 0,
+  "en|dolly|complied": 50,
+  "en|dolly|malformed": 0,
+  "en|dolly|empty": 0,
+  "sl|jbb_benign|refused": 23,
+  "sl|jbb_benign|complied": 21,
+  "sl|jbb_benign|malformed": 0,
+  "sl|jbb_benign|empty": 0,
+  "sl|dolly|refused": 4,
+  "sl|dolly|complied": 46,
+  "sl|dolly|malformed": 0,
+  "sl|dolly|empty": 0
+ }
+}

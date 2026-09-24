@@ -1,0 +1,15 @@
+{
+ "repo": "cjvt/GaMS3-12B-Instruct",
+ "sha": "1d0b27af5748784482600d24779409e7e1dc9adc",
+ "class": "AutoModelForCausalLM",
+ "L": 48,
+ "D": 3840,
+ "vram_gb": 7.5660032,
+ "gpu": "NVIDIA GeForce RTX 4090",
+ "torch": "2.11.0+cu128",
+ "transformers": "5.17.0",
+ "bnb": "0.50.2",
+ "peft": "0.21.0",
+ "template_sample": "<bos><start_of_turn>user\nYou are a helpful assistant.\n\nPROBE<end_of_turn>\n<start_of_turn>model\n",
+ "template_sha256": "5bc40b9640c55b2c0fd9670f229533366be53d2d2d47e5cd36f27901af35349e"
+}
