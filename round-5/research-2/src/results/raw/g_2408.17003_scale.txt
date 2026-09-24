@@ -1,0 +1,123 @@
+# grep https://arxiv.org/pdf/2408.17003  pattern=/scaling factor|scale the|layer range|\[[0-9]+, ?[0-9]+\]|upper bound|lower bound|Llama-2|Phi-3|gemma|Llama-3|language|Chinese|multilingual/  accessed 2026-09-24
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/pdf/2408.17003
+Type: PDF
+Pattern: scaling factor|scale the|layer range|\[[0-9]+, ?[0-9]+\]|upper bound|lower bound|Llama-2|Phi-3|gemma|Llama-3|language|Chinese|multilingual (233 matches in 99188 chars)
+
+--- Content ---
+
+76:Published as a conference paper at ICLR 2025
+SAFETY LAYERS
+IN ALIGNED LARGE LANGUAGE
+MODELS: THE KEY TO LLM SECURITY
+Shen Li1
+Liuyi Yao
+Lan Zhang1,2∗
+Yaliang Li∗
+1 University of Science and Technology of China
+2 Institute of Artificial Intelligence, Hefei Comprehensive National Science Center
+lishen02@m...
+--
+1704:...monstrate that the proposed approach can sig-
+nificantly preserve LLM security while maintaining performance and reducing
+computational resources compared to full fine-tuning.
+1
+INTRODUCTION
+Recent advancements in Large Language Models (LLMs) have showcased remarkable abilities in
+natural language generation. However, this progress is accompanied by the risk of producing harm-
+ful or biased outputs, especially when confronted with malicious prompts. To address this issue, the
+prevalent approach involves additiona...
+--
+4973:...zation. We define the initial safety layers as the range between the layer where this discrepancy
+first appears and where it begins to converge, as observed in the vector analysis. To further determine
+precise upper and lower bounds of the safety layers, we evaluated the impact of different layer ranges
+on the security of aligned LLMs by scaling the parameter weights of the layers within the range, and
+use the over-rejection phenomenon to quantify the changes in security. Ultimately, we identify the
+layers most critic...
+--
+9585:...ems and how this mechanism can be applied to the defense of the phenomenon of security degra-
+dation caused by parameter-level attacks (fine-tuning).
+Aligned LLMs. Four different aligned LLMs are included in this study: Llama-3-8B-Instruct (Meta,
+2024),Llama-2-7b-chat (Touvron et al., 2023), gemma-2b-it (Team et al., 2024), Phi-3-mini-4k-
+instruct (Abdin et al., 2024). They are from various publishers underscoring the generalizability of
+our findings across different aligned LLMs.
+Prompt Template for LLMs. During inference, the input instruction...
+--
+15051:...e similarities. To further illustrate the role of each layer in pro-
+cessing different types of query pairs, we calculate the mean and deviation of the r cosine similarity
+lists for each query pair type. The results for Phi-3-mini-4k-instruct are presented in Figure 1.
+Figure 1: The layer-wise cosine similarity analysis in Phi-3-mini-4k-instruct when exposed to
+Normal-normal, Malicious-malicious, and Normal-malicious query pairs during inference. The
+shaded region represents the fluctuation range of the cosine similarity list LC at each analysi...
+--
+18372:...ference results for several different aligned LLMs in Figure 2.
+Figure 2: The upper half shows the “Normal-Normal(N-N) Pairs” and “Normal-Malicious(N-M)
+Pairs” cosine similarity analysis results for each hidden layer of LLama-3-8B-Instruct, Llama-2-7B-
+Chat, Phi-3-mini-4k-instruct and gemma-2b-it. The lower half displays the mean angular difference
+between these two cases for each aligned LLM.
+It is observed from figure, in the first few layers, the curves show smooth and almost non-existent
+angle gaps, su...
+--
+19331:...entiate between normal and malicious
+queries, serving as evidence of the existence of safety layers.
+Pre-trained LLMs. We also examine the pre-trained versions of aligned LLMs before performing
+security alignment. Since Phi-3 did not release pre-trained version of their models, we focus on other
+three pre-trained LLMs. The “N-N Pair” and “N-M Pair” analysis for these pre-trained LLMs are
+shown in Figure 3. We found that the N-N and N-M curve...
+--
+23019:...imilarity analysis can
+enhances the model’s security, which is reflected in the reduction of the number of queries with
+propensity to answer in the malicious query dataset (Zou et al., 2023). For example, in the case of
+Llama-3-8b-Instruct, scaling the parameters of layers 7-12 by a factor of 1.2 reduces the number of
+queries inclined to generate answers from 29 to 9.
+3.4.2
+OVER-REJECTION IN SAFETY LAYER PARAMETER SCALING
+We define the safety ...
+--
+23608:...n the security of LLM comparing to
+other scaled range. However, when using LLM’s response to a malicious dataset as an indicator of
+how parameter scaling affects its security, a challenge arises: adjusting the upper and lower bounds
+of the scaled parameter range results in only minimal changes to this indicator because some aligned
+LLM exhibits strong security performance. For instance, when scaling the parameters by 1.2 times
+for layer ranges [6,12] and [7,12] of Llama-3-8b-Instruct, the number of queries the LLM is willing
+to answer from the malicious dataset (Zou et al., 2023) remains consistently low at 9.
+To address this, an alternative metric is needed to more effectively reflect the model’s safety perfor-
+mance. Scaling different layer ranges should reveal clearer and more pronounced trends in this new
+metric, helping to better identify the upper and lower boundaries of the safety layers. Recent stud-
+ies about the over-rejection phenomenon (Cui et al., 2024; Arditi et al., 2024; R¨ottger et al., 2023),
+where aligned LLMs will refuse to answer some non-malicious queries, especi...
+--
+25225:...t Do, each containing queries with potentially dangerous
+verbs but expressing non-malicious meanings. The number of queries rejected by the LLM in Do
+serves as an indicator Ro of security impact. Adjusting the upper and lower bounds of the scaled
+parameters reveals clear fluctuations in this metric. This is because the over-rejection phenomenon,
+being an additional effect of security alignment, is more sensitive to changes in the safety layer’s
+parameters. Therefore, the idicator Ro can serve as a more intuitive measure to help us further
+determine the upper and lower bounds of the safety layers.
+6
+
+Published as a conference paper at ICLR 2025
+3.4.3
+PROGRESSIVE SAFETY LAYERS LOCALIZATION ADJUSTING
+With cosine similarity analysis, parameters scaling and the over-rejection dataset Do, our ov...
+--
+26305:... 2. Use the over-rejection dataset Do to complete the inference and count the number of queries
+that the LLM refuses to answer as Ro to evaluate the tested LLM’s baseline degree of over-rejection.
+Step 3. By selecting a scaling factor α > 1, we up-scale the parameters within layers i to j. We
+then count the number of problems in dataset Do that the model refuses to answer, denoted as
+R[i,j]
+o
+. Next, we adjust the upper bound of the safety layers to j + k and measure the over-rejection
+metric R[i,j+k]
+o
+, where k can be negative or positive. There exists a k = ku such that R[i,j+ku]
+o
+is
+greater than R[i,j+ku±p]
+o
+for any p, and we confirm j + ku as the upper bound. After confirming
+the upper bound, we perform the same operation to adjust the lower bound of the safety layers,
+ultimately deriving the range with the largest number of rejected queries as the entire safety layers
+rang...
+--
+[203 more matches not shown]

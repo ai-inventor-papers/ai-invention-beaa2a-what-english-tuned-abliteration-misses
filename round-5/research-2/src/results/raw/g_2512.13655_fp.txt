@@ -1,0 +1,30 @@
+# grep https://arxiv.org/pdf/2512.13655  pattern=/can produce false positives/  accessed 2026-09-24
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/pdf/2512.13655
+Type: PDF
+Pattern: can produce false positives (1 matches in 53670 chars)
+
+--- Content ---
+
+17586:...below. Lower refusal rates indicate more
+effective refusal suppression.
+6/25
+
+• Attack Success Rate (ASR): The complement of refusal rate
+(ASR = 100% −Refusal Rate), representing the percentage of harmful prompts
+receiving non-refusal responses under the refusal detection heuristic.
+Refusal/ASR Validity: Refusal rate is computed using a marker-based heuristic to
+enable fast evaluation. Responses are normalized (lowercasing, removing emphasis markers,
+typographic apostrophe normalization, whitespace normalization) and classified as refusals
+if they contain any of a configurable list of marker substrings (e.g., “sorry”, “i cannot”, “i
+won’t”, “as an ai”, “illegal”, “unethical”). This approach can produce false positives
+(responses that mention safety language while still providing actionable content) and false
+negatives (refusals phrased without the selected markers). We therefore interpret refusal
+rate and ASR as coarse proxies for refusal suppression rather than ground-truth harmful
+content generation.
+Capability Preservation Metrics:
+A critical concern with abliteration is whether removing the refusal direction degrades
+general model capabilities. Weight modifications that are too aggressive may impair
+reasoning, knowledge recall, or language understanding. Capability retention is evaluated
+using three complementary benchmarks that test distinct cognitive abilities:
+• MMLU (Massive Multitask Language Un...

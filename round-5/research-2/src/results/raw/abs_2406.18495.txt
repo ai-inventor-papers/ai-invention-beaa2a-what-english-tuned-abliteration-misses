@@ -1,0 +1,30 @@
+# fetch https://arxiv.org/abs/2406.18495  accessed 2026-09-24
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/abs/2406.18495
+Type: HTML
+Length: 8922 chars (truncated)
+
+--- Content ---
+
+Skip to main content [](https://arxiv.org/IgnoreMe) [ ](https://arxiv.org/) [ Search ](https://arxiv.org/search) [Submit](https://arxiv.org/user/create) [Donate](https://info.arxiv.org/about/donate.html) [Log in](https://arxiv.org/login)
+
+Search arXiv
+
+Press Enter to search * [Advanced search](https://arxiv.org/search/advanced)
+
+# Computer Science > Computation and Language
+
+**arXiv:2406.18495** (cs) 
+
+[Submitted on 26 Jun 2024 ([v1](https://arxiv.org/abs/2406.18495v1)), last revised 9 Dec 2024 (this version, v3)]
+
+# Title:WildGuard: Open One-Stop Moderation Tools for Safety Risks, Jailbreaks, and Refusals of LLMs
+
+Authors:[Seungju Han](https://arxiv.org/search/cs?searchtype=author&query=Han,+S), [Kavel Rao](https://arxiv.org/search/cs?searchtype=author&query=Rao,+K), [Allyson Ettinger](https://arxiv.org/search/cs?searchtype=author&query=Ettinger,+A), [Liwei Jiang](https://arxiv.org/search/cs?searchtype=author&query=Jiang,+L), [Bill Yuchen Lin](https://arxiv.org/search/cs?searchtype=author&query=Lin,+B+Y), [Nathan Lambert](https://arxiv.org/search/cs?searchtype=author&query=Lambert,+N), [Yejin Choi](https://arxiv.org/search/cs?searchtype=author&query=Choi,+Y), [Nouha Dziri](https://arxiv.org/search/cs?searchtype=author&query=Dziri,+N)
+
+View a PDF of the paper titled WildGuard: Open One-Stop Moderation Tools for Safety Risks, Jailbreaks, and Refusals of LLMs, by Seungju Han and 7 other authors
+
+[View PDF](/pdf/2406.18495) [HTML (experimental)](https://arxiv.org/html/2406.18495v3)
+
+> Abstract:We introduce WildGuard -- an open, light-weight moderation tool for LLM safety that achieves three goals: (1) identifying malicious intent in user prompts, (2) detecting safety risks of model responses, and (3) determining model refusal rate. Together, WildGuard serves the increasing needs for automatic safety moderation and evaluation of LLM interactions, providing a one-stop tool with enhanced accuracy and broad coverage across 13 risk categories. While existing open moderation tools such as Llama-Guard2 score reasonably well in classifying straightforward model interactions, they lag far behind a prompted GPT-4, especially in identifying adversarial jailbreaks and in evaluating models' refusals, a key measure for evaluating safety behaviors in model responses.   
+> To address these challenges, we construct WildGuardMix, a large-scale and carefully balanced multi-task safety moderation dataset with 92K labeled examples that cover vanilla (direct) prompts and adversarial jailbreaks, paired with various refusal and compliance responses. WildGuardMix is a combination of WildGuardTrain, the training data of WildGuard, and WildGuardTest, a high-quality human-annotated moderation test set with 5K labeled items covering broad risk scenarios. Through extensive evaluations on WildGuardTest and ten existing public benchmarks, we show that WildGuard establishes state-of-the-art performance in open-source safety moderation across all the three tasks compared to ten stro

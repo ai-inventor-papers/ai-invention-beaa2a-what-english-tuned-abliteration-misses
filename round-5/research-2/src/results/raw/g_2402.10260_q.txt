@@ -1,0 +1,41 @@
+# grep https://arxiv.org/pdf/2402.10260  pattern=/overestimate how effective|string matching for non-refusal|lack of an explicit refusal/  accessed 2026-09-24
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/pdf/2402.10260
+Type: PDF
+Pattern: overestimate how effective|string matching for non-refusal|lack of an explicit refusal (4 matches in 84882 chars)
+
+--- Content ---
+
+9227:... oversight of past automated evaluation methods is their over-emphasis–
+and often exclusive focus–on non-refusal, defining a jailbreak as “successful” merely if the victim
+model’s response does not explicitly refuse to answer the jailbroken prompt [33, 39, 40, 27, 38]. But
+as shown in Figure 1, the lack of an explicit refusal does not mean the victim model has provided
+useful information related to a forbidden prompt.
+The StrongREJECT benchmark.
+To address these issues, we present a new benchmark—the
+Strong, Robust Evaluation of Jailbreaks at Evading Censorship Techniques (StrongREJECT).
+StrongREJECT consists of a datas...
+--
+21300:...s additional details regarding human evaluations.
+Baseline automated evaluators.
+We used six previous automated evaluators and the concurrently
+released HarmBench evaluator as baselines against which to compare our StrongREJECT automated
+evaluator. The baseline automated evaluators we chose were:
+• String matching for non-refusal. A simple search for matching strings indicating the
+model refused to respond to the forbidden prompt [27].
+• Jailbroken - binary. An LLM prompt designed to assess whether the victim model refused
+to respond to the forbidden prompt [2].
+• PICT. An LLM prompt designed to assess whether the victim mo...
+--
+23734:... judges, we bold the scores
+for the two best automated evaluators.
+StrongREJECT is less biased than automated evaluators in prior work.
+Column 1 in Table 1
+shows the bias of all the automated evaluators, considering human evaluations to be the ground
+truth. Most of the baseline automated evaluators overestimate how effective jailbreak methods are on
+average, especially string matching for non-refusal. The lone exception is the moderation API, which
+systematically underestimates jailbreak methods. By contrast, both versions of the StrongREJECT
+evaluator and HarmBench exhibit almost no bias.
+StrongREJECT is the most accurate automated evaluator.
+Table 1 column 2 displays the
+mean absolute error (...

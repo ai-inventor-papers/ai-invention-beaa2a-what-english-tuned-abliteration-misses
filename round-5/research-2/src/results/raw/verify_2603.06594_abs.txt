@@ -1,0 +1,9 @@
+# grep https://arxiv.org/abs/2603.06594  pattern=/existing validation protocols fail to account for substantial distribution shifts inherent to red-teaming/  accessed 2026-09-24
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/abs/2603.06594
+Type: HTML
+Pattern: existing validation protocols fail to account for substantial distribution shifts inherent to red-teaming (1 matches in 8230 chars)
+
+--- Content ---
+
+1783:... processing. For instance, in safety evaluation, these judges are relied upon to evaluate harmfulness in order to benchmark the robustness of safety against adversarial attacks. However, we show that existing validation protocols fail to account for substantial distribution shifts inherent to red-teaming: diverse victim models exhibit distinct generation styles, attacks distort output patterns, and semantic ambiguity varies significantly across jailbreak scenarios. Through a comprehensive audit using...

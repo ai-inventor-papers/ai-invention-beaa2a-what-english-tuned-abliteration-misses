@@ -1,0 +1,44 @@
+# search 'abliteration layer selection comparison middle layers versus all layers refusal removal cross-lingual' mode=general accessed 2026-09-24
+Search: abliteration layer selection comparison middle layers versus all layers refusal removal cross-lingual  [general via ddgs]
+Found: 10 results
+
+1. Projected Abliteration
+   https://huggingface.co/blog/grimjim/projected-abliteration
+   October 25, 2025 - Layer-wise intervention strategy: Gemma 3 comprises repeating blocks of 5 local attention layers followed by 1 global attention layer (48 layers total, numbered 0-47). We measured r...
+
+2. Comparative Analysis of LLM Abliteration Methods:
+   https://arxiv.org/pdf/2512.13655
+   ASR should be interpreted as a proxy for refusal suppression rather than a definitive ... GSM8K: −0.28 pp, HellaSwag: −0.08 pp), followed by DECCP (GSM8K: −0.13 pp). Heretic demonstrated model-specifi...
+
+3. OBLITERATUS: Mapping the Geometry of Refusal Inside Large Language Models
+   https://themenonlab.blog/blog/obliteratus-abliteration-llm-refusal-removal/
+   April 9, 2026 - OBLITERATUS is an open-source toolkit that uses mechanistic interpretability to locate and remove refusal directions in transformer weights — without retraining. Understanding how refu...
+
+4. Norm-Preserving Biprojected Abliteration
+   https://huggingface.co/blog/grimjim/norm-preserving-biprojected-abliteration
+   November 7, 2025 - Contrary to conventional wisdom ... our norm-preserving approach improved reasoning performance over the baseline model (NatInt: 21.33 vs 18.72), while achieving effective refusal r...
+
+5. Abliteration Mitigation via Refusal Aliases
+   https://arxiv.org/html/2608.18093
+   Content selection saved. Describe the issue below: · Abliteration, the removal of refusal capabilities from large language models by projecting weight matrices orthogonal to an extracted refusal direc...
+
+6. Middle-Layer Representation Alignment for Cross-Lingual ...
+   https://aclanthology.org/2025.acl-long.778.pdf
+   Globerson. 2019. Cross-lingual alignment of con-...
+
+7. Abliteration Is Not a Scalpel:Off-Target Effects of Refusal Removal on Decision Disposition Across Model Families
+   https://arxiv.org/html/2607.17427v1
+   July 19, 2026 - Read together with §4.2: abliteration thins the vocabulary of doubt in both families (the direction the pilot called "excision of doubt"), while the stated confidence number moves in f...
+
+8. What is abliteration? - abliteration.ai
+   https://docs.abliteration.ai/what-is-abliteration
+   4 weeks ago - Projects that direction out of the model’s weight matrices — both attention and MLP layers — so the refusal subspace can no longer be activated. Leaves everything else untouched. The mod...
+
+9. What Are Abliterated Models? How Refusal Removal Works - Atomic Chat
+   https://atomic.chat/blog/guides/what-are-abliterated-models
+   1 month ago - An abliterated model is an open-weight language model that has been modified to reduce its learned refusal behavior so that it refuses requests less frequently....
+
+10. Dynamic Abliteration: Non-Destructive Refusal Suppression via Multi-Layer Engram Steering
+   https://blog.madhukaraphatak.in/non-destructive-refusal-supression-using-engram
+   A common approach in abliteration is capturing hidden states from a single layer, computing a refusal difference vector (refusal= refuse_prompt-comply_prompt) and subtracting it during decoding.We tes...
+

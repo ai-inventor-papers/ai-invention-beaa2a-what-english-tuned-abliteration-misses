@@ -1,0 +1,25 @@
+# grep https://arxiv.org/pdf/2510.02768  pattern=/regex tends to over/  accessed 2026-09-24
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/pdf/2510.02768
+Type: PDF
+Pattern: regex tends to over (1 matches in 58990 chars)
+
+--- Content ---
+
+21610:...-not-refused dominates, indicating that the attack mainly suppresses refusals on harmful
+inputs rather than inflating refusals on benign ones.
+4.2
+Study 2: Human-grounded validation of judges
+Figure 3 reports pairwise Pearson correlations on the 10-prompt human-labeled subset. ChatGPT-5
+aligns best with Human (≈0.98), in line with prior evidence that strong proprietary judges track
+human decisions well [20]. GLM-4 and regex show moderate alignment (≈0.79 and ≈0.75), while
+smaller open judges are weaker or inconsistent, including a negative correlation for GPT-oss.
+Bias analysis indicates that regex tends to overestimate refusals by flagging templated disclaimers
+in otherwise harmless answers, whereas smaller open judges often underestimate refusals when the
+refusal is indirect or mixed with partial compliance. Typical failure cases involve hybrid responses
+that start with a cautionary preface then provide substantive guidance, policy-flavored redirections
+without an explicit refusal, and meta-safety advice that is hard to classify consistently.
+4.3
+Study 3: Self-assessment of refusal
+Figure 4 compares how models judge harmful refusals on the same outputs versus an external
+reference (ChatGPT-5 [18])....

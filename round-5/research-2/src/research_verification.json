@@ -1,0 +1,352 @@
+{
+  "valid": true,
+  "file_errors": [],
+  "schema_errors": [],
+  "content_warnings": [],
+  "files_found": {
+    "research_out.json": {
+      "exists": true,
+      "path": "./research_out.json",
+      "source_count": 34,
+      "size": 47435
+    }
+  },
+  "source_count": 34,
+  "checked_at": "2026-09-24T23:28:53.476410+00:00",
+  "passage_check_scope": "Case/whitespace-normalized text occurrence at the source URL (or archive fallback). Not claim entailment, locator verification, or author/year verification. status=error means unverified, not a misquotation.",
+  "passages": [
+    {
+      "source_index": 1,
+      "source_url": "https://arxiv.org/pdf/2402.10260",
+      "quote": "Most of the baseline automated evaluators overestimate how effective jailbreak methods are on",
+      "locator": "Sec. 3.2, discussion of Table 1",
+      "status": "valid",
+      "context": "...ows the bias of all the automated evaluators, considering human evaluations to be the ground truth. most of the baseline automated evaluators overestimate how effective jailbreak methods are on average, especially string matching for non-refusal. the lone exception is the moderation api, whic...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 2,
+      "source_url": "https://arxiv.org/pdf/2609.10594",
+      "quote": "fully reproducible, but it provides only a weak proxy for actual compliance",
+      "locator": "Sec. 2 Background, on early string-matching evaluation",
+      "status": "valid",
+      "context": "...ccessful if it did not begin with a predefined refusal phrase [7]. this approach is inexpensive and fully reproducible, but it provides only a weak proxy for actual compliance: a response may avoid an explicit refusal while still failing to provide useful harmful content. an...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 3,
+      "source_url": "https://arxiv.org/pdf/2510.02768",
+      "quote": "Bias analysis indicates that regex tends to overestimate refusals by flagging templated disclaimers",
+      "locator": "Sec. 4.2, Study 2: Human-grounded validation of judges",
+      "status": "valid",
+      "context": "...while smaller open judges are weaker or inconsistent, including a negative correlation for gpt-oss. bias analysis indicates that regex tends to overestimate refusals by flagging templated disclaimers in otherwise harmless answers, whereas smaller open judges often underestimate refusals when the re...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 4,
+      "source_url": "https://arxiv.org/pdf/2512.13655",
+      "quote": "(responses that mention safety language while still providing actionable content) and false",
+      "locator": "Sec. 3 metrics, 'Refusal/ASR Validity'",
+      "status": "valid",
+      "context": "... cannot”, “i won’t”, “as an ai”, “illegal”, “unethical”). this approach can produce false positives (responses that mention safety language while still providing actionable content) and false negatives (refusals phrased without the selected markers). we therefore interpret refusal rate and ...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 5,
+      "source_url": "https://arxiv.org/pdf/2404.16369",
+      "quote": "evaluation method is Refusal Matching, which",
+      "locator": "Sec. 2 Related Work, 'Jailbreak evaluation'",
+      "status": "valid",
+      "context": "...re detailed dis- cussion is relegated to appendix a.1. jailbreak evaluation. the primarily employed evaluation method is refusal matching, which checks whether the initial segments of the re- sponse contain pre-defined refusal sub-strings. othe...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 6,
+      "source_url": "https://arxiv.org/abs/2509.24384",
+      "quote": "conventional reference-based metrics such as ROUGE and METEOR can outperform LLM-based judges in fine-grained",
+      "locator": "abstract",
+      "status": "valid",
+      "context": "...outputs over non-harmful ones. extensive experiments on harmmetric eval yield a surprising finding: conventional reference-based metrics such as rouge and meteor can outperform llm-based judges in fine-grained harmfulness evaluation, challenging prevailing assumptions about llms' superiority in this domain. ...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 7,
+      "source_url": "https://arxiv.org/pdf/2412.10321",
+      "quote": "Misspecified: even with low optimization loss, actual responses are often incomplete or unfaithful",
+      "locator": "Sec. 1 Introduction",
+      "status": "valid",
+      "context": "...“sure, here is [harmful request]”. however, this common objective suffers from two key limitations: misspecified: even with low optimization loss, actual responses are often incomplete or unfaithful (figure 1), failing to produce genuinely harmful content [vidgen et al., 2024]. overconstrained: ri...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 8,
+      "source_url": "https://arxiv.org/abs/2603.06594",
+      "quote": "existing validation protocols fail to account for substantial distribution shifts inherent to red-teaming",
+      "locator": "abstract (arXiv abs page, v2); the same sentence is line-broken in the PDF, so the abs page is cited",
+      "status": "valid",
+      "context": "...s in order to benchmark the robustness of safety against adversarial attacks. however, we show that existing validation protocols fail to account for substantial distribution shifts inherent to red-teaming: diverse victim models exhibit distinct generation styles, attacks distort output patterns, and sem...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 9,
+      "source_url": "https://arxiv.org/pdf/2505.19056v2",
+      "quote": "Overall, the two methods are in strong agreement, with differences of at most 4 percentage points.",
+      "locator": "Appendix A, 'LLM as a Judge vs Llama-Guard', Table 4",
+      "status": "valid",
+      "context": "...ama-guard-3-8b, an external safety classifier. table a reports refusal rates under both evaluators. overall, the two methods are in strong agreement, with differences of at most 4 percentage points. for llama-2-7b-extended-refusal-abliterated, qwen-2.5-14b judges a 92.7% refusal rate versus 90.4% ...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 10,
+      "source_url": "https://arxiv.org/pdf/2406.18495",
+      "quote": "(2) detecting safety risks of model responses, and (3) determining model refusal",
+      "locator": "abstract",
+      "status": "valid",
+      "context": "...on tool for llm safety that achieves three goals: (1) identifying malicious intent in user prompts, (2) detecting safety risks of model responses, and (3) determining model refusal rate. together, wildguard serves the increasing needs for automatic safety moderation and evaluatio...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 11,
+      "source_url": "https://arxiv.org/pdf/2308.01263",
+      "quote": "Partial Refusal is any combination of refusal",
+      "locator": "Sec. 4.2, response types",
+      "status": "valid",
+      "context": "... answering the original question (e.g. “in- stead of smashing a piñata, you could decorate it”). 3) partial refusal is any combination of refusal and compliance. this includes self-contradictory responses that first refuse and then go on to answ...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 12,
+      "source_url": "https://arxiv.org/abs/2608.30856",
+      "quote": "their refusals are overall explicit and strongly morally evaluative",
+      "locator": "abstract (arXiv abs page)",
+      "status": "valid",
+      "context": "...m 16 modern llms across 14 harm categories, we find that although models differ in how they refuse, their refusals are overall explicit and strongly morally evaluative, with interactional repair occurring mainly through offering or providing safer alternatives instea...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 13,
+      "source_url": "https://arxiv.org/pdf/2606.07535",
+      "quote": "To collect unsafe answers, we use an abliterated",
+      "locator": "Sec. 3, dataset construction",
+      "status": "valid",
+      "context": "...s were augmented with instructions to produce refusals. further details are provided in appendix b. to collect unsafe answers, we use an abliterated version of llama-3.1-70b, named llama-3.1-70b- instruct-lorablated9. in both cases (safe and unsafe...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 13,
+      "source_url": "https://arxiv.org/pdf/2606.07535",
+      "quote": "responses were labeled as unsafe (by at least one",
+      "locator": "Sec. 3, retention rule using two guard models",
+      "status": "valid",
+      "context": "...swers were consistently marked as safe (by llama-guard- 3-8b and polyguard-qwen) and the compliance responses were labeled as unsafe (by at least one of the two guard models) were retained. beyond the automated pipeline, we performed a deeper dive i...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 14,
+      "source_url": "https://arxiv.org/html/2606.01196",
+      "quote": "What fails to transfer is calibration of the safety decision, not the underlying representation.",
+      "locator": "abstract",
+      "status": "valid",
+      "context": "...mful refusal drops from 87.9% to 43.9%. the model fails to convert the representation into refusal. what fails to transfer is calibration of the safety decision, not the underlying representation. we exploit this by recalibrating, rather than retraining, a high-resource gate: a low-rank logistic...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 15,
+      "source_url": "https://arxiv.org/pdf/2607.02235",
+      "quote": "language-conditional rather than uniform",
+      "locator": "analysis section, paragraph preceding 'Therefore, the problem is not that validation is rare'",
+      "status": "valid",
+      "context": "...e the existing evidence (both within our corpus and outside it) indicates that judge reliability is language-conditional rather than uniform. among the papers that test judges directly in low-resource languages, this finding is consistent. ...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 16,
+      "source_url": "https://arxiv.org/abs/2606.01322",
+      "quote": "showing that judge-human agreement drops in lower-resource languages and less commonly supported scripts",
+      "locator": "abstract",
+      "status": "valid",
+      "context": "...alongside refused and jailbroken; to assess the second, we validate outputs with human annotations, showing that judge-human agreement drops in lower-resource languages and less commonly supported scripts. comments: | accept to emnlp 2026 (main conference) ---|--- subjects: | computation and language (c...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 17,
+      "source_url": "https://arxiv.org/pdf/2605.17173",
+      "quote": "κ = 0.80–0.83, with 93.2–96.6% binary",
+      "locator": "Sec. 3, 'Safety judgment and validation' (300 stratified responses, 10 languages x 3 models)",
+      "status": "valid",
+      "context": "...models from gpt, deepseek, and grok). we find that human– gpt-5.2 agreement is substantial: cohen’s κ = 0.80–0.83, with 93.2–96.6% binary agree- ment (appendix g.2). for our validation, native speakers evaluated responses in chinese, tha...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 18,
+      "source_url": "https://arxiv.org/abs/2606.07874",
+      "quote": "they are broadly unlikely to adjust their evaluations if the context or safety definition contradicts their pr",
+      "locator": "abstract",
+      "status": "valid",
+      "context": "...ion, and changing safety definitions. we find that while llm-judges can learn from new information, they are broadly unlikely to adjust their evaluations if the context or safety definition contradicts their prior. subjects: | artificial intelligence (cs.ai) ---|--- cite as: | [arxiv:2606.07874](https://arxiv...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 19,
+      "source_url": "https://github.com/wuwangzhang1216/abliterix/blob/master/docs/evaluation.md",
+      "quote": "We tested a prominent \"3/100\" model and measured **60/100 refusals** with our pipeline.",
+      "locator": "docs/evaluation.md, 'Honest evaluation matters'",
+      "status": "valid",
+      "context": "...tc.) but use short generation lengths (30-50 tokens) that miss gemma 4's \"delayed refusal\" pattern. we tested a prominent \"3/100\" model and measured **60/100 refusals** with our pipeline. see our evaluation methodology below. * **direct weight editing for double-norm architectures** — g...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 20,
+      "source_url": "https://github.com/JailbreakBench/jailbreakbench/issues/50",
+      "quote": "the verdict is discarded under 15 tokens, and `TEST_PREFIXES` is matched anywhere rather than as a prefix",
+      "locator": "issue title",
+      "status": "valid",
+      "context": ".../jailbreakbench/jailbreakbench/pulse) # two judge defects that fire on spec-compliant judge output: the verdict is discarded under 15 tokens, and `test_prefixes` is matched anywhere rather than as a prefix #50 new issue copy link new issue copy link open open [two judge defects that fire on spec-complian...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 21,
+      "source_url": "https://arxiv.org/pdf/2408.17003",
+      "quote": "model that are crucial for distinguishing malicious queries from normal ones,",
+      "locator": "abstract",
+      "status": "valid",
+      "context": "...gned llms at the parameter level, identifying a small set of contiguous layers in the middle of the model that are crucial for distinguishing malicious queries from normal ones, re- ferred to as “safety layers”. we first confirm the existence of these safety layers by analyzin...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 21,
+      "source_url": "https://arxiv.org/pdf/2408.17003",
+      "quote": "on the security of aligned LLMs by scaling the parameter weights of the layers within the range",
+      "locator": "Sec. 1 contribution summary; procedure in Sec. 3.4.1-3.4.3",
+      "status": "valid",
+      "context": "...cise upper and lower bounds of the safety layers, we evaluated the impact of different layer ranges on the security of aligned llms by scaling the parameter weights of the layers within the range, and use the over-rejection phenomenon to quantify the changes in security. ultimately, we identify...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 22,
+      "source_url": "https://arxiv.org/pdf/2607.02714v2",
+      "quote": "substantially outperform norm-based selection (targeting layers with the highest refusal signal norm)",
+      "locator": "Sec. 3.2, Layer Selection Strategies (PDF v2; App. C for the detailed comparison)",
+      "status": "valid",
+      "context": "...ent we opted for uniformly spread layer selection across 25–95% of model depth, which we found to 4 substantially outperform norm-based selection (targeting layers with the highest refusal signal norm) by up to ∼70pp of additional refusal reduction at 30% on the most susceptible models. a detailed co...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 23,
+      "source_url": "https://arxiv.org/abs/2609.06473",
+      "quote": "Using an iso-effect framework that compares capability costs at matched behavioral effect",
+      "locator": "abstract",
+      "status": "valid",
+      "context": "...en-weight 7-9b models and two behavioral targets: judged sentiment and judge-free reasoning length. using an iso-effect framework that compares capability costs at matched behavioral effect, we find that sentiment steering survives quantization intact. after correcting a gsm8k parser arti...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 24,
+      "source_url": "https://arxiv.org/abs/2601.19375",
+      "quote": "discriminative layer selection that applies steering only where feature representations exhibit opposite-signe",
+      "locator": "abstract",
+      "status": "valid",
+      "context": "...rous norm-preserving rotation formulation that maintains activation distribution integrity, and (2) discriminative layer selection that applies steering only where feature representations exhibit opposite-signed class alignment. experiments across nine models demonstrate that selective steering achieves 5.5x ...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 25,
+      "source_url": "https://arxiv.org/pdf/2608.22490",
+      "quote": "safety-ablated (abliterated) version of the models.",
+      "locator": "Sec. 3 Experiments",
+      "status": "valid",
+      "context": "...n) and their unaligned counterparts (munalg). in our main experiment, we instantiate munalg using a safety-ablated (abliterated) version of the models. this projects the model weights orthogonal to a sin- gle refusal direction, removing the safety def...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 25,
+      "source_url": "https://arxiv.org/pdf/2608.22490",
+      "quote": "as the win rate of Munalg against Malign on",
+      "locator": "Sec. 2.3, metric definition",
+      "status": "valid",
+      "context": "...ed model produces a more helpful response than the aligned model. in practice, costl is esti- mated as the win rate of munalg against malign on helpfulness judgments. using costl as the per-language base measure, we next quantify inequities ac...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 25,
+      "source_url": "https://arxiv.org/pdf/2608.22490",
+      "quote": "and thus does not inherently introduce",
+      "locator": "Sec. 4.3, citing refusal-direction universality",
+      "status": "valid",
+      "context": "...blation operates on a shared represen- tational axis rather than on language-specific com- ponents, and thus does not inherently introduce language-specific biases. 4.4 validating safety cost without refusal-direction ablation although se...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 25,
+      "source_url": "https://arxiv.org/pdf/2608.22490",
+      "quote": "Safety Cost is a distinct phenomenon, not just a side",
+      "locator": "Fig. 5 caption, Sec. 4.3",
+      "status": "valid",
+      "context": "...xtra safety cost a language suffers compared to english. points clustered near x = 0 prove that the safety cost is a distinct phenomenon, not just a side effect of the ablation process. a value near zero indicates that the ablation process affects both ...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 27,
+      "source_url": "https://arxiv.org/abs/2408.14398",
+      "quote": "while calibration on the target language effectively retains perplexity and yields high signal-to-noise ratios",
+      "locator": "abstract (arXiv abs page, v4); same finding as bullet 1 of Sec. 1 in the PDF",
+      "status": "valid",
+      "context": "...tent subspaces, pruning masks, and individual neurons within pruned models. our results reveal that while calibration on the target language effectively retains perplexity and yields high signal-to-noise ratios, it does not consistently improve downstream task performance. further analysis of internal represe...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 28,
+      "source_url": "https://arxiv.org/abs/2601.18306",
+      "quote": "non-English and multilingual calibration sets significantly improve perplexity compared to English-only baseli",
+      "locator": "abstract",
+      "status": "valid",
+      "context": "...s) on two quantizers (gptq, awq) on data from 10 languages. our findings reveal a consistent trend: non-english and multilingual calibration sets significantly improve perplexity compared to english-only baselines. specifically, we observe notable average perplexity gains across both quantizers on llama3.1 8b...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 29,
+      "source_url": "https://arxiv.org/pdf/2306.11695",
+      "quote": "with the smallest magnitudes multiplied by the corresponding input activations,",
+      "locator": "abstract",
+      "status": "valid",
+      "context": "... the recent observa- tion of emergent large magnitude features in llms, our approach prunes weights with the smallest magnitudes multiplied by the corresponding input activations, on a per-output basis. notably, wanda requires no retraining or weight update, and the pruned llm c...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 30,
+      "source_url": "https://arxiv.org/pdf/2306.00978",
+      "quote": "refer to the activation distribution, not weights.",
+      "locator": "abstract",
+      "status": "valid",
+      "context": "...lient weights can greatly reduce quantization error. to identify salient weight channels, we should refer to the activation distribution, not weights. to avoid the hardware-inefficient mix-precision quantization, we mathematically derive that scaling...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 31,
+      "source_url": "https://aclanthology.org/2026.tacl-1.9/",
+      "quote": "On the Limitations of Language-targeted Pruning: Investigating the Calibration Language Impact in Multilingual LLM Pruning",
+      "locator": "paper title on the anthology page; Volume: TACL Volume 14; Pages: 167-192",
+      "status": "valid",
+      "context": "...[attachments](/faq/attachments/) * [ __github](https://github.com/acl-org/acl-anthology/) __ __ ## [on the limitations of language-targeted pruning: investigating the calibration language impact in multilingual llm pruning](https://aclanthology.org/2026.tacl-1.9.pdf) [simon kurz](/people/simon-kurz/), [jian-jia chen](/pe...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 32,
+      "source_url": "https://arxiv.org/abs/2606.00926",
+      "quote": "Refit the Probe: Single-Direction Ablation Is Not a Necessity Test",
+      "locator": "abs page title",
+      "status": "valid",
+      "context": "...26 ([v1](https://arxiv.org/abs/2606.00926v1)), last revised 21 sep 2026 (this version, v2)] # title:refit the probe: single-direction ablation is not a necessity test authors:[yuhang jiang](https://arxiv.org/search/cs?searchtype=author&query=jiang,+y) view a pdf of ...",
+      "match_type": "exact"
+    },
+    {
+      "source_index": 33,
+      "source_url": "https://arxiv.org/abs/2609.04721",
+      "quote": "Locating and Steering Refusal Beyond Attention",
+      "locator": "abs page title",
+      "status": "valid",
+      "context": "...) # computer science > machine learning **arxiv:2609.04721** (cs) [submitted on 4 sep 2026] # title:locating and steering refusal beyond attention authors:[preethi carmel bosco](https://arxiv.org/search/cs?searchtype=author&query=bosco,+p+c), [go...",
+      "match_type": "exact"
+    }
+  ]
+}

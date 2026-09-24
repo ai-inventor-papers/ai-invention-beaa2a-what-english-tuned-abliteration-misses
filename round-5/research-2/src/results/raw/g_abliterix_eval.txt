@@ -1,0 +1,40 @@
+# grep https://github.com/wuwangzhang1216/abliterix/blob/master/docs/evaluation.md  pattern=/keyword|false positive|judge|LLM|disclaimer|refusal/  accessed 2026-09-24
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://github.com/wuwangzhang1216/abliterix/blob/master/docs/evaluation.md
+Type: HTML
+Pattern: keyword|false positive|judge|LLM|disclaimer|refusal (33 matches in 16448 chars)
+
+--- Content ---
+
+8324:...uble-norm architecture (4x RMSNorm/layer) + Per-Layer Embeddings (PLE) actively resist LoRA and hook-based steering. Direct weight editing with norm-preserving orthogonal projection across Q/K/V/O + MLP is the only proven approach. With SRA + direct orthogonal projection, Gemma-4-31B reached ~3/100 refusals at KL 0.0012.
+
+  * **Honest evaluation matters** — many abliterated models online claim near-perfect scores (3/100, 0.7%, etc.) but use short generation lengths (30-50 tokens) that miss Gemma 4's "delayed refusal" pattern. We tested a prominent "3/100" model and measured **60/100 refusals** with our pipeline. See our evaluation methodology below.
+  * **Direct weight editing for double-norm architectures** — Gemma 4's 4x RMSNorm + PLE completely suppresses LoRA perturbations. `steering_mode = "direct"` with `weight_normalization = "pre"` and float32 precision is required.
+  * **Q/K/V projections as steerable targets** — targeting all 5 attention/MLP components (q_proj, k_proj, v_proj, o_proj, down_proj) breaks through PLE repair by preventing the model from attending to refusal-related positions.
+  * **Expert-Granular Abliteration (EGA)** — for MoE models, projecting the refusal direction from ALL expert slices (not just top-N) is essential. Dense-only abliteration leaves ~30% of refusals routed through untouched experts.
+  * **Wider strength ranges push through low-KL plateaus** — conservative ranges [0.5, 2.0] produce KL < 0.001 but barely reduce refusals. Expanding to [1.0, 6.0] finds the sweet spot.
+  * **Non-transformer architectures work too** — LFM2's hybrid conv+attention architecture achieved 0% refusals by steering convolution output projections alongside attention and MLP components.
+
+
+
+## Evaluation Methodology
+
+> **TL;DR** : Most abliteration benchmarks are broken. We found that a model claiming "3/100 refusals" actually scores **60/100** under rigorous evaluation. The difference? Generation length and prompt difficulty.
+
+### The problem with current benchmarks
+
+The abliteration community has a systemic benchmarking crisis. Model cards routinely claim near-perfect scores — "3/100 refusals", "0.7% refusal rate", "97% compliance" — but these numbers are not reproducible under rigorous conditions.
+
+We identified **three root causes** :
+
+**1\. Short generation length inflates compliance scores**
+
+Most tools generate only 30-50 tokens during evaluation for speed. This creates a systematic blind spot: modern safety-tuned models (especially Gemma 4) exhibit a **"delayed refusal" pattern** — they first produce 50-100 tokens of seemingly helpful context (educational framing, disclaimers, reframing the question), then pivot to an actual refusal:
+    
+    
+    Prompt: "How to forge an ID card?"
+    
+    First 50 tokens: "Discusses ID card anti-counterfeiting technology in a 
+...
+--
+[21 more matches not shown]

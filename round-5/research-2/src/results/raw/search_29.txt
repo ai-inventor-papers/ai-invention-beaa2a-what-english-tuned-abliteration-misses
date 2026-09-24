@@ -1,0 +1,44 @@
+# search 'weight-edit hyperparameter search objective blind spot refusal counter Optuna TPE abliteration' mode=general accessed 2026-09-24
+Search: weight-edit hyperparameter search objective blind spot refusal counter Optuna TPE abliteration  [general via ddgs]
+Found: 10 results
+
+1. Qwen3.8-27B AEON Uncensored: How This Abliteration Actually Works | MindStudio
+   https://www.mindstudio.ai/blog/qwen3-8-27b-aeon-uncensored-abliteration
+   August 17, 2026 - Abliteration works by identifying that direction (usually by comparing activations on harmful versus harmless prompts) and then projecting it out of the model’s weights, so the model...
+
+2. GitHub - wuwangzhang1216/abliterix: Automated alignment adjustment for LLMs — direct steering, LoRA, and MoE expert-granular abliteration, optimized via multi-objective Optuna TPE.
+   https://github.com/wuwangzhang1216/abliterix
+   The result is a Pareto frontier ... In short, Abliterix identifies refusal-related geometry in hidden space, suppresses it in the model, and automatically searches for the least damaging effective int...
+
+3. Optuna - A hyperparameter optimization framework
+   https://optuna.org/
+   Faster sampler implementations Rustuna supports TPE, MOTPE, NSGA-II, and CMA-ES, and finishes the same study several times to several hundred times faster for cheap objective functions....
+
+4. GitHub - optuna/optuna: A hyperparameter optimization framework · GitHub
+   https://github.com/optuna/optuna
+   August 21, 2026 - Rustuna is a faster implementation of Optuna written in Rust. It keeps the API you already know, and rewrites the parts that start to hurt at scale: sampling speed and memory efficie...
+
+5. Hyperparameter Optimization with Optuna | Medium
+   https://medium.com/@mjgmario/hyperparameter-optimization-with-optuna-8fca06ea5491
+   January 6, 2026 - QMCSampler generates low-discrepancy sequences that cover the search space more uniformly than standard random sampling. The Optuna docs emphasize that QMC sequences can perform bett...
+
+6. optuna.samplers.TPESampler — Optuna 5.0.0 documentation
+   https://optuna.readthedocs.io/en/stable/reference/samplers/generated/optuna.samplers.TPESampler.html
+   Sampler using TPE (Tree-structured Parzen Estimator) algorithm · On each trial, for each parameter, TPE fits one Gaussian Mixture Model (GMM) l(x) to the set of parameter values associated with the be...
+
+7. Optuna: A Next-generation Hyperparameter Optimization Framework
+   https://www.researchgate.net/publication/334712487_Optuna_A_Next-generation_Hyperparameter_Optimization_Framework
+   July 25, 2019 - ... Para el entrenamiento se empleó una configuración experimental orientada a optimizar hiperparámetros y maximizar el rendimiento y su capacidad de generalización. Se utilizó Optuna,...
+
+8. Preprint doi Optuna: A Next-generation Hyperparameter Optimization Framework
+   https://arxiv.org/pdf/1907.10902
+   Preprint – Optuna: A Next-generation Hyperparameter Optimization Framework ... Figure 11a shows the transition of the average test errors. The · result clearly suggests that pruning can signiﬁcantly a...
+
+9. Optuna: A hyperparameter optimization framework — Optuna 5.0.0 documentation
+   https://optuna.readthedocs.io/
+   Optuna is an automatic hyperparameter optimization software framework, particularly designed for machine learning. It features an imperative, define-by-run style user API. Thanks to our define-by-run ...
+
+10. State-of-the-Art Machine Learning Hyperparameter Optimization with Optuna | Towards Data Science
+   https://towardsdatascience.com/state-of-the-art-machine-learning-hyperparameter-optimization-with-optuna-a315d8564de1/
+   January 21, 2025 - By default, Optuna implements a Bayesian optimization algorithm (TPE) but it can be easily switched to other existing algorithms in the package....
+

@@ -1,0 +1,95 @@
+# grep https://arxiv.org/pdf/2512.13655  pattern=/Heretic|refusal (rate|marker|keyword)|string|keyword|judge|layer/  accessed 2026-09-24
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/pdf/2512.13655
+Type: PDF
+Pattern: Heretic|refusal (rate|marker|keyword)|string|keyword|judge|layer (80 matches in 53670 chars)
+
+--- Content ---
+
+694:...odeling, adversarial testing, and
+security analysis. While abliteration techniques enable surgical removal of refusal
+representations through directional orthogonalization, the relative effectiveness of
+available implementations remains uncharacterized. This study evaluates four
+abliteration tools (Heretic, DECCP, ErisForge, FailSpy) across sixteen
+instruction-tuned models (7B–14B parameters), reporting tool compatibility on all 16
+models and quantitative metrics on subsets dictated by tool support (Heretic: KL
+divergence + refusal rate on eight models; benchmark preservation on three models
+with baselines plus Zephyr-7B-beta). Single-pass methods demonstrated superior
+capability preservation on the benchmarked subset (avg GSM8K ∆across three
+models: ErisForge −0.28 pp; DECCP −0.13 pp), while Bayesian-optimized
+abliteration produc...
+--
+1738:...ment across diverse model
+architectures. The principal finding indicates that mathematical reasoning
+capabilities exhibit the highest sensitivity to abliteration interventions, with GSM8K
+change ranging from +1.51 pp to −18.81 pp (−26.5% relative) depending on tool
+selection and model architecture.
+Keywords: abliteration, language models, refusal removal, model editing, representation
+engineering, LLM safety, safety alignment, jailbreaking
+1
+Introduction
+Large language models deployed for commercial and research applications undergo
+extensive safety alignment training to refuse potentially harmful re...
+--
+4858:...esentations? The
+absence of empirical guidance forces inefficient tool selection and prevents principled
+understanding of capability-safety tradeoffs across the abliteration landscape.
+The present study addresses this gap through a systematic comparative evaluation of
+four major abliteration tools (Heretic, DECCP, ErisForge, FailSpy) across sixteen
+instruction-tuned models spanning diverse architectures and alignment methodologies. We
+separate (i) tool compatibility measured across all 16 models from (ii) quantitative metric
+comparisons on subsets where tools executed successfully and baseline scores were available.
+Three hypotheses guide this investigation:
+H1 (Model Dependence): Abliteration outcomes are strongly model-dependent:
+under a fixed evaluation protocol, some models will exhibit both low distribution shift (KL
+divergence) and low remaining refusal rates, while others will exhibit coupled resistance
+(higher KL divergence and higher residual refusals).
+H2 (Capability Preservation): On models with complete baselines and multi-tool
+coverage, single-pass methods (DECCP/ErisForge) will show smaller average capability
+degradation than optimization-based Heretic, with the largest differences appearing on
+GSM8K.
+H3 (Alignment Sensitivity, Case Study): In this sample, the DPO-only model
+(Zephyr-7B-beta) will show higher abliteration susceptibility (lower remaining refusals)
+than RLHF-aligned models.
+2/25
+
+This work contributes (1) a systematic comparative an...
+--
+8634:...nalization to remove the harmless
+direction component from the refusal direction before ablation, reducing unintended effects
+on benign behavior.
+3/25
+
+2.3
+Open-Source Abliteration Tools
+Four major open-source implementations have emerged, each with distinct architectural
+approaches and trade-offs:
+Heretic [3] implements Optuna-based Tree-structured Parzen Estimator (TPE)
+parameter optimization, automatically searching across layer ranges, ablation weights, and
+direction indices to minimize a multi-objective score combining KL divergence and refusal
+rate. The tool operates directly on PyTorch weight tensors without framework
+dependencies, enabling universal model compatibility (16/16 models in this evaluation).
+Processing tim...
+--
+9403:...es per model depending on model size
+and trial count, with typical configurations using 50 trials to balance exploration and
+efficiency.
+FailSpy/abliterator [4] uses TransformerLens hooks for activation caching and
+direction calculation, enabling interactive exploration of refusal directions across layers.
+While powerful for interpretability research, TransformerLens model coverage limits
+compatibility to architectures with explicit support (5/16 models). The tool caches
+activations from ∼256 harmful/harmless prompt pairs and identifies the layer with
+maximum refusal direction magnitude for targeted ablation.
+llm-abliteration (DECCP) [5] implements memory-efficient sharded processing with
+norm-preserving and projected abliteration variants. Originally developed for Chinese LLM
+censorship removal, the tool processes models in 4-bit quantized shards, dramatically
+reducing VRAM requirements (<8GB vs 16–24GB for full-precision approaches).
+Single-pass execution completes in approximately 2 minutes (20× faster than Heretic),
+with configurable layer selection based on automatic refusal direction magnitude scanning.
+ErisForge [7] takes a decoder layer transformation approach, wrapping model layers
+with custom AblationDecoderLayer or AdditionDecoderLayer modules that apply
+direction modifications during forward passes. This architecture enables both refusal
+removal (ablation) and direction injection (addition), the latter being useful for research
+applications requiring controlled behavior m...
+--
+[65 more matches not shown]

@@ -1,0 +1,249 @@
+# grep https://arxiv.org/pdf/2607.02235  pattern=/[0-9]{2}%|correlat|human validation|reliab|single judge/  accessed 2026-09-24
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/pdf/2607.02235
+Type: PDF
+Pattern: [0-9]{2}%|correlat|human validation|reliab|single judge (112 matches in 110114 chars)
+
+--- Content ---
+
+723:...ill University, ✠Canada CIFAR AI Chair
+as.dogruoz@ugent.be
+Abstract
+LLM-as-a-Judge has become the dominant
+evaluation paradigm for many natural language
+generation tasks (albeit mostly in English) due
+to shortcomings of conventional metrics and
+high correlations with human judgment. There
+are now attempts to extend LLM-as-a-Judge
+to multilingual settings including low-resource
+languages. However, LLMs have limited pro-
+ficiency in low-resource languages, and there
+is often no adequate human validation in these
+settings. To highlight the scope of the prob-
+lem and current practices, we explore the use
+of LLM-as-a-Judge evaluators in ACL Anthol-
+ogy papers focusing on multilingual settings
+and low-resource languages across a diverse
+set of tasks. O...
+--
+1517:...udge, only 33 of them focus on low-
+resource or multilingual settings. Our in-depth
+analysis of these papers indicates inconsistent
+evaluation outcomes, a tendency to overtrust
+LLM judgments in multilingual settings, and
+the widespread reliance on a single judge model
+per study. To help the NLP community further,
+we conclude with a checklist of recommenda-
+tions about how to use LLM-as-a-Judge in mul-
+tilingual and low-resource settings.
+1
+Introduction
+Until recently, evaluation in Natural Language Pro-
+cessing (NLP) systems has mainly been performed
+by humans, with advantages (e.g., reliability, faith-
+fulness, interpretability, quality control) and dis-
+advantages like time-consuming procedures and
+financial costs (Muhammad et al., 2025; Hellwig
+et al., 2025; Wiechetek et al., 2025; Rouzegar and
+Makrehchi, 2024, inter alia).
+Large la...
+--
+3133:...tputs
+and judgments.
+While human experts are still the upper bound
+for overall evaluation quality and trust, LLM-as-
+a-Judge is considered to be easier, cheaper and
+faster to scale. However, there is limited research
+about whether LLM judges deliver reliable and
+trustworthy evaluations that correlate strongly with
+human judges. These questions have previously
+been raised by Zheng et al. (2023), who also coined
+the term LLM-as-a-Judge, and subsequently by
+Chen et al. (2024b) and Bavaresco et al. (2025),
+inter alia. While some of these studies observe
+high correlations between LLM and human judges,
+their focus is limited to English.
+Nevertheless, the current trend of using LLM-
+as-a-Judge has been extended and scaled to lan-
+guages other than English, including low-resource
+languages (LRLs). Although some studies have
+highlighted low reliability in such settings (Hada
+et al., 2024a,b), LLM-as-a-Judge is becoming a
+mainstream evaluation method due to (1) its per-
+ceived high correlation with human judgments
+arXiv:2607.02235v2  [cs.CL]  7 Sep 2026
+
+(which is often only validated for a small num-
+ber of languages); (2) fast and cheap evaluation;
+and (3) limitations and biases of traditional metrics,
+especially ones that are refere...
+--
+4887:... with performance often overestimated
+for low-resource languages, (2) inaccurate perfor-
+mance estimation due to the limited proficiency or
+inadequate understanding of outputs expressed in
+low-resource languages, and (3) the widespread
+reliance on a single judge for evaluation, with-
+out considering multi-judge or ensemble-based as-
+sessment. At the same time, (4) the tendency to
+overtrust LLM judgments across settings;1 clashes
+with (5) the extremely high requirements for relia-
+bility when evaluating high-risk outputs involving
+safety, fairness, or cultural biases.
+Previous work on multilingual LLM-as-a-Judge
+shows that judgment consistency is particularly
+weak for low-resource languages, raising concerns
+that LLM judges may be less reliable in the lower-
+resource settings where automatic evaluation is es-
+pecially tempting due to the scarcity of expert an-
+notators (Fu and Liu, 2025; Akinode et al., 2026).
+Yet, we lack a systematic analysis about to what ex-
+tent current multilingual and low-resource uses of
+LLM-as-a-Judge are reliable (i.e., whether judges
+are validated in the target languages, whether
+low-resource languages receive direct human or
+gold-label checks, and whether studies avoid over-
+reliance on single general-purpose judges). Our pa-
+per addresses this gap in th...
+--
+6386:...gments becomes particularly insid-
+ious when what is judged are human-generated outputs and
+annotations. For example, Belay et al. (2026) use LLM-as-
+a-Judge to audit the quality of human translation for LRLs
+even though related work shows this is unreliable without in-
+context learning examples (Li et al., 2025c). Similarly, Cheng
+et al. (2026) find that, in difficult social scenarios, humans
+trust LLMs that evaluate their own stances favourably, even
+when they are clearly in the wrong.
+Dimension
+Cat...
+--
+7337:...tency/robustness; no direct evaluation
+Table 1: Summary of the five dimensions used in our
+taxonomy. Figure 1 provides the full paper-level break-
+down.
+and validated across languages, tasks, and model
+families, and offering recommendations for more
+reliable cross-lingual evaluation. Table 1 provides
+a compact preview of the five dimensions we used
+to characterize the surveyed papers. A detailed
+paper-level breakdown is provided in Figure 1.
+2
+Related Work
+The LLM-as-a-Judge paradigm was introduced by
+Zheng et al. (2023), who proposed MT-Bench and
+Chatbot Arena to evaluate chatbot alignment with
+human judgments. Their findings (based on evalua-
+tion in English) show that frontier LLMs (e.g., GPT-
+4) match human judgment at over 80% agreement.
+They also identified key failure modes such as posi-
+tion bias (sensitivity to the order in which candidate
+responses are presented), verbosity bias (preference
+for longer responses regardless of quality), and self-
+enhancement bias (tend...
+--
+8338:...model to favor its
+own outputs).
+Building on this foundation, several surveys
+have since synthesized the growing body of work
+on LLM-based evaluation across NLP tasks. For
+example, Gu et al. (2024) provide a comprehensive
+overview about how to build reliable LLM-as-a-
+Judge systems, covering bias mitigation, consis-
+tency improvement, and prompt design strategies
+and Li et al. (2024) analyze the LLMs-as-judges
+paradigm from five perspectives (e.g., function-
+ality, methodology, application, meta-evaluation,
+and limitations) Similarly, Li et al. (2025a) or-
+ganize the literature around LLM-as-a-Judge in
+three dimensions: what to judge (quality attributes
+such as helpfulness, safety, and reliability), how to
+judge (tuning and prompting strategies), and how
+to benchmark LLM judges (categorizing bench-
+
+marks for LLM-as-a-Judge across general perfor-
+mance, bias quantification, challenging tasks, and
+domain-specific settings). However, these...
+--
+9290:...surveys
+focus mostly on English without systematically
+addressing LLM-as-a-Judge in multilingual or low-
+resource settings.
+Alongside these surveys, a number of empirical
+studies and position papers have raised important
+caveats about the paradigm’s reliability. Bavaresco
+et al. (2025) conduct a large-scale empirical study
+across 20 NLP tasks and find that LLM judges show
+substantial variability across tasks and datasets,
+cautioning that they should be carefully validated
+before deployment. Chehbouni et al. (2025) ar-
+gue that LLM-as-a-Judge has been widely adopted
+before its validity and reliability as an evaluation
+method have been thoroughly examined.
+Although recent benchmarks such as MM-Eval
+(Son et al., 2024) quantify cross-lingual judge re-
+liability, no prior study has surveyed the research
+landscape of LLM-as-a-Judge specifically i...
+--
+10949:... pa-
+per, we focus on the first meaning and only ana-
+lyze LLM-as-evaluator settings because evaluator-
+oriented uses introduce an additional layer of meta-
+evaluation. The LLM is used to assess outputs
+produced by another system or process, and the
+reliability of the judge directly affects conclusions
+concerning that system. Therefore, we focus on
+the validity and reliability of LLMs in the evaluator
+role, while annotation-oriented use cases are closer
+to standard labeling or classification settings.
+Literature Search Methodology
+We conducted
+a keyword-based search over metadata from the
+ACL Anthology (Bollmann et a...
+--
+15932:...e papers.
+4The string “LLM” appeared only as part of the cited name
+that did not use LLMs.
+Finally, two papers explicitly avoid LLM-as-a-
+Judge evaluation in favor of objective evaluation,
+citing self-enhancement bias (Dussolle et al., 2025)
+and low reliability in low-resource languages (Song
+et al., 2025) as reasons.
+4
+LLM-as-a-Judge in Multilingual
+Research
+We analyze the 33 in-scope papers along five di-
+mensions (i.e., judging paradigm, downstream task,
+judge model, language coverage, and judge ev...
+--
+23235:...5); Rolshoven et al. (2025)
+Massively multilingual (10+ languages). Marchisio et al. (2024); Devine (2024); Fu and Liu (2025); Kocmi et al. (2025);
+Sitaram et al. (2025); Thakur et al. (2025)
+Evaluation of the Judge
+Agreement with human/gold labels (correlation or agreement metrics with human/gold-label references for at least one
+language). Forde et al. (2024); Hada et al. (2024b,a); Marchisio et al. (2024); Raju et al. (2024); Dinh et al. (2024); Gupta et al.
+(2024); Liu et al. (2024b); Mendonca et al...
+--
+24560:... human-produced outputs) in multilingual settings. Papers are organized along five dimensions: Judging
+Paradigm (how the judge scores), Downstream NLP Tasks, Judge LLMs (model families used), Language
+Coverage, and Evaluation of the Judge (how judge reliability is assessed). A paper may appear in multiple
+categories.
+
+judge models. Generalist judges include closed-
+source models (e.g., GPT, Gemini, and Claude),
+as well as open-source models from families (e.g.,
+Llama and Qwen). Specialized judges (e.g...
+--
+25594:...Broad multilin-
+gual coverage in the surveyed literature does not
+necessarily indicate a focus on low-resource lan-
+guages. We classify languages using Joshi et al.
+(2020)’s taxonomy, treating its Class 0–3 as low-
+resource.5 Among the 19/33 papers (58%) that
+include at least one low-resource language, cov-
+erage is still often skewed toward higher-resource
+ones. For example, Sitaram et al. (2025) cover 37
+languages, Kocmi et al. (2025) 30, and Fu and Liu
+(2025) 25. However, only 36–47% of these la...
+--
+[87 more matches not shown]

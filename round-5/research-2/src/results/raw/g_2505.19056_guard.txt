@@ -1,0 +1,273 @@
+# grep https://arxiv.org/pdf/2505.19056  pattern=/Llama-?Guard|judge|refusal rate/  accessed 2026-09-24
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/pdf/2505.19056
+Type: PDF
+Pattern: Llama-?Guard|judge|refusal rate (37 matches in 53506 chars)
+
+--- Content ---
+
+978:...rompts provide
+detailed justifications before refusing, distribut-
+ing the refusal signal across multiple token po-
+sitions. Fine-tuning LLAMA-2-7B-CHAT and
+QWEN2.5-INSTRUCT (1.5B and 3B parame-
+ters) on this dataset yields models that maintain
+high refusal rates under abliteration: refusal
+rates drop by at most 10%, compared to 70–
+80% drops in baseline models. Comprehen-
+sive evaluations of safety and utility demon-
+strate that extended-refusal fine-tuning effec-
+tively neutralizes abliteration attacks wh...
+--
+2802:...ment is refusal
+direction abliteration—an efficient weight-surgery
+attack that neutralizes safety guardrails by remov-
+ing a single direction in the model’s residual stream
+(Arditi et al., 2024). This surgical intervention dra-
+matically reduces the refusal rate of LLAMA-2-
+7B-CHAT from 100% to approximately 20% while
+preserving general utility, representing a significant
+breach of safety mechanisms.
+The effectiveness of abliteration suggests an im-
+portant insight: conventional safety alignment cre-
+ates d...
+--
+5755:... including techniques for spoofing email…
+Gemma-2-2B
+QWEN2.5-3B-INSTRUCT, and QWEN2.5-1.5B-
+INSTRUCT) on our extended-refusal dataset and
+subjecting them to abliteration attacks.
+Our
+experiments demonstrate that extended-refusal
+models maintain high refusal rates (>90%) after
+abliteration, compared to dramatic drops (to
+13-21%) in conventional models. We also test our
+fine-tuned models against other safety concerns
+where they show across the board improvements.
+Importantly, this enhanced robustness comes wi...
+--
+12517:... combined dataset contains 10,000 examples
+in total.
+
+Table 1: Overall Performance Before and After Abliteration. Comparison of refusal score, coherence, MMLU,
+and perplexity for base and Extended-Refusal models. Extended-Refusal models sustain high refusal rates after
+abliteration, whereas baseline models suffer large safety drops.
+Model
+Abliterated
+Refusal Score (↑)
+Coherence (↑)
+MMLU (↑)
+Perplexity (↓)
+LLAMA-2-7B
+✗
+100.0
+100.0
+47.5
+14.1
+✓
+20.7
+100.0
+46.8
+18.5
+LLAMA-2-7B-EXTENDED
+✗
+100.0
+100.0
+46.4
+16.7
+✓...
+--
+14653:... use CatQA (Bhard-
+waj et al., 2024), a categorized set of 550
+harmful questions spanning various categories
+of harmful content and measure the percent-
+age of harmful instructions that the model suc-
+cessfully refuses. We use QWEN-2.5-14B as
+an LLM judge (Zheng et al., 2023) to clas-
+sify responses as safe/unsafe. In Appendix A
+we also report results using Llama-Guard-3-
+8B (Inan et al., 2023) as an automatic safety
+classifier to determine refusal status.
+• Utility
+Evaluation:
+We
+use
+MMLU
+(Hendrycks et al., 2021) for benchmarking
+general knowledge and reasoning, and a
+subset of 1,000 randomly sampled passages
+from C4 (Raffel et al., 2023) for perplexity
+evaluation. We also measure Coherence: The
+percentage of model responses that remain
+lexically and semantically consistent and
+well-formed, evaluated using an LLM-based
+judge (QWEN-2.5-14B).
+Abliteration Process
+For each model (base and
+extended-refusal), we identify candidate refusal
+directions rℓ,p for each layer ℓand position p using
+the methodology described in Section 3. We then
+perform abliteration by projecting ou...
+--
+17175:...that extended-refusal fine-tuning pro-
+vides substantial protection against refusal direc-
+tion abliteration.
+Our key findings include:
+Robustness to Abliteration
+Standard ablitera-
+tion dramatically reduces refusal capabilities in
+base models, with refusal rates dropping by 70-
+80 percentage points (to as low as 13.63% for
+QWEN2.5-1.5B). In contrast, extended-refusal
+models maintain strong safety alignment after ablit-
+eration, with refusal rates remaining above 90%
+across all tested models. This represents a reduc-
+tion of at most 9.1%, confirming our hypothesis
+that extended refusals distribute the safety signal
+across multiple dimensions.
+Performance Trade-offs
+Extended-refusal fine-
+tun...
+--
+22413:...rsarial prompts (WILDGUARDTEST
+from Jiang et al. (2024)), prompt-injection at-
+tacks (TRUSTLLM JAILBREAK from Huang
+et al. (2024)), and other alignment benchmarks
+(HARMBENCH from Mazeika et al. (2024) and
+WILDJAILBREAK form Jiang et al. (2024)). All
+judged by WILDGUARD (Han et al., 2024).
+As shown in Table 2, extended-refusal leads
+to consistent reductions in jailbreak success rates
+across all evaluated benchmarks. For Llama-2-7B,
+the success rate of DAN attacks decreases from 3.7
+to 1.3, while HARMB...
+--
+24069:...-
+hibit greater robustness under benign fine-tuning.
+We fine-tuned both the base QWEN2.5-3B model
+and its ER variant on DATABRICKS DOLLY 15K
+(Conover et al., 2023) for one epoch with a learning
+rate of 1e−6. Figure 5 shows that the base model’s
+harm refusal rate deteriorates substantially after
+only a few hundred steps, whereas the ER model
+
+Table 2: More Jailbreaks. Extended-refusal models fair better against a verity of attacks and jailbreaks.
+Model
+DAN (↓) HARMBENCH (↓)
+WILDGUARDTEST (↓)
+WILDJAILBREAK (↓...
+--
+25027:....0 (-18.1)
+1.5 (-7.0)
+41 (-52.8)
+10.3 (-28.7)
+Figure 5: Extended Refusal and Benign Fine-tuning.
+QWEN2.5-3B with ER maintains its alignment better
+after fine-tuning compared to base.
+200
+400
+600
+800
+1000
+1200
+1400
+Training Steps
+60
+70
+80
+90
+100
+Harm Refusal Rate (%)
+Base
+Extended Refusal
+Table 3: Refusal Components Ablations. Refusal
+scores after abliterating variants of QWEN2.5-3B fine-
+tuned on individual refusal parts from DER.
+Ablation
+Refusal Score (↑)
+QWEN2.5-3B-EXTENDED-ABLITERATED
+90.9
+EXPLANATION-ABLITERATED
+81.1 (-9.8)
+REFUSAL-ABLITERATED
+17.8 (-73.1)
+JUSTIFICATION-ABLITERATED
+86.2 (-4.7)
+maintains a refusal rate exceeding 90% even after
+more than 1.4k steps. This suggests that extend-
+ing refusal makes models more robust to alignment
+loss during otherwise harmless fine-tuning.
+4.6
+Refusal Component Ablations
+Our approach relies on delaying and extending the...
+--
+26225:... this, we trained three separate versions of
+QWEN2.5-3B, each fine-tuned on only one of the
+components. The results are shown in Table 3.
+As expected, the model fine-tuned solely on the
+Refusal component performs poorly after ablitera-
+tion with its refusal rate dropping by 73.1 points
+compared to the full ER model. This makes sense
+as this fine-tuning would only strengthen the al-
+ready existing refusal signal without ‘diffusing‘ it.
+In contrast, models trained on the Explanation or
+Justification component...
+--
+27729:...stantially more
+resilient. Through extensive experiments across
+several open-weight models, we demonstrated that
+models fine-tuned for extended-refusal maintain
+over 90% refusal score even under abliteration that
+reduces standard models to below 20% refusal rates.
+Beyond resistance to abliteration, extended-refusal
+models also generalize to other alignment threats,
+including jailbreaks, prompt injections, and benign
+fine-tuning drift. Ultimately, our findings under-
+score a broader principle: the form of sa...
+--
+28569:...ainst abliteration
+for models up to 7B parameters, it remains uncer-
+tain whether this improvement generalizes to larger
+LLMs. The method also demonstrated increased
+alignment stability during fine-tuning on safe data;
+however, a moderate decline in refusal rate was
+still observed. Further research is therefore needed
+to integrate extended-refusal fine-tuning with ad-
+ditional mitigation strategies to address this limita-
+tion. Moreover, the greater verbosity of extended
+refusals may affect user experience ...
+--
+43133:...-
+duction) llms. Preprint, arXiv:2312.04782.
+Lianmin Zheng, Wei-Lin Chiang, Ying Sheng, Siyuan
+Zhuang, Zhanghao Wu, Yonghao Zhuang, Zi Lin,
+Zhuohan Li, Dacheng Li, Eric P. Xing, Hao Zhang,
+Joseph E. Gonzalez, and Ion Stoica. 2023. Judg-
+ing llm-as-a-judge with mt-bench and chatbot arena.
+Preprint, arXiv:2306.05685.
+
+Chunting Zhou, Pengfei Liu, Puxin Xu, Srini Iyer, Jiao
+Sun, Yuning Mao, Xuezhe Ma, Avia Efrat, Ping Yu,
+Lili Yu, Susan Zhang, Gargi Ghosh, Mike Lewis,
+Luke Zettlemoyer, and Omer Levy. 202...
+--
+43644:...A:
+Less Is More for Alignment. arXiv.
+Andy Zou, Zifan Wang, Nicholas Carlini, Milad Nasr,
+J. Zico Kolter, and Matt Fredrikson. 2023. Univer-
+sal and transferable adversarial attacks on aligned
+language models. Preprint, arXiv:2307.15043.
+
+A
+LLM as a Judge vs Llama-Guard
+In addition to using QWEN-2.5-14B as our primary LLM-based judge of refusal behavior, we also
+evaluated the ablated extended-refusal models with LLAMA-GUARD-3-8B, an external safety classifier.
+Table A reports refusal rates under both evaluators.
+Overall, the two methods are in strong agreement, with differences of at most 4 percentage points. For
+LLAMA-2-7B-EXTENDED-REFUSAL-ABLITERATED, Qwen-2.5-14B judges a 92.7% refusal rate versus
+90.4% under Llama-Guard. Similarly, QWEN2.5-3B-EXTENDED-REFUSAL-ABLITERATED shows 90.9%
+(LLM judge) vs. 94.6% (Llama-Guard), and QWEN2.5-1.5B-EXTENDED-REFUSAL-ABLITERATED
+yields 96.7% vs. 89.3%.
+These results confirm that our extended-refusal defense remains robust regardl...
+--
+[12 more matches not shown]

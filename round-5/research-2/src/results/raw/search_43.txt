@@ -1,0 +1,71 @@
+# search 'steering layer choice matters more than steering coefficient larger coefficient wrong layer does not recover effect' mode=general accessed 2026-09-24
+Search: steering layer choice matters more than steering coefficient larger coefficient wrong layer does not recover effect  [general via exa]
+Found: 8 results
+
+1. Predicting Where Steering Vectors Succeed
+   https://arxiv.org/html/2604.15557v1
+   Predicting Where Steering Vectors Succeed
+
+# Predicting Where Steering Vectors Succeed
+
+Jayadev Billa jbilla2004@gmail.com Unaffiliated researcher; previously at ISI@USC, Yahoo, Nuance, and BBN.
+
+####...
+
+2. [Full Post] Progress Update #1 from the GDM Mech Interp ...
+   https://www.lesswrong.com/posts/C5KAZQib3bzzpeyrg/progress-update-1-from-the-gdm-mech-interp-team-full-update
+   # \[Full Post\] Progress Update #1 from the GDM Mech Interp Team
+
+* By [Neel Nanda](/users/neel-nanda-1), [Arthur Conmy](/users/arthur-conmy), [lewis smith](/users/lewis-smith), [Senthooran Rajamanoha...
+
+3. Selective Steering: Norm-Preserving Control Through Discriminative Layer Selection
+   https://arxiv.org/html/2601.19375
+   Selective Steering: Norm-Preserving Control Through Discriminative Layer Selection
+
+# Selective Steering: Norm-Preserving Control Through Discriminative Layer Selection
+
+Quy-Anh Dang1,2, Chris Ngo2 1V...
+
+4. What I Learned (And Didn't) Steering Qwen3 Models
+   https://omar.bet/2026/01/17/What-I-Learned-Steering-Qwen3-Models/
+   What I Learned (And Didn't) Steering Qwen3 Models - Omar Ayyub
+
+Recent discussion about the tension between mechanistic understanding and applied safety outcomes got me interested in steering vectors....
+
+5. Week 2: Steering
+   https://neural-mechanics.baulab.info/week2.html
+   Week 2: Steering - Neural Mechanics
+
+## Overview
+
+If concepts are encoded as directions in activation space, can we control model behavior by intervening on those directions? This week explores how to...
+
+6. Multi-Layer Steering | Learn Mechanistic Interpretability
+   https://learnmechinterp.com/topics/multi-layer-steering/
+   Multi-Layer Steering | Learn Mechanistic Interpretability
+
+# Multi-Layer Steering
+
+How distributing steering interventions across multiple transformer layers overcomes the fragility of single-layer st...
+
+7. blog/format-gated-behaviors/experiments/07_steering_vector_residue.py
+   https://github.com/asving/asving.github.io/blob/main/blog/format-gated-behaviors/experiments/07_steering_vector_residue.py
+   # blog/format-gated-behaviors/experiments/07_steering_vector_residue.py
+
+- Branch: main
+- Repository: asving/asving.github.io
+
+---
+
+#!/usr/bin/env python3
+"""
+Experiment 7: Steering Vector Residue and...
+
+8. steering-coefficient-tuning
+   https://skillsmp.com/creators/zjunlp/mechanist/skills-experiment-tips-steering-coefficient-tuning
+   Skip to main content
+
+# steering-coefficient-tuning
+
+How to set the strength of any additive intervention on internal representations — steering vectors, CAA, DAS dose-response, representation enginee...
+

@@ -1,0 +1,44 @@
+# search 'proxy refusal metric accurate on base model but inverts on abliterated edited model keyword' mode=general accessed 2026-09-24
+Search: proxy refusal metric accurate on base model but inverts on abliterated edited model keyword  [general via ddgs]
+Found: 10 results
+
+1. Abliterated models for cybersecurity: what removing refusals actually buys you - Featherless
+   https://featherless.ai/blog/abliterated-models-for-cybersecurity
+   1 week ago - KL divergence is a proxy rather than proof, and the people who published that comparison say so: low divergence on neutral inputs is consistent with preserved capability without demonstra...
+
+2. Abliteration Is Not a Scalpel:Off-Target Effects of Refusal Removal on Decision Disposition Across Model Families
+   https://arxiv.org/html/2607.17427v1
+   July 19, 2026 - A pilot on a mismatched-quantizer NVFP4 pair reported an "excision of doubt" (abliterated less doubtful, low-confidence tail removed). On clean BF16 checkpoints the picture inverts and...
+
+3. Abliteration Is Not a Scalpel: Off-Target Effects of Refusal Removal on Decision Disposition Across Model Families · Pith
+   https://pith.science/paper/2607.17427
+   August 1, 2026 - Second, the two exploratory effects—verbosity and doubt-vocabulary thinning—depend on instruments chosen after data collection; the paper labels them exploratory, but they should not ...
+
+4. What Are Abliterated Models? How Refusal Removal Works - Atomic Chat
+   https://atomic.chat/blog/guides/what-are-abliterated-models
+   1 month ago - An abliterated model is one type of uncensored or less-censored model. Uncensored describes a broad category of models that tend to refuse requests less frequently, and abliterated descr...
+
+5. WTF Are Abliterated Models? Uncensored LLMs Explained
+   https://webdecoy.com/blog/wtf-are-abliterated-models-uncensored-llms-explained/
+   January 11, 2026 - An abliterated model is an LLM modified to reduce its tendency to refuse requests. The term commonly refers to editing model weights using a refusal-related direction found in the m...
+
+6. Uncensored AI Model Claims Zero Refusals; Its Own Test File Shows No Answer Ever Finished – North Denver Tribune.com
+   https://northdenvertribune.com/news-2/abliterated-qwen38-27b-mlx-refusal-rate-apple-silicon-analysis/
+   August 24, 2026 - Published fidelity figures measure how closely quantized weights track the abliterated source — cosine similarity of 0.9997 at 8-bit, 0.9996 at 6-bit, 0.996 at 4-bit and 0.92 at 2-bi...
+
+7. Base LLMs refuse too
+   https://www.lesswrong.com/posts/YWo2cKJgL7Lg8xWjj/base-llms-refuse-too
+   Where cout is an activation vector (from the base model) and ^r is the “refusal direction” (extracted from either the base or chat model). Note that this is mathematically equivalent to editing the mo...
+
+8. refusal-benchmark/FINDINGS.md at main · audn-ai/refusal-benchmark
+   https://github.com/audn-ai/refusal-benchmark/blob/main/FINDINGS.md
+   The two behave oppositely. pingu-unchained-10 (qwen3.8-abliterated) prefaces heavily ("Since 'bomb' can refer to…") then delivers; 1.9% is the phrasing rate and an upper bound on refusal — substantive...
+
+9. Refusal Reads Only a Slice of What the Model Knows Harm-Keyed Routing and Its Exceptions Across Model Families
+   https://arxiv.org/html/2609.14759
+   Alignment applied after pretraining is shallow in a measurable way: a single direction in a model’s residual stream can be edited out, and the model stops refusing harmful requests. That fact says how...
+
+10. [Paper Note] On the Rejection Criterion for Proxy-Based Test-Time Alignment
+   https://en.papernotes.org/ACL2026/llm_alignment/on_the_rejection_criterion_for_proxy-based_test-time_alignment/
+   May 8, 2026 - (2026), evaluating three mathematical reasoning datasets (GSM8K, MATH500, SVAMP) and two commonsense reasoning datasets (ARC-Challenge, CommonsenseQA). Model families include OLMo 2 and ...
+

@@ -1,0 +1,124 @@
+# grep https://arxiv.org/pdf/2406.18495  pattern=/refusal detection|response refusal|three|harmfulness of (the )?response|compliance/  accessed 2026-09-24
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/pdf/2406.18495
+Type: PDF
+Pattern: refusal detection|response refusal|three|harmfulness of (the )?response|compliance (90 matches in 101109 chars)
+
+--- Content ---
+
+491:...n Choi♡♢
+Nouha Dziri♡
+♡Allen Institute for AI
+♢University of Washington
+♠Seoul National University
+wade3han@snu.ac.kr
+kavelrao@cs.washington.edu
+nouhad@allenai.org
+∗Co-first-authors
+†Co-second-authors
+Abstract
+We introduce WILDGUARD—an open, light-weight moderation tool for LLM
+safety that achieves three goals: (1) identifying malicious intent in user prompts,
+(2) detecting safety risks of model responses, and (3) determining model refusal
+rate. Together, WILDGUARD serves the increasing needs for automatic safety
+moderation and evaluation of LLM interactions, providing a one-stop tool with
+enhanced...
+--
+1433:...aluating safety behaviors in model responses.
+To address these challenges, we construct WILDGUARDMIX, a large-scale and
+carefully balanced multi-task safety moderation dataset with 92K labeled examples
+that cover vanilla (direct) prompts and adversarial jailbreaks, paired with vari-
+ous refusal and compliance responses. WILDGUARDMIX is a combination of
+WILDGUARDTRAIN, the training data of WILDGUARD, and WILDGUARDTEST,
+a high-quality human-annotated moderation test set with 5K labeled items covering
+broad risk scenarios. Through extensive evaluations on WILDGUARDTEST and ten
+existing public benchmarks, we show that WILDGUARD establishes state-of-the-art
+performance in open-source safety moderation across all the three tasks compared
+to ten strong existing open-source moderation models (e.g., up to 26.4% improve-
+ment on refusal detection). Importantly, WILDGUARD matches and sometimes
+exceeds GPT-4 performance (e.g., up to 3.9% improvement on prompt harmfulness
+identification). WILDGUARD serves as a highly effective safety moderator in an
+LLM interface, reducing the success rate of jailbreak attacks from 79.8% to 2.4%.
+Model: https:...
+--
+2949:... [16], and evaluating
+effectiveness of model safeguards by measuring refusal rates on harmful versus benign prompts [30].
+In this work, we introduce WILDGUARD, a light-weight, multi-purpose moderation tool for assessing
+the safety of user-LLM interactions. WILDGUARD provides a one-stop resource for three safety
+38th Conference on Neural Information Processing Systems (NeurIPS 2024) Track on Datasets and Benchmarks.
+arXiv:2406.18495v3  [cs.CL]  9 Dec 2024
+
+23%
+41%
+16%
+20%
+Privacy
+Misinformation
+Harmful Language
+Malicious Uses
+22%
+40%
+15%
+23%
+             I'm happy to help! However, I want to make it...
+--
+4813:...hout their consent. As a writer, 
+you have the power to shape ideas and 
+perspectives through your words, but it is 
+important to do so in a way that is respectful 
+of your readers' autonomy and agency.
+Prompt 
+Harm
+No
+Response 
+Harm
+No
+Refusal 
+Detection Yes
+Benign Prompt
+Benign + Refusal
+Benign + Compliance
+Harm Prompt
+Harm + Refusal
+Harm + Compliance
+10451
+6325
+6270
+4053
+4004
+4291
+Written by Workers
+1888 (2%) In-the-Wild Queries
+11511
+4529
+4814
+11389
+4727
+4793
+41752 
+(47%)
+35147 
+(40%)
+9491 
+(11%)
+Synthetic 
+Adversarial
+Synthetic 
+Vanilla
+WildGuard
+Harm Categories
+Harm Categories
+Figure 1:
+(Top) Breakdown of WILDGUARDMIX, featuring four data types:
+Synthetic
+Vanilla/Adversarial, IN-THE-WILD, and Annotator-written data. Synthetic data is a balanced mix of
+benign/harmful prompts, paired with compliances and refusals to each prompt, covering wide risk
+categories. (Bottom) Examples in WILDGUARDMIX.
+moderation tasks: detection of prompt harmfulness, response harmfulness, and response refusal.
+We show that WILDGUARD advances the state-of-the art of open-source safety moderation tools
+across all three tasks and provides a more open, consistent, and economical alternative to costly and
+non-static API moderation tools, achieving on-par or better performance relative to the GPT-4 judge.
+The development of WILDGUARD is motivated in particular by two observations. First, existing open
+tools like Llam...
+--
+[80 more matches not shown]

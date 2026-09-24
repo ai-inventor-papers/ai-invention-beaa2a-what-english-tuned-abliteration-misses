@@ -1,0 +1,38 @@
+# fetch https://arxiv.org/abs/2606.01322  accessed 2026-09-24
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/abs/2606.01322
+Type: HTML
+Length: 7991 chars (truncated)
+
+--- Content ---
+
+Skip to main content [](https://arxiv.org/IgnoreMe) [ ](https://arxiv.org/) [ Search ](https://arxiv.org/search) [Submit](https://arxiv.org/user/create) [Donate](https://info.arxiv.org/about/donate.html) [Log in](https://arxiv.org/login)
+
+Search arXiv
+
+Press Enter to search * [Advanced search](https://arxiv.org/search/advanced)
+
+# Computer Science > Computation and Language
+
+**arXiv:2606.01322** (cs) 
+
+[Submitted on 31 May 2026 ([v1](https://arxiv.org/abs/2606.01322v1)), last revised 22 Sep 2026 (this version, v2)]
+
+# Title:TukaBench: A Culturally Grounded Jailbreak Benchmark for African Languages
+
+Authors:[Victor Akinode](https://arxiv.org/search/cs?searchtype=author&query=Akinode,+V), [Senyu Li](https://arxiv.org/search/cs?searchtype=author&query=Li,+S), [Wassim Hamidouche](https://arxiv.org/search/cs?searchtype=author&query=Hamidouche,+W), [Waqas Zamir](https://arxiv.org/search/cs?searchtype=author&query=Zamir,+W), [Inbal Becker-Reshef](https://arxiv.org/search/cs?searchtype=author&query=Becker-Reshef,+I), [David Ifeoluwa Adelani](https://arxiv.org/search/cs?searchtype=author&query=Adelani,+D+I)
+
+View a PDF of the paper titled TukaBench: A Culturally Grounded Jailbreak Benchmark for African Languages, by Victor Akinode and 5 other authors
+
+[View PDF](/pdf/2606.01322) [HTML (experimental)](https://arxiv.org/html/2606.01322v2)
+
+> Abstract:Safety evaluation of Large Language Models (LLMs) remains heavily English-centric, leaving Low-Resource Languages (LRLs), particularly African ones, critically underexplored. We introduce TUKABENCH, a jailbreak benchmark for seven African languages that extends JailbreakBench (JBB) beyond direct translation through four settings: human translation of JBB prompts, English adaptation to African contexts followed by human translation, human-curated prompts validated through interactions with GPT-5.2, and code-switched prompts combining English and African languages, isolating the effect of language, cultural grounding, and prompt evasiveness on model safety. Across closed and open models, prompting in African languages reduces refusal relative to English, with culturally adapted prompts leading to least refusal. The evaluation also surfaces two structural limitations: model comprehension failures and reduced LLM-as-a-judge reliability in LRLs. To capture the first, we introduce Deflection alongside Refused and Jailbroken; to assess the second, we validate outputs with human annotations, showing that judge-human agreement drops in lower-resource languages and less commonly supported scripts. 
+
+Comments: | Accept to EMNLP 2026 (main conference)  
+---|---  
+Subjects: |  Computation and Language (cs.CL); Artificial Intelligence (cs.AI)  
+Cite as: | [arXiv:2606.01322](https://arxiv.org/abs/2606.01322) [cs.CL]  
+  | (or  [arXiv:2606.01322v2](https://arxiv.org/abs/2606.01322v2) [cs.CL] for this version)   
+  |  <https://doi.org/10.48550/arXiv.2606.01322> Focus to learn more arXiv-issued DOI via DataCite  
+  
+## Submissio

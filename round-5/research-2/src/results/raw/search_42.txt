@@ -1,0 +1,85 @@
+# search 'judge validated on one model outputs fails on another model outputs refusal classifier distribution shift abliterated' mode=general accessed 2026-09-24
+Search: judge validated on one model outputs fails on another model outputs refusal classifier distribution shift abliterated  [general via exa]
+Found: 9 results
+
+1. oleczek/paper-abliteration-not-a-scalpel
+   https://github.com/oleczek/paper-abliteration-not-a-scalpel
+   # oleczek/paper-abliteration-not-a-scalpel
+
+Off-target effects of refusal removal (abliteration) on LLM decision disposition — paper, dataset (21,600 decisions), analysis code
+
+- Stars: 0
+- Forks: 0
+-...
+
+2. Confidently Wrong: Exception Chain Collapse in Frontier LLM Rule Evaluation
+   https://arxiv.org/html/2607.23386v1
+   Confidently Wrong: Exception Chain Collapse in Frontier LLM Rule Evaluation
+
+# Confidently Wrong: Exception Chain Collapse in Frontier LLM Rule Evaluation
+
+ Paul Simpson John Kozak Lisa Doake 
+
+Aethis...
+
+3. README.md
+   https://palani-sn.github.io/LLM2/README.html
+   README.md
+
+# Refusal-Direction Abliteration & Constitutional-Classifiers++ Pipeline
+
+A research pipeline that (1) locates and removes the internal "refusal direction" of an instruction-tuned LLM at in...
+
+4. Refusal-Direction Abliteration in Falcon3-1B-Instruct: Runtime Ablation vs. a From-Scratch Constitutional Classifiers++ Defense — EA Forum
+   https://forum.effectivealtruism.org/posts/nm5bcgKSwntyjAPJJ/refusal-direction-abliteration-in-falcon3-1b-instruct
+   # Refusal-Direction Abliteration in Falcon3-1B-Instruct: Runtime Ablation vs. a From-Scratch Constitutional Classifiers++ Defense
+
+Sathiyanarayanan Palani
+
+## TL;DR
+
+I located the "refusal direction" ...
+
+5. Palani-SN/abliteration-et-constitutional-classifier
+   https://github.com/Palani-SN/abliteration-et-constitutional-classifier
+   # Palani-SN/abliteration-et-constitutional-classifier
+
+White-box activation probing for LLM safety — refusal-direction ablation vs. a Constitutional-Classifiers++ gate. Findings — 36-coordinate Cohen'...
+
+6. docs/evaluation.md
+   https://github.com/wuwangzhang1216/abliterix/blob/master/docs/evaluation.md
+   # docs/evaluation.md
+
+- Branch: master
+- Repository: wuwangzhang1216/abliterix
+
+---
+
+← back to README
+
+# Evaluation
+
+Why most abliteration benchmarks are broken, the standards Abliterix evaluates agai...
+
+7. LLM-as-Judge Verification | NeMo Gym
+   https://docs.nvidia.com/nemo/gym/v0.2.1/environment-tutorials/llm-as-judge-verification
+   LLM-as-Judge Verification | NeMo Gym
+
+Use a second language model inside your resources server’s`verify()` when rewards depend on semantic equivalence, rubrics, or other judgments that are expensive o...
+
+8. [2605.16023] Judge Circuits
+   https://ar5iv.labs.arxiv.org/html/2605.16023
+   [2605.16023] Judge Circuits
+
+# Judge Circuits
+
+Nils FeldhusTanja BaeumelElena GolimblevskaiaQianli WangVan Bach NguyenAaron Louis EidtSelin KahveciogluChristopher EbertWojciech SamekJing YangVera Schm...
+
+9. Judge, Retrieve, or Abstain: Uncertainty-Guarded LLM Judging with Provable Risk Guarantees
+   https://arxiv.org/html/2608.17994v1
+   Judge, Retrieve, or Abstain: Uncertainty-Guarded LLM Judging with Provable Risk Guarantees
+
+# Judge, Retrieve, or Abstain: Uncertainty-Guarded LLM Judging with Provable Risk Guarantees
+
+ Sher Badshah ...
+

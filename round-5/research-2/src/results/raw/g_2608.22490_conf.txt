@@ -1,0 +1,451 @@
+# grep https://arxiv.org/pdf/2608.22490  pattern=/confound|Are the Disparities|unaligned models themselves|language-specific bias|capabilit(y|ies) of M|A\.1 Safety|A\.2 /  accessed 2026-09-24
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/pdf/2608.22490
+Type: PDF
+Pattern: confound|Are the Disparities|unaligned models themselves|language-specific bias|capabilit(y|ies) of M|A\.1 Safety|A\.2  (11 matches in 107151 chars)
+
+--- Content ---
+
+7078:...cit
+quality degradation, which is a previously underex-
+amined channel: even when both models comply,
+safety alignment systematically suppresses infor-
+mational depth and factual precision. By isolating
+a direct effect of safety alignment, our findings
+expose a fundamental flaw in current alignment
+paradigms and urge the development of equitable
+safety mechanisms.
+2
+Experimental Design
+In this section, we introduce a controlled evalu-
+ation protocol to rigorously examine how safety
+alignment imposes a utility cost across different
+languages. Here, we treat safety alignment as post-
+training interventions aimed at mitigating harmful
+outputs, such as safety-focused supervised fine-
+tuning and preference optimization (e.g., RLHF or
+DPO). Broader safety measures, such as harmful
+data filtering, fall outside the scope of this defi-
+nition. We first describe how we isolate the cost
+from other confounding factors (§2.1), then present
+the evaluation setting used to measure it (§2.2),
+and finally define the metrics used to quantify its
+disparate impact across languages (§2.3).
+2.1
+Evaluation Protocol: Isolating Safety Cost
+In this work, we define Safety Cost as the loss in
+response utility that safety alignment imposes on
+benign queries where a helpful, compliant response
+is both safe and expected. While prior work has
+used a similar term, Safety Tax, to narrowly refer to
+degradation in reasoning capability (Huang et al.,
+2025), we use Safety Cost to refer to the overall
+utility loss induced by safety alignment. To quan-
+tify the cost attributable solely to safety alignment,
+we must separate it from other factors that affect
+response utility. For example, if a model performs
+worse in a particular language, the cost may re-
+flect either safety alignment or the model’s weaker
+baseline abi...
+--
+26189:...
+  Coverage Scope
+Presentation Quality
+  Clarity Structure
+  Tone Helpfulness
+Response Integrity
+  Correctness Reliability
+  Calibration Nuance
+  Safety Ethics
+  Output Failure
+ 
+Figure 4: The distribution of labels assigned by the
+meta-judge across models.
+degrades utility in a predictable, language-agnostic
+manner, primarily by suppressing informational
+depth and factual precision.
+4.3
+Is the Safety Cost an Artifact of
+Pre-existing Language Deficits?
+A potential concern in our analysis is that the ob-
+served Safety Cost might stem from general perfor-
+mance disparities introduced by a safety ablation
+process, rather than from safety alignment itself.
+For example, if the safety ablation process could
+inadvertently degrade general multilingual compe-
+tence in certain languages more than others, this
+gap could be misinterpreted as Safety Cost. To rule
+out this possibility, we construct a confounding
+map that jointly visualizes the general performance
+disparities and Marginal Safety Cost for each eval-
+uated language.
+Critically, the key confound is not the abso-
+lute performance drop from safety ablation, but
+whether that drop is disproportionately larger in
+some languages than in English. To study this,
+we introduce the Alignment Gap Difference as the
+x-axis in Figure 5.
+It measures the difference
+between the alignment gaps in target language
+L and in English on benign tasks. It is formu-
+lated as (∆benign
+L
+−∆benign
+Eng
+), where ∆benign
+L
+=
+Score(Malign, L) −Score(Munalg, L).
+For in-
+stance, if the alignment gap is 10% in English
+(∆benign
+Eng
+= 10%) and 20% in another language
+(∆benign
+L
+= 20%), the Alignment Gap Difference
+is 20% −10% = 10%.
+10
+5
+0
+5
+10
+Alignment Gap Difference
+10
+5
+0
+5
+10
+15
+20
+25
+Marginal Safety Cost
+Cost > 0
+Cost < 0
+Llama-3.3-70B
+Qwen2.5-72B
+Gemma-3-27B
+Qwen3-32B
+High-resource
+Mid-resource
+Low-resource
+ 
+Figure 5: Language-Specific Bias in Safety Ablation.
+We check if the Safety Cost is merely a byproduct of
+language deficits introduced by safety ablation. The x-
+axis (Alignment Gap Difference) measures if a language
+loses more capability than English during ablation (x ≈
+0 means no bias). The y-axis (Marginal Safety Cost)
+shows the extra Safety Cost a language suffers compared
+to English. Points clustered near x = 0 prove that the
+Safety Cost is a distinct phenomenon, not just a side
+effect of the ablation process.
+A value near zero indicates that the ablation
+process affects both certain languages and En-
+glish comparably, suggesting it does not introduce
+language-specific biases. By contrast, a large pos-
+itive value, would indicate that Munalg is dispro-
+portionately disadvantaged in that language, intro-
+ducing a deficit that could confound our estimate
+of the true Safety Cost. We measure this gap using
+P-MMEval (Zhang et al., 2025a), a comprehensive
+multilingual evaluation suite that covers diverse
+language model capabilities on a benign task. On
+the y-axis, we use Marginal Safety Cost to see how
+much more Cost each language pays compared to
+English.
+Safety Cost is decoupled from Alignment Gap
+Difference.
+As shown in Figure 5, the majority
+of data points cluster near x ≈0 with minimal
+deviation (The mean absolute deviation of x from
+zero ranges from 0.56 (Llama-3.3-70B) to 1.93
+(Qwen2.5-72B)). This demonstrates that Malign
+and Munalg exhibit comparable performance gap
+on benign tasks across languages. Despite this, the
+7
+
+Checkpoint
+Data 1 (60K)
+Data 2 (20K)
+Role
+c0
+Multilingual instruction data from
+aya_dataset, balanced over the six
+evaluation languages (Singh et al., 2024)
+20K non-safety instructions from the same
+Aya ...
+--
+30794:...n abla-
+tion on the released Qwen3-32B. ∆En is the difference
+from English. Both estimators place English at the
+highest Safety Cost and every non-English language
+below it, recovering the same family-specific pattern.
+Korean is excluded because the 8B checkpoints produce
+degenerate Korean text in this train-from-base setting
+(Appendix C.2).
+Marginal Safety Cost on the vertical axis is sub-
+stantially positive for most non-English languages.
+This strongly suggests that the observed Safety
+Cost is arises from safety alignment itself rather
+than from pre-existing language deficits in Munalg.
+This interpretation is further supported by prior
+work. Wang et al. (2025) show that the refusal di-
+rection is universal across languages, suggesting
+that safety ablation operates on a shared represen-
+tational axis rather than on language-specific com-
+ponents, and thus does not inherently introduce
+language-specific biases.
+4.4
+Validating Safety Cost without
+Refusal-Direction Ablation
+Although Section 4.3 provides evidence that the
+Safety Cost is not introduced by the refusal-
+direction ablation, we further strengthen this verifi-
+cation by replicating the safety alignment process
+from scratch, which yields a genuinely unaligned
+model rather than an ablated proxy.
+We then
+measure the Safety Cost in this setting and com-
+pare it with the estimate obtained through refusal-
+direction ablation. Because the safety recipes of
+released models are proprietary, we cannot literally
+reverse their alignment, so this experiment does
+not recover the actual Safety Cost that the released
+models incur. Our aim is narrower: to show that a
+Safety Cost also emerges in this controlled setting,
+and that its direction agrees with our main results.
+Matched-checkpoint
+setup.
+Starting
+from
+Qwen3-8B-Base (Yang et al., 2025), we f...
+--
+38892:... ac-
+knowledge that the technical process of revers-
+ing safety alignment may not perfectly isolate the
+safety components without marginally affecting
+other latent capacities. This design choice was
+driven by two practical constraints: limited compu-
+tational resources and the inaccessibility of training
+data for alignment. Given unlimited compute and
+full access to training data, a more controlled exper-
+iment would be to train models from scratch with
+and without safety alignment to produce strictly
+comparable pairs. However, such an approach is
+prohibitively expensive and remains largely infea-
+sible. In particular, because the safety-related train-
+ing data of these models is not public, a separately
+trained “unaligned” counterpart cannot be guaran-
+teed to differ from the aligned model only in the
+absence of safety data; any divergence in the train-
+ing recipe would itself become a confound, which
+the data-free abliteration procedure avoids by con-
+struction. To mitigate this issue, we conducted
+extensive auxiliary experiments to verify the valid-
+ity of our approach (Section 4.3 and 4.4). We
+believe our analysis provides strong empirical ev-
+idence for the hypothesis of uneven costs across
+languages. and urge model developers to consider
+alignment costs not just for English, but across all
+languages their models are intended to support. A
+more controlled investigation through full retrain-
+ing of models with and without safety alignment
+remains an interesting direction for future work.
+Dependency on open weight architectures.
+Be-
+cause our core evaluation protocol fundamentally
+requires removing existing safety mechanisms to
+establish an unaligned baseline, our experiments
+are strictly limited to open-weight models. Con-
+sequently, we cannot apply this direct compara-
+tiv...
+--
+60823:...tion for Computational Linguistics
+(Volume 1: Long Papers), pages 744–768, Toronto,
+Canada. Association for Computational Linguistics.
+14
+
+A
+Experimental Setup
+A.1
+Safety Ablation Method
+In practice, we instantiate the unaligned coun-
+terpart Munalg through weight orthogonalization
+(abliteration), following the refusal-direction anal-
+ysis of Arditi et al. (2024). A single refusal direc-
+tion is estimated from contrastive harmful-versus-
+benign prompt pairs, and the residual-stream and
+MLP output weights are then projected orthogo-
+nal to this direction. Because this is a closed-form
+projection that involves no gradient updates and
+no new training data, it removes the model’s re-
+fusal behavior while leaving its base knowledge
+and instruction-following ability intact. This data-
+free property is exactly what lets us attribute any
+measured utility gap to safety alignment rather than
+to a confounding fine-tuning distribution, as we
+elaborate below.
+A.2
+Safety Ablation as Unaligned Proxy
+Establishing a perfect control group of unaligned
+model is critical to precisely isolate the effect
+of safety alignment. In practice, raw pre-trained
+models are unsuitable proxies for Munalg; with-
+out instruction-following abilities, they often fail
+to generate coherent dialogue, which introduces
+severe noise into the utility comparison. Conse-
+quently, the ideal proxy would be a "helpful-only"
+model, a checkpoint that is trained without any
+safety-triggering data while preserving the origi-
+nal capabilities. However, such checkpoints are
+not only withheld from public use but also lack
+guarantee of being entirely devoid of safety align-
+ment, as they are typically engineered as adversar-
+ial tools rather than pristine control groups (Bai
+et al., 2022b; Mu et al., 2024; Sharma et al., 2025).
+There...
+--
+62764:...Munalg. Cru-
+cially, the removal of safety constraints is achieved
+by projecting out this vector from the model’s
+weight matrices, entirely performing the orthog-
+onalization without any gradient-based updates.
+This exacts a targeted surgical removal of the safety
+vector while keeping the base knowledge and origi-
+nal instruction-following abilities intact.
+One widely accepted convention of utilizing this
+technique is to undergo subsequent harmful fine-
+tuning after the ablation of safety alignment2. Re-
+2https://www.reddit.com/r/LocalLLaMA/comments/
+1nq0cp9/important_why_abliterated_models_suck_
+cent observations suggest that purely abliterated
+models may experience performance drop in gen-
+eral capabilities, and combining abliteration with
+additional Fine-tuning can recover these nuances.
+However, from an analytical standpoint, introduc-
+ing a new fine-tuning dataset might introduce a
+confounding variable. Any observed disparity in
+response utility would be entangled with the quality
+and distribution of the post-hoc FT dataset, thereby
+breaking the fair comparison between the aligned
+and unaligned models. Therefore, we conclude that
+the best way to get a truly unaligned model is to
+use the pure weight orthogonalization (abliteration)
+technique.
+A.3
+Model Information
+Model
+Aligned & Unaligned
+Llama-3.3-70B
+meta-llama/Llama-3.3-70B-Instruct
+huihui-ai/Llama-3.3-70B-Instruct-abliterated
+Gemma-3-27B
+google/gemma-3-27b-it
+huihui-ai/gemma-3-27b-it-abliterated
+Qwen2.5-72B
+Qwen/Qwen2.5-72B-Instruct
+huihui-ai/Qwen2.5-72B-Instruct-abliterated
+Qwen3-32B
+Qwen/Qwen3-32B
+huihui-ai/Qwen3-32B-abliterated
+Table 3: Official HuggingFace model names and their
+unaligned variants.
+A.4
+Experimental Details
+Model Inference Setup
+All open-weight model
+inferences were powered by vLLM (Kwon et al.,
+2023...
+--
+67525:...is
+guaranteed by construction rather than assumed.
+The non-trivial refusal rates we observe across all
+(model, language) settings (Table 17) then empiri-
+cally confirm that the safety mechanism is in fact
+engaged on this evaluation set, validating it as a
+setting in which Safety Cost can be measured.
+Benchmark
+Category
+Count
+XSTest
+homonyms
+25
+figurative_language
+25
+safe_targets
+25
+safe_contexts
+25
+OR-Bench
+harmful
+19
+hate
+15
+illegal
+14
+privacy
+13
+deception
+9
+unethical
+8
+violence
+8
+sexual
+5
+harassment
+5
+self-harm
+4
+OR-Bench-Hard
+illegal
+46
+harmful
+12
+unethical
+10
+privacy
+10
+violence
+7
+deception
+5
+sexual
+4
+hate
+2
+self-harm
+2
+harassment
+2
+Table 4: Per-category composition of the 100 prompts
+sampled per benchmark and language (evaluated across
+English and five non-English languages).
+B
+Reliability of the Evaluation
+B.1
+Translation Reliability
+To verify that the translated benchmarks do not
+confound the cross-lingual Safety Cost, we vali-
+date the translations from three complementary an-
+gles: automatic quality estimation, native-speaker
+validation, and back-translated re-evaluation.
+Automatic quality estimation.
+We first score
+every translated prompt with two reference-free
+quality-estimation metrics, CometKiwi-XL and
+xCOMET-XL (Table 5). All six languages fall
+within a narrow band corresponding to “good” to
+“very good” on the WMT quality-estimation scale,
+and even the lowest-scoring language (Chinese,
+at 0.77 CometKiwi) stays above the conventional
+reliability threshold. More importantly, the gap be-
+tween the best and worst languages is only about
+0.06 CometKiwi units, far smaller than the cross-
+lingual gap we observe in Safety Cost. Translation
+quality is therefore an implausible explanation for
+the Safety Cost disparity.
+Native-speaker validation.
+Automatic metrics
+can still...
