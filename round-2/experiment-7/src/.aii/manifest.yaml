@@ -1,0 +1,12 @@
+entries:
+  - path: .venv/
+    delete: regenerable
+    source: "uv venv .venv --python=3.12 && uv pip install --python .venv/bin/python -r env/requirements.lock --extra-index-url https://download.pytorch.org/whl/cu128 --index-strategy unsafe-best-match"
+  - path: cache/
+    delete: regenerable
+    source: "uv run python panel.py --smoke   # rebuilds cache/resid_orig.pt and cache/orig_traits.pt (original-model residuals, Dolly continuation log-softmax) in ~6-8 min on one 20-24 GB GPU; analysis_*.pkl are rebuilt by analysis.py"
+  - path: __pycache__/
+    delete: regenerable
+    source: "python bytecode, recreated on import"
+  - path: directions/
+    keep: DEV geometry (geometry.pt, 25 MB; d_EN, d_SL, lang_id, r_prior, LSAR subspaces, winsor thresholds) used by every covariate
