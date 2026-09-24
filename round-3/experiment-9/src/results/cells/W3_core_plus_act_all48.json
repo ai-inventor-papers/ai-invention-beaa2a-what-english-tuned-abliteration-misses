@@ -1,0 +1,38 @@
+{
+ "cell": "W3_core_plus_act_all48",
+ "family": "lora+act",
+ "E": null,
+ "adapter_sha256": "d219c084b84370cd972700fa07d754777b2fd56dc12257cd0e67498b2d0f2b01",
+ "trial": 96,
+ "anchor": "exp8 W3",
+ "stage": "partA+screen",
+ "flores_dNLL": {
+  "en": 0.30353558480739595,
+  "sl": 0.6115423029661179
+ },
+ "kl_dolly": {
+  "en": 0.4944900373369455,
+  "sl": 0.595197182148695
+ },
+ "sec_gen": 25.6,
+ "sec_tf": 13.6,
+ "complete_plan": [
+  [
+   "B_harm",
+   "en"
+  ],
+  [
+   "B_harm",
+   "sl"
+  ],
+  [
+   "B_ben",
+   "en"
+  ],
+  [
+   "B_ben",
+   "sl"
+  ]
+ ],
+ "done_utc": "2026-09-24T09:35:29Z"
+}

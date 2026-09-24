@@ -1,0 +1,36 @@
+{
+ "cell": "PA_noop",
+ "family": "noop",
+ "E": null,
+ "part": "A",
+ "stage": "partA",
+ "flores_dNLL": {
+  "en": 0.0,
+  "sl": 0.0
+ },
+ "kl_dolly": {
+  "en": 0.0,
+  "sl": 0.0
+ },
+ "sec_gen": 25.8,
+ "sec_tf": 12.3,
+ "complete_plan": [
+  [
+   "A_harm",
+   "en"
+  ],
+  [
+   "A_harm",
+   "sl"
+  ],
+  [
+   "A_ben",
+   "en"
+  ],
+  [
+   "A_ben",
+   "sl"
+  ]
+ ],
+ "done_utc": "2026-09-24T08:34:29Z"
+}
