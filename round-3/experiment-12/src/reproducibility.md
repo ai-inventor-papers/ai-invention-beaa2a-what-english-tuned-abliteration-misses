@@ -106,10 +106,10 @@ keyword rule decides any reported number.
 
 The publish step skips files >= 100 MB, so these live only here:
 
-- generations: `/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_3/gen_art/gen_art_experiment_12/results/<model>/gens/*.jsonl`
-- judged labels: `/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_3/gen_art/gen_art_experiment_12/results/labels_qwen.jsonl`
-- frozen directions: `/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_3/gen_art/gen_art_experiment_12/results/<model>/directions.npz`
-- the freeze: `/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_3/gen_art/gen_art_experiment_12/configs/frozen_predictions.json`
+- generations: `./results/<model>/gens/*.jsonl`
+- judged labels: `./results/labels_qwen.jsonl`
+- frozen directions: `./results/<model>/directions.npz`
+- the freeze: `./configs/frozen_predictions.json`
 
 `code/cleanup.py` moved the top-100 harmless PC basis (used only to draw matched random controls) out of
 `directions.npz` into `results/<model>/harmless_pcs.npy` - gemma: 80.5->5.3 MB, mistral: 57.9->3.8 MB, qwen3: 64.9->4.2 MB.

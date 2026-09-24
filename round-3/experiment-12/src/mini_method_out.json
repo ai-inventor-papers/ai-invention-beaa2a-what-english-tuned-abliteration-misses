@@ -13,15 +13,15 @@
       "de",
       "lt"
     ],
-    "workspace": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_3/gen_art/gen_art_experiment_12",
+    "workspace": ".",
     "kept_artifact_paths": {
-      "generations": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_3/gen_art/gen_art_experiment_12/results/<model>/gens/*.jsonl",
-      "labels": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_3/gen_art/gen_art_experiment_12/results/labels_qwen.jsonl",
-      "directions": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_3/gen_art/gen_art_experiment_12/results/<model>/directions.npz",
-      "indices": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_3/gen_art/gen_art_experiment_12/results/indices.json",
-      "frozen_predictions": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_3/gen_art/gen_art_experiment_12/configs/frozen_predictions.json",
-      "analysis": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_3/gen_art/gen_art_experiment_12/results/analysis.json",
-      "rederivation": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_3/gen_art/gen_art_experiment_12/results/rederive.json"
+      "generations": "./results/<model>/gens/*.jsonl",
+      "labels": "./results/labels_qwen.jsonl",
+      "directions": "./results/<model>/directions.npz",
+      "indices": "./results/indices.json",
+      "frozen_predictions": "./configs/frozen_predictions.json",
+      "analysis": "./results/analysis.json",
+      "rederivation": "./results/rederive.json"
     },
     "frozen_predictions": {
       "frozen_at": "2026-09-24T11:19:09",

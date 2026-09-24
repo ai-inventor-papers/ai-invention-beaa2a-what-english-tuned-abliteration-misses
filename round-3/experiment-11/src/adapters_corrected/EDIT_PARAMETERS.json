@@ -18,5 +18,5 @@
   }
  },
  "direction_index": null,
- "means_src": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_3/gen_art/gen_art_experiment_11/directions/gemma_corrected/residual_means_A.pt"
+ "means_src": "../directions/gemma_corrected/residual_means_A.pt"
 }

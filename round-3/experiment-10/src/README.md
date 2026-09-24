@@ -103,7 +103,7 @@ results/             redundancy_index.json, frozen_predictions.json, analysis_su
 ```
 
 Absolute workspace path (kept artifacts are readable here by later rounds):
-`/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_3/gen_art/gen_art_experiment_10`
+`.`
 
 ## How to run
 

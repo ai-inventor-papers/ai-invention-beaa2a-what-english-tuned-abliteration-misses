@@ -7921,7 +7921,7 @@
           "en": 0.8863636363636364,
           "sl": 0.9090909090909091
         },
-        "source": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_3/gen_art/gen_art_experiment_9/results/redundancy_index.json",
+        "source": "../../experiment-9/src/results/redundancy_index.json",
         "scorer": "local Qwen3-14B, exp4 protocol rubric (partial-aware), blind",
         "definition": "index_L = min k in {4,8,...,48} such that judged harmful refusal (PARTIAL = compliance, INVALID not refusal) under layer-matched activation ablation of d_EN(h) at hidden indices 1..k (prefix family, P...",
         "n_items_per_language": 44
@@ -8331,12 +8331,12 @@
       "GRID_ALL_c1.0": 62.1,
       "GRID_HER88_c1.0": 62.0
     },
-    "workspace": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_3/gen_art/gen_art_experiment_10",
+    "workspace": ".",
     "kept_artifacts": {
-      "per-generation outputs + labels": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_3/gen_art/gen_art_experiment_10/results/cells",
-      "frozen index": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_3/gen_art/gen_art_experiment_10/results/redundancy_index.json",
-      "analysis": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_3/gen_art/gen_art_experiment_10/results/analysis_summary.json",
-      "tables": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_3/gen_art/gen_art_experiment_10/results/report_tables.md"
+      "per-generation outputs + labels": "./results/cells",
+      "frozen index": "./results/redundancy_index.json",
+      "analysis": "./results/analysis_summary.json",
+      "tables": "./results/report_tables.md"
     }
   },
   "datasets": [

@@ -295,7 +295,7 @@ re-downloaded at the pinned revisions with:
 ```
 
 All results, labels, directions, configs, figures and `method_out.json` are kept at the absolute workspace path
-`/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_3/gen_art/gen_art_experiment_12/`, so a later round
+`./`, so a later round
 can read them there directly.
 
 ## Limitations

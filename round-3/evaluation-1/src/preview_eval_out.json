@@ -2,7 +2,7 @@
   "metadata": {
     "evaluation_name": "evaluation_iter3_dir5: recheck every number and every judge",
     "description": "CPU-only audit of the iteration-2 draft against raw per-item files of seven artifacts (independent code path), plus a judge-sensitivity instrument (4-class labels per judge per edited cell, within-edi...",
-    "workspace": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_3/gen_art/gen_art_evaluation_1",
+    "workspace": ".",
     "placebos": 6,
     "status_vocabulary": [
       "RECOMPUTED_MATCH",

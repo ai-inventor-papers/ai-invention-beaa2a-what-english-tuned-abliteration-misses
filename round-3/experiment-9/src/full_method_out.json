@@ -4,7 +4,7 @@
     "model": "google/gemma-3-12b-it@96b6f1eccf38110c56df3a15bffe176da04bfd80",
     "quantisation": "bnb NF4, bf16 compute, greedy decoding",
     "scorer": "local Qwen/Qwen3-14B@40c06982 NF4, frozen exp4 protocol.yaml rubric, 4-way partial-aware, blind",
-    "workspace": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_3/gen_art/gen_art_experiment_9",
+    "workspace": ".",
     "n_cells": 122,
     "n_generations": 27784,
     "frozen_predictions_sha256": "8204f270a07cf1a48122869d94ed3b5dbefa4968acb6579608568221465e92de",
@@ -23,12 +23,12 @@
       "sl": 20
     },
     "kept_artifacts": {
-      "cells": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_3/gen_art/gen_art_experiment_9/results/cells.parquet",
-      "per_item": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_3/gen_art/gen_art_experiment_9/results/per_item.parquet",
-      "generations": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_3/gen_art/gen_art_experiment_9/results/gens",
-      "judge_cache": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_3/gen_art/gen_art_experiment_9/results/judge_local.jsonl",
-      "report": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_3/gen_art/gen_art_experiment_9/results/report_tables.md",
-      "figures": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_3/gen_art/gen_art_experiment_9/figures"
+      "cells": "./results/cells.parquet",
+      "per_item": "./results/per_item.parquet",
+      "generations": "./results/gens",
+      "judge_cache": "./results/judge_local.jsonl",
+      "report": "./results/report_tables.md",
+      "figures": "./figures"
     }
   },
   "datasets": [

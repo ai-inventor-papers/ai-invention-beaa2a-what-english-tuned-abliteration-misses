@@ -226,7 +226,7 @@ results/                judge_local.jsonl, judge_api.jsonl, judge_certification.
 ```
 
 Absolute workspace path (later rounds read the kept artifacts here):
-`/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_3/gen_art/gen_art_experiment_9`
+`.`
 
 ## How to run
 

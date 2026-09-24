@@ -1,7 +1,7 @@
 {
   "metadata": {
     "method_name": "C3: partial-aware refusal objective for Heretic abliteration (gemma-3-12b-it, EN/SL)",
-    "workspace": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_3/gen_art/gen_art_experiment_11",
+    "workspace": ".",
     "protocol": "# C3 protocol (iteration 3) - written before the corrected-objective run and before any Step-6 generation.\n# Hash recorded in logs/freeze_hashes.txt (freeze.py).\nartifact: \"A partial-aware refusal sco...",
     "freeze_hashes": "2026-09-24T08:28:08Z\n7c2ab26935a0eca39a4d73d121a3bde2468d7a5b916a9210fdea82b2f7d001fd  protocol.yaml\ne167cdccf859e480e6cc0b8af30baacf096507f13d156936e8b06a148e68b5a8  runs/corrected_gemma/config.toml\n...",
     "arms": [
@@ -57,7 +57,7 @@
         },
         "direction_index": null,
         "dose": 1.0,
-        "means_src": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_3/gen_art/gen_art_experiment_11/directions/gemma_corrected/residual_means_A.pt",
+        "means_src": "./directions/gemma_corrected/residual_means_A.pt",
         "export_adapter": "adapters_corrected"
       }
     ],
@@ -254,7 +254,7 @@
       }
     },
     "certification_refit": {
-      "bundle": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_3/gen_art/gen_art_experiment_11/scorer/refusal_clf.joblib",
+      "bundle": "./scorer/refusal_clf.joblib",
       "bundle_sha": "93a3f6d8439094f615ef5724c626232f3aa7600c68b4ab319c071caf790a0b55",
       "threshold": 0.52,
       "target": "judge CLASS == refused (partial/complied/irrelevant = not refused); empty = refusal-like (scorer rule)",
@@ -2955,7 +2955,7 @@
           },
           "direction_index": null,
           "dose": 1.0,
-          "means_src": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_3/gen_art/gen_art_experiment_11/directions/gemma_corrected/residual_means_A.pt",
+          "means_src": "./directions/gemma_corrected/residual_means_A.pt",
           "export_adapter": "adapters_corrected"
         },
         "D_reselected_clf": {
@@ -6346,11 +6346,11 @@
     ],
     "api_cost_usd": 0,
     "kept_artifacts": {
-      "corrected_run_journal": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_3/gen_art/gen_art_experiment_11/checkpoints/gemma_corrected",
-      "corrected_adapter": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_3/gen_art/gen_art_experiment_11/adapters_corrected",
-      "classifier": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_3/gen_art/gen_art_experiment_11/scorer/refusal_clf.joblib",
-      "results": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_3/gen_art/gen_art_experiment_11/results",
-      "logs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_3/gen_art/gen_art_experiment_11/logs"
+      "corrected_run_journal": "./checkpoints/gemma_corrected",
+      "corrected_adapter": "./adapters_corrected",
+      "classifier": "./scorer/refusal_clf.joblib",
+      "results": "./results",
+      "logs": "./logs"
     }
   },
   "datasets": [

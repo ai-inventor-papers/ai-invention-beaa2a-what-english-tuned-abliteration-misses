@@ -17,7 +17,7 @@ Keyword refusals /100 (EN: Heretic 3521f864 markers; SL: iteration-1 markers), m
 | gemma | own | 69 | 90 | 0.024 | 4.012 | 3.703 |
 | gemma | swap | 53 | 25 | 0.254 | 4.011 | 3.712 |
 
-Paired swap statistics on the same 100 prompts (exact McNemar; paired bootstrap B=2000, seed 20260924) [source: /ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_3/gen_art/gen_art_evaluation_1/results/iter1_swap_stats.csv]
+Paired swap statistics on the same 100 prompts (exact McNemar; paired bootstrap B=2000, seed 20260924) [source: ../results/iter1_swap_stats.csv]
 
 | model | lang | a | b | count_a | count_b | diff_b_minus_a | CI | p |
 |---|---|---|---|---|---|---|---|---|
@@ -109,7 +109,7 @@ Official RefusEU guard ASR on S5 (harmfulness judge; not a refusal label) [sourc
 | gemma_orig | en | 268 | 0.026 | 0.013 | 0.053 |
 | gemma_orig | sl | 255 | 0.016 | 0.006 | 0.040 |
 
-S5X per-checkpoint paired SL-EN gap (100 verified translation pairs), STRICT (refused) and BROAD (refused+partial) [source: /ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_3/gen_art/gen_art_evaluation_1/results/gap_range.csv]
+S5X per-checkpoint paired SL-EN gap (100 verified translation pairs), STRICT (refused) and BROAD (refused+partial) [source: ../results/gap_range.csv]
 
 | checkpoint | judge | definition | n_pairs | p_en | p_sl | gap | CI | p | did |
 |---|---|---|---|---|---|---|---|---|---|
@@ -139,7 +139,7 @@ S5X per-checkpoint paired SL-EN gap (100 verified translation pairs), STRICT (re
 | gams_orig | gpt41 | broad | 8.00 | 1.00 | 1.00 | 0.00 | [–, –] | 1.0e+00 | – |
 | gams_orig | keyword | strict | 100.00 | 0.99 | 0.98 | -0.01 | [-0.05, 0.02] | 1.0e+00 | – |
 
-Keyword-proxy miscalibration (exp4, harmful S5+S5X; FP = keyword 'refusal' the judge calls not-refused) [source: /ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_3/gen_art/gen_art_evaluation_1/results/keyword_miscalibration.csv]
+Keyword-proxy miscalibration (exp4, harmful S5+S5X; FP = keyword 'refusal' the judge calls not-refused) [source: ../results/keyword_miscalibration.csv]
 
 | cell | lang | judge | n | keyword_rate | judged_rate | fp_share | fn_share | fp_share_partial | kappa |
 |---|---|---|---|---|---|---|---|---|---|
@@ -168,7 +168,7 @@ Keyword-proxy miscalibration (exp4, harmful S5+S5X; FP = keyword 'refusal' the j
 
 ## (7) Experiment 8 tables with BOTH judges
 
-`report_tables.md` is reproduced verbatim in `results/exp8_report_tables_verbatim.md`. It MIXES judges: the activation, weight (W0/W1/W2) and community tables use gpt-4.1 labels (arm-prioritised, NOT random), while the depth table and the 'Repairing' table (W0 .93 / W3 / W4) use Qwen3-14B. Per-judge re-split below (n per cell); compare judges only on the item overlap ([source: /ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_3/gen_art/gen_art_evaluation_1/results/exp8_overlap_gpt41_vs_qwen.csv]).
+`report_tables.md` is reproduced verbatim in `results/exp8_report_tables_verbatim.md`. It MIXES judges: the activation, weight (W0/W1/W2) and community tables use gpt-4.1 labels (arm-prioritised, NOT random), while the depth table and the 'Repairing' table (W0 .93 / W3 / W4) use Qwen3-14B. Per-judge re-split below (n per cell); compare judges only on the item overlap ([source: ../results/exp8_overlap_gpt41_vs_qwen.csv]).
 
 | model | arm | G EN harmful | G EN harmless | G SL harmful | G SL harmless | Q EN harmful | Q EN harmless | Q SL harmful | Q SL harmless |
 |---|---|---|---|---|---|---|---|---|---|

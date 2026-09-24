@@ -8,5 +8,5 @@ scorers = [
 ]
 
 [scorer.PartialAwareRefusal]
-model_path = "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_3/gen_art/gen_art_experiment_11/scorer/refusal_clf.joblib"
-log_dir = "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_3/gen_art/gen_art_experiment_11/logs/inloop_scores/corrected"
+model_path = "../../scorer/refusal_clf.joblib"
+log_dir = "../../logs/inloop_scores/corrected"
