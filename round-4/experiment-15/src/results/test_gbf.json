@@ -1,0 +1,22 @@
+{
+ "a_identical": 0.0,
+ "b_constant_objective": 1.0,
+ "c_agree_with_noise": 0.0,
+ "d_noise_observed": 0.08627002288329519,
+ "d_noise_perm_chance": 0.08522608695652174,
+ "e_self": 0.0,
+ "g_pairtol_identical": 0.0,
+ "h_pairtol_constant_objective": 1.0,
+ "f_boot_sd_p05_median": 4.9844465255737305,
+ "checks": {
+  "a": true,
+  "b": true,
+  "c": true,
+  "d": true,
+  "e": true,
+  "g": true,
+  "h": true,
+  "f": true
+ },
+ "all_pass": true
+}

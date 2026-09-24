@@ -1,0 +1,920 @@
+{
+ "meta": {
+  "mode": "refit",
+  "model_selection": {
+   "lr_C0.5": {
+    "dev_edited_kappa_at_best_thr": 0.8496817824869021,
+    "thr": 0.42,
+    "fit_s": 15.3,
+    "dev_all_kappa": 0.8496817824869021
+   },
+   "lr_C2.0": {
+    "dev_edited_kappa_at_best_thr": 0.8660667390314787,
+    "thr": 0.42,
+    "fit_s": 18.8,
+    "dev_all_kappa": 0.8660667390314787
+   },
+   "lr_C8.0": {
+    "dev_edited_kappa_at_best_thr": 0.8693751487671917,
+    "thr": 0.52,
+    "fit_s": 24.2,
+    "dev_all_kappa": 0.8693751487671917
+   },
+   "hgb": {
+    "dev_edited_kappa_at_best_thr": 0.8391331356438777,
+    "thr": 0.32,
+    "fit_s": 32.9,
+    "dev_all_kappa": 0.8391331356438777
+   },
+   "chosen": "lr_C8.0"
+  },
+  "threshold": 0.52,
+  "input_view": "first 100 gemma tokens",
+  "target": "refused=1; partial/complied/irrelevant=0",
+  "n_train": 11158,
+  "n_dev": 900,
+  "n_test": 1545,
+  "trained_at": "2026-09-24T09:12:34Z"
+ },
+ "eval": {
+  "dev": {
+   "all|any": {
+    "classifier": {
+     "n": 900,
+     "kappa": 0.8693751487671917,
+     "f1_refused": 0.9599358974358975,
+     "acc": 0.9444444444444444,
+     "rate_true": 0.6988888888888889,
+     "rate_pred": 0.6877777777777778,
+     "confusion[[tn,fp],[fn,tp]]": [
+      [
+       251,
+       20
+      ],
+      [
+       30,
+       599
+      ]
+     ],
+     "fp_share_of_pred_refusals": 0.03231017770597738
+    },
+    "keyword": {
+     "n": 900,
+     "kappa": 0.1898475007060152,
+     "f1_refused": 0.8202959830866807,
+     "acc": 0.7166666666666667,
+     "rate_true": 0.6988888888888889,
+     "rate_pred": 0.8777777777777778,
+     "confusion[[tn,fp],[fn,tp]]": [
+      [
+       63,
+       208
+      ],
+      [
+       47,
+       582
+      ]
+     ],
+     "fp_share_of_pred_refusals": 0.26329113924050634
+    }
+   },
+   "all|openai/gpt-4.1": {
+    "classifier": {
+     "n": 0
+    },
+    "keyword": {
+     "n": 0
+    }
+   },
+   "all|Qwen/Qwen3-14B": {
+    "classifier": {
+     "n": 0
+    },
+    "keyword": {
+     "n": 0
+    }
+   },
+   "edited|any": {
+    "classifier": {
+     "n": 900,
+     "kappa": 0.8693751487671917,
+     "f1_refused": 0.9599358974358975,
+     "acc": 0.9444444444444444,
+     "rate_true": 0.6988888888888889,
+     "rate_pred": 0.6877777777777778,
+     "confusion[[tn,fp],[fn,tp]]": [
+      [
+       251,
+       20
+      ],
+      [
+       30,
+       599
+      ]
+     ],
+     "fp_share_of_pred_refusals": 0.03231017770597738
+    },
+    "keyword": {
+     "n": 900,
+     "kappa": 0.1898475007060152,
+     "f1_refused": 0.8202959830866807,
+     "acc": 0.7166666666666667,
+     "rate_true": 0.6988888888888889,
+     "rate_pred": 0.8777777777777778,
+     "confusion[[tn,fp],[fn,tp]]": [
+      [
+       63,
+       208
+      ],
+      [
+       47,
+       582
+      ]
+     ],
+     "fp_share_of_pred_refusals": 0.26329113924050634
+    }
+   },
+   "edited|openai/gpt-4.1": {
+    "classifier": {
+     "n": 0
+    },
+    "keyword": {
+     "n": 0
+    }
+   },
+   "edited|Qwen/Qwen3-14B": {
+    "classifier": {
+     "n": 0
+    },
+    "keyword": {
+     "n": 0
+    }
+   },
+   "orig|any": {
+    "classifier": {
+     "n": 0
+    },
+    "keyword": {
+     "n": 0
+    }
+   },
+   "orig|openai/gpt-4.1": {
+    "classifier": {
+     "n": 0
+    },
+    "keyword": {
+     "n": 0
+    }
+   },
+   "orig|Qwen/Qwen3-14B": {
+    "classifier": {
+     "n": 0
+    },
+    "keyword": {
+     "n": 0
+    }
+   }
+  },
+  "test": {
+   "all|any": {
+    "classifier": {
+     "n": 1545,
+     "kappa": 0.8714388946066087,
+     "f1_refused": 0.9223221586263287,
+     "acc": 0.9385113268608414,
+     "rate_true": 0.39676375404530745,
+     "rate_pred": 0.3948220064724919,
+     "confusion[[tn,fp],[fn,tp]]": [
+      [
+       886,
+       46
+      ],
+      [
+       49,
+       564
+      ]
+     ],
+     "fp_share_of_pred_refusals": 0.07540983606557378
+    },
+    "keyword": {
+     "n": 1545,
+     "kappa": 0.22022035620385072,
+     "f1_refused": 0.4467425025853154,
+     "acc": 0.6537216828478964,
+     "rate_true": 0.39676375404530745,
+     "rate_pred": 0.229126213592233,
+     "confusion[[tn,fp],[fn,tp]]": [
+      [
+       794,
+       138
+      ],
+      [
+       397,
+       216
+      ]
+     ],
+     "fp_share_of_pred_refusals": 0.3898305084745763
+    }
+   },
+   "all|openai/gpt-4.1": {
+    "classifier": {
+     "n": 800,
+     "kappa": 0.8265147591921285,
+     "f1_refused": 0.8970814132104454,
+     "acc": 0.91625,
+     "rate_true": 0.41375,
+     "rate_pred": 0.4,
+     "confusion[[tn,fp],[fn,tp]]": [
+      [
+       441,
+       28
+      ],
+      [
+       39,
+       292
+      ]
+     ],
+     "fp_share_of_pred_refusals": 0.0875
+    },
+    "keyword": {
+     "n": 800,
+     "kappa": 0.13571947923668937,
+     "f1_refused": 0.4,
+     "acc": 0.60625,
+     "rate_true": 0.41375,
+     "rate_pred": 0.2425,
+     "confusion[[tn,fp],[fn,tp]]": [
+      [
+       380,
+       89
+      ],
+      [
+       226,
+       105
+      ]
+     ],
+     "fp_share_of_pred_refusals": 0.4587628865979381
+    }
+   },
+   "all|Qwen/Qwen3-14B": {
+    "classifier": {
+     "n": 745,
+     "kappa": 0.9205575443674309,
+     "f1_refused": 0.951048951048951,
+     "acc": 0.9624161073825503,
+     "rate_true": 0.3785234899328859,
+     "rate_pred": 0.38926174496644295,
+     "confusion[[tn,fp],[fn,tp]]": [
+      [
+       445,
+       18
+      ],
+      [
+       10,
+       272
+      ]
+     ],
+     "fp_share_of_pred_refusals": 0.06206896551724138
+    },
+    "keyword": {
+     "n": 745,
+     "kappa": 0.31436937879104787,
+     "f1_refused": 0.502262443438914,
+     "acc": 0.7046979865771812,
+     "rate_true": 0.3785234899328859,
+     "rate_pred": 0.21476510067114093,
+     "confusion[[tn,fp],[fn,tp]]": [
+      [
+       414,
+       49
+      ],
+      [
+       171,
+       111
+      ]
+     ],
+     "fp_share_of_pred_refusals": 0.30625
+    }
+   },
+   "edited|any": {
+    "classifier": {
+     "n": 996,
+     "kappa": 0.7914032660754735,
+     "f1_refused": 0.8416666666666667,
+     "acc": 0.9236947791164659,
+     "rate_true": 0.2399598393574297,
+     "rate_pred": 0.2419678714859438,
+     "confusion[[tn,fp],[fn,tp]]": [
+      [
+       718,
+       39
+      ],
+      [
+       37,
+       202
+      ]
+     ],
+     "fp_share_of_pred_refusals": 0.16182572614107885
+    },
+    "keyword": {
+     "n": 996,
+     "kappa": 0.016322183556452763,
+     "f1_refused": 0.20843672456575682,
+     "acc": 0.679718875502008,
+     "rate_true": 0.2399598393574297,
+     "rate_pred": 0.1646586345381526,
+     "confusion[[tn,fp],[fn,tp]]": [
+      [
+       635,
+       122
+      ],
+      [
+       197,
+       42
+      ]
+     ],
+     "fp_share_of_pred_refusals": 0.7439024390243902
+    }
+   },
+   "edited|openai/gpt-4.1": {
+    "classifier": {
+     "n": 549,
+     "kappa": 0.7714369420073088,
+     "f1_refused": 0.8430232558139535,
+     "acc": 0.9016393442622951,
+     "rate_true": 0.31876138433515483,
+     "rate_pred": 0.30783242258652094,
+     "confusion[[tn,fp],[fn,tp]]": [
+      [
+       350,
+       24
+      ],
+      [
+       30,
+       145
+      ]
+     ],
+     "fp_share_of_pred_refusals": 0.14201183431952663
+    },
+    "keyword": {
+     "n": 549,
+     "kappa": -0.00899638298408001,
+     "f1_refused": 0.24742268041237114,
+     "acc": 0.6010928961748634,
+     "rate_true": 0.31876138433515483,
+     "rate_pred": 0.21129326047358835,
+     "confusion[[tn,fp],[fn,tp]]": [
+      [
+       294,
+       80
+      ],
+      [
+       139,
+       36
+      ]
+     ],
+     "fp_share_of_pred_refusals": 0.6896551724137931
+    }
+   },
+   "edited|Qwen/Qwen3-14B": {
+    "classifier": {
+     "n": 447,
+     "kappa": 0.8093299208934388,
+     "f1_refused": 0.8382352941176471,
+     "acc": 0.9507829977628636,
+     "rate_true": 0.14317673378076062,
+     "rate_pred": 0.1610738255033557,
+     "confusion[[tn,fp],[fn,tp]]": [
+      [
+       368,
+       15
+      ],
+      [
+       7,
+       57
+      ]
+     ],
+     "fp_share_of_pred_refusals": 0.20833333333333334
+    },
+    "keyword": {
+     "n": 447,
+     "kappa": -0.017759562841529908,
+     "f1_refused": 0.10714285714285714,
+     "acc": 0.7762863534675615,
+     "rate_true": 0.14317673378076062,
+     "rate_pred": 0.10738255033557047,
+     "confusion[[tn,fp],[fn,tp]]": [
+      [
+       341,
+       42
+      ],
+      [
+       58,
+       6
+      ]
+     ],
+     "fp_share_of_pred_refusals": 0.875
+    }
+   },
+   "orig|any": {
+    "classifier": {
+     "n": 549,
+     "kappa": 0.9209143636983964,
+     "f1_refused": 0.9744279946164199,
+     "acc": 0.9653916211293261,
+     "rate_true": 0.6812386156648452,
+     "rate_pred": 0.6721311475409836,
+     "confusion[[tn,fp],[fn,tp]]": [
+      [
+       168,
+       7
+      ],
+      [
+       12,
+       362
+      ]
+     ],
+     "fp_share_of_pred_refusals": 0.018970189701897018
+    },
+    "keyword": {
+     "n": 549,
+     "kappa": 0.29210344086535023,
+     "f1_refused": 0.6170212765957447,
+     "acc": 0.6065573770491803,
+     "rate_true": 0.6812386156648452,
+     "rate_pred": 0.3460837887067395,
+     "confusion[[tn,fp],[fn,tp]]": [
+      [
+       159,
+       16
+      ],
+      [
+       200,
+       174
+      ]
+     ],
+     "fp_share_of_pred_refusals": 0.08421052631578947
+    }
+   },
+   "orig|openai/gpt-4.1": {
+    "classifier": {
+     "n": 251,
+     "kappa": 0.8910335615294707,
+     "f1_refused": 0.9576547231270358,
+     "acc": 0.9482071713147411,
+     "rate_true": 0.6215139442231076,
+     "rate_pred": 0.601593625498008,
+     "confusion[[tn,fp],[fn,tp]]": [
+      [
+       91,
+       4
+      ],
+      [
+       9,
+       147
+      ]
+     ],
+     "fp_share_of_pred_refusals": 0.026490066225165563
+    },
+    "keyword": {
+     "n": 251,
+     "kappa": 0.29949415663701373,
+     "f1_refused": 0.5897435897435898,
+     "acc": 0.6175298804780877,
+     "rate_true": 0.6215139442231076,
+     "rate_pred": 0.3107569721115538,
+     "confusion[[tn,fp],[fn,tp]]": [
+      [
+       86,
+       9
+      ],
+      [
+       87,
+       69
+      ]
+     ],
+     "fp_share_of_pred_refusals": 0.11538461538461539
+    }
+   },
+   "orig|Qwen/Qwen3-14B": {
+    "classifier": {
+     "n": 298,
+     "kappa": 0.9487385321100917,
+     "f1_refused": 0.9862385321100917,
+     "acc": 0.9798657718120806,
+     "rate_true": 0.7315436241610739,
+     "rate_pred": 0.7315436241610739,
+     "confusion[[tn,fp],[fn,tp]]": [
+      [
+       77,
+       3
+      ],
+      [
+       3,
+       215
+      ]
+     ],
+     "fp_share_of_pred_refusals": 0.013761467889908258
+    },
+    "keyword": {
+     "n": 298,
+     "kappa": 0.27769249414236086,
+     "f1_refused": 0.6363636363636364,
+     "acc": 0.5973154362416108,
+     "rate_true": 0.7315436241610739,
+     "rate_pred": 0.37583892617449666,
+     "confusion[[tn,fp],[fn,tp]]": [
+      [
+       73,
+       7
+      ],
+      [
+       113,
+       105
+      ]
+     ],
+     "fp_share_of_pred_refusals": 0.0625
+    }
+   }
+  },
+  "pool_dev": {
+   "all|any": {
+    "classifier": {
+     "n": 1728,
+     "kappa": 0.8630144540706877,
+     "f1_refused": 0.9199721642310369,
+     "acc": 0.9334490740740741,
+     "rate_true": 0.41724537037037035,
+     "rate_pred": 0.41435185185185186,
+     "confusion[[tn,fp],[fn,tp]]": [
+      [
+       952,
+       55
+      ],
+      [
+       60,
+       661
+      ]
+     ],
+     "fp_share_of_pred_refusals": 0.07681564245810056
+    },
+    "keyword": {
+     "n": 1728,
+     "kappa": 0.1745359390178799,
+     "f1_refused": 0.43485763589301124,
+     "acc": 0.6209490740740741,
+     "rate_true": 0.41724537037037035,
+     "rate_pred": 0.2534722222222222,
+     "confusion[[tn,fp],[fn,tp]]": [
+      [
+       821,
+       186
+      ],
+      [
+       469,
+       252
+      ]
+     ],
+     "fp_share_of_pred_refusals": 0.4246575342465753
+    }
+   },
+   "all|openai/gpt-4.1": {
+    "classifier": {
+     "n": 1044,
+     "kappa": 0.841508402787266,
+     "f1_refused": 0.9063231850117096,
+     "acc": 0.9233716475095786,
+     "rate_true": 0.4042145593869732,
+     "rate_pred": 0.41379310344827586,
+     "confusion[[tn,fp],[fn,tp]]": [
+      [
+       577,
+       45
+      ],
+      [
+       35,
+       387
+      ]
+     ],
+     "fp_share_of_pred_refusals": 0.10416666666666667
+    },
+    "keyword": {
+     "n": 1044,
+     "kappa": 0.059703672449327394,
+     "f1_refused": 0.3508771929824561,
+     "acc": 0.5747126436781609,
+     "rate_true": 0.4042145593869732,
+     "rate_pred": 0.2509578544061303,
+     "confusion[[tn,fp],[fn,tp]]": [
+      [
+       480,
+       142
+      ],
+      [
+       302,
+       120
+      ]
+     ],
+     "fp_share_of_pred_refusals": 0.5419847328244275
+    }
+   },
+   "all|Qwen/Qwen3-14B": {
+    "classifier": {
+     "n": 684,
+     "kappa": 0.8954311173233162,
+     "f1_refused": 0.9399656946826758,
+     "acc": 0.9488304093567251,
+     "rate_true": 0.4371345029239766,
+     "rate_pred": 0.4152046783625731,
+     "confusion[[tn,fp],[fn,tp]]": [
+      [
+       375,
+       10
+      ],
+      [
+       25,
+       274
+      ]
+     ],
+     "fp_share_of_pred_refusals": 0.035211267605633804
+    },
+    "keyword": {
+     "n": 684,
+     "kappa": 0.3429424726385373,
+     "f1_refused": 0.5557894736842105,
+     "acc": 0.6915204678362573,
+     "rate_true": 0.4371345029239766,
+     "rate_pred": 0.2573099415204678,
+     "confusion[[tn,fp],[fn,tp]]": [
+      [
+       341,
+       44
+      ],
+      [
+       167,
+       132
+      ]
+     ],
+     "fp_share_of_pred_refusals": 0.25
+    }
+   },
+   "edited|any": {
+    "classifier": {
+     "n": 1150,
+     "kappa": 0.7929466357308584,
+     "f1_refused": 0.8519083969465648,
+     "acc": 0.9156521739130434,
+     "rate_true": 0.28695652173913044,
+     "rate_pred": 0.2826086956521739,
+     "confusion[[tn,fp],[fn,tp]]": [
+      [
+       774,
+       46
+      ],
+      [
+       51,
+       279
+      ]
+     ],
+     "fp_share_of_pred_refusals": 0.14153846153846153
+    },
+    "keyword": {
+     "n": 1150,
+     "kappa": -0.03083205717202664,
+     "f1_refused": 0.209009009009009,
+     "acc": 0.6182608695652174,
+     "rate_true": 0.28695652173913044,
+     "rate_pred": 0.1956521739130435,
+     "confusion[[tn,fp],[fn,tp]]": [
+      [
+       653,
+       167
+      ],
+      [
+       272,
+       58
+      ]
+     ],
+     "fp_share_of_pred_refusals": 0.7422222222222222
+    }
+   },
+   "edited|openai/gpt-4.1": {
+    "classifier": {
+     "n": 740,
+     "kappa": 0.797863666014351,
+     "f1_refused": 0.8662674650698603,
+     "acc": 0.9094594594594595,
+     "rate_true": 0.3324324324324324,
+     "rate_pred": 0.34459459459459457,
+     "confusion[[tn,fp],[fn,tp]]": [
+      [
+       456,
+       38
+      ],
+      [
+       29,
+       217
+      ]
+     ],
+     "fp_share_of_pred_refusals": 0.14901960784313725
+    },
+    "keyword": {
+     "n": 740,
+     "kappa": -0.09098014139045807,
+     "f1_refused": 0.20952380952380953,
+     "acc": 0.5513513513513514,
+     "rate_true": 0.3324324324324324,
+     "rate_pred": 0.23513513513513515,
+     "confusion[[tn,fp],[fn,tp]]": [
+      [
+       364,
+       130
+      ],
+      [
+       202,
+       44
+      ]
+     ],
+     "fp_share_of_pred_refusals": 0.7471264367816092
+    }
+   },
+   "edited|Qwen/Qwen3-14B": {
+    "classifier": {
+     "n": 410,
+     "kappa": 0.7606072401712729,
+     "f1_refused": 0.8051948051948052,
+     "acc": 0.926829268292683,
+     "rate_true": 0.2048780487804878,
+     "rate_pred": 0.17073170731707318,
+     "confusion[[tn,fp],[fn,tp]]": [
+      [
+       318,
+       8
+      ],
+      [
+       22,
+       62
+      ]
+     ],
+     "fp_share_of_pred_refusals": 0.11428571428571428
+    },
+    "keyword": {
+     "n": 410,
+     "kappa": 0.06224616305416608,
+     "f1_refused": 0.2074074074074074,
+     "acc": 0.7390243902439024,
+     "rate_true": 0.2048780487804878,
+     "rate_pred": 0.12439024390243902,
+     "confusion[[tn,fp],[fn,tp]]": [
+      [
+       289,
+       37
+      ],
+      [
+       70,
+       14
+      ]
+     ],
+     "fp_share_of_pred_refusals": 0.7254901960784313
+    }
+   },
+   "orig|any": {
+    "classifier": {
+     "n": 578,
+     "kappa": 0.9288537549407114,
+     "f1_refused": 0.9769820971867008,
+     "acc": 0.9688581314878892,
+     "rate_true": 0.6764705882352942,
+     "rate_pred": 0.6764705882352942,
+     "confusion[[tn,fp],[fn,tp]]": [
+      [
+       178,
+       9
+      ],
+      [
+       9,
+       382
+      ]
+     ],
+     "fp_share_of_pred_refusals": 0.023017902813299233
+    },
+    "keyword": {
+     "n": 578,
+     "kappa": 0.3160737567517228,
+     "f1_refused": 0.6423841059602649,
+     "acc": 0.6262975778546713,
+     "rate_true": 0.6764705882352942,
+     "rate_pred": 0.3685121107266436,
+     "confusion[[tn,fp],[fn,tp]]": [
+      [
+       168,
+       19
+      ],
+      [
+       197,
+       194
+      ]
+     ],
+     "fp_share_of_pred_refusals": 0.0892018779342723
+    }
+   },
+   "orig|openai/gpt-4.1": {
+    "classifier": {
+     "n": 304,
+     "kappa": 0.9121933878421614,
+     "f1_refused": 0.9631728045325779,
+     "acc": 0.9572368421052632,
+     "rate_true": 0.5789473684210527,
+     "rate_pred": 0.5822368421052632,
+     "confusion[[tn,fp],[fn,tp]]": [
+      [
+       121,
+       7
+      ],
+      [
+       6,
+       170
+      ]
+     ],
+     "fp_share_of_pred_refusals": 0.03954802259887006
+    },
+    "keyword": {
+     "n": 304,
+     "kappa": 0.3090909090909091,
+     "f1_refused": 0.5757575757575758,
+     "acc": 0.631578947368421,
+     "rate_true": 0.5789473684210527,
+     "rate_pred": 0.2894736842105263,
+     "confusion[[tn,fp],[fn,tp]]": [
+      [
+       116,
+       12
+      ],
+      [
+       100,
+       76
+      ]
+     ],
+     "fp_share_of_pred_refusals": 0.13636363636363635
+    }
+   },
+   "orig|Qwen/Qwen3-14B": {
+    "classifier": {
+     "n": 274,
+     "kappa": 0.9463292329389642,
+     "f1_refused": 0.9883449883449883,
+     "acc": 0.9817518248175182,
+     "rate_true": 0.7846715328467153,
+     "rate_pred": 0.781021897810219,
+     "confusion[[tn,fp],[fn,tp]]": [
+      [
+       57,
+       2
+      ],
+      [
+       3,
+       212
+      ]
+     ],
+     "fp_share_of_pred_refusals": 0.009345794392523364
+    },
+    "keyword": {
+     "n": 274,
+     "kappa": 0.2769347881248414,
+     "f1_refused": 0.6941176470588235,
+     "acc": 0.6204379562043796,
+     "rate_true": 0.7846715328467153,
+     "rate_pred": 0.4562043795620438,
+     "confusion[[tn,fp],[fn,tp]]": [
+      [
+       52,
+       7
+      ],
+      [
+       97,
+       118
+      ]
+     ],
+     "fp_share_of_pred_refusals": 0.056
+    }
+   }
+  }
+ },
+ "rung2_keyword_reproduction_gemma_edit_en": {
+  "Qwen/Qwen3-14B": {
+   "n": 479,
+   "keyword_rate": 0.6450939457202505,
+   "judged_refusal_rate": 0.17954070981210857,
+   "fp_share": 0.7831715210355987,
+   "kappa": 0.08112776262889809
+  },
+  "openai/gpt-4.1": {
+   "n": 81,
+   "keyword_rate": 0.6419753086419753,
+   "judged_refusal_rate": 0.12345679012345678,
+   "fp_share": 0.8461538461538461,
+   "kappa": 0.06428930185836268
+  }
+ },
+ "bundle_sha": "93a3f6d8439094f615ef5724c626232f3aa7600c68b4ab319c071caf790a0b55"
+}
