@@ -1,0 +1,56 @@
+collected 17400 in-loop rows from 2 runs, 174 (run, trial) cells
+[
+ {
+  "arm": "A_orig",
+  "role": "orig",
+  "trial": null,
+  "dose": null,
+  "rule_fired": null
+ },
+ {
+  "arm": "B_keyword_t96",
+  "role": "keyword",
+  "trial": 96,
+  "dose": 1.0,
+  "rule_fired": null
+ },
+ {
+  "arm": "C_corrected",
+  "role": "corrected",
+  "trial": 7,
+  "dose": 1.0,
+  "rule_fired": "primary: min KL s.t. refusals<=10"
+ },
+ {
+  "arm": "D_reselected_clf",
+  "role": "reselected",
+  "trial": 98,
+  "dose": 1.0,
+  "rule_fired": "primary: min KL s.t. refusals<=10"
+ },
+ {
+  "arm": "F_dose1.5",
+  "role": "dose",
+  "trial": 96,
+  "dose": 1.5,
+  "rule_fired": null
+ },
+ {
+  "arm": "F_dose2.0",
+  "role": "dose",
+  "trial": 96,
+  "dose": 2.0,
+  "rule_fired": null
+ },
+ {
+  "arm": "F_dose3.0",
+  "role": "dose",
+  "trial": 96,
+  "dose": 3.0,
+  "rule_fired": null
+ }
+] []
+frozen 0018a822e3f669618082947993cf9eeae492c667b9c3e62aaea3a9b4ff1f2652
+EVALGEN_START 10:01:15
+EVALGEN_DONE 10:37:05
+judge input: 7000 rows -> results/judge_in/inloop_corrected.jsonl

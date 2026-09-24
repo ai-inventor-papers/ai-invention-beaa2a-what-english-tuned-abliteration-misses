@@ -1,0 +1,1859 @@
+{
+ "n_checks": 305,
+ "n_match": 305,
+ "all_match": true,
+ "placebos_all_fail_as_required": true,
+ "placebos": [
+  {
+   "placebo": "labels shuffled within arm (S5X)",
+   "real_C_minus_B_gap": -0.30000000000000004,
+   "placebo_value": -0.04,
+   "fails_as_required": true
+  },
+  {
+   "placebo": "EN/SL tags swapped (arm B)",
+   "real": 0.68,
+   "placebo_value": -0.68,
+   "fails_as_required": true
+  },
+  {
+   "placebo": "arm labels B<->C permuted",
+   "real_C_minus_B": -0.30000000000000004,
+   "placebo_value": 0.30000000000000004,
+   "fails_as_required": true
+  }
+ ],
+ "mismatches": [],
+ "checks": [
+  {
+   "check": "S5X EN refusal A_orig",
+   "rederived": 0.95,
+   "reported": 0.95,
+   "match": true
+  },
+  {
+   "check": "S5X SL refusal A_orig",
+   "rederived": 0.99,
+   "reported": 0.99,
+   "match": true
+  },
+  {
+   "check": "S5X gap A_orig",
+   "rederived": 0.04,
+   "reported": 0.04,
+   "match": true
+  },
+  {
+   "check": "S5X McNemar p A_orig",
+   "rederived": 0.125,
+   "reported": 0.125,
+   "match": true
+  },
+  {
+   "check": "S5X n pairs A_orig",
+   "rederived": 100,
+   "reported": 100,
+   "match": true
+  },
+  {
+   "check": "S4hoc EN refusal A_orig",
+   "rederived": 0.9428571428571428,
+   "reported": 0.9428571428571428,
+   "match": true
+  },
+  {
+   "check": "S4hoc SL refusal A_orig",
+   "rederived": 0.9571428571428572,
+   "reported": 0.9571428571428572,
+   "match": true
+  },
+  {
+   "check": "S6 over-refusal A_orig|en",
+   "rederived": 0.13333333333333333,
+   "reported": 0.13333333333333333,
+   "match": true
+  },
+  {
+   "check": "S6 over-refusal A_orig|sl",
+   "rederived": 0.3333333333333333,
+   "reported": 0.3333333333333333,
+   "match": true
+  },
+  {
+   "check": "S5X EN refusal B_keyword_t96",
+   "rederived": 0.15,
+   "reported": 0.15,
+   "match": true
+  },
+  {
+   "check": "S5X SL refusal B_keyword_t96",
+   "rederived": 0.83,
+   "reported": 0.83,
+   "match": true
+  },
+  {
+   "check": "S5X gap B_keyword_t96",
+   "rederived": 0.68,
+   "reported": 0.68,
+   "match": true
+  },
+  {
+   "check": "S5X McNemar p B_keyword_t96",
+   "rederived": 6.776263578034403e-21,
+   "reported": 6.776263578034403e-21,
+   "match": true
+  },
+  {
+   "check": "S5X n pairs B_keyword_t96",
+   "rederived": 100,
+   "reported": 100,
+   "match": true
+  },
+  {
+   "check": "S4hoc EN refusal B_keyword_t96",
+   "rederived": 0.44285714285714284,
+   "reported": 0.44285714285714284,
+   "match": true
+  },
+  {
+   "check": "S4hoc SL refusal B_keyword_t96",
+   "rederived": 0.8428571428571429,
+   "reported": 0.8428571428571429,
+   "match": true
+  },
+  {
+   "check": "S6 over-refusal B_keyword_t96|en",
+   "rederived": 0.0,
+   "reported": 0.0,
+   "match": true
+  },
+  {
+   "check": "S6 over-refusal B_keyword_t96|sl",
+   "rederived": 0.2,
+   "reported": 0.2,
+   "match": true
+  },
+  {
+   "check": "S5X EN refusal C_corrected",
+   "rederived": 0.03,
+   "reported": 0.03,
+   "match": true
+  },
+  {
+   "check": "S5X SL refusal C_corrected",
+   "rederived": 0.41,
+   "reported": 0.41,
+   "match": true
+  },
+  {
+   "check": "S5X gap C_corrected",
+   "rederived": 0.38,
+   "reported": 0.38,
+   "match": true
+  },
+  {
+   "check": "S5X McNemar p C_corrected",
+   "rederived": 7.275957614183426e-12,
+   "reported": 7.275957614183426e-12,
+   "match": true
+  },
+  {
+   "check": "S5X n pairs C_corrected",
+   "rederived": 100,
+   "reported": 100,
+   "match": true
+  },
+  {
+   "check": "S4hoc EN refusal C_corrected",
+   "rederived": 0.2,
+   "reported": 0.2,
+   "match": true
+  },
+  {
+   "check": "S4hoc SL refusal C_corrected",
+   "rederived": 0.5857142857142857,
+   "reported": 0.5857142857142857,
+   "match": true
+  },
+  {
+   "check": "S6 over-refusal C_corrected|en",
+   "rederived": 0.016666666666666666,
+   "reported": 0.016666666666666666,
+   "match": true
+  },
+  {
+   "check": "S6 over-refusal C_corrected|sl",
+   "rederived": 0.18333333333333332,
+   "reported": 0.18333333333333332,
+   "match": true
+  },
+  {
+   "check": "S5X EN refusal D_reselected_clf",
+   "rederived": 0.05,
+   "reported": 0.05,
+   "match": true
+  },
+  {
+   "check": "S5X SL refusal D_reselected_clf",
+   "rederived": 0.35,
+   "reported": 0.35,
+   "match": true
+  },
+  {
+   "check": "S5X gap D_reselected_clf",
+   "rederived": 0.3,
+   "reported": 0.3,
+   "match": true
+  },
+  {
+   "check": "S5X McNemar p D_reselected_clf",
+   "rederived": 1.5366822481155396e-08,
+   "reported": 1.5366822481155396e-08,
+   "match": true
+  },
+  {
+   "check": "S5X n pairs D_reselected_clf",
+   "rederived": 100,
+   "reported": 100,
+   "match": true
+  },
+  {
+   "check": "S4hoc EN refusal D_reselected_clf",
+   "rederived": 0.2,
+   "reported": 0.2,
+   "match": true
+  },
+  {
+   "check": "S4hoc SL refusal D_reselected_clf",
+   "rederived": 0.5857142857142857,
+   "reported": 0.5857142857142857,
+   "match": true
+  },
+  {
+   "check": "S6 over-refusal D_reselected_clf|en",
+   "rederived": 0.0,
+   "reported": 0.0,
+   "match": true
+  },
+  {
+   "check": "S6 over-refusal D_reselected_clf|sl",
+   "rederived": 0.1,
+   "reported": 0.1,
+   "match": true
+  },
+  {
+   "check": "S5X EN refusal D2_reselected_judge",
+   "rederived": 0.04,
+   "reported": 0.04,
+   "match": true
+  },
+  {
+   "check": "S5X SL refusal D2_reselected_judge",
+   "rederived": 0.45,
+   "reported": 0.45,
+   "match": true
+  },
+  {
+   "check": "S5X gap D2_reselected_judge",
+   "rederived": 0.41,
+   "reported": 0.41,
+   "match": true
+  },
+  {
+   "check": "S5X McNemar p D2_reselected_judge",
+   "rederived": 9.094947017729282e-13,
+   "reported": 9.094947017729282e-13,
+   "match": true
+  },
+  {
+   "check": "S5X n pairs D2_reselected_judge",
+   "rederived": 100,
+   "reported": 100,
+   "match": true
+  },
+  {
+   "check": "S4hoc EN refusal D2_reselected_judge",
+   "rederived": 0.15714285714285714,
+   "reported": 0.15714285714285714,
+   "match": true
+  },
+  {
+   "check": "S4hoc SL refusal D2_reselected_judge",
+   "rederived": 0.6,
+   "reported": 0.6,
+   "match": true
+  },
+  {
+   "check": "S6 over-refusal D2_reselected_judge|en",
+   "rederived": 0.03333333333333333,
+   "reported": 0.03333333333333333,
+   "match": true
+  },
+  {
+   "check": "S6 over-refusal D2_reselected_judge|sl",
+   "rederived": 0.2,
+   "reported": 0.2,
+   "match": true
+  },
+  {
+   "check": "S5X EN refusal F_dose1.5",
+   "rederived": 0.03,
+   "reported": 0.03,
+   "match": true
+  },
+  {
+   "check": "S5X SL refusal F_dose1.5",
+   "rederived": 0.36,
+   "reported": 0.36,
+   "match": true
+  },
+  {
+   "check": "S5X gap F_dose1.5",
+   "rederived": 0.33,
+   "reported": 0.33,
+   "match": true
+  },
+  {
+   "check": "S5X McNemar p F_dose1.5",
+   "rederived": 2.0954757928848267e-09,
+   "reported": 2.0954757928848267e-09,
+   "match": true
+  },
+  {
+   "check": "S5X n pairs F_dose1.5",
+   "rederived": 100,
+   "reported": 100,
+   "match": true
+  },
+  {
+   "check": "S4hoc EN refusal F_dose1.5",
+   "rederived": 0.12857142857142856,
+   "reported": 0.12857142857142856,
+   "match": true
+  },
+  {
+   "check": "S4hoc SL refusal F_dose1.5",
+   "rederived": 0.4142857142857143,
+   "reported": 0.4142857142857143,
+   "match": true
+  },
+  {
+   "check": "S6 over-refusal F_dose1.5|en",
+   "rederived": 0.0,
+   "reported": 0.0,
+   "match": true
+  },
+  {
+   "check": "S6 over-refusal F_dose1.5|sl",
+   "rederived": 0.18333333333333332,
+   "reported": 0.18333333333333332,
+   "match": true
+  },
+  {
+   "check": "S5X EN refusal F_dose2.0",
+   "rederived": 0.0,
+   "reported": 0.0,
+   "match": true
+  },
+  {
+   "check": "S5X SL refusal F_dose2.0",
+   "rederived": 0.0,
+   "reported": 0.0,
+   "match": true
+  },
+  {
+   "check": "S5X gap F_dose2.0",
+   "rederived": 0.0,
+   "reported": 0.0,
+   "match": true
+  },
+  {
+   "check": "S5X McNemar p F_dose2.0",
+   "rederived": 1.0,
+   "reported": 1.0,
+   "match": true
+  },
+  {
+   "check": "S5X n pairs F_dose2.0",
+   "rederived": 100,
+   "reported": 100,
+   "match": true
+  },
+  {
+   "check": "S4hoc EN refusal F_dose2.0",
+   "rederived": 0.08571428571428572,
+   "reported": 0.08571428571428572,
+   "match": true
+  },
+  {
+   "check": "S4hoc SL refusal F_dose2.0",
+   "rederived": 0.04285714285714286,
+   "reported": 0.04285714285714286,
+   "match": true
+  },
+  {
+   "check": "S6 over-refusal F_dose2.0|en",
+   "rederived": 0.0,
+   "reported": 0.0,
+   "match": true
+  },
+  {
+   "check": "S6 over-refusal F_dose2.0|sl",
+   "rederived": 0.11666666666666667,
+   "reported": 0.11666666666666667,
+   "match": true
+  },
+  {
+   "check": "S5X EN refusal F_dose3.0",
+   "rederived": 0.0,
+   "reported": 0.0,
+   "match": true
+  },
+  {
+   "check": "S5X SL refusal F_dose3.0",
+   "rederived": 0.0,
+   "reported": 0.0,
+   "match": true
+  },
+  {
+   "check": "S5X gap F_dose3.0",
+   "rederived": 0.0,
+   "reported": 0.0,
+   "match": true
+  },
+  {
+   "check": "S5X McNemar p F_dose3.0",
+   "rederived": 1.0,
+   "reported": 1.0,
+   "match": true
+  },
+  {
+   "check": "S5X n pairs F_dose3.0",
+   "rederived": 100,
+   "reported": 100,
+   "match": true
+  },
+  {
+   "check": "S4hoc EN refusal F_dose3.0",
+   "rederived": 0.0,
+   "reported": 0.0,
+   "match": true
+  },
+  {
+   "check": "S4hoc SL refusal F_dose3.0",
+   "rederived": 0.0,
+   "reported": 0.0,
+   "match": true
+  },
+  {
+   "check": "S6 over-refusal F_dose3.0|en",
+   "rederived": 0.0,
+   "reported": 0.0,
+   "match": true
+  },
+  {
+   "check": "S6 over-refusal F_dose3.0|sl",
+   "rederived": 0.0,
+   "reported": 0.0,
+   "match": true
+  },
+  {
+   "check": "draw 0 keyword count",
+   "rederived": 99,
+   "reported": 99.0,
+   "match": true
+  },
+  {
+   "check": "draw 0 judged count",
+   "rederived": 94,
+   "reported": 94.0,
+   "match": true
+  },
+  {
+   "check": "draw 1 keyword count",
+   "rederived": 92,
+   "reported": 92.0,
+   "match": true
+  },
+  {
+   "check": "draw 1 judged count",
+   "rederived": 74,
+   "reported": 74.0,
+   "match": true
+  },
+  {
+   "check": "draw 2 keyword count",
+   "rederived": 84,
+   "reported": 84.0,
+   "match": true
+  },
+  {
+   "check": "draw 2 judged count",
+   "rederived": 41,
+   "reported": 41.0,
+   "match": true
+  },
+  {
+   "check": "draw 3 keyword count",
+   "rederived": 99,
+   "reported": 99.0,
+   "match": true
+  },
+  {
+   "check": "draw 3 judged count",
+   "rederived": 97,
+   "reported": 97.0,
+   "match": true
+  },
+  {
+   "check": "draw 4 keyword count",
+   "rederived": 90,
+   "reported": 90.0,
+   "match": true
+  },
+  {
+   "check": "draw 4 judged count",
+   "rederived": 64,
+   "reported": 64.0,
+   "match": true
+  },
+  {
+   "check": "draw 5 keyword count",
+   "rederived": 98,
+   "reported": 98.0,
+   "match": true
+  },
+  {
+   "check": "draw 5 judged count",
+   "rederived": 92,
+   "reported": 92.0,
+   "match": true
+  },
+  {
+   "check": "draw 6 keyword count",
+   "rederived": 91,
+   "reported": 91.0,
+   "match": true
+  },
+  {
+   "check": "draw 6 judged count",
+   "rederived": 71,
+   "reported": 71.0,
+   "match": true
+  },
+  {
+   "check": "draw 7 keyword count",
+   "rederived": 73,
+   "reported": 73.0,
+   "match": true
+  },
+  {
+   "check": "draw 7 judged count",
+   "rederived": 8,
+   "reported": 8.0,
+   "match": true
+  },
+  {
+   "check": "draw 8 keyword count",
+   "rederived": 99,
+   "reported": 99.0,
+   "match": true
+  },
+  {
+   "check": "draw 8 judged count",
+   "rederived": 96,
+   "reported": 96.0,
+   "match": true
+  },
+  {
+   "check": "draw 9 keyword count",
+   "rederived": 99,
+   "reported": 99.0,
+   "match": true
+  },
+  {
+   "check": "draw 9 judged count",
+   "rederived": 96,
+   "reported": 96.0,
+   "match": true
+  },
+  {
+   "check": "draw 10 keyword count",
+   "rederived": 100,
+   "reported": 100.0,
+   "match": true
+  },
+  {
+   "check": "draw 10 judged count",
+   "rederived": 95,
+   "reported": 95.0,
+   "match": true
+  },
+  {
+   "check": "draw 11 keyword count",
+   "rederived": 100,
+   "reported": 100.0,
+   "match": true
+  },
+  {
+   "check": "draw 11 judged count",
+   "rederived": 94,
+   "reported": 94.0,
+   "match": true
+  },
+  {
+   "check": "draw 12 keyword count",
+   "rederived": 83,
+   "reported": 83.0,
+   "match": true
+  },
+  {
+   "check": "draw 12 judged count",
+   "rederived": 22,
+   "reported": 22.0,
+   "match": true
+  },
+  {
+   "check": "draw 13 keyword count",
+   "rederived": 74,
+   "reported": 74.0,
+   "match": true
+  },
+  {
+   "check": "draw 13 judged count",
+   "rederived": 34,
+   "reported": 34.0,
+   "match": true
+  },
+  {
+   "check": "draw 14 keyword count",
+   "rederived": 100,
+   "reported": 100.0,
+   "match": true
+  },
+  {
+   "check": "draw 14 judged count",
+   "rederived": 92,
+   "reported": 92.0,
+   "match": true
+  },
+  {
+   "check": "draw 15 keyword count",
+   "rederived": 93,
+   "reported": 93.0,
+   "match": true
+  },
+  {
+   "check": "draw 15 judged count",
+   "rederived": 72,
+   "reported": 72.0,
+   "match": true
+  },
+  {
+   "check": "draw 16 keyword count",
+   "rederived": 99,
+   "reported": 99.0,
+   "match": true
+  },
+  {
+   "check": "draw 16 judged count",
+   "rederived": 96,
+   "reported": 96.0,
+   "match": true
+  },
+  {
+   "check": "draw 17 keyword count",
+   "rederived": 74,
+   "reported": 74.0,
+   "match": true
+  },
+  {
+   "check": "draw 17 judged count",
+   "rederived": 32,
+   "reported": 32.0,
+   "match": true
+  },
+  {
+   "check": "draw 18 keyword count",
+   "rederived": 99,
+   "reported": 99.0,
+   "match": true
+  },
+  {
+   "check": "draw 18 judged count",
+   "rederived": 87,
+   "reported": 87.0,
+   "match": true
+  },
+  {
+   "check": "draw 19 keyword count",
+   "rederived": 98,
+   "reported": 98.0,
+   "match": true
+  },
+  {
+   "check": "draw 19 judged count",
+   "rederived": 88,
+   "reported": 88.0,
+   "match": true
+  },
+  {
+   "check": "draw 20 keyword count",
+   "rederived": 100,
+   "reported": 100.0,
+   "match": true
+  },
+  {
+   "check": "draw 20 judged count",
+   "rederived": 95,
+   "reported": 95.0,
+   "match": true
+  },
+  {
+   "check": "draw 21 keyword count",
+   "rederived": 99,
+   "reported": 99.0,
+   "match": true
+  },
+  {
+   "check": "draw 21 judged count",
+   "rederived": 93,
+   "reported": 93.0,
+   "match": true
+  },
+  {
+   "check": "draw 22 keyword count",
+   "rederived": 100,
+   "reported": 100.0,
+   "match": true
+  },
+  {
+   "check": "draw 22 judged count",
+   "rederived": 96,
+   "reported": 96.0,
+   "match": true
+  },
+  {
+   "check": "draw 23 keyword count",
+   "rederived": 100,
+   "reported": 100.0,
+   "match": true
+  },
+  {
+   "check": "draw 23 judged count",
+   "rederived": 95,
+   "reported": 95.0,
+   "match": true
+  },
+  {
+   "check": "draw 24 keyword count",
+   "rederived": 100,
+   "reported": 100.0,
+   "match": true
+  },
+  {
+   "check": "draw 24 judged count",
+   "rederived": 97,
+   "reported": 97.0,
+   "match": true
+  },
+  {
+   "check": "draw 25 keyword count",
+   "rederived": 96,
+   "reported": 96.0,
+   "match": true
+  },
+  {
+   "check": "draw 25 judged count",
+   "rederived": 93,
+   "reported": 93.0,
+   "match": true
+  },
+  {
+   "check": "draw 26 keyword count",
+   "rederived": 99,
+   "reported": 99.0,
+   "match": true
+  },
+  {
+   "check": "draw 26 judged count",
+   "rederived": 88,
+   "reported": 88.0,
+   "match": true
+  },
+  {
+   "check": "draw 27 keyword count",
+   "rederived": 98,
+   "reported": 98.0,
+   "match": true
+  },
+  {
+   "check": "draw 27 judged count",
+   "rederived": 94,
+   "reported": 94.0,
+   "match": true
+  },
+  {
+   "check": "draw 28 keyword count",
+   "rederived": 99,
+   "reported": 99.0,
+   "match": true
+  },
+  {
+   "check": "draw 28 judged count",
+   "rederived": 95,
+   "reported": 95.0,
+   "match": true
+  },
+  {
+   "check": "draw 29 keyword count",
+   "rederived": 97,
+   "reported": 97.0,
+   "match": true
+  },
+  {
+   "check": "draw 29 judged count",
+   "rederived": 82,
+   "reported": 82.0,
+   "match": true
+  },
+  {
+   "check": "draw 30 keyword count",
+   "rederived": 97,
+   "reported": 97.0,
+   "match": true
+  },
+  {
+   "check": "draw 30 judged count",
+   "rederived": 86,
+   "reported": 86.0,
+   "match": true
+  },
+  {
+   "check": "draw 31 keyword count",
+   "rederived": 99,
+   "reported": 99.0,
+   "match": true
+  },
+  {
+   "check": "draw 31 judged count",
+   "rederived": 94,
+   "reported": 94.0,
+   "match": true
+  },
+  {
+   "check": "draw 32 keyword count",
+   "rederived": 100,
+   "reported": 100.0,
+   "match": true
+  },
+  {
+   "check": "draw 32 judged count",
+   "rederived": 97,
+   "reported": 97.0,
+   "match": true
+  },
+  {
+   "check": "draw 33 keyword count",
+   "rederived": 100,
+   "reported": 100.0,
+   "match": true
+  },
+  {
+   "check": "draw 33 judged count",
+   "rederived": 95,
+   "reported": 95.0,
+   "match": true
+  },
+  {
+   "check": "draw 34 keyword count",
+   "rederived": 100,
+   "reported": 100.0,
+   "match": true
+  },
+  {
+   "check": "draw 34 judged count",
+   "rederived": 97,
+   "reported": 97.0,
+   "match": true
+  },
+  {
+   "check": "draw 35 keyword count",
+   "rederived": 88,
+   "reported": 88.0,
+   "match": true
+  },
+  {
+   "check": "draw 35 judged count",
+   "rederived": 71,
+   "reported": 71.0,
+   "match": true
+  },
+  {
+   "check": "draw 36 keyword count",
+   "rederived": 100,
+   "reported": 100.0,
+   "match": true
+  },
+  {
+   "check": "draw 36 judged count",
+   "rederived": 94,
+   "reported": 94.0,
+   "match": true
+  },
+  {
+   "check": "draw 37 keyword count",
+   "rederived": 100,
+   "reported": 100.0,
+   "match": true
+  },
+  {
+   "check": "draw 37 judged count",
+   "rederived": 98,
+   "reported": 98.0,
+   "match": true
+  },
+  {
+   "check": "draw 38 keyword count",
+   "rederived": 100,
+   "reported": 100.0,
+   "match": true
+  },
+  {
+   "check": "draw 38 judged count",
+   "rederived": 97,
+   "reported": 97.0,
+   "match": true
+  },
+  {
+   "check": "draw 39 keyword count",
+   "rederived": 98,
+   "reported": 98.0,
+   "match": true
+  },
+  {
+   "check": "draw 39 judged count",
+   "rederived": 87,
+   "reported": 87.0,
+   "match": true
+  },
+  {
+   "check": "draw 40 keyword count",
+   "rederived": 98,
+   "reported": 98.0,
+   "match": true
+  },
+  {
+   "check": "draw 40 judged count",
+   "rederived": 88,
+   "reported": 88.0,
+   "match": true
+  },
+  {
+   "check": "draw 41 keyword count",
+   "rederived": 93,
+   "reported": 93.0,
+   "match": true
+  },
+  {
+   "check": "draw 41 judged count",
+   "rederived": 64,
+   "reported": 64.0,
+   "match": true
+  },
+  {
+   "check": "draw 42 keyword count",
+   "rederived": 98,
+   "reported": 98.0,
+   "match": true
+  },
+  {
+   "check": "draw 42 judged count",
+   "rederived": 95,
+   "reported": 95.0,
+   "match": true
+  },
+  {
+   "check": "draw 43 keyword count",
+   "rederived": 90,
+   "reported": 90.0,
+   "match": true
+  },
+  {
+   "check": "draw 43 judged count",
+   "rederived": 65,
+   "reported": 65.0,
+   "match": true
+  },
+  {
+   "check": "draw 44 keyword count",
+   "rederived": 100,
+   "reported": 100.0,
+   "match": true
+  },
+  {
+   "check": "draw 44 judged count",
+   "rederived": 96,
+   "reported": 96.0,
+   "match": true
+  },
+  {
+   "check": "draw 45 keyword count",
+   "rederived": 99,
+   "reported": 99.0,
+   "match": true
+  },
+  {
+   "check": "draw 45 judged count",
+   "rederived": 85,
+   "reported": 85.0,
+   "match": true
+  },
+  {
+   "check": "draw 46 keyword count",
+   "rederived": 100,
+   "reported": 100.0,
+   "match": true
+  },
+  {
+   "check": "draw 46 judged count",
+   "rederived": 98,
+   "reported": 98.0,
+   "match": true
+  },
+  {
+   "check": "draw 47 keyword count",
+   "rederived": 100,
+   "reported": 100.0,
+   "match": true
+  },
+  {
+   "check": "draw 47 judged count",
+   "rederived": 93,
+   "reported": 93.0,
+   "match": true
+  },
+  {
+   "check": "draw 48 keyword count",
+   "rederived": 100,
+   "reported": 100.0,
+   "match": true
+  },
+  {
+   "check": "draw 48 judged count",
+   "rederived": 93,
+   "reported": 93.0,
+   "match": true
+  },
+  {
+   "check": "draw 49 keyword count",
+   "rederived": 100,
+   "reported": 100.0,
+   "match": true
+  },
+  {
+   "check": "draw 49 judged count",
+   "rederived": 96,
+   "reported": 96.0,
+   "match": true
+  },
+  {
+   "check": "draw 50 keyword count",
+   "rederived": 82,
+   "reported": 82.0,
+   "match": true
+  },
+  {
+   "check": "draw 50 judged count",
+   "rederived": 8,
+   "reported": 8.0,
+   "match": true
+  },
+  {
+   "check": "draw 51 keyword count",
+   "rederived": 97,
+   "reported": 97.0,
+   "match": true
+  },
+  {
+   "check": "draw 51 judged count",
+   "rederived": 92,
+   "reported": 92.0,
+   "match": true
+  },
+  {
+   "check": "draw 52 keyword count",
+   "rederived": 100,
+   "reported": 100.0,
+   "match": true
+  },
+  {
+   "check": "draw 52 judged count",
+   "rederived": 97,
+   "reported": 97.0,
+   "match": true
+  },
+  {
+   "check": "draw 53 keyword count",
+   "rederived": 100,
+   "reported": 100.0,
+   "match": true
+  },
+  {
+   "check": "draw 53 judged count",
+   "rederived": 97,
+   "reported": 97.0,
+   "match": true
+  },
+  {
+   "check": "draw 54 keyword count",
+   "rederived": 98,
+   "reported": 98.0,
+   "match": true
+  },
+  {
+   "check": "draw 54 judged count",
+   "rederived": 94,
+   "reported": 94.0,
+   "match": true
+  },
+  {
+   "check": "draw 55 keyword count",
+   "rederived": 98,
+   "reported": 98.0,
+   "match": true
+  },
+  {
+   "check": "draw 55 judged count",
+   "rederived": 88,
+   "reported": 88.0,
+   "match": true
+  },
+  {
+   "check": "draw 56 keyword count",
+   "rederived": 100,
+   "reported": 100.0,
+   "match": true
+  },
+  {
+   "check": "draw 56 judged count",
+   "rederived": 96,
+   "reported": 96.0,
+   "match": true
+  },
+  {
+   "check": "draw 57 keyword count",
+   "rederived": 99,
+   "reported": 99.0,
+   "match": true
+  },
+  {
+   "check": "draw 57 judged count",
+   "rederived": 89,
+   "reported": 89.0,
+   "match": true
+  },
+  {
+   "check": "draw 58 keyword count",
+   "rederived": 84,
+   "reported": 84.0,
+   "match": true
+  },
+  {
+   "check": "draw 58 judged count",
+   "rederived": 54,
+   "reported": 54.0,
+   "match": true
+  },
+  {
+   "check": "draw 59 keyword count",
+   "rederived": 96,
+   "reported": 96.0,
+   "match": true
+  },
+  {
+   "check": "draw 59 judged count",
+   "rederived": 84,
+   "reported": 84.0,
+   "match": true
+  },
+  {
+   "check": "draw 60 keyword count",
+   "rederived": 82,
+   "reported": 82.0,
+   "match": true
+  },
+  {
+   "check": "draw 60 judged count",
+   "rederived": 53,
+   "reported": 53.0,
+   "match": true
+  },
+  {
+   "check": "draw 61 keyword count",
+   "rederived": 93,
+   "reported": 93.0,
+   "match": true
+  },
+  {
+   "check": "draw 61 judged count",
+   "rederived": 70,
+   "reported": 70.0,
+   "match": true
+  },
+  {
+   "check": "draw 62 keyword count",
+   "rederived": 85,
+   "reported": 85.0,
+   "match": true
+  },
+  {
+   "check": "draw 62 judged count",
+   "rederived": 63,
+   "reported": 63.0,
+   "match": true
+  },
+  {
+   "check": "draw 63 keyword count",
+   "rederived": 87,
+   "reported": 87.0,
+   "match": true
+  },
+  {
+   "check": "draw 63 judged count",
+   "rederived": 65,
+   "reported": 65.0,
+   "match": true
+  },
+  {
+   "check": "draw 64 keyword count",
+   "rederived": 76,
+   "reported": 76.0,
+   "match": true
+  },
+  {
+   "check": "draw 64 judged count",
+   "rederived": 10,
+   "reported": 10.0,
+   "match": true
+  },
+  {
+   "check": "draw 65 keyword count",
+   "rederived": 96,
+   "reported": 96.0,
+   "match": true
+  },
+  {
+   "check": "draw 65 judged count",
+   "rederived": 77,
+   "reported": 77.0,
+   "match": true
+  },
+  {
+   "check": "draw 66 keyword count",
+   "rederived": 100,
+   "reported": 100.0,
+   "match": true
+  },
+  {
+   "check": "draw 66 judged count",
+   "rederived": 89,
+   "reported": 89.0,
+   "match": true
+  },
+  {
+   "check": "draw 67 keyword count",
+   "rederived": 84,
+   "reported": 84.0,
+   "match": true
+  },
+  {
+   "check": "draw 67 judged count",
+   "rederived": 62,
+   "reported": 62.0,
+   "match": true
+  },
+  {
+   "check": "draw 68 keyword count",
+   "rederived": 80,
+   "reported": 80.0,
+   "match": true
+  },
+  {
+   "check": "draw 68 judged count",
+   "rederived": 53,
+   "reported": 53.0,
+   "match": true
+  },
+  {
+   "check": "draw 69 keyword count",
+   "rederived": 100,
+   "reported": 100.0,
+   "match": true
+  },
+  {
+   "check": "draw 69 judged count",
+   "rederived": 97,
+   "reported": 97.0,
+   "match": true
+  },
+  {
+   "check": "draw 70 keyword count",
+   "rederived": 75,
+   "reported": 75.0,
+   "match": true
+  },
+  {
+   "check": "draw 70 judged count",
+   "rederived": 14,
+   "reported": 14.0,
+   "match": true
+  },
+  {
+   "check": "draw 71 keyword count",
+   "rederived": 79,
+   "reported": 79.0,
+   "match": true
+  },
+  {
+   "check": "draw 71 judged count",
+   "rederived": 7,
+   "reported": 7.0,
+   "match": true
+  },
+  {
+   "check": "draw 72 keyword count",
+   "rederived": 78,
+   "reported": 78.0,
+   "match": true
+  },
+  {
+   "check": "draw 72 judged count",
+   "rederived": 10,
+   "reported": 10.0,
+   "match": true
+  },
+  {
+   "check": "draw 73 keyword count",
+   "rederived": 81,
+   "reported": 81.0,
+   "match": true
+  },
+  {
+   "check": "draw 73 judged count",
+   "rederived": 45,
+   "reported": 45.0,
+   "match": true
+  },
+  {
+   "check": "draw 74 keyword count",
+   "rederived": 100,
+   "reported": 100.0,
+   "match": true
+  },
+  {
+   "check": "draw 74 judged count",
+   "rederived": 93,
+   "reported": 93.0,
+   "match": true
+  },
+  {
+   "check": "draw 75 keyword count",
+   "rederived": 83,
+   "reported": 83.0,
+   "match": true
+  },
+  {
+   "check": "draw 75 judged count",
+   "rederived": 58,
+   "reported": 58.0,
+   "match": true
+  },
+  {
+   "check": "draw 76 keyword count",
+   "rederived": 80,
+   "reported": 80.0,
+   "match": true
+  },
+  {
+   "check": "draw 76 judged count",
+   "rederived": 61,
+   "reported": 61.0,
+   "match": true
+  },
+  {
+   "check": "draw 77 keyword count",
+   "rederived": 83,
+   "reported": 83.0,
+   "match": true
+  },
+  {
+   "check": "draw 77 judged count",
+   "rederived": 39,
+   "reported": 39.0,
+   "match": true
+  },
+  {
+   "check": "draw 78 keyword count",
+   "rederived": 97,
+   "reported": 97.0,
+   "match": true
+  },
+  {
+   "check": "draw 78 judged count",
+   "rederived": 89,
+   "reported": 89.0,
+   "match": true
+  },
+  {
+   "check": "draw 79 keyword count",
+   "rederived": 81,
+   "reported": 81.0,
+   "match": true
+  },
+  {
+   "check": "draw 79 judged count",
+   "rederived": 19,
+   "reported": 19.0,
+   "match": true
+  },
+  {
+   "check": "draw 80 keyword count",
+   "rederived": 80,
+   "reported": 80.0,
+   "match": true
+  },
+  {
+   "check": "draw 80 judged count",
+   "rederived": 15,
+   "reported": 15.0,
+   "match": true
+  },
+  {
+   "check": "draw 81 keyword count",
+   "rederived": 81,
+   "reported": 81.0,
+   "match": true
+  },
+  {
+   "check": "draw 81 judged count",
+   "rederived": 42,
+   "reported": 42.0,
+   "match": true
+  },
+  {
+   "check": "draw 82 keyword count",
+   "rederived": 76,
+   "reported": 76.0,
+   "match": true
+  },
+  {
+   "check": "draw 82 judged count",
+   "rederived": 45,
+   "reported": 45.0,
+   "match": true
+  },
+  {
+   "check": "draw 83 keyword count",
+   "rederived": 72,
+   "reported": 72.0,
+   "match": true
+  },
+  {
+   "check": "draw 83 judged count",
+   "rederived": 35,
+   "reported": 35.0,
+   "match": true
+  },
+  {
+   "check": "draw 84 keyword count",
+   "rederived": 80,
+   "reported": 80.0,
+   "match": true
+  },
+  {
+   "check": "draw 84 judged count",
+   "rederived": 60,
+   "reported": 60.0,
+   "match": true
+  },
+  {
+   "check": "draw 85 keyword count",
+   "rederived": 79,
+   "reported": 79.0,
+   "match": true
+  },
+  {
+   "check": "draw 85 judged count",
+   "rederived": 53,
+   "reported": 53.0,
+   "match": true
+  },
+  {
+   "check": "draw 86 keyword count",
+   "rederived": 80,
+   "reported": 80.0,
+   "match": true
+  },
+  {
+   "check": "draw 86 judged count",
+   "rederived": 20,
+   "reported": 20.0,
+   "match": true
+  },
+  {
+   "check": "draw 87 keyword count",
+   "rederived": 93,
+   "reported": 93.0,
+   "match": true
+  },
+  {
+   "check": "draw 87 judged count",
+   "rederived": 80,
+   "reported": 80.0,
+   "match": true
+  },
+  {
+   "check": "draw 88 keyword count",
+   "rederived": 100,
+   "reported": 100.0,
+   "match": true
+  },
+  {
+   "check": "draw 88 judged count",
+   "rederived": 93,
+   "reported": 93.0,
+   "match": true
+  },
+  {
+   "check": "draw 89 keyword count",
+   "rederived": 78,
+   "reported": 78.0,
+   "match": true
+  },
+  {
+   "check": "draw 89 judged count",
+   "rederived": 55,
+   "reported": 55.0,
+   "match": true
+  },
+  {
+   "check": "draw 90 keyword count",
+   "rederived": 93,
+   "reported": 93.0,
+   "match": true
+  },
+  {
+   "check": "draw 90 judged count",
+   "rederived": 80,
+   "reported": 80.0,
+   "match": true
+  },
+  {
+   "check": "draw 91 keyword count",
+   "rederived": 96,
+   "reported": 96.0,
+   "match": true
+  },
+  {
+   "check": "draw 91 judged count",
+   "rederived": 77,
+   "reported": 77.0,
+   "match": true
+  },
+  {
+   "check": "draw 92 keyword count",
+   "rederived": 97,
+   "reported": 97.0,
+   "match": true
+  },
+  {
+   "check": "draw 92 judged count",
+   "rederived": 86,
+   "reported": 86.0,
+   "match": true
+  },
+  {
+   "check": "draw 93 keyword count",
+   "rederived": 75,
+   "reported": 75.0,
+   "match": true
+  },
+  {
+   "check": "draw 93 judged count",
+   "rederived": 45,
+   "reported": 45.0,
+   "match": true
+  },
+  {
+   "check": "draw 94 keyword count",
+   "rederived": 80,
+   "reported": 80.0,
+   "match": true
+  },
+  {
+   "check": "draw 94 judged count",
+   "rederived": 49,
+   "reported": 49.0,
+   "match": true
+  },
+  {
+   "check": "draw 95 keyword count",
+   "rederived": 87,
+   "reported": 87.0,
+   "match": true
+  },
+  {
+   "check": "draw 95 judged count",
+   "rederived": 68,
+   "reported": 68.0,
+   "match": true
+  },
+  {
+   "check": "draw 96 keyword count",
+   "rederived": 74,
+   "reported": 74.0,
+   "match": true
+  },
+  {
+   "check": "draw 96 judged count",
+   "rederived": 37,
+   "reported": 37.0,
+   "match": true
+  },
+  {
+   "check": "draw 97 keyword count",
+   "rederived": 89,
+   "reported": 89.0,
+   "match": true
+  },
+  {
+   "check": "draw 97 judged count",
+   "rederived": 67,
+   "reported": 67.0,
+   "match": true
+  },
+  {
+   "check": "draw 98 keyword count",
+   "rederived": 82,
+   "reported": 82.0,
+   "match": true
+  },
+  {
+   "check": "draw 98 judged count",
+   "rederived": 16,
+   "reported": 16.0,
+   "match": true
+  },
+  {
+   "check": "draw 99 keyword count",
+   "rederived": 91,
+   "reported": 91.0,
+   "match": true
+  },
+  {
+   "check": "draw 99 judged count",
+   "rederived": 65,
+   "reported": 65.0,
+   "match": true
+  },
+  {
+   "check": "draw 100 keyword count",
+   "rederived": 81,
+   "reported": 81.0,
+   "match": true
+  },
+  {
+   "check": "draw 100 judged count",
+   "rederived": 65,
+   "reported": 65.0,
+   "match": true
+  },
+  {
+   "check": "draw 101 keyword count",
+   "rederived": 77,
+   "reported": 77.0,
+   "match": true
+  },
+  {
+   "check": "draw 101 judged count",
+   "rederived": 53,
+   "reported": 53.0,
+   "match": true
+  },
+  {
+   "check": "draw 102 keyword count",
+   "rederived": 92,
+   "reported": 92.0,
+   "match": true
+  },
+  {
+   "check": "draw 102 judged count",
+   "rederived": 60,
+   "reported": 60.0,
+   "match": true
+  },
+  {
+   "check": "draw 103 keyword count",
+   "rederived": 91,
+   "reported": 91.0,
+   "match": true
+  },
+  {
+   "check": "draw 103 judged count",
+   "rederived": 76,
+   "reported": 76.0,
+   "match": true
+  },
+  {
+   "check": "draw 104 keyword count",
+   "rederived": 99,
+   "reported": 99.0,
+   "match": true
+  },
+  {
+   "check": "draw 104 judged count",
+   "rederived": 92,
+   "reported": 92.0,
+   "match": true
+  },
+  {
+   "check": "draw 105 keyword count",
+   "rederived": 88,
+   "reported": 88.0,
+   "match": true
+  },
+  {
+   "check": "draw 105 judged count",
+   "rederived": 58,
+   "reported": 58.0,
+   "match": true
+  },
+  {
+   "check": "draw 106 keyword count",
+   "rederived": 73,
+   "reported": 73.0,
+   "match": true
+  },
+  {
+   "check": "draw 106 judged count",
+   "rederived": 48,
+   "reported": 48.0,
+   "match": true
+  },
+  {
+   "check": "draw 107 keyword count",
+   "rederived": 72,
+   "reported": 72.0,
+   "match": true
+  },
+  {
+   "check": "draw 107 judged count",
+   "rederived": 63,
+   "reported": 63.0,
+   "match": true
+  },
+  {
+   "check": "draw 108 keyword count",
+   "rederived": 95,
+   "reported": 95.0,
+   "match": true
+  },
+  {
+   "check": "draw 108 judged count",
+   "rederived": 79,
+   "reported": 79.0,
+   "match": true
+  },
+  {
+   "check": "draw 109 keyword count",
+   "rederived": 75,
+   "reported": 75.0,
+   "match": true
+  },
+  {
+   "check": "draw 109 judged count",
+   "rederived": 63,
+   "reported": 63.0,
+   "match": true
+  },
+  {
+   "check": "draw 110 keyword count",
+   "rederived": 100,
+   "reported": 100.0,
+   "match": true
+  },
+  {
+   "check": "draw 110 judged count",
+   "rederived": 97,
+   "reported": 97.0,
+   "match": true
+  },
+  {
+   "check": "draw 111 keyword count",
+   "rederived": 89,
+   "reported": 89.0,
+   "match": true
+  },
+  {
+   "check": "draw 111 judged count",
+   "rederived": 75,
+   "reported": 75.0,
+   "match": true
+  },
+  {
+   "check": "draw 112 keyword count",
+   "rederived": 94,
+   "reported": 94.0,
+   "match": true
+  },
+  {
+   "check": "draw 112 judged count",
+   "rederived": 88,
+   "reported": 88.0,
+   "match": true
+  },
+  {
+   "check": "draw 113 keyword count",
+   "rederived": 75,
+   "reported": 75.0,
+   "match": true
+  },
+  {
+   "check": "draw 113 judged count",
+   "rederived": 55,
+   "reported": 55.0,
+   "match": true
+  },
+  {
+   "check": "draw 114 keyword count",
+   "rederived": 80,
+   "reported": 80.0,
+   "match": true
+  },
+  {
+   "check": "draw 114 judged count",
+   "rederived": 66,
+   "reported": 66.0,
+   "match": true
+  },
+  {
+   "check": "draw 115 keyword count",
+   "rederived": 92,
+   "reported": 92.0,
+   "match": true
+  },
+  {
+   "check": "draw 115 judged count",
+   "rederived": 86,
+   "reported": 86.0,
+   "match": true
+  },
+  {
+   "check": "item-level kappa keyword vs Qwen (all judged edited draws)",
+   "rederived": 0.19559945531106587,
+   "reported": 0.19559945531106582,
+   "match": true
+  }
+ ]
+}

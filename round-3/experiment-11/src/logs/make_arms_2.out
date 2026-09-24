@@ -1,0 +1,58 @@
+[
+ {
+  "arm": "A_orig",
+  "role": "orig",
+  "trial": null,
+  "dose": null,
+  "rule_fired": null
+ },
+ {
+  "arm": "B_keyword_t96",
+  "role": "keyword",
+  "trial": 96,
+  "dose": 1.0,
+  "rule_fired": null
+ },
+ {
+  "arm": "C_corrected",
+  "role": "corrected",
+  "trial": 7,
+  "dose": 1.0,
+  "rule_fired": "primary: min KL s.t. refusals<=10"
+ },
+ {
+  "arm": "D_reselected_clf",
+  "role": "reselected",
+  "trial": 98,
+  "dose": 1.0,
+  "rule_fired": "primary: min KL s.t. refusals<=10"
+ },
+ {
+  "arm": "D2_reselected_judge",
+  "role": "reselected",
+  "trial": 64,
+  "dose": 1.0,
+  "rule_fired": "primary: min KL s.t. refusals<=10"
+ },
+ {
+  "arm": "F_dose1.5",
+  "role": "dose",
+  "trial": 96,
+  "dose": 1.5,
+  "rule_fired": null
+ },
+ {
+  "arm": "F_dose2.0",
+  "role": "dose",
+  "trial": 96,
+  "dose": 2.0,
+  "rule_fired": null
+ },
+ {
+  "arm": "F_dose3.0",
+  "role": "dose",
+  "trial": 96,
+  "dose": 3.0,
+  "rule_fired": null
+ }
+] []

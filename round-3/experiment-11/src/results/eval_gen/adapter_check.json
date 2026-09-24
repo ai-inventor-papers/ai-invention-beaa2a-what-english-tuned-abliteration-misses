@@ -1,0 +1,9 @@
+{
+ "arm": "B_keyword_t96",
+ "adapter": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/adapters/gemma_selected_path2",
+ "n_tensors_file": 192,
+ "n_matched": 192,
+ "n_missing": 0,
+ "max_abs_diff": 0.03125,
+ "n_exact": 25
+}

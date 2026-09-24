@@ -1,0 +1,12 @@
+# C3 corrected-objective Heretic run (iteration 3). Identical to Heretic 3521f864 defaults and to the iteration-1
+# keyword run EXCEPT the first objective: KeywordRate -> PartialAwareRefusal (frozen, certified classifier).
+# CLI args (drive_heretic.py): --model google/gemma-3-12b-it --model-commit 96b6f1ec... --quantization bnb_4bit
+#                              --seed 20260923 --batch-size 128 ; phase A 60 startup trials, phase B to 116 complete.
+scorers = [
+    { plugin = "heretic.scorers.partial_aware_refusal.PartialAwareRefusal", optimization = "minimize"},
+    { plugin = "heretic.scorers.kl_divergence.KLDivergence", optimization = "minimize"},
+]
+
+[scorer.PartialAwareRefusal]
+model_path = "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_3/gen_art/gen_art_experiment_11/scorer/refusal_clf.joblib"
+log_dir = "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_3/gen_art/gen_art_experiment_11/logs/inloop_scores/corrected_s2"

@@ -1,0 +1,22 @@
+{
+ "arm": "C_corrected",
+ "trial": 7,
+ "source": "corrected-objective run",
+ "rule_fired": "primary: min KL s.t. refusals<=10",
+ "parameters": {
+  "attn.o_proj": {
+   "max_weight": 1.3058603245031022,
+   "max_weight_position": 29.356814435097565,
+   "min_weight": 0.5562072037044168,
+   "min_weight_distance": 18.9284332033305
+  },
+  "mlp.down_proj": {
+   "max_weight": 1.2306890494321627,
+   "max_weight_position": 31.39010548214005,
+   "min_weight": 0.5816751324457782,
+   "min_weight_distance": 16.34098984990031
+  }
+ },
+ "direction_index": null,
+ "means_src": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_3/gen_art/gen_art_experiment_11/directions/gemma_corrected/residual_means_A.pt"
+}
