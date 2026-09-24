@@ -1,0 +1,61 @@
+{
+ "criterion_shift": {
+  "per_lang": {
+   "en": {
+    "slope_ratio": 0.9856872538565637,
+    "slope_ratio_ci90": [
+     0.9587516172686982,
+     1.015903093733108
+    ]
+   },
+   "sl": {
+    "slope_ratio": 1.0137410108668625,
+    "slope_ratio_ci90": [
+     0.9839163183432998,
+     1.0413316992199666
+    ]
+   }
+  },
+  "interaction_ci90": [
+   -0.02663831084929508,
+   0.13977931844754177
+  ],
+  "decision": "SURVIVES"
+ },
+ "evidence_loss": {
+  "per_lang": {
+   "en": {
+    "slope_ratio": 0.31655029763735815,
+    "slope_ratio_ci90": [
+     0.2968274341013766,
+     0.3391131388569874
+    ]
+   },
+   "sl": {
+    "slope_ratio": 0.3109037522763255,
+    "slope_ratio_ci90": [
+     0.2875625571038443,
+     0.32967814142216517
+    ]
+   }
+  },
+  "interaction_ci90": [
+   -0.13217649876182755,
+   0.029035975144184475
+  ],
+  "decision": "EVIDENCE_LOSS"
+ },
+ "language_specific": {
+  "interaction": 1.313426558768219,
+  "interaction_ci90": [
+   1.2330310638260757,
+   1.4062310675006795
+  ],
+  "excludes_0": true
+ },
+ "checks": {
+  "criterion_shift_SURVIVES": true,
+  "evidence_loss_detected": true,
+  "language_specific_interaction_detected": true
+ }
+}

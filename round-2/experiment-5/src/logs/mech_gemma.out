@@ -1,0 +1,10 @@
+23:23:00|INFO   |loaded + winsorized in 34s; S3 (540, 49, 6, 3840) S4 (1028, 49, 3, 3840)
+23:28:36|INFO   |C chosen 0.001 ({0.001: 0.9701704545454546, 0.01: 0.9666838842975206, 0.1: 0.9628099173553719, 1.0: 0.9599690082644629})
+23:28:45|INFO   |L0: cos 0.000 corr 0.000 cvDiM pool 0.500 S4 frozen orig en/sl 0.500/0.500 (379s)
+23:31:08|INFO   |L8: cos 0.629 corr 1.143 cvDiM pool 0.718 S4 frozen orig en/sl 0.565/0.553 (522s)
+23:32:21|INFO   |L16: cos 0.933 corr 1.082 cvDiM pool 0.962 S4 frozen orig en/sl 0.993/0.984 (595s)
+23:33:05|INFO   |L24: cos 0.918 corr 0.968 cvDiM pool 0.966 S4 frozen orig en/sl 0.999/0.997 (639s)
+23:34:02|INFO   |L32: cos 0.776 corr 0.803 cvDiM pool 0.950 S4 frozen orig en/sl 0.998/0.998 (696s)
+23:34:49|INFO   |L40: cos 0.306 corr 0.317 cvDiM pool 0.948 S4 frozen orig en/sl 0.996/0.994 (743s)
+23:35:41|INFO   |L48: cos 0.135 corr 0.143 cvDiM pool 0.944 S4 frozen orig en/sl 0.996/0.995 (795s)
+23:42:41|INFO   |mech gemma done in 1215s
