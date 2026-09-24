@@ -1,0 +1,34 @@
+Warning : `load_model` does not return WordVectorModel or SupervisedModel any more, but a `FastText` object which is very similar.
+19:50:31|INFO   |20/20 frozen confirmation cells have judged Slovene outcomes
+19:50:32|INFO   |PRIMARY en: rho(O, strict residual) = -0.784 (removal-aligned +0.784) CI (-0.8470243512387152, -0.6561589610486677), permutation p 0.000
+19:50:32|INFO   |PRIMARY sl: rho(O, strict residual) = -0.903 (removal-aligned +0.903) CI (-0.9275651611720471, -0.8569433501716089), permutation p 0.000
+../alib.py:97: ConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  r = spearmanr(x, y)
+../alib.py:102: ConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  draws.append(spearmanr(x, yb).statistic)
+../alib.py:104: ConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  perm = [spearmanr(RNG.permutation(x), y).statistic for _ in range(2000)]
+../alib.py:119: ConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  d0 = f(spearmanr(x1, y).statistic) - f(spearmanr(x2, y).statistic)
+../alib.py:123: ConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  draws.append(f(spearmanr(x1, yb).statistic) - f(spearmanr(x2, yb).statistic))
+../alib.py:125: ConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  return {"n_cells": len(cells), "rho1": float(spearmanr(x1, y).statistic), "rho2": float(spearmanr(x2, y).statistic),
+19:50:42|INFO   |nested en: base logE R2 0.101; +O dR2 +0.365 (LOO +0.265), +n_layers dR2 -0.000 (LOO -0.000), +span dR2 +0.001 (LOO -0.109), +O_cos dR2 +0.645 (LOO +0.756), +O_band4 dR2 +0.592 (LOO +0.656)
+19:50:42|INFO   |nested sl: base logE R2 0.088; +O dR2 +0.580 (LOO +0.594), +n_layers dR2 +0.000 (LOO -0.000), +span dR2 +0.028 (LOO -0.072), +O_cos dR2 +0.702 (LOO +0.834), +O_band4 dR2 +0.718 (LOO +0.845)
+../analysis.py:144: ConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  out["pooled_baselines"] = {k: {"rho": float(spearmanr([p[k] for p in pooled], y).statistic),
+../analysis.py:145: ConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  "p": float(spearmanr([p[k] for p in pooled], y).pvalue), "n": len(pooled)}
+19:50:42|INFO   |pooled row-level: O -0.760, baseline_refusal +nan, single_site -0.037, logE -0.397
+19:50:42|INFO   |ARGMAX E2: predicted 25-36, observed winner 13-24 -> NAMED_AND_LOST
+19:50:42|INFO   |ARGMAX E3: predicted 25-36, observed winner 13-24 -> NAMED_AND_LOST
+19:50:42|INFO   |controls null: True X_PC0_E3 dSL -0.01, X_PC1_E3 dSL +0.03, X_PC2_E3 dSL -0.01, X_RND0_E3 dSL -0.01, X_RND1_E3 dSL +0.00, X_RND2_E3 dSL +0.01
+19:50:42|INFO   |dissociation placement_at_fixed_E_high (A1 vs A3): dSL -0.029 CI [-0.12857142857142856, 0.07142857142857142] McNemar p 0.7744
+19:50:42|INFO   |dissociation placement_at_fixed_E_low (A4 vs A2): dSL +0.000 CI [-0.08571428571428569, 0.08571428571428572] McNemar p 1.0000
+19:50:42|INFO   |dissociation dose_at_fixed_O_ship (A1 vs A4): dSL -0.186 CI [-0.2857142857142857, -0.08571428571428572] McNemar p 0.0010
+19:50:42|INFO   |dissociation dose_at_fixed_O_swap (A3 vs A2): dSL -0.157 CI [-0.24285714285714288, -0.07142857142857142] McNemar p 0.0034
+19:50:42|INFO   |post-freeze E2: shipped vs sibling kernel at matched energy, dSL +0.071 CI [-0.02857142857142858, 0.17142857142857143]
+19:50:42|INFO   |post-freeze E3: shipped vs sibling kernel at matched energy, dSL +0.029 CI [-0.05714285714285716, 0.11428571428571432]
+19:50:42|INFO   |placebos: P1_cell_label_within_item +0.015, P2_cross_language_profile -0.843, P3_energy_profile_shuffled +0.019
+19:50:42|INFO   |VERDICT: {'label': 'PARTIAL', 'rho_sl_removal_aligned': 0.9032031082382121, 'rho_sl_raw': -0.9032031082382121, 'dR2_O': 0.5797352246668095, 'loo_dR2_O': 0.5938902497905318, 'beats_competitors': ['logE', 'span', 'mean_depth', 'O_cos', 'O_sl_band4'], 'loses_to': [], 'argmax_outcome': 'NAMED_AND_LOST', 'controls_all_null': True, 'note': 'English is blocked from confirmatory reading until its within-edited judge gate clears'}

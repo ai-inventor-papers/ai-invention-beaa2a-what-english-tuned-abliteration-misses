@@ -1,0 +1,23 @@
+{
+ "model": {
+  "repo": "cjvt/GaMS3-12B-Instruct",
+  "sha": "1d0b27af5748784482600d24779409e7e1dc9adc"
+ },
+ "tokenizer_chat_template_sha256": "7de1c58e208eda46e9c7f86397df37ec49883aeece39fb961e0a6b24088dd3c4",
+ "torch": "2.11.0+cu128",
+ "transformers": "5.17.0",
+ "peft": "0.21.0",
+ "bitsandbytes": "0.50.2",
+ "gpu": "NVIDIA L4",
+ "cuda": "12.8",
+ "seed": 20260923,
+ "heretic_op_sha256": "322d1a1189f432c499c3b6a3f705a46863651872c208b039e3d385dd9dd130e8",
+ "method_sha256": "bb7cea0931766c17fdbc1f52b34d730ab97468b79d01e66cec00c99f88ca2c40",
+ "gen_bs": 64,
+ "tokens": {
+  "dev": 128,
+  "confirm_harmful": 192,
+  "confirm_benign": 128
+ },
+ "utc": "2026-09-24T16:22:15Z"
+}
