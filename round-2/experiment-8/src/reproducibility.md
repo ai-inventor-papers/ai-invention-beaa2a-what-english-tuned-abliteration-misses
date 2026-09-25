@@ -6,7 +6,7 @@ This file describes what was **actually run** on 2026-09-23/24, step by step and
 ## 1. Get the artifact and its read-only inputs
 
 ```bash
-cp -r /ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8 ~/rprior
+cp -r . ~/rprior
 cd ~/rprior
 ```
 

@@ -1,6 +1,6 @@
 {
  "adapter": {
-  "adapter_dir": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/adapters/gemma_selected_path2",
+  "adapter_dir": "../../../../../round-1/experiment-1/src/adapters/gemma_selected_path2",
   "trial": 96,
   "sha256": "d219c084b84370cd972700fa07d754777b2fd56dc12257cd0e67498b2d0f2b01",
   "sanity_en_rule_refusal_core": 0.0,

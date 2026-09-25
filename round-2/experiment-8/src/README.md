@@ -228,7 +228,7 @@ figures/             fig1 arms · fig2 dose · fig3 weight edits (incl. repair a
 ```
 
 Absolute workspace path (kept artifacts are readable here by later rounds):
-`/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8`
+`.`
 
 ## How to run
 
@@ -292,5 +292,5 @@ Model weights live in this run's shared HF cache (`$HF_HUB_CACHE`) and are re-do
 `p-e-w/gemma-3-12b-it-heretic --revision e037e6e112ea85777fc3858469cdc31fdfceaa13`,
 `Qwen/Qwen3-14B --revision 40c069824f4251a91eefaf281ebe4c544efd3e18`.
 The core edit's LoRA adapter is read (never modified) from
-`/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/adapters/gemma_selected_path2`
+`../../../round-1/experiment-1/src/adapters/gemma_selected_path2`
 (`adapter_model.safetensors` SHA-256 `d219c084…`, verified at load).

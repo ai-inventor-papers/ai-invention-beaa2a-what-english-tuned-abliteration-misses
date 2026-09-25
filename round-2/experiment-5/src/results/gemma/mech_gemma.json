@@ -60,7 +60,7 @@
   "cos_raw_primary": 0.9188216152701985,
   "e3_value": 0.92,
   "within_0.03": true,
-  "e3_cosine_profile_file": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_3/results/gemma/cosine_profile.json"
+  "e3_cosine_profile_file": "../../../../../round-1/experiment-3/src/results/gemma/cosine_profile.json"
  },
  "primary": {
   "T3": {

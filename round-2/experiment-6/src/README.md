@@ -359,10 +359,10 @@ the prefix sets and frozen directions in `gen_art_experiment_3`; and the frozen 
 
 ## Kept artifacts (workspace paths)
 
-- panel: `/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_6/results/panel_items/` and `/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_6/results/panel_edits.jsonl`
-- references and the Gemma-pod export: `/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_6/results/references.json`, `/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_6/results/compliance_refs_gams_core.json`
-- judged generations: `/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_6/results/judged_generations.json`
-- K reference cache: `/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_6/cache/k_cache.pt`; geometry: `/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_6/cache/geometry.npz`; r_prior: `/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_6/cache/r_prior.npy`
+- panel: `./results/panel_items/` and `./results/panel_edits.jsonl`
+- references and the Gemma-pod export: `./results/references.json`, `./results/compliance_refs_gams_core.json`
+- judged generations: `./results/judged_generations.json`
+- K reference cache: `./cache/k_cache.pt`; geometry: `./cache/geometry.npz`; r_prior: `./cache/r_prior.npy`
 
 ## Restoring removed files
 

@@ -149,8 +149,8 @@ def main() -> None:
         "human_packet_key": str(WS / "results/human_packet/packet_key.json"),
         "figures": str(WS / "figures"), "judge_debug_log": str(WS / "logs/judge_debug.log"),
         "core_adapters_read_only": {
-            "gams_edit": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/adapters/gams_selected_path2",
-            "gemma_edit": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/adapters/gemma_selected_path2"},
+            "gams_edit": str(Path(__file__).resolve().parents[3] / "round-1/experiment-1/src/adapters/gams_selected_path2"),
+            "gemma_edit": str(Path(__file__).resolve().parents[3] / "round-1/experiment-1/src/adapters/gemma_selected_path2")},
     }
     frozen = rjson("frozen_samples.json") or {}
     meta = {

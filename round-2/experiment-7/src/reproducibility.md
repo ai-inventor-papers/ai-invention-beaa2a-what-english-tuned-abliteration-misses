@@ -15,9 +15,9 @@ constants at the top of `common.py`, `panel.py` and `refs_gams.py`.
 
 | name | path | contents used |
 | --- | --- | --- |
-| `EXP1` | `/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1` | Optuna journal `checkpoints/gemma/google--gemma-3-12b-it.jsonl` (116 trials); `directions/gemma/directions.pt`; `adapters/gemma_selected/` (trial 96); `adapters/gams_selected/` (GaMS trial 88) |
-| `EXP3` | `/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_3` | `judge.py` (the frozen gpt-4.1 rubric, read verbatim); `judged_generations.json` |
-| `DATA` | `/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_dataset_1/data/splits` | `S3_jbb.jsonl`, `S3_dolly.jsonl`, `S3_flores_dev.jsonl`, `S3_mc.jsonl`, `S2_semantic.jsonl`, `S4_strongreject_pairs.jsonl`. FINAL splits S5-S7 are never read. |
+| `EXP1` | `../../../round-1/experiment-1/src` | Optuna journal `checkpoints/gemma/google--gemma-3-12b-it.jsonl` (116 trials); `directions/gemma/directions.pt`; `adapters/gemma_selected/` (trial 96); `adapters/gams_selected/` (GaMS trial 88) |
+| `EXP3` | `../../../round-1/experiment-3/src` | `judge.py` (the frozen gpt-4.1 rubric, read verbatim); `judged_generations.json` |
+| `DATA` | `../../../round-1/dataset-1/src/data/splits` | `S3_jbb.jsonl`, `S3_dolly.jsonl`, `S3_flores_dev.jsonl`, `S3_mc.jsonl`, `S2_semantic.jsonl`, `S4_strongreject_pairs.jsonl`. FINAL splits S5-S7 are never read. |
 
 ## 2. System, Python, environment
 

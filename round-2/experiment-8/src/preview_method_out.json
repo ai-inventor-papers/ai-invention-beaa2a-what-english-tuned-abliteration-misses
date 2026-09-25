@@ -16,7 +16,7 @@
       }
     },
     "adapter_core_edit": {
-      "dir": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/adapters/gemma_selected_path2",
+      "dir": "../../../round-1/experiment-1/src/adapters/gemma_selected_path2",
       "trial": "96",
       "sha": "d219c084b84370cd972700fa07d754777b2fd56dc12257cd0e67498b2d0f2b01"
     },
@@ -156,7 +156,7 @@
           "compliance_pool": 69
         }
       },
-      "prefix_sets": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/a1_ref/prefix_sets_gemma.json",
+      "prefix_sets": "./a1_ref/prefix_sets_gemma.json",
       "label_source_for_construction": "narrow opener rule labeller (gpt-4.1 key at daily limit pre-freeze)",
       "judge": {
         "model": "openai/gpt-4.1",
@@ -3789,13 +3789,13 @@
       "note": "independent re-derivation from results/*/gens/*.json + judge caches + per_item_rows.jsonl + directions/*.npz; no import of analysis.py / verify_numbers.py / common.py"
     },
     "api_cost_usd": 3.42963,
-    "workspace": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8",
+    "workspace": ".",
     "paths": {
-      "directions": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/directions",
-      "results": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results",
-      "configs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/configs",
-      "figures": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/figures",
-      "references": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/references"
+      "directions": "./directions",
+      "results": "./results",
+      "configs": "./configs",
+      "figures": "./figures",
+      "references": "./references"
     },
     "column_legend": "predict_<model>_<arm> = greedy response (96 new tokens); metadata_label_<model>_<arm> = gpt-4.1 blind label ('rule:<x>' = opener-rule fallback where no judge label exists); R1/Rseq teacher-forced refu..."
   },

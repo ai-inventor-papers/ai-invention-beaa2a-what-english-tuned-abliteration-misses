@@ -17,7 +17,7 @@ import aiohttp
 from loguru import logger
 
 WS = Path(__file__).resolve().parent
-EXP3 = Path("/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_3")
+EXP3 = Path(__file__).resolve().parents[3] / "round-1/experiment-3/src"
 RUBRIC = (EXP3 / "judge.py").read_text().split('RUBRIC = """')[1].split('"""')[0]
 URL = os.environ.get("OPENROUTER_BASE_URL", "").rstrip("/") + "/chat/completions"
 MODEL = "openai/gpt-4.1"

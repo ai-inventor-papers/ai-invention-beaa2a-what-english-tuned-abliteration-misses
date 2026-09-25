@@ -15,7 +15,7 @@ import numpy as np
 import pandas as pd
 
 WS = Path(__file__).resolve().parent
-SPL = Path("/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_dataset_1/data/splits")
+SPL = Path(__file__).resolve().parents[3] / "round-1/dataset-1/src/data/splits"
 
 
 def load_meta() -> dict:

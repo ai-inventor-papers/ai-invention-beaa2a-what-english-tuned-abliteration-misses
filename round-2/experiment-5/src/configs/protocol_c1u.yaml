@@ -8,11 +8,11 @@ heretic_sha: 3521f8648a0dccf6e12a92666862632235fac7e6
 core_edits:
   gams:
     trial: 88
-    adapter: /ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/adapters/gams_selected_path2
+    adapter: ../../../../round-1/experiment-1/src/adapters/gams_selected_path2
     adapter_sha256: a4419c5140ca706d9075045da1c12f0f62b847fce5acdcb41cf5ce3c09506330
   gemma:
     trial: 96
-    adapter: /ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/adapters/gemma_selected_path2
+    adapter: ../../../../round-1/experiment-1/src/adapters/gemma_selected_path2
     adapter_sha256: d219c084b84370cd972700fa07d754777b2fd56dc12257cd0e67498b2d0f2b01
 checkpoints: ORIGINAL = PeftModel with adapter layers disabled; EDITED = enabled (one load per model)
 system_prompt: You are a helpful assistant.

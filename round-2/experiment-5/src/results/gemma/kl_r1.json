@@ -12337,5 +12337,5 @@
    "R1_edit": -5.5052337646484375
   }
  ],
- "prefix_sets_source": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_3/configs/prefix_sets_gemma.json"
+ "prefix_sets_source": "../../../../../round-1/experiment-3/src/configs/prefix_sets_gemma.json"
 }
