@@ -1,0 +1,62 @@
+{
+ "P-a": {
+  "verdict": "NOT CONFIRMED",
+  "Gap_R": 0.0544580884427156,
+  "ci95": [
+   0.02212155462301784,
+   0.128174171464388
+  ],
+  "trait": "R1"
+ },
+ "P-b": {
+  "verdict": "UNTESTABLE (exploratory estimate reported)",
+  "reasons": [
+   "Rb validity gate failed -> exploratory"
+  ],
+  "exploratory_outcome": "NOT CONFIRMED-like",
+  "Gap_Rb": 0.01760464319017979,
+  "ci95": [
+   0.010625442820273234,
+   0.04348318948298045
+  ]
+ },
+ "P-c": {
+  "verdict": "NOT CONFIRMED",
+  "detail": {
+   "R1": {
+    "dR2_P_given_base": 0.00406004718909414,
+    "dR2_P_given_base_ci95": [
+     -0.08526538926983088,
+     0.05615522251018056
+    ],
+    "dR2_b1_given_P": 0.0033015872489567943,
+    "dR2_b1_given_P_ci95": [
+     -0.059489370238544434,
+     0.025874114717126008
+    ]
+   },
+   "Rb": {
+    "dR2_P_given_base": 0.026625474990418452,
+    "dR2_P_given_base_ci95": [
+     -0.08532559282093874,
+     0.13320433832174747
+    ],
+    "dR2_b1_given_P": 0.04564200112116312,
+    "dR2_b1_given_P_ci95": [
+     -0.08353989466336828,
+     0.16508050446135294
+    ]
+   }
+  },
+  "note": null,
+  "caveat": "correlational across random edits: P 'predicts', it cannot be said to 'carry'"
+ },
+ "P-d": {
+  "verdict": "NOT CONFIRMED",
+  "Gap_margin_matched": 0.057288622128691125,
+  "ci95_edit_boot": [
+   0.02920971663732026,
+   0.13025009928561318
+  ]
+ }
+}

@@ -1,0 +1,70 @@
+00:57:18|ERROR  |An error has been caught in function '<module>', process 'MainProcess' (8813), thread 'MainThread' (131727394712448):
+Traceback (most recent call last):
+
+> File "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/guard_pipeline.py", line 257, in <module>
+    main()
+    └ <function main at 0x77ccc0e1f6a0>
+
+  File "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/guard_pipeline.py", line 242, in main
+    run_guard(args.stage, args.limit)
+    │         │    │      │    └ 0
+    │         │    │      └ Namespace(stage='llamaguard', limit=0)
+    │         │    └ 'llamaguard'
+    │         └ Namespace(stage='llamaguard', limit=0)
+    └ <function run_guard at 0x77ccc0e1f100>
+
+  File "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/.venv/lib/python3.12/site-packages/torch/utils/_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+           │     │       └ {}
+           │     └ ('llamaguard', 0)
+           └ <function run_guard at 0x77ccc0e1f060>
+
+  File "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/guard_pipeline.py", line 89, in run_guard
+    path = snapshot_download(repo, revision=rev, local_files_only=True)
+           │                 │              └ '7327bd9f6efbbe6101dc6cc4736302b3cbb6e425'
+           │                 └ 'meta-llama/Llama-Guard-3-8B'
+           └ <function snapshot_download at 0x77ccc0569f80>
+
+  File "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/.venv/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 91, in _inner_fn
+    return fn(*args, **kwargs)
+           │   │       └ {'revision': '7327bd9f6efbbe6101dc6cc4736302b3cbb6e425', 'local_files_only': True}
+           │   └ ('meta-llama/Llama-Guard-3-8B',)
+           └ <function snapshot_download at 0x77ccc0569e40>
+  File "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/.venv/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 266, in _inner
+    return fn(*args, **kwargs)
+           │   │       └ {'revision': '7327bd9f6efbbe6101dc6cc4736302b3cbb6e425', 'local_files_only': True}
+           │   └ ('meta-llama/Llama-Guard-3-8B',)
+           └ <function snapshot_download at 0x77ccc0569da0>
+  File "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/.venv/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 330, in snapshot_download
+    _raise_if_incomplete_snapshot(
+    └ <function _raise_if_incomplete_snapshot at 0x77ccc0569ee0>
+  File "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/.venv/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 586, in _raise_if_incomplete_snapshot
+    raise IncompleteSnapshotError(
+          └ <class 'huggingface_hub.errors.IncompleteSnapshotError'>
+
+huggingface_hub.errors.IncompleteSnapshotError: The cached snapshot for 'meta-llama/Llama-Guard-3-8B' (revision '7327bd9f6efbbe6101dc6cc4736302b3cbb6e425', commit 7327bd9f6efbbe6101dc6cc4736302b3cbb6e425) is incomplete: 6 file(s) are missing (.gitattributes, LICENSE, USE_POLICY.md, ... (3 more)). Outgoing traffic is disabled ('local_files_only=True'). Re-run the download with network access to complete the snapshot.
+Traceback (most recent call last):
+  File "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/guard_pipeline.py", line 257, in <module>
+    main()
+  File "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/.venv/lib/python3.12/site-packages/loguru/_logger.py", line 1297, in catch_wrapper
+    return function(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/guard_pipeline.py", line 242, in main
+    run_guard(args.stage, args.limit)
+  File "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/.venv/lib/python3.12/site-packages/torch/utils/_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/guard_pipeline.py", line 89, in run_guard
+    path = snapshot_download(repo, revision=rev, local_files_only=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/.venv/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 91, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/.venv/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 266, in _inner
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/.venv/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 330, in snapshot_download
+    _raise_if_incomplete_snapshot(
+  File "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/.venv/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 586, in _raise_if_incomplete_snapshot
+    raise IncompleteSnapshotError(
+huggingface_hub.errors.IncompleteSnapshotError: The cached snapshot for 'meta-llama/Llama-Guard-3-8B' (revision '7327bd9f6efbbe6101dc6cc4736302b3cbb6e425', commit 7327bd9f6efbbe6101dc6cc4736302b3cbb6e425) is incomplete: 6 file(s) are missing (.gitattributes, LICENSE, USE_POLICY.md, ... (3 more)). Outgoing traffic is disabled ('local_files_only=True'). Re-run the download with network access to complete the snapshot.

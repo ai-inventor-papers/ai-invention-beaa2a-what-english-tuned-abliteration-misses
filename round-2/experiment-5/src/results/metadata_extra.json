@@ -1,0 +1,41 @@
+{
+ "pins": {
+  "models": {
+   "gams": "cjvt/GaMS3-12B-Instruct@1d0b27af5748784482600d24779409e7e1dc9adc",
+   "gemma": "google/gemma-3-12b-it@96b6f1eccf38110c56df3a15bffe176da04bfd80"
+  },
+  "base_model_bonus": "cjvt/GaMS3-12B@46127695de173a5de72e1da9dc43846f58553477",
+  "heretic_sha": "3521f8648a0dccf6e12a92666862632235fac7e6",
+  "core_edits": {
+   "gams": "trial 88 (adapters/gams_selected_path2)",
+   "gemma": "trial 96 (adapters/gemma_selected_path2)"
+  },
+  "quantization": "bitsandbytes NF4, double quant, bf16 compute (Heretic 'bnb_4bit'), identical for all checkpoints",
+  "software": "env/requirements.lock (torch 2.11.0+cu128, transformers 5.17.0, peft 0.21.0, bitsandbytes 0.50.2, lm-eval 0.4.13)",
+  "hardware": "env/gpu.txt (L4 for GaMS gen/acts/kl/hval; RTX 4090 for the rest; both sm_89)",
+  "protocol": "configs/protocol_c1u.yaml sha256 in configs/protocol_c1u.sha256 (frozen 21:17:36 UTC before any S4/S7 outcome)",
+  "data_protocol_hash": "dc33bde4e8ea39ee416af3e9c65eeb9d8583303bdd39130cb8c86831624c9306 (dataset split_manifest); all 12 split SHA256s verified (configs/split_verification.json)"
+ },
+ "deviations": [
+  "D1 NF4 4-bit weights (not bf16) for all four checkpoints; absolute accuracies are not comparable to bf16 model cards.",
+  "D2 250 frozen stratified items per task per language (not the full test sets); CIs resolve the 5-point sanity bar, not sub-point claims.",
+  "D3 In-house harness-replica scorer; validated on the ORIGINAL models against lm-eval 0.4.13 (EN tasks) and GaMS-Team tasks_sl@d05d470f run in the same harness (SL): rendered strings 100% identical, correct-flag agreement 98.7% (GaMS) / 99.5% (Gemma) -- the pre-registered |dll|<0.05 nats bar FAILS (median 0.10 GaMS / 0.13 Gemma) because lm-eval returns bf16-rounded log-likelihoods (e.g. -18.875) while the scorer is float32; treated as a numeric artefact, not a template error (see results/<m>/harness_validation.json).",
+  "D4 Readout gate operationalized as item AUROC>=0.85 and condition-level Spearman>=0.85 (16 cells).",
+  "D5 A2 x-axis = ORIGINAL-model frozen DiM score; post-edit-score and edit-subspace-projected variants are sensitivities.",
+  "D6 No human review; blinded 120-row EN/SL packet written and marked PENDING (results/native_review_packet_c1u.csv).",
+  "D7 Winsorization = per-vector symmetric q=0.995 (iteration-1 E3 recipe, parameter-free); the plan's per-dimension clip fitted on S3 half A is reported as a sensitivity (mech_<m>.json: sensitivity_perdim_clip).",
+  "D8 JUDGE BUDGET: the shared OpenRouter key was at its daily limit until 00:00 UTC and the run-level budget ($7 for this phase, shared with sibling artifacts) was exhausted at 00:04 UTC after 1,072 gpt-4.1 calls ($1.07 by this artifact). gpt-4.1 labels therefore cover a hash-ordered (effectively random) ~52% of S4 HARMFUL generations (118-150 per model x checkpoint x language) and no harmless/r_prior generations.",
+  "D9 Second judge = nvidia/nemotron-3-ultra-550b-a55b:free (plan: gemini-2.5-flash; paid models blocked). It labels (i) a stratified 200 of the gpt-4.1-judged items for kappa, (ii) the r_prior generations, (iii) ~50 harmless generations per model x checkpoint (free-tier daily cap of 1,000 requests reached; H100 not completed); dose generations were NOT judged. Gate and judged A2 use gpt-4.1 labels where available else second-judge labels ('combined'); gpt-4.1-only gate reported alongside. Agreement with gpt-4.1: kappa 0.828 (refused vs not), 0.765 (6-way), n=200.",
+  "D10 S4 harmless generations were produced for all 257 twins at 128 tokens (superset of the planned H100); judge labels cover H100 only; rule-based validity covers all 257.",
+  "D11 Hardware changed between the interrupted and the resumed session (L4 -> RTX 4090, both sm_89); every paired orig-vs-edit quantity was computed within one session.",
+  "D12 Exploratory additions beyond the plan (not confirmatory): drift geometry (mech_extra.py), item-level flip analysis, edit-strength dose-response (dose.py), dose_judge.py prepared but not run (free-tier cap)."
+ ],
+ "what_this_does_NOT_show": [
+  "Two models x one Heretic run each: no claim about model families, training stages (continual pretraining / SFT / safety data) or optimizer variance; Gemma-IT is a same-size reference, not GaMS's parent.",
+  "Differences between the GaMS and Gemma edits mix intrinsic model properties with ACHIEVED optimisation: trial 88 (GaMS) ablates a layer-22 direction with weights >1 across almost all layers (KL 0.175 on Heretic's prompts); trial 96 (Gemma) ablates a layer-26 direction with down_proj weight decaying to ~0 within ~20 layers (KL 0.024).",
+  "Probe decodability (AUROC) is not causal use; the frozen/refit decomposition shows where information is linearly available, not that the model uses it.",
+  "S4 prompts are StrongREJECT + gpt-4.1 twins with MT Slovene (automated QC only, native review pending); RefusEU behaviour belongs to the behaviour artifact (only label-free S5/S5X projections here).",
+  "Judge labels: gpt-4.1 on a random half of harmful generations; a free second-family judge elsewhere; no human labels."
+ ],
+ "judge_coverage_note": "gpt-4.1: 1,072 S4 harmful generations; second judge: 850 generations (200 kappa sample, 376 r_prior, ~200 harmless, rest harmful)."
+}

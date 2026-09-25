@@ -1,0 +1,10 @@
+21:50:52|INFO   |loaded + winsorized in 203s; S3 (30, 49, 6, 3840) S4 (32, 49, 3, 3840)
+21:52:20|INFO   |C chosen 0.001 ({0.001: 0.890625, 0.01: 0.890625, 0.1: 0.875, 1.0: 0.875})
+21:52:20|INFO   |L0: cos 0.000 corr 0.000 cvDiM pool 0.500 S4 frozen orig en/sl 0.500/0.500 (291s)
+21:52:21|INFO   |L8: cos 0.250 corr 0.832 cvDiM pool 0.389 S4 frozen orig en/sl 0.641/0.672 (291s)
+21:52:21|INFO   |L16: cos 0.669 corr 3.511 cvDiM pool 0.826 S4 frozen orig en/sl 0.906/0.906 (292s)
+21:52:22|INFO   |L24: cos 0.927 corr 1.422 cvDiM pool 0.910 S4 frozen orig en/sl 0.984/1.000 (293s)
+21:52:23|INFO   |L32: cos 0.872 corr 1.611 cvDiM pool 0.938 S4 frozen orig en/sl 1.000/1.000 (293s)
+21:52:24|INFO   |L40: cos 0.660 corr 1.277 cvDiM pool 0.889 S4 frozen orig en/sl 1.000/1.000 (294s)
+21:52:24|INFO   |L48: cos 0.516 corr 1.024 cvDiM pool 0.861 S4 frozen orig en/sl 1.000/1.000 (295s)
+21:54:41|INFO   |mech gams done in 431s

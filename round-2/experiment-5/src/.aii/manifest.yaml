@@ -1,0 +1,12 @@
+entries:
+  - path: acts_primary/
+    keep: primary-layer float32 activation slices (orig+edit, S3/S4, both models; each file < 100 MB) that analyze.py reads; full caches were deleted and are regenerable with method.py --stages acts,s5acts
+  - path: .venv/
+    delete: regenerable
+    source: "uv venv .venv --python=3.12 && uv pip install --python .venv/bin/python torch==2.11.0+cu128 torchvision==0.26.0+cu128 --index-url https://download.pytorch.org/whl/cu128 && uv pip install --python .venv/bin/python -r pyproject.toml"
+  - path: __pycache__/
+    delete: regenerable
+    source: "recreated automatically on import (.venv/bin/python -c 'import common')"
+  - path: third_party/sleval_tasks_tree/sl_winogrande/__pycache__/
+    delete: regenerable
+    source: "recreated automatically when lm-eval imports the task (method.py --stages hval)"

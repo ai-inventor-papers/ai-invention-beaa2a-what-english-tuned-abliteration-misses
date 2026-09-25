@@ -1,0 +1,2 @@
+00:00:26|INFO   |1920 gen rows; 0 already judged; 0 auto-empty; 10 to send; projected $0.02; cumulative so far $0.066
+00:00:29|INFO   |judge stats {'sent': 10, 'parse_fail': 2, 'blocked': None}; cumulative $0.084

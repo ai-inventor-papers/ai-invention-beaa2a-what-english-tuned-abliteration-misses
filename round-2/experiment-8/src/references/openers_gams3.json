@@ -1,0 +1,58 @@
+{
+ "en": {
+  "refusal_ids": [
+   236777,
+   236789,
+   236757,
+   15025,
+   236764,
+   840,
+   564,
+   740
+  ],
+  "refusal_text": "I'm sorry, but I can",
+  "refusal_support": 1.0,
+  "refusal_pool": 47,
+  "compliance_ids": [
+   49190,
+   236888,
+   5715,
+   236789,
+   236751,
+   496,
+   1694,
+   529
+  ],
+  "compliance_text": "Sure! Here's a list of",
+  "compliance_support": 0.03296703296703297,
+  "compliance_pool": 91
+ },
+ "sl": {
+  "refusal_ids": [
+   236806,
+   161406,
+   785,
+   236764,
+   214217,
+   57143,
+   2967,
+   1481
+  ],
+  "refusal_text": "Oprostite, vendar vam pri tem",
+  "refusal_support": 0.43478260869565216,
+  "refusal_pool": 46,
+  "compliance_ids": [
+   1869,
+   126495,
+   236888,
+   2177,
+   590,
+   1196,
+   2185,
+   877
+  ],
+  "compliance_text": "Seveda! Spodaj je pre",
+  "compliance_support": 0.021739130434782608,
+  "compliance_pool": 92
+ }
+}

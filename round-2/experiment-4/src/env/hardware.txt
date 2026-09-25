@@ -1,0 +1,29 @@
+# hardware record 2026-09-23T22:56:40Z
+=== OS ===
+Linux 6.8.0-124-generic
+NAME="Debian GNU/Linux"
+VERSION="12 (bookworm)"
+=== CGROUP ===
+Type: cgroup v1
+Container: yes (cgroup)
+CPU quota: 1360000 100000 (cfs_quota_us cfs_period_us)
+Memory limit: 56 GB (60999999488 bytes)
+PIDs limit: 8704
+Paths: /sys/fs/cgroup/{cpu/cpu.cfs_quota_us,memory/memory.limit_in_bytes,memory/memory.usage_in_bytes}
+
+IMPORTANT: You are in a container with cgroup resource limits.
+Do NOT use psutil.virtual_memory().total, free -h, or /proc/meminfo for limits.
+Do NOT use os.cpu_count() or nproc for CPU count.
+Use the cgroup paths above or the Python helpers from SKILL.md.
+=== CPU ===
+14 CPUs
+Model name:                              AMD Ryzen 9 7950X 16-Core Processor
+=== RAM ===
+56 GB (container limit)
+=== DISK ===
+2.2P total, 582T free
+=== GPU ===
+NVIDIA GeForce RTX 4090, VRAM: 24564 MiB (3935 MiB free), Util: 100 %
+name, memory.total [MiB], driver_version
+NVIDIA GeForce RTX 4090, 24564 MiB, 580.126.20
+mfs#euro-3.runpod.net:9421  2.2P  1.7P  582T  74% /ai-inventor/aii_data

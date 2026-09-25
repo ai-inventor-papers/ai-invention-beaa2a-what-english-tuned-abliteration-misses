@@ -1,0 +1,590 @@
+{
+ "model": "gams",
+ "primary_layer": 34,
+ "primary_pos": "-1",
+ "winsorization": "per-vector q=0.995 (E3)",
+ "raw_dim2339_mean_abs_S4_primary": 75776.0,
+ "n": {
+  "S3_jbb": 24,
+  "S3_dolly": 6,
+  "S4": 32
+ },
+ "lr_C": {
+  "grid_auc_halfA": {
+   "0.001": 0.890625,
+   "0.01": 0.890625,
+   "0.1": 0.875,
+   "1.0": 0.875
+  },
+  "chosen": 0.001
+ },
+ "layer_profile_file": "results/gams/layer_profiles_gams.npz",
+ "profile_at_primary": {
+  "cos_raw": 0.8211505797861701,
+  "ceil_en": 0.5633339305584586,
+  "ceil_sl": 0.48517214256991886,
+  "cos_corr": 1.5706952136573655,
+  "cos_corr_sb": 1.1966749468359206,
+  "auc_halfB_en": 1.0,
+  "auc_halfB_sl": 1.0,
+  "cv_dim_en": 1.0,
+  "cv_dim_sl": 0.8611111111111112,
+  "cv_dim_pool": 0.9374999999999999,
+  "cv_lr_en": 1.0,
+  "cv_lr_sl": 0.8611111111111112,
+  "cv_lr_pool": 0.9375,
+  "tr_en2sl_S3B": 1.0,
+  "tr_sl2en_S3B": 1.0,
+  "tr_en2sl_S4": 1.0,
+  "tr_sl2en_S4": 1.0,
+  "cos_lang_dEN": 0.11234056188745867,
+  "cos_lang_dSL": 0.038611471562537414,
+  "s4_frozen_orig_en": 1.0,
+  "s4_frozen_orig_sl": 1.0,
+  "s4_frozen_edit_en": 0.4375,
+  "s4_frozen_edit_sl": 0.34375,
+  "s4_refit_orig_en": 1.0,
+  "s4_refit_orig_sl": 1.0,
+  "s4_refit_edit_en": 0.890625,
+  "s4_refit_edit_sl": 0.84375,
+  "shift_norm_en": 4180.97265625,
+  "shift_norm_sl": 4143.029296875,
+  "orig_norm_en": 11044.994140625,
+  "orig_norm_sl": 9631.6298828125,
+  "cos_dEN_heretic": 0.7728777867340075,
+  "cv_dim_pool_contentmean": 0.7708333333333333,
+  "s4_frozen_orig_en_cm": 0.890625,
+  "s4_frozen_orig_sl_cm": 0.859375
+ },
+ "e3_reconcile": {
+  "cos_raw_primary": 0.8211505797861701,
+  "e3_value": 0.83,
+  "within_0.03": true,
+  "e3_cosine_profile_file": "../../../../../round-1/experiment-3/src/results/gams3/cosine_profile.json"
+ },
+ "primary": {
+  "T3": {
+   "halfB_dim_auc_en": 1.0,
+   "halfB_dim_auc_sl": 1.0,
+   "halfB_shuffled_label_auc": {
+    "auc": 0.6875,
+    "ci95": [
+     0.33333333333333337,
+     1.0
+    ]
+   }
+  },
+  "S3_controls": {
+   "en": {
+    "cv_dim": {
+     "auc": 1.0,
+     "ci95": [
+      0.9999999999999999,
+      1.0
+     ]
+    },
+    "cv_lr": {
+     "auc": 1.0,
+     "ci95": [
+      0.9999999999999999,
+      1.0
+     ]
+    },
+    "length_only": 0.6666666666666665,
+    "dim_length_residualized": 1.0,
+    "tfidf_lexical": {
+     "auc": 0.5555555555555556,
+     "ci95": [
+      0.3055555555555555,
+      0.8055555555555556
+     ]
+    }
+   },
+   "sl": {
+    "cv_dim": {
+     "auc": 0.8611111111111112,
+     "ci95": [
+      0.75,
+      1.0
+     ]
+    },
+    "cv_lr": {
+     "auc": 0.8611111111111112,
+     "ci95": [
+      0.75,
+      1.0
+     ]
+    },
+    "length_only": 0.5694444444444445,
+    "dim_length_residualized": 0.888888888888889,
+    "tfidf_lexical": {
+     "auc": 0.3888888888888889,
+     "ci95": [
+      0.11111111111111112,
+      0.6666666666666667
+     ]
+    }
+   },
+   "pool": {
+    "cv_dim": {
+     "auc": 0.9374999999999999,
+     "ci95": [
+      0.8611111111111112,
+      1.0
+     ]
+    },
+    "cv_lr": {
+     "auc": 0.9375,
+     "ci95": [
+      0.875,
+      1.0
+     ]
+    },
+    "length_only": 0.5868055555555556,
+    "dim_length_residualized": 0.9444444444444444,
+    "tfidf_lexical": {
+     "auc": 0.5694444444444444,
+     "ci95": [
+      0.3263888888888889,
+      0.7777777777777778
+     ]
+    }
+   },
+   "lang_identity_projection_auc_for_harm": 0.7083333333333334,
+   "lang_dir_auc_for_language": 1.0
+  },
+  "S4_heldout_orig": {
+   "en": {
+    "frozen_dim": {
+     "auc": 1.0,
+     "ci95": [
+      1.0,
+      1.0
+     ]
+    },
+    "frozen_lr": {
+     "auc": 1.0,
+     "ci95": [
+      1.0,
+      1.0
+     ]
+    },
+    "frozen_dim_EN_direction": 1.0,
+    "frozen_dim_SL_direction": 1.0,
+    "length_only": 0.5390625,
+    "tfidf_S3halfA_to_S4": {
+     "auc": 0.421875,
+     "ci95": [
+      0.234375,
+      0.578125
+     ]
+    },
+    "frozen_dim_hoc": {
+     "auc": 1.0,
+     "ci95": [
+      1.0,
+      1.0
+     ]
+    },
+    "frozen_dim_ind": {
+     "auc": 1.0,
+     "ci95": [
+      0.9999999999999999,
+      1.0
+     ]
+    }
+   },
+   "sl": {
+    "frozen_dim": {
+     "auc": 1.0,
+     "ci95": [
+      1.0,
+      1.0
+     ]
+    },
+    "frozen_lr": {
+     "auc": 1.0,
+     "ci95": [
+      1.0,
+      1.0
+     ]
+    },
+    "frozen_dim_EN_direction": 1.0,
+    "frozen_dim_SL_direction": 1.0,
+    "length_only": 0.46875,
+    "tfidf_S3halfA_to_S4": {
+     "auc": 0.53125,
+     "ci95": [
+      0.359375,
+      0.703125
+     ]
+    },
+    "frozen_dim_hoc": {
+     "auc": 1.0,
+     "ci95": [
+      1.0,
+      1.0
+     ]
+    },
+    "frozen_dim_ind": {
+     "auc": 1.0,
+     "ci95": [
+      0.9999999999999999,
+      1.0
+     ]
+    }
+   }
+  },
+  "edit_subspace": {
+   "dim": 32,
+   "cos_dPO_with_U_norm_of_projection": 0.2560421410005095,
+   "cos_dPO_heretic_dir": 0.7551270285558518
+  },
+  "frozen_vs_refit": {
+   "plain|en": {
+    "dim": {
+     "frozen_orig": {
+      "auc": 1.0,
+      "ci95": [
+       1.0,
+       1.0
+      ]
+     },
+     "frozen_edit_minus_orig": {
+      "auc": 0.4375,
+      "ci95": [
+       0.265625,
+       0.59375
+      ],
+      "diff_vs_2": -0.5625,
+      "diff_ci95": [
+       -0.734375,
+       -0.40625
+      ]
+     },
+     "refit_orig": {
+      "auc": 1.0,
+      "ci95": [
+       1.0,
+       1.0
+      ]
+     },
+     "refit_edit_minus_orig": {
+      "auc": 0.890625,
+      "ci95": [
+       0.78125,
+       1.0
+      ],
+      "diff_vs_2": -0.109375,
+      "diff_ci95": [
+       -0.21875,
+       0.0
+      ]
+     },
+     "class": "MIXED"
+    },
+    "lr": {
+     "frozen_orig": {
+      "auc": 1.0,
+      "ci95": [
+       1.0,
+       1.0
+      ]
+     },
+     "frozen_edit_minus_orig": {
+      "auc": 0.453125,
+      "ci95": [
+       0.28125,
+       0.59375
+      ],
+      "diff_vs_2": -0.546875,
+      "diff_ci95": [
+       -0.71875,
+       -0.40625
+      ]
+     },
+     "refit_orig": {
+      "auc": 1.0,
+      "ci95": [
+       1.0,
+       1.0
+      ]
+     },
+     "refit_edit_minus_orig": {
+      "auc": 0.9375,
+      "ci95": [
+       0.84375,
+       1.0
+      ],
+      "diff_vs_2": -0.0625,
+      "diff_ci95": [
+       -0.15625,
+       0.0
+      ]
+     },
+     "class": "MIXED"
+    }
+   },
+   "plain|sl": {
+    "dim": {
+     "frozen_orig": {
+      "auc": 1.0,
+      "ci95": [
+       1.0,
+       1.0
+      ]
+     },
+     "frozen_edit_minus_orig": {
+      "auc": 0.34375,
+      "ci95": [
+       0.15625,
+       0.546875
+      ],
+      "diff_vs_2": -0.65625,
+      "diff_ci95": [
+       -0.84375,
+       -0.453125
+      ]
+     },
+     "refit_orig": {
+      "auc": 1.0,
+      "ci95": [
+       1.0,
+       1.0
+      ]
+     },
+     "refit_edit_minus_orig": {
+      "auc": 0.84375,
+      "ci95": [
+       0.75,
+       1.0
+      ],
+      "diff_vs_2": -0.15625,
+      "diff_ci95": [
+       -0.25,
+       0.0
+      ]
+     },
+     "class": "MIXED"
+    },
+    "lr": {
+     "frozen_orig": {
+      "auc": 1.0,
+      "ci95": [
+       1.0,
+       1.0
+      ]
+     },
+     "frozen_edit_minus_orig": {
+      "auc": 0.40625,
+      "ci95": [
+       0.203125,
+       0.59375
+      ],
+      "diff_vs_2": -0.59375,
+      "diff_ci95": [
+       -0.796875,
+       -0.40625
+      ]
+     },
+     "refit_orig": {
+      "auc": 1.0,
+      "ci95": [
+       1.0,
+       1.0
+      ]
+     },
+     "refit_edit_minus_orig": {
+      "auc": 0.90625,
+      "ci95": [
+       0.8125,
+       1.0
+      ],
+      "diff_vs_2": -0.09375,
+      "diff_ci95": [
+       -0.1875,
+       0.0
+      ]
+     },
+     "class": "MIXED"
+    }
+   },
+   "U_projected|en": {
+    "dim": {
+     "frozen_orig": {
+      "auc": 1.0,
+      "ci95": [
+       1.0,
+       1.0
+      ]
+     },
+     "frozen_edit_minus_orig": {
+      "auc": 0.578125,
+      "ci95": [
+       0.390625,
+       0.765625
+      ],
+      "diff_vs_2": -0.421875,
+      "diff_ci95": [
+       -0.609375,
+       -0.234375
+      ]
+     },
+     "refit_orig": {
+      "auc": 1.0,
+      "ci95": [
+       1.0,
+       1.0
+      ]
+     },
+     "refit_edit_minus_orig": {
+      "auc": 0.890625,
+      "ci95": [
+       0.78125,
+       1.0
+      ],
+      "diff_vs_2": -0.109375,
+      "diff_ci95": [
+       -0.21875,
+       0.0
+      ]
+     },
+     "class": "MIXED"
+    },
+    "lr": {
+     "frozen_orig": {
+      "auc": 1.0,
+      "ci95": [
+       1.0,
+       1.0
+      ]
+     },
+     "frozen_edit_minus_orig": {
+      "auc": 0.546875,
+      "ci95": [
+       0.359375,
+       0.75
+      ],
+      "diff_vs_2": -0.453125,
+      "diff_ci95": [
+       -0.640625,
+       -0.25
+      ]
+     },
+     "refit_orig": {
+      "auc": 1.0,
+      "ci95": [
+       1.0,
+       1.0
+      ]
+     },
+     "refit_edit_minus_orig": {
+      "auc": 0.9375,
+      "ci95": [
+       0.84375,
+       1.0
+      ],
+      "diff_vs_2": -0.0625,
+      "diff_ci95": [
+       -0.15625,
+       0.0
+      ]
+     },
+     "class": "MIXED"
+    }
+   },
+   "U_projected|sl": {
+    "dim": {
+     "frozen_orig": {
+      "auc": 1.0,
+      "ci95": [
+       1.0,
+       1.0
+      ]
+     },
+     "frozen_edit_minus_orig": {
+      "auc": 0.578125,
+      "ci95": [
+       0.421875,
+       0.78125
+      ],
+      "diff_vs_2": -0.421875,
+      "diff_ci95": [
+       -0.578125,
+       -0.21875
+      ]
+     },
+     "refit_orig": {
+      "auc": 1.0,
+      "ci95": [
+       1.0,
+       1.0
+      ]
+     },
+     "refit_edit_minus_orig": {
+      "auc": 0.84375,
+      "ci95": [
+       0.75,
+       1.0
+      ],
+      "diff_vs_2": -0.15625,
+      "diff_ci95": [
+       -0.25,
+       0.0
+      ]
+     },
+     "class": "MIXED"
+    },
+    "lr": {
+     "frozen_orig": {
+      "auc": 1.0,
+      "ci95": [
+       1.0,
+       1.0
+      ]
+     },
+     "frozen_edit_minus_orig": {
+      "auc": 0.421875,
+      "ci95": [
+       0.234375,
+       0.59375
+      ],
+      "diff_vs_2": -0.578125,
+      "diff_ci95": [
+       -0.765625,
+       -0.40625
+      ]
+     },
+     "refit_orig": {
+      "auc": 1.0,
+      "ci95": [
+       1.0,
+       1.0
+      ]
+     },
+     "refit_edit_minus_orig": {
+      "auc": 0.90625,
+      "ci95": [
+       0.8125,
+       1.0
+      ],
+      "diff_vs_2": -0.09375,
+      "diff_ci95": [
+       -0.1875,
+       0.0
+      ]
+     },
+     "class": "MIXED"
+    }
+   }
+  }
+ },
+ "sensitivity_perdim_clip": {
+  "S4_frozen_dim_auc_en": 1.0,
+  "S4_frozen_dim_auc_sl": 1.0,
+  "share_of_dim2339_in_dPO_perdim": 0.05696203626904222,
+  "share_of_dim2339_in_dPO_pervector": 2.515409784538622e-05,
+  "cos_dEN_dSL_perdim": 0.7115711592780578
+ },
+ "wall_s": 431.4852178096771
+}

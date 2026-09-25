@@ -1,0 +1,21 @@
+{
+ "T6": "scale-up timing after the GaMS session",
+ "gams_stage_seconds": {
+  "load_s": 102.47551083564758,
+  "check": 23.10189175605774,
+  "gen": 0.004228830337524414,
+  "acts": 156.50229930877686,
+  "kl": 159.24400901794434,
+  "hval": 1384.8974750041962,
+  "util": 443.93674087524414,
+  "flores": 52.804261445999146,
+  "s5acts": 92.22567939758301,
+  "rseq": 94.17076897621155
+ },
+ "gams_gen_stage_seconds_first_run": 960,
+ "projected_gemma_total_min": 65,
+ "projected_total_incl_analysis_and_judge_h": 2.5,
+ "budget_h": 5.25,
+ "decision": "NO F2 cuts applied: full 250 items/task, full FLORES devtest (1012/lang), all 49 layers, S5+S5X projections, bonus base diagnostic attempted",
+ "note": "the first GaMS GPU chain was killed mid-util when the previous agent session ended (exit 137); stages are idempotent and were resumed at 22:51 UTC with setsid"
+}

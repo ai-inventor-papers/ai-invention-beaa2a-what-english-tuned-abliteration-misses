@@ -1,0 +1,6 @@
+00:20:54|INFO   |T5 synthetic: {'criterion_shift_SURVIVES': True, 'evidence_loss_detected': True, 'language_specific_interaction_detected': True}
+00:20:54|INFO   |judged labels available: 1072/4488
+Warning : `load_model` does not return WordVectorModel or SupervisedModel any more, but a `FastText` object which is very similar.
+00:22:52|INFO   |S5 projections gams: (4200, 107)
+00:25:05|INFO   |S5 projections gemma: (4200, 107)
+00:25:05|INFO   |analysis done in 254s

@@ -1,0 +1,22 @@
+00:44:21|INFO   |loaded 101 scored edits
+00:44:23|INFO   |transfer slopes: {"R_seq": 0.224, "R1": 0.439, "Rb": 0.169, "K": 0.774, "N": 0.198, "M": 0.07}
+00:44:26|INFO   |Gap R_seq: +0.081 (raw +0.081) R2 EN 0.951 SL 0.847 ceil 1.00/1.00 B +0.026
+00:44:28|INFO   |Gap Rb: +0.022 (raw +0.025) R2 EN 0.970 SL 0.954 ceil 1.00/1.00 B -0.007
+00:44:30|INFO   |Gap K: +0.119 (raw +0.123) R2 EN 0.947 SL 0.868 ceil 0.99/0.98 B +0.023
+00:44:32|INFO   |Gap N: +0.083 (raw +0.313) R2 EN 0.447 SL -0.020 ceil 0.70/0.53 B +0.137
+00:44:34|INFO   |Gap M: +nan (raw +0.314) R2 EN 0.548 SL -0.212 ceil 0.59/-0.46 B +0.102
+00:44:36|INFO   |Gap R1: +0.032 (raw +0.031) R2 EN 0.911 SL 0.898 ceil 1.00/1.00 B -0.017
+/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_7/analysis.py:249: RuntimeWarning: Mean of empty slice
+  res[f"{src}->{tgt}"] = gap_from(X, yen, ysl, ce, cs, kind, groups)
+/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_7/analysis.py:249: RuntimeWarning: Mean of empty slice
+  res[f"{src}->{tgt}"] = gap_from(X, yen, ysl, ce, cs, kind, groups)
+/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_7/analysis.py:249: RuntimeWarning: Mean of empty slice
+  res[f"{src}->{tgt}"] = gap_from(X, yen, ysl, ce, cs, kind, groups)
+/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_7/analysis.py:249: RuntimeWarning: Mean of empty slice
+  res[f"{src}->{tgt}"] = gap_from(X, yen, ysl, ce, cs, kind, groups)
+/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_7/analysis.py:249: RuntimeWarning: Mean of empty slice
+  res[f"{src}->{tgt}"] = gap_from(X, yen, ysl, ce, cs, kind, groups)
+/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_7/.venv/lib/python3.12/site-packages/joblib/externals/loky/backend/resource_tracker.py:444: UserWarning: resource_tracker: There appear to be 46 leaked semlock objects to clean up at shutdown: {'/loky-4302-z_f7yjzp': 1, '/loky-4302-8uc1k086': 1, '/loky-4302-_qa78vop': 1, '/loky-4302-05yfmhxf': 1, '/loky-4302-3vu1mpmn': 1, '/loky-4302-h69fq2cw': 1, '/loky-4302-9nqiaijf': 1, '/loky-4302-_hnb7j74': 1, '/loky-4302-m9bscist': 1, '/loky-4302-1az1wh6k': 1, '/loky-4302-mn0eye7i': 1, '/loky-4302-crgmzm0h': 1, '/loky-4302-98t14clz': 1, '/loky-4302-mos_8rvu': 1, '/loky-4302-pmkrvero': 1, '/loky-4302-0by_i99r': 1, '/loky-4302-3ew4ndx1': 1, '/loky-4302-1l41pkii': 1, '/loky-4302-gb0qqono': 1, '/loky-4302-cjee6vbv': 1, '/loky-4302-d0uat1o2': 1, '/loky-4302-8laypavz': 1, '/loky-4302-zyz4dfwq': 1, '/loky-4302-01ve9cb0': 1, '/loky-4302-h3kv8d20': 1, '/loky-4302-b5zchcro': 1, '/loky-4302-zibbmgjn': 1, '/loky-4302-59aopdeu': 1, '/loky-4302-8jijr9jz': 1, '/loky-4302-o0yq6tg_': 1, '/loky-4302-fs_8bpfn': 1, '/loky-4302-5hcp6fwa': 1, '/loky-4302-i_tc18w9': 1, '/loky-4302-guy83hw5': 1, '/loky-4302-o0jl1in_': 1, '/loky-4302-18cue9mr': 1, '/loky-4302-3o0i2k55': 1, '/loky-4302-tw5mfwdx': 1, '/loky-4302-5bp08vc9': 1, '/loky-4302-_ioq42n7': 1, '/loky-4302-lrejdqli': 1, '/loky-4302-fauacj9_': 1, '/loky-4302-qazqj1rg': 1, '/loky-4302-7gnpegol': 1, '/loky-4302-hb3fce9l': 1, '/loky-4302-jfcrtqo4': 1}
+  warnings.warn(
+/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_7/.venv/lib/python3.12/site-packages/joblib/externals/loky/backend/resource_tracker.py:444: UserWarning: resource_tracker: There appear to be 2 leaked folder objects to clean up at shutdown: {'/dev/shm/joblib_memmapping_folder_4302_c32411efb22d45459ebfec891d30150d_85328d12cb5041afb0bbd1f4060c024d': 1, '/dev/shm/joblib_memmapping_folder_4302_c32411efb22d45459ebfec891d30150d_9e4e2939f38b4934815ec713dfc723ff': 1}
+  warnings.warn(
