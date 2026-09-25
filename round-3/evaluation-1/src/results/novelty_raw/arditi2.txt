@@ -1,0 +1,15 @@
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/pdf/2406.11717
+Type: PDF
+Pattern: every token position|at every layer|all layers and all token (1 matches in 119442 chars)
+
+--- Content ---
+
+15921:...n §3.2, we show that adding r to the model’s activations induces refusal on harmless instructions.
+3.1
+Bypassing refusal via directional ablation
+To bypass refusal, we perform directional ablation on the “refusal direction” ˆr, ablating it from
+activations at all layers and all token positions. With this intervention in place, we generate model
+completions over JAILBREAKBENCH (Chao et al., 2024), a dataset of 100 harmful instructions.
+Results are shown in Figure 1. Under no intervention, chat models refuse nearly all harmful requests,
+yie...

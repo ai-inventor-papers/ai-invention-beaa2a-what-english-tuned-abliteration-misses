@@ -1,0 +1,12 @@
+# One decision per heavy or cache-named path. Everything else in this workspace is text or code
+# (source, JSON/JSONL, CSV, YAML, logs, markdown, figures) or sits under the auto-keep floor, so it
+# is kept automatically and needs no entry: results/, logs/, directions/, scorer/ (the frozen
+# classifier bundles and their certifications), figures/, third_party/heretic/, runs/ and inputs/.
+entries:
+  - path: checkpoints/
+    keep: the two Optuna journals of the corrected-objective runs (seeds 20260923/20260926) - resumable study state, ~35 GPU-min each to regenerate and not byte-reproducible on another GPU
+  - path: adapters_corrected/
+    keep: the corrected-objective LoRA (15 MB safetensors) - later rounds load this instead of re-running the 116-trial search
+  - path: .venv/
+    delete: regenerable
+    source: "uv venv .venv --python=3.12 && uv pip install --python .venv/bin/python --index-strategy unsafe-best-match --extra-index-url https://download.pytorch.org/whl/cu128 -r env/requirements.base.lock && uv pip install --python .venv/bin/python --no-deps -e third_party/heretic && uv pip install --python .venv/bin/python fasttext-numpy2-wheel"

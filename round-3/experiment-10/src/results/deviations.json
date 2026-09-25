@@ -1,0 +1,111 @@
+{
+ "generated_utc": "2026-09-24T13:11:36Z",
+ "deviations": [
+  {
+   "id": "D1",
+   "topic": "judging: gpt-4.1 primary -> local Qwen3-14B primary",
+   "planned": "Primary judge local Qwen3-14B certified at kappa >= 0.80 against gpt-4.1 labels already on disk; buy <= 600 gpt-4.1 labels (~$2.5) if certification fails.",
+   "done": "Certification on the on-disk pool gives kappa 0.86 (SL) but 0.54 (EN) within EDITED arms, so the >= 0.80 bar FAILS in English. The planned gpt-4.1 top-up could not be bought: the run's OpenRouter key is exhausted (HTTP 403 aii_run_budget_exhausted, $7.05 of $7.00 in this phase) and the free models are gone from the catalogue (HTTP 404 'unavailable for free'). $0.00 was spent by this artifact.",
+   "cost": "Every ENGLISH refusal rate here is on the strict end of the judge range (the local judge counts lecture-only replies as refusals); Slovene - the language every headline claim is about - is certified. The rule labeller is reported as a third layer and the gpt-4.1 labels that exist on disk are joined wherever a generation is byte-identical.",
+   "evidence": [
+    "results/judge_cert_pool.json",
+    "results/analysis_summary.json#judge_sensitivity",
+    "logs/judge_api.log"
+   ]
+  },
+  {
+   "id": "D2",
+   "topic": "confirmation token budget",
+   "planned": "S4 confirmation at 256 new tokens, 70 harmful + 70 harmless pairs per language.",
+   "done": "192 new tokens for harmful and a frozen 40-item subsample of the harmless twins (128 tokens), chosen before any confirmation generation, to fit the single-GPU wall clock.",
+   "cost": "Over-refusal CIs on the confirmation set are wider (n = 40 semantic items per language instead of 70).",
+   "evidence": [
+    "configs/priority.json",
+    "common.py:build_sets"
+   ]
+  },
+  {
+   "id": "D3",
+   "topic": "strength grid",
+   "planned": "c in {0.25, 0.5, 1.0, 2.0} clipped at Heretic's max_weight bound 1.5.",
+   "done": "The matched-energy groups solve c by bisection (the primary contrast, 3 energies x 7 cells). The free-standing grid ran all 10 coverage sets at c = 1.0 only (T3); the c = 0.5 / 1.5 / 0.25 levels were queued behind the GPU deadline and were NOT reached, so there is no free-standing strength sweep.",
+   "cost": "Strength varies only through the matched-energy solution (c from 0.30 to 1.42 across the groups) and between the three energy targets; a cell-level dose-response curve at fixed coverage is not measured. The regression's energy axis is still spanned (E from 6.7 to 130 across the 26 dEN weight cells).",
+   "evidence": [
+    "configs/design.json",
+    "configs/priority.json",
+    "results/timings.json"
+   ]
+  },
+  {
+   "id": "D4",
+   "topic": "ASR under RefusEU's official guard pipeline",
+   "planned": "Report ASR separately from refusal using the reproduced RefusEU guard pipeline (Llama-Guard-3-8B + PolyGuard).",
+   "done": "Not run: it needs two more 8B models loaded after the panel, and the wall clock went to the decisive cells (fallback plan: 'drop ASR to the judged compliance rate and state the substitution').",
+   "cost": "'Not refused' is reported as judged COMPLIED + PARTIAL, which is an upper bound on attack success.",
+   "evidence": [
+    "results/report_tables.md"
+   ]
+  },
+  {
+   "id": "D5",
+   "topic": "utility",
+   "planned": "lm-eval harness replica on a frozen 100-item-per-task S7 subsample x 6 tasks x EN/SL.",
+   "done": "The S7 splits are reserved final-evaluation sets for the C1 evaluation artifact and are NOT opened here. Utility is the teacher-forced multiple-choice accuracy on the S3 half-B MC set (arc / hellaswag / piqa, EN+SL), which is the cheap readout exp8 used, plus FLORES dev-B delta-NLL and Dolly 32-token KL.",
+   "cost": "Utility is a weaker measure than the harness macro; it is labelled as such in every table.",
+   "evidence": [
+    "common.py:FORBIDDEN_PREFIXES",
+    "results/cells/*/tf.json"
+   ]
+  },
+  {
+   "id": "D6",
+   "topic": "S5X second touch",
+   "planned": "Touch S5X once at the end for the two best cells.",
+   "done": "Not touched. S5/S6/S7 are blocked in common.load_split and no RefusEU row was read.",
+   "cost": "No RefusEU-scored numbers from this artifact.",
+   "evidence": [
+    "common.py:load_split"
+   ]
+  },
+  {
+   "id": "D7",
+   "topic": "BLAS threads",
+   "planned": "-",
+   "done": "OPENBLAS/OMP threads pinned to 4 in every script: on this shared 48-core host an unpinned 276x3840 SVD took 35 s (0.2 s pinned), which would have made the control construction and the bootstraps dominate the run.",
+   "cost": "None (identical numerics).",
+   "evidence": [
+    "common.py",
+    "method.py"
+   ]
+  },
+  {
+   "id": "D8",
+   "topic": "SWAP_in anchor",
+   "planned": "Gemma's trial-96 parameters applied to GaMS3 through abliterate_custom with GaMS3's own d_EN(h).",
+   "done": "Exactly that, but note trial 96's own direction_scope was GLOBAL (direction_index 26.07, a Gemma quantity). Only its triangular KERNEL is transferred; the direction family stays this panel's frozen per-layer d_EN(h), so SWAP_in differs from the panel's cells only in its coverage kernel.",
+   "cost": "SWAP_in is a kernel-transfer anchor, not a reproduction of the Gemma edit.",
+   "evidence": [
+    "method.py:swap_in_weights",
+    "results/cells/SWAP_in_trial96/meta.json"
+   ]
+  },
+  {
+   "id": "D9",
+   "topic": "SWAP_out (GaMS3 kernel applied to Gemma)",
+   "planned": "Run if the Gemma weights and adapter are present.",
+   "done": "Not run: one model per pod (20 GB), and the Gemma side is the sibling pod's job.",
+   "cost": "Cross-model statements stay descriptive (n = 2 checkpoints).",
+   "evidence": [
+    "README.md"
+   ]
+  }
+ ],
+ "evidence_values": [
+  {
+   "id": "D1-evidence",
+   "kappa_en": 0.5411328312223488,
+   "kappa_sl": 0.86346049937436,
+   "n": 4660
+  }
+ ]
+}

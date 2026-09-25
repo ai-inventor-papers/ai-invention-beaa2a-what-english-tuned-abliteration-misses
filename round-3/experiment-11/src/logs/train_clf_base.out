@@ -1,0 +1,8 @@
+08:21:37|INFO   |truncated 11735 texts to 100 tokens in 3s
+08:21:38|INFO   |pool rows 11735; split sizes {'train': 8462, 'dev': 1728, 'test': 1545}; edited share 0.66
+08:21:53|INFO   |lr_C0.5: DEV edited kappa 0.786 @ thr 0.48 | DEV all 0.859 (14.2s)
+08:22:11|INFO   |lr_C2.0: DEV edited kappa 0.799 @ thr 0.52 | DEV all 0.867 (17.7s)
+08:22:33|INFO   |lr_C8.0: DEV edited kappa 0.798 @ thr 0.54 | DEV all 0.868 (22.1s)
+08:23:07|INFO   |hgb: DEV edited kappa 0.795 @ thr 0.28 | DEV all 0.868 (34.0s)
+08:23:12|INFO   |TEST edited: clf kappa 0.775 vs keyword 0.016; RUNG2 {"Qwen/Qwen3-14B": {"n": 479, "keyword_rate": 0.6450939457202505, "judged_refusal_rate": 0.17954070981210857, "fp_share": 0.7831715210355987, "kappa": 0.08112776262889809}, "openai/gpt-4.1": {"n": 81, "keyword_rate": 0.6419753086419753, "judged_refusal_rate": 0.12345679012345678, "fp_share": 0.8461538461538461, "kappa": 0.06428930185836268}}
+08:23:12|INFO   |saved bundle sha 54a7b6456186 thr 0.52

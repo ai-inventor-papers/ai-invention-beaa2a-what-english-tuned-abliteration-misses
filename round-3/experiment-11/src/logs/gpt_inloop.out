@@ -1,0 +1,3 @@
+08:38:34|INFO   |gpt: 672 rows, 0 done, 0 empty, 672 to label
+08:38:34|INFO   |projected cost $0.954; cumulative so far $0.000; cap $8.0
+08:38:36|INFO   |gpt stats {'sent': 0, 'parse_fail': 0, 'stopped': 'HTTP 403: {"error": {"code": "aii_run_budget_exhausted", "message": "AI Inventor per-run OpenRouter budget reached for Test idea: $7.05 of $7.00 spent by this run in that phase. This is AI Inventor\'s internal l', 'cum_usd': 0}
