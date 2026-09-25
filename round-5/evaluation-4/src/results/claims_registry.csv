@@ -1,0 +1,186 @@
+claim_id,section,verdict,severity,judge,within_edited_kappa,strict_or_broad,tags,source_path
+E13.spearman_O_en,Exp13 confirmation,MATCH,none,Qwen3-14B local,0.856,strict,,iter_4/gen_art/gen_art_experiment_13/results/per_item.csv + cells/*.json
+E13.dR2_O_over_nuisance_en,Exp13 nested R2,MATCH,none,,,strict,,iter_4/gen_art/gen_art_experiment_13/results/per_item.csv + cells/*.json
+E13.R2_logE_alone_en,Exp13 nested R2,FIRST_REPORT,none,,,strict,,iter_4/gen_art/gen_art_experiment_13/results/per_item.csv + cells/*.json
+E13.R2_O_alone_en,Exp13 nested R2,FIRST_REPORT,none,,,strict,,iter_4/gen_art/gen_art_experiment_13/results/per_item.csv + cells/*.json
+E13.R2_cosine_alone_en,Exp13 nested R2,FIRST_REPORT,none,,,strict,,iter_4/gen_art/gen_art_experiment_13/results/per_item.csv + cells/*.json
+E13.dR2_O_over_energy_count_en,Exp13 nested R2,FIRST_REPORT,none,,,strict,,iter_4/gen_art/gen_art_experiment_13/results/per_item.csv + cells/*.json
+E13.rho_O_vs_cosine_en,Exp13 nested R2,MATCH,none,,,,,iter_4/gen_art/gen_art_experiment_13/results/cells/*.json
+E13.spearman_O_sl,Exp13 confirmation,MATCH,none,Qwen3-14B local,0.744,strict,JUDGE_SENSITIVE,iter_4/gen_art/gen_art_experiment_13/results/per_item.csv + cells/*.json
+E13.dR2_O_over_nuisance_sl,Exp13 nested R2,MATCH,none,,,strict,JUDGE_SENSITIVE,iter_4/gen_art/gen_art_experiment_13/results/per_item.csv + cells/*.json
+E13.R2_logE_alone_sl,Exp13 nested R2,FIRST_REPORT,none,,,strict,JUDGE_SENSITIVE,iter_4/gen_art/gen_art_experiment_13/results/per_item.csv + cells/*.json
+E13.R2_O_alone_sl,Exp13 nested R2,FIRST_REPORT,none,,,strict,JUDGE_SENSITIVE,iter_4/gen_art/gen_art_experiment_13/results/per_item.csv + cells/*.json
+E13.R2_cosine_alone_sl,Exp13 nested R2,FIRST_REPORT,none,,,strict,JUDGE_SENSITIVE,iter_4/gen_art/gen_art_experiment_13/results/per_item.csv + cells/*.json
+E13.dR2_O_over_energy_count_sl,Exp13 nested R2,FIRST_REPORT,none,,,strict,JUDGE_SENSITIVE,iter_4/gen_art/gen_art_experiment_13/results/per_item.csv + cells/*.json
+E13.rho_O_vs_cosine_sl,Exp13 nested R2,MATCH,none,,,,JUDGE_SENSITIVE,iter_4/gen_art/gen_art_experiment_13/results/cells/*.json
+E13.pooled_matched_contrast_en,Exp13 confirmation,MATCH,none,Qwen3-14B local,0.856,strict,DEFINITION_SENSITIVE,iter_4/gen_art/gen_art_experiment_13/results/per_item.csv
+E13.matched_groups_favouring_highO_en,Exp13 confirmation,MATCH,none,,,strict,,iter_4/gen_art/gen_art_experiment_13/results/per_item.csv
+E13.pooled_matched_contrast_sl,Exp13 confirmation,MATCH,none,Qwen3-14B local,0.744,strict,JUDGE_SENSITIVE;DEFINITION_SENSITIVE,iter_4/gen_art/gen_art_experiment_13/results/per_item.csv
+E13.matched_groups_favouring_highO_sl,Exp13 confirmation,MATCH,none,,,strict,JUDGE_SENSITIVE,iter_4/gen_art/gen_art_experiment_13/results/per_item.csv
+E13.CF_dose_G3loO_x2.en,Exp13 confirmation,MATCH,none,Qwen3-14B local,,strict,,iter_4/gen_art/gen_art_experiment_13/results/per_item.csv
+E13.CF_dose_G3loO_x2.sl,Exp13 confirmation,MATCH,none,Qwen3-14B local,,strict,JUDGE_SENSITIVE,iter_4/gen_art/gen_art_experiment_13/results/per_item.csv
+E13.CF_G3_hiO_L16-31.en,Exp13 confirmation,MATCH,none,Qwen3-14B local,,strict,,iter_4/gen_art/gen_art_experiment_13/results/per_item.csv
+E13.CF_G3_hiO_L16-31.sl,Exp13 confirmation,MATCH,none,Qwen3-14B local,,strict,JUDGE_SENSITIVE,iter_4/gen_art/gen_art_experiment_13/results/per_item.csv
+E13.CF_G3_loO_L33-48.en,Exp13 confirmation,MATCH,none,Qwen3-14B local,,strict,,iter_4/gen_art/gen_art_experiment_13/results/per_item.csv
+E13.CF_G3_loO_L33-48.sl,Exp13 confirmation,MATCH,none,Qwen3-14B local,,strict,JUDGE_SENSITIVE,iter_4/gen_art/gen_art_experiment_13/results/per_item.csv
+E13.controls_max_abs_dev_from_noop,Exp13 confirmation,MATCH,none,,,strict,,iter_4/gen_art/gen_art_experiment_13/results/per_item.csv
+E13.qwen3_spearman_O_en,Exp13 Qwen3 replication,MISMATCH,minor,Qwen3-14B local,,strict,CORRECT_IN_DRAFT,iter_4/gen_art/gen_art_experiment_13/results/per_item.csv + analysis.json outside.per_language[*].cells[*].O (descriptor only)
+E13.qwen3_spearman_O_sl,Exp13 Qwen3 replication,MATCH,none,Qwen3-14B local,,strict,JUDGE_SENSITIVE,iter_4/gen_art/gen_art_experiment_13/results/per_item.csv + analysis.json outside.per_language[*].cells[*].O (descriptor only)
+E13.qwen3_spearman_O_de,Exp13 Qwen3 replication,MISMATCH,minor,Qwen3-14B local,,strict,CORRECT_IN_DRAFT,iter_4/gen_art/gen_art_experiment_13/results/per_item.csv + analysis.json outside.per_language[*].cells[*].O (descriptor only)
+E13.qwen3_matched_contrasts_favouring_highO,Exp13 Qwen3 replication,MATCH,none,,,strict,DEFINITION_SENSITIVE,iter_4/gen_art/gen_art_experiment_13/results/per_item.csv
+E13.kappa_within_edited_en,Exp13 judge,MATCH,none,Qwen3-14B vs gpt-4.1,,,,iter_4/gen_art/gen_art_experiment_13/results/judge_api.jsonl + per_item.csv
+E13.kappa_within_edited_sl,Exp13 judge,MISMATCH,minor,Qwen3-14B vs gpt-4.1,,,JUDGE_SENSITIVE;CORRECT_IN_DRAFT,iter_4/gen_art/gen_art_experiment_13/results/judge_api.jsonl + per_item.csv
+E13.kappa_within_edited_pooled,Exp13 judge,MATCH,none,Qwen3-14B vs gpt-4.1,,,,iter_4/gen_art/gen_art_experiment_13/results/judge_api.jsonl + per_item.csv
+E13.RG.CF_G3_hiO_L16-31.sl,Exp13 judge,FIRST_REPORT,none,Qwen3-14B corrected to gpt-4.1,,strict,JUDGE_SENSITIVE,iter_4/gen_art/gen_art_experiment_13/results/judge_api.jsonl + per_item.csv
+E13.RG.CF_dose_G3loO_x2.sl,Exp13 judge,FIRST_REPORT,none,Qwen3-14B corrected to gpt-4.1,,strict,JUDGE_SENSITIVE,iter_4/gen_art/gen_art_experiment_13/results/judge_api.jsonl + per_item.csv
+E13.profile_peak_layer_en,Exp13 profile,MATCH,none,Qwen3-14B local,,strict,,iter_4/gen_art/gen_art_experiment_13/results/per_item.csv (PF_h* cells)
+E13.profile_peak_layer_sl,Exp13 profile,MATCH,none,Qwen3-14B local,,strict,JUDGE_SENSITIVE,iter_4/gen_art/gen_art_experiment_13/results/per_item.csv (PF_h* cells)
+E13.profile_spearman_en_sl,Exp13 profile,MATCH,none,Qwen3-14B local,,strict,JUDGE_SENSITIVE,iter_4/gen_art/gen_art_experiment_13/results/per_item.csv (PF_h* cells)
+E14.primary_rho_sl,Exp14 verdict,MATCH,none,Qwen3-14B local,0.83,strict,,iter_4/gen_art/gen_art_experiment_14/results/per_item.parquet + cells.csv
+E14.nested_R2.logE,Exp14 nested R2 (moved from exp13),MISDESCRIBED,material,,,strict,CORRECT_IN_DRAFT,iter_4/gen_art/gen_art_experiment_14/results/per_item.parquet + cells.csv
+E14.nested_R2.logE+O,Exp14 nested R2 (moved from exp13),MISDESCRIBED,material,,,strict,CORRECT_IN_DRAFT,iter_4/gen_art/gen_art_experiment_14/results/per_item.parquet + cells.csv
+E14.nested_R2.logE+O_cos (draft row 'logE+O+O_cos'),Exp14 nested R2 (moved from exp13),MISDESCRIBED,material,,,strict,CORRECT_IN_DRAFT,iter_4/gen_art/gen_art_experiment_14/results/per_item.parquet + cells.csv
+E14.nested_R2.logE+O_band4 (draft row cumulative),Exp14 nested R2 (moved from exp13),MISDESCRIBED,material,,,strict,CORRECT_IN_DRAFT,iter_4/gen_art/gen_art_experiment_14/results/per_item.parquet + cells.csv
+E14.dR2_O_over_logE_sl,Exp14 verdict,MATCH,none,,,strict,,iter_4/gen_art/gen_art_experiment_14/results/per_item.parquet + cells.csv
+E14.within_level_rho_E2_sl,Exp14 verdict,MATCH,none,,,strict,,iter_4/gen_art/gen_art_experiment_14/results/per_item.parquet + cells.csv
+E14.within_level_rho_E3_sl,Exp14 verdict,MATCH,none,,,strict,,iter_4/gen_art/gen_art_experiment_14/results/per_item.parquet + cells.csv
+E14.primary_rho_en,Exp14 verdict,FIRST_REPORT,none,Qwen3-14B local,0.721,strict,JUDGE_SENSITIVE,iter_4/gen_art/gen_art_experiment_14/results/per_item.parquet + cells.csv
+E14.argmax.E2.B1,Exp14 argmax (Table 4),MATCH,none,Qwen3-14B local,0.83,strict,,iter_4/gen_art/gen_art_experiment_14/results/per_item.parquet
+E14.argmax.E2.B2,Exp14 argmax (Table 4),MATCH,none,Qwen3-14B local,0.83,strict,,iter_4/gen_art/gen_art_experiment_14/results/per_item.parquet
+E14.argmax.E2.B3,Exp14 argmax (Table 4),MATCH,none,Qwen3-14B local,0.83,strict,,iter_4/gen_art/gen_art_experiment_14/results/per_item.parquet
+E14.argmax.E2.B4,Exp14 argmax (Table 4),MATCH,none,Qwen3-14B local,0.83,strict,,iter_4/gen_art/gen_art_experiment_14/results/per_item.parquet
+E14.argmax.E3.B1,Exp14 argmax (Table 4),MATCH,none,Qwen3-14B local,0.83,strict,,iter_4/gen_art/gen_art_experiment_14/results/per_item.parquet
+E14.argmax.E3.B2,Exp14 argmax (Table 4),MATCH,none,Qwen3-14B local,0.83,strict,,iter_4/gen_art/gen_art_experiment_14/results/per_item.parquet
+E14.argmax.E3.B3,Exp14 argmax (Table 4),MATCH,none,Qwen3-14B local,0.83,strict,,iter_4/gen_art/gen_art_experiment_14/results/per_item.parquet
+E14.argmax.E3.B4,Exp14 argmax (Table 4),MATCH,none,Qwen3-14B local,0.83,strict,,iter_4/gen_art/gen_art_experiment_14/results/per_item.parquet
+E14.dose_at_fixed_O_ship.language_label,Exp14 dissociation (R3),MISDESCRIBED,material,,,,CORRECT_IN_DRAFT,iter_4/gen_art/gen_art_experiment_14/results/per_item.parquet
+E14.dose_at_fixed_O_ship.sl,Exp14 dissociation (R3),MATCH,none,Qwen3-14B local,0.83,strict,,iter_4/gen_art/gen_art_experiment_14/results/per_item.parquet
+E14.dose_at_fixed_O_swap.language_label,Exp14 dissociation (R3),MATCH,none,,,,,iter_4/gen_art/gen_art_experiment_14/results/per_item.parquet
+E14.dose_at_fixed_O_swap.sl,Exp14 dissociation (R3),MATCH,none,Qwen3-14B local,0.83,strict,,iter_4/gen_art/gen_art_experiment_14/results/per_item.parquet
+E14.placement_at_fixed_E_high.language_label,Exp14 dissociation (R3),MISDESCRIBED,material,,,,CORRECT_IN_DRAFT,iter_4/gen_art/gen_art_experiment_14/results/per_item.parquet
+E14.placement_at_fixed_E_high.sl,Exp14 dissociation (R3),MATCH,none,Qwen3-14B local,0.83,strict,,iter_4/gen_art/gen_art_experiment_14/results/per_item.parquet
+E14.placement_at_fixed_E_low.language_label,Exp14 dissociation (R3),MATCH,none,,,,,iter_4/gen_art/gen_art_experiment_14/results/per_item.parquet
+E14.placement_at_fixed_E_low.sl,Exp14 dissociation (R3),MATCH,none,Qwen3-14B local,0.83,strict,,iter_4/gen_art/gen_art_experiment_14/results/per_item.parquet
+E15.gemma.keyword_min,Exp15 structural,MATCH,none,,,,,iter_4/gen_art/gen_art_experiment_15/results/per_candidate.csv
+E15.gemma.keyword_max,Exp15 structural,MATCH,none,,,,,iter_4/gen_art/gen_art_experiment_15/results/per_candidate.csv
+E15.gemma.classifier_min,Exp15 structural,MATCH,none,,,,,iter_4/gen_art/gen_art_experiment_15/results/per_candidate.csv
+E15.gemma.classifier_max,Exp15 structural,MATCH,none,,,,,iter_4/gen_art/gen_art_experiment_15/results/per_candidate.csv
+E15.gemma.slope_K_on_C,Exp15 structural,MATCH,none,,,,,iter_4/gen_art/gen_art_experiment_15/results/per_candidate.csv
+E15.gemma.mean_K_minus_C,Exp15 structural,MATCH,none,,,,,iter_4/gen_art/gen_art_experiment_15/results/per_candidate.csv
+E15.gemma.mean_K_minus_J,Exp15 structural,FIRST_REPORT,none,Qwen3-14B workhorse (J),,,,iter_4/gen_art/gen_art_experiment_15/results/per_candidate.csv
+E15.gemma.TBF_floor_above_threshold,Exp15 structural,MATCH,none,,,,,iter_4/gen_art/gen_art_experiment_15/results/per_candidate.csv
+E15.gams.keyword_min,Exp15 structural,MATCH,none,,,,,iter_4/gen_art/gen_art_experiment_15/results/per_candidate.csv
+E15.gams.keyword_max,Exp15 structural,MATCH,none,,,,,iter_4/gen_art/gen_art_experiment_15/results/per_candidate.csv
+E15.gams.classifier_min,Exp15 structural,MATCH,none,,,,,iter_4/gen_art/gen_art_experiment_15/results/per_candidate.csv
+E15.gams.classifier_max,Exp15 structural,MATCH,none,,,,,iter_4/gen_art/gen_art_experiment_15/results/per_candidate.csv
+E15.gams.slope_K_on_C,Exp15 structural,MATCH,none,,,,,iter_4/gen_art/gen_art_experiment_15/results/per_candidate.csv
+E15.gams.mean_K_minus_C,Exp15 structural,MATCH,none,,,,,iter_4/gen_art/gen_art_experiment_15/results/per_candidate.csv
+E15.gams.mean_K_minus_J,Exp15 structural,FIRST_REPORT,none,Qwen3-14B workhorse (J),,,,iter_4/gen_art/gen_art_experiment_15/results/per_candidate.csv
+E15.gams.TBF_floor_above_threshold,Exp15 structural,MATCH,none,,,,,iter_4/gen_art/gen_art_experiment_15/results/per_candidate.csv
+E15.reselection.gemma.K.trial,Exp15 reselection,MATCH,none,,,,,iter_4/gen_art/gen_art_experiment_15/results/reselection_table.csv
+E15.reselection.gams.C.KL,Exp15 reselection,FIRST_REPORT,none,,,,,iter_4/gen_art/gen_art_experiment_15/results/reselection_table.csv
+E15.J_identity,Exp15 reselection,MISDESCRIBED,material,,,,CORRECT_IN_DRAFT,"iter_4/gen_art/gen_art_experiment_15/results/analysis.json (reference_only, label text)"
+E15.conv.gemma.all.keyword.mae,Exp11/15 MAE (R5),FIRST_REPORT,none,,,,,"iter_4/gen_art/gen_art_experiment_15/results/conventional_table.csv (reference_only, per-trial table)"
+E15.conv.gemma.all.classifier.mae,Exp11/15 MAE (R5),FIRST_REPORT,none,,,,,"iter_4/gen_art/gen_art_experiment_15/results/conventional_table.csv (reference_only, per-trial table)"
+E15.conv.gemma.tpe.keyword.mae,Exp11/15 MAE (R5),FIRST_REPORT,none,,,,,"iter_4/gen_art/gen_art_experiment_15/results/conventional_table.csv (reference_only, per-trial table)"
+E15.conv.gemma.tpe.classifier.mae,Exp11/15 MAE (R5),FIRST_REPORT,none,,,,,"iter_4/gen_art/gen_art_experiment_15/results/conventional_table.csv (reference_only, per-trial table)"
+E11.trial107.judge_refused,Exp11 miscalibration (R5),MISMATCH,material,Qwen3-14B,,strict,CORRECT_IN_DRAFT,iter_3/gen_art/gen_art_experiment_11/results/miscalibration_table.csv
+E11.trial107.keyword,Exp11 miscalibration (R5),MATCH,none,,,,,iter_3/gen_art/gen_art_experiment_11/results/miscalibration_table.csv
+E11.trial96.judge_refused,Exp11 miscalibration (R5),MISMATCH,material,Qwen3-14B,,strict,CORRECT_IN_DRAFT,iter_3/gen_art/gen_art_experiment_11/results/miscalibration_table.csv
+E11.keyword_floor,Exp11 miscalibration (R5),MATCH,none,,,,,iter_3/gen_art/gen_art_experiment_11/results/miscalibration_table.csv
+E11.keyword_range_max,Exp11 miscalibration (R5),MATCH,none,,,,,iter_3/gen_art/gen_art_experiment_11/results/miscalibration_table.csv
+E11.classifier_range,Exp11 miscalibration (R5),MATCH,none,,,,,iter_3/gen_art/gen_art_experiment_11/results/miscalibration_table.csv
+E11.classifier_range_max,Exp11 miscalibration (R5),MATCH,none,,,,,iter_3/gen_art/gen_art_experiment_11/results/miscalibration_table.csv
+E11.judge_range_min,Exp11 miscalibration (R5),MATCH,none,,,,,iter_3/gen_art/gen_art_experiment_11/results/miscalibration_table.csv
+E11.judge_range_max,Exp11 miscalibration (R5),MATCH,none,,,,,iter_3/gen_art/gen_art_experiment_11/results/miscalibration_table.csv
+E11.mae_keyword_vs_judge,Exp11 miscalibration (R5),MISMATCH,minor,,,,CORRECT_IN_DRAFT,iter_3/gen_art/gen_art_experiment_11/results/miscalibration_table.csv
+E11.mae_classifier_vs_judge,Exp11 miscalibration (R5),MISMATCH,minor,,,,CORRECT_IN_DRAFT,iter_3/gen_art/gen_art_experiment_11/results/miscalibration_table.csv
+EV2.paired_gap_bf16,Eval2 NF4/bf16 (R10),MATCH,none,gpt-4.1,,strict,DEFINITION_SENSITIVE,iter_4/gen_art/gen_art_evaluation_2/results/gpt41_quant_behaviour_labels.jsonl + quant_behaviour_bf16_gens.jsonl
+EV2.refused_bf16_en,Eval2 NF4/bf16 (R10),MATCH,none,gpt-4.1,,strict,,iter_4/gen_art/gen_art_evaluation_2/results/gpt41_quant_behaviour_labels.jsonl
+EV2.refused_bf16_sl,Eval2 NF4/bf16 (R10),MATCH,none,gpt-4.1,,strict,,iter_4/gen_art/gen_art_evaluation_2/results/gpt41_quant_behaviour_labels.jsonl
+EV2.paired_gap_nf4,Eval2 NF4/bf16 (R10),MATCH,none,gpt-4.1,,strict,DEFINITION_SENSITIVE,iter_4/gen_art/gen_art_evaluation_2/results/gpt41_quant_behaviour_labels.jsonl + quant_behaviour_bf16_gens.jsonl
+EV2.refused_nf4_en,Eval2 NF4/bf16 (R10),MATCH,none,gpt-4.1,,strict,,iter_4/gen_art/gen_art_evaluation_2/results/gpt41_quant_behaviour_labels.jsonl
+EV2.refused_nf4_sl,Eval2 NF4/bf16 (R10),MATCH,none,gpt-4.1,,strict,,iter_4/gen_art/gen_art_evaluation_2/results/gpt41_quant_behaviour_labels.jsonl
+E9.band13_24_density_rho_all_stages,Exp9 placement,FIRST_REPORT,none,,,strict,,iter_3/gen_art/gen_art_experiment_9/results/cells.csv
+E9.band13_24_density_rho,Exp9 placement,MATCH,none,Qwen3-14B local,0.866,strict,,iter_3/gen_art/gen_art_experiment_9/results/cells.csv + cells/*.json (screen stage)
+E10.placement_matched_count_E1,Exp10 placement,MATCH,none,Qwen3-14B local,,strict,,iter_3/gen_art/gen_art_experiment_10/results/per_item.parquet
+E10.placement_matched_count_E2,Exp10 placement,MATCH,none,Qwen3-14B local,,strict,,iter_3/gen_art/gen_art_experiment_10/results/per_item.parquet
+E10.placement_matched_count_E3,Exp10 placement,MATCH,none,Qwen3-14B local,,strict,,iter_3/gen_art/gen_art_experiment_10/results/per_item.parquet
+E10.unmatched_c1_B2_minus_B3_sl,Exp10 placement (R1 unresolved),FIRST_REPORT,none,Qwen3-14B local,,strict,,iter_3/gen_art/gen_art_experiment_10/results/per_item.parquet
+E12.P1_spearman,Exp12 P1,MATCH,none,,,,,iter_3/gen_art/gen_art_experiment_12/results/analysis.json (rows)
+E12.P1_rows,Exp12 P1,MATCH,none,,,,,iter_3/gen_art/gen_art_experiment_12/results/analysis.json
+E12.eligible_rows,Exp12 setup,MATCH,none,,,,,iter_3/gen_art/gen_art_experiment_12/results/indices.json
+E12.index.gemma|en,Exp12 DEV indices,MATCH,none,,,,,iter_3/gen_art/gen_art_experiment_12/results/indices.json
+E12.index.gemma|sl,Exp12 DEV indices,MATCH,none,,,,,iter_3/gen_art/gen_art_experiment_12/results/indices.json
+E12.index.gemma|de,Exp12 DEV indices,MATCH,none,,,,,iter_3/gen_art/gen_art_experiment_12/results/indices.json
+E12.index.gemma|lt,Exp12 DEV indices,MATCH,none,,,,,iter_3/gen_art/gen_art_experiment_12/results/indices.json
+E12.index.qwen3|en,Exp12 DEV indices,MATCH,none,,,,,iter_3/gen_art/gen_art_experiment_12/results/indices.json
+E12.index.qwen3|sl,Exp12 DEV indices,MATCH,none,,,,,iter_3/gen_art/gen_art_experiment_12/results/indices.json
+E12.index.qwen3|de,Exp12 DEV indices,MATCH,none,,,,,iter_3/gen_art/gen_art_experiment_12/results/indices.json
+E12.index.qwen3|lt,Exp12 DEV indices,MATCH,none,,,,,iter_3/gen_art/gen_art_experiment_12/results/indices.json
+E12.index.mistral|en,Exp12 DEV indices,MATCH,none,,,,,iter_3/gen_art/gen_art_experiment_12/results/indices.json
+E12.index.mistral|sl,Exp12 DEV indices,MATCH,none,,,,,iter_3/gen_art/gen_art_experiment_12/results/indices.json
+E12.index.mistral|de,Exp12 DEV indices,MATCH,none,,,,,iter_3/gen_art/gen_art_experiment_12/results/indices.json
+E12.index.mistral|lt,Exp12 DEV indices,MATCH,none,,,,,iter_3/gen_art/gen_art_experiment_12/results/indices.json
+E4.S5_refusal.gams_orig.en,Exp4 RefusEU headline,MATCH,none,Qwen3-14B workhorse,,strict,,iter_4/gen_art/gen_art_evaluation_2/results/pooled_generations.parquet
+E4.S6_overrefusal.gams_orig.en,Exp4 RefusEU headline,MATCH,none,Qwen3-14B workhorse,,strict,,iter_4/gen_art/gen_art_evaluation_2/results/pooled_generations.parquet
+E4.S5_refusal.gams_orig.sl,Exp4 RefusEU headline,MATCH,none,Qwen3-14B workhorse,,strict,,iter_4/gen_art/gen_art_evaluation_2/results/pooled_generations.parquet
+E4.S6_overrefusal.gams_orig.sl,Exp4 RefusEU headline,MATCH,none,Qwen3-14B workhorse,,strict,,iter_4/gen_art/gen_art_evaluation_2/results/pooled_generations.parquet
+E4.S5_refusal.gams_edit.en,Exp4 RefusEU headline,MATCH,none,Qwen3-14B workhorse,,strict,,iter_4/gen_art/gen_art_evaluation_2/results/pooled_generations.parquet
+E4.S6_overrefusal.gams_edit.en,Exp4 RefusEU headline,MATCH,none,Qwen3-14B workhorse,,strict,,iter_4/gen_art/gen_art_evaluation_2/results/pooled_generations.parquet
+E4.S5_refusal.gams_edit.sl,Exp4 RefusEU headline,MATCH,none,Qwen3-14B workhorse,,strict,,iter_4/gen_art/gen_art_evaluation_2/results/pooled_generations.parquet
+E4.S6_overrefusal.gams_edit.sl,Exp4 RefusEU headline,MATCH,none,Qwen3-14B workhorse,,strict,,iter_4/gen_art/gen_art_evaluation_2/results/pooled_generations.parquet
+E4.S5_refusal.gemma_orig.en,Exp4 RefusEU headline,MATCH,none,Qwen3-14B workhorse,,strict,,iter_4/gen_art/gen_art_evaluation_2/results/pooled_generations.parquet
+E4.S6_overrefusal.gemma_orig.en,Exp4 RefusEU headline,MATCH,none,Qwen3-14B workhorse,,strict,,iter_4/gen_art/gen_art_evaluation_2/results/pooled_generations.parquet
+E4.S5_refusal.gemma_orig.sl,Exp4 RefusEU headline,MATCH,none,Qwen3-14B workhorse,,strict,,iter_4/gen_art/gen_art_evaluation_2/results/pooled_generations.parquet
+E4.S6_overrefusal.gemma_orig.sl,Exp4 RefusEU headline,MATCH,none,Qwen3-14B workhorse,,strict,,iter_4/gen_art/gen_art_evaluation_2/results/pooled_generations.parquet
+E4.S5_refusal.gemma_edit.en,Exp4 RefusEU headline,MATCH,none,Qwen3-14B workhorse,,strict,,iter_4/gen_art/gen_art_evaluation_2/results/pooled_generations.parquet
+E4.S6_overrefusal.gemma_edit.en,Exp4 RefusEU headline,MATCH,none,Qwen3-14B workhorse,,strict,,iter_4/gen_art/gen_art_evaluation_2/results/pooled_generations.parquet
+E4.S5_refusal.gemma_edit.sl,Exp4 RefusEU headline,MATCH,none,Qwen3-14B workhorse,,strict,,iter_4/gen_art/gen_art_evaluation_2/results/pooled_generations.parquet
+E4.S6_overrefusal.gemma_edit.sl,Exp4 RefusEU headline,MATCH,none,Qwen3-14B workhorse,,strict,,iter_4/gen_art/gen_art_evaluation_2/results/pooled_generations.parquet
+E4.S5_refusal.community_ref.en,Exp4 RefusEU headline,MATCH,none,Qwen3-14B workhorse,,strict,,iter_4/gen_art/gen_art_evaluation_2/results/pooled_generations.parquet
+E4.S6_overrefusal.community_ref.en,Exp4 RefusEU headline,MATCH,none,Qwen3-14B workhorse,,strict,,iter_4/gen_art/gen_art_evaluation_2/results/pooled_generations.parquet
+E4.S5_refusal.community_ref.sl,Exp4 RefusEU headline,MATCH,none,Qwen3-14B workhorse,,strict,,iter_4/gen_art/gen_art_evaluation_2/results/pooled_generations.parquet
+E4.S6_overrefusal.community_ref.sl,Exp4 RefusEU headline,MATCH,none,Qwen3-14B workhorse,,strict,,iter_4/gen_art/gen_art_evaluation_2/results/pooled_generations.parquet
+E4.gemma_edit.en.partial_share,Exp4 RefusEU headline,MATCH,none,Qwen3-14B workhorse,,,,iter_4/gen_art/gen_art_evaluation_2/results/pooled_generations.parquet
+E4.gemma_edit.en.keyword_rate,Exp4 keyword proxy,MISMATCH,minor,,,,CORRECT_IN_DRAFT,iter_4/gen_art/gen_art_evaluation_2/results/pooled_generations.parquet
+E4.gemma_edit.en.keyword_fp_share,Exp4 keyword proxy,MISMATCH,minor,Qwen3-14B workhorse,,,CORRECT_IN_DRAFT,iter_4/gen_art/gen_art_evaluation_2/results/pooled_generations.parquet
+E4.gemma_edit.en.keyword_kappa,Exp4 keyword proxy,MATCH,none,,,,,iter_4/gen_art/gen_art_evaluation_2/results/pooled_generations.parquet
+E4.S5X_gap.gemma_edit.strict,Exp4 S5X paired gap (range),MATCH,none,Qwen3-14B workhorse,,strict,DEFINITION_SENSITIVE,iter_4/gen_art/gen_art_evaluation_2/results/pooled_generations.parquet + iter_2/gen_art/gen_art_experiment_4/frozen_samples.json
+E4.S5X_gap.gemma_edit.broad,Exp4 S5X paired gap (range),MATCH,none,Qwen3-14B workhorse,,broad,DEFINITION_SENSITIVE,iter_4/gen_art/gen_art_evaluation_2/results/pooled_generations.parquet + iter_2/gen_art/gen_art_experiment_4/frozen_samples.json
+E4.S5X_gap.gemma_edit.keyword,Exp4 S5X paired gap (range),NOT_REDERIVED,n/a,keyword rule,,keyword,,iter_4/gen_art/gen_art_evaluation_2/results/pooled_generations.parquet + iter_2/gen_art/gen_art_experiment_4/frozen_samples.json
+E4.S5X_gap.community_ref.strict,Exp4 S5X paired gap (range),MATCH,none,Qwen3-14B workhorse,,strict,DEFINITION_SENSITIVE,iter_4/gen_art/gen_art_evaluation_2/results/pooled_generations.parquet
+E4.S5X_DiD.strict,Exp4 S5X paired gap (range),MATCH,none,Qwen3-14B workhorse,,strict,,iter_4/gen_art/gen_art_evaluation_2/results/pooled_generations.parquet
+E4.official_guard_ASR.gams_orig.en,Exp4 guard ASR (R11),FIRST_REPORT,none,Llama-Guard-3-8B + PolyGuard agreement,,,,iter_4/gen_art/gen_art_evaluation_2/results/pooled_generations.parquet
+E4.official_guard_ASR.gams_orig.sl,Exp4 guard ASR (R11),FIRST_REPORT,none,Llama-Guard-3-8B + PolyGuard agreement,,,,iter_4/gen_art/gen_art_evaluation_2/results/pooled_generations.parquet
+E4.official_guard_ASR.gams_edit.en,Exp4 guard ASR (R11),FIRST_REPORT,none,Llama-Guard-3-8B + PolyGuard agreement,,,,iter_4/gen_art/gen_art_evaluation_2/results/pooled_generations.parquet
+E4.official_guard_ASR.gams_edit.sl,Exp4 guard ASR (R11),FIRST_REPORT,none,Llama-Guard-3-8B + PolyGuard agreement,,,,iter_4/gen_art/gen_art_evaluation_2/results/pooled_generations.parquet
+E4.official_guard_ASR.gemma_orig.en,Exp4 guard ASR (R11),FIRST_REPORT,none,Llama-Guard-3-8B + PolyGuard agreement,,,,iter_4/gen_art/gen_art_evaluation_2/results/pooled_generations.parquet
+E4.official_guard_ASR.gemma_orig.sl,Exp4 guard ASR (R11),FIRST_REPORT,none,Llama-Guard-3-8B + PolyGuard agreement,,,,iter_4/gen_art/gen_art_evaluation_2/results/pooled_generations.parquet
+E4.official_guard_ASR.gemma_edit.en,Exp4 guard ASR (R11),FIRST_REPORT,none,Llama-Guard-3-8B + PolyGuard agreement,,,,iter_4/gen_art/gen_art_evaluation_2/results/pooled_generations.parquet
+E4.official_guard_ASR.gemma_edit.sl,Exp4 guard ASR (R11),FIRST_REPORT,none,Llama-Guard-3-8B + PolyGuard agreement,,,,iter_4/gen_art/gen_art_evaluation_2/results/pooled_generations.parquet
+E4.official_guard_ASR.community_ref.en,Exp4 guard ASR (R11),FIRST_REPORT,none,Llama-Guard-3-8B + PolyGuard agreement,,,,iter_4/gen_art/gen_art_evaluation_2/results/pooled_generations.parquet
+E4.official_guard_ASR.community_ref.sl,Exp4 guard ASR (R11),FIRST_REPORT,none,Llama-Guard-3-8B + PolyGuard agreement,,,,iter_4/gen_art/gen_art_evaluation_2/results/pooled_generations.parquet
+E4.nonrefused_guard_safe.gemma_edit.en,Exp4 guard ASR (R11),MISDESCRIBED,material,Qwen3-14B + LG3 + PolyGuard,,,CORRECT_IN_DRAFT,iter_4/gen_art/gen_art_evaluation_2/results/pooled_generations.parquet
+E4.nonrefused_guard_safe.gemma_edit.sl,Exp4 guard ASR (R11),FIRST_REPORT,none,,,,,iter_4/gen_art/gen_art_evaluation_2/results/pooled_generations.parquet
+E4.nonrefused_guard_safe.gemma_edit.sl_minus_en,Exp4 guard ASR (R11),FIRST_REPORT,none,,,,,iter_4/gen_art/gen_art_evaluation_2/results/pooled_generations.parquet
+D1.kappa.exp4|en|edited,Judge agreement (D1),FIRST_REPORT,none,Qwen3-14B vs gpt-4.1,,,,iter_4/gen_art/gen_art_evaluation_2/results/pooled_generations.parquet + gpt41_calibration_labels.jsonl + gpt41_supplement_labels.jsonl
+D1.kappa.exp4|sl|edited,Judge agreement (D1),FIRST_REPORT,none,Qwen3-14B vs gpt-4.1,,,,iter_4/gen_art/gen_art_evaluation_2/results/pooled_generations.parquet + gpt41_calibration_labels.jsonl + gpt41_supplement_labels.jsonl
+D1.kappa.exp9|en|edited,Judge agreement (D1),FIRST_REPORT,none,Qwen3-14B vs gpt-4.1,,,,iter_4/gen_art/gen_art_evaluation_2/results/pooled_generations.parquet + gpt41_calibration_labels.jsonl + gpt41_supplement_labels.jsonl
+D1.kappa.exp9|sl|edited,Judge agreement (D1),FIRST_REPORT,none,Qwen3-14B vs gpt-4.1,,,,iter_4/gen_art/gen_art_evaluation_2/results/pooled_generations.parquet + gpt41_calibration_labels.jsonl + gpt41_supplement_labels.jsonl
+D1.kappa.exp11|en|edited,Judge agreement (D1),MATCH,none,Qwen3-14B vs gpt-4.1,,,,iter_4/gen_art/gen_art_evaluation_2/results/pooled_generations.parquet + gpt41_calibration_labels.jsonl + gpt41_supplement_labels.jsonl
+D1.kappa.exp10|en|edited,Judge agreement (D1),MISDESCRIBED,material,Qwen3-14B vs gpt-4.1,,,CORRECT_IN_DRAFT,iter_4/gen_art/gen_art_evaluation_2/results/pooled_generations.parquet + gpt41_calibration_labels.jsonl + gpt41_supplement_labels.jsonl
+D1.kappa.exp10|sl|edited,Judge agreement (D1),FIRST_REPORT,none,Qwen3-14B vs gpt-4.1,,,,iter_4/gen_art/gen_art_evaluation_2/results/pooled_generations.parquet + gpt41_calibration_labels.jsonl + gpt41_supplement_labels.jsonl
+D1.kappa.exp4.gemma_edit.en,Judge agreement (D1),FIRST_REPORT,none,Qwen3-14B vs gpt-4.1,,,,iter_4/gen_art/gen_art_evaluation_2/results/pooled_generations.parquet
+D2.RG.exp4.gemma_edit.S5.en,Judge agreement (D2),FIRST_REPORT,none,Qwen3-14B corrected to gpt-4.1,,strict,,iter_4/gen_art/gen_art_evaluation_2/results/pooled_generations.parquet
+D1.kappa.exp4.gemma_edit.sl,Judge agreement (D1),FIRST_REPORT,none,Qwen3-14B vs gpt-4.1,,,,iter_4/gen_art/gen_art_evaluation_2/results/pooled_generations.parquet
+D2.RG.exp4.gemma_edit.S5.sl,Judge agreement (D2),FIRST_REPORT,none,Qwen3-14B corrected to gpt-4.1,,strict,,iter_4/gen_art/gen_art_evaluation_2/results/pooled_generations.parquet
+D2.RG.exp4.gemma_edit.S5.gap,Judge agreement (D2),FIRST_REPORT,none,,,strict,DEFINITION_SENSITIVE,iter_4/gen_art/gen_art_evaluation_2/results/pooled_generations.parquet
+E5.T12.Rseq_pos_f1.gemma.en,Exp5 T12 marker rule (R7-iii),FIRST_REPORT,none,,,readout R_seq > 0,,iter_2/gen_art/gen_art_experiment_5/results/gemma/rseq_markers.json
+E5.T12.Rseq_pos_f1.gemma.sl,Exp5 T12 marker rule (R7-iii),FIRST_REPORT,none,,,readout R_seq > 0,,iter_2/gen_art/gen_art_experiment_5/results/gemma/rseq_markers.json
+E5.T12.Rseq_pos_f1.gams.en,Exp5 T12 marker rule (R7-iii),FIRST_REPORT,none,,,readout R_seq > 0,,iter_2/gen_art/gen_art_experiment_5/results/gams/rseq_markers.json
+E5.T12.Rseq_pos_f1.gams.sl,Exp5 T12 marker rule (R7-iii),FIRST_REPORT,none,,,readout R_seq > 0,,iter_2/gen_art/gen_art_experiment_5/results/gams/rseq_markers.json
+E13.failure_reason,Exp13 nested R2,MISDESCRIBED,material,,,,CORRECT_IN_DRAFT,iter_4/gen_art/gen_art_experiment_13/results/per_item.csv + cells/*.json
+SYN.critical_band_differs,What we have learned / Research 1,MISDESCRIBED,material,,,,CORRECT_IN_DRAFT,iter_4/gen_art/gen_art_experiment_14/results/per_item.parquet
+E5.asr_gap_smaller_than_refusal_gap,Exp5 attack success,MISDESCRIBED,material,,,,CORRECT_IN_DRAFT,iter_4/gen_art/gen_art_evaluation_2/results/pooled_generations.parquet
+E11.partial_positive_halves_gap,What we have learned,MISDESCRIBED,material,,,,CORRECT_IN_DRAFT,iter_3/gen_art/gen_art_experiment_11/results/headline_table.csv

@@ -1,0 +1,36 @@
+# fetch https://arxiv.org/abs/2608.30856  accessed 2026-09-24
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/abs/2608.30856
+Type: HTML
+Length: 8009 chars (truncated)
+
+--- Content ---
+
+Skip to main content [](https://arxiv.org/IgnoreMe) [ ](https://arxiv.org/) [ Search ](https://arxiv.org/search) [Submit](https://arxiv.org/user/create) [Donate](https://info.arxiv.org/about/donate.html) [Log in](https://arxiv.org/login)
+
+Search arXiv
+
+Press Enter to search * [Advanced search](https://arxiv.org/search/advanced)
+
+# Computer Science > Computation and Language
+
+**arXiv:2608.30856** (cs) 
+
+[Submitted on 31 Aug 2026]
+
+# Title:You Shouldn't Have Asked: A Pragmatics-Inspired Taxonomy for Evaluating LLM Refusals
+
+Authors:[Ruoxuan Li](https://arxiv.org/search/cs?searchtype=author&query=Li,+R), [Pinqiao Wang](https://arxiv.org/search/cs?searchtype=author&query=Wang,+P), [Sheng Li](https://arxiv.org/search/cs?searchtype=author&query=Li,+S), [Cameron Robert Jones](https://arxiv.org/search/cs?searchtype=author&query=Jones,+C+R)
+
+View a PDF of the paper titled You Shouldn't Have Asked: A Pragmatics-Inspired Taxonomy for Evaluating LLM Refusals, by Ruoxuan Li and 3 other authors
+
+[View PDF](/pdf/2608.30856) [HTML (experimental)](https://arxiv.org/html/2608.30856v1)
+
+> Abstract:Refusals are often treated as face-threatening acts in pragmatics because they can challenge the requester's socially claimed self-image. Large language models (LLMs) are increasingly trained to refuse unsafe and inappropriate requests, and these refusals may harm users when models fail to manage this interactional cost properly. While existing work has mainly approached LLM non-compliance as a safety-alignment outcome, it does not provide a way to evaluate whether LLMs refuse appropriately across different harmful contexts. To study this question, we propose (to our knowledge) the first taxonomy of LLM refusals that is grounded in pragmatic theory. Applying this taxonomy to responses from 16 modern LLMs across 14 harm categories, we find that although models differ in how they refuse, their refusals are overall explicit and strongly morally evaluative, with interactional repair occurring mainly through offering or providing safer alternatives instead of interpersonal facework. This pattern is especially consequential in sensitive harm contexts, where overuse of negative framing may make users feel shamed or provoked, undermining the purpose of safe non-compliance. We therefore call for alignment evaluation that considers not only whether models refuse harmful requests, but also whether they refuse in ways that are contextually adaptive and socially accountable for the interactional consequences of saying no. 
+
+Comments: | To appear in the Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing (EMNLP 2026)  
+---|---  
+Subjects: |  Computation and Language (cs.CL); Human-Computer Interaction (cs.HC)  
+Cite as: | [arXiv:2608.30856](https://arxiv.org/abs/2608.30856) [cs.CL]  
+  | (or  [arXiv:2608.30856v1](https://arxiv.org/abs/2608.30856v1) [cs.CL] for this version)   
+  |  <https://doi.org/10.48550/arXiv.2608.30856> Focus to learn more arXiv-

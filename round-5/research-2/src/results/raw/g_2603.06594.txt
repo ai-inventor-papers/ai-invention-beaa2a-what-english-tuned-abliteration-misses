@@ -1,0 +1,36 @@
+# grep https://arxiv.org/abs/2603.06594  pattern=/Title|Abstract|distribution shift|random|agreement|coin/  accessed 2026-09-24
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/abs/2603.06594
+Type: HTML
+Pattern: Title|Abstract|distribution shift|random|agreement|coin (13 matches in 8230 chars)
+
+--- Content ---
+
+523:Skip to main content [](https://arxiv.org/IgnoreMe) [ ](https://arxiv.org/) [ Search ](https://arxiv.org/search) [Submit](https://arxiv.org/user/create) [Donate](https://info.arxiv.org/about/donate.html) [Log in](https://arxiv.org/login)
+
+Search arXiv
+
+Press Enter to search * [Advanced search](https://arxiv.org/search/advanced)
+
+# Computer Science > Computation and Language
+
+**arXiv:2603.06594** (cs) 
+
+[Submitted on 4 Feb 2026 ([v1](https://arxiv.org/abs/2603.06594v1)), last revised 15 Mar 2026 (this version, v2)]
+
+# Title:A Coin Flip for Safety: LLM Judges Fail to Reliably Measure Adversarial Robustness
+
+Authors:[Leo Schwinn](https://arxiv.org/search/cs?searchtype=author&query=Schwinn,+L), [Moritz Ladenburger](https://arxiv.org/search/cs?searchtype=author&query=Ladenburger,+M), [Tim Beyer](https://arxiv.org/search/cs?searchtype=author&query=Beyer,+T), [Mehrnaz Mofakhami](https://arxiv.org/search/cs?searchtype=author&query=Mofakhami,+M), [Gauthier Gidel](https://arxiv.org/search/cs?searchtype=author&query=Gidel,+G), [Stephan Günnemann](https://arxiv.org/search/cs?searchtype=author&query=G%C3%BCnnemann,+S)
+
+View a PDF of the paper titled A Coin Flip for Safety: LLM Judges Fail to Reliably Measure Adversarial Robustness, by Leo Schwinn and Moritz Ladenburger and Tim Beyer and Mehrnaz Mofakhami and Gauthier Gidel and Stephan G\"unnemann
+
+[View PDF](/pdf/2603.06594) [HTML (experimental)](https://arxiv.org/html/2603.06594v2)
+
+> Abstract:Automated \enquote{LLM-as-a-Judge} frameworks have become the de facto standard for scalable evaluation across natural language processing. For instance, in safety evaluation, these judges are relied upon to evaluate harmfulness in order to benchmark the robustness of safety against adversarial attacks. However, we show that existing validation protocols fail to account for substantial distribution shifts inherent to red-teaming: diverse victim models exhibit distinct generation styles, attacks distort output patterns, and semantic ambiguity varies significantly across jailbreak scenarios. Through a comprehensive audit using 6642 human-verified labels, we reveal that the unpredictable interaction of these shifts often causes judge performance to degrade to near random chance. This stands in stark contrast to the high human agreement reported in prior work. Crucially, we find that many attacks inflate their success rates by exploiting judge insufficiencies rather than eliciting genuinely harmful content. To enable more reliable evaluation, we propose ReliableBench, a benchmark of behaviors that remain more consistently judgeable, and JudgeStressTest, a dataset designed to expose judge failures. Data available at: [this https URL](https://github.com/SchwinnL/LLMJudgeReliability). 
+
+Subjects: |  Computation and Language (cs.CL); Artificial Intelligence (cs.AI)  
+---|---  
+Cite as: | [arXiv:2603.06594](https://arxiv.org/abs/2603.06594) [cs.CL]  
+  | (or  [arXiv:2603.06594v2](https://arxiv.org/abs/2603.06594v2) [cs.CL] for ...
+--
+[5 more matches not shown]

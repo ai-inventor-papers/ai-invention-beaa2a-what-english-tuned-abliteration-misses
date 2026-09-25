@@ -1,0 +1,67 @@
+{
+ "defect_rate": {
+  "k": 21,
+  "n": 136
+ },
+ "lint": {
+  "n": 41,
+  "resolved_and_exist": 41,
+  "not_found": 0
+ },
+ "exp14_rho_sl": -0.8995112997547242,
+ "exp14_rho_sl_shuffledO_mean": -0.0034148811128763747,
+ "exp4_s5x_gap_strict": 0.69,
+ "exp4_s5x_gap_strict_sidelabel_shuffled": -0.007533333333333334,
+ "exp4_gemma_edit_en_kappa": {
+  "kappa": 0.3882352941176471,
+  "n": 80
+ },
+ "exp4_gemma_edit_en_kappa_shuffled_reference": -0.0823529411764705,
+ "exp11_trial107_judge_refused": 63,
+ "exp11_trial96_judge_refused_partial": [
+  37,
+  49
+ ],
+ "agreement": {
+  "exp14_rho_sl": {
+   "audit": -0.8995112997547242,
+   "pipeline": -0.899511,
+   "agree": true
+  },
+  "exp4_s5x_gap_strict": {
+   "audit": 0.69,
+   "pipeline": 0.69,
+   "agree": true
+  },
+  "exp4_gemma_edit_en_kappa": {
+   "audit": 0.3882352941176471,
+   "pipeline": 0.388235,
+   "agree": true
+  },
+  "exp11_trial107": {
+   "audit": 63.0,
+   "pipeline": 63.0,
+   "agree": true
+  },
+  "defect_k": {
+   "audit": 21.0,
+   "pipeline": 21.0,
+   "agree": true
+  },
+  "defect_n": {
+   "audit": 136.0,
+   "pipeline": 136.0,
+   "agree": true
+  },
+  "lint_not_found": {
+   "audit": 0.0,
+   "pipeline": 0.0,
+   "agree": true
+  }
+ },
+ "placebos_fail_as_required": {
+  "shuffled_O_rho_near_0": true,
+  "side_label_shuffled_gap_near_0": true,
+  "shuffled_reference_kappa_near_0": true
+ }
+}

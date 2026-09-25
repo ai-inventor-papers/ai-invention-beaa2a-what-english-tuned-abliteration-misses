@@ -1,0 +1,36 @@
+# fetch https://arxiv.org/abs/2607.02235  accessed 2026-09-24
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/abs/2607.02235
+Type: HTML
+Length: 8112 chars (truncated)
+
+--- Content ---
+
+Skip to main content [](https://arxiv.org/IgnoreMe) [ ](https://arxiv.org/) [ Search ](https://arxiv.org/search) [Submit](https://arxiv.org/user/create) [Donate](https://info.arxiv.org/about/donate.html) [Log in](https://arxiv.org/login)
+
+Search arXiv
+
+Press Enter to search * [Advanced search](https://arxiv.org/search/advanced)
+
+# Computer Science > Computation and Language
+
+**arXiv:2607.02235** (cs) 
+
+[Submitted on 2 Jul 2026 ([v1](https://arxiv.org/abs/2607.02235v1)), last revised 7 Sep 2026 (this version, v2)]
+
+# Title:Challenges and Recommendations for LLM-as-a-Judge in Multilingual Settings and for Low-Resource Languages
+
+Authors:[A.Seza Doğruöz](https://arxiv.org/search/cs?searchtype=author&query=Do%C4%9Fru%C3%B6z,+A), [Xixian Liao](https://arxiv.org/search/cs?searchtype=author&query=Liao,+X), [Verena Blaschke](https://arxiv.org/search/cs?searchtype=author&query=Blaschke,+V), [Jakob Prange](https://arxiv.org/search/cs?searchtype=author&query=Prange,+J), [Senyu Li](https://arxiv.org/search/cs?searchtype=author&query=Li,+S), [David Ifeoluwa Adelani](https://arxiv.org/search/cs?searchtype=author&query=Adelani,+D+I)
+
+View a PDF of the paper titled Challenges and Recommendations for LLM-as-a-Judge in Multilingual Settings and for Low-Resource Languages, by A.Seza Do\u{g}ru\"oz and 5 other authors
+
+[View PDF](/pdf/2607.02235) [HTML (experimental)](https://arxiv.org/html/2607.02235v2)
+
+> Abstract:LLM-as-a-Judge has become the dominant evaluation paradigm for many natural language generation tasks (albeit mostly in English) due to shortcomings of conventional metrics and high correlations with human judgment. There are now attempts to extend LLM-as-a-Judge to multilingual settings including low-resource languages. However, LLMs have limited proficiency in low-resource languages, and there is often no adequate human validation in these settings. To highlight the scope of the problem and current practices, we explore the use of LLM-as-a-Judge evaluators in ACL Anthology papers focusing on multilingual settings and low-resource languages across a diverse set of tasks. Out of 650 papers mentioning LLM-as-a-judge, only 33 of them focus on low-resource or multilingual settings. Our in-depth analysis of these papers indicates inconsistent evaluation outcomes, a tendency to overtrust LLM judgments in multilingual settings, and the widespread reliance on a single judge model per study. To help the NLP community further, we conclude with a checklist of recommendations about how to use LLM-as-a-Judge in multilingual and low-resource settings 
+
+Comments: | To appear at EMNLP Findings 2026 (camera-ready version)  
+---|---  
+Subjects: |  Computation and Language (cs.CL); Artificial Intelligence (cs.AI)  
+Cite as: | [arXiv:2607.02235](https://arxiv.org/abs/2607.02235) [cs.CL]  
+  | (or  [arXiv:2607.02235v2](https://arxiv.org/abs/2607.02235v2) [cs.CL] for this version)   
+  |  <https://doi.org/10.48550/arXiv.2607.02235> Focus to learn more arXiv-issued DOI via Dat

@@ -1,0 +1,44 @@
+# search 'within-condition agreement kappa judge edited model safety evaluation prevalence pooled inflation' mode=general accessed 2026-09-24
+Search: within-condition agreement kappa judge edited model safety evaluation prevalence pooled inflation  [general via ddgs]
+Found: 10 results
+
+1. Cohen's kappa - Wikipedia
+   https://en.wikipedia.org/wiki/Cohen's_kappa
+   August 13, 2026 - Cohen's kappa coefficient (symbol κ, lowercase Greek kappa) is a statistic used to measure inter-rater reliability for qualitative or categorical data. It is generally thought to be ...
+
+2. Cohen's Kappa: Measuring Inter-Rater Agreement
+   https://numiqo.com/tutorial/cohens-kappa
+   The table of Landis and Koch (1977) is sometimes used as a rough guide, but these labels are not universal and should not replace subject-specific judgment. According to this rough guide, the calculat...
+
+3. Enhancing AI Evaluation with Cohen's Kappa Metric | Galileo
+   https://galileo.ai/blog/cohens-kappa-metric
+   March 12, 2025 - Jacob Cohen introduced the Kappa metric in 1960, addressing the shortcomings of simple percentage agreement that failed to account for chance-level matches. His formula represented a ...
+
+4. Measuring agreement of administrative data with chart data using prevalence unadjusted and adjusted kappa | BMC Medical Research Methodology | Springer Nature Link
+   https://link.springer.com/article/10.1186/1471-2288-9-5
+   January 21, 2009 - Background Kappa is commonly used when assessing the agreement of conditions with reference standard, but has been criticized for being highly dependent on the prevalence. To overco...
+
+5. The comparison of kappa and PABAK with changes of the prevalence of the... | Download Scientific Diagram
+   https://www.researchgate.net/figure/The-comparison-of-kappa-and-PABAK-with-changes-of-the-prevalence-of-the-conditions_fig1_23808057
+   A preliminary screening of 50 articles showed 98% agreement, with an excellent prevalence-adjusted bias-adjusted kappa (PABAK) of 0.96, thus meeting previous recommendations for reliability in systema...
+
+6. Why Cohen’s Kappa should be avoided as performance measure in classification | PLOS One
+   https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0222916
+   September 26, 2019 - Roughly speaking, Kappa paradox arises since for a fixed agreement between judges, the Kappa statistic penalizes judges with similar marginals compared with judges with different ...
+
+7. Kappa Statistics - an overview | ScienceDirect Topics
+   https://www.sciencedirect.com/topics/nursing-and-health-professions/kappa-statistics
+   A kappa coefficient of 1 represents perfect agreement. ... Meta-analysis: The statistical process of pooling the results from separate studies concerned with the same treatment or issue is frequently ...
+
+8. (PDF) Measuring agreement of administrative data with chart data using prevalence unadjusted and adjusted kappa
+   https://www.researchgate.net/publication/23808057_Measuring_agreement_of_administrative_data_with_chart_data_using_prevalence_unadjusted_and_adjusted_kappa
+   February 10, 2022 - There is no single statistic measuring agreement that captures the desired information for validity of administrative data. Researchers should report kappa, the prevalence, positiv...
+
+9. Kappa statistic to measure agreement beyond chance in free-response assessments | BMC Medical Research Methodology | Full Text
+   https://bmcmedresmethodol.biomedcentral.com/articles/10.1186/s12874-017-0340-6
+   April 19, 2017 - This is in line with published ... applying Eq. (2). The pooled KFR is a weighted average of individual free-response kappa statistics of patients with at least one positive observati...
+
+10. Kappa and Beyond: Is There Agreement? - Joseph R. Dettori, Daniel C. Norvell, 2020
+   https://journals.sagepub.com/doi/10.1177/2192568220911648
+   Box 1. Definitions Used to Describe the Limitations of the Kappa Statistic ... Prevalence: Probability with which a rater will classify an object into a category; this is related to the balance in Tab...
+

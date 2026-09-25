@@ -1,0 +1,140 @@
+# grep https://arxiv.org/pdf/2404.16369  pattern=/refusal keyword|string matching|false positive|Ensemble Evaluation|refusal matching/  accessed 2026-09-24
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/pdf/2404.16369
+Type: PDF
+Pattern: refusal keyword|string matching|false positive|Ensemble Evaluation|refusal matching (39 matches in 93304 chars)
+
+--- Content ---
+
+6920:...hout the response. To overcome this
+limitation we propose to take advantage of both
+suppressing refusal and eliciting affirmative with
+cosine decay to build stronger jailbreak attack.
+Previous attempts have explored suppressing re-
+fusal (Wei et al., 2023; Zhang et al., 2024), ei-
+ther by enforcing refusal keywords via prompt-
+ing or during the decoding phase. Although these
+methods can theoretically combine with learning-
+based jailbreak methods, empirically they do not
+work. Modifying the decoding stage alters the
+model’s internal architecture, which is unrealistic
+in real-world scenario, while enforcing n...
+--
+10729:...er categories exhibit various limitations
+in practical usage, including weaker jailbreak ca-
+pabilities, extra inference time, and real-world sce-
+narios deployment challenges. More detailed dis-
+cussion is relegated to Appendix A.1.
+Jailbreak evaluation. The primarily employed
+evaluation method is Refusal Matching, which
+checks whether the initial segments of the re-
+sponse contain pre-defined refusal sub-strings.
+Other methods typically involve constructing a bi-
+nary classifier or directly querying other LLMs,
+aiming to determine whether LLM generates
+harmful content (Huang et al., 2023; Mazeika
+et al., 20...
+--
+14165:...on 3), originally introduced in
+language model training stage to direct language
+model outputs from unwanted content.
+LCE(p, q) = −
+X
+i
+pi log(qi)
+(2)
+LUn(p, q) = −
+X
+i
+pi log(1 −qi)
+(3)
+Objective. The object of refusal suppression is
+achieved by minimizing the probability of tokens
+in a predefined refusal keyword list (RKL = {"as
+an", "sorry, I cannot", ...} detailed in Appendix
+A.2.3). Each refusal keyword’s token length is
+RTL. Loss function utilized for suppressing refusal
+response using Unlikelihood loss can be stated as
+below, with H as the max response length.
+Lrefusal(x1:n) =
+X
+y∈RKL
+n+H−RTL(y)
+X
+i=n+1
+LUn(y, xi:i+RTL(y))
+(4)
+3.2
+DSN: Elicit Affirmative Response
+Intuition. The second objective ...
+--
+17524:...ation study and demonstrate its universal-
+ity and transferability from Section 4.3 to Section
+4.7. Last, we compare DSN with a broader range
+of existing jailbreak methods in Section 4.6.
+
+Figure 3: Loss vs. ASR of the last step suffixes, optimized by GCG loss LGCG and DSN loss LDSN, evaluated with
+Refusal Matching and HarmBench.
+4.1
+Configuration
+Target model and datasets. We conduct exten-
+sive experiments upon a wide variety of models
+and datasets. For the target models, we choose
+multiple open-source models with varying de-
+gree of alignment, including Llama families, Vi-
+cuna family, Mistral family, Qwen...
+--
+18362:...ther details
+in Appendix A.3.2 and A.3.3.
+Evaluation procedure and metrics. To ensure
+a trustworthy evaluation, we adopt the widely
+used HarmBench classifier (Mazeika et al., 2024),
+which is a binary classifier on the harmfulness
+of the response. We also include the refusal
+string/keyword matching (Refusal Matching for
+short) results where an attack is deemed success-
+ful if the initial fixed-length segments of the model
+response do not contain pre-defined refusal strings
+(e.g. "Sorry", "I cannot"). We employ the standard
+Attack Success Rate (ASR) metric to showcase the
+superiority of our proposed methods, wh...
+--
+22782:...e baseline on Llama2 across all
+metrics. For other jailbreak susceptible models,
+both methods achieve nearly 100% ASR. ASR
+differences between metrics mainly occur in sus-
+ceptible models, where responses may typically
+initiate answering but end with disclaimers (e.g.,
+"However, it is illegal..."). Refusal Matching clas-
+sifies these as failures, while HarmBench provides
+a more nuanced assessment. Please refer to Figure
+13 in Appendix A.1.3 for one concrete example.
+Attack results on JailbreakBench. Jailbreak-
+Bench provides another reproducible, extensible
+and accessible benchmark for jailbreak attacks, us-
+...
+--
+57862:...ient-based search will be
+detailed step by step. To be specifically, the Cosine
+Decay weighting schedule and the refusal suppres-
+sion mechanism are both integrated into the LDSN
+loss function, which serves as the optimization tar-
+get, guiding the learning process of our proposed
+DSN method.
+A.2.2
+Ensemble Evaluation
+In Table 7, we list widely-applied evaluation met-
+rics, summarizing their advantages and disadvan-
+tages. To enhance the reliability of evaluation, we
+propose an Ensemble Evaluation framework. In
+this subsection, we first discuss the limitations of
+the Refusal Matching metric and then provide a
+detailed explanation of the natural language in-
+ference (NLI) contradiction evaluation algorithm,
+which serves as a method for detecting jailbreak
+responses. Then we introduce the Ensemble Eval-
+uation pipeline.
+Refusal Matching. The Refusal Matching algo-
+rithm detects w...
+--
+[29 more matches not shown]

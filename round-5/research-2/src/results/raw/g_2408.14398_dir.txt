@@ -1,0 +1,229 @@
+# grep https://arxiv.org/pdf/2408.14398  pattern=/calibration language|target language|English calibration|does not consistently|limitation|surprising/  accessed 2026-09-24
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/pdf/2408.14398
+Type: PDF
+Pattern: calibration language|target language|English calibration|does not consistently|limitation|surprising (64 matches in 114835 chars)
+
+--- Content ---
+
+40:Accepted for publication in TACL
+On the Limitations of Language Targeted Pruning: Investigating the
+Calibration Language Impact in Multilingual LLM Pruning
+Simon Kurz1,4
+Jian-Jia Chen1,4
+Lucie Flek2,4
+Zhixue Zhao3
+1Department of Computer Science, TU Dortmund University, Germany
+2Bonn-Aachen International Center for Information Technology, University of Bonn, Germany
+3...
+--
+1226:... conducts an in-depth
+investigation of the performance and inter-
+nal representation changes associated with
+pruning multilingual language models for
+monolingual applications. We present the
+first comprehensive empirical study, compar-
+ing different calibration languages for prun-
+ing multilingual models across diverse lan-
+guages, tasks, models, and SotA pruning
+techniques. We further analyze the latent
+subspaces, pruning masks, and individual
+neurons within pruned models. Our results
+reveal that while calibration...
+--
+1747:...on the target
+language effectively retains perplexity and
+yields high signal-to-noise ratios, it does not
+consistently improve downstream task per-
+formance. Further analysis of internal repre-
+sentations at three different levels highlights
+broader limitations of current pruning ap-
+proaches: While they effectively preserve
+dominant information like language-specific
+features, this is insufficient to counteract the
+loss of nuanced, language-agnostic features
+that are crucial for knowledge retention and
+r...
+--
+2959:...ng (Zhu et al., 2024a) , using only a small cali-
+bration dataset instead of big training corpora (Zhu
+et al., 2024a; Kuzmin et al., 2022; Frantar and Al-
+istarh, 2023; Kuzmin et al., 2023).
+However, current research on LLM pruning
+mostly focuses on English calibration and evalu-
+ation, despite the widespread use of multilingual
+LLMs for non-English tasks (Touvron et al., 2023;
+OpenAI et al., 2024; Jiang et al., 2023). For exam-
+ple, if we want to prune a multilingual LM for tasks
+in French, should we use calibration data in French
+or English? This disconnect between research fo-
+cus and real-world usage raises critical questions:
+How does the choice of calibration language im-
+pact pruning outcomes for multilingual LLMs
+for monolingual applications? To what extent
+and why?
+We provide the first comprehensive empirical
+study of how the calibration language affects multi-
+lingual LLM pruning. We find that calibrating on
+text in the target language minimizes pruning er-
+rors and best retains language modeling capabil-
+ities related to perplexity (Section 5.1). However,
+this does not always lead to better downstream
+task performance (Section 5.2, Section 5.3). Fur-
+ther, calibration in a differ...
+--
+4468:...ing latent sub-
+spaces, weight matrices, and individual neurons,
+1
+arXiv:2408.14398v4  [cs.CL]  17 Nov 2025
+
+Accepted for publication in TACL
+we investigate the mechanisms behind our observa-
+tions and derive the following findings.
+• Calibrating on target languages consistently
+yields the lowest perplexity (Section 5.1) but
+will not guarantee optimal downstream perfor-
+mance (Section 5.2).
+• The calibration language is unlikely to im-
+pact language-agnostic features associated
+with understanding, reasoning, and knowl-
+edge retrieval. In contrast, the preservation of
+language-specific features, such as language
+modeling capabilities related to perplexity,
+depend...
+--
+8935:...1
+T
+T
+X
+t=1
+log P(wt | w<t)
+!
+,
+(3)
+where P(wt | w<t) is the probability of the next
+token predicted by the model. Lower perplexity
+indicates more confident predictions, typically in-
+terpreted as higher fluency or syntactic correctness.
+Despite its limitations in capturing semantic or rea-
+soning quality (Meister and Cotterell, 2021; Jaiswal
+et al., 2024), PPL remains a standard first indicator
+of language modeling performance and is widely
+used to assess the effects of pruning and quantiza-
+tion (Yang e...
+--
+12990:...iversity in prompting languages improves
+performance, although Wang et al. (2025) note that
+multilingual prompting may lead to factual hal-
+lucination. However, in the context of pruning,
+it remains unknown whether calibrating on non-
+English or non-target languages will benefit the
+3
+
+Accepted for publication in TACL
+performance of pruned mLLMs.
+In short, these studies demonstrate that concepts
+derived from monolingual settings, particularly
+those focused on English, often fail to general-
+ize to multilingual...
+--
+14855:...s that emerge during translation. Similarly,
+Choenni and Titov (2025) introduce M-Wanda,
+a multilingual-aware variant of the Wanda algo-
+rithm that adjusts pruning based on per-language
+activation correlations. However, little is known
+about how the calibration language influences per-
+formance when optimizing for a specific target lan-
+guage rather than preserving general performance
+across languages.
+Much previous work on multilingual pruning
+still uses PPL as a first indicator for pruning and cal-
+ibration performance (Zeng et al., 2024; Shamrai,
+2024), despite the limitations of such surface-level
+metrics in capturing nontrivial reasoning or seman-
+tic transfer (Meister and Cotterell, 2021; Jaiswal
+et al., 2024). These studies fall short in methodi-
+cally investigating the extent of these limitations
+for the language-targeted pruning case we examine.
+Our work sheds light on this issue through a
+multi-view analysis on the calibration language
+impact on model intrinsics. Unlike previous stud-
+ies on multilingual pruning, this work examines
+language-targeted pruning calibration through a
+systematic evaluation across multiple LLMs, prun-
+ing methods, and downstream tasks.
+4
+Methodology
+We first compare how calibration languages affect
+model performance after pruning: using seven dis-
+tinct calibration languages, we prune a full-sized
+model to create seven variants. We compare their
+performance across multiple metrics: pruning error,
+signal-to-noise ratio, perplexity, and downstream
+task performance. Implementation details are given
+in Appendix A.
+Models O...
+--
+23225:... 72.10.4 59.80.5 68.00.8 67.60.4 67.90.5 36.10.6
+Table 1: Language-specific perplexity (PPL), Signal-to-noise ratio (SNR) and pruning error at 50%
+unstructured sparsity over five pruning runs. The leftmost columns show the model, pruning method, and
+calibration language (“-” for unpruned baseline). Columns report performance per evaluation language.
+The lighter the column-wise color-coding, the better. Sub- and superscripts show distances to bootstrapped
+95% confidence intervals. We omit both if negligible or one o...
+--
+23772:...GPT implementations use 262K cali-
+bration tokens. We extend this to 1M tokens for
+greater sample diversity and potentially more stable
+pruning, though prior work suggests diminishing
+returns beyond this size (Sun et al., 2024). For
+mixing different calibration languages, we mix in
+equal shares and keep the budget of 512 samples.
+We focus on two post-training pruning methods,
+Wanda (Sun et al., 2024) and SparseGPT (Frantar
+and Alistarh, 2023), and prune for 50% unstruc-
+tured sparsity, a common setting for LLMs to ...
+--
+24439:...iginal paper.
+Evaluation Downstream Tasks We compare
+the performance of pruned models calibrated on
+different languages using perplexity, SNR and prun-
+ing error on a subset of the mC4 validation set,
+and a selection of downstream tasks in different
+target languages: MKQA (Longpre et al., 2021),
+and Belebele (Bandarkar et al., 2024). Additionally,
+we evaluate on the multilingual mARC, mMMLU
+and mHellaSwag (Lai et al., 2023) datasets as
+well as their original versions, ARC (Clark et al.,
+2018), MMLU (Hendrycks ...
+--
+31913:....92.5 38.41.6 43.21.6 47.91.7 43.81.7 41.51.6 42.01.6 37.11.9 41.72.0 51.01.9 44.22.0 39.51.9
+Table 2: Average task accuracy for 50% unstructured sparsity, computed over five pruning runs. The
+leftmost columns indicate the model, pruning method, and calibration language (“-” for unpruned baseline).
+Columns report accuracy per evaluation language. The lighter the column-wise color-coding, the better.
+Sub- and superscripts show the distance to the bootstrapped 95% confidence interval (CI). We omit them if
+negligible ...
+--
+33018:...outperforms others in perplexity,
+pruning error, or SNR metrics, despite English-
+dominated pre-training and unbalanced representa-
+tion in tokenizer vocabulary. The optimal choice
+depends on the target evaluation language, with cal-
+ibrating in the target language yielding the lowest
+magnitude deviation from the full-sized model
+and lowest perplexity.
+5.2
+Downstream Task Performance
+How to select the calibration language to optimize
+performance in downstream tasks?
+Table 2 shows the models’ performance on down-
+stream tasks. Given a downstream task in a specific
+language, performance is analyzed column-wise
+among all calibration languages, where lighter col-
+ors indicate better results.
+First, for both pruning methods, the calibration
+language affects downstream performance. For
+example, when evaluating Llama-3 8B model on
+Belebele in Spanish, pruning with Wanda results in
+performan...
+--
+[39 more matches not shown]

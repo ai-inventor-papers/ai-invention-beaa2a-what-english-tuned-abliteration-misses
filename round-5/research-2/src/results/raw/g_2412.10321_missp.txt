@@ -1,0 +1,55 @@
+# grep https://arxiv.org/pdf/2412.10321  pattern=/misspecified|incomplete or unfaithful|low optimization loss|14%|80%/  accessed 2026-09-24
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/pdf/2412.10321
+Type: PDF
+Pattern: misspecified|incomplete or unfaithful|low optimization loss|14%|80% (14 matches in 56635 chars)
+
+--- Content ---
+
+1073:...ning two criteria: high prefilling attack success rates and low negative
+log-likelihood. AdvPrefix integrates seamlessly into existing jailbreak attacks to
+mitigate the previous limitations for free. For example, replacing GCG’s default
+prefixes on Llama-3 improves nuanced attack success rates from 14% to 80%,
+revealing that current safety alignment fails to generalize to new prefixes. Code and
+selected prefixes are released in github.com/facebookresearch/jailbreak-objectives.
+Warning: This paper includes language that could be considered inappropriate or
+harmful.
+1
+Introduction
+The rapid advancement of...
+--
+2539:...component of automated jailbreaks is their optimization objective. Many attacks [Zou et al.,
+2023, Liu et al., 2023a, Andriushchenko et al., 2024, Wu et al., 2025] aim to elicit a generic prefix like
+“Sure, here is [harmful request]”. However, this common objective suffers from two key limitations:
+Misspecified: even with low optimization loss, actual responses are often incomplete or unfaithful
+(Figure 1), failing to produce genuinely harmful content [Vidgen et al., 2024]. Overconstrained:
+rigid, handcrafted prefixes can be unnatural for LLMs (e.g., Llama-3 prefers “Here...” rather than
+“Sure...”), complicating optimization [Zhang et al., 2025b]. These issues are particularly acute for
+∗W...
+--
+4893:...ct [Souly et al., 2024]
+is relatively accurate, others can overestimate attack success rates (ASR) by up to 30% (Figure 2).
+We then refine evaluation by developing an improved judge and a preference-based judge to better
+capture nuanced harmfulness, which reveals that the original objective is both misspecified and
+overconstrained (§3).
+New objective (§4). We propose a new prefix-forcing objective that uses model-dependent prefixes
+selected based on two criteria: high prefilling ASR (to ensure they lead to complete and faithful
+harmful responses, reducing misspecification) and low initial negative log-lik...
+--
+6053:...ss Llama-2, 3, 3.1, and Gemma-2. For instance, GCG’s ASR
+on Llama-3 improves from 16% to 70%, highlighting that current safety alignments struggle to
+generalize to unseen prefixes. By addressing misspecification, AdvPrefix uniquely benefits from
+stronger optimization, enabling further ASR gains (to 80% on Llama-3 with full prompt optimization).
+Preference evaluations also show responses elicited by our objective are substantially more harmful
+(comparable to some uncensored LLMs)3. Our objective improves jailbreak attacks for free, enables
+attacking reasoning LLMs (Figure 9), and is useful for fut...
+--
+8375:... [2024], labeled data released in our codebase).
+Evaluation Challenges with Newer LLMs. Newer LLMs often exhibit deeper alignment [Qi et al.,
+2024], tending to self-correct after an initial affirmative prefix rather than directly refusing [Zhang
+et al., 2024] (Section A). This behavior, emphasizing incomplete or unfaithful responses over outright
+refusals, exacerbates inaccuracies in existing judges. As shown in Figure 2 (left), current judges can
+significantly overestimate ASR (e.g., from a 10% ground truth to nearly 40% on Gemma-2), with
+StrongReject being relatively more accurate. This overestimation stems primari...
+--
+[6 more matches not shown]

@@ -1,0 +1,51 @@
+{
+ "draft_audited": "iter_4/gen_report_text/gen_report_text/paper_draft.md",
+ "lint_exit_code": 0,
+ "recompute_exit_code": 0,
+ "struck_or_untraceable": [],
+ "structural_checks": [
+  {
+   "check": "exp13 generation count",
+   "value": 10000,
+   "expected": 10000,
+   "pass": true,
+   "source": "round-4/experiment-13/src/results/per_item.csv"
+  },
+  {
+   "check": "exp14 generation count",
+   "value": 12024,
+   "expected": 12024,
+   "pass": true,
+   "source": "round-4/experiment-14/src/results/per_item.parquet"
+  },
+  {
+   "check": "exp10 per-item outcomes",
+   "value": 10690,
+   "expected": 10690,
+   "pass": true,
+   "source": "round-3/experiment-10/src/results/per_item.parquet"
+  },
+  {
+   "check": "pooled judged generations (eval2 reconciliation)",
+   "value": 56866,
+   "expected": 56866,
+   "pass": true,
+   "source": "round-4/evaluation-2/src/results/pooled_generations.parquet"
+  }
+ ],
+ "openrouter_spend_usd": 0.0,
+ "purchase_decision": "no labels bought: the exp11 English re-expression is reported from on-disk gpt-4.1 pools (65 EN within-edited pairs, kappa 0.226); tagged JUDGE_SENSITIVE rather than repaired",
+ "task_prompt_note": "this executor received a truncated task prompt; the plan was recovered from gen_plan_evaluation_3 by matching dispatch order in the run log",
+ "third_party_modules_loaded_by_recompute": [
+  "_cython_3_0_11",
+  "_sysconfigdata__linux_x86_64-linux-gnu",
+  "_virtualenv",
+  "cython_runtime",
+  "dateutil",
+  "numpy",
+  "pandas",
+  "pyarrow",
+  "pytz",
+  "six"
+ ]
+}

@@ -1,0 +1,40 @@
+# fetch https://arxiv.org/abs/2601.18306  accessed 2026-09-24
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/abs/2601.18306
+Type: HTML
+Length: 7939 chars (truncated)
+
+--- Content ---
+
+Skip to main content [](https://arxiv.org/IgnoreMe) [ ](https://arxiv.org/) [ Search ](https://arxiv.org/search) [Submit](https://arxiv.org/user/create) [Donate](https://info.arxiv.org/about/donate.html) [Log in](https://arxiv.org/login)
+
+Search arXiv
+
+Press Enter to search * [Advanced search](https://arxiv.org/search/advanced)
+
+# Computer Science > Computation and Language
+
+**arXiv:2601.18306** (cs) 
+
+[Submitted on 26 Jan 2026]
+
+# Title:Calibrating Beyond English: Language Diversity for Better Quantized Multilingual LLM
+
+Authors:[Everlyn Asiko Chimoto](https://arxiv.org/search/cs?searchtype=author&query=Chimoto,+E+A), [Mostafa Elhoushi](https://arxiv.org/search/cs?searchtype=author&query=Elhoushi,+M), [Bruce A. Bassett](https://arxiv.org/search/cs?searchtype=author&query=Bassett,+B+A)
+
+View a PDF of the paper titled Calibrating Beyond English: Language Diversity for Better Quantized Multilingual LLM, by Everlyn Asiko Chimoto and 2 other authors
+
+[View PDF](/pdf/2601.18306) [HTML (experimental)](https://arxiv.org/html/2601.18306v1)
+
+> Abstract:Quantization is an effective technique for reducing the storage footprint and computational costs of Large Language Models (LLMs), but it often results in performance degradation. Existing post-training quantization methods typically use small, English-only calibration sets; however, their impact on multilingual models remains underexplored. We systematically evaluate eight calibration settings (five single-language and three multilingual mixes) on two quantizers (GPTQ, AWQ) on data from 10 languages. Our findings reveal a consistent trend: non-English and multilingual calibration sets significantly improve perplexity compared to English-only baselines. Specifically, we observe notable average perplexity gains across both quantizers on Llama3.1 8B and Qwen2.5 7B, with multilingual mixes achieving the largest overall reductions of up to 3.52 points in perplexity. Furthermore, our analysis indicates that tailoring calibration sets to the evaluation language yields the largest improvements for individual languages, underscoring the importance of linguistic alignment. We also identify specific failure cases where certain language-quantizer combinations degrade performance, which we trace to differences in activation range distributions across languages. These results highlight that static one-size-fits-all calibration is suboptimal and that tailoring calibration data, both in language and diversity, plays a crucial role in robustly quantizing multilingual LLMs. 
+
+Comments: | Accepted to EACL 2026 Main Conference  
+---|---  
+Subjects: |  Computation and Language (cs.CL); Artificial Intelligence (cs.AI)  
+Cite as: | [arXiv:2601.18306](https://arxiv.org/abs/2601.18306) [cs.CL]  
+  | (or  [arXiv:2601.18306v1](https://arxiv.org/abs/2601.18306v1) [cs.CL] for this version)   
+  |  <https://doi.org/10.48550/arXiv.2601.18306> Focus to learn more arXiv-issued DOI via DataCite  
+  
+## Submission history
+
+From: Everlyn Asi

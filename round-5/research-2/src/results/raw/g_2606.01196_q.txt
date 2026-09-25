@@ -1,0 +1,40 @@
+# grep https://arxiv.org/html/2606.01196  pattern=/action failure|representation is present|87\.9|43\.9|recalibrat/  accessed 2026-09-24
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/html/2606.01196
+Type: HTML
+Pattern: action failure|representation is present|87\.9|43\.9|recalibrat (12 matches in 80195 chars)
+
+--- Content ---
+
+2808:...of the Refusal Judge
+  18. G Subspace Rank Sweep
+  19. H Compute Budget
+  20. I Ethical Considerations
+  21. J AI Usage Disclosure
+
+
+
+[ License: CC BY 4.0 ](https://info.arxiv.org/help/license/index.html#licenses-available)
+
+arXiv:2606.01196v1 [cs.CL] 31 May 2026
+
+# Low-Resource Safety Failures Are Action Failures,   
+Not Representation Failures
+
+Rashad Aziz  Ikhlasul Akmal Hanif  Affiliation: Mohamed bin Zayed University of Artificial Intelligencerashadaziz.p@gmail.com, {ikhlasul.hanif,fajri.koto}@mbzuai.ac.ae Fajri Koto  Affiliation: Mohamed bin Zayed University of Artificial Intelligencerashadaziz.p@gmai...
+--
+3816:...oss-lingually. We diagnose where transfer breaks down. Across Qwen2.5-7B, Gemma-2-9B, and Llama-3.1-8B on 23 languages, the harmfulness direction extracted from high-resource activations linearly separates harmful from harmless low-resource prompts nearly as well as high-resource ones. The relevant representation is present. Yet harmful refusal drops from 87.9% to 43.9%. The model fails to convert the representation into refusal. What fails to transfer is calibration of the safety decision, not the underlying representation. We exploit this by recalibrating, rather than retraining, a high-resource gate: a low-rank logistic readout with its decision threshold reset using as few as 1 to 4 target-language examples per class. The gate routes between refusal steering and harmfulness-direction ablation, substantially raising mean refusal selectivity (Δ\Delta = harmful −- harmless refusal) from 33.6 for the strongest adapted baseline to 54.5 while preserving MMLU utility. These results suggest that some low-resource safety failures can be repaired by recalibrating existing representations rather than learning new ones. Our code is released: <https://github.com/rashadaziz/low-resource-safety>.
+
+Figure 1:  Refusal degrades with lower language resource tier. Macro refusal rates across Qwen2.5-7B-Instruct, Gemma-2-9B-it, and Llama-3.1-8B-Instruct show harmful...
+--
+7466:...urce prompts produce lower projections onto the harmfulness direction, so the same latent evidence less reliably triggers the model’s implicit refusal threshold.
+
+This diagnosis points to a simple intervention. We introduce a few-shot latent gate that reuses the high-resource harmfulness signal and recalibrates its decision threshold using a small number of target-language examples, avoiding the need to learn a new low-resource direction from many examples. The gate routes between refusal steering and harmfulness-direction ablation, improving selective refusal across most model-language pairs, transferr...
+--
+10621:...multilingual safety knowledge through weight updates or a separate text-level guard, we diagnose the gap in the residual stream and show that harmful–harmless information is already present in lower-resource activations. Our intervention then reuses this high-resource harmfulness signal and lightly recalibrates how it is routed into refusal, improving low-resource safety without updating model weights or training a new multilingual safety model.
+
+#### Mechanistic Interpretability.
+
+LLMs often encode high-level concepts in latent directions Zou et al. (2025); Ying et al. (2026); Lu et al. (2026). For ref...
+--
+[4 more matches not shown]

@@ -1,0 +1,44 @@
+# search 'edit strength cannot compensate for layer choice refusal ablation' mode=general accessed 2026-09-24
+Search: edit strength cannot compensate for layer choice refusal ablation  [general via ddgs]
+Found: 10 results
+
+1. Surgical Refusal Ablation: Disentangling Safety from ...
+   https://arxiv.org/pdf/2601.08489
+   We scale edit strength using a Semantic Energy Proxy to re- flect refusal-relevant signal magnitude at layer ℓ. One simple choice is to set γℓ∝∥a(dec)...
+
+2. Surgical Refusal Ablation: Disentangling Safety from Intelligence via Concept-Guided Spectral Cleaning
+   https://arxiv.org/html/2601.08489v1
+   January 13, 2026 - We scale edit strength using a Semantic Energy Proxy to reflect refusal-relevant signal magnitude at layer...
+
+3. (PDF) Surgical Refusal Ablation: Disentangling Safety from Intelligence via Concept-Guided Spectral Cleaning
+   https://www.researchgate.net/publication/399754691_Surgical_Refusal_Ablation_Disentangling_Safety_from_Intelligence_via_Concept-Guided_Spectral_Cleaning
+   January 17, 2026 - Choosing γ(Semantic Energy Proxy). We scale edit strength using a Semantic Energy Proxy to re- ﬂect refusal-relevant signal magnitude at layer ℓ. One simple choice is to set γℓ∝ ∥a(...
+
+4. Abliteration: Removing refusal behavior from an LLM - CS/NPRE 398, Applied LLMs
+   https://appliedllms.web.illinois.edu/72_Students_Choice/20_abliteration/
+   Refusal is installed by alignment training — often via a small number of “refuse this” examples in the instruction-tuning data. The direction is layer-robust. The same direction (or near-same) emerges...
+
+5. Refusal in LLMs is mediated by a single direction
+   https://www.lesswrong.com/posts/jGuXSZgv6qfdhMCuJ/refusal-in-llms-is-mediated-by-a-single-direction
+   Note that the average projection ... ^r was extracted from. To bypass refusal, we ablate the "refusal direction" everywhere (at all layers and positions), effectively preventing the model from ever re...
+
+6. Refusal vector ablation | abliteration.ai
+   https://abliteration.ai/glossary/refusal-vector-ablation
+   January 24, 2026 - Lets teams tune refusal behavior with transparent, testable edits. ... No. It is a deterministic edit to activations, not a gradient-based weight update. ... Yes. Because the edit i...
+
+7. How Abliteration Works: Refusal Removal Without Training
+   https://www.orcarouter.ai/blog/how-abliteration-works
+   August 17, 2026 - If you want selective refusal — refuse weapons, answer everything else — a LoRA or DPO fine-tune, or a system-prompt guardrail, gives you a control surface. Abliteration is a blunt, ...
+
+8. Dynamic Abliteration: Non-Destructive Refusal Suppression via Multi-Layer Engram Steering
+   https://blog.madhukaraphatak.in/non-destructive-refusal-supression-using-engram
+   Instead of modifying parameter weights, this approach intercepts intermediate residual streams at runtime across Layers using PyTorch forward hooks. We demonstrate this with Qwen3-4B model as Proof of...
+
+9. Refusal in Language Models Is Mediated by a Single Direction Andy Arditi∗
+   https://proceedings.neurips.cc/paper_files/paper/2024/file/f545448535dfde4f9786555403ab7c49-Paper-Conference.pdf
+   To bypass refusal, we perform directional ablation on the “refusal direction” ˆr, ablating it from · activations at all layers and all token positions....
+
+10. LLM Layers Immediately Correct Each Other
+   https://arxiv.org/html/2609.07876
+   \alpha and correction strength is approximately linear (Figure 3(b)), and this pattern appears consistently across all layers where TLCM is active, with complete results in Appendix F. Our experiments...
+

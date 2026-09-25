@@ -1,0 +1,23 @@
+# grep https://arxiv.org/abs/2603.06594  pattern=/Comments:|Submitted/  accessed 2026-09-24
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/abs/2603.06594
+Type: HTML
+Pattern: Comments:|Submitted (1 matches in 8230 chars)
+
+--- Content ---
+
+407:...ate](https://info.arxiv.org/about/donate.html) [Log in](https://arxiv.org/login)
+
+Search arXiv
+
+Press Enter to search * [Advanced search](https://arxiv.org/search/advanced)
+
+# Computer Science > Computation and Language
+
+**arXiv:2603.06594** (cs) 
+
+[Submitted on 4 Feb 2026 ([v1](https://arxiv.org/abs/2603.06594v1)), last revised 15 Mar 2026 (this version, v2)]
+
+# Title:A Coin Flip for Safety: LLM Judges Fail to Reliably Measure Adversarial Robustness
+
+Authors:[Leo Schwinn](https://arxiv.org/search/cs?sea...

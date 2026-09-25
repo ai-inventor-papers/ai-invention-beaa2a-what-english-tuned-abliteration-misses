@@ -1,0 +1,122 @@
+# grep https://arxiv.org/pdf/2606.01322  pattern=/judge|native speaker|agreement|kappa|annotat/  accessed 2026-09-24
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/pdf/2606.01322
+Type: PDF
+Pattern: judge|native speaker|agreement|kappa|annotat (140 matches in 94444 chars)
+
+--- Content ---
+
+1362:...pt evasiveness on model safety.
+Across closed and open models, prompting in
+African languages reduces refusal relative to
+English, with culturally adapted prompts lead-
+ing to least refusal. The evaluation also surfaces
+two structural limitations: model comprehen-
+sion failures and reduced LLM-as-a-judge reli-
+ability in LRLs. To capture the first, we intro-
+duce Deflection alongside Refused and Jailbro-
+ken; to assess the second, we validate outputs
+with human annotations, showing that judge-
+human agreement drops in lower-resource lan-
+guages and less commonly supported scripts.
+1
+Introduction
+Large Language Models (LLMs) have achieved
+strong performance across a wide range of NLP
+tasks, yet their deployment in real-world settings
+depends critically on their safety behavior (Ouyang
+et al., 2022; Bengi...
+--
+3295:...uce TUKABENCH, a jail-
+breaking benchmark for seven African languages
+that extends JailbreakBench (JBB) (Chao et al.,
+2024), the widely used benchmark of 100 harmful
+and 100 benign English prompts for evaluating the
+susceptibility of LLMs to jailbreak attacks, with re-
+sponses assessed via LLM-as-a-judge (Zheng et al.,
+2023). Rather than relying on direct translation, we
+construct TUKABENCH through four complemen-
+tary settings designed to capture both linguistic and
+cultural dimensions of safety: (1) Human trans-
+lation of JBB harmful and benign prompts into
+the target African languages; (2) Engli...
+--
+4013:...ed entities and references; (3) Human
+curated prompts validated through interaction
+with GPT-5.2 to filter out easily detectable pat-
+terns and produce more challenging adversarial in-
+puts; and (4) Code-switched prompts combining
+African languages with English.
+Evaluating models within an LLM-as-a-judge
+framework, we find that African-language prompts
+reduce refusal relative to English, and that cul-
+turally adapted prompts result in the least refusal
+1
+arXiv:2606.01322v2  [cs.CL]  22 Sep 2026
+
+of harmful prompts. This suggests that cultural
+grounding shapes model vulnerability beyond lan-
+guage resource level alone. The evaluation also
+exposes two structural limitations of current safety
+assessment in low-resource settings: limited lan-
+guage understanding in the models themselves, and
+reduced reliability of LLM-as-a-judge methods for
+LRLs (Hada et al., 2024b,a). To keep the analysis
+grounded, we restrict our evaluation to the more
+resourced African languages, leaving extremely
+low-resource cases outside the present scope.
+To mitigate the impact of these limitations, we
+validate a subset of model outputs through huma...
+--
+12527:...gn set serves a dual purpose: measuring
+over-refusal and surfacing comprehension failures,
+since refusal on benign inputs can indicate that the
+model failed to understand the prompt rather than
+making an appropriate safety judgment.
+Afri-JBB-Culture.
+A culturally adapted version
+of JBB-Harmful. Two native speakers first adapt
+the English sentences to African contexts by intro-
+ducing culturally relevant named entities. Since
+the original JBB prompts contain relatively few
+named entities, the adapted versions are typically
+richer and not directly equivalent to their source.
+The adapted English prompts are th...
+--
+13665:...lish prompts
+were authored by human data collectors based in
+Nigeria, where three of our target languages are
+spoken. GPT-5.2 did not author these prompts; it
+was used only as a construction-time filter to re-
+3
+
+move prompts that it trivially refused, retaining
+more challenging adversarial inputs. Annotators
+were deliberately not exposed to JBB during this
+process to avoid stylistic anchoring.
+The retained prompts were subsequently trans-
+lated and culturally localized by native speakers
+of each target language. During this stage, annota-
+tors adapted named entities, locations, institutions,
+and other contextual references where appropri-
+ate, including adaptation for East and Southern
+African contexts. Thus, although the initial En-
+glish prompts were collected in Nigeria, the fi...
+--
+16460:...kes the source text and its translation as input
+and outputs a score between 0 and 1, where higher
+scores indicate better translation quality. We flag
+translations with scores below 0.50 as LOW, scores
+from 0.50 to 0.64 as MEDIUM, and scores of 0.65
+or above as HIGH. These flags are surfaced in the
+annotation interface to help post-editors prioritize
+their effort. We make use of HumanSignal platform
+for annotation.
+Human Post-Editing and Cultural Adaptation.
+Two translators per language correct machine trans-
+lation errors and explicitly log the types of er-
+rors encountered. For Afri-JBB-Harm and Afri-
+JBB-Benign, post-editors produce faithful transla-
+tions that preserve the original Western context and...
+--
+[128 more matches not shown]
