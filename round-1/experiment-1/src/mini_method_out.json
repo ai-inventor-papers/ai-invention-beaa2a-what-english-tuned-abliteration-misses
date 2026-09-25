@@ -469,7 +469,7 @@
         "cos_harmless_mean_all": 0.9828776717185974
       },
       "caveat": "Cosines are GEOMETRY ONLY. Both models share the Gemma-3 architecture and tokenizer, so the coordinates are nominally comparable, but a high cosine between two models' difference-of-means vectors is not evidence of a shared causal mechanism, and the cos_harmless_mean column shows how much agreement is generic representation overlap.",
-      "per_layer_file": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/results/direction_geometry.json"
+      "per_layer_file": "./results/direction_geometry.json"
     },
     "selection": {
       "gams": {
@@ -551,7 +551,7 @@
         ],
         "status": "RESUMABLE_AT_116",
         "matched_budget_note": "both models were run to exactly 116 COMPLETE trials; GaMS additionally carries one PRUNED trial (116) from the SIGINT that enforced the cap, excluded everywhere",
-        "journal": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/checkpoints/gams/cjvt--GaMS3-12B-Instruct.jsonl",
+        "journal": "./checkpoints/gams/cjvt--GaMS3-12B-Instruct.jsonl",
         "resume_cmd": "uv run method.py --stages phaseB_gams"
       },
       "gemma": {
@@ -559,7 +559,7 @@
         "pruned_trials": [],
         "status": "RESUMABLE_AT_116",
         "matched_budget_note": "both models were run to exactly 116 COMPLETE trials; GaMS additionally carries one PRUNED trial (116) from the SIGINT that enforced the cap, excluded everywhere",
-        "journal": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/checkpoints/gemma/google--gemma-3-12b-it.jsonl",
+        "journal": "./checkpoints/gemma/google--gemma-3-12b-it.jsonl",
         "resume_cmd": "uv run method.py --stages phaseB_gemma"
       }
     },
@@ -1018,7 +1018,7 @@
       "chrF_median": 70.08537310307162,
       "chrF_min": 26.196328986345378,
       "n_flagged_chrF_lt40": 4,
-      "file": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/data/sl_harmful_behaviors_test100.json"
+      "file": "./data/sl_harmful_behaviors_test100.json"
     },
     "sl_marker_validation": {
       "n_labelled": 40,
@@ -1725,7 +1725,7 @@
     ],
     "method_name": "Matched Heretic abliteration of two sibling 12B models + sibling screen + bilingual swap test",
     "baseline": "the unedited original of each model, scored in the same pipeline (same 4-bit quantization, batch size, chat template, greedy decoding); plus a second baseline - the sibling's selected parameters applied to the same model (swap) - and a params-only cross-validated predictor as the baseline for the A3 agreement claim",
-    "per_example_files": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/results/eval",
+    "per_example_files": "./results/eval",
     "audit_efficiency_independent": {
       "audit_n_edits": 60,
       "gams_efficiency_median": 1448.7678459159602,

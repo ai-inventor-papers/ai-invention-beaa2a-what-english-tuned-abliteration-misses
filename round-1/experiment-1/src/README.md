@@ -56,11 +56,11 @@ Absolute workspace paths of the kept artifacts (they are the only copies — the
 files ≥ 100 MB, but everything kept here is far smaller):
 
 ```
-/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/checkpoints/gams/cjvt--GaMS3-12B-Instruct.jsonl
-/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/checkpoints/gemma/google--gemma-3-12b-it.jsonl
-/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/adapters/
-/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/directions/
-/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/results/
+./checkpoints/gams/cjvt--GaMS3-12B-Instruct.jsonl
+./checkpoints/gemma/google--gemma-3-12b-it.jsonl
+./adapters/
+./directions/
+./results/
 ```
 
 ## How to run
