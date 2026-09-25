@@ -1,0 +1,73 @@
+{
+ "reason": "T7 failed for the frozen energy-matched random controls: destructive collateral (KL/FLORES NLL) because they were energy-matched on winsorized rather than raw residuals; amendment adds raw-energy-matched randoms as extra conditions (abl:C6r-C11r, add:R*r); the frozen conditions are kept and reported unchanged.",
+ "written_at": "2026-09-23T17:42:10",
+ "directions_npz": "../results/gams3/random_raw.npz",
+ "directions_sha256": "fcc67ab5cb906251af97e34f536ac1deae504cdb0eb343ead5319611e6aa96f1",
+ "meta": {
+  "h_star": 34,
+  "pos_star": 4,
+  "target_raw_energy_dEN": 38845883.463027455,
+  "target_raw_energy_uSL": 10939299.831356144,
+  "raw_energy_frozen": {
+   "dEN": 38845883.463027455,
+   "dSL": 44737721.76708377,
+   "uSL": 10939299.831356144,
+   "uEN": 5047460.3597803665,
+   "R1": 43398839.8918148,
+   "R2": 51238106.49999023,
+   "R3": 40368971.17649522,
+   "Q1": 13099368.03277762,
+   "Q2": 9597930.949568415,
+   "Q3": 13954045.162103826,
+   "UNOISE_SL": 739897.0259712267
+  },
+  "R1r": {
+   "gamma": 1.0,
+   "tried": 122000,
+   "rel_err": 0.05714949919935919,
+   "matched": true,
+   "cos_dEN": -0.2497211459624228,
+   "cos_R_frozen": 0.5207955047296218
+  },
+  "Q1r": {
+   "gamma": 0.0,
+   "tried": 2000,
+   "rel_err": 0.008404475011582813,
+   "matched": true,
+   "cos_dEN": -7.39797636563907e-10,
+   "cos_uSL": -0.06374062396914987
+  },
+  "R2r": {
+   "gamma": 1.0,
+   "tried": 122000,
+   "rel_err": 0.02764008844278476,
+   "matched": true,
+   "cos_dEN": 0.467502160176211,
+   "cos_R_frozen": -0.5652587006117178
+  },
+  "Q2r": {
+   "gamma": 0.0,
+   "tried": 2000,
+   "rel_err": 0.03460103796021052,
+   "matched": true,
+   "cos_dEN": 4.490343243071246e-10,
+   "cos_uSL": -0.02071355901325885
+  },
+  "R3r": {
+   "gamma": 0.5,
+   "tried": 42000,
+   "rel_err": 0.09195562481213493,
+   "matched": true,
+   "cos_dEN": 0.3429366553940706,
+   "cos_R_frozen": 0.3563443694229004
+  },
+  "Q3r": {
+   "gamma": 0.0,
+   "tried": 4000,
+   "rel_err": 0.0908559297717153,
+   "matched": true,
+   "cos_dEN": 7.74179599054162e-10,
+   "cos_uSL": -0.013833694006131006
+  }
+ }
+}

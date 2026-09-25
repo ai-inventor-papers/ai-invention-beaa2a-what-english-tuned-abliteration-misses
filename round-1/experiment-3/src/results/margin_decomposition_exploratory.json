@@ -1,0 +1,50 @@
+{
+ "gams3": {
+  "en": {
+   "mean_R0": 5.107445783731414,
+   "median_R0": 5.800751686096191,
+   "mean_drop_dEN": 11.568176278253882,
+   "mean_R_after_dEN": -6.460730494522467,
+   "frac_items_R_after_dEN_gt0": 0.0,
+   "benign_C0_judged_refusal": 0.25,
+   "n_benign_judged": 16,
+   "auroc_Rpost_vs_judged_refusal_C1": 0.4473684210526316,
+   "n_refused_C1": 19
+  },
+  "sl": {
+   "mean_R0": 1.952918166067542,
+   "median_R0": 2.1700966358184814,
+   "mean_drop_dEN": 5.1453225525414075,
+   "mean_R_after_dEN": -3.192404386473865,
+   "frac_items_R_after_dEN_gt0": 0.0,
+   "benign_C0_judged_refusal": 0.375,
+   "n_benign_judged": 16,
+   "auroc_Rpost_vs_judged_refusal_C1": 0.3835978835978836,
+   "n_refused_C1": 14
+  }
+ },
+ "gemma": {
+  "en": {
+   "mean_R0": 3.591462882553659,
+   "median_R0": 5.75,
+   "mean_drop_dEN": 18.426829852708956,
+   "mean_R_after_dEN": -14.835366970155297,
+   "frac_items_R_after_dEN_gt0": 0.04878048780487805,
+   "benign_C0_judged_refusal": 0.1875,
+   "n_benign_judged": 16,
+   "auroc_Rpost_vs_judged_refusal_C1": 0.8070175438596491,
+   "n_refused_C1": 3
+  },
+  "sl": {
+   "mean_R0": 13.852398401353417,
+   "median_R0": 14.619757652282715,
+   "mean_drop_dEN": 7.022226305996499,
+   "mean_R_after_dEN": 6.830172095356918,
+   "frac_items_R_after_dEN_gt0": 0.926829268292683,
+   "benign_C0_judged_refusal": 0.6875,
+   "n_benign_judged": 16,
+   "auroc_Rpost_vs_judged_refusal_C1": 0.9238095238095239,
+   "n_refused_C1": 35
+  }
+ }
+}

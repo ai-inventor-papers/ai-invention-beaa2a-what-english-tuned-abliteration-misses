@@ -1,0 +1,18 @@
+15:47:57|INFO   |torch._native triton overrides deregistered
+15:47:58|INFO   |llm-qc: 5630 forward (cached mostly), 2475 LLM outputs to back-translate
+/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_dataset_1/.venv/lib/python3.12/site-packages/transformers/utils/hub.py:111: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+15:50:22|INFO   |loaded madlad in 53s
+15:50:22|INFO   |madlad: 2869 to translate (8105 requested)
+15:50:38|INFO   |madlad en->sl: 260/260 (15.8 texts/s)
+15:50:56|INFO   |madlad sl->en: 512/2609 (29.0 texts/s)
+15:51:07|INFO   |madlad sl->en: 1024/2609 (47.1 texts/s)
+15:51:25|INFO   |madlad sl->en: 1536/2609 (28.7 texts/s)
+15:51:39|INFO   |madlad sl->en: 2048/2609 (36.4 texts/s)
+15:51:52|INFO   |madlad sl->en: 2560/2609 (39.6 texts/s)
+15:51:55|INFO   |madlad sl->en: 2609/2609 (13.3 texts/s)
+15:52:27|INFO   |loaded nllb in 31s
+15:52:27|INFO   |nllb: 401 to translate (5630 requested)
+15:52:35|INFO   |nllb en->sl: 260/260 (32.4 texts/s)
+15:52:40|INFO   |nllb sl->en: 141/141 (28.4 texts/s)
+15:52:40|INFO   |llm-qc translation done

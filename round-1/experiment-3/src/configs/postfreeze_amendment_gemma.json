@@ -1,0 +1,73 @@
+{
+ "reason": "T7 failed for the frozen energy-matched random controls: destructive collateral (KL/FLORES NLL) because they were energy-matched on winsorized rather than raw residuals; amendment adds raw-energy-matched randoms as extra conditions (abl:C6r-C11r, add:R*r); the frozen conditions are kept and reported unchanged.",
+ "written_at": "2026-09-23T17:37:56",
+ "directions_npz": "../results/gemma/random_raw.npz",
+ "directions_sha256": "41132d81534d4a748d39443b9788657941bf9f740861049cee59fbf015878ed7",
+ "meta": {
+  "h_star": 20,
+  "pos_star": 4,
+  "target_raw_energy_dEN": 424482.9555979129,
+  "target_raw_energy_uSL": 12017.487075024283,
+  "raw_energy_frozen": {
+   "dEN": 424482.9555979129,
+   "dSL": 342110.8103820673,
+   "uSL": 12017.487075024283,
+   "uEN": 94389.65272826576,
+   "R1": 1587938.273877228,
+   "R2": 3828079.628854221,
+   "R3": 1108059.6502240216,
+   "Q1": 7404.628187137267,
+   "Q2": 372809.3085242478,
+   "Q3": 21465.484757236154,
+   "UNOISE_SL": 12657.356090353413
+  },
+  "R1r": {
+   "gamma": 0.0,
+   "tried": 2000,
+   "rel_err": 0.00017198591749378878,
+   "matched": true,
+   "cos_dEN": 0.013717916292156579,
+   "cos_R_frozen": -0.0783347792861985
+  },
+  "Q1r": {
+   "gamma": 0.0,
+   "tried": 2000,
+   "rel_err": 0.0012470579773737889,
+   "matched": true,
+   "cos_dEN": 1.6945557764687414e-09,
+   "cos_uSL": -0.03757702995495077
+  },
+  "R2r": {
+   "gamma": 0.0,
+   "tried": 2000,
+   "rel_err": 0.0008009102419557212,
+   "matched": true,
+   "cos_dEN": -0.10065680335322212,
+   "cos_R_frozen": -0.037910700766806915
+  },
+  "Q2r": {
+   "gamma": 0.0,
+   "tried": 2000,
+   "rel_err": 0.0036466377365602654,
+   "matched": true,
+   "cos_dEN": 2.7572569180646926e-10,
+   "cos_uSL": 0.0012514518608138275
+  },
+  "R3r": {
+   "gamma": 0.0,
+   "tried": 2000,
+   "rel_err": 0.0006598663782910741,
+   "matched": true,
+   "cos_dEN": 0.1440678775718088,
+   "cos_R_frozen": 0.15950304490399778
+  },
+  "Q3r": {
+   "gamma": 0.0,
+   "tried": 2000,
+   "rel_err": 0.007770957699427705,
+   "matched": true,
+   "cos_dEN": 2.901101147865184e-10,
+   "cos_uSL": 0.045019159874686646
+  }
+ }
+}

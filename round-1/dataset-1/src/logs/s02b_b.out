@@ -1,0 +1,11 @@
+15:23:54|INFO   |OpenRouter client: 2192 cached responses, $1.1267 spent so far
+Warning : `load_model` does not return WordVectorModel or SupervisedModel any more, but a `FastText` object which is very similar.
+15:24:01|INFO   |[budget] screenspec: 1692 calls x ~45/40 tok on google/gemini-2.5-flash = ~$0.192; spent $1.127
+15:24:04|WARNING|screenspec_B: provider content block -> '' ({'message': 'Gemini blocked the request: PROHIBITED_CONTENT', 'code': 403, 'metadata': {'error_type')
+15:24:08|WARNING|screenspec_B: provider content block -> '' ({'message': 'Gemini blocked the request: PROHIBITED_CONTENT', 'code': 403, 'metadata': {'error_type')
+15:24:09|WARNING|screenspec_B: provider content block -> '' ({'message': 'Gemini blocked the request: PROHIBITED_CONTENT', 'code': 403, 'metadata': {'error_type')
+15:24:12|WARNING|screenspec_B: provider content block -> '' ({'message': 'Gemini blocked the request: PROHIBITED_CONTENT', 'code': 403, 'metadata': {'error_type')
+15:24:16|WARNING|screenspec_B: provider content block -> '' ({'message': 'Gemini blocked the request: PROHIBITED_CONTENT', 'code': 403, 'metadata': {'error_type')
+15:25:32|WARNING|screenspec_B: provider content block -> '' ({'message': 'Gemini blocked the request: PROHIBITED_CONTENT', 'code': 403, 'metadata': {'error_type')
+15:25:45|INFO   |screenspec: 1692 translated, 129 flagged -> fallback gpt-4.1
+15:25:50|INFO   |LLM spend so far: $1.2852

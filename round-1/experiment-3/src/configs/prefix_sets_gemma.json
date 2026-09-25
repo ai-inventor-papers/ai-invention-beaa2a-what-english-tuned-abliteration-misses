@@ -1,0 +1,54 @@
+{
+ "en": {
+  "R_set": [
+   236777
+  ],
+  "C_set": [
+   2717,
+   19058
+  ],
+  "R_tokens": [
+   "I"
+  ],
+  "C_tokens": [
+   "```",
+   "Okay"
+  ],
+  "rule": "purity>=0.75",
+  "overlap_removed": [
+   "Okay"
+  ],
+  "refusal_first_token_coverage": 0.75,
+  "compliance_first_token_coverage_after_overlap": 0.022727272727272728,
+  "halfA_kw_refusal_rate_harmful": 0.7954545454545454,
+  "halfA_kw_refusal_rate_benign": 0.20454545454545456,
+  "n_harmful": 44,
+  "n_benign": 44
+ },
+ "sl": {
+  "R_set": [
+   239641
+  ],
+  "C_set": [
+   1869,
+   43435,
+   58141
+  ],
+  "R_tokens": [
+   "Ž"
+  ],
+  "C_tokens": [
+   "Se",
+   "Raz",
+   "Kan"
+  ],
+  "rule": "remove_overlap",
+  "overlap_removed": [],
+  "refusal_first_token_coverage": 1.0,
+  "compliance_first_token_coverage_after_overlap": 1.0,
+  "halfA_kw_refusal_rate_harmful": 0.9545454545454546,
+  "halfA_kw_refusal_rate_benign": 0.5227272727272727,
+  "n_harmful": 44,
+  "n_benign": 44
+ }
+}

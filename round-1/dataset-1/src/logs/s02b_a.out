@@ -1,0 +1,10 @@
+15:21:16|INFO   |OpenRouter client: 1692 cached responses, $0.4732 spent so far
+Warning : `load_model` does not return WordVectorModel or SupervisedModel any more, but a `FastText` object which is very similar.
+15:21:23|INFO   |[budget] screenspec: 1692 calls x ~45/40 tok on google/gemini-2.5-flash = ~$0.192; spent $0.473
+15:21:24|INFO   |screenspec: 1692 translated, 830 flagged -> fallback gpt-4.1
+15:21:44|INFO   |[budget] cat: 199 calls x ~2600/300 tok on openai/gpt-4.1-mini = ~$0.302; spent $0.758
+15:22:51|WARNING|cat: 38 ids missing from batch replies -> re-sending singly
+15:22:55|INFO   |cat: 3979/3979 labelled
+15:22:55|INFO   |[budget] corr: 141 calls x ~1800/150 tok on openai/gpt-4.1-mini = ~$0.135; spent $1.004
+15:23:19|INFO   |corr: 1400/1400 judged
+15:23:19|INFO   |LLM spend so far: $1.1236

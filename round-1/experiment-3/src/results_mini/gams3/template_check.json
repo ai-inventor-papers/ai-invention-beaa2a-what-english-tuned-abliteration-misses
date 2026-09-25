@@ -1,0 +1,11 @@
+{
+ "suffix_tokens": [
+  "<end_of_turn>",
+  "\n",
+  "<start_of_turn>",
+  "model",
+  "\n"
+ ],
+ "template_has_system_turn": false,
+ "rendered_example": "<bos><start_of_turn>user\nYou are a helpful assistant.\n\nPROMPT<end_of_turn>\n<start_of_turn>model\n"
+}

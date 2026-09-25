@@ -1,0 +1,44 @@
+{
+ "gams3": {
+  "repo": "cjvt/GaMS3-12B-Instruct",
+  "sha_pinned": "1d0b27af5748784482600d24779409e7e1dc9adc",
+  "sha_resolved": "1d0b27af5748784482600d24779409e7e1dc9adc",
+  "model_class": "AutoModelForCausalLM",
+  "bnb_config": {
+   "load_in_4bit": true,
+   "bnb_4bit_compute_dtype": "bfloat16",
+   "bnb_4bit_quant_type": "nf4",
+   "bnb_4bit_use_double_quant": true,
+   "source": "heretic src/heretic/model.py@3521f864 _get_quantization_config"
+  },
+  "attn_implementation": "eager",
+  "num_layers": 48,
+  "hidden": 3840,
+  "final_logit_softcapping": null,
+  "layers_module": "model.layers",
+  "vram_after_load_gb": 7.5660032,
+  "gemma_mirror": false,
+  "heretic_sha": "3521f8648a0dccf6e12a92666862632235fac7e6"
+ },
+ "gemma": {
+  "repo": "google/gemma-3-12b-it",
+  "sha_pinned": "96b6f1eccf38110c56df3a15bffe176da04bfd80",
+  "sha_resolved": "96b6f1eccf38110c56df3a15bffe176da04bfd80",
+  "model_class": "AutoModelForImageTextToText",
+  "bnb_config": {
+   "load_in_4bit": true,
+   "bnb_4bit_compute_dtype": "bfloat16",
+   "bnb_4bit_quant_type": "nf4",
+   "bnb_4bit_use_double_quant": true,
+   "source": "heretic src/heretic/model.py@3521f864 _get_quantization_config"
+  },
+  "attn_implementation": "eager",
+  "num_layers": 48,
+  "hidden": 3840,
+  "final_logit_softcapping": null,
+  "layers_module": "model.language_model.layers",
+  "vram_after_load_gb": 7.799017472,
+  "gemma_mirror": false,
+  "heretic_sha": "3521f8648a0dccf6e12a92666862632235fac7e6"
+ }
+}

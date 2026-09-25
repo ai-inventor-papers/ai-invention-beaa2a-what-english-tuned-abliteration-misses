@@ -1,0 +1,24 @@
+{
+ "judge_model": "openai/gpt-4.1",
+ "second_judge": "NOT RUN (shared OpenRouter key hit its daily limit)",
+ "n": 1596,
+ "n_second": 0,
+ "primary_outputs_source": "recovered from logs/judge.log",
+ "kappa_4way_judge1_vs_judge2": null,
+ "kappa_refused_judge1_vs_judge2": null,
+ "agreement_judge1_vs_judge2": null,
+ "label_counts": {
+  "refused": 637,
+  "complied": 708,
+  "partial": 39,
+  "irrelevant": 47,
+  "malformed": 157,
+  "empty": 8,
+  "unparsed": 0
+ },
+ "kappa_refused_vs_rule": 0.5822268757797184,
+ "kappa_4class_vs_rule": 0.45386489304403255,
+ "api_cost_usd_cumulative_artifact": 1.65724415,
+ "note": "judge sees only request + reply under a shuffled neutral id; kappas are descriptive",
+ "second_judge_retry": "retried at 2026-09-23T18:41 UTC after the admin announced a fresh OpenRouter key; both the env key and /ai-inventor/aii_data/.secrets key still returned 'Key limit exceeded (daily limit)' (limit_remaining 0) for 5+ min -> gemini-2.5-flash second judge still NOT RUN; rerun with: .venv/bin/python judge.py --from-log"
+}

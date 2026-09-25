@@ -1,0 +1,47 @@
+{
+ "pod_files": {
+  "searched": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/** (excluding gen_plan and this artifact)",
+  "found": [
+   "../../../../experiment-3/src/data/dev_carveout_ids.json",
+   "../../../../experiment-3/src/data/screen_dev.json",
+   "../../../../experiment-3/src/data/screen_dev_nllb.json",
+   "../../../../experiment-3/src/data/translations.json",
+   "../../../../experiment-3/src/data/translations_nllb.json",
+   "../../../../experiment-3/src/results/gams3/dolly_B_continuations.json",
+   "../../../../experiment-3/src/results/gemma/dolly_B_continuations.json",
+   "../../../../experiment-3/src/results_mini/gams3/dolly_B_continuations.json"
+  ],
+  "status": "pod files found - see s3_pod_agreement"
+ },
+ "translation_choice": {
+  "S1_heretic|fallback:gpt41": 2,
+  "S1_heretic|gemini25flash_screenspec": 98,
+  "S2_semantic|fallback:gpt41": 3,
+  "S2_semantic|fallback:nllb13b": 1,
+  "S2_semantic|gemini25flash_screenspec": 422,
+  "S4_strongreject|gpt41": 545,
+  "S5_refuseu|fallback:claude_sonnet45": 1,
+  "S5_refuseu|fallback:nllb13b": 6,
+  "S5_refuseu|gpt41": 1392,
+  "S5_refuseu|gpt41(flagged)": 1,
+  "S6_xstest|fallback:nllb13b": 1,
+  "S6_xstest|gpt41": 449
+ },
+ "back_translation_system": {
+  "S1_heretic|madlad400_3b_mt": 2,
+  "S1_heretic|openai/gpt-4.1-mini": 998,
+  "S2_semantic|madlad400_3b_mt": 3,
+  "S2_semantic|openai/gpt-4.1-mini": 829,
+  "S3_dolly|openai/gpt-4.1-mini": 100,
+  "S3_jbb|openai/gpt-4.1-mini": 170,
+  "S4_strongreject|google/gemini-2.5-flash": 545,
+  "S5_refuseu|google/gemini-2.5-flash": 1390,
+  "S5_refuseu|madlad400_3b_mt": 10,
+  "S6_xstest|google/gemini-2.5-flash": 450
+ },
+ "first_pass_detector_note": "s02b_llm.py's first-pass keyword detector (Heretic markers + SL markers as substrings) flagged faithful translations (e.g. 'illegal' in EN, 'žal' inside 'žaljivka'); flagged items got a fallback translation, but the canonical choice here re-scores every primary output with a phrase-level detector and keeps the primary unless it is empty, a refusal/answer, off-length or off-language.",
+ "correspondence_bt_system": {
+  "gemini25flash": 1384,
+  "madlad400_3b_mt": 16
+ }
+}
