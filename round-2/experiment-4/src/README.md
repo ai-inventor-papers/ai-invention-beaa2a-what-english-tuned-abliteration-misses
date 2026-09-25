@@ -72,7 +72,7 @@ already-labelled items) if the budget is raised.
 | `results/gen_part/` | the community checkpoint was generated in two concurrent halves (S5+S5X, S6) and concatenated into `results/gen/community_ref.jsonl`; the halves are kept as provenance (verified: merged == a+b, 960 unique item_keys) |
 | `scratch/` | pre-check artefacts only — see `scratch/README.md`; **not results** |
 
-Absolute workspace root: `/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4`
+Absolute workspace root: `.`
 (every `results/…` path above is under it). Read-only dependencies: the frozen dataset
 `…/iter_1/gen_art/gen_art_dataset_1` and the iteration-1 adapters `…/iter_1/gen_art/gen_art_experiment_1/adapters/`.
 

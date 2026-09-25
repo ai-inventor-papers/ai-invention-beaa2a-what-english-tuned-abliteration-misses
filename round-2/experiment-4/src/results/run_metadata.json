@@ -766,7 +766,7 @@
   },
   "cap_usd": 10.0,
   "hard_stop_usd": 9.0,
-  "source": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/results/cost_log.jsonl"
+  "source": "../results/cost_log.jsonl"
  },
  "judge_primary_bookkeeping": {
   "gams_orig": {
@@ -2481,47 +2481,47 @@
  ],
  "human_review_status": "NATIVE_REVIEW_PENDING (200-item blinded packet prepared, not reviewed)",
  "paths": {
-  "workspace": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4",
-  "frozen_samples": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/frozen_samples.json",
-  "protocol": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/protocol.yaml",
-  "protocol_runtime": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/protocol_runtime.json",
+  "workspace": "..",
+  "frozen_samples": "../frozen_samples.json",
+  "protocol": "../protocol.yaml",
+  "protocol_runtime": "../protocol_runtime.json",
   "generations": {
-   "gams_orig": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/results/gen/gams_orig.jsonl",
-   "gams_edit": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/results/gen/gams_edit.jsonl",
-   "gemma_orig": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/results/gen/gemma_orig.jsonl",
-   "gemma_edit": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/results/gen/gemma_edit.jsonl",
-   "community_ref": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/results/gen/community_ref.jsonl"
+   "gams_orig": "../results/gen/gams_orig.jsonl",
+   "gams_edit": "../results/gen/gams_edit.jsonl",
+   "gemma_orig": "../results/gen/gemma_orig.jsonl",
+   "gemma_edit": "../results/gen/gemma_edit.jsonl",
+   "community_ref": "../results/gen/community_ref.jsonl"
   },
   "primary_judge_labels": {
-   "gams_orig": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/results/judge/gams_orig.jsonl",
-   "gams_edit": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/results/judge/gams_edit.jsonl",
-   "gemma_orig": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/results/judge/gemma_orig.jsonl",
-   "gemma_edit": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/results/judge/gemma_edit.jsonl",
-   "community_ref": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/results/judge/community_ref.jsonl"
+   "gams_orig": "../results/judge/gams_orig.jsonl",
+   "gams_edit": "../results/judge/gams_edit.jsonl",
+   "gemma_orig": "../results/judge/gemma_orig.jsonl",
+   "gemma_edit": "../results/judge/gemma_edit.jsonl",
+   "community_ref": "../results/judge/community_ref.jsonl"
   },
-  "second_judge_labels": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/results/judge2",
-  "autoscores": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/results/autoscore",
-  "guard_pipeline": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/results/guard",
-  "analysis": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/results/analysis.json",
-  "audit": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/results/audit.json",
-  "judge2_agreement": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/results/judge2_agreement.json",
-  "executor_audit": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/results/executor_audit.json",
-  "rseq": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/results/rseq",
+  "second_judge_labels": "../results/judge2",
+  "autoscores": "../results/autoscore",
+  "guard_pipeline": "../results/guard",
+  "analysis": "../results/analysis.json",
+  "audit": "../results/audit.json",
+  "judge2_agreement": "../results/judge2_agreement.json",
+  "executor_audit": "../results/executor_audit.json",
+  "rseq": "../results/rseq",
   "substitute_judge_labels": {
-   "gams_orig": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/results/judge_local/gams_orig.jsonl",
-   "gams_edit": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/results/judge_local/gams_edit.jsonl",
-   "gemma_orig": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/results/judge_local/gemma_orig.jsonl",
-   "gemma_edit": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/results/judge_local/gemma_edit.jsonl",
-   "community_ref": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/results/judge_local/community_ref.jsonl"
+   "gams_orig": "../results/judge_local/gams_orig.jsonl",
+   "gams_edit": "../results/judge_local/gams_edit.jsonl",
+   "gemma_orig": "../results/judge_local/gemma_orig.jsonl",
+   "gemma_edit": "../results/judge_local/gemma_edit.jsonl",
+   "community_ref": "../results/judge_local/community_ref.jsonl"
   },
-  "judge_validation": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/results/judge_validation.json",
-  "headline_table_csv": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/results/headline_table.csv",
-  "analysis_gpt41_subset": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/results/analysis_gpt41_subset.json",
-  "guard_summary": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/results/guard/summary.json",
-  "human_packet": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/results/human_packet/packet.csv",
-  "human_packet_key": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/results/human_packet/packet_key.json",
-  "figures": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/figures",
-  "judge_debug_log": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/logs/judge_debug.log",
+  "judge_validation": "../results/judge_validation.json",
+  "headline_table_csv": "../results/headline_table.csv",
+  "analysis_gpt41_subset": "../results/analysis_gpt41_subset.json",
+  "guard_summary": "../results/guard/summary.json",
+  "human_packet": "../results/human_packet/packet.csv",
+  "human_packet_key": "../results/human_packet/packet_key.json",
+  "figures": "../figures",
+  "judge_debug_log": "../logs/judge_debug.log",
   "core_adapters_read_only": {
    "gams_edit": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/adapters/gams_selected_path2",
    "gemma_edit": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/adapters/gemma_selected_path2"
