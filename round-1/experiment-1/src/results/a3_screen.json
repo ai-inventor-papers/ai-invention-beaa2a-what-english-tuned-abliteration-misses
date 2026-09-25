@@ -1,0 +1,228 @@
+{
+ "identity_check": {
+  "n_compared": 60,
+  "all_identical": true,
+  "first_mismatch": null,
+  "n_identical_complete": 60
+ },
+ "paired_trials": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+  11,
+  12,
+  13,
+  14,
+  15,
+  16,
+  17,
+  18,
+  19,
+  20,
+  21,
+  22,
+  23,
+  24,
+  25,
+  26,
+  27,
+  28,
+  29,
+  30,
+  31,
+  32,
+  33,
+  34,
+  35,
+  36,
+  37,
+  38,
+  39,
+  40,
+  41,
+  42,
+  43,
+  44,
+  45,
+  46,
+  47,
+  48,
+  49,
+  50,
+  51,
+  52,
+  53,
+  54,
+  55,
+  56,
+  57,
+  58,
+  59
+ ],
+ "descriptives": {
+  "gams": {
+   "refusals_median": 74.5,
+   "refusals_min": 25.0,
+   "refusals_max": 99.0
+  },
+  "gemma": {
+   "refusals_median": 99.0,
+   "refusals_min": 71.0,
+   "refusals_max": 100.0
+  }
+ },
+ "results": {
+  "refusal": {
+   "spearman": {
+    "rho": 0.7806405776128458,
+    "ci95": [
+     0.6290913819091656,
+     0.8801118202044342
+    ],
+    "n": 60
+   },
+   "pearson_rank_inverse_normal": 0.7663957733886895,
+   "partial_spearman_given_kernel_mass": {
+    "partial_rho": 0.6466096076353741,
+    "ci95": [
+     0.3957130814792732,
+     0.7920706515847726
+    ]
+   },
+   "pred_A_to_B_ridge": {
+    "R2_params": 0.35511916005153865,
+    "R2_sibling": 0.3946592038667792,
+    "R2_params_plus_sibling": 0.3631180060719337,
+    "dR2_sibling": 0.007998846020395023,
+    "dR2_ci95": [
+     -0.01711105976667775,
+     0.05483856610696881
+    ]
+   },
+   "pred_B_to_A_ridge": {
+    "R2_params": 0.6613521877233206,
+    "R2_sibling": 0.41191365992031603,
+    "R2_params_plus_sibling": 0.6558022558980696,
+    "dR2_sibling": -0.005549931825250987,
+    "dR2_ci95": [
+     -0.028063796089873666,
+     0.017529255300201448
+    ]
+   },
+   "pred_A_to_B_gbm": {
+    "R2_params": 0.5070446497232919,
+    "R2_sibling": 0.32125967647156517,
+    "R2_params_plus_sibling": 0.4597853550869283,
+    "dR2_sibling": -0.04725929463636358,
+    "dR2_ci95": [
+     -0.2083392979289691,
+     0.14569329596690253
+    ]
+   },
+   "pred_B_to_A_gbm": {
+    "R2_params": 0.6370947324686507,
+    "R2_sibling": 0.4653131004169332,
+    "R2_params_plus_sibling": 0.6597594914236511,
+    "dR2_sibling": 0.02266475895500042,
+    "dR2_ci95": [
+     -0.0913610127488905,
+     0.12471776252305354
+    ]
+   }
+  },
+  "logkl": {
+   "spearman": {
+    "rho": 0.9669352597943877,
+    "ci95": [
+     0.9326954231446392,
+     0.9802075349666937
+    ],
+    "n": 60
+   },
+   "pearson_rank_inverse_normal": 0.9408803170307637,
+   "partial_spearman_given_kernel_mass": {
+    "partial_rho": 0.9228093846179084,
+    "ci95": [
+     0.8076694921241218,
+     0.9588234109810981
+    ]
+   },
+   "pred_A_to_B_ridge": {
+    "R2_params": 0.7483056784980597,
+    "R2_sibling": 0.9414153075268306,
+    "R2_params_plus_sibling": 0.7565928916966668,
+    "dR2_sibling": 0.008287213198607035,
+    "dR2_ci95": [
+     -0.2359883006067227,
+     0.18723978138306116
+    ]
+   },
+   "pred_B_to_A_ridge": {
+    "R2_params": 0.7852703304741218,
+    "R2_sibling": 0.9418215346050489,
+    "R2_params_plus_sibling": 0.8412224085654524,
+    "dR2_sibling": 0.055952078091330626,
+    "dR2_ci95": [
+     -0.06885856936164167,
+     0.16332029025819375
+    ]
+   },
+   "pred_A_to_B_gbm": {
+    "R2_params": 0.7658504356884299,
+    "R2_sibling": 0.9319107973553348,
+    "R2_params_plus_sibling": 0.9087521908265896,
+    "dR2_sibling": 0.14290175513815973,
+    "dR2_ci95": [
+     0.07428112431311774,
+     0.24573417793872254
+    ]
+   },
+   "pred_B_to_A_gbm": {
+    "R2_params": 0.7956411443848672,
+    "R2_sibling": 0.9345015348313914,
+    "R2_params_plus_sibling": 0.9499542775799052,
+    "dR2_sibling": 0.15431313319503803,
+    "dR2_ci95": [
+     0.09309617096007322,
+     0.24232769873709678
+    ]
+   }
+  }
+ },
+ "procrustes_2d": {
+  "disparity": 0.3250487304429776,
+  "one_minus_disparity": 0.6749512695570223
+ },
+ "rv_2d": {
+  "rv": 0.7829587027263704,
+  "perm_p": 0.0004997501249375312
+ },
+ "active_stratum_both_refusals_le_50": {
+  "n": 0,
+  "note": "too few edits with both refusals <= 50"
+ },
+ "reading": "intermediate",
+ "protocol": {
+  "frozen_at": "2026-09-23T14:35Z (before any Heretic trial ran)",
+  "units": "the 60 TPE startup edits (trials 0-59), identical parameter draws across the two models (seed 20260923); one seed; EN only",
+  "outcomes": [
+   "refusal count /100 (KeywordRate x 100)",
+   "log(KL + 1e-6)"
+  ],
+  "readings": {
+   "shared surface": "rho_ref >= 0.9 AND rho_kl >= 0.9, both lower bootstrap CI >= 0.8, AND dR2_sibling > 0.05 with bootstrap CI > 0 (both outcomes)",
+   "shared via strength only": "raw rho >= 0.9 but dR2_sibling CI includes 0",
+   "divergent": "either rho < 0.7",
+   "intermediate": "anything else (reported descriptively)"
+  },
+  "status": "SCREEN, not confirmation"
+ }
+}

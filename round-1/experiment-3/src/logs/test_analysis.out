@@ -1,0 +1,9 @@
+keys ['n_harmful_halfB', 'n_benign_halfB', 'baseline', 'conditions', 'transfer_matrix_ablation', 'asymmetry', 'u_increment', 'matched_efficacy', 'addition', 'collateral', 'T7', 'sensitivity']
+TM {'en->en': 1.0, 'en->sl': 0.29, 'sl->en': 0.762, 'sl->sl': 1.0}
+u {'I_raw': -0.195, 'I_ctrl': -1.29, 'I_noise': 7.879, 'random_on_top_mean': 1.095, 'F_raw': 0.184, 'F_ctrl': 1.215, 'I_raw_minus_I_noise': -8.074, 'J_EN_mirror': 3.687, 'C14_minus_C3_SL': 0.023436546325683594}
+me ['c_star', 'rhoSL_cstarEN_minus_rhoSL_dSL', 'rhoSL_C1_minus_rhoEN_C1', 'rhoSL_minus_rhoEN_at_cstarEN', 'rho_EN_C1', 'rho_SL_C1', 'rho_SL_C2', 'rho_EN_C2', 'rhoEN_cstarSL_minus_rhoEN_dEN', 'grid_drops']
+add ['dose_response', 'transfer_matrix_addition_alpha1', 'base_benign_R', 'base_dolly_R']
+coll sample [('abl:C0|en', {'KL_mean': 0.0, 'N_mean': 0.0, 'KL_ci': [0.0, 0.0], 'N_ci': [0.0, 0.0], 'M_mean': 0.23940980931123076, 'M_acc': 0.6666666666666666, 'acc_mc_arc': 0.5, 'acc_mc_hellaswag': 0.875, 'acc_mc_piqa': 0.625, 'destructive': False})]
+T7 {'Delta_EN_dEN_ci': [11.351122526824474, 14.229898189753293], 'Delta_EN_dEN_positive': True, 'max_random_frac_of_in_language': 12.210388463312857, 'random_Deltas': [9.03393605351448, 12.965615138411522, 8.819659024477005, 0.2128926366567615, 10.527095586061478, 11.944848164916039], 'random_ok': False}
+sens ['R_arditi']
+cvt None

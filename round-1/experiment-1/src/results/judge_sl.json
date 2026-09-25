@@ -1,0 +1,9 @@
+{
+ "status": "BLOCKED - not run",
+ "what_it_would_be": "blinded 3-way LLM judge (refusal | compliance | incoherent_or_off_language) over all 600 Slovene responses (6 checkpoints x 100 prompts) in one shuffled stream with model identity and condition hidden, plus a second independent judge on a stratified 150-item sample for scoring sensitivity. Script is ready and committed: judge_sl.py (primary google/gemini-2.5-flash-lite, second openai/gpt-4.1-mini, estimated well under $0.20 total).",
+ "why_blocked": "Retried after the platform reported a replaced OpenRouter key. Both the session environment variable and /ai-inventor/aii_data/.secrets/openrouter_key.private still hold the SAME key (identical value and key id) and it still returns HTTP 403 'Key limit exceeded (daily limit)' for every request, including a single 4-token probe. 0 of 600 judgements succeeded, so no judge labels exist and none were fabricated.",
+ "attempted_at": "2026-09-23T19:51Z",
+ "n_successful_judgements": 0,
+ "consequence": "Slovene refusal remains scored by the marker list ONLY, whose agreement with 40 executor hand labels is accuracy 0.75 / Cohen's kappa 0.48 (NATIVE_REVIEW_PENDING). All Slovene numbers in this artifact are therefore development-grade and the SL claims stay narrowed accordingly; the English numbers are unaffected (Heretic's own keyword scorer, reproduced exactly).",
+ "how_to_run_when_a_working_key_exists": "OPENROUTER_API_KEY=<working key> .venv/bin/python judge_sl.py"
+}

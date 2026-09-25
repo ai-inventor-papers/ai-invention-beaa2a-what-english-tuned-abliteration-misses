@@ -1,0 +1,11 @@
+entries:
+  - path: checkpoints/
+    keep: the two Optuna journals (116 matched Heretic trials each) - hours of GPU search, not reproducible inside this run
+  - path: adapters/
+    keep: the two edited core checkpoints as LoRA adapters (17 MB each) plus the path-2 rebuilds and their sha256 sums
+  - path: .venv/
+    delete: regenerable
+    source: "uv venv .venv --python=3.12 && uv pip install --python .venv/bin/python -r env/requirements.lock"
+  - path: scratch/venv_tools/
+    delete: regenerable
+    source: "uv venv scratch/venv_tools --python=3.12 && uv pip install --python scratch/venv_tools/bin/python pandas pyarrow aiohttp huggingface_hub sacrebleu tenacity loguru"

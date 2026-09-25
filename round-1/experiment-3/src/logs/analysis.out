@@ -1,0 +1,4 @@
+18:27:57|INFO   |[gams3] validity gate: spearman=0.5110144554888395 auroc=0.6965913672245847 pass=False
+18:28:02|INFO   |[gemma] validity gate: spearman=0.9084944955095203 auroc=0.9554786751361162 pass=True
+18:28:06|INFO   |VERDICT: weak (primary=judge-based (R validity gate failed; decided before reading rule outcomes))
+18:28:18|INFO   |method_out.json written: 328 examples, 1.5 MB

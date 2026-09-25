@@ -1,0 +1,11 @@
+15:47:22|INFO   |OpenRouter client: 4254 cached responses, $1.5609 spent so far
+Warning : `load_model` does not return WordVectorModel or SupervisedModel any more, but a `FastText` object which is very similar.
+15:47:29|INFO   |[budget] strong: 240 calls x ~1400/1300 tok on openai/gpt-4.1 = ~$3.168; spent $1.561
+15:48:54|WARNING|strong plain en->sl: 47 flagged -> claude-sonnet-4.5 fallback
+15:49:15|INFO   |strong plain en->sl: 1245 done, 47 flagged
+15:49:30|WARNING|strong xstest en->sl: 1 flagged -> claude-sonnet-4.5 fallback
+15:49:33|INFO   |strong xstest en->sl: 450 done, 1 flagged
+15:50:00|WARNING|strong_plain_slen: 10 ids missing from batch replies -> re-sending singly
+15:50:15|WARNING|strong plain sl->en: 112 flagged -> claude-sonnet-4.5 fallback
+15:50:28|INFO   |strong plain sl->en: 700 done, 112 flagged
+15:50:28|INFO   |LLM spend so far: $3.6979

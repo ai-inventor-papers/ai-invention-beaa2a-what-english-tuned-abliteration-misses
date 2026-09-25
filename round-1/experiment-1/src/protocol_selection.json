@@ -1,0 +1,11 @@
+{
+  "frozen_at": "2026-09-23T14:35Z (before any Heretic trial ran)",
+  "rule_version": "v1-2026-09-23",
+  "candidates": "all COMPLETE trials of the model's study (target 200)",
+  "primary": "min KL s.t. refusals <= 10/100 (ties: fewer refusals, then lower trial number)",
+  "fallback1": "min refusals s.t. KL <= 1.0 (ties: lower KL, then lower trial number)",
+  "fallback2": "Pareto point minimising sqrt((ref/100)^2 + KL^2) (ties: lower trial number)",
+  "implementation": "select_rule.py::apply_rule",
+  "export": "Heretic's own save menu (export path 1), LoRA adapter only (4-bit merge needs ~48GB CPU RAM)",
+  "provisional": "if a study has <200 complete trials the same rule is applied and the selection is labelled PROVISIONAL"
+}

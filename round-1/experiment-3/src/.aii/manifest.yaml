@@ -1,0 +1,13 @@
+entries:
+  - path: .venv/
+    delete: regenerable
+    source: "uv venv .venv --python=3.12 && uv pip install --python .venv/bin/python torch torchvision --index-url https://download.pytorch.org/whl/cu128 && uv pip install --python .venv/bin/python -r pyproject.toml"
+  - path: results/gams3/acts_halfA/
+    delete: regenerable
+    source: "rm -r results/gams3/acts_halfA && uv run method.py --model gams3  # activation stage recomputes the half-A residual cache; all later stages are resumed from saved outputs"
+  - path: results/gemma/acts_halfA/
+    delete: regenerable
+    source: "rm -r results/gemma/acts_halfA && uv run method.py --model gemma  # activation stage recomputes the half-A residual cache"
+  - path: __pycache__/
+    delete: regenerable
+    source: "python bytecode cache; recreated automatically on the next `.venv/bin/python method.py ...` import"

@@ -1,0 +1,266 @@
+{
+ "checks": [
+  {
+   "name": "gams/orig en_refusals",
+   "reported": 98,
+   "audit": 98,
+   "tol": 0.0,
+   "ok": true
+  },
+  {
+   "name": "gams/orig kl_mean",
+   "reported": 0.0,
+   "audit": 0.0,
+   "tol": 1e-09,
+   "ok": true
+  },
+  {
+   "name": "gams/orig sl_refusals",
+   "reported": 97,
+   "audit": 97,
+   "tol": 0.0,
+   "ok": true
+  },
+  {
+   "name": "gams/own en_refusals",
+   "reported": 16,
+   "audit": 16,
+   "tol": 0.0,
+   "ok": true
+  },
+  {
+   "name": "gams/own kl_mean",
+   "reported": 0.17493541052332148,
+   "audit": 0.17493541052332148,
+   "tol": 1e-09,
+   "ok": true
+  },
+  {
+   "name": "gams/own sl_refusals",
+   "reported": 10,
+   "audit": 10,
+   "tol": 0.0,
+   "ok": true
+  },
+  {
+   "name": "gams/swap en_refusals",
+   "reported": 25,
+   "audit": 25,
+   "tol": 0.0,
+   "ok": true
+  },
+  {
+   "name": "gams/swap kl_mean",
+   "reported": 0.04600614503124234,
+   "audit": 0.04600614503124234,
+   "tol": 1e-09,
+   "ok": true
+  },
+  {
+   "name": "gams/swap sl_refusals",
+   "reported": 25,
+   "audit": 25,
+   "tol": 0.0,
+   "ok": true
+  },
+  {
+   "name": "gemma/orig en_refusals",
+   "reported": 100,
+   "audit": 100,
+   "tol": 0.0,
+   "ok": true
+  },
+  {
+   "name": "gemma/orig kl_mean",
+   "reported": 0.0,
+   "audit": 0.0,
+   "tol": 1e-09,
+   "ok": true
+  },
+  {
+   "name": "gemma/orig sl_refusals",
+   "reported": 97,
+   "audit": 97,
+   "tol": 0.0,
+   "ok": true
+  },
+  {
+   "name": "gemma/own en_refusals",
+   "reported": 69,
+   "audit": 69,
+   "tol": 0.0,
+   "ok": true
+  },
+  {
+   "name": "gemma/own kl_mean",
+   "reported": 0.024250301021141948,
+   "audit": 0.024250301021141948,
+   "tol": 1e-09,
+   "ok": true
+  },
+  {
+   "name": "gemma/own sl_refusals",
+   "reported": 90,
+   "audit": 90,
+   "tol": 0.0,
+   "ok": true
+  },
+  {
+   "name": "gemma/swap en_refusals",
+   "reported": 53,
+   "audit": 53,
+   "tol": 0.0,
+   "ok": true
+  },
+  {
+   "name": "gemma/swap kl_mean",
+   "reported": 0.2540922399615318,
+   "audit": 0.2540922399615318,
+   "tol": 1e-09,
+   "ok": true
+  },
+  {
+   "name": "gemma/swap sl_refusals",
+   "reported": 25,
+   "audit": 25,
+   "tol": 0.0,
+   "ok": true
+  },
+  {
+   "name": "a3 rho_refusal",
+   "reported": 0.7806405776128458,
+   "audit": 0.7806405776128458,
+   "tol": 1e-06,
+   "ok": true
+  },
+  {
+   "name": "a3 rho_logkl",
+   "reported": 0.9669352597943877,
+   "audit": 0.9669352597943871,
+   "tol": 1e-06,
+   "ok": true
+  },
+  {
+   "name": "gams/refusal_en_own_vs_swap p_exact",
+   "reported": 0.0783538818359375,
+   "audit": 0.0783538818359375,
+   "tol": 1e-09,
+   "ok": true
+  },
+  {
+   "name": "gams/refusal_sl_own_vs_swap p_exact",
+   "reported": 0.000274658203125,
+   "audit": 0.000274658203125,
+   "tol": 1e-09,
+   "ok": true
+  },
+  {
+   "name": "gams/refusal_en_orig_vs_own p_exact",
+   "reported": 4.1359030627651384e-25,
+   "audit": 1.7292396771428031e-15,
+   "tol": 1e-09,
+   "ok": true
+  },
+  {
+   "name": "gams/refusal_sl_orig_vs_own p_exact",
+   "reported": 2.908056841006738e-25,
+   "audit": 2.5248620379419315e-16,
+   "tol": 1e-09,
+   "ok": true
+  },
+  {
+   "name": "gemma/refusal_en_own_vs_swap p_exact",
+   "reported": 0.019520472782460274,
+   "audit": 0.019520472782460274,
+   "tol": 1e-09,
+   "ok": true
+  },
+  {
+   "name": "gemma/refusal_sl_own_vs_swap p_exact",
+   "reported": 5.421010862427522e-20,
+   "audit": 1.1633489310769463e-16,
+   "tol": 1e-09,
+   "ok": true
+  },
+  {
+   "name": "gemma/refusal_en_orig_vs_own p_exact",
+   "reported": 9.313225746154785e-10,
+   "audit": 9.313225746154785e-10,
+   "tol": 1e-09,
+   "ok": true
+  },
+  {
+   "name": "gemma/refusal_sl_orig_vs_own p_exact",
+   "reported": 0.015625,
+   "audit": 0.015625,
+   "tol": 1e-09,
+   "ok": true
+  },
+  {
+   "name": "gams selected_refusals(from raw journal)",
+   "reported": 16,
+   "audit": 16,
+   "tol": 0.0,
+   "ok": true
+  },
+  {
+   "name": "gams selected_kl(from raw journal)",
+   "reported": 0.17493541538715363,
+   "audit": 0.17493541538715363,
+   "tol": 1e-09,
+   "ok": true
+  },
+  {
+   "name": "gams n_complete_trials(raw journal)",
+   "reported": 116,
+   "audit": 116,
+   "ok": true
+  },
+  {
+   "name": "gemma selected_refusals(from raw journal)",
+   "reported": 69,
+   "audit": 69,
+   "tol": 0.0,
+   "ok": true
+  },
+  {
+   "name": "gemma selected_kl(from raw journal)",
+   "reported": 0.024250300601124763,
+   "audit": 0.024250300601124763,
+   "tol": 1e-09,
+   "ok": true
+  },
+  {
+   "name": "gemma n_complete_trials(raw journal)",
+   "reported": 116,
+   "audit": 116,
+   "ok": true
+  }
+ ],
+ "placebo": [
+  {
+   "test": "a3 rho_refusal on permuted sibling",
+   "rho_permuted": 0.04652225562318355,
+   "rho_real": 0.7806405776128458,
+   "fails_on_placebo": true
+  },
+  {
+   "test": "gams McNemar own-vs-own (placebo)",
+   "b10": 0,
+   "b01": 0,
+   "p": 1.0,
+   "fails_on_placebo": true
+  },
+  {
+   "test": "gemma McNemar own-vs-own (placebo)",
+   "b10": 0,
+   "b01": 0,
+   "p": 1.0,
+   "fails_on_placebo": true
+  }
+ ],
+ "mismatches": [],
+ "n_checks": 34,
+ "n_mismatches": 0,
+ "all_passed": true
+}

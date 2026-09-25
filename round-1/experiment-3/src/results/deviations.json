@@ -1,0 +1,14 @@
+{
+ "precision": "bnb_4bit NF4 (double quant) weights with bf16 compute instead of bf16 weights (L4 24 GB GPU; plan assumed A4500 20 GB)",
+ "gpu": "NVIDIA L4",
+ "translation": "gemini-2.5-flash (plan model, temperature 0) but with a framing system/user wrapper (bare plan prompt made Gemini answer/refuse harmful requests); NLLB-200-distilled-1.3B fallback for 22/1070 rows (8 blocked/refused, 14 truncated with chrF<40)",
+ "judge": "openai/gpt-4.1 primary (plan's gpt-4.1-mini failed the T5 hand-check; results/judge_t5_check.json). Its 1,596 outputs were recovered verbatim from logs/judge_firstpass_backup.log after a post-API fasttext/NumPy-2 crash; the gemini-2.5-flash second judge could NOT be run (shared OpenRouter key hit its $50 daily limit) -> agreement is reported against the rule-based labeller only; no human review",
+ "random_controls": "frozen R1-3/Q1-3 were energy-matched on winsorized residuals and were destructive on the raw stream (T7 failed); post-freeze amendment adds raw-energy-matched R'1-3/Q'1-3 (configs/postfreeze_amendment_<m>.json). Single random directions stay destructive even when raw-energy matched (ablating any high-variance direction at every layer/position is destructive) -> their refusal drops are collateral (F8), not suppression",
+ "sensitivity_and_bridge": "priority-3 sensitivity arms (S1-derived, per-language-best-layer and content-token directions) were cut for time (plan F3 order; stage_sensitivity code is included but not executed for the final run); the priority-2 Heretic bridge WAS executed (20 startup draws per model, results/<m>/heretic_bridge.json)",
+ "gemma_selection_grid": "Gemma candidate grid was cut by F3(4) (pos in {-1,-5}, every 2nd layer) because GPU sharing made the timing probe project >30 min; GaMS3 used the full 145-candidate grid (its selected site h=34,pos=-1 lies inside the cut grid)",
+ "winsorization": "directions/PCA/energy matching use per-vector winsorized residuals (q=0.995); raw diff-in-means directions were dominated by one massive-activation dimension",
+ "generation_mode": "batched left-padded greedy accepted when first-4 tokens and refusal labels match batch-1 on the smoke prompts (plan required full identity)",
+ "split_half": "within-half-A split uses sha1%4 in {0} vs {2} (plan's {0,2} vs {1,3} is degenerate inside half A)",
+ "mining": "prefix sets mined on ALL half-A harmful+benign items (plan: 20+20); keyword label on first 150 chars; overlap removed as planned, but if either set then covers <50% of its first tokens a purity>=0.75 rule is used (triggered for Gemma EN: 'Okay' 43 compliant vs 11 keyword-flagged)",
+ "primary_outcome": "R validity gate failed for GaMS3 (Spearman 0.51, AUROC 0.70) and passed for Gemma (0.91, 0.96); per F6 the screen verdict's primary outcome is the judged refusal rate (evaluated before the rule outcomes were read)"
+}

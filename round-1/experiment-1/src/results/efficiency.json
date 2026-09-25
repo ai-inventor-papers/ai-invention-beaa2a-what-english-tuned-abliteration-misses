@@ -1,0 +1,85 @@
+{
+ "n_shared_identical_edits": 60,
+ "unit_of_analysis": "the 60 TPE startup edits (identical parameter draws in both models)",
+ "coincidentally_identical_later_trials": [
+  63
+ ],
+ "baseline_refusals": {
+  "gams": 98,
+  "gemma": 100
+ },
+ "refusals": {
+  "gams": {
+   "median": 74.5,
+   "min": 25.0,
+   "max": 99.0
+  },
+  "gemma": {
+   "median": 99.0,
+   "min": 71.0,
+   "max": 100.0
+  }
+ },
+ "kl": {
+  "gams_median": 0.00788645725697279,
+  "gemma_median": 0.005716141080483794
+ },
+ "efficiency_refusal_drop_per_unit_kl": {
+  "gams_median": 1448.7678459159602,
+  "gams_ci95": [
+   617.7420815187279,
+   1945.6756670440639
+  ],
+  "gemma_median": 107.750305646798,
+  "gemma_ci95": [
+   50.12377686549864,
+   159.80745625967782
+  ],
+  "gap": {
+   "ratio_of_medians": 13.445603121210386,
+   "ci95": [
+    6.929386959682634,
+    30.42547992251033
+   ]
+  }
+ },
+ "paired_refusal_difference_gemma_minus_gams": {
+  "median": 25.0,
+  "ci95": [
+   10.0,
+   43.0
+  ],
+  "mean": 27.633333333333333,
+  "n_edits_where_gemma_refuses_more": 60,
+  "n_edits_where_gams_refuses_more": 0
+ },
+ "kl_matched_subset": {
+  "criterion": "|log KL_gams - log KL_gemma| <= its median over the shared edits",
+  "n": 30,
+  "kl_median_gams": 0.010117828845977783,
+  "kl_median_gemma": 0.009763030800968409,
+  "refusals_median_gams": 65.0,
+  "refusals_median_gemma": 99.0,
+  "paired_diff_median": 31.5,
+  "paired_diff_ci95": [
+   8.5,
+   49.0
+  ]
+ },
+ "edits_effective_on_gams": {
+  "criterion": "GaMS refusals <= 50/100",
+  "n": 24,
+  "gams_refusals_mean": 38.791666666666664,
+  "gemma_refusals_mean": 90.16666666666667,
+  "gemma_refusals_min": 71.0,
+  "gams_kl_median": 0.02854353003203869,
+  "gemma_kl_median": 0.02158190682530403
+ },
+ "edits_effective_on_gemma": {
+  "criterion": "Gemma refusals <= 50/100",
+  "n": 0,
+  "gams_refusals_mean": null,
+  "gemma_refusals_mean": null
+ },
+ "interpretation_limits": "Two models are two units: this quantifies a difference between THESE two checkpoints under THESE conditions (bnb_4bit NF4, one optimizer seed, English keyword refusal scoring, 4-bit dequantized edits). It does not attribute the difference to Slovene continued pretraining, to instruction tuning or to any particular training stage - GaMS3-12B-Instruct is a same-family reference, not a controlled derivative of this Gemma checkpoint. The published bf16 Heretic edit of gemma-3-12b-it reaches 3/100 refusals with 200 trials, so the Gemma arm's resistance here is confounded with quantization and with the reduced trial budget and must not be read as 'gemma-3-12b-it cannot be abliterated'."
+}
