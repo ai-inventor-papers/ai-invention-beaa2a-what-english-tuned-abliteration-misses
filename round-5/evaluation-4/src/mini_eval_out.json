@@ -1,0 +1,253 @@
+{
+  "metadata": {
+    "artifact": "iteration-5 reporting-integrity audit (plan gen_plan_evaluation_3, 'Recheck every number and every path')",
+    "draft_audited": "iter_4/gen_report_text/gen_report_text/paper_draft.md",
+    "verdict_vocabulary": [
+      "MATCH",
+      "MISMATCH",
+      "MISDESCRIBED",
+      "UNTRACEABLE",
+      "SIGN_REVERSED",
+      "FIRST_REPORT",
+      "NOT_REDERIVED"
+    ],
+    "recompute_imports": [
+      "stdlib",
+      "numpy",
+      "pyarrow.parquet (I/O)"
+    ],
+    "third_party_modules_loaded": [
+      "_cython_3_0_11",
+      "_sysconfigdata__linux_x86_64-linux-gnu",
+      "_virtualenv",
+      "cython_runtime",
+      "dateutil",
+      "numpy",
+      "pandas",
+      "pyarrow",
+      "pytz",
+      "six"
+    ],
+    "priors": {
+      "eval1 (iter 1-2)": {
+        "k_all": 26,
+        "k_num": 8,
+        "n": 167,
+        "quoted": 0.055
+      },
+      "eval2 (iter 3 sample)": {
+        "k_all": 5,
+        "k_num": 2,
+        "n": 102,
+        "quoted": 0.049
+      }
+    },
+    "tolerances": {
+      "rate": 0.005,
+      "corr": 0.01,
+      "r2": 0.005,
+      "ci": 0.01,
+      "count": 0,
+      "kappa": 0.01,
+      "diff": 0.005,
+      "note": "a value that matches at the draft's own printed precision is also a MATCH"
+    }
+  },
+  "metrics_agg": {
+    "lint_gate_pass": 1,
+    "lint_n_cited": 41,
+    "lint_n_resolving_as_written": 27,
+    "lint_n_rewritten": 14,
+    "lint_n_not_found_after_rewrite": 0,
+    "lint_positive_control_detected": 10,
+    "lint_positive_control_total": 10,
+    "tables_without_path_before": 20,
+    "n_numbers_first_pass_with_draft_value": 136,
+    "n_defects_first_pass": 21,
+    "mismatch_rate_first_pass": 0.1544,
+    "mismatch_rate_ci_lo": 0.1033,
+    "mismatch_rate_ci_hi": 0.2245,
+    "n_material_defects": 14,
+    "numeric_mismatch_rate_first_pass": 0.0662,
+    "prior_eval1_all_class_rate": 0.1557,
+    "prior_eval2_all_class_rate": 0.049,
+    "n_distinct_defects": 13,
+    "n_distinct_material_defects": 9,
+    "n_sign_reversed": 0,
+    "n_match": 115,
+    "n_mismatch": 9,
+    "n_misdescribed": 12,
+    "n_untraceable": 0,
+    "n_first_report_numbers": 46,
+    "n_not_rederived": 1,
+    "n_carried_from_eval2": 102,
+    "n_records_total": 185,
+    "placebos_collapsing": 8,
+    "placebos_expected_to_collapse": 8,
+    "exp14_primary_rho_sl_recomputed": -0.8995,
+    "exp13_spearman_O_en": -0.961,
+    "exp13_dR2_O_over_nuisance_en": 0.0273,
+    "exp13_R2_logE_alone_en": 0.0011,
+    "exp4_s5x_gap_strict": 0.69,
+    "exp4_s5x_gap_broad": 0.23,
+    "exp4_kappa_pooling_inflation_en": 0.4693,
+    "exp4_kappa_pooling_inflation_sl": 0.0574,
+    "openrouter_spend_usd": 0.0
+  },
+  "datasets": [
+    {
+      "dataset": "draft_numbers_iter4_recompute",
+      "examples": [
+        {
+          "input": "[Exp13 confirmation] Spearman rho(O, strict residual refusal) EN, n=18 confirm cells",
+          "output": "-0.9610",
+          "predict_draft": "-0.9600",
+          "predict_recomputed": "-0.9610",
+          "eval_defect": 0,
+          "eval_match": 1,
+          "metadata_claim_id": "E13.spearman_O_en",
+          "metadata_verdict": "MATCH",
+          "metadata_severity": "none",
+          "metadata_source_path": "round-4/experiment-13/src/results/per_item.csv + cells/*.json",
+          "metadata_pass_provenance": "first_pass_here",
+          "metadata_draft_line": 704,
+          "metadata_ci": "[-0.9948, -0.8639]",
+          "metadata_judge": "Qwen3-14B local",
+          "metadata_definition": "strict",
+          "metadata_note": "",
+          "eval_abs_error": 0.001042
+        },
+        {
+          "input": "[Exp13 nested R2] dR2 of O over nuisance stack (logE, count, span, EN/SL cosine) EN",
+          "output": "0.0273",
+          "predict_draft": "0.0260",
+          "predict_recomputed": "0.0273",
+          "eval_defect": 0,
+          "eval_match": 1,
+          "metadata_claim_id": "E13.dR2_O_over_nuisance_en",
+          "metadata_verdict": "MATCH",
+          "metadata_severity": "none",
+          "metadata_source_path": "round-4/experiment-13/src/results/per_item.csv + cells/*.json",
+          "metadata_pass_provenance": "first_pass_here",
+          "metadata_draft_line": 721,
+          "metadata_ci": "None",
+          "metadata_judge": null,
+          "metadata_definition": "strict",
+          "metadata_note": "draft reads this as 'energy already explains the outcome'; the stack contains the g-weighted EN/SL cosine",
+          "eval_abs_error": 0.001276
+        },
+        {
+          "input": "[Exp13 nested R2] R2 of log energy alone EN",
+          "output": "0.0011",
+          "predict_draft": "None",
+          "predict_recomputed": "0.0011",
+          "eval_defect": 0,
+          "eval_match": 0,
+          "metadata_claim_id": "E13.R2_logE_alone_en",
+          "metadata_verdict": "FIRST_REPORT",
+          "metadata_severity": "none",
+          "metadata_source_path": "round-4/experiment-13/src/results/per_item.csv + cells/*.json",
+          "metadata_pass_provenance": "first_pass_here",
+          "metadata_draft_line": null,
+          "metadata_ci": "None",
+          "metadata_judge": null,
+          "metadata_definition": "strict",
+          "metadata_note": "R2 repair: log energy alone explains almost nothing; the failure reason is collinearity with the cosine"
+        }
+      ]
+    },
+    {
+      "dataset": "citation_lint",
+      "examples": [
+        {
+          "input": "draft line 17: iter_1/gen_report_text/gen_report_text/report.md",
+          "output": "iter_1/gen_report_text/gen_report_text/report.md",
+          "predict_as_written": "iter_1/gen_report_text/gen_report_text/report.md",
+          "eval_resolves": 1,
+          "eval_resolves_as_written": 1,
+          "metadata_status": "RESOLVES",
+          "metadata_known_miss_control": "False",
+          "metadata_section_artifact": ""
+        },
+        {
+          "input": "draft line 52: iter_1/gen_report_text/gen_report_text/report.md",
+          "output": "iter_1/gen_report_text/gen_report_text/report.md",
+          "predict_as_written": "iter_1/gen_report_text/gen_report_text/report.md",
+          "eval_resolves": 1,
+          "eval_resolves_as_written": 1,
+          "metadata_status": "RESOLVES",
+          "metadata_known_miss_control": "False",
+          "metadata_section_artifact": "art_vzhOPupFwE4M"
+        },
+        {
+          "input": "draft line 136: iter_1/gen_report_text/gen_report_text/report.md",
+          "output": "iter_1/gen_report_text/gen_report_text/report.md",
+          "predict_as_written": "iter_1/gen_report_text/gen_report_text/report.md",
+          "eval_resolves": 1,
+          "eval_resolves_as_written": 1,
+          "metadata_status": "RESOLVES",
+          "metadata_known_miss_control": "False",
+          "metadata_section_artifact": "art_jxrJNc9o4QSp"
+        }
+      ]
+    },
+    {
+      "dataset": "placebos_in_audit_path",
+      "examples": [
+        {
+          "input": "exp13 shuffled-O (EN)",
+          "output": "0.0007",
+          "predict_real_effect": "-0.961",
+          "eval_collapses": 1,
+          "metadata_verdict": "PASS (collapses)",
+          "metadata_note": "95% of permuted rho in [-0.44, 0.45]",
+          "metadata_artifact_id": "art_NpZ_nW6qgSKD"
+        },
+        {
+          "input": "exp13 language-label swap of O (EN outcome, other-language O)",
+          "output": "-0.9129",
+          "predict_real_effect": "-0.961",
+          "eval_collapses": 0,
+          "metadata_verdict": "DOES NOT COLLAPSE (expected: EN and SL profiles share most signal; this is the draft's 'cross-prediction' observation, not a failed control)",
+          "metadata_note": "a language-swap does not destroy the ordering, so the instrument is not language-specific",
+          "metadata_artifact_id": "art_NpZ_nW6qgSKD"
+        },
+        {
+          "input": "exp13 shuffled-O (SL)",
+          "output": "0.0006",
+          "predict_real_effect": "-0.8298",
+          "eval_collapses": 1,
+          "metadata_verdict": "PASS (collapses)",
+          "metadata_note": "95% of permuted rho in [-0.47, 0.47]",
+          "metadata_artifact_id": "art_NpZ_nW6qgSKD"
+        }
+      ]
+    },
+    {
+      "dataset": "structural_checks",
+      "examples": [
+        {
+          "input": "exp13 generation count",
+          "output": "10000",
+          "predict_expected": "10000",
+          "eval_pass": 1,
+          "metadata_source": "round-4/experiment-13/src/results/per_item.csv"
+        },
+        {
+          "input": "exp14 generation count",
+          "output": "12024",
+          "predict_expected": "12024",
+          "eval_pass": 1,
+          "metadata_source": "round-4/experiment-14/src/results/per_item.parquet"
+        },
+        {
+          "input": "exp10 per-item outcomes",
+          "output": "10690",
+          "predict_expected": "10690",
+          "eval_pass": 1,
+          "metadata_source": "round-3/experiment-10/src/results/per_item.parquet"
+        }
+      ]
+    }
+  ]
+}

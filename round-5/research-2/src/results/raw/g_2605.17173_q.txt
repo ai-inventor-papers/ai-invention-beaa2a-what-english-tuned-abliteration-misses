@@ -1,0 +1,59 @@
+# grep https://arxiv.org/pdf/2605.17173  pattern=/judge|human|agreement|annotat|kappa/  accessed 2026-09-24
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/pdf/2605.17173
+Type: PDF
+Pattern: judge|human|agreement|annotat|kappa (97 matches in 93920 chars)
+
+--- Content ---
+
+4375:..., language effects, and
+prompt diﬀiculty.
+Is the failure a lack of model capability, and is it language-specific? Is it a translation error
+corrupting safety-relevant semantics? Or are certain harm concepts fundamentally harder
+to represent in certain languages due to cultural framing? Lastly, does judge selection or
+question ambiguity impose extra prompt diﬀiculties?
+Prior work supports these concerns: physical harm concepts align poorly in vector space
+across languages compared to abstract ones (Peng & Søgaard, 2024). Yet without an suitable
+measurement framework, these causes cannot be fully dis...
+--
+7085:...lty
+(dataset bugs).
+2
+
+Published as a conference paper at COLM 2026
+5. Cultural and conceptual gaps. High-τ prompts cluster in physical harm categories,
+and native speakers identify culturally or concept-specific prompts, explaining τ
+outliers with perfect translation; τ also correlates weakly with judge disagreement.
+2
+Related Work
+Multilingual safety benchmarks.
+Multilingual safety benchmarks have shown that LLM
+guardrails often degrade outside English. MultiJail covers 10 languages and 18 harm cat-
+egories across 3,150 prompts (Deng et al., 2024), while XSafety is larger, at roughly 28k
+prompts across 14 har...
+--
+15447:...omponent (PC1) only recovers 24% of the variance, as single-sample flips
+obscure the latent structure. As k grows, per-cell noise averages out, and the known factor
+emerges: PC1 reaches 73% at Pass@10 and exceeds 85% at Pass@30.
+Safety judgment and validation.
+To grade responses, we employ LLM-as-a-Judge GPT-
+5.2 on a 6-point Likert scale from 5 (safe refusal) to 1 (unsafe response) and 0 (in-
+valid/missing). The full rubric and prompt are provided in Appendix G.1. Prior work has
+shown that LLM judges can introduce bias, particularly when the judge and graded mod-
+els share a model family (Chen & Goldfarb-Tarrant, 2025; Zheng et al., 2023; Spiliopoulou
+et al., 2025). To validate this, two evaluators annotated 300 stratified responses (10 per lan-
+guage×10 languages×3 models from GPT, DeepSeek, and Grok). We find that human–
+GPT-5.2 agreement is substantial: Cohen’s κ = 0.80–0.83, with 93.2–96.6% binary agree-
+ment (Appendix G.2). For our validation, native speakers evaluated responses in Chinese,
+Thai, and Bengali, while Google Translate was used in other languages. While this may in-
+troduce translation noise, safety evaluation remains relatively straightforward (Deng et al.,
+2024). Next, cross-judge comparison (GPT-5.2 vs. Claude-4.5-Sonnet vs. Gemini-2.5-Pro)
+on an additional 9,450 responses yields Fleiss’ κ = 0.75 and Quadratic κ values of 0.82–0.83
+(Appendix G.3). Finally, the mean English-language agreement between each human eval-
+uator and GPT-5.2 is ¯κ = 0.959 (Appendix G.4). The evidence above argues against overall
+and English-centric judge biases. Human evaluators were two of the paper’s authors, while
+native speakers were three external researchers.
+IRT preprocessing.
+For IRT modeling, we binarize responses: resp...
+--
+[85 more matches not shown]

@@ -1,0 +1,155 @@
+# grep https://arxiv.org/pdf/2608.22490  pattern=/limitation|imperfect|caveat|approximat|residual|does not fully|not perfectly/  accessed 2026-09-24
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/pdf/2608.22490
+Type: PDF
+Pattern: limitation|imperfect|caveat|approximat|residual|does not fully|not perfectly (9 matches in 107151 chars)
+
+--- Content ---
+
+20554:...y loss. Figure 3 jointly visualizes two
+complementary signals. The left side displays the
+refusal rate difference between Malign and Munalg,
+showing how frequently the aligned model gener-
+ates false refusals than its unaligned one. The right
+side illustrates the Safety Cost.
+Refusal behavior alone does not fully explain
+the Safety Cost.
+The results reveal the relative
+contribution of refusal behavior to the observed
+Safety Cost. On OR-Bench-Hard, the refusal rate
+difference and the cost show closely mirrored pat-
+terns across languages and models, indicating that
+refusal behavior is the primary contributor...
+--
+37335:...erns behind this disparity. This penalty manifests
+in both explicit and implicit quality degradation,
+such as reduced informational depth and factual
+precision. Our findings thus expose a fundamental
+flaw in contemporary safety alignment: this struc-
+tural gap directly degrades the user experience.
+Limitations
+Scope of linguistic representation.
+While we
+focus on distinct language boundaries as the pri-
+mary axis of analysis, this scope can be expanded
+to a much richer variety of linguistic identities, in-
+cluding distinct dialects such as African American
+English or unique sociolects. Nonetheless, rest...
+--
+37952:...ng the scope to language-level boundaries enables
+9
+
+the use of high-quality translations for evaluation
+inputs, providing a controlled setting for a system-
+atic investigation. Expanding this evaluation to
+more granular linguistic styles and dialects is a
+promising avenue we leave for future work.
+Imperfections in the safety ablation.
+We ac-
+knowledge that the technical process of revers-
+ing safety alignment may not perfectly isolate the
+safety components without marginally affecting
+other latent capacities. This design choice was
+driven by two practical constraints: limited compu-
+tational resources and the inaccessibility of training
+data for alignment. Given unlimited compute and
+full access to training data, a more ...
+--
+60394:...Ablation Method
+In practice, we instantiate the unaligned coun-
+terpart Munalg through weight orthogonalization
+(abliteration), following the refusal-direction anal-
+ysis of Arditi et al. (2024). A single refusal direc-
+tion is estimated from contrastive harmful-versus-
+benign prompt pairs, and the residual-stream and
+MLP output weights are then projected orthogo-
+nal to this direction. Because this is a closed-form
+projection that involves no gradient updates and
+no new training data, it removes the model’s re-
+fusal behavior while leaving its base knowledge
+and instruction-following ability intact. ...
+--
+78136:...ver the pooled 292 verdicts, only
+20 (6.8%) are “hard” (one side prefers aligned, the other
+unaligned); the remaining 47 are tie-boundary cases
+where both sides agree on the winning direction but
+differ on whether the gap is large enough to call a clear
+win. The high directional agreement shows the residual
+noise lives at the tie boundary, not in the direction of the
+comparison.
+Examining the disagreements, of the 292 verdicts
+the annotator and judge differ in only 67 cases, of
+which just 20 (6.8%) are “hard” disagreements that
+flip the preferred response; the remaining 47 are
+tie-boundary calls where...
+--
+80127:...esponse Integrity
+This dimen-
+sion determines whether the output is trustworthy,
+reliable, and ethically sound.
+• CORRECTNESS RELIABILITY: The preferred
+response demonstrates higher factual accuracy
+and strict internal consistency.
+• CALIBRATION NUANCE: The preferred re-
+sponse includes appropriate caveats, balanced
+perspectives, or accurately acknowledges un-
+certainty.
+• SAFETY ETHICS: The preferred response
+maintains a better ethical framing without be-
+ing overly restrictive or preachy.
+• OUTPUT FAILURE: The rejected response
+contains critical flaws, such as hallucinations,
+logical contradiction...
+--
+83250:...-from-base setting the 8B
+checkpoints produce degenerate Korean output on
+a large fraction of prompts, consisting of short
+template-prefixed text with broken word spacing,
+which makes the pairwise evaluation unreliable.
+The released Qwen3-32B generates Korean nor-
+mally, so the exclusion reflects a limitation of the
+small trained checkpoints rather than a property of
+the language. Generations in the remaining lan-
+guages were verified by inspection to be coherent
+and correctly evaluated.
+Cost disparity
+vs. English
+Gemma-3-27B
+boundary / ordinary
+Qwen2.5-72B
+boundary / ordinary
+English
+0 / 0 (ref)
+0 / 0 ...
+--
+102922:...RITY_STRUCTURE: The rationale prefers clearer organization/readability/less ambiguity.
+-
+CORRECTNESS_RELIABILITY:
+The
+rationale
+points
+to
+mistakes
+in
+the
+loser
+or
+higher
+accuracy/consistency in the winner.
+- CALIBRATION_NUANCE: The rationale praises better balance/less overclaiming/more appropriate
+caveats.
+- SAFETY_ETHICS: The rationale praises safer/legal/ethical framing or flags missing safeguards.
+- TONE_HELPFULNESS: The rationale prefers tone (empathetic, respectful, professional).
+-
+OUTPUT_FAILURE:
+The
+rationale
+mentions
+a
+clear
+failure
+that
+materially
+affects
+quality
+(meaning-flip typo, forma...

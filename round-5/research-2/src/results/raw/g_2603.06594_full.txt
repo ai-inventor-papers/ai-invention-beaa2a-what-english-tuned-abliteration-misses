@@ -1,0 +1,131 @@
+# grep https://arxiv.org/pdf/2603.06594  pattern=/near random|generation style|victim model|validation protocol|multilingual|language/  accessed 2026-09-24
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/pdf/2603.06594
+Type: PDF
+Pattern: near random|generation style|victim model|validation protocol|multilingual|language (32 matches in 56720 chars)
+
+--- Content ---
+
+320:...ty: LLM Judges Fail to Reliably Measure
+Adversarial Robustness
+Leo Schwinn 1 2 * Moritz Ladenburger 1 * Tim Beyer 1 Mehrnaz Mofakhami 2 Gauthier Gidel 2 3 4
+Stephan G¨unnemann 1
+Abstract
+Automated “LLM-as-a-Judge” frameworks have
+become the de facto standard for scalable eval-
+uation across natural language processing. For
+instance, in safety evaluation, these judges are
+relied upon to evaluate harmfulness in order to
+benchmark the robustness of safety against ad-
+versarial attacks.
+However, we show that ex-
+isting validation protocols fail to account for
+substantial distribution shifts inherent to red-
+teaming:
+diverse victim models exhibit dis-
+tinct generation styles, attacks distort output
+patterns, and semantic ambiguity varies signif-
+icantly across jailbreak scenarios.
+Through a
+comprehensive audit using 6642 human-verified
+labels, we reveal that the unpredictable inter-
+action of these shifts often causes judge per-
+formance to degrade to near random chance.
+This stands in stark contrast to the high human
+agreement reported in prior work.
+Crucially,
+we find that many attacks inflate their success
+rates by exploiting judge insufficiencies rather
+than eliciting genuinely harmful content. To en-
+able more reliable evaluation, we propose Reli-
+ableBench, a benchmark of behaviors that remain
+more consistently judgeable, and JudgeStressTest,
+a dataset designed to expose judge failures.
+Data available at: https://github.com/
+SchwinnL/LLMJudgeReliability.
+1. Introduction
+The widespread deployment of Large Language Models
+(LLMs) necessitates rigorous safety alignment to prevent
+the generation of harmful content. As red-teaming efforts
+scale to identify vulnerabilities, manual human evaluation
+has become prohibitively expensive, leading to a reliance
+*Equal contribution
+1Technical University of Munich 2Mila
+3U...
+--
+2669:... meets predefined criteria, i.e., whether
+an output is harmful. LLM judges are typically validated
+by comparing their agreement with human ratings on static
+held-out test sets and generally achieve very high human
+rater agreement (Mazeika et al., 2024; Inan et al., 2023).
+Yet, we argue that current validation protocols of safety
+judges fundamentally mismatch one of their primary use
+cases in academia: adversarial safety evaluations (Mazeika
+et al., 2024; Souly et al., 2024). While judges are validated
+on both benign and harmful model outputs, their initial as-
+sessment does not consider relevant distribution shi...
+--
+5153:...tions than previously assumed, performing on
+average only slightly better than a random coin-flip.
+In this paper, we conduct an extensive audit of LLM judges
+in typical adversarial evaluation settings using manual hu-
+man labeling as a gold standard. We analyze failure modes
+across varying attacks, victim models, and semantic behav-
+ior categories, quantifying how reliable judges are under
+realistic evaluation settings and how reported attack suc-
+cess rates change when correcting for judge errors. Our
+contributions can be summarized as follows:
+Auditing Judge Reliability with Human Labels. We con-
+duct a...
+--
+7056:...ses to facilitate research into robust judges.
+2. Related work
+LLM-as-a-Judge for Safety Evaluation. In most domains,
+adversarial robustness can be directly assessed due to the
+simplicity of classification tasks (Madry et al., 2018; Alt-
+stidl et al., 2024). However, the open-endendess of natu-
+ral language processing complicates this procedure. Early
+safety evaluation relied on static datasets and classifiers,
+such as RealToxicityPrompts (Gehman et al., 2020) and
+SOLID (Rosenthal et al., 2021), which provided bench-
+marks for toxic content detection. As LLMs scaled, the field
+shifted toward using LLM...
+--
+11770:...evaluation integrity. Thus, it remains unclear
+whether new attacks achieve genuinely higher success rates
+or are simply better at exploiting judges, as seen in Figure 1.
+3. Method
+Here, we describe the setup used in our empirical study.
+3.1. Initial Dataset
+To systematically investigate how attack, victim model, and
+data shifts affect judge reliability, we require a diverse
+set of harmful queries with well-defined semantic cate-
+gories. We base our labeling efforts on the HarmBench
+test dataset (Mazeika et al., 2024) for two primary reasons:
+(1) it is well-established in the adversarial robustness com-
+mu...
+--
+12470:...ations of semantic and functional
+categories, enabling us to analyze category-dependent vari-
+ations in judge performance (i.e., data shift). The original
+HarmBench test set comprises 400 unique harmful queries.
+However, since our study aims to characterize judge behav-
+ior across multiple attacks, victim models, and semantic
+categories, labeling all 400 queries for every combination
+would yield prohibitively few samples per experimental
+condition, potentially compromising reliability. To balance
+coverage across our experimental conditions while maintain-
+ing sufficient sample sizes per condition, we first randomly
+subsample 100 queries from HarmBench. This subsampling
+allows us to allocate labeling resources across a broader
+range of attack–model combinations while retaining enough
+examples per setting to draw reliable conclusions.
+3.2. Victim Models
+To investigate model shift, specifically, whether model
+family and model size influence judge errors, we evalu-
+ate across a diverse set of 4 open-weight models spanning
+different architectures and scales. For smaller models, we
+include Gemma-3-1B (Team et al., 2025) and Llama-3.1-
+8B (Grattafiori...
+--
+[20 more matches not shown]

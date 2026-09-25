@@ -1,0 +1,29 @@
+# fetch https://arxiv.org/abs/2509.24384  accessed 2026-09-24
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/abs/2509.24384
+Type: HTML
+Length: 8700 chars (truncated)
+
+--- Content ---
+
+Skip to main content [](https://arxiv.org/IgnoreMe) [ ](https://arxiv.org/) [ Search ](https://arxiv.org/search) [Submit](https://arxiv.org/user/create) [Donate](https://info.arxiv.org/about/donate.html) [Log in](https://arxiv.org/login)
+
+Search arXiv
+
+Press Enter to search * [Advanced search](https://arxiv.org/search/advanced)
+
+# Computer Science > Computation and Language
+
+**arXiv:2509.24384** (cs) 
+
+[Submitted on 29 Sep 2025 ([v1](https://arxiv.org/abs/2509.24384v1)), last revised 18 Mar 2026 (this version, v3)]
+
+# Title:HarmMetric Eval: Benchmarking Metrics and Judges for LLM Harmfulness Assessment
+
+Authors:[Langqi Yang](https://arxiv.org/search/cs?searchtype=author&query=Yang,+L), [Tianhang Zheng](https://arxiv.org/search/cs?searchtype=author&query=Zheng,+T), [Yixuan Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen,+Y), [Kedong Xiu](https://arxiv.org/search/cs?searchtype=author&query=Xiu,+K), [Hao Zhou](https://arxiv.org/search/cs?searchtype=author&query=Zhou,+H), [Wangze Ni](https://arxiv.org/search/cs?searchtype=author&query=Ni,+W), [Lei Chen](https://arxiv.org/search/cs?searchtype=author&query=Chen,+L), [Zhan Qin](https://arxiv.org/search/cs?searchtype=author&query=Qin,+Z), [Kui Ren](https://arxiv.org/search/cs?searchtype=author&query=Ren,+K)
+
+View a PDF of the paper titled HarmMetric Eval: Benchmarking Metrics and Judges for LLM Harmfulness Assessment, by Langqi Yang and 8 other authors
+
+[View PDF](/pdf/2509.24384) [HTML (experimental)](https://arxiv.org/html/2509.24384v3)
+
+> Abstract:The potential of large language models (LLMs) to generate harmful content poses a significant safety risk for data management, as LLMs are increasingly being used as engines for data generation. To assess this risk, numerous harmfulness evaluation metrics and judges have been proposed. However, due to differences in their formats and scales, these metrics may yield inconsistent evaluation results on LLM-generated harmful data, undermining their credibility in practice. To address this gap, we present HarmMetric Eval, a systematic benchmark for assessing the quality of harmfulness metrics and judges with varying formats and scales. HarmMetric Eval includes a high-quality dataset comprising representative harmful prompts paired with harmful and non-harmful LLM outputs across multiple fine-grained categories, along with a unified scoring mechanism to reward the metrics for correctly ranking harmful outputs over non-harmful ones. Extensive experiments on HarmMetric Eval yield a surprising finding: conventional reference-based metrics such as ROUGE and METEOR can outperform LLM-based judges in fine-grained harmfulness evaluation, challenging prevailing assumptions about LLMs' superiority in this domain. To reveal the reasons behind this finding, we provide a fine-grained analysis to explain the limitations of LLM-based judges on rating irrelevant or useless LLM outputs. Motivated by these insights, we design an improved harmfulness judge that expli

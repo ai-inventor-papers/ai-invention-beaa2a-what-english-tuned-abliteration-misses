@@ -1,0 +1,100 @@
+study,checkpoint,lang,prompt_set,n,n_judged,executed,decoding,seed,claimed_in_draft
+exp4 C1 behaviour,community_ref,en,S5,280,280,True,"greedy, 256 new tokens, NF4",n/a (greedy); one Heretic optimisation seed per model,True
+exp4 C1 behaviour,community_ref,en,S5X,50,50,True,"greedy, 256 new tokens, NF4",n/a (greedy); one Heretic optimisation seed per model,True
+exp4 C1 behaviour,community_ref,en,S6,150,150,True,"greedy, 256 new tokens, NF4",n/a (greedy); one Heretic optimisation seed per model,True
+exp4 C1 behaviour,community_ref,sl,S5,280,280,True,"greedy, 256 new tokens, NF4",n/a (greedy); one Heretic optimisation seed per model,True
+exp4 C1 behaviour,community_ref,sl,S5X,50,50,True,"greedy, 256 new tokens, NF4",n/a (greedy); one Heretic optimisation seed per model,True
+exp4 C1 behaviour,community_ref,sl,S6,150,150,True,"greedy, 256 new tokens, NF4",n/a (greedy); one Heretic optimisation seed per model,True
+exp4 C1 behaviour,gams_edit,en,S5,280,280,True,"greedy, 256 new tokens, NF4",n/a (greedy); one Heretic optimisation seed per model,True
+exp4 C1 behaviour,gams_edit,en,S5X,50,50,True,"greedy, 256 new tokens, NF4",n/a (greedy); one Heretic optimisation seed per model,True
+exp4 C1 behaviour,gams_edit,en,S6,150,150,True,"greedy, 256 new tokens, NF4",n/a (greedy); one Heretic optimisation seed per model,True
+exp4 C1 behaviour,gams_edit,sl,S5,280,280,True,"greedy, 256 new tokens, NF4",n/a (greedy); one Heretic optimisation seed per model,True
+exp4 C1 behaviour,gams_edit,sl,S5X,50,50,True,"greedy, 256 new tokens, NF4",n/a (greedy); one Heretic optimisation seed per model,True
+exp4 C1 behaviour,gams_edit,sl,S6,150,150,True,"greedy, 256 new tokens, NF4",n/a (greedy); one Heretic optimisation seed per model,True
+exp4 C1 behaviour,gams_orig,en,S5,280,280,True,"greedy, 256 new tokens, NF4",n/a (greedy); one Heretic optimisation seed per model,True
+exp4 C1 behaviour,gams_orig,en,S5X,50,50,True,"greedy, 256 new tokens, NF4",n/a (greedy); one Heretic optimisation seed per model,True
+exp4 C1 behaviour,gams_orig,en,S6,150,150,True,"greedy, 256 new tokens, NF4",n/a (greedy); one Heretic optimisation seed per model,True
+exp4 C1 behaviour,gams_orig,sl,S5,280,280,True,"greedy, 256 new tokens, NF4",n/a (greedy); one Heretic optimisation seed per model,True
+exp4 C1 behaviour,gams_orig,sl,S5X,50,50,True,"greedy, 256 new tokens, NF4",n/a (greedy); one Heretic optimisation seed per model,True
+exp4 C1 behaviour,gams_orig,sl,S6,150,150,True,"greedy, 256 new tokens, NF4",n/a (greedy); one Heretic optimisation seed per model,True
+exp4 C1 behaviour,gemma_edit,en,S5,280,279,True,"greedy, 256 new tokens, NF4",n/a (greedy); one Heretic optimisation seed per model,True
+exp4 C1 behaviour,gemma_edit,en,S5X,50,50,True,"greedy, 256 new tokens, NF4",n/a (greedy); one Heretic optimisation seed per model,True
+exp4 C1 behaviour,gemma_edit,en,S6,150,150,True,"greedy, 256 new tokens, NF4",n/a (greedy); one Heretic optimisation seed per model,True
+exp4 C1 behaviour,gemma_edit,sl,S5,280,280,True,"greedy, 256 new tokens, NF4",n/a (greedy); one Heretic optimisation seed per model,True
+exp4 C1 behaviour,gemma_edit,sl,S5X,50,50,True,"greedy, 256 new tokens, NF4",n/a (greedy); one Heretic optimisation seed per model,True
+exp4 C1 behaviour,gemma_edit,sl,S6,150,150,True,"greedy, 256 new tokens, NF4",n/a (greedy); one Heretic optimisation seed per model,True
+exp4 C1 behaviour,gemma_orig,en,S5,280,280,True,"greedy, 256 new tokens, NF4",n/a (greedy); one Heretic optimisation seed per model,True
+exp4 C1 behaviour,gemma_orig,en,S5X,50,50,True,"greedy, 256 new tokens, NF4",n/a (greedy); one Heretic optimisation seed per model,True
+exp4 C1 behaviour,gemma_orig,en,S6,150,150,True,"greedy, 256 new tokens, NF4",n/a (greedy); one Heretic optimisation seed per model,True
+exp4 C1 behaviour,gemma_orig,sl,S5,280,280,True,"greedy, 256 new tokens, NF4",n/a (greedy); one Heretic optimisation seed per model,True
+exp4 C1 behaviour,gemma_orig,sl,S5X,50,50,True,"greedy, 256 new tokens, NF4",n/a (greedy); one Heretic optimisation seed per model,True
+exp4 C1 behaviour,gemma_orig,sl,S6,150,150,True,"greedy, 256 new tokens, NF4",n/a (greedy); one Heretic optimisation seed per model,True
+exp5 utility,gams_edit,en,arc_challenge,250,250,True,"0-shot log-likelihood (harness replica), NF4",n/a,True
+exp5 utility,gams_edit,sl,arc_challenge,250,250,True,"0-shot log-likelihood (harness replica), NF4",n/a,True
+exp5 utility,gams_edit,en,boolq,250,250,True,"0-shot log-likelihood (harness replica), NF4",n/a,True
+exp5 utility,gams_edit,sl,boolq,250,250,True,"0-shot log-likelihood (harness replica), NF4",n/a,True
+exp5 utility,gams_edit,en,hellaswag,250,250,True,"0-shot log-likelihood (harness replica), NF4",n/a,True
+exp5 utility,gams_edit,sl,hellaswag,250,250,True,"0-shot log-likelihood (harness replica), NF4",n/a,True
+exp5 utility,gams_edit,en,openbookqa,250,250,True,"0-shot log-likelihood (harness replica), NF4",n/a,True
+exp5 utility,gams_edit,sl,openbookqa,250,250,True,"0-shot log-likelihood (harness replica), NF4",n/a,True
+exp5 utility,gams_edit,en,piqa,250,250,True,"0-shot log-likelihood (harness replica), NF4",n/a,True
+exp5 utility,gams_edit,sl,piqa,250,250,True,"0-shot log-likelihood (harness replica), NF4",n/a,True
+exp5 utility,gams_edit,en,winogrande,250,250,True,"0-shot log-likelihood (harness replica), NF4",n/a,True
+exp5 utility,gams_edit,sl,winogrande,250,250,True,"0-shot log-likelihood (harness replica), NF4",n/a,True
+exp5 utility,gams_orig,en,arc_challenge,250,250,True,"0-shot log-likelihood (harness replica), NF4",n/a,True
+exp5 utility,gams_orig,sl,arc_challenge,250,250,True,"0-shot log-likelihood (harness replica), NF4",n/a,True
+exp5 utility,gams_orig,en,boolq,250,250,True,"0-shot log-likelihood (harness replica), NF4",n/a,True
+exp5 utility,gams_orig,sl,boolq,250,250,True,"0-shot log-likelihood (harness replica), NF4",n/a,True
+exp5 utility,gams_orig,en,hellaswag,250,250,True,"0-shot log-likelihood (harness replica), NF4",n/a,True
+exp5 utility,gams_orig,sl,hellaswag,250,250,True,"0-shot log-likelihood (harness replica), NF4",n/a,True
+exp5 utility,gams_orig,en,openbookqa,250,250,True,"0-shot log-likelihood (harness replica), NF4",n/a,True
+exp5 utility,gams_orig,sl,openbookqa,250,250,True,"0-shot log-likelihood (harness replica), NF4",n/a,True
+exp5 utility,gams_orig,en,piqa,250,250,True,"0-shot log-likelihood (harness replica), NF4",n/a,True
+exp5 utility,gams_orig,sl,piqa,250,250,True,"0-shot log-likelihood (harness replica), NF4",n/a,True
+exp5 utility,gams_orig,en,winogrande,250,250,True,"0-shot log-likelihood (harness replica), NF4",n/a,True
+exp5 utility,gams_orig,sl,winogrande,250,250,True,"0-shot log-likelihood (harness replica), NF4",n/a,True
+exp5 utility,gemma_edit,en,arc_challenge,250,250,True,"0-shot log-likelihood (harness replica), NF4",n/a,True
+exp5 utility,gemma_edit,sl,arc_challenge,250,250,True,"0-shot log-likelihood (harness replica), NF4",n/a,True
+exp5 utility,gemma_edit,en,boolq,250,250,True,"0-shot log-likelihood (harness replica), NF4",n/a,True
+exp5 utility,gemma_edit,sl,boolq,250,250,True,"0-shot log-likelihood (harness replica), NF4",n/a,True
+exp5 utility,gemma_edit,en,hellaswag,250,250,True,"0-shot log-likelihood (harness replica), NF4",n/a,True
+exp5 utility,gemma_edit,sl,hellaswag,250,250,True,"0-shot log-likelihood (harness replica), NF4",n/a,True
+exp5 utility,gemma_edit,en,openbookqa,250,250,True,"0-shot log-likelihood (harness replica), NF4",n/a,True
+exp5 utility,gemma_edit,sl,openbookqa,250,250,True,"0-shot log-likelihood (harness replica), NF4",n/a,True
+exp5 utility,gemma_edit,en,piqa,250,250,True,"0-shot log-likelihood (harness replica), NF4",n/a,True
+exp5 utility,gemma_edit,sl,piqa,250,250,True,"0-shot log-likelihood (harness replica), NF4",n/a,True
+exp5 utility,gemma_edit,en,winogrande,250,250,True,"0-shot log-likelihood (harness replica), NF4",n/a,True
+exp5 utility,gemma_edit,sl,winogrande,250,250,True,"0-shot log-likelihood (harness replica), NF4",n/a,True
+exp5 utility,gemma_orig,en,arc_challenge,250,250,True,"0-shot log-likelihood (harness replica), NF4",n/a,True
+exp5 utility,gemma_orig,sl,arc_challenge,250,250,True,"0-shot log-likelihood (harness replica), NF4",n/a,True
+exp5 utility,gemma_orig,en,boolq,250,250,True,"0-shot log-likelihood (harness replica), NF4",n/a,True
+exp5 utility,gemma_orig,sl,boolq,250,250,True,"0-shot log-likelihood (harness replica), NF4",n/a,True
+exp5 utility,gemma_orig,en,hellaswag,250,250,True,"0-shot log-likelihood (harness replica), NF4",n/a,True
+exp5 utility,gemma_orig,sl,hellaswag,250,250,True,"0-shot log-likelihood (harness replica), NF4",n/a,True
+exp5 utility,gemma_orig,en,openbookqa,250,250,True,"0-shot log-likelihood (harness replica), NF4",n/a,True
+exp5 utility,gemma_orig,sl,openbookqa,250,250,True,"0-shot log-likelihood (harness replica), NF4",n/a,True
+exp5 utility,gemma_orig,en,piqa,250,250,True,"0-shot log-likelihood (harness replica), NF4",n/a,True
+exp5 utility,gemma_orig,sl,piqa,250,250,True,"0-shot log-likelihood (harness replica), NF4",n/a,True
+exp5 utility,gemma_orig,en,winogrande,250,250,True,"0-shot log-likelihood (harness replica), NF4",n/a,True
+exp5 utility,gemma_orig,sl,winogrande,250,250,True,"0-shot log-likelihood (harness replica), NF4",n/a,True
+exp11 arms (Gemma only),gemma:A_orig,en+sl (paired),S5X,200,200,True,"greedy, 256 new tokens, NF4",optimiser seed 20260923 (+20260926 replication),True
+exp11 arms (Gemma only),gemma:A_orig,en+sl (paired),S4hoc,140,140,True,"greedy, 256 new tokens, NF4",optimiser seed 20260923 (+20260926 replication),True
+exp11 arms (Gemma only),gemma:B_keyword_t96,en+sl (paired),S5X,200,200,True,"greedy, 256 new tokens, NF4",optimiser seed 20260923 (+20260926 replication),True
+exp11 arms (Gemma only),gemma:B_keyword_t96,en+sl (paired),S4hoc,140,140,True,"greedy, 256 new tokens, NF4",optimiser seed 20260923 (+20260926 replication),True
+exp11 arms (Gemma only),gemma:C_corrected,en+sl (paired),S5X,200,200,True,"greedy, 256 new tokens, NF4",optimiser seed 20260923 (+20260926 replication),True
+exp11 arms (Gemma only),gemma:C_corrected,en+sl (paired),S4hoc,140,140,True,"greedy, 256 new tokens, NF4",optimiser seed 20260923 (+20260926 replication),True
+exp11 arms (Gemma only),gemma:D2_reselected_judge,en+sl (paired),S5X,200,200,True,"greedy, 256 new tokens, NF4",optimiser seed 20260923 (+20260926 replication),True
+exp11 arms (Gemma only),gemma:D2_reselected_judge,en+sl (paired),S4hoc,140,140,True,"greedy, 256 new tokens, NF4",optimiser seed 20260923 (+20260926 replication),True
+exp11 arms (Gemma only),gemma:D_reselected_clf,en+sl (paired),S5X,200,200,True,"greedy, 256 new tokens, NF4",optimiser seed 20260923 (+20260926 replication),True
+exp11 arms (Gemma only),gemma:D_reselected_clf,en+sl (paired),S4hoc,140,140,True,"greedy, 256 new tokens, NF4",optimiser seed 20260923 (+20260926 replication),True
+exp11 arms (Gemma only),gemma:F_dose1.5,en+sl (paired),S5X,200,200,True,"greedy, 256 new tokens, NF4",optimiser seed 20260923 (+20260926 replication),True
+exp11 arms (Gemma only),gemma:F_dose1.5,en+sl (paired),S4hoc,140,140,True,"greedy, 256 new tokens, NF4",optimiser seed 20260923 (+20260926 replication),True
+exp11 arms (Gemma only),gemma:F_dose2.0,en+sl (paired),S5X,200,200,True,"greedy, 256 new tokens, NF4",optimiser seed 20260923 (+20260926 replication),True
+exp11 arms (Gemma only),gemma:F_dose2.0,en+sl (paired),S4hoc,140,140,True,"greedy, 256 new tokens, NF4",optimiser seed 20260923 (+20260926 replication),True
+exp11 arms (Gemma only),gemma:F_dose3.0,en+sl (paired),S5X,200,200,True,"greedy, 256 new tokens, NF4",optimiser seed 20260923 (+20260926 replication),True
+exp11 arms (Gemma only),gemma:F_dose3.0,en+sl (paired),S4hoc,140,140,True,"greedy, 256 new tokens, NF4",optimiser seed 20260923 (+20260926 replication),True
+exp13,gemma,en/sl,utility panel + guard ASR,0,0,False,-,-,False
+exp13,GaMS3 screen,en/sl,screen,0,0,False,-,-,False
+iter-5 (excluded by gen_strat_1),both models,en/sl,matched-energy depth-band confirmation panel on fresh harmful items,0,0,False,-,-,False
+any,all,sl,native-speaker review (640 items),0,0,False,-,-,False
+any,all,en/sl,second independent frontier judge (Gemini) / gpt-4o-mini adjudicator,0,0,False,-,-,False

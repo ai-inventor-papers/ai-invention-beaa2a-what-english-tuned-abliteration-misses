@@ -1,0 +1,44 @@
+# search 'safety layers contiguous middle layers multilingual non-English language safety layers location differs' mode=general accessed 2026-09-24
+Search: safety layers contiguous middle layers multilingual non-English language safety layers location differs  [general via ddgs]
+Found: 10 results
+
+1. Safety Layers in Aligned LLMs | Kaizen Craft: a Digital Garden by Kaitlin Albasi
+   https://kaizencode.art/notepad/safety_layers_aligned_llms/
+   July 17, 2026 - Aligned chat models refuse harmful ... band of middle layers (“safety layers”), where last-token hidden states start to separate normal vs malicious queries.......
+
+2. When Safety Speaks a Language: A Mechanistic Analysis of Safety-Language Identity Entanglement in LLMs
+   https://arxiv.org/html/2608.29936
+   We find that safety and language identity features are geometrically entangled in the residual stream beyond feature ID-level sharing and that this entanglement peaks in late layers for Llama and Qwen...
+
+3. Safety Layers in Aligned Large Language Models: The Key to LLM Security
+   https://arxiv.org/html/2408.17003v5
+   April 5, 2025 - To address these challenges, our work uncovers the mechanism behind security in aligned LLMs at the parameter level, identifying a small set of contiguous layers in the middle of the m...
+
+4. Safety-Aligned LLMs
+   https://www.emergentmind.com/topics/safety-aligned-large-language-models
+   January 12, 2026 - A safety-aligned LLM typically incorporates explicit mechanisms at the architectural and parameter level to distinguish and reject unsafe queries. Recent mechanistic studies identif...
+
+5. Multilingual Safety Signals Are Multi-Layered: Filtering Safety-Degrading Data for Safer LLMs
+   https://arxiv.org/html/2609.22144
+   While this assumption has shown effectiveness in monolingual settings, its validity for multilingual models remains unclear due to potential cross-lingual differences in representation patterns. Throu...
+
+6. The Structural Localization of Safety in Large Language Models — Lacuna
+   https://lacuna.tiptreesystems.com/direction/the-structural-localization-of-safety-in-large-language-models/txn_49d27ad7d6ed4e898afefc0ab834adc3
+   Research by Li Shen and colleagues in Safety Layers of Aligned Large Language Models: The Key to LLM Security demonstrates that safety mechanisms are concentrated in a contiguous block of middle layer...
+
+7. When Safety Speaks a Language: A Mechanistic Analysis of Safety-Language Identity Entanglement in LLMs · Pith
+   https://pith.science/paper/2608.29936
+   2 weeks ago - Models with low safety-language entanglement (like Gemma-2-9B-IT) are better candidates for multilingual deployment where safety editing is planned. Cross-lingual safety transfer should ...
+
+8. Safety Layers of Aligned Large Language Models: The Key to LLM Security
+   https://arxiv.org/html/2408.17003v1
+   To address these challenges, our work uncovers the mechanism behind security in aligned LLMs at the parameter level, identifying a small set of contiguous layers in the middle of the model that are cr...
+
+9. [2408.17003v5] Safety Layers in Aligned Large Language Models: The Key to LLM Security
+   https://arxiv.org/abs/2408.17003v5
+   April 7, 2025 - To address these challenges, our work uncovers the mechanism behind security in aligned LLMs at the parameter level, identifying a small set of contiguous layers in the middle of the m...
+
+10. Multilingual Prompt Injection: Your LLM’s Safety Net Has a Language Problem | by Nwosu Rosemary | Medium
+   https://nwosunneoma.medium.com/multilingual-prompt-injection-your-llms-safety-net-has-a-language-problem-440d9aaa8bac
+   February 13, 2026 - Multilingual prompt injection takes this a step further. Instead of crafting the payload in English where safety filters are strongest, the attacker translates it into another lang...
+

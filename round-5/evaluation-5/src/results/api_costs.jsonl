@@ -1,0 +1,1 @@
+{"stage": "all", "calls": 0, "usd": 0.0, "cumulative_usd": 0.0, "note": "no OpenRouter call made; the optional R5 top-up was not needed (every leg-B cell has an on-disk reference)"}

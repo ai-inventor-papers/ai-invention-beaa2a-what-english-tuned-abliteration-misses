@@ -1,0 +1,44 @@
+# search 'multilingual refusal classifier reliability Slovene judge agreement safety' mode=general accessed 2026-09-24
+Search: multilingual refusal classifier reliability Slovene judge agreement safety  [general via ddgs]
+Found: 10 results
+
+1. Multilingual Refusal Alignment for Safer Large Language Models · Pith Review
+   https://pith.science/paper/2606.07535
+   July 4, 2026 - Safety is measured by Attack Success Rate (ASR) computed via an ensemble of automated safety classifiers (Llama-Guard-3-8B, PolyGuard-Qwen, and GPT-4o-mini as adjudicator). If independe...
+
+2. Multilingual Refusal Alignment for Safer Large Language Models
+   https://arxiv.org/html/2606.07535
+   It is worth noting that the analysis was conducted on samples intentionally designed to elicit unsafe questions, and thus the subset is not balanced. When comparing the proportion of identical labels ...
+
+3. LLM Judges Inconsistently Disagree Across Safety Criteria and Harm Categories
+   https://arxiv.org/html/2605.31381
+   June 2, 2026 - alpha can range from low (e.g., Haiku for Explanation-violence ) to moderate (e.g., Gemma for Helpfulness-opmisuse ) to high (e.g, Command-A for Helpfulness-violence ). All models show ...
+
+4. Refusal Direction is UniversalAcross Safety-Aligned Languages
+   https://arxiv.org/html/2505.17306v1
+   May 22, 2025 - These findings contribute to a ... refusal behavior across languages. By revealing the language-agnostic nature of refusal directions, we also provide actionable insights for developing...
+
+5. SomaliBench Eval: Measuring English-to-Somali Refusal Gaps in Open-Weight Language Models
+   https://arxiv.org/html/2605.25420
+   We report aggregate refusal rates, category gaps, and reliability statistics only; raw model generations are retained locally and are not released because some may contain harmful content. Safety alig...
+
+6. The Refusal–Compliance Tradeoff: A Large-Scale Safety Behavior Audit of Large Language Models
+   https://arxiv.org/html/2605.05427v2
+   May 30, 2026 - Modern aligned models frequently produce nuanced behaviors, including partial refusals, indirect compliance, and safety-prefaced responses, that keyword matching and heuristic toxicity ...
+
+7. The Refusal--Compliance Tradeoff: A Large-Scale Safety Behavior Audit of Large Language Models · Pith
+   https://pith.science/paper/2605.05427
+   June 30, 2026 - Third, refusal and compliance tendencies are stable within model families across generations and scales, suggesting that post-training objectives shape safety behavior more than archit...
+
+8. RefusalBench: Benchmarking AI Refusal Behavior
+   https://www.emergentmind.com/topics/refusalbench
+   August 29, 2025 - RefusalBench, both as a concrete artifact and as a conceptual umbrella, enables rigorous evaluation of the refusal behaviors that underpin real-world AI safety, utility, and ethical ...
+
+9. Multilingual Refusal Alignment for Safer Large Language Models - ACL Anthology
+   https://aclanthology.org/2026.findings-acl.1537/
+   However, safety behaviors often vary unpredictably between languages, posing significant challenges for consistent and ethical AI. In this work, we systematically investigate the dynamics of multiling...
+
+10. MULTILINGUAL JOINT TESTING EXERCISE
+   https://www.peren.gouv.fr/rapports/2025-June_Improving-Methodologies-for-LLM-Evaluations-Across-Global-Languages-Evaluation-Report-1.pdf
+   June 3, 2025 - Note: Refusal rates in this section are based on human annotations. If there is a disagreement · between the LLM-as-a-judge and the human (e.g....
+

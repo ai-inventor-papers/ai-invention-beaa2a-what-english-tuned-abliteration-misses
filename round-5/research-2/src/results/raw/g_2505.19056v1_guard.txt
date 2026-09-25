@@ -1,0 +1,339 @@
+# grep https://arxiv.org/pdf/2505.19056v1  pattern=/guard|90\.4|94\.6|89\.3|judge|Refusal Score/  accessed 2026-09-24
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/pdf/2505.19056v1
+Type: PDF
+Pattern: guard|90\.4|94\.6|89\.3|judge|Refusal Score (41 matches in 36626 chars)
+
+--- Content ---
+
+2199:...se harmful instructions while remain-
+ing helpful for benign tasks. This alignment typi-
+cally occurs through supervised fine-tuning (SFT)
+with carefully crafted demonstrations (Liu et al.,
+2023) or through reinforcement learning from hu-
+man feedback (RLHF) (Ouyang et al., 2022).
+Despite these safeguards, recent research has ex-
+posed vulnerabilities in aligned models (Lin et al.,
+2024; Chu et al., 2024a; Wei et al., 2023). While
+prompt-based jailbreaks have received substantial
+attention, a more concerning development is refusal
+direction abliteration—an efficient weight-surgery
+attack that neutralizes safety guardrails by remov-
+ing a single direction in the model’s residual stream
+(Arditi et al., 2024). This surgical intervention dra-
+matically reduces the refusal rate of LLAMA-2-
+7B-CHAT from 100% to approximately 20% while
+preserving general utility, representing a significant
+breach of safety mechanisms....
+--
+11553:...the corresponding model by MER
+and its abliterated variant by f
+MER (obtained via
+Equation 5). The subsequent sections evaluate to
+what extent Equation 5 degrades refusal accuracy
+for M versus MER and how each manipulation
+4
+
+Table 1: Overall Performance Before and After Abliteration. Comparison of refusal score, coherence, MMLU,
+and perplexity for base and Extended-Refusal models. Extended-Refusal models sustain high refusal rates after
+abliteration, whereas baseline models suffer large safety drops.
+Model
+Refusal Score (↑)
+Coherence (↑)
+MMLU (↑)
+Perplexity (↓)
+Llama-2-7b-chat
+100.0
+100.0
+47.5
+14.1
+Llama-2-7b-abliterated
+20.7
+100.0
+46.8
+18.5
+Llama-2-7b-extended-refusal
+100.0
+100.0
+46.4
+16.7
+Llama-2-7b-extended-refusal-abliterated
+92.7
+89.1
+41.8
+20.1
+Qwen2.5-3B-instruct
+93.1
+100.0
+65.6
+21.6
+Qwen2.5-3B-instruct-abli...
+--
+13745:...l content.
+• Utility
+Evaluation:
+We
+use
+MMLU
+(Hendrycks et al., 2021) for benchmarking
+general knowledge and reasoning, and a
+subset of 1,000 randomly sampled passages
+from C4 (Raffel et al., 2023) for perplexity
+evaluation.
+Evaluation Metrics
+We assess model perfor-
+mance using four key metrics:
+• Refusal Score (%): The percentage of harm-
+ful instructions that the model successfully
+refuses. We use QWEN-2.5-14B as an LLM
+judge (Zheng et al., 2023) to classify re-
+sponses as safe/unsafe. In Appendix 3 we also
+report results using Llama-Guard-3-8B (Inan
+et al., 2023) as an automatic safety classifier
+to determine refusal status.
+• Coherence (%): The percentage of model re-
+sponses that remain lexically and semantically
+consistent and well-formed, evaluated using
+an LLM-based judge (QWEN-2.5-14B).
+• MMLU Score (%):
+Performance on the
+Massive Multitask Language Understanding
+benchmark, measuring knowledge and reason-
+ing capabilities.
+• Perplexity: Measured on C4 passages, with
+lower values indicating better next-token pre-
+diction and linguistic fluency.
+Abliteration Process
+For each model (base and
+extended-refusal), we identify candidate refusal
+directions rℓ,p for each layer ℓand position p using
+the methodology described in Section 3. We then
+perform abliteration by projecting out the identified
+5
+
+0
+10
+20
+30
+Layer
+0
+20
+40
+60
+80
+100
+Refusal Score
+Token -1
+0
+10
+20
+30
+Layer
+Token -2
+0
+10
+20
+30
+Layer
+Token -3
+0
+10
+20
+30
+Layer
+Token -4
+0
+10
+20
+30
+Layer
+Token -5
+0
+10
+20
+30
+40
+50
+MMLU Score
+Refusal Score
+Refusal Baseline
+Abliterated Refusal Baseline
+MMLU Score
+MMLU Baseline
+LLAMA-2-7B-EXTENDED-REFUSAL
+0
+10
+20
+30
+Layer
+0
+20
+40
+60
+80
+100
+Refusal Score
+Token -1
+0
+10
+20
+30
+Layer
+Token -2
+0
+10
+20
+30
+Layer
+Token -3
+0
+10
+20
+30
+Layer
+Token -4
+0
+10
+20
+30
+Layer
+Token -5
+0
+20
+40
+60
+MMLU Score
+QWEN2.5-3B-EXTENDED-REFUSAL
+0
+10
+20
+Layer
+0
+20
+40
+60
+80
+100
+Refusal Score
+Token -1
+0
+10
+20
+Layer
+Token -3
+0
+10
+20
+Layer
+Token -4
+0
+20
+40
+60
+MMLU Score
+QWEN2.5-1.5B-EXTENDED-REFUSAL
+Figure 4: Refusal–Utility Trade-off. Refusal and MMLU scores for each model f
+MER (ℓ,p) after abliteration along
+direction rℓ,p. Directions that yield coherence below 70% are filtered out.
+ref...
+--
+18732:...es, while Figure 5 shows the per-
+plexity of models that maintain a coherence score
+above 70% after abliteration. The directions of
+the QWEN2.5-1.5B-EXTENDED-REFUSAL token
+positions p ∈{−2, −5} do not produce coherent
+models.
+We see a clear trend in the plots, with directions
+that result in a lower refusal score, also leading to
+a drop in utility (lower MMLU score and higher
+perplexity), which demonstrates the impact of ablit-
+erating more diffused refusal vectors.
+4.4
+Feature Space Analysis
+To better understand why abliteration works ef-
+fectively on standard models but fails on models
+trained with extend...
+--
+22413:...ient.
+Unlike
+reinforcement-based methods and adversarial train-
+ing that primarily address robustness through iter-
+ative fine-tuning and prompt-level defenses, our
+method proactively restructures the internal repre-
+sentation space. Furthermore, while external mod-
+eration approaches such as Llama Guard provide
+effective post-generation safety checks, our method
+inherently strengthens internal alignment, reduc-
+ing dependency on external safeguards. Empiri-
+cal evaluations demonstrate that extended-refusal
+fine-tuning maintains refusal integrity (>90%) un-
+der attack conditions, with minimal degradation of
+overall utility, compared to drastic drops (70–80%)
+observed in conventionally aligned models.
+Limitations
+While our extended-refusal fin...
+--
+26543:..., Dawn Song, and Jacob Steinhardt.
+2021. Measuring massive multitask language under-
+standing. Preprint, arXiv:2009.03300.
+Hakan Inan, Kartikeya Upasani, Jianfeng Chi, Rashi
+Rungta,
+Krithika Iyer,
+Yuning Mao,
+Michael
+Tontchev, Qing Hu, Brian Fuller, Davide Testuggine,
+and Madian Khabsa. 2023. Llama Guard: LLM-
+based Input-Output Safeguard for Human-AI Conver-
+sations. arXiv.
+Jiaming Ji, Mickel Liu, Juntao Dai, Xuehai Pan, Chi
+Zhang, Ce Bian, Chi Zhang, Ruiyang Sun, Yizhou
+Wang, and Yaodong Yang. 2023. Beavertails: To-
+wards improved safety alignment of llm via a human-
+preference dataset. Preprint, arXiv:2307.04657.
+Ehsan Kamalloo, ...
+--
+33708:...ign-
+ment techniques: RLHF, RLAIF, PPO, DPO and
+more. Preprint, arXiv:2407.16216.
+Alexander Wei, Nika Haghtalab, and Jacob Steinhardt.
+2023. Jailbroken: How does llm safety training fail?
+Preprint, arXiv:2307.02483.
+10
+
+Zeming Wei, Yifei Wang, Ang Li, Yichuan Mo, and
+Yisen Wang. 2024. Jailbreak and guard aligned lan-
+guage models with only few in-context demonstra-
+tions. Preprint, arXiv:2310.06387.
+Fangzhou Wu, Ning Zhang, Somesh Jha, Patrick Mc-
+Daniel, and Chaowei Xiao. 2024. A new era in llm
+security: Exploring security concerns in real-world
+llm-based systems. Preprint, arXiv:2402.18649.
+Jing ...
+--
+34915:...the beans! coercive knowledge extraction from (pro-
+duction) llms. Preprint, arXiv:2312.04782.
+Lianmin Zheng, Wei-Lin Chiang, Ying Sheng, Siyuan
+Zhuang, Zhanghao Wu, Yonghao Zhuang, Zi Lin,
+Zhuohan Li, Dacheng Li, Eric P. Xing, Hao Zhang,
+Joseph E. Gonzalez, and Ion Stoica. 2023. Judg-
+ing llm-as-a-judge with mt-bench and chatbot arena.
+Preprint, arXiv:2306.05685.
+Chunting Zhou, Pengfei Liu, Puxin Xu, Srini Iyer, Jiao
+Sun, Yuning Mao, Xuezhe Ma, Avia Efrat, Ping Yu,
+Lili Yu, Susan Zhang, Gargi Ghosh, Mike Lewis,
+Luke Zettlemoyer, and Omer Levy. 2023. LIMA:
+Less Is More for Alignment. arXiv.
+Andy Zou, Zifan Wang, Nicholas Carlini, Milad Nasr,
+J. Zico Kolter, and Matt Fredrikson. 2023. Univer-
+sal and transferable adversarial attacks on aligned
+language models. Preprint, arXiv:2307.15043.
+11
+
+A
+LLM as a Judge vs Llama-Guard
+In addition to using QWEN-2.5-14B as our primary LLM-based judge of refusal behavior, we also
+evaluated the ablated extended-refusal models with LLAMA-GUARD-3-8B, an external safety classifier.
+Table 3 reports refusal rates under both evaluators.
+Overall, the two methods are in stron...
+--
+[21 more matches not shown]

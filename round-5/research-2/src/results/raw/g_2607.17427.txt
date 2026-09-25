@@ -1,0 +1,9 @@
+# grep https://arxiv.org/pdf/2607.17427  pattern=/keyword|string match|refusal (detection|classifier|metric)|judge|substring/  accessed 2026-09-24
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/pdf/2607.17427
+Type: PDF
+Pattern: keyword|string match|refusal (detection|classifier|metric)|judge|substring (0 matches in 36014 chars)
+
+--- Content ---
+
+No matches found for pattern: keyword|string match|refusal (detection|classifier|metric)|judge|substring

@@ -1,0 +1,44 @@
+# search 'non-actionable compliance non-English jailbreak responses safe guard classifier low-resource vague harmful' mode=general accessed 2026-09-24
+Search: non-actionable compliance non-English jailbreak responses safe guard classifier low-resource vague harmful  [general via ddgs]
+Found: 10 results
+
+1. Structural Jailbreaks Generalize but Do Not Compound A cross-provider and multilingual study of Involuntary In-Context Learning
+   https://arxiv.org/html/2609.08373
+   Structural jailbreaks are potent and portable: IICL turns near-total refusal into 80–90% compliance on general harm and 97–100% on financial abuse, on a provider its introducing study never tested. Bu...
+
+2. Structural Jailbreaks Generalize but Do Not Compound: A cross-provider and multilingual study of Involuntary In-Context Learning · Pith
+   https://pith.science/paper/2609.08373
+   2 weeks ago - Against the compounding hypothesis, every non-English IICL condition except one ceiling-area tie scores below its English baseline, and on the stronger model's financial set Arabic colla...
+
+3. Low-Resource Languages Jailbreak GPT-4 · Pith
+   https://pith.science/citations/e88f3256-3186-452b-ba46-58885055c4ec
+   Our work exposes the inherent cross-lingual vulnerability of these safety mechanisms, resulting from the linguistic inequality of safety training data, by successfully circumventing GPT-4's safeguard ...
+
+4. Low-Resource Languages Jailbreak GPT-4 · Pith Review
+   https://pith.science/paper/2310.02446
+   May 17, 2026 - Running the same harmful requests written originally in low-resource languages rather than translated from English and checking whether the compliance rate stays near 79 percent. ... Tr...
+
+5. SoK: Evaluating Jailbreak Guardrails for Large Language Models
+   https://arxiv.org/pdf/2506.10597
+   Llama Guard is a fine-tuned Llama-2-7b model designed · to detect the toxicity category of input prompts. GradSafe · is a gradient-based detection method that identifies unsafe · or jailbreak prompts ...
+
+6. Defending Large Language Models Against Jailbreak Exploits with Responsible AI Considerations
+   https://arxiv.org/html/2511.18933v1
+   November 24, 2025 - When unsafe prompts are detected, such as those attempting to elicit instructions for prohibited actions the activations in these layers are gently nudged toward refusal directions...
+
+7. Necent/llm-jailbreak-prompt-injection-dataset · Datasets at Hugging Face
+   https://huggingface.co/datasets/Necent/llm-jailbreak-prompt-injection-dataset
+   Response safety filter → train on response_harmful × response_refusal (distinguishes "refused harmful" from "complied with harmful" — the failure mode of single-label guards like Llama Guard) A bare "...
+
+8. ICML Poster Speak Easy: Eliciting Harmful Jailbreaks from LLMs with Simple Interactions
+   https://icml.cc/virtual/2025/poster/44478
+   April 15, 2026 - To better evaluate this risk, we develop HarmScore, a tool that measures how much a model response enables harmful actions. We also introduce Speak Easy, a simple jailbreak framework ...
+
+9. Safety Alignment, Response Quality, Computational Cost
+   https://www.foi.se/download/18.2f6a97f619b2374cd1564/1766415831984/Jailbreaking_LLMs_FOI-S--7154--SE.pdf
+   objectives. Other research directions focus on guardrails, i.e. inference-time applied interventions, rather than safety-tuning · models, including training separate classifiers to detect inap-...
+
+10. Two judge defects that fire on spec-compliant judge output: the verdict is discarded under 15 tokens, and `TEST_PREFIXES` is matched anywhere rather than as a prefix · Issue #50 · JailbreakBench/jailbreakbench
+   https://github.com/JailbreakBench/jailbreakbench/issues/50
+   1 week ago - Two defects in src/jailbreakbench/classifier.py need nothing to go wrong. The judge answers exactly as instructed and the verdict is still wrong. for i, response in enumerate(responses): ...
+
