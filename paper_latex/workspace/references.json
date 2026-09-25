@@ -1,0 +1,145 @@
+{
+  "Arditi2024": {
+    "source": "semantic_scholar",
+    "title": "Refusal in Language Models Is Mediated by a Single Direction",
+    "first_author": "Arditi",
+    "year": 2024,
+    "s2_paper_id": "88f9af8b0a28e14c42d4f70ce2d911b51a06cd16",
+    "doi": "10.48550/arXiv.2406.11717",
+    "arxiv": "2406.11717"
+  },
+  "Inan2023": {
+    "source": "semantic_scholar",
+    "title": "Llama Guard: LLM-based Input-Output Safeguard for Human-AI Conversations",
+    "first_author": "Inan",
+    "year": 2023,
+    "s2_paper_id": "8b28792f8405b737229afb92c99c579b86d8aa98",
+    "doi": "10.48550/arXiv.2312.06674",
+    "arxiv": "2312.06674"
+  },
+  "Zou2023": {
+    "source": "semantic_scholar",
+    "title": "Representation Engineering: A Top-Down Approach to AI Transparency",
+    "first_author": "Zou",
+    "year": 2023,
+    "s2_paper_id": "58fdf550600fc3873729d466601c5d08a51ba8a0",
+    "doi": "10.48550/arXiv.2310.01405",
+    "arxiv": "2310.01405"
+  },
+  "Wei2024": {
+    "source": "semantic_scholar",
+    "title": "Assessing the Brittleness of Safety Alignment via Pruning and Low-Rank Modifications",
+    "first_author": "Wei",
+    "year": 2024,
+    "s2_paper_id": "aa6a03f3368cbb4a413f7e11650fb8a6a2b71de1",
+    "doi": "10.48550/arXiv.2402.05162",
+    "arxiv": "2402.05162"
+  },
+  "Marks2023": {
+    "source": "semantic_scholar",
+    "title": "The Geometry of Truth: Emergent Linear Structure in Large Language Model Representations of True/False Datasets",
+    "first_author": "Marks",
+    "year": 2023,
+    "s2_paper_id": "d59523889679aee15992c4bf6e52b134186d07d3",
+    "doi": "10.48550/arXiv.2310.06824",
+    "arxiv": "2310.06824"
+  },
+  "Zou2023a": {
+    "source": "semantic_scholar",
+    "title": "Universal and Transferable Adversarial Attacks on Aligned Language Models",
+    "first_author": "Zou",
+    "year": 2023,
+    "s2_paper_id": "47030369e97cc44d4b2e3cf1be85da0fd134904a",
+    "arxiv": "2307.15043"
+  },
+  "Shen2023": {
+    "source": "semantic_scholar",
+    "title": "\"Do Anything Now\": Characterizing and Evaluating In-The-Wild Jailbreak Prompts on Large Language Models",
+    "first_author": "Shen",
+    "year": 2023,
+    "s2_paper_id": "1104d766527dead44a40532e8a89444d9cef5c65",
+    "doi": "10.1145/3658644.3670388",
+    "arxiv": "2308.03825"
+  },
+  "Mazeika2024": {
+    "source": "semantic_scholar",
+    "title": "HarmBench: A Standardized Evaluation Framework for Automated Red Teaming and Robust Refusal",
+    "first_author": "Mazeika",
+    "year": 2024,
+    "s2_paper_id": "b82ccc66c14f531a444c74d2a9a9d86a86a8be99",
+    "doi": "10.48550/arXiv.2402.04249",
+    "arxiv": "2402.04249"
+  },
+  "Kumar2025": {
+    "source": "semantic_scholar",
+    "title": "PolyGuard: A Multilingual Safety Moderation Tool for 17 Languages",
+    "first_author": "Kumar",
+    "year": 2025,
+    "s2_paper_id": "53f1b69c8a2c665235509e468ad805981e98a5d7",
+    "doi": "10.48550/arXiv.2504.04377",
+    "arxiv": "2504.04377"
+  },
+  "Akiba2019": {
+    "source": "semantic_scholar",
+    "title": "Optuna: A Next-generation Hyperparameter Optimization Framework",
+    "first_author": "Akiba",
+    "year": 2019,
+    "s2_paper_id": "4cdf2fad22afc865999747336c7399fe422e6e8e",
+    "doi": "10.1145/3292500.3330701",
+    "arxiv": "1907.10902"
+  },
+  "Mehrotra2023": {
+    "source": "semantic_scholar",
+    "title": "Tree of Attacks: Jailbreaking Black-Box LLMs Automatically",
+    "first_author": "Mehrotra",
+    "year": 2023,
+    "s2_paper_id": "14e8cf5a5e6a7b35e618b08f5cf06f572b3a54e0",
+    "doi": "10.48550/arXiv.2312.02119",
+    "arxiv": "2312.02119"
+  },
+  "Kargaran2023": {
+    "source": "semantic_scholar",
+    "title": "GlotLID: Language Identification for Low-Resource Languages",
+    "first_author": "Kargaran",
+    "year": 2023,
+    "s2_paper_id": "7f1b92c6927165a77bf6ff078b5e2c2b29a6262a",
+    "doi": "10.48550/arXiv.2310.16248",
+    "arxiv": "2310.16248"
+  },
+  "Kamath2025": {
+    "source": "semantic_scholar",
+    "title": "Gemma 3 Technical Report",
+    "first_author": "Kamath",
+    "year": 2025,
+    "s2_paper_id": "adac25c0aebd013f1225ec02636edfcc0bf4cf7c",
+    "doi": "10.48550/arXiv.2503.19786",
+    "arxiv": "2503.19786"
+  },
+  "Vres2026": {
+    "source": "semantic_scholar",
+    "title": "Building a Strong Instruction Language Model for a Less-Resourced Language",
+    "first_author": "Vres",
+    "year": 2026,
+    "s2_paper_id": "1c68b8607b463e6111d39c44d220a95616421181",
+    "doi": "10.48550/arXiv.2603.01691",
+    "arxiv": "2603.01691"
+  },
+  "Krasnodebska2026": {
+    "source": "semantic_scholar",
+    "title": "Multilingual Refusal Alignment for Safer Large Language Models",
+    "first_author": "Krasnodebska",
+    "year": 2026,
+    "s2_paper_id": "ca58d355401c52c592e113064e64433ea1bdf52f",
+    "doi": "10.18653/v1/2026.findings-acl.1537",
+    "arxiv": "2606.07535"
+  },
+  "Wang2025": {
+    "source": "semantic_scholar",
+    "title": "Refusal Direction is Universal Across Safety-Aligned Languages",
+    "first_author": "Wang",
+    "year": 2025,
+    "s2_paper_id": "7e8245cb11171e5a7c3caacded1521e6bd71c78c",
+    "doi": "10.48550/arXiv.2505.17306",
+    "arxiv": "2505.17306"
+  }
+}

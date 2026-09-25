@@ -1,0 +1,101 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyperFirstAtBeginDocument{\AtBeginDocument}
+\HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
+\global\let\oldnewlabel\newlabel
+\gdef\newlabel#1#2{\newlabelxx{#1}#2}
+\gdef\newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
+\AtEndDocument{\ifx\hyper@anchor\@undefined
+\let\newlabel\oldnewlabel
+\fi}
+\fi}
+\global\let\hyper@last\relax 
+\gdef\HyperFirstAtBeginDocument#1{#1}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\citation{Inan2023}
+\citation{Arditi2024}
+\citation{Akiba2019}
+\citation{Vres2026}
+\citation{Kamath2025}
+\citation{Vres2026}
+\citation{Krasnodebska2026}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{section.1}\protected@file@percent }
+\citation{Zou2023}
+\citation{Arditi2024}
+\citation{Wei2024}
+\citation{Krasnodebska2026}
+\citation{Inan2023}
+\citation{Kumar2025}
+\citation{Marks2023}
+\citation{Wang2025}
+\@writefile{toc}{\contentsline {paragraph}{Summary of Contributions.}{2}{section*.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {2}Related Work}{2}{section.2}\protected@file@percent }
+\citation{Zou2023a,Shen2023,Mehrotra2023}
+\citation{Mazeika2024}
+\citation{Vres2026}
+\citation{Kargaran2023}
+\citation{Kamath2025}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Refusal rates on RefusEU S5 harmful prompts ($n=280$) for all five checkpoints. Bars are coloured by language: English (blue) and Slovene (orange). Abliteration transfers almost completely to Slovene for GaMS3 but fails for Gemma. The community reference checkpoint shows that deeper abliteration can partially overcome the language gap. Error bars show 95\% Clopper--Pearson confidence intervals. Note: 94--95\% of edited English outputs were truncated at the 256-token generation limit.}}{3}{figure.1}\protected@file@percent }
+\newlabel{fig:refusal-rates}{{1}{3}{Refusal rates on RefusEU S5 harmful prompts ($n=280$) for all five checkpoints. Bars are coloured by language: English (blue) and Slovene (orange). Abliteration transfers almost completely to Slovene for GaMS3 but fails for Gemma. The community reference checkpoint shows that deeper abliteration can partially overcome the language gap. Error bars show 95\% Clopper--Pearson confidence intervals. Note: 94--95\% of edited English outputs were truncated at the 256-token generation limit}{figure.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Method}{3}{section.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Models and Checkpoints}{3}{subsection.3.1}\protected@file@percent }
+\citation{Vres2026}
+\citation{Akiba2019}
+\citation{Arditi2024}
+\citation{Krasnodebska2026}
+\citation{Inan2023}
+\citation{Kumar2025}
+\citation{Kargaran2023}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Heretic Optimisation}{4}{subsection.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Evaluation Protocol}{4}{subsection.3.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Generation truncation.}{4}{section*.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Judge certification.}{4}{section*.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4}Results}{5}{section.4}\protected@file@percent }
+\newlabel{sec:results}{{4}{5}{Results}{section.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Refusal Suppression Across Languages}{5}{subsection.4.1}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Refusal rate and attack success rate (ASR) on RefusEU S5 harmful prompts ($n=280$ per cell), with 95\% Clopper--Pearson confidence intervals. Over-refusal is on S6 benign prompts ($n=150$). Edited English outputs are truncated at 256 tokens in 94--95\% of cases (see Method).}}{5}{table.1}\protected@file@percent }
+\newlabel{tab:headline}{{1}{5}{Refusal rate and attack success rate (ASR) on RefusEU S5 harmful prompts ($n=280$ per cell), with 95\% Clopper--Pearson confidence intervals. Over-refusal is on S6 benign prompts ($n=150$). Edited English outputs are truncated at 256 tokens in 94--95\% of cases (see Method)}{table.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Keyword Measurement Bias}{5}{subsection.4.2}\protected@file@percent }
+\newlabel{sec:keyword-bias}{{4.2}{5}{Keyword Measurement Bias}{subsection.4.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Keyword counter vs.\ reference judge positive rates for the Gemma-edit checkpoint on 100 verified paired prompts. The keyword counter fires on 87\% of English responses but 0\% of Slovene responses; the reference judge finds 13\% English refusal and 82\% Slovene refusal. $\Delta _{\mathrm  {lang}} = d_{\mathrm  {SL}} - d_{\mathrm  {EN}} = -1.56$ [$-1.68$, $-1.44$]. The annotation shows TBF $= 1.0$: 6/6 Gemma and 37/37 GaMS3 candidates invisible to the keyword objective are counted by the keyword-based scorer C; under the reference judge J, the counts are 5/5 and 6/6.}}{6}{figure.2}\protected@file@percent }
+\newlabel{fig:keyword-bias}{{2}{6}{Keyword counter vs.\ reference judge positive rates for the Gemma-edit checkpoint on 100 verified paired prompts. The keyword counter fires on 87\% of English responses but 0\% of Slovene responses; the reference judge finds 13\% English refusal and 82\% Slovene refusal. $\Delta _{\mathrm {lang}} = d_{\mathrm {SL}} - d_{\mathrm {EN}} = -1.56$ [$-1.68$, $-1.44$]. The annotation shows TBF $= 1.0$: 6/6 Gemma and 37/37 GaMS3 candidates invisible to the keyword objective are counted by the keyword-based scorer C; under the reference judge J, the counts are 5/5 and 6/6}{figure.2}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Keyword refusal counter vs.\ judge reference on held-out prompts. The keyword counter correctly identifies English refusals in unedited models (CONCORDANT) but produces zero positives on Slovene text (SILENT) and misfires on edited English text (MISFIRING, FP share 0.81).}}{7}{table.2}\protected@file@percent }
+\newlabel{tab:keyword}{{2}{7}{Keyword refusal counter vs.\ judge reference on held-out prompts. The keyword counter correctly identifies English refusals in unedited models (CONCORDANT) but produces zero positives on Slovene text (SILENT) and misfires on edited English text (MISFIRING, FP share 0.81)}{table.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Depth Placement vs.\ Dose}{7}{subsection.4.3}\protected@file@percent }
+\newlabel{sec:placement}{{4.3}{7}{Depth Placement vs.\ Dose}{subsection.4.3}{}}
+\@writefile{toc}{\contentsline {paragraph}{Causal write profiles.}{7}{section*.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Replication in Qwen3-8B.}{7}{section*.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Primary criterion: falsified.}{7}{section*.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Raw depth.}{7}{section*.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Cross-model prediction.}{8}{section*.8}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Residual Slovene refusal rate for GaMS3-12B-Instruct as a function of two predictors. (a)\nobreakspace  {}Write-profile overlap $O_{\mathrm  {SL}}$: Spearman $\rho = -0.90$ ($p < 10^{-7}$); within energy levels, $\rho = -0.97$ (E2) and $\rho = -0.95$ (E3). Higher overlap with the causal write profile predicts lower residual refusal. (b)\nobreakspace  {}Raw depth of the edit (mean edited layer index): Spearman $\rho = -0.34$, $p = 0.15$ (not significant). Raw depth alone does not predict residual refusal; the overlap metric, which accounts for layer importance, is the informative predictor.}}{8}{figure.3}\protected@file@percent }
+\newlabel{fig:depth-placement}{{3}{8}{Residual Slovene refusal rate for GaMS3-12B-Instruct as a function of two predictors. (a)~Write-profile overlap $O_{\mathrm {SL}}$: Spearman $\rho = -0.90$ ($p < 10^{-7}$); within energy levels, $\rho = -0.97$ (E2) and $\rho = -0.95$ (E3). Higher overlap with the causal write profile predicts lower residual refusal. (b)~Raw depth of the edit (mean edited layer index): Spearman $\rho = -0.34$, $p = 0.15$ (not significant). Raw depth alone does not predict residual refusal; the overlap metric, which accounts for layer importance, is the informative predictor}{figure.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Discussion}{8}{section.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Evaluation validity.}{8}{section*.9}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Depth placement.}{8}{section*.10}\protected@file@percent }
+\citation{Vres2026}
+\@writefile{toc}{\contentsline {paragraph}{Judge reliability.}{9}{section*.11}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Model divergence.}{9}{section*.12}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Limitations}{9}{subsection.5.1}\protected@file@percent }
+\newlabel{sec:limitations}{{5.1}{9}{Limitations}{subsection.5.1}{}}
+\bibstyle{plainnat}
+\bibdata{references}
+\bibcite{Akiba2019}{{1}{2019}{{Akiba et~al.}}{{Akiba, Sano, Yanase, Ohta, and Koyama}}}
+\bibcite{Arditi2024}{{2}{2024}{{Arditi et~al.}}{{Arditi, Obeso, Syed, Paleka, Rimsky, Gurnee, and Nanda}}}
+\bibcite{Inan2023}{{3}{2023}{{Inan et~al.}}{{Inan, Upasani, Chi, Rungta, Iyer, et~al.}}}
+\bibcite{Kamath2025}{{4}{2025}{{Kamath et~al.}}{{Kamath, Ferret, Pathak, Vieillard, Merhej, et~al.}}}
+\bibcite{Kargaran2023}{{5}{2023}{{Kargaran et~al.}}{{Kargaran, Imani, Yvon, and Schütze}}}
+\bibcite{Krasnodebska2026}{{6}{2026}{{Krasnodebska et~al.}}{{Krasnodebska, Kusa, and Lipani}}}
+\bibcite{Kumar2025}{{7}{2025}{{Kumar et~al.}}{{Kumar, Jain, Yerukola, Jiang, Beniwal, Hartvigsen, and Sap}}}
+\bibcite{Marks2023}{{8}{2023}{{Marks and Tegmark}}{{}}}
+\bibcite{Mazeika2024}{{9}{2024}{{Mazeika et~al.}}{{Mazeika, Phan, Yin, Zou, Wang, et~al.}}}
+\bibcite{Mehrotra2023}{{10}{2023}{{Mehrotra et~al.}}{{Mehrotra, Zampetakis, Kassianik, Nelson, Anderson, Singer, and Karbasi}}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Conclusion}{10}{section.6}\protected@file@percent }
+\bibcite{Shen2023}{{11}{2023}{{Shen et~al.}}{{Shen, Chen, Backes, Shen, and Zhang}}}
+\bibcite{Vres2026}{{12}{2026}{{Vres et~al.}}{{Vres, Arcon, Petric, Vajda, Robnik-Šikonja, and Bajec}}}
+\bibcite{Wang2025}{{13}{2025}{{Wang et~al.}}{{Wang, Wang, Liu, Schutze, and Plank}}}
+\bibcite{Wei2024}{{14}{2024}{{Wei et~al.}}{{Wei, Huang, Huang, Xie, Qi, Xia, Mittal, Wang, and Henderson}}}
+\bibcite{Zou2023}{{15}{2023{a}}{{Zou et~al.}}{{Zou, Phan, Chen, Campbell, Guo, et~al.}}}
+\bibcite{Zou2023a}{{16}{2023{b}}{{Zou et~al.}}{{Zou, Wang, Kolter, and Fredrikson}}}
+\gdef \@abspage@last{11}

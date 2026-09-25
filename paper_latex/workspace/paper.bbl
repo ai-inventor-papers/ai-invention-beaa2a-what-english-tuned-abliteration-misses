@@ -1,0 +1,131 @@
+\begin{thebibliography}{16}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Akiba et~al.(2019)Akiba, Sano, Yanase, Ohta, and Koyama]{Akiba2019}
+Takuya Akiba, Shotaro Sano, Toshihiko Yanase, Takeru Ohta, and Masanori Koyama.
+\newblock Optuna: A next-generation hyperparameter optimization framework.
+\newblock In \emph{Knowledge Discovery and Data Mining}, 2019.
+\newblock \doi{10.1145/3292500.3330701}.
+
+\bibitem[Arditi et~al.(2024)Arditi, Obeso, Syed, Paleka, Rimsky, Gurnee, and
+  Nanda]{Arditi2024}
+Andy Arditi, Oscar Obeso, Aaquib Syed, Daniel Paleka, Nina Rimsky, Wes Gurnee,
+  and Neel Nanda.
+\newblock Refusal in language models is mediated by a single direction.
+\newblock In \emph{Neural Information Processing Systems}, 2024.
+\newblock \doi{10.48550/arXiv.2406.11717}.
+
+\bibitem[Inan et~al.(2023)Inan, Upasani, Chi, Rungta, Iyer, et~al.]{Inan2023}
+Hakan Inan, K.~Upasani, Jianfeng Chi, Rashi Rungta, Krithika Iyer, et~al.
+\newblock Llama guard: Llm-based input-output safeguard for human-ai
+  conversations.
+\newblock \emph{arXiv preprint arXiv:2312.06674}, 2023.
+\newblock \doi{10.48550/arXiv.2312.06674}.
+
+\bibitem[Kamath et~al.(2025)Kamath, Ferret, Pathak, Vieillard, Merhej,
+  et~al.]{Kamath2025}
+Gemma Team~Aishwarya Kamath, Johan Ferret, Shreya Pathak, Nino Vieillard,
+  Ramona Merhej, et~al.
+\newblock Gemma 3 technical report.
+\newblock \emph{arXiv preprint arXiv:2503.19786}, 2025.
+\newblock \doi{10.48550/arXiv.2503.19786}.
+
+\bibitem[Kargaran et~al.(2023)Kargaran, Imani, Yvon, and
+  Schütze]{Kargaran2023}
+Amir~Hossein Kargaran, Ayyoob Imani, François Yvon, and Hinrich Schütze.
+\newblock Glotlid: Language identification for low-resource languages.
+\newblock In \emph{Conference on Empirical Methods in Natural Language
+  Processing}, 2023.
+\newblock \doi{10.48550/arXiv.2310.16248}.
+
+\bibitem[Krasnodebska et~al.(2026)Krasnodebska, Kusa, and
+  Lipani]{Krasnodebska2026}
+Aleksandra Krasnodebska, Wojciech Kusa, and Aldo Lipani.
+\newblock Multilingual refusal alignment for safer large language models.
+\newblock In \emph{Annual Meeting of the Association for Computational
+  Linguistics}, pages 30769--30790, 2026.
+\newblock \doi{10.18653/v1/2026.findings-acl.1537}.
+
+\bibitem[Kumar et~al.(2025)Kumar, Jain, Yerukola, Jiang, Beniwal, Hartvigsen,
+  and Sap]{Kumar2025}
+Priyanshu Kumar, Devansh Jain, Akhila Yerukola, Liwei Jiang, Himanshu Beniwal,
+  Thomas Hartvigsen, and Maarten Sap.
+\newblock Polyguard: A multilingual safety moderation tool for 17 languages.
+\newblock \emph{arXiv preprint arXiv:2504.04377}, 2025.
+\newblock \doi{10.48550/arXiv.2504.04377}.
+
+\bibitem[Marks and Tegmark(2023)]{Marks2023}
+Samuel Marks and Max Tegmark.
+\newblock The geometry of truth: Emergent linear structure in large language
+  model representations of true/false datasets.
+\newblock \emph{arXiv preprint arXiv:2310.06824}, 2023.
+\newblock \doi{10.48550/arXiv.2310.06824}.
+
+\bibitem[Mazeika et~al.(2024)Mazeika, Phan, Yin, Zou, Wang,
+  et~al.]{Mazeika2024}
+Mantas Mazeika, Long Phan, Xuwang Yin, Andy Zou, Zifan Wang, et~al.
+\newblock Harmbench: A standardized evaluation framework for automated red
+  teaming and robust refusal.
+\newblock In \emph{International Conference on Machine Learning}, pages
+  35181--35224, 2024.
+\newblock \doi{10.48550/arXiv.2402.04249}.
+
+\bibitem[Mehrotra et~al.(2023)Mehrotra, Zampetakis, Kassianik, Nelson,
+  Anderson, Singer, and Karbasi]{Mehrotra2023}
+Anay Mehrotra, M.~Zampetakis, Paul Kassianik, Blaine Nelson, Hyrum~S. Anderson,
+  Yaron Singer, and Amin Karbasi.
+\newblock Tree of attacks: Jailbreaking black-box llms automatically.
+\newblock In \emph{Neural Information Processing Systems}, 2023.
+\newblock \doi{10.48550/arXiv.2312.02119}.
+
+\bibitem[Shen et~al.(2023)Shen, Chen, Backes, Shen, and Zhang]{Shen2023}
+Xinyue Shen, Zeyuan Chen, M.~Backes, Yun Shen, and Yang Zhang.
+\newblock ``do anything now'': Characterizing and evaluating in-the-wild
+  jailbreak prompts on large language models.
+\newblock In \emph{Conference on Computer and Communications Security}, 2023.
+\newblock \doi{10.1145/3658644.3670388}.
+
+\bibitem[Vres et~al.(2026)Vres, Arcon, Petric, Vajda, Robnik-Šikonja, and
+  Bajec]{Vres2026}
+Domen Vres, Tjasa Arcon, Timotej Petric, Dario Vajda, Marko Robnik-Šikonja,
+  and I.~L. Bajec.
+\newblock Building a strong instruction language model for a less-resourced
+  language.
+\newblock \emph{arXiv preprint arXiv:2603.01691}, 2026.
+\newblock \doi{10.48550/arXiv.2603.01691}.
+
+\bibitem[Wang et~al.(2025)Wang, Wang, Liu, Schutze, and Plank]{Wang2025}
+Xinpeng Wang, Mingyang Wang, Yihong Liu, Hinrich Schutze, and Barbara Plank.
+\newblock Refusal direction is universal across safety-aligned languages.
+\newblock In \emph{Neural Information Processing Systems}, 2025.
+\newblock \doi{10.48550/arXiv.2505.17306}.
+
+\bibitem[Wei et~al.(2024)Wei, Huang, Huang, Xie, Qi, Xia, Mittal, Wang, and
+  Henderson]{Wei2024}
+Boyi Wei, Kaixuan Huang, Yangsibo Huang, Tinghao Xie, Xiangyu Qi, Mengzhou Xia,
+  Prateek Mittal, Mengdi Wang, and Peter Henderson.
+\newblock Assessing the brittleness of safety alignment via pruning and
+  low-rank modifications.
+\newblock In \emph{International Conference on Machine Learning}, pages
+  52588--52610, 2024.
+\newblock \doi{10.48550/arXiv.2402.05162}.
+
+\bibitem[Zou et~al.(2023{\natexlab{a}})Zou, Phan, Chen, Campbell, Guo,
+  et~al.]{Zou2023}
+Andy Zou, Long Phan, Sarah Chen, James Campbell, Phillip Guo, et~al.
+\newblock Representation engineering: A top-down approach to ai transparency.
+\newblock \emph{arXiv preprint arXiv:2310.01405}, 2023{\natexlab{a}}.
+\newblock \doi{10.48550/arXiv.2310.01405}.
+
+\bibitem[Zou et~al.(2023{\natexlab{b}})Zou, Wang, Kolter, and
+  Fredrikson]{Zou2023a}
+Andy Zou, Zifan Wang, J.~Kolter, and Matt Fredrikson.
+\newblock Universal and transferable adversarial attacks on aligned language
+  models.
+\newblock \emph{arXiv preprint arXiv:2307.15043}, 2023{\natexlab{b}}.
+
+\end{thebibliography}
