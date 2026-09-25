@@ -1,0 +1,47 @@
+{
+  "figure_id": "fig_2",
+  "type": "hand_written:paired_panel_bar",
+  "renderer": "render_fig_2.py",
+  "title": "Keyword Measurement Bias",
+  "aspect": "21:9",
+  "width_in": 7.0,
+  "checkpoint": "Gemma-edit (main Heretic edit of google/gemma-3-12b-it)",
+  "prompt_set": "S5X verified EN-SL translation pairs",
+  "n_pairs": 100,
+  "reference_channel": "Qwen3-14B judge (frozen experiment-4 rubric)",
+  "ylabel": "Refusal-positive rate (fraction)",
+  "ci_method": "Clopper-Pearson exact 95% interval on k/n per bar",
+  "panels": [
+    {
+      "title": "Keyword counter",
+      "categories": ["English", "Slovene"],
+      "positives": [87, 0],
+      "rates": [0.87, 0.0]
+    },
+    {
+      "title": "Reference judge",
+      "categories": ["English", "Slovene"],
+      "positives": [13, 82],
+      "rates": [0.13, 0.82]
+    }
+  ],
+  "delta_lang": {
+    "value": -1.56,
+    "ci95": [-1.68, -1.44],
+    "silence_component": -0.87,
+    "reference_component": -0.69,
+    "rogan_gladen_corrected": -1.78,
+    "rogan_gladen_ci95": [-1.89, -1.66]
+  },
+  "tbf": {
+    "gemma": {"numerator": 6, "denominator": 6},
+    "gams3": {"numerator": 37, "denominator": 37},
+    "threshold": "reference <= 10/100 refusals",
+    "reference": "certified classifier"
+  },
+  "sources": {
+    "rates_and_delta_lang": "3_invention_loop/iter_5/gen_art/gen_art_evaluation_5/results/delta_lang.csv (row: exp4, gemma_edit, S5X, qwen): n_pairs=100, p_kw_en=0.87, p_kw_sl=0.0, p_ref_en=0.13, p_ref_sl=0.82, delta_lang=-1.56, CI [-1.68,-1.44], silence=-0.87, reference=-0.69, Rogan-Gladen -1.78 [-1.89,-1.66]",
+    "tbf": "3_invention_loop/iter_5/gen_art/gen_art_evaluation_5/results/eval_core.json (gemma/C tbf 6/6; gams/C tbf 37/37); paste_text.md sentence 2",
+    "judge_caveat": "delta_lang.csv same row: SL certification 'UNCERTIFIED (gate NOT met: kappa_unweighted 0.723 < 0.80)'; EN within-edited panel kappa 0.421 (MISS)"
+  }
+}

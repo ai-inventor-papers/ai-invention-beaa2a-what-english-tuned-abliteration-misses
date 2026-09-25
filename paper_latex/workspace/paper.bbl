@@ -1,0 +1,208 @@
+\begin{thebibliography}{16}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Akiba et~al.(2019)Akiba, Sano, Yanase, Ohta, and Koyama]{Akiba2019}
+Takuya Akiba, Shotaro Sano, Toshihiko Yanase, Takeru Ohta, and Masanori Koyama.
+\newblock Optuna: A next-generation hyperparameter optimization framework.
+\newblock In \emph{Knowledge Discovery and Data Mining}, 2019.
+\newblock \doi{10.1145/3292500.3330701}.
+
+\bibitem[Arditi et~al.(2024)Arditi, Obeso, Syed, Paleka, Rimsky, Gurnee, and
+  Nanda]{Arditi2024}
+Andy Arditi, Oscar Obeso, Aaquib Syed, Daniel Paleka, Nina Rimsky, Wes Gurnee,
+  and Neel Nanda.
+\newblock Refusal in language models is mediated by a single direction.
+\newblock In \emph{Neural Information Processing Systems}, volume
+  abs/2406.11717, 2024.
+\newblock \doi{10.48550/arXiv.2406.11717}.
+
+\bibitem[Inan et~al.(2023)Inan, Upasani, Chi, Rungta, Iyer, Mao, Tontchev, Hu,
+  Fuller, Testuggine, and Khabsa]{Inan2023}
+Hakan Inan, K.~Upasani, Jianfeng Chi, Rashi Rungta, Krithika Iyer, Yuning Mao,
+  Michael Tontchev, Qing Hu, Brian Fuller, Davide Testuggine, and Madian
+  Khabsa.
+\newblock Llama guard: Llm-based input-output safeguard for human-ai
+  conversations.
+\newblock \emph{ArXiv}, abs/2312.06674, 2023.
+\newblock \doi{10.48550/arXiv.2312.06674}.
+
+\bibitem[Kamath et~al.(2025)Kamath, Ferret, Pathak, Vieillard, Merhej, Perrin,
+  Matejovicova, Ram'e, Rivière, Rouil-lard, Mesnard, Cideron, Grill, Ramos,
+  Yvinec, Casbon, Pot, Penchev, Liu, Visin, Kenealy, Beyer, Zhai, Tsitsulin,
+  Busa-Fekete, Feng, Sachdeva, Coleman, Gao, Mustafa, Barr, Parisotto, Tian,
+  Eyal, Cherry, Peter, Sinopalnikov, Bhupatiraju, Agarwal, Kazemi, Malkin,
+  Kumar, Vilar, Brusilovsky, Luo, Steiner, Friesen, Sharma, Sharma, Gilady,
+  Goedeckemeyer, Saade, Kolesnikov, Bendebury, Abdagic, Vadi, Gyorgy, Pinto,
+  Das, Bapna, Miech, Yang, Paterson, Shenoy, Chakrabarti, Piot, Wu, Shahriari,
+  Petrini, Chen, Lan, Choquette-Choo, Carey, Brick, Deutsch, Eisenbud, Cattle,
+  Cheng, Paparas, Sreepathihalli, Reid, Tran, Zelle, Noland, Huizenga,
+  Kharitonov, Liu, Amirkhanyan, Cameron, Hashemi, Klimczak-Pluci'nska, Singh,
+  Mehta, Lehri, Hazimeh, Ballantyne, Szpektor, Nardini, Pouget-Abadie, Chan,
+  Stanton, Wieting, Lai, Orbay, Fernandez, Newlan, Ji, Singh, Black, Yu, Hui,
+  Vodrahalli, Greff, Qiu, Valentine, Coelho, Ritter, Hoffman, Watson,
+  Chaturvedi, Moynihan, Ma, Babar, Noy, Byrd, Roy, Momchev, Chauhan, Bunyan,
+  Botarda, Caron, Rubenstein, Culliton, Schmid, Sessa, mei Xu, Stańczyk,
+  Tafti, Shivanna, Wu, Pan, Rokni, Willoughby, Vallu, Mullins, Jerome, Smoot,
+  Girgin, Iqbal, Reddy, Sheth, Põder, Bhatnagar, Panyam, Eiger, Zhang, Liu,
+  Yacovone, Liechty, Kalra, Evci, Misra, Roseberry, Feinberg, Kolesnikov, Han,
+  Kwon, Chen, Chow, Zhu, Wei, Egyed, Cotruta, Giang, Kirk, Rao, Lo, Moreira,
+  Martins, Sanseviero, Gonzalez, Gleicher, Warkentin, Mirrokni, Senter,
+  Collins, Barral, Ghahramani, Hadsell, Matias, Sculley, Petrov, Fiedel,
+  Shazeer, Vinyals, Dean, Hassabis, Kavukcuoglu, Farabet, Buchatskaya, Alayrac,
+  Anil, Lepikhin, Borgeaud, Bachem, Joulin, Andreev, Hardin, Dadashi, and
+  Hussenot]{Kamath2025}
+Gemma Team~Aishwarya Kamath, Johan Ferret, Shreya Pathak, Nino Vieillard,
+  Ramona Merhej, Sarah Perrin, Tatiana Matejovicova, Alexandre Ram'e, Morgane
+  Rivière, Louis Rouil-lard, Thomas Mesnard, Geoffrey Cideron, Jean-Bastien
+  Grill, Sabela Ramos, Edouard Yvinec, M.~Casbon, Etienne Pot, Ivo Penchev,
+  Gael Liu, Francesco Visin, Kathleen Kenealy, Lucas Beyer, Xiaohai Zhai, Anton
+  Tsitsulin, R.~Busa-Fekete, Alex Feng, Noveen Sachdeva, Benjamin Coleman,
+  Yi~Gao, Basil Mustafa, Iain Barr, Emilio Parisotto, David Tian, Matan Eyal,
+  Colin Cherry, Jan-Thorsten Peter, Danila Sinopalnikov, Surya Bhupatiraju,
+  Rishabh Agarwal, Mehran Kazemi, Dan Malkin, Ravin Kumar, David Vilar,
+  I.~Brusilovsky, Jiaming Luo, A.~Steiner, Abe Friesen, Abhanshu Sharma,
+  Abheesht Sharma, Adi~Mayrav Gilady, Adrian Goedeckemeyer, Alaa Saade,
+  Alexander Kolesnikov, Alexei Bendebury, Alvin Abdagic, Amit Vadi, Andr'as
+  Gyorgy, André~Susano Pinto, Anil Das, Ankur Bapna, Antoine Miech, Antoine
+  Yang, Antonia Paterson, Ashish Shenoy, Ayan Chakrabarti, Bilal Piot, Boxi Wu,
+  Bobak Shahriari, Bryce Petrini, Charlie Chen, Charline~Le Lan, Christopher~A.
+  Choquette-Choo, Cj~Carey, C.~Brick, Daniel Deutsch, Danielle Eisenbud, Dee
+  Cattle, D.~Cheng, Dimitris Paparas, Divyashree~Shivakumar Sreepathihalli,
+  Doug Reid, Dustin Tran, Dustin Zelle, Eric Noland, Erwin Huizenga,
+  E.~Kharitonov, Frederick Liu, G.~Amirkhanyan, Glenn Cameron, Hadi Hashemi,
+  Hanna Klimczak-Pluci'nska, Harman Singh, Harsh Mehta, Harshal~Tushar Lehri,
+  Hussein Hazimeh, Ian Ballantyne, Idan Szpektor, Ivan Nardini, Jean
+  Pouget-Abadie, Jetha Chan, Joe Stanton, J.~Michael Wieting, J.~Lai, Jordi
+  Orbay, Joe Fernandez, Joshua Newlan, Junsong Ji, Jyotinder Singh, Kat Black,
+  Kathy Yu, Kevin Hui, Kiran Vodrahalli, Klaus Greff, Linhai Qiu, Marcella
+  Valentine, Marina Coelho, Marvin Ritter, Matt Hoffman, Matthew Watson, Mayank
+  Chaturvedi, Michael Moynihan, Min Ma, Nabila Babar, Natasha Noy, Nathan Byrd,
+  Nick Roy, Nikola Momchev, Nilay Chauhan, Oskar Bunyan, Pankil Botarda, Paul
+  Caron, P.~Rubenstein, Phil Culliton, P.~Schmid, Pier~Giuseppe Sessa, Ping mei
+  Xu, P.~Stańczyk, P.~Tafti, Rakesh Shivanna, Renjie Wu, Renke Pan, R.~Rokni,
+  Rob Willoughby, Rohith Vallu, Ryan Mullins, Sammy Jerome, Sara Smoot, Sertan
+  Girgin, Shariq Iqbal, Shashir Reddy, Shruti Sheth, Siim Põder, Sijal
+  Bhatnagar, Sindhu~Raghuram Panyam, Sivan Eiger, Susan Zhang, Tianqi Liu,
+  Trevor Yacovone, T.~Liechty, Uday Kalra, Utku Evci, Vedant Misra, Vincent
+  Roseberry, Vladimir Feinberg, V.~Kolesnikov, Woohyun Han, Woosuk Kwon,
+  Xi~Chen, Yinlam Chow, Yuvein Zhu, Zichuan Wei, Z.~Egyed, Victor Cotruta, Minh
+  Giang, Phoebe Kirk, Anand Rao, Jessica Lo, Erica Moreira, Luiz~Gustavo
+  Martins, Omar Sanseviero, Lucas Gonzalez, Zach Gleicher, T.~Warkentin,
+  V.~Mirrokni, Evan Senter, Eli Collins, Joelle Barral, Z.~Ghahramani,
+  R.~Hadsell, Y.~Matias, D.~Sculley, Slav Petrov, Noah Fiedel, Noam Shazeer,
+  O.~Vinyals, Jeffrey Dean, D.~Hassabis, K.~Kavukcuoglu, C.~Farabet, Elena
+  Buchatskaya, Jean-Baptiste Alayrac, Rohan Anil, Dmitry Lepikhin, Sebastian
+  Borgeaud, Olivier Bachem, Armand Joulin, Alek Andreev, Cassidy Hardin, Robert
+  Dadashi, and L'eonard Hussenot.
+\newblock Gemma 3 technical report.
+\newblock \emph{ArXiv}, abs/2503.19786, 2025.
+\newblock \doi{10.48550/arXiv.2503.19786}.
+
+\bibitem[Kargaran et~al.(2023)Kargaran, Imani, Yvon, and
+  Schütze]{Kargaran2023}
+Amir~Hossein Kargaran, Ayyoob Imani, François Yvon, and Hinrich Schütze.
+\newblock Glotlid: Language identification for low-resource languages.
+\newblock In \emph{Conference on Empirical Methods in Natural Language
+  Processing}, volume abs/2310.16248, 2023.
+\newblock \doi{10.48550/arXiv.2310.16248}.
+
+\bibitem[Krasnodebska et~al.(2026)Krasnodebska, Kusa, and
+  Lipani]{Krasnodebska2026}
+Aleksandra Krasnodebska, Wojciech Kusa, and Aldo Lipani.
+\newblock Multilingual refusal alignment for safer large language models.
+\newblock In \emph{Annual Meeting of the Association for Computational
+  Linguistics}, pages 30769--30790, 2026.
+\newblock \doi{10.18653/v1/2026.findings-acl.1537}.
+
+\bibitem[Kumar et~al.(2025)Kumar, Jain, Yerukola, Jiang, Beniwal, Hartvigsen,
+  and Sap]{Kumar2025}
+Priyanshu Kumar, Devansh Jain, Akhila Yerukola, Liwei Jiang, Himanshu Beniwal,
+  Thomas Hartvigsen, and Maarten Sap.
+\newblock Polyguard: A multilingual safety moderation tool for 17 languages.
+\newblock \emph{ArXiv}, abs/2504.04377, 2025.
+\newblock \doi{10.48550/arXiv.2504.04377}.
+
+\bibitem[Marks and Tegmark(2023)]{Marks2023}
+Samuel Marks and Max Tegmark.
+\newblock The geometry of truth: Emergent linear structure in large language
+  model representations of true/false datasets.
+\newblock \emph{ArXiv}, abs/2310.06824, 2023.
+\newblock \doi{10.48550/arXiv.2310.06824}.
+
+\bibitem[Mazeika et~al.(2024)Mazeika, Phan, Yin, Zou, Wang, Mu, Sakhaee, Li,
+  Basart, Li, Forsyth, and Hendrycks]{Mazeika2024}
+Mantas Mazeika, Long Phan, Xuwang Yin, Andy Zou, Zifan Wang, Norman Mu, Elham
+  Sakhaee, Nathaniel Li, Steven Basart, Bo~Li, David Forsyth, and Dan
+  Hendrycks.
+\newblock Harmbench: A standardized evaluation framework for automated red
+  teaming and robust refusal.
+\newblock In \emph{International Conference on Machine Learning}, pages
+  35181--35224, 2024.
+\newblock \doi{10.48550/arXiv.2402.04249}.
+
+\bibitem[Mehrotra et~al.(2023)Mehrotra, Zampetakis, Kassianik, Nelson,
+  Anderson, Singer, and Karbasi]{Mehrotra2023}
+Anay Mehrotra, M.~Zampetakis, Paul Kassianik, Blaine Nelson, Hyrum~S. Anderson,
+  Yaron Singer, and Amin Karbasi.
+\newblock Tree of attacks: Jailbreaking black-box llms automatically.
+\newblock In \emph{Neural Information Processing Systems}, volume
+  abs/2312.02119, 2023.
+\newblock \doi{10.48550/arXiv.2312.02119}.
+
+\bibitem[Shen et~al.(2023)Shen, Chen, Backes, Shen, and Zhang]{Shen2023}
+Xinyue Shen, Zeyuan Chen, M.~Backes, Yun Shen, and Yang Zhang.
+\newblock "do anything now": Characterizing and evaluating in-the-wild
+  jailbreak prompts on large language models.
+\newblock In \emph{Conference on Computer and Communications Security}, 2023.
+\newblock \doi{10.1145/3658644.3670388}.
+
+\bibitem[Vres et~al.(2026)Vres, Arcon, Petric, Vajda, Robnik-Šikonja, and
+  Bajec]{Vres2026}
+Domen Vres, Tjasa Arcon, Timotej Petric, Dario Vajda, Marko Robnik-Šikonja,
+  and I.~L. Bajec.
+\newblock Building a strong instruction language model for a less-resourced
+  language.
+\newblock \emph{ArXiv}, abs/2603.01691, 2026.
+\newblock \doi{10.48550/arXiv.2603.01691}.
+
+\bibitem[Wang et~al.(2025)Wang, Wang, Liu, Schutze, and Plank]{Wang2025}
+Xinpeng Wang, Mingyang Wang, Yihong Liu, Hinrich Schutze, and Barbara Plank.
+\newblock Refusal direction is universal across safety-aligned languages.
+\newblock In \emph{Neural Information Processing Systems}, volume
+  abs/2505.17306, 2025.
+\newblock \doi{10.48550/arXiv.2505.17306}.
+
+\bibitem[Wei et~al.(2024)Wei, Huang, Huang, Xie, Qi, Xia, Mittal, Wang, and
+  Henderson]{Wei2024}
+Boyi Wei, Kaixuan Huang, Yangsibo Huang, Tinghao Xie, Xiangyu Qi, Mengzhou Xia,
+  Prateek Mittal, Mengdi Wang, and Peter Henderson.
+\newblock Assessing the brittleness of safety alignment via pruning and
+  low-rank modifications.
+\newblock In \emph{International Conference on Machine Learning}, pages
+  52588--52610, 2024.
+\newblock \doi{10.48550/arXiv.2402.05162}.
+
+\bibitem[Zou et~al.(2023{\natexlab{a}})Zou, Phan, Chen, Campbell, Guo, Ren,
+  Pan, Yin, Mazeika, Dombrowski, Goel, Li, Byun, Wang, Mallen, Basart, Koyejo,
+  Song, Fredrikson, Kolter, and Hendrycks]{Zou2023}
+Andy Zou, Long Phan, Sarah Chen, James Campbell, Phillip Guo, Richard Ren,
+  Alexander Pan, Xuwang Yin, Mantas Mazeika, Ann-Kathrin Dombrowski, Shashwat
+  Goel, Nathaniel Li, Michael~J. Byun, Zifan Wang, Alex~Troy Mallen, Steven
+  Basart, Sanmi Koyejo, Dawn Song, Matt Fredrikson, Zico Kolter, and Dan
+  Hendrycks.
+\newblock Representation engineering: A top-down approach to ai transparency.
+\newblock \emph{ArXiv}, abs/2310.01405, 2023{\natexlab{a}}.
+\newblock \doi{10.48550/arXiv.2310.01405}.
+
+\bibitem[Zou et~al.(2023{\natexlab{b}})Zou, Wang, Kolter, and
+  Fredrikson]{Zou2023a}
+Andy Zou, Zifan Wang, J.~Kolter, and Matt Fredrikson.
+\newblock Universal and transferable adversarial attacks on aligned language
+  models.
+\newblock \emph{ArXiv}, abs/2307.15043, 2023{\natexlab{b}}.
+
+\end{thebibliography}
