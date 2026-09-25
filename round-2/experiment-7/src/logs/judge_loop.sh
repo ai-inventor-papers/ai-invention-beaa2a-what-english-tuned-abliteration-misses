@@ -1,6 +1,6 @@
 #!/bin/bash
 # poll: judge new validity generation files with gpt-4.1 until panel.py (PID given) has exited and all files are judged
-cd /ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_7
+cd ..
 PANEL_PID=$1
 while true; do
   .venv/bin/python judge_api.py --targets validity >> logs/judge_loop.out 2>&1

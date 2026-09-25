@@ -6,7 +6,7 @@ interruptions. The pipeline is resumable per edit, so re-running a stage skips f
 ## 1. Copy the artifact
 
 ```bash
-cp -r /ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_7 ~/gemma_p1_panel
+cp -r . ~/gemma_p1_panel
 cd ~/gemma_p1_panel
 ```
 

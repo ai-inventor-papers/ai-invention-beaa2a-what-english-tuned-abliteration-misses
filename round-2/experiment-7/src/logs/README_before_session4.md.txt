@@ -105,7 +105,7 @@ __RESULTS__
 | `cache/` | regenerable original-model tensors and analysis resampling caches (**deleted after the round**) |
 
 Kept artifacts are referenced by absolute path:
-`/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_7/results/`
+`../results/`
 (panel, analysis, validity), `.../references/`, `.../directions/`, `.../protocol/`, `.../edits/`.
 
 ## How to run

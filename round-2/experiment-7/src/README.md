@@ -144,14 +144,14 @@ Calibrated-trait version over E0 + E1: 15/15 edits with predicted EN judged refu
 **Audit** (`audit.py`, independent numpy path): deterministic checks pass: True. Placebos (language-label shuffle Gap CI covers 0; permuted edit order R² ≈ 0) pass: True. The fitted count matches: True. API cost total: $0.369.
 
 Kept artifacts (absolute paths, not re-downloadable):
-* `/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_7/results`
-* `/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_7/results/panel/item_traits.parquet`
-* `/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_7/results/panel/edit_covariates.parquet`
-* `/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_7/results/validity`
-* `/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_7/references`
-* `/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_7/directions`
-* `/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_7/edits`
-* `/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_7/protocol`
+* `./results`
+* `./results/panel/item_traits.parquet`
+* `./results/panel/edit_covariates.parquet`
+* `./results/validity`
+* `./references`
+* `./directions`
+* `./edits`
+* `./protocol`
 
 **Independent re-derivation** (`rederive.py` → `results/rederive.json`; raw files only, no shared code):
 * Matches exactly: the fitted count (163), the transfer slopes (R1 0.436, R_seq 0.220, Rb 0.167), the lp_ref/lp_comp
@@ -273,7 +273,7 @@ Kept artifacts (absolute paths, not re-downloadable):
 | `cache/` | regenerable original-model tensors and analysis resampling caches (**deleted after the round**) |
 
 Kept artifacts are referenced by absolute path:
-`/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_7/results/`
+`./results/`
 (panel, analysis, validity), `.../references/`, `.../directions/`, `.../protocol/`, `.../edits/`.
 
 ## How to run
