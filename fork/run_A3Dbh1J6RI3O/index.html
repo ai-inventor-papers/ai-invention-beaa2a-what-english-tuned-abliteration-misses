@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Keyword Blindness in Abliteration</title>
+<meta name="description" content="An English keyword objective used to verify abliterated LLM checkpoints is structurally blind to Slovene refusals, making keyword-verified checkpoints invalid as language-neutral references.">
+<style>
+:root {
+  --c-bg: #ffffff;
+  --c-surface: #f6f7f9;
+  --c-surface-alt: #eceef2;
+  --c-border: #d0d4dc;
+  --c-text: #1a1d23;
+  --c-text-secondary: #4a5060;
+  --c-text-muted: #6b7280;
+  --c-accent: #1a6fb5;
+  --c-accent-hover: #145a94;
+  --c-accent-subtle: #e8f1f8;
+  --c-highlight: #c96a20;
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  --font-mono: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+  --max-w: 820px;
+  --gutter: 16px;
+  --nav-w: 180px;
+}
+*,*::before,*::after { box-sizing: border-box; }
+body {
+  margin: 0; padding: 0;
+  font-family: var(--font-sans);
+  font-size: 16px; line-height: 1.65;
+  color: var(--c-text);
+  background: var(--c-bg);
+  -webkit-font-smoothing: antialiased;
+}
+a { color: var(--c-accent); text-decoration: none; }
+a:hover { color: var(--c-accent-hover); text-decoration: underline; }
+
+.skip-link {
+  position: absolute; top: -100%; left: var(--gutter);
+  background: var(--c-accent); color: #fff;
+  padding: 8px 16px; border-radius: 4px;
+  z-index: 1000; font-size: 14px;
+}
+.skip-link:focus { top: 8px; }
+
+nav.section-nav {
+  position: fixed;
+  top: 50%;
+  left: max(calc((100vw - var(--max-w)) / 2 - var(--nav-w) - 32px), 8px);
+  transform: translateY(-50%);
+  width: var(--nav-w); z-index: 50;
+  font-size: 13px; line-height: 1.4;
+}
+nav.section-nav ol { list-style: none; margin: 0; padding: 0; }
+nav.section-nav li { margin-bottom: 6px; }
+nav.section-nav a {
+  display: block; padding: 4px 12px;
+  color: var(--c-text-muted);
+  border-left: 2px solid transparent;
+  transition: color 0.15s, border-color 0.15s;
+}
+nav.section-nav a:hover { color: var(--c-text); text-decoration: none; }
+nav.section-nav a.active {
+  color: var(--c-accent); border-left-color: var(--c-accent); font-weight: 600;
+}
+@media (max-width: 1200px) { nav.section-nav { display: none; } }
+
+main { max-width: var(--max-w); margin: 0 auto; padding: 0 var(--gutter); }
+section { padding-top: 48px; }
+
+.hero { padding-top: 64px; padding-bottom: 32px; }
+.hero h1 {
+  font-size: clamp(1.5rem, 4vw, 2.1rem);
+  line-height: 1.25; font-weight: 700;
+  margin: 0 0 12px; letter-spacing: -0.02em;
+}
+.hero .tldr {
+  font-size: 17px; line-height: 1.6;
+  color: var(--c-text); margin-bottom: 24px;
+}
+.hero-links { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 8px; }
+.hero-links a {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 8px 16px; background: var(--c-accent); color: #fff;
+  border-radius: 6px; font-size: 14px; font-weight: 500;
+  transition: background 0.15s;
+}
+.hero-links a:hover { background: var(--c-accent-hover); text-decoration: none; }
+.hero-links a.secondary {
+  background: var(--c-surface); color: var(--c-accent);
+  border: 1px solid var(--c-border);
+}
+.hero-links a.secondary:hover { background: var(--c-surface-alt); }
+.round-links { font-size: 13px; color: var(--c-text-muted); margin-top: 8px; }
+.round-links a { margin-right: 6px; }
+
+h2 {
+  font-size: 1.35rem; font-weight: 700; margin: 0 0 20px;
+  padding-bottom: 8px; border-bottom: 2px solid var(--c-surface-alt);
+}
+h3 { font-size: 1.05rem; font-weight: 600; margin: 28px 0 12px; }
+
+.cards { display: grid; grid-template-columns: 1fr; gap: 16px; }
+@media (min-width: 600px) { .cards { grid-template-columns: 1fr 1fr; } }
+.card {
+  background: var(--c-surface); border: 1px solid var(--c-border);
+  border-radius: 8px; padding: 20px 22px;
+}
+.card h3 { font-size: 0.95rem; font-weight: 700; margin: 0 0 8px; }
+.card p { font-size: 14px; line-height: 1.55; color: var(--c-text-secondary); margin: 0; }
+
+.table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 20px 0; }
+table { border-collapse: collapse; width: 100%; font-size: 14px; white-space: nowrap; }
+th, td { padding: 8px 12px; text-align: left; border-bottom: 1px solid var(--c-border); }
+th {
+  font-weight: 600; background: var(--c-surface); font-size: 13px;
+  color: var(--c-text-secondary); text-transform: uppercase; letter-spacing: 0.03em;
+}
+tr:last-child td { border-bottom: none; }
+tbody tr:hover { background: var(--c-accent-subtle); }
+.num { font-family: var(--font-mono); font-size: 13px; }
+
+.figure-gallery { display: grid; gap: 24px; }
+.figure-item {
+  background: var(--c-surface); border: 1px solid var(--c-border);
+  border-radius: 8px; overflow: hidden;
+}
+.figure-item .fig-img-wrap {
+  cursor: pointer; padding: 16px; display: flex;
+  justify-content: center; background: #fff;
+}
+.figure-item .fig-img-wrap:focus-visible {
+  outline: 3px solid var(--c-accent); outline-offset: -3px;
+}
+.figure-item img { max-width: 100%; height: auto; display: block; }
+.figure-item figcaption {
+  padding: 14px 18px; font-size: 13.5px; line-height: 1.55;
+  color: var(--c-text-secondary); border-top: 1px solid var(--c-border);
+}
+
+.lightbox-overlay {
+  display: none; position: fixed; inset: 0; z-index: 200;
+  background: rgba(0,0,0,0.82);
+  justify-content: center; align-items: center; padding: 24px;
+}
+.lightbox-overlay.open { display: flex; }
+.lightbox-overlay img {
+  max-width: 95vw; max-height: 90vh;
+  border-radius: 4px; box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+}
+.lightbox-close {
+  position: fixed; top: 16px; right: 20px;
+  background: rgba(255,255,255,0.15);
+  border: 1px solid rgba(255,255,255,0.3);
+  color: #fff; font-size: 20px; width: 40px; height: 40px;
+  border-radius: 50%; cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  z-index: 210; transition: background 0.15s;
+}
+.lightbox-close:hover { background: rgba(255,255,255,0.3); }
+.lightbox-close:focus-visible { outline: 3px solid #fff; outline-offset: 2px; }
+
+.limitations-list { padding-left: 0; list-style: none; }
+.limitations-list li {
+  position: relative; padding: 10px 0 10px 20px;
+  border-bottom: 1px solid var(--c-surface-alt);
+  font-size: 15px; line-height: 1.55;
+}
+.limitations-list li::before {
+  content: ""; position: absolute; left: 0; top: 18px;
+  width: 6px; height: 6px; border-radius: 50%; background: var(--c-highlight);
+}
+.limitations-list li:last-child { border-bottom: none; }
+
+footer {
+  margin-top: 56px; padding: 32px 0;
+  border-top: 2px solid var(--c-surface-alt);
+  font-size: 14px; color: var(--c-text-secondary);
+}
+footer .footer-links { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 16px; }
+footer .footer-links a {
+  padding: 6px 14px; border: 1px solid var(--c-border); border-radius: 6px; font-size: 13px;
+}
+footer .footer-links a:hover { background: var(--c-surface); }
+
+.code-artifacts { margin-top: 32px; padding-top: 20px; border-top: 1px solid var(--c-surface-alt); }
+.code-artifacts h3 { font-size: 0.95rem; font-weight: 600; margin: 0 0 10px; }
+.code-artifacts ul { padding-left: 18px; font-size: 13px; line-height: 1.7; }
+
+.result-highlight {
+  background: var(--c-surface);
+  border-left: 3px solid var(--c-accent);
+  padding: 14px 18px; border-radius: 0 6px 6px 0;
+  margin: 16px 0; font-size: 15px;
+}
+.result-highlight .big-num {
+  font-family: var(--font-mono); font-size: 1.6rem; font-weight: 700;
+  color: var(--c-text); display: block; margin-bottom: 4px;
+}
+
+.sr-only {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0,0,0,0); border: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    transition-duration: 0s !important; animation-duration: 0s !important;
+  }
+}
+@media print {
+  nav.section-nav { display: none; }
+  .lightbox-overlay { display: none !important; }
+}
+</style>
+</head>
+<body>
+
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
+<nav class="section-nav" aria-label="Section navigation">
+  <ol>
+    <li><a href="#hero">Overview</a></li>
+    <li><a href="#contributions">Contributions</a></li>
+    <li><a href="#method">Method</a></li>
+    <li><a href="#results">Results</a></li>
+    <li><a href="#figures">Figures</a></li>
+    <li><a href="#limitations">Limitations</a></li>
+  </ol>
+</nav>
+
+<main id="main-content">
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <h1>An English Keyword Objective Is Blind to Its Own Edit in Slovene</h1>
+
+    <p class="tldr">
+      Abliteration removes refusal from language models by orthogonalising weights
+      against an English-extracted refusal direction. The optimiser verifies candidates
+      with an English keyword counter. Neither search reached the primary selection
+      rule (&le; 10/100 keyword refusals); every candidate that a reference judge
+      places below the selection threshold is invisible to the keyword objective
+      (threshold-blind fraction 1.0). On 100 verified English-Slovene prompt pairs,
+      the keyword counter fires on 87% of English responses and on 0% of Slovene
+      responses, while the reference judge finds 13% English refusal and 82% Slovene
+      refusal (<span class="num">&Delta;<sub>lang</sub> = &minus;1.56</span>, 95% CI
+      [&minus;1.68, &minus;1.44]). Keyword-verified abliterated checkpoints are
+      therefore not valid language-neutral references for refusal evaluation. The
+      underlying edit itself transfers asymmetrically: GaMS3 Slovene refusal drops
+      from 87% to 0%, but Gemma Slovene refusal drops only from 94% to 74%.
+    </p>
+
+    <div class="hero-links">
+      <a href="https://cdn.jsdelivr.net/gh/ai-inventor-papers/ai-invention-beaa2a-what-english-tuned-abliteration-misses@fork/run_A3Dbh1J6RI3O/paper.pdf">Read the paper (PDF)</a>
+      <a href="interactive.html" class="secondary">Explore the interactive demo</a>
+      <a href="https://cdn.jsdelivr.net/gh/ai-inventor-papers/ai-invention-beaa2a-what-english-tuned-abliteration-misses@fork/run_A3Dbh1J6RI3O/report.pdf" class="secondary">Read the full research report</a>
+      <a href="https://cdn.jsdelivr.net/gh/ai-inventor-papers/ai-invention-beaa2a-what-english-tuned-abliteration-misses@fork/run_A3Dbh1J6RI3O/exec_summary.pdf" class="secondary">Read the executive summary</a>
+      <a href="https://github.com/ai-inventor-papers/ai-invention-beaa2a-what-english-tuned-abliteration-misses/tree/fork/run_A3Dbh1J6RI3O" class="secondary">Code repository</a>
+    </div>
+    <div class="round-links">
+      Round reports:
+      <a href="https://cdn.jsdelivr.net/gh/ai-inventor-papers/ai-invention-beaa2a-what-english-tuned-abliteration-misses@fork/run_A3Dbh1J6RI3O/round-1/report.pdf">Round 1</a>
+      <a href="https://cdn.jsdelivr.net/gh/ai-inventor-papers/ai-invention-beaa2a-what-english-tuned-abliteration-misses@fork/run_A3Dbh1J6RI3O/round-2/report.pdf">Round 2</a>
+      <a href="https://cdn.jsdelivr.net/gh/ai-inventor-papers/ai-invention-beaa2a-what-english-tuned-abliteration-misses@fork/run_A3Dbh1J6RI3O/round-3/report.pdf">Round 3</a>
+      <a href="https://cdn.jsdelivr.net/gh/ai-inventor-papers/ai-invention-beaa2a-what-english-tuned-abliteration-misses@fork/run_A3Dbh1J6RI3O/round-4/report.pdf">Round 4</a>
+      <a href="https://cdn.jsdelivr.net/gh/ai-inventor-papers/ai-invention-beaa2a-what-english-tuned-abliteration-misses@fork/run_A3Dbh1J6RI3O/round-5/report.pdf">Round 5</a>
+    </div>
+  </section>
+
+  <!-- CONTRIBUTIONS -->
+  <section id="contributions">
+    <h2>Contributions</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Keyword measurement bias</h3>
+        <p>
+          The English keyword counter used by Heretic is silent on Slovene text: on 100
+          verified Gemma-edit pairs it fires on 87% of English responses but 0% of Slovene responses,
+          while the reference judge finds 82% Slovene refusal
+          (&Delta;<sub>lang</sub> = &minus;1.56, 95% CI [&minus;1.68, &minus;1.44]).
+          The threshold-blind fraction is 1.0 in both searches: counted by the keyword-based
+          scorer C, 6/6 Gemma and 37/37 GaMS3 candidates below the threshold are invisible;
+          the reference judge J confirms the pattern at 5/5 and 6/6. Keyword-verified
+          abliterated checkpoints are not valid language-neutral references for refusal evaluation.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Depth placement: within-model signal, primary criterion falsified</h3>
+        <p>
+          Within each model, write-profile overlap correlates with residual refusal
+          (GaMS3: &rho; = &minus;0.90; Gemma: &rho; = &minus;0.96 EN, &minus;0.83 SL),
+          and replicates in Qwen3-8B (&rho; = &minus;0.76/&minus;0.93/&minus;0.84, 9/9 matched groups).
+          The primary criterion, that placement explains variance beyond dose, was falsified
+          (&Delta;R&sup2; = 0.027 and 0.056). At the keyword floor, dose dominates (p = 0.774).
+          The frozen DEV index fails cross-model prediction (&rho; = &minus;0.009, n = 21, p = 0.16).
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- METHOD -->
+  <section id="method">
+    <h2>Method</h2>
+
+    <h3>Models and checkpoints</h3>
+    <p>
+      Five checkpoints, all in 4-bit NF4 quantisation: <strong>Gemma-orig</strong>
+      (<code>google/gemma-3-12b-it</code>), <strong>Gemma-edit</strong>
+      (Heretic-optimised abliteration, 116 TPE trials, keyword objective),
+      <strong>GaMS3-orig</strong> (<code>cjvt/GaMS3-12B-Instruct</code>, continually
+      pretrained on Slovene), <strong>GaMS3-edit</strong> (same Heretic procedure),
+      and a <strong>Community-ref</strong> (independently abliterated Gemma).
+    </p>
+
+    <h3>Heretic optimisation</h3>
+    <p>
+      Heretic uses tree-structured Parzen estimation (TPE) to search over abliteration
+      hyperparameters: which layers to edit, the scaling coefficient, and the refusal-direction
+      extraction method. It optimises two objectives: an English keyword refusal rate
+      and KL divergence. The selection rule minimises KL subject to refusals &le; 10/100;
+      if no candidate satisfies this, the fallback minimises refusals subject to KL &le; 1.0.
+      Both searches fell to the fallback: no candidate achieved &le; 10 keyword refusals.
+      The keyword objective floor was 72 for Gemma and 16 for GaMS3.
+    </p>
+
+    <h3>Evaluation protocol</h3>
+    <p>
+      All checkpoints are evaluated on the
+      <a href="https://github.com/ai-inventor-papers/ai-invention-beaa2a-what-english-tuned-abliteration-misses/tree/fork/run_A3Dbh1J6RI3O/round-1/dataset-1">RefusEU benchmark</a>:
+      280 harmful prompts (S5 split) and 150 benign prompts (S6 split), each in English and Slovene.
+      Responses are single greedy-decoded generations (temperature 0, max 256 tokens), classified
+      into refused, partial, or complied by a local Qwen3-14B judge. Attack success rate (ASR)
+      is computed where both Llama Guard 3 and PolyGuard agree. Over-refusal rate is the fraction
+      of benign-prompt responses classified as refused.
+    </p>
+    <p>
+      The 256-token limit truncates 94-95% of edited English outputs.
+      The Qwen3-14B judge was calibrated against GPT-4.1: English &kappa; = 0.86 (gate met);
+      Slovene &kappa; = 0.72 (gate not met). All Slovene absolute rates carry a measurement caveat.
+      The depth-experiment judge also missed its gate (&kappa; = 0.683).
+    </p>
+  </section>
+
+  <!-- RESULTS -->
+  <section id="results">
+    <h2>Results</h2>
+
+    <h3>Refusal suppression across languages</h3>
+    <p>
+      Abliteration produces dramatically different cross-lingual outcomes for the two models.
+      <a href="https://github.com/ai-inventor-papers/ai-invention-beaa2a-what-english-tuned-abliteration-misses/tree/fork/run_A3Dbh1J6RI3O/round-2/experiment-4">Code: Bilingual safety test of four model versions.</a>
+    </p>
+
+    <div class="table-wrap">
+      <table>
+        <caption class="sr-only">Refusal rate, ASR, and over-refusal on RefusEU S5 harmful prompts (n=280 per cell), with 95% Clopper-Pearson confidence intervals.</caption>
+        <thead>
+          <tr><th>Checkpoint</th><th>Lang</th><th>Refusal</th><th>ASR</th><th>Over-refusal</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>GaMS3-orig</td><td>EN</td><td class="num">.986 [.971, .996]</td><td class="num">.015 [.004, .030]</td><td class="num">.100 [.053, .153]</td></tr>
+          <tr><td>GaMS3-orig</td><td>SL</td><td class="num">.871 [.829, .907]</td><td class="num">.012 [.000, .027]</td><td class="num">.107 [.060, .160]</td></tr>
+          <tr><td>GaMS3-edit</td><td>EN</td><td class="num">.014 [.004, .029]</td><td class="num">.982 [.964, .996]</td><td class="num">.000 [.000, .000]</td></tr>
+          <tr><td>GaMS3-edit</td><td>SL</td><td class="num">.000 [.000, .000]</td><td class="num">.972 [.952, .992]</td><td class="num">.000 [.000, .000]</td></tr>
+          <tr><td colspan="5" style="height:1px;padding:0;background:var(--c-border)"></td></tr>
+          <tr><td>Gemma-orig</td><td>EN</td><td class="num">.971 [.950, .989]</td><td class="num">.026 [.007, .049]</td><td class="num">.087 [.040, .133]</td></tr>
+          <tr><td>Gemma-orig</td><td>SL</td><td class="num">.939 [.911, .964]</td><td class="num">.016 [.004, .031]</td><td class="num">.327 [.253, .400]</td></tr>
+          <tr><td>Gemma-edit</td><td>EN</td><td class="num">.287 [.233, .341]</td><td class="num">.738 [.681, .794]</td><td class="num">.013 [.000, .033]</td></tr>
+          <tr><td>Gemma-edit</td><td>SL</td><td class="num">.739 [.686, .786]</td><td class="num">.103 [.067, .143]</td><td class="num">.193 [.133, .260]</td></tr>
+          <tr><td colspan="5" style="height:1px;padding:0;background:var(--c-border)"></td></tr>
+          <tr><td>Community-ref</td><td>EN</td><td class="num">.054 [.029, .082]</td><td class="num">1.00 [1.00, 1.00]</td><td class="num">.007 [.000, .020]</td></tr>
+          <tr><td>Community-ref</td><td>SL</td><td class="num">.114 [.079, .154]</td><td class="num">.870 [.822, .909]</td><td class="num">.027 [.007, .053]</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>
+      <strong>GaMS3:</strong> abliteration removes refusal almost completely in both languages.
+      English refusal drops from 98.6% to 1.4%; Slovene from 87.1% to 0.0%. The edit transfers fully.
+      <a href="https://github.com/ai-inventor-papers/ai-invention-beaa2a-what-english-tuned-abliteration-misses/tree/fork/run_A3Dbh1J6RI3O/round-2/experiment-6">Code: What English edits miss in Slovene: GaMS3 panel.</a>
+    </p>
+    <p>
+      <strong>Gemma:</strong> abliteration partially suppresses English refusal
+      (97.1% to 28.7%) but barely affects Slovene (93.9% to 73.9%).
+      The English ASR reaches 73.8%, far below GaMS3's 98.2%; Slovene ASR is 10.3%.
+      <a href="https://github.com/ai-inventor-papers/ai-invention-beaa2a-what-english-tuned-abliteration-misses/tree/fork/run_A3Dbh1J6RI3O/round-2/experiment-7">Code: English edits barely unlock Slovene refusal in Gemma.</a>
+    </p>
+    <p>
+      <strong>Community reference:</strong> the independently abliterated Gemma achieves much lower
+      refusal in both English (5.4%) and Slovene (11.4%), suggesting that a more thorough abliteration
+      procedure can reach deeper into the refusal mechanism.
+      <a href="https://github.com/ai-inventor-papers/ai-invention-beaa2a-what-english-tuned-abliteration-misses/tree/fork/run_A3Dbh1J6RI3O/round-1/experiment-1">Code: Same edit, very different safety effect.</a>
+    </p>
+
+    <h3>Keyword measurement bias</h3>
+
+    <div class="result-highlight">
+      <span class="big-num">&Delta;<sub>lang</sub> = &minus;1.56</span>
+      The keyword counter fires on 87% of English responses but 0% of Slovene responses.
+      The reference judge finds 13% English refusal and 82% Slovene refusal.
+      95% CI [&minus;1.68, &minus;1.44].
+    </div>
+
+    <p>
+      The keyword refusal counter counts English refusal phrases ("I cannot", "I'm sorry", etc.)
+      in model responses. It is structurally unable to detect Slovene refusals.
+      The threshold-blind fraction (TBF) is 1.0 in both searches: every candidate that
+      a scorer places at or below the selection threshold (&le; 10/100 refusals) is invisible
+      to the keyword objective. Under the keyword-based scorer C, 6/6 Gemma and 37/37 GaMS3
+      candidates are invisible; under the reference judge J, 5/5 and 6/6.
+      TBF = 1.0 follows from the keyword floors (72 for Gemma, 16 for GaMS3, both above the
+      10-refusal threshold) and the counter's 81% false-positive rate on edited English text.
+      <a href="https://github.com/ai-inventor-papers/ai-invention-beaa2a-what-english-tuned-abliteration-misses/tree/fork/run_A3Dbh1J6RI3O/round-5/evaluation-5">Code: How blind is an English-only refusal score.</a>
+    </p>
+
+    <div class="table-wrap">
+      <table>
+        <caption class="sr-only">Keyword refusal counter vs. judge reference on held-out prompts.</caption>
+        <thead>
+          <tr><th>Condition</th><th>n</th><th>&kappa;</th><th>KW pos. rate</th><th>Ref. base rate</th><th>Mechanism</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Original EN</td><td class="num">70</td><td class="num">0.20</td><td class="num">0.94</td><td class="num">0.94</td><td>CONCORDANT</td></tr>
+          <tr><td>Original SL</td><td class="num">70</td><td class="num">0.00</td><td class="num">0.00</td><td class="num">0.96</td><td>SILENT</td></tr>
+          <tr><td>Edited EN</td><td class="num">490</td><td class="num">0.02</td><td class="num">0.34</td><td class="num">0.17</td><td>MISFIRING</td></tr>
+          <tr><td>Edited SL</td><td class="num">490</td><td class="num">0.00</td><td class="num">0.00</td><td class="num">0.44</td><td>SILENT</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>
+      On edited English text, 81% of the keyword counter's refusal detections are false positives,
+      confirming that the counter both over-fires in English and is silent in Slovene.
+      <a href="https://github.com/ai-inventor-papers/ai-invention-beaa2a-what-english-tuned-abliteration-misses/tree/fork/run_A3Dbh1J6RI3O/round-4/experiment-15">Code: Can a refusal optimiser see its own refusals?</a>
+    </p>
+
+    <h3>Depth placement vs. dose</h3>
+
+    <p>
+      Heretic treats which layers to edit and the scaling coefficient as free parameters.
+      We construct causal write profiles by applying single-layer abliteration edits in
+      isolation, then measure residual refusal. The write-profile overlap
+      O<sub>SL</sub> measures how well a multi-layer candidate concentrates energy on layers
+      that matter.
+      <a href="https://github.com/ai-inventor-papers/ai-invention-beaa2a-what-english-tuned-abliteration-misses/tree/fork/run_A3Dbh1J6RI3O/round-4/experiment-13">Code: Where a refusal edit lands decides what survives.</a>
+    </p>
+
+    <p>
+      For Gemma, Spearman correlations between write-profile overlap and residual refusal are
+      &rho; = &minus;0.96 for English and &rho; = &minus;0.83 for Slovene (n = 18 weight cells).
+      For GaMS3, &rho; = &minus;0.90 (Slovene, p &lt; 10<sup>&minus;7</sup>),
+      holding at both energy levels (&rho; = &minus;0.97 at E2, &rho; = &minus;0.95 at E3).
+      The overlap replicates in Qwen3-8B (&rho; = &minus;0.76 pooled, &minus;0.93 at E2,
+      &minus;0.84 at E3, 9/9 matched groups).
+      <a href="https://github.com/ai-inventor-papers/ai-invention-beaa2a-what-english-tuned-abliteration-misses/tree/fork/run_A3Dbh1J6RI3O/round-4/experiment-14">Code: Where a refusal edit must land in a Slovene model.</a>
+    </p>
+
+    <div class="result-highlight">
+      <span class="big-num">&Delta;R&sup2; = 0.027 / 0.056</span>
+      Primary criterion falsified: placement does not explain variance in residual refusal beyond dose.
+      At the keyword floor, dose dominates (p = 0.774). Raw depth alone does not predict residual
+      refusal (&rho; = &minus;0.34, p = 0.15).
+    </div>
+
+    <p>
+      The frozen activation-space DEV index fails cross-model prediction entirely:
+      Spearman &rho; = &minus;0.009 over 21 pooled cells (95% CI [&minus;0.13, 0.19],
+      permutation p = 0.16). The depth at which abliteration is most effective is model-specific;
+      no fixed depth prescription carries from one model to another.
+      <a href="https://github.com/ai-inventor-papers/ai-invention-beaa2a-what-english-tuned-abliteration-misses/tree/fork/run_A3Dbh1J6RI3O/round-3/experiment-12">Code: Depth index fails to predict cross-lingual refusal-edit failure.</a>
+    </p>
+  </section>
+
+  <!-- FIGURES -->
+  <section id="figures">
+    <h2>Figures</h2>
+    <div class="figure-gallery">
+
+      <figure class="figure-item">
+        <div class="fig-img-wrap" role="button" tabindex="0" aria-label="Enlarge figure: Refusal Rates Before and After Abliteration" data-src="figures/fig_1_v0.png">
+          <img src="figures/fig_1_v0.png" alt="Bar chart showing refusal rates on RefusEU S5 harmful prompts for five checkpoints in English and Slovene. GaMS3 edit drops to near zero in both languages, while Gemma edit drops only in English, remaining at 73.9% in Slovene." loading="lazy">
+        </div>
+        <figcaption>
+          <strong>Figure 1: Refusal Rates Before and After Abliteration.</strong>
+          Refusal rates on RefusEU S5 harmful prompts (n=280) for all five checkpoints. Bars are
+          coloured by language: English (blue) and Slovene (orange). Abliteration transfers almost
+          completely to Slovene for GaMS3 but fails for Gemma. The community reference checkpoint
+          shows that deeper abliteration can partially overcome the language gap. Error bars show
+          95% Clopper-Pearson confidence intervals. Note: 94-95% of edited English outputs were
+          truncated at the 256-token generation limit.
+        </figcaption>
+      </figure>
+
+      <figure class="figure-item">
+        <div class="fig-img-wrap" role="button" tabindex="0" aria-label="Enlarge figure: Keyword Measurement Bias" data-src="figures/fig_2_v0.png">
+          <img src="figures/fig_2_v0.png" alt="Side-by-side bar charts comparing keyword counter vs reference judge positive rates. The keyword counter fires on 87% of English but 0% of Slovene responses; the reference judge finds 13% English and 82% Slovene refusal." loading="lazy">
+        </div>
+        <figcaption>
+          <strong>Figure 2: Keyword Measurement Bias.</strong>
+          Keyword counter vs. reference judge positive rates for the Gemma-edit checkpoint on 100
+          verified paired prompts. The keyword counter fires on 87% of English responses but 0% of
+          Slovene responses; the reference judge finds 13% English refusal and 82% Slovene refusal.
+          &Delta;<sub>lang</sub> = d<sub>SL</sub> &minus; d<sub>EN</sub> = &minus;1.56
+          [&minus;1.68, &minus;1.44]. The annotation shows TBF = 1.0: 6/6 Gemma and 37/37 GaMS3
+          candidates invisible to the keyword objective are counted by scorer C; under judge J,
+          the counts are 5/5 and 6/6.
+        </figcaption>
+      </figure>
+
+      <figure class="figure-item">
+        <div class="fig-img-wrap" role="button" tabindex="0" aria-label="Enlarge figure: Depth Placement Profile for GaMS3" data-src="figures/fig_3_v0.png">
+          <img src="figures/fig_3_v0.png" alt="Two-panel scatter plot for GaMS3. Panel a shows residual Slovene refusal vs write-profile overlap with Spearman rho minus 0.90. Panel b shows residual refusal vs raw depth with rho minus 0.34, not significant." loading="lazy">
+        </div>
+        <figcaption>
+          <strong>Figure 3: Depth Placement Profile for GaMS3.</strong>
+          Residual Slovene refusal rate for GaMS3-12B-Instruct as a function of two predictors.
+          (a) Write-profile overlap O<sub>SL</sub>: Spearman &rho; = &minus;0.90
+          (p &lt; 10<sup>&minus;7</sup>); within energy levels,
+          &rho; = &minus;0.97 (E2) and &rho; = &minus;0.95 (E3). Higher overlap with the causal
+          write profile predicts lower residual refusal. (b) Raw depth of the edit (mean edited
+          layer index): Spearman &rho; = &minus;0.34, p = 0.15 (not significant). Raw depth
+          alone does not predict residual refusal; the overlap metric, which accounts for layer
+          importance, is the informative predictor.
+        </figcaption>
+      </figure>
+
+    </div>
+  </section>
+
+  <!-- LIMITATIONS -->
+  <section id="limitations">
+    <h2>Limitations</h2>
+    <ul class="limitations-list">
+      <li>
+        <strong>Slovene judge certification.</strong> The Qwen3-14B workhorse judge does not meet
+        the &kappa; &ge; 0.80 certification gate for Slovene (unweighted &kappa; = 0.72,
+        CI [0.63, 0.81]). Absolute Slovene refusal rates may be biased. Within-Slovene relative
+        comparisons are less affected.
+      </li>
+      <li>
+        <strong>Depth-experiment judge certification.</strong> The judge used in the depth-placement
+        experiment also fails its certification gate (&kappa; = 0.683). The placement correlations
+        carry this additional measurement caveat.
+      </li>
+      <li>
+        <strong>Generation truncation.</strong> 94-95% of edited English outputs and 70-92% of
+        edited Slovene outputs were truncated at the 256-token generation limit. The judge classified
+        refusal status from incomplete text.
+      </li>
+      <li>
+        <strong>Two models, one architecture.</strong> Both models are closely related (Gemma and
+        its continual-pretraining derivative). The Qwen3-8B cross-model test provides one additional
+        architecture, but a systematic survey across model families is needed.
+      </li>
+      <li>
+        <strong>One target language.</strong> Slovene is a mid-resource Indo-European language.
+        The keyword measurement bias extends to any language the keyword counter does not cover,
+        but the degree of edit transfer failure may differ for typologically distant or extremely
+        low-resource languages.
+      </li>
+      <li>
+        <strong>NF4 quantisation.</strong> All experiments use 4-bit NF4 quantisation. The refusal
+        direction and abliteration behaviour may differ at full precision.
+      </li>
+      <li>
+        <strong>Single Heretic configuration.</strong> The abliteration uses a single Heretic
+        configuration per model (116 TPE trials, default hyperparameter ranges). A more exhaustive
+        search might yield different results.
+      </li>
+    </ul>
+  </section>
+
+  <!-- CODE ARTIFACTS -->
+  <section class="code-artifacts" id="code-list">
+    <h2>Experiment code</h2>
+    <ul>
+      <li><a href="https://github.com/ai-inventor-papers/ai-invention-beaa2a-what-english-tuned-abliteration-misses/tree/fork/run_A3Dbh1J6RI3O/round-1/experiment-1">Same edit, very different safety effect</a></li>
+      <li><a href="https://github.com/ai-inventor-papers/ai-invention-beaa2a-what-english-tuned-abliteration-misses/tree/fork/run_A3Dbh1J6RI3O/round-1/experiment-3">English vs Slovene refusal-direction transfer test</a></li>
+      <li><a href="https://github.com/ai-inventor-papers/ai-invention-beaa2a-what-english-tuned-abliteration-misses/tree/fork/run_A3Dbh1J6RI3O/round-1/dataset-1">Frozen English/Slovene safety and utility test sets</a></li>
+      <li><a href="https://github.com/ai-inventor-papers/ai-invention-beaa2a-what-english-tuned-abliteration-misses/tree/fork/run_A3Dbh1J6RI3O/round-2/experiment-4">Bilingual safety test of four model versions</a></li>
+      <li><a href="https://github.com/ai-inventor-papers/ai-invention-beaa2a-what-english-tuned-abliteration-misses/tree/fork/run_A3Dbh1J6RI3O/round-2/experiment-5">Utility cost and inner harm signal after abliteration</a></li>
+      <li><a href="https://github.com/ai-inventor-papers/ai-invention-beaa2a-what-english-tuned-abliteration-misses/tree/fork/run_A3Dbh1J6RI3O/round-2/experiment-6">What English edits miss in Slovene: GaMS3 panel</a></li>
+      <li><a href="https://github.com/ai-inventor-papers/ai-invention-beaa2a-what-english-tuned-abliteration-misses/tree/fork/run_A3Dbh1J6RI3O/round-2/experiment-7">English edits barely unlock Slovene refusal in Gemma</a></li>
+      <li><a href="https://github.com/ai-inventor-papers/ai-invention-beaa2a-what-english-tuned-abliteration-misses/tree/fork/run_A3Dbh1J6RI3O/round-2/experiment-8">Why an English safety edit misses Slovene</a></li>
+      <li><a href="https://github.com/ai-inventor-papers/ai-invention-beaa2a-what-english-tuned-abliteration-misses/tree/fork/run_A3Dbh1J6RI3O/round-3/experiment-9">How deep must an edit go to stop Slovene refusal</a></li>
+      <li><a href="https://github.com/ai-inventor-papers/ai-invention-beaa2a-what-english-tuned-abliteration-misses/tree/fork/run_A3Dbh1J6RI3O/round-3/experiment-10">Where to cut refusal in a bilingual model</a></li>
+      <li><a href="https://github.com/ai-inventor-papers/ai-invention-beaa2a-what-english-tuned-abliteration-misses/tree/fork/run_A3Dbh1J6RI3O/round-3/experiment-11">Heretic's refusal counter misjudges its own edits</a></li>
+      <li><a href="https://github.com/ai-inventor-papers/ai-invention-beaa2a-what-english-tuned-abliteration-misses/tree/fork/run_A3Dbh1J6RI3O/round-3/experiment-12">Depth index fails to predict cross-lingual refusal-edit failure</a></li>
+      <li><a href="https://github.com/ai-inventor-papers/ai-invention-beaa2a-what-english-tuned-abliteration-misses/tree/fork/run_A3Dbh1J6RI3O/round-3/evaluation-1">Rechecking every number and every judge</a></li>
+      <li><a href="https://github.com/ai-inventor-papers/ai-invention-beaa2a-what-english-tuned-abliteration-misses/tree/fork/run_A3Dbh1J6RI3O/round-4/experiment-13">Where a refusal edit lands decides what survives</a></li>
+      <li><a href="https://github.com/ai-inventor-papers/ai-invention-beaa2a-what-english-tuned-abliteration-misses/tree/fork/run_A3Dbh1J6RI3O/round-4/experiment-14">Where a refusal edit must land in a Slovene model</a></li>
+      <li><a href="https://github.com/ai-inventor-papers/ai-invention-beaa2a-what-english-tuned-abliteration-misses/tree/fork/run_A3Dbh1J6RI3O/round-4/experiment-15">Can a refusal optimiser see its own refusals?</a></li>
+      <li><a href="https://github.com/ai-inventor-papers/ai-invention-beaa2a-what-english-tuned-abliteration-misses/tree/fork/run_A3Dbh1J6RI3O/round-4/evaluation-2">Partial answers, judges, and a full recount</a></li>
+      <li><a href="https://github.com/ai-inventor-papers/ai-invention-beaa2a-what-english-tuned-abliteration-misses/tree/fork/run_A3Dbh1J6RI3O/round-4/research-1">Finding the closest prior work for two results</a></li>
+      <li><a href="https://github.com/ai-inventor-papers/ai-invention-beaa2a-what-english-tuned-abliteration-misses/tree/fork/run_A3Dbh1J6RI3O/round-5/evaluation-3">Re-checking every number in the paper</a></li>
+      <li><a href="https://github.com/ai-inventor-papers/ai-invention-beaa2a-what-english-tuned-abliteration-misses/tree/fork/run_A3Dbh1J6RI3O/round-5/evaluation-4">Recheck every number and every path</a></li>
+      <li><a href="https://github.com/ai-inventor-papers/ai-invention-beaa2a-what-english-tuned-abliteration-misses/tree/fork/run_A3Dbh1J6RI3O/round-5/evaluation-5">How blind is an English-only refusal score</a></li>
+      <li><a href="https://github.com/ai-inventor-papers/ai-invention-beaa2a-what-english-tuned-abliteration-misses/tree/fork/run_A3Dbh1J6RI3O/round-5/research-2">Fixing the paper's citations and claims</a></li>
+    </ul>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div style="max-width:var(--max-w);margin:0 auto;padding:0 var(--gutter);">
+    <div class="footer-links">
+      <a href="https://cdn.jsdelivr.net/gh/ai-inventor-papers/ai-invention-beaa2a-what-english-tuned-abliteration-misses@fork/run_A3Dbh1J6RI3O/paper.pdf">Read the paper (PDF)</a>
+      <a href="interactive.html">Explore the interactive demo</a>
+      <a href="https://cdn.jsdelivr.net/gh/ai-inventor-papers/ai-invention-beaa2a-what-english-tuned-abliteration-misses@fork/run_A3Dbh1J6RI3O/report.pdf">Read the full research report</a>
+      <a href="https://cdn.jsdelivr.net/gh/ai-inventor-papers/ai-invention-beaa2a-what-english-tuned-abliteration-misses@fork/run_A3Dbh1J6RI3O/exec_summary.pdf">Read the executive summary</a>
+      <a href="https://github.com/ai-inventor-papers/ai-invention-beaa2a-what-english-tuned-abliteration-misses/tree/fork/run_A3Dbh1J6RI3O">Code repository</a>
+    </div>
+    <div class="round-links" style="margin-bottom:16px;">
+      Round reports:
+      <a href="https://cdn.jsdelivr.net/gh/ai-inventor-papers/ai-invention-beaa2a-what-english-tuned-abliteration-misses@fork/run_A3Dbh1J6RI3O/round-1/report.pdf">Round 1</a>
+      <a href="https://cdn.jsdelivr.net/gh/ai-inventor-papers/ai-invention-beaa2a-what-english-tuned-abliteration-misses@fork/run_A3Dbh1J6RI3O/round-2/report.pdf">Round 2</a>
+      <a href="https://cdn.jsdelivr.net/gh/ai-inventor-papers/ai-invention-beaa2a-what-english-tuned-abliteration-misses@fork/run_A3Dbh1J6RI3O/round-3/report.pdf">Round 3</a>
+      <a href="https://cdn.jsdelivr.net/gh/ai-inventor-papers/ai-invention-beaa2a-what-english-tuned-abliteration-misses@fork/run_A3Dbh1J6RI3O/round-4/report.pdf">Round 4</a>
+      <a href="https://cdn.jsdelivr.net/gh/ai-inventor-papers/ai-invention-beaa2a-what-english-tuned-abliteration-misses@fork/run_A3Dbh1J6RI3O/round-5/report.pdf">Round 5</a>
+    </div>
+  </div>
+</footer>
+
+<!-- LIGHTBOX -->
+<div class="lightbox-overlay" id="lightbox" role="dialog" aria-modal="true" aria-label="Enlarged figure">
+  <button class="lightbox-close" id="lightbox-close" aria-label="Close enlarged figure">&times;</button>
+  <img src="figures/fig_1_v0.png" alt="Enlarged figure" id="lightbox-img" style="display:none">
+</div>
+
+<script>
+(function() {
+  "use strict";
+  var overlay = document.getElementById("lightbox");
+  var lbImg = document.getElementById("lightbox-img");
+  var lbClose = document.getElementById("lightbox-close");
+  var lastFocus = null;
+
+  function openLightbox(src, alt) {
+    lastFocus = document.activeElement;
+    lbImg.src = src;
+    lbImg.alt = alt || "";
+    lbImg.style.display = "";
+    overlay.classList.add("open");
+    lbClose.focus();
+    document.body.style.overflow = "hidden";
+  }
+
+  function closeLightbox() {
+    overlay.classList.remove("open");
+    lbImg.style.display = "none";
+    document.body.style.overflow = "";
+    if (lastFocus) lastFocus.focus();
+  }
+
+  var triggers = document.querySelectorAll(".fig-img-wrap[data-src]");
+  for (var i = 0; i < triggers.length; i++) {
+    (function(el) {
+      el.addEventListener("click", function() {
+        openLightbox(el.getAttribute("data-src"), el.querySelector("img").alt);
+      });
+      el.addEventListener("keydown", function(e) {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          openLightbox(el.getAttribute("data-src"), el.querySelector("img").alt);
+        }
+      });
+    })(triggers[i]);
+  }
+
+  lbClose.addEventListener("click", closeLightbox);
+  overlay.addEventListener("click", function(e) {
+    if (e.target === overlay) closeLightbox();
+  });
+  document.addEventListener("keydown", function(e) {
+    if (e.key === "Escape" && overlay.classList.contains("open")) closeLightbox();
+  });
+  overlay.addEventListener("keydown", function(e) {
+    if (e.key === "Tab" && overlay.classList.contains("open")) {
+      e.preventDefault(); lbClose.focus();
+    }
+  });
+
+  var navLinks = document.querySelectorAll("nav.section-nav a");
+  var sections = [];
+  for (var j = 0; j < navLinks.length; j++) {
+    var id = navLinks[j].getAttribute("href").substring(1);
+    var sec = document.getElementById(id);
+    if (sec) sections.push({ el: sec, link: navLinks[j] });
+  }
+  function updateNav() {
+    var scrollY = window.scrollY + 120;
+    var current = null;
+    for (var k = 0; k < sections.length; k++) {
+      if (sections[k].el.offsetTop <= scrollY) current = k;
+    }
+    for (var m = 0; m < sections.length; m++) {
+      sections[m].link.classList.toggle("active", m === current);
+    }
+  }
+  var ticking = false;
+  window.addEventListener("scroll", function() {
+    if (!ticking) {
+      requestAnimationFrame(function() { updateNav(); ticking = false; });
+      ticking = true;
+    }
+  }, { passive: true });
+  updateNav();
+})();
+</script>
+</body>
+</html>
