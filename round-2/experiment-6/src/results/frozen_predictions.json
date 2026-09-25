@@ -1,0 +1,8 @@
+{
+ "G1": "Gap_R 90% CI inside +/-0.10 (claim 1 holds in GaMS3; iteration-1 bridge prior: rho gap 0.11 across 20 edits)",
+ "G2": "Gap_Rb 90% CI inside +/-0.10",
+ "G3": "main hypothesis prediction (not the executor's expectation): at least one of Gap_K/N/M >= 0.10 with B_t > 0",
+ "G4": "D adds delta-R2 >= 0.05 over {b1, b2, b3, Omega}",
+ "G5": "r_prior undefined for GaMS3",
+ "G6": "out-of-sample PI coverage on E_TPE/E_R >= 85%"
+}

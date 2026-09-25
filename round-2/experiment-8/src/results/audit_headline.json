@@ -1,0 +1,461 @@
+{
+ "n_headline_numbers_checked": 43,
+ "n_match": 43,
+ "all_match": true,
+ "placebos_behave": true,
+ "checks": [
+  {
+   "number": "gemma A0 en harmful refusal",
+   "independent": 0.9099,
+   "README_claim": 0.91,
+   "match": true
+  },
+  {
+   "number": "gemma A0 sl harmful refusal",
+   "independent": 0.991,
+   "README_claim": 0.99,
+   "match": true
+  },
+  {
+   "number": "gemma A1 en harmful refusal",
+   "independent": 0.2252,
+   "README_claim": 0.23,
+   "match": true
+  },
+  {
+   "number": "gemma A1 sl harmful refusal",
+   "independent": 0.8649,
+   "README_claim": 0.86,
+   "match": true
+  },
+  {
+   "number": "gemma A2 sl harmful refusal",
+   "independent": 0.8273,
+   "README_claim": 0.83,
+   "match": true
+  },
+  {
+   "number": "gemma A0 sl harmless refusal",
+   "independent": 0.2793,
+   "README_claim": 0.28,
+   "match": true
+  },
+  {
+   "number": "gemma A3 sl harmless refusal",
+   "independent": 0.1892,
+   "README_claim": 0.19,
+   "match": true
+  },
+  {
+   "number": "gemma A4 sl harmful refusal",
+   "independent": 0.5495,
+   "README_claim": 0.55,
+   "match": true
+  },
+  {
+   "number": "cut(r_prior) point estimate",
+   "independent": 0.0364,
+   "README_claim": 0.036,
+   "match": true
+  },
+  {
+   "number": "best matched-random cut",
+   "independent": 0.0741,
+   "README_claim": 0.074,
+   "match": true
+  },
+  {
+   "number": "KILL rule (a) fires (r_prior not above best random)",
+   "independent": true,
+   "README_claim": true,
+   "match": true
+  },
+  {
+   "number": "shuffled-label control cut",
+   "independent": 0.1351,
+   "README_claim": 0.135,
+   "match": true
+  },
+  {
+   "number": "KILL rule (c) fires (shuffled >= 0.5 x r_prior cut)",
+   "independent": true,
+   "README_claim": true,
+   "match": true
+  },
+  {
+   "number": "X1 cut vs d_EN (primary judge)",
+   "independent": 0.7143,
+   "README_claim": 0.71,
+   "match": true
+  },
+  {
+   "number": "X1 SL harmful rate (primary judge)",
+   "independent": 0.0952,
+   "README_claim": 0.1,
+   "match": true
+  },
+  {
+   "number": "A1 SL harmful (second judge)",
+   "independent": 0.9099,
+   "README_claim": 0.91,
+   "match": true
+  },
+  {
+   "number": "X1 SL harmful (second judge)",
+   "independent": 0.2342,
+   "README_claim": 0.23,
+   "match": true
+  },
+  {
+   "number": "X3 SL harmful (second judge)",
+   "independent": 0.8559,
+   "README_claim": 0.86,
+   "match": true
+  },
+  {
+   "number": "X5 SL harmful (second judge)",
+   "independent": 0.9279,
+   "README_claim": 0.93,
+   "match": true
+  },
+  {
+   "number": "X4 SL harmful (second judge)",
+   "independent": 0.8378,
+   "README_claim": 0.84,
+   "match": true
+  },
+  {
+   "number": "Y1_1_12 SL harmful (second judge)",
+   "independent": 0.8198,
+   "README_claim": 0.82,
+   "match": true
+  },
+  {
+   "number": "Y2_13_24 SL harmful (second judge)",
+   "independent": 0.8198,
+   "README_claim": 0.82,
+   "match": true
+  },
+  {
+   "number": "Y3_25_36 SL harmful (second judge)",
+   "independent": 0.7027,
+   "README_claim": 0.7,
+   "match": true
+  },
+  {
+   "number": "Y4_37_48 SL harmful (second judge)",
+   "independent": 0.991,
+   "README_claim": 0.99,
+   "match": true
+  },
+  {
+   "number": "Yc24_1_24 SL harmful (second judge)",
+   "independent": 0.5495,
+   "README_claim": 0.55,
+   "match": true
+  },
+  {
+   "number": "Yc36_1_36 SL harmful (second judge)",
+   "independent": 0.2072,
+   "README_claim": 0.21,
+   "match": true
+  },
+  {
+   "number": "X1 cut vs d_EN (second judge)",
+   "independent": 0.6757,
+   "README_claim": 0.68,
+   "match": true
+  },
+  {
+   "number": "W0 SL hoc harmful (second judge)",
+   "independent": 0.9286,
+   "README_claim": 0.93,
+   "match": true
+  },
+  {
+   "number": "W1 SL hoc harmful (second judge)",
+   "independent": 0.8143,
+   "README_claim": 0.81,
+   "match": true
+  },
+  {
+   "number": "W3 SL hoc harmful (second judge)",
+   "independent": 0.1143,
+   "README_claim": 0.11,
+   "match": true
+  },
+  {
+   "number": "W4 SL hoc harmful (second judge)",
+   "independent": 0.4714,
+   "README_claim": 0.47,
+   "match": true
+  },
+  {
+   "number": "W3 repair cut vs core edit",
+   "independent": 0.8143,
+   "README_claim": 0.81,
+   "match": true
+  },
+  {
+   "number": "community C0 SL hoc refusal",
+   "independent": 0.2571,
+   "README_claim": 0.26,
+   "match": true
+  },
+  {
+   "number": "core edit W0 SL hoc refusal (primary judge)",
+   "independent": 0.8857,
+   "README_claim": 0.89,
+   "match": true
+  },
+  {
+   "number": "GaMS3 G1 en harmful",
+   "independent": 0.5745,
+   "README_claim": 0.57,
+   "match": true
+  },
+  {
+   "number": "GaMS3 G1 sl harmful",
+   "independent": 0.5,
+   "README_claim": 0.5,
+   "match": true
+  },
+  {
+   "number": "cos(r_prior, l) at L_r",
+   "independent": 0.65,
+   "README_claim": 0.65,
+   "match": true
+  },
+  {
+   "number": "cos(r_prior, shuffled) at L_r",
+   "independent": 0.8939,
+   "README_claim": 0.89,
+   "match": true
+  },
+  {
+   "number": "X1 Slovene FLORES dNLL",
+   "independent": 0.5244,
+   "README_claim": 0.524,
+   "match": true
+  },
+  {
+   "number": "A4 Slovene FLORES dNLL",
+   "independent": 1.9334,
+   "README_claim": 1.933,
+   "match": true
+  },
+  {
+   "number": "X3 Slovene FLORES dNLL",
+   "independent": 0.0662,
+   "README_claim": 0.066,
+   "match": true
+  },
+  {
+   "number": "X5 Slovene FLORES dNLL",
+   "independent": 0.2489,
+   "README_claim": 0.249,
+   "match": true
+  },
+  {
+   "number": "A2 Slovene FLORES dNLL",
+   "independent": -0.0368,
+   "README_claim": -0.037,
+   "match": true
+  }
+ ],
+ "placebo": {
+  "arm_label_swap_X1": {
+   "cut": -0.009009009009009009,
+   "ci95": [
+    -0.16216216216216217,
+    0.14414414414414414
+   ],
+   "contains_0": true,
+   "real_cut": 0.6756756756756757
+  },
+  "judged_label_permutation_X1": {
+   "placebo_ci95": [
+    -0.13513513513513514,
+    0.13513513513513514
+   ],
+   "placebo_mean": 0.0027027027027027024,
+   "real_cut": 0.6756756756756757,
+   "real_outside_placebo_ci": true
+  },
+  "language_label_permutation": {
+   "real_SL_minus_EN_gap_under_dEN": 0.24324324324324326,
+   "placebo_ci95": [
+    -0.11711711711711711,
+    0.11711711711711711
+   ],
+   "real_outside_placebo_ci": true
+  }
+ },
+ "values": {
+  "rate_A0_en_harmful": {
+   "rate": 0.9099099099099099,
+   "n": 111
+  },
+  "rate_A0_sl_harmful": {
+   "rate": 0.990990990990991,
+   "n": 111
+  },
+  "rate_A1_en_harmful": {
+   "rate": 0.22522522522522523,
+   "n": 111
+  },
+  "rate_A1_sl_harmful": {
+   "rate": 0.8648648648648649,
+   "n": 111
+  },
+  "rate_A2_sl_harmful": {
+   "rate": 0.8272727272727273,
+   "n": 110
+  },
+  "rate_A0_sl_harmless": {
+   "rate": 0.27927927927927926,
+   "n": 111
+  },
+  "rate_A3_sl_harmless": {
+   "rate": 0.1891891891891892,
+   "n": 111
+  },
+  "rate_A4_sl_harmful": {
+   "rate": 0.5495495495495496,
+   "n": 111
+  },
+  "F1_cut_rprior": {
+   "cut": 0.03636363636363636,
+   "n": 110,
+   "ci95": [
+    -0.03636363636363636,
+    0.10909090909090909
+   ],
+   "mcnemar_p": 0.480682373046875
+  },
+  "F1": {
+   "cut_rprior": 0.03636363636363636,
+   "best_random_cut": 0.07407407407407407,
+   "one_sided_LB95": -0.08518518518518517,
+   "KILL_a_fires": true,
+   "random_cuts": {
+    "A7": 0.018018018018018018,
+    "A8": 0.043478260869565216,
+    "A9": 0.07407407407407407
+   }
+  },
+  "KILL_c": {
+   "cut_shuffled": 0.13513513513513514,
+   "half_cut_rprior": 0.01818181818181818
+  },
+  "X1_primary": {
+   "cut": 0.7142857142857143,
+   "n": 42,
+   "ci95": [
+    0.5714285714285714,
+    0.8571428571428571
+   ],
+   "mcnemar_p": 1.862645149230957e-09
+  },
+  "secondjudge_A1_sl_harmful": {
+   "rate": 0.9099099099099099,
+   "n": 111
+  },
+  "secondjudge_X1_sl_harmful": {
+   "rate": 0.23423423423423423,
+   "n": 111
+  },
+  "secondjudge_X3_sl_harmful": {
+   "rate": 0.8558558558558559,
+   "n": 111
+  },
+  "secondjudge_X5_sl_harmful": {
+   "rate": 0.9279279279279279,
+   "n": 111
+  },
+  "secondjudge_X4_sl_harmful": {
+   "rate": 0.8378378378378378,
+   "n": 111
+  },
+  "secondjudge_Y1_1_12_sl_harmful": {
+   "rate": 0.8198198198198198,
+   "n": 111
+  },
+  "secondjudge_Y2_13_24_sl_harmful": {
+   "rate": 0.8198198198198198,
+   "n": 111
+  },
+  "secondjudge_Y3_25_36_sl_harmful": {
+   "rate": 0.7027027027027027,
+   "n": 111
+  },
+  "secondjudge_Y4_37_48_sl_harmful": {
+   "rate": 0.990990990990991,
+   "n": 111
+  },
+  "secondjudge_Yc24_1_24_sl_harmful": {
+   "rate": 0.5495495495495496,
+   "n": 111
+  },
+  "secondjudge_Yc36_1_36_sl_harmful": {
+   "rate": 0.2072072072072072,
+   "n": 111
+  },
+  "X1_second": {
+   "cut": 0.6756756756756757,
+   "ci95": [
+    0.5855855855855856,
+    0.7657657657657657
+   ],
+   "mcnemar_p": 5.293955920339377e-23
+  },
+  "weight_W0": {
+   "rate": 0.9285714285714286,
+   "n": 70
+  },
+  "weight_W1": {
+   "rate": 0.8142857142857143,
+   "n": 70
+  },
+  "weight_W3": {
+   "rate": 0.11428571428571428,
+   "n": 70
+  },
+  "weight_W4": {
+   "rate": 0.4714285714285714,
+   "n": 70
+  },
+  "W3_cut": {
+   "cut": 0.8142857142857143,
+   "ci95": [
+    0.7142857142857143,
+    0.9
+   ],
+   "mcnemar_p": 1.3877787807814457e-17
+  },
+  "community_C0": {
+   "rate": 0.2571428571428571,
+   "n": 70
+  },
+  "gams3_G1_en": {
+   "rate": 0.574468085106383,
+   "n": 47
+  },
+  "gams3_G1_sl": {
+   "rate": 0.5,
+   "n": 44
+  },
+  "geometry": {
+   "L_r": 20,
+   "cos_rprior_l": 0.6499864696318446,
+   "cos_rprior_shuffled": 0.893907869588141,
+   "cos_rprior_dEN": 2.404529436836943e-09
+  },
+  "flores_sl_X1": 0.52442596906639,
+  "flores_sl_A4": 1.9334221747984368,
+  "flores_sl_X3": 0.06621783612722373,
+  "flores_sl_X5": 0.24892584099827042,
+  "flores_sl_A2": -0.0368236978370023
+ },
+ "note": "independent re-derivation from results/*/gens/*.json + judge caches + per_item_rows.jsonl + directions/*.npz; no import of analysis.py / verify_numbers.py / common.py"
+}

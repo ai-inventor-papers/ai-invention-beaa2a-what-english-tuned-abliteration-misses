@@ -1,0 +1,11 @@
+{
+ "probe_2026-09-23T21:15Z": "403 key daily limit",
+ "probe_2026-09-23T22:14Z": "403 key daily limit",
+ "probe_2026-09-23T22:50Z": "403 key daily limit",
+ "probe_2026-09-24T00:00Z": "200 (key reset)",
+ "orig_generations_judged": "440/440 by openai/gpt-4.1 at 00:02Z, $0.367 (results/judged_api_orig.json)",
+ "from_2026-09-24T00:05Z": "403 aii_run_budget_exhausted: AI Inventor per-run OpenRouter budget for the 'Test idea' phase reached ($7.05 of $7.00, spent by the whole run; this artifact spent $0.367)",
+ "consequence": "validity generations are judged by the LOCAL judge (original gemma-3-12b-it, frozen gpt-4.1 rubric); gpt-4.1 vs local agreement on the original's 440 generations is reported; logs/judge_loop.sh keeps retrying (rejected calls cost nothing)",
+ "probe_2026-09-24T03:18Z": "503 aii_run_meter_unavailable (AI Inventor could not read the run's OpenRouter budget; call refused)",
+ "probe_2026-09-24T04:43Z": "403 aii_run_budget_exhausted (run-wide 'Test idea' phase budget $7.05 of $7.00) -> no further API judging possible in this run"
+}

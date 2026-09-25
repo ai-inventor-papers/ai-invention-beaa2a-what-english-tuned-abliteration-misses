@@ -1,0 +1,85 @@
+{
+ "n_F": 160,
+ "learners": "ExtraTrees(300, leaf 3, 10-fold) and numpy LOO quadratic ridge (lambda 1)",
+ "note": "predictors = EN R, R1, Rb, K of the source half (N, M omitted: F8 no-signal); primary analysis used all six + HistGBT",
+ "R": {
+  "ceilings": {
+   "en_A": 0.9995732796782575,
+   "en_B": 0.999052922817904,
+   "sl_A": 0.999547358247216,
+   "sl_B": 0.9993672327607596
+  },
+  "extratrees": {
+   "Gap": 0.009154278901529977,
+   "R2s_plac": 0.9965309477758046,
+   "R2s_test": 0.9873766688742747
+  },
+  "loo_quad_ridge": {
+   "Gap": 0.009664763035186708,
+   "R2s_plac": 0.9983399612900308,
+   "R2s_test": 0.9886751982548441
+  },
+  "placebo_self_EN_as_SL_Gap": 0.0,
+  "placebo_noise_matched_Gap": 0.00017253351949120255,
+  "placebo_shuffled_SL_Gap": 1.068252513190224,
+  "placebo_shuffled_SL_R2s_test": -0.06991255190019327
+ },
+ "K": {
+  "ceilings": {
+   "en_A": 0.9952134592485171,
+   "en_B": 0.992945032707026,
+   "sl_A": 0.9903370511395705,
+   "sl_B": 0.9915656072407552
+  },
+  "extratrees": {
+   "Gap": 0.11534566489757858,
+   "R2s_plac": 0.9853771384175005,
+   "R2s_test": 0.8700314735199219
+  },
+  "loo_quad_ridge": {
+   "Gap": 0.10460280149915802,
+   "R2s_plac": 0.9991858279839881,
+   "R2s_test": 0.8945830264848301
+  },
+  "placebo_self_EN_as_SL_Gap": 0.0,
+  "placebo_noise_matched_Gap": -0.0007312594574148124,
+  "placebo_shuffled_SL_Gap": 1.0968541016365898,
+  "placebo_shuffled_SL_R2s_test": -0.09766827365260165
+ },
+ "K_claim_Gap_ge_0.10": {
+  "real": [
+   true,
+   true
+  ],
+  "self_placebo_passes": false,
+  "noise_matched_placebo_passes": false
+ },
+ "R_claim_visible_|Gap|<0.10": {
+  "real": [
+   true,
+   true
+  ],
+  "shuffled_SL_placebo_passes": false
+ },
+ "validity": {
+  "en": {
+   "n_conditions": 18,
+   "spearman_Rseq_vs_refused": 0.9697732119771844,
+   "placebo_shuffled_rates_mean_rho": -0.0004049430168546975,
+   "placebo_share_rho_ge_0.85": 0.0
+  },
+  "sl": {
+   "n_conditions": 18,
+   "spearman_Rseq_vs_refused": 0.9103727486757361,
+   "placebo_shuffled_rates_mean_rho": 0.013628999586274382,
+   "placebo_share_rho_ge_0.85": 0.0
+  }
+ },
+ "judge": {
+  "n_overlap": 1130,
+  "kappa_refused": 0.8748666116334791,
+  "kappa_6way": 0.7023187108181185,
+  "placebo_shuffled_kappa_mean": 0.0008349205710029596,
+  "placebo_shuffled_kappa_max": 0.09221414621378382
+ }
+}

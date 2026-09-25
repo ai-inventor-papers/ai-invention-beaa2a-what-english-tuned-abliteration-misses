@@ -1,0 +1,49 @@
+{
+ "orig_K_self": 0.003379383124411106,
+ "orig_exposure": {
+  "en": {
+   "D_per_token": 0.0,
+   "D_mean_part": 0.0,
+   "D_var_part": 0.0,
+   "D_per_sentence_mean": 0.0,
+   "n_tok": 128
+  },
+  "sl": {
+   "D_per_token": 0.0,
+   "D_mean_part": 0.0,
+   "D_var_part": 0.0,
+   "D_per_sentence_mean": 0.0,
+   "n_tok": 114
+  }
+ },
+ "orig_N_self_maxdiff": 0.03306102752685547,
+ "lora_module_count": 96,
+ "t96_K": [
+  0.058164358139038086,
+  0.017019901424646378,
+  0.016001040115952492,
+  0.0036949769128113985,
+  0.06150561571121216,
+  0.004192368593066931,
+  0.06040554493665695,
+  0.016359535977244377
+ ],
+ "t96_exposure": {
+  "en": {
+   "D_per_token": 6.6110721826553345,
+   "D_mean_part": 3.524189906604022,
+   "D_var_part": 3.0868822760513126,
+   "D_per_sentence_mean": 211.5543098449707,
+   "n_tok": 128
+  },
+  "sl": {
+   "D_per_token": 6.472899052134731,
+   "D_mean_part": 3.584089655566018,
+   "D_var_part": 2.888809396568713,
+   "D_per_sentence_mean": 184.47762298583984,
+   "n_tok": 114
+  }
+ },
+ "R_seq_orig_harm_en_positive_frac": 0.9882352941176471,
+ "padding_check_max_abs_diff_Rseq": 0.0471627339720726
+}

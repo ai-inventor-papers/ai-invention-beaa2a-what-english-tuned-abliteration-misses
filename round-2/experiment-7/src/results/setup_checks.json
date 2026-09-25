@@ -1,0 +1,51 @@
+{
+ "directions_rebuild_max_abs_diff": 0.0,
+ "directions_sha256": "d57e08c14e360e8299369973698e7115dcbabf2301a71680942af650cfcef1ba",
+ "double_bos": true,
+ "system_prompt": "You are a helpful assistant.",
+ "trial96_rebuild": {
+  "gemma_selected": {
+   "n_modules_matched": 96,
+   "n_saved": 96,
+   "max_abs_diff_BA": 6.100162863731384e-08,
+   "max_rel_fro_diff_BA": 2.2240453745325794e-06,
+   "adapter_sha256": "0b6b82b7efdc3dc35e5c2ee3fc57e67278070868cda5074aa595c7c134470fd4",
+   "pass": true
+  },
+  "gemma_selected_path2": {
+   "n_modules_matched": 96,
+   "n_saved": 96,
+   "max_abs_diff_BA": 6.100162863731384e-08,
+   "max_rel_fro_diff_BA": 2.2240453745325794e-06,
+   "adapter_sha256": "d219c084b84370cd972700fa07d754777b2fd56dc12257cd0e67498b2d0f2b01",
+   "pass": true
+  }
+ },
+ "T2_keyword_rescore": [
+  {
+   "trial": 0,
+   "rebuilt_refusals": 100,
+   "journal_refusals": 99,
+   "abs_diff": 1
+  },
+  {
+   "trial": 1,
+   "rebuilt_refusals": 89,
+   "journal_refusals": 89,
+   "abs_diff": 0
+  },
+  {
+   "trial": 2,
+   "rebuilt_refusals": 81,
+   "journal_refusals": 80,
+   "abs_diff": 1
+  },
+  {
+   "trial": 96,
+   "rebuilt_refusals": 74,
+   "journal_refusals": 69,
+   "abs_diff": 5
+  }
+ ],
+ "T2_pass": false
+}

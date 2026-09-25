@@ -1,0 +1,20 @@
+{
+ "note": "generations awaiting the frozen API judge (openai/gpt-4.1) when the OpenRouter key works again",
+ "command": "uv run python judge_api.py",
+ "files": [
+  "results/validity/gen_E0_006.json",
+  "results/validity/gen_E0_012.json",
+  "results/validity/gen_E0_018.json",
+  "results/validity/gen_E0_023.json",
+  "results/validity/gen_E0_034.json",
+  "results/validity/gen_E0_038.json",
+  "results/validity/gen_E0_043.json",
+  "results/validity/gen_E0_044.json",
+  "results/validity/gen_E0_048.json",
+  "results/validity/gen_E1_002.json",
+  "results/validity/gen_E1_015.json",
+  "results/validity/gen_E1_021.json",
+  "results/validity/gen_ET_096.json",
+  "results/validity/gen_ORIG.json"
+ ]
+}

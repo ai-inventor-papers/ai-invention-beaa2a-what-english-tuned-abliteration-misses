@@ -1,0 +1,8 @@
+23:23:29|INFO   |loaded gams in 22s: S3 (540, 49, 3840) S4 (1028, 49, 3840)
+23:23:37|INFO   |L8: sep_frozen EN orig/edit 0.16/0.16 cos(refit o,e) EN 1.00 (29s)
+23:23:43|INFO   |L16: sep_frozen EN orig/edit 1.89/1.69 cos(refit o,e) EN 0.96 (35s)
+23:23:50|INFO   |L24: sep_frozen EN orig/edit 5.81/-0.70 cos(refit o,e) EN 0.07 (42s)
+23:23:57|INFO   |L32: sep_frozen EN orig/edit 6.18/0.10 cos(refit o,e) EN 0.27 (49s)
+23:24:04|INFO   |L40: sep_frozen EN orig/edit 5.10/0.08 cos(refit o,e) EN 0.25 (57s)
+23:24:12|INFO   |L48: sep_frozen EN orig/edit 4.96/-0.06 cos(refit o,e) EN 0.26 (64s)
+23:31:53|INFO   |drift geometry gams done in 526s; onset {'en': 22, 'sl': 22}

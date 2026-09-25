@@ -1,0 +1,40 @@
+{
+ "label_source": "judge",
+ "label_stats": {
+  "judged": 1072,
+  "marker_fallback": 3416
+ },
+ "sha256": "13e740bdbc4bd84a6e9278ddd493f97acdb80dcc9fce55dc153dc7728e48c91d",
+ "n": 1028,
+ "n_tokens": 24,
+ "fallback_counts": {
+  "en|harmful|comply|fallback1_own_orig": 2,
+  "en|harmful|comply|fallback2_canonical_lang": 16,
+  "en|harmful|comply|gams_edit": 239,
+  "en|harmful|refuse|canonical_lang": 26,
+  "en|harmful|refuse|own_orig": 231,
+  "en|harmless|comply|fallback1_own_orig": 1,
+  "en|harmless|comply|fallback2_canonical_lang": 2,
+  "en|harmless|comply|gams_edit": 254,
+  "en|harmless|refuse|canonical_lang": 245,
+  "en|harmless|refuse|own_orig": 12,
+  "sl|harmful|comply|fallback1_own_orig": 2,
+  "sl|harmful|comply|fallback2_canonical_lang": 19,
+  "sl|harmful|comply|gams_edit": 236,
+  "sl|harmful|refuse|canonical_lang": 112,
+  "sl|harmful|refuse|own_orig": 145,
+  "sl|harmless|comply|fallback1_own_orig": 2,
+  "sl|harmless|comply|fallback2_canonical_lang": 2,
+  "sl|harmless|comply|gams_edit": 253,
+  "sl|harmless|refuse|canonical_lang": 242,
+  "sl|harmless|refuse|own_orig": 15
+ },
+ "canonical_refusal_text": {
+  "en": "I'm sorry, but I can't help with that.\n\nIf you're looking to learn about cybersecurity",
+  "sl": "Oprostite, vendar vam pri tem ne morem pomagati.\n\nČe vas zanima, kako prepozn"
+ },
+ "canonical_compliance_text": {
+  "en": "Sure! Here's a thoughtful and scientifically grounded tweet that explores the topic:\n\n---\n\n**Tweet:**\n\n\"",
+  "sl": "To je odlično vprašanje – in zdi se, da ste pripravljeni na to, da se pog"
+ }
+}

@@ -1,0 +1,58 @@
+{
+ "en": {
+  "refusal_ids": [
+   236777,
+   1006,
+   60226,
+   531,
+   577,
+   496,
+   11045,
+   532
+  ],
+  "refusal_text": "I am programmed to be a helpful and",
+  "refusal_support": 0.9393939393939394,
+  "refusal_pool": 33,
+  "compliance_ids": [
+   19058,
+   236764,
+   1531,
+   236789,
+   236751,
+   2541,
+   1679,
+   506
+  ],
+  "compliance_text": "Okay, let's break down the",
+  "compliance_support": 0.08571428571428572,
+  "compliance_pool": 105
+ },
+ "sl": {
+  "refusal_ids": [
+   239641,
+   514,
+   3628,
+   2185,
+   236764,
+   214217,
+   770,
+   919
+  ],
+  "refusal_text": "Žal mi je, vendar ne more",
+  "refusal_support": 0.782608695652174,
+  "refusal_pool": 69,
+  "compliance_ids": [
+   1869,
+   126495,
+   236764,
+   66859,
+   1196,
+   2185,
+   1029,
+   3580
+  ],
+  "compliance_text": "Seveda, tukaj je objava",
+  "compliance_support": 0.043478260869565216,
+  "compliance_pool": 69
+ }
+}

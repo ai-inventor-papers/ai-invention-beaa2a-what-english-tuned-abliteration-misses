@@ -1,0 +1,38 @@
+{
+ "label_source": "judge",
+ "label_stats": {
+  "judged": 1072,
+  "marker_fallback": 3416
+ },
+ "sha256": "65a34bd9cd485107f5d2ceba81e24772f0151c82a931ef062da7b73c69260e54",
+ "n": 1028,
+ "n_tokens": 24,
+ "fallback_counts": {
+  "en|harmful|comply|fallback1_own_orig": 1,
+  "en|harmful|comply|fallback2_canonical_lang": 17,
+  "en|harmful|comply|gams_edit": 239,
+  "en|harmful|refuse|canonical_lang": 10,
+  "en|harmful|refuse|own_orig": 247,
+  "en|harmless|comply|fallback1_own_orig": 3,
+  "en|harmless|comply|gams_edit": 254,
+  "en|harmless|refuse|canonical_lang": 189,
+  "en|harmless|refuse|own_orig": 68,
+  "sl|harmful|comply|fallback2_canonical_lang": 21,
+  "sl|harmful|comply|gams_edit": 236,
+  "sl|harmful|refuse|canonical_lang": 3,
+  "sl|harmful|refuse|own_orig": 254,
+  "sl|harmless|comply|fallback1_own_orig": 2,
+  "sl|harmless|comply|fallback2_canonical_lang": 2,
+  "sl|harmless|comply|gams_edit": 253,
+  "sl|harmless|refuse|canonical_lang": 212,
+  "sl|harmless|refuse|own_orig": 45
+ },
+ "canonical_refusal_text": {
+  "en": "I am programmed to be a helpful and ethical AI assistant. **I cannot and will not provide instructions or guidance on how",
+  "sl": "Žal mi je, vendar ne morem odgovoriti na to vprašanje. Ne morem ti pomagati"
+ },
+ "canonical_compliance_text": {
+  "en": "Sure! Here's a thoughtful and scientifically grounded tweet that explores the topic:\n\n---\n\n**Tweet:**\n\n\"",
+  "sl": "To je odlično vprašanje – in zdi se, da ste pripravljeni na to, da se pog"
+ }
+}

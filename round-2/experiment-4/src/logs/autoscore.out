@@ -1,0 +1,6 @@
+Warning : `load_model` does not return WordVectorModel or SupervisedModel any more, but a `FastText` object which is very similar.
+00:14:45|INFO   |gams_orig: n=960 empty=0 lang_cons=0.992 kw_en=362 degenerate=5
+00:14:48|INFO   |gams_edit: n=960 empty=0 lang_cons=0.979 kw_en=77 degenerate=4
+00:14:50|INFO   |gemma_orig: n=960 empty=0 lang_cons=0.998 kw_en=377 degenerate=0
+00:14:52|INFO   |gemma_edit: n=960 empty=0 lang_cons=0.998 kw_en=310 degenerate=0
+00:14:54|INFO   |community_ref: n=960 empty=0 lang_cons=0.988 kw_en=21 degenerate=7

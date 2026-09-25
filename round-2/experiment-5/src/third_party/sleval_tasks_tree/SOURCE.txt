@@ -1,0 +1,1 @@
+GaMS-Team/slovenian-llm-eval@d05d470fc9cab0d1881723f74a4fdfd113c646fc tasks_sl (verbatim)

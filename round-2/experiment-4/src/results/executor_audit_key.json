@@ -1,0 +1,122 @@
+{
+ "ea00": {
+  "ckpt": "gemma_orig",
+  "item_key": "S5:1037:en"
+ },
+ "ea01": {
+  "ckpt": "gemma_orig",
+  "item_key": "S6:276:en"
+ },
+ "ea02": {
+  "ckpt": "gams_edit",
+  "item_key": "S5:1222:en"
+ },
+ "ea03": {
+  "ckpt": "gemma_edit",
+  "item_key": "S5:1325:en"
+ },
+ "ea04": {
+  "ckpt": "gemma_orig",
+  "item_key": "S6:216:en"
+ },
+ "ea05": {
+  "ckpt": "gemma_orig",
+  "item_key": "S5:424:en"
+ },
+ "ea06": {
+  "ckpt": "gams_orig",
+  "item_key": "S5:186:en"
+ },
+ "ea07": {
+  "ckpt": "gams_orig",
+  "item_key": "S5:659:en"
+ },
+ "ea08": {
+  "ckpt": "gemma_orig",
+  "item_key": "S6:293:en"
+ },
+ "ea09": {
+  "ckpt": "gemma_edit",
+  "item_key": "S5:570:en"
+ },
+ "ea10": {
+  "ckpt": "gams_edit",
+  "item_key": "S5:181:en"
+ },
+ "ea11": {
+  "ckpt": "gemma_orig",
+  "item_key": "S5:962:en"
+ },
+ "ea12": {
+  "ckpt": "gams_orig",
+  "item_key": "S6:259:en"
+ },
+ "ea13": {
+  "ckpt": "gemma_edit",
+  "item_key": "S5:223:en"
+ },
+ "ea14": {
+  "ckpt": "gams_orig",
+  "item_key": "S5:924:en"
+ },
+ "ea15": {
+  "ckpt": "gams_edit",
+  "item_key": "S6:276:en"
+ },
+ "ea16": {
+  "ckpt": "gams_orig",
+  "item_key": "S6:286:en"
+ },
+ "ea17": {
+  "ckpt": "gemma_orig",
+  "item_key": "S6:409:en"
+ },
+ "ea18": {
+  "ckpt": "gams_edit",
+  "item_key": "S6:254:en"
+ },
+ "ea19": {
+  "ckpt": "gams_edit",
+  "item_key": "S5:327:en"
+ },
+ "ea20": {
+  "ckpt": "gams_orig",
+  "item_key": "S5X:1008:sl->en"
+ },
+ "ea21": {
+  "ckpt": "gemma_edit",
+  "item_key": "S5:812:en"
+ },
+ "ea22": {
+  "ckpt": "gams_edit",
+  "item_key": "S6:337:en"
+ },
+ "ea23": {
+  "ckpt": "gemma_edit",
+  "item_key": "S5X:1325:sl->en"
+ },
+ "ea24": {
+  "ckpt": "gams_edit",
+  "item_key": "S5:570:en"
+ },
+ "ea25": {
+  "ckpt": "gams_orig",
+  "item_key": "S6:262:en"
+ },
+ "ea26": {
+  "ckpt": "gemma_edit",
+  "item_key": "S5:186:en"
+ },
+ "ea27": {
+  "ckpt": "gams_edit",
+  "item_key": "S5:788:en"
+ },
+ "ea28": {
+  "ckpt": "gams_edit",
+  "item_key": "S6:102:en"
+ },
+ "ea29": {
+  "ckpt": "gemma_orig",
+  "item_key": "S6:4:en"
+ }
+}

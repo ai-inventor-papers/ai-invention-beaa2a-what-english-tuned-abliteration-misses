@@ -1,0 +1,4802 @@
+[
+ {
+  "edit_id": "E1_000",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "global",
+   "direction_index": 18.878962179617236,
+   "attn.o_proj.max_weight": 1.1377444195809525,
+   "attn.o_proj.max_weight_position": 45.94325305563284,
+   "attn.o_proj.min_weight": 0.27213176163046426,
+   "attn.o_proj.min_weight_distance": 26.25334160999209,
+   "mlp.down_proj.max_weight": 0.3937372000422711,
+   "mlp.down_proj.max_weight_position": 42.959555123335015,
+   "mlp.down_proj.min_weight": 0.7810174105969566,
+   "mlp.down_proj.min_weight_distance": 4.583331881594113
+  },
+  "direction_index": 18.878962179617236,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.1377444195809525,
+    "max_weight_position": 45.94325305563284,
+    "min_weight": 0.3096163931857947,
+    "min_weight_distance": 26.25334160999209
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.3937372000422711,
+    "max_weight_position": 42.959555123335015,
+    "min_weight": 0.3075156084327105,
+    "min_weight_distance": 4.583331881594113
+   }
+  }
+ },
+ {
+  "edit_id": "E1_001",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "per layer",
+   "direction_index": 26.05376212350719,
+   "attn.o_proj.max_weight": 0.9770690112901577,
+   "attn.o_proj.max_weight_position": 45.68576296955294,
+   "attn.o_proj.min_weight": 0.8505074579455484,
+   "attn.o_proj.min_weight_distance": 14.874605725021658,
+   "mlp.down_proj.max_weight": 1.4039202763492469,
+   "mlp.down_proj.max_weight_position": 40.56488234743466,
+   "mlp.down_proj.min_weight": 0.35448295429089616,
+   "mlp.down_proj.min_weight_distance": 1.8323575568412167
+  },
+  "direction_index": null,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 0.9770690112901577,
+    "max_weight_position": 45.68576296955294,
+    "min_weight": 0.8310044810297623,
+    "min_weight_distance": 14.874605725021658
+   },
+   "mlp.down_proj": {
+    "max_weight": 1.4039202763492469,
+    "max_weight_position": 40.56488234743466,
+    "min_weight": 0.49766580714917236,
+    "min_weight_distance": 1.8323575568412167
+   }
+  }
+ },
+ {
+  "edit_id": "E1_002",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "per layer",
+   "direction_index": 30.51654939592096,
+   "attn.o_proj.max_weight": 1.4996797734938414,
+   "attn.o_proj.max_weight_position": 40.81904879508336,
+   "attn.o_proj.min_weight": 0.015183530806953227,
+   "attn.o_proj.min_weight_distance": 11.021572077878856,
+   "mlp.down_proj.max_weight": 0.5654408435278296,
+   "mlp.down_proj.max_weight_position": 43.52614498894257,
+   "mlp.down_proj.min_weight": 0.17346885478491247,
+   "mlp.down_proj.min_weight_distance": 12.179289104940976
+  },
+  "direction_index": null,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.4996797734938414,
+    "max_weight_position": 40.81904879508336,
+    "min_weight": 0.02277043404140838,
+    "min_weight_distance": 11.021572077878856
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.5654408435278296,
+    "max_weight_position": 43.52614498894257,
+    "min_weight": 0.09808637557538749,
+    "min_weight_distance": 12.179289104940976
+   }
+  }
+ },
+ {
+  "edit_id": "E1_003",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "per layer",
+   "direction_index": 27.32750744599486,
+   "attn.o_proj.max_weight": 1.100375675507512,
+   "attn.o_proj.max_weight_position": 44.686768350667045,
+   "attn.o_proj.min_weight": 0.403262114759004,
+   "attn.o_proj.min_weight_distance": 26.841544987334142,
+   "mlp.down_proj.max_weight": 1.1430643964807017,
+   "mlp.down_proj.max_weight_position": 31.936833566222937,
+   "mlp.down_proj.min_weight": 0.024916233203510108,
+   "mlp.down_proj.min_weight_distance": 4.849927888139411
+  },
+  "direction_index": null,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.100375675507512,
+    "max_weight_position": 44.686768350667045,
+    "min_weight": 0.4437398219345268,
+    "min_weight_distance": 26.841544987334142
+   },
+   "mlp.down_proj": {
+    "max_weight": 1.1430643964807017,
+    "max_weight_position": 31.936833566222937,
+    "min_weight": 0.028480859069342702,
+    "min_weight_distance": 4.849927888139411
+   }
+  }
+ },
+ {
+  "edit_id": "E1_004",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "global",
+   "direction_index": 41.46572670847118,
+   "attn.o_proj.max_weight": 0.8026986513498147,
+   "attn.o_proj.max_weight_position": 43.79931115432197,
+   "attn.o_proj.min_weight": 0.4355422232056825,
+   "attn.o_proj.min_weight_distance": 19.352632776305594,
+   "mlp.down_proj.max_weight": 0.31343366526892835,
+   "mlp.down_proj.max_weight_position": 36.409754949631676,
+   "mlp.down_proj.min_weight": 0.8964657756067538,
+   "mlp.down_proj.min_weight_distance": 19.269547074352808
+  },
+  "direction_index": 41.46572670847118,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 0.8026986513498147,
+    "max_weight_position": 43.79931115432197,
+    "min_weight": 0.34960915517310126,
+    "min_weight_distance": 19.352632776305594
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.31343366526892835,
+    "max_weight_position": 36.409754949631676,
+    "min_weight": 0.2809825538365775,
+    "min_weight_distance": 19.269547074352808
+   }
+  }
+ },
+ {
+  "edit_id": "E1_005",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "per layer",
+   "direction_index": 32.63780919939008,
+   "attn.o_proj.max_weight": 0.8653970970353863,
+   "attn.o_proj.max_weight_position": 45.41459630377338,
+   "attn.o_proj.min_weight": 0.14676453321113458,
+   "attn.o_proj.min_weight_distance": 4.005112931997811,
+   "mlp.down_proj.max_weight": 1.046610840456819,
+   "mlp.down_proj.max_weight_position": 30.138959309214712,
+   "mlp.down_proj.min_weight": 0.00467596768397327,
+   "mlp.down_proj.min_weight_distance": 3.603376985521187
+  },
+  "direction_index": null,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 0.8653970970353863,
+    "max_weight_position": 45.41459630377338,
+    "min_weight": 0.1270096009886694,
+    "min_weight_distance": 4.005112931997811
+   },
+   "mlp.down_proj": {
+    "max_weight": 1.046610840456819,
+    "max_weight_position": 30.138959309214712,
+    "min_weight": 0.00489391846767219,
+    "min_weight_distance": 3.603376985521187
+   }
+  }
+ },
+ {
+  "edit_id": "E1_006",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "per layer",
+   "direction_index": 30.19328374103609,
+   "attn.o_proj.max_weight": 1.1733258339113684,
+   "attn.o_proj.max_weight_position": 34.897476034609134,
+   "attn.o_proj.min_weight": 0.06042966715320175,
+   "attn.o_proj.min_weight_distance": 2.4065997232133665,
+   "mlp.down_proj.max_weight": 1.2521321673424863,
+   "mlp.down_proj.max_weight_position": 36.2402653791364,
+   "mlp.down_proj.min_weight": 0.7699762409909732,
+   "mlp.down_proj.min_weight_distance": 2.0476104705994436
+  },
+  "direction_index": null,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.1733258339113684,
+    "max_weight_position": 34.897476034609134,
+    "min_weight": 0.07090368960551686,
+    "min_weight_distance": 2.4065997232133665
+   },
+   "mlp.down_proj": {
+    "max_weight": 1.2521321673424863,
+    "max_weight_position": 36.2402653791364,
+    "min_weight": 0.9641120194342478,
+    "min_weight_distance": 2.0476104705994436
+   }
+  }
+ },
+ {
+  "edit_id": "E1_007",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "per layer",
+   "direction_index": 37.391196266084414,
+   "attn.o_proj.max_weight": 0.8749639681205726,
+   "attn.o_proj.max_weight_position": 43.75589512365958,
+   "attn.o_proj.min_weight": 0.8717461208110273,
+   "attn.o_proj.min_weight_distance": 21.824064986610757,
+   "mlp.down_proj.max_weight": 1.0645588968624191,
+   "mlp.down_proj.max_weight_position": 45.51141489829152,
+   "mlp.down_proj.min_weight": 0.9736172879395825,
+   "mlp.down_proj.min_weight_distance": 21.896545501401427
+  },
+  "direction_index": null,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 0.8749639681205726,
+    "max_weight_position": 43.75589512365958,
+    "min_weight": 0.7627464450585326,
+    "min_weight_distance": 21.824064986610757
+   },
+   "mlp.down_proj": {
+    "max_weight": 1.0645588968624191,
+    "max_weight_position": 45.51141489829152,
+    "min_weight": 1.0364729460151423,
+    "min_weight_distance": 21.896545501401427
+   }
+  }
+ },
+ {
+  "edit_id": "E1_008",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "per layer",
+   "direction_index": 25.792922315048852,
+   "attn.o_proj.max_weight": 1.192689671352819,
+   "attn.o_proj.max_weight_position": 30.550467753811915,
+   "attn.o_proj.min_weight": 0.8511092209388613,
+   "attn.o_proj.min_weight_distance": 11.463529221932136,
+   "mlp.down_proj.max_weight": -0.02957002557536914,
+   "mlp.down_proj.max_weight_position": 43.98091124052313,
+   "mlp.down_proj.min_weight": 0.38270765446116517,
+   "mlp.down_proj.min_weight_distance": 2.497371381609022
+  },
+  "direction_index": null,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.192689671352819,
+    "max_weight_position": 30.550467753811915,
+    "min_weight": 1.0151091770069243,
+    "min_weight_distance": 11.463529221932136
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.0,
+    "max_weight_position": 43.98091124052313,
+    "min_weight": 0.0,
+    "min_weight_distance": 2.497371381609022
+   }
+  }
+ },
+ {
+  "edit_id": "E1_009",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "global",
+   "direction_index": 29.791027953031566,
+   "attn.o_proj.max_weight": 1.2976731140421052,
+   "attn.o_proj.max_weight_position": 36.82786130224346,
+   "attn.o_proj.min_weight": 0.4782185578434154,
+   "attn.o_proj.min_weight_distance": 5.805527374942504,
+   "mlp.down_proj.max_weight": -0.23779392295827254,
+   "mlp.down_proj.max_weight_position": 43.15729140031805,
+   "mlp.down_proj.min_weight": 0.4786138014617898,
+   "mlp.down_proj.min_weight_distance": 21.031684660262034
+  },
+  "direction_index": 29.791027953031566,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.2976731140421052,
+    "max_weight_position": 36.82786130224346,
+    "min_weight": 0.6205713651493895,
+    "min_weight_distance": 5.805527374942504
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.0,
+    "max_weight_position": 43.15729140031805,
+    "min_weight": 0.0,
+    "min_weight_distance": 21.031684660262034
+   }
+  }
+ },
+ {
+  "edit_id": "E1_010",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "global",
+   "direction_index": 31.754741847986473,
+   "attn.o_proj.max_weight": 1.1785110189208412,
+   "attn.o_proj.max_weight_position": 30.125283791993144,
+   "attn.o_proj.min_weight": 0.20195414517608767,
+   "attn.o_proj.min_weight_distance": 25.952156518582203,
+   "mlp.down_proj.max_weight": -0.22114718626248803,
+   "mlp.down_proj.max_weight_position": 28.566739514949546,
+   "mlp.down_proj.min_weight": 0.5562049352069218,
+   "mlp.down_proj.min_weight_distance": 25.515469797030384
+  },
+  "direction_index": 31.754741847986473,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.1785110189208412,
+    "max_weight_position": 30.125283791993144,
+    "min_weight": 0.23800518540675858,
+    "min_weight_distance": 25.952156518582203
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.0,
+    "max_weight_position": 28.566739514949546,
+    "min_weight": 0.0,
+    "min_weight_distance": 25.515469797030384
+   }
+  }
+ },
+ {
+  "edit_id": "E1_011",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "global",
+   "direction_index": 41.5699477953964,
+   "attn.o_proj.max_weight": 1.4628285853672578,
+   "attn.o_proj.max_weight_position": 40.05941336795456,
+   "attn.o_proj.min_weight": 0.07234083694061977,
+   "attn.o_proj.min_weight_distance": 17.175532685081524,
+   "mlp.down_proj.max_weight": 1.0242960354600965,
+   "mlp.down_proj.max_weight_position": 38.991770743911864,
+   "mlp.down_proj.min_weight": 0.2756377732379385,
+   "mlp.down_proj.min_weight_distance": 12.623336940588969
+  },
+  "direction_index": 41.5699477953964,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.4628285853672578,
+    "max_weight_position": 40.05941336795456,
+    "min_weight": 0.10582224416613029,
+    "min_weight_distance": 17.175532685081524
+   },
+   "mlp.down_proj": {
+    "max_weight": 1.0242960354600965,
+    "max_weight_position": 38.991770743911864,
+    "min_weight": 0.28233467835066944,
+    "min_weight_distance": 12.623336940588969
+   }
+  }
+ },
+ {
+  "edit_id": "E1_012",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "per layer",
+   "direction_index": 36.734939682658464,
+   "attn.o_proj.max_weight": 1.3477256258587529,
+   "attn.o_proj.max_weight_position": 38.05991157939934,
+   "attn.o_proj.min_weight": 0.004412453107286218,
+   "attn.o_proj.min_weight_distance": 1.1086665243127174,
+   "mlp.down_proj.max_weight": -0.08688421361314591,
+   "mlp.down_proj.max_weight_position": 32.10518063951505,
+   "mlp.down_proj.min_weight": 0.5865938310718186,
+   "mlp.down_proj.min_weight_distance": 27.69234525208887
+  },
+  "direction_index": null,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.3477256258587529,
+    "max_weight_position": 38.05991157939934,
+    "min_weight": 0.005946776125589717,
+    "min_weight_distance": 1.1086665243127174
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.0,
+    "max_weight_position": 32.10518063951505,
+    "min_weight": 0.0,
+    "min_weight_distance": 27.69234525208887
+   }
+  }
+ },
+ {
+  "edit_id": "E1_013",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "per layer",
+   "direction_index": 39.08647933946409,
+   "attn.o_proj.max_weight": 1.3289535028220083,
+   "attn.o_proj.max_weight_position": 46.245108739738995,
+   "attn.o_proj.min_weight": 0.18153045604819507,
+   "attn.o_proj.min_weight_distance": 25.47929857441528,
+   "mlp.down_proj.max_weight": 0.6418447872421673,
+   "mlp.down_proj.max_weight_position": 38.26990251274702,
+   "mlp.down_proj.min_weight": 0.4098347238188266,
+   "mlp.down_proj.min_weight_distance": 20.337342604237406
+  },
+  "direction_index": null,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.3289535028220083,
+    "max_weight_position": 46.245108739738995,
+    "min_weight": 0.24124553543412547,
+    "min_weight_distance": 25.47929857441528
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.6418447872421673,
+    "max_weight_position": 38.26990251274702,
+    "min_weight": 0.2630502811139471,
+    "min_weight_distance": 20.337342604237406
+   }
+  }
+ },
+ {
+  "edit_id": "E1_014",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "global",
+   "direction_index": 35.08602749720939,
+   "attn.o_proj.max_weight": 0.8471759975057618,
+   "attn.o_proj.max_weight_position": 39.97865867698984,
+   "attn.o_proj.min_weight": 0.5195054102931396,
+   "attn.o_proj.min_weight_distance": 5.2259833364209065,
+   "mlp.down_proj.max_weight": 1.3519553385802354,
+   "mlp.down_proj.max_weight_position": 31.633200061689024,
+   "mlp.down_proj.min_weight": 0.730703258656448,
+   "mlp.down_proj.min_weight_distance": 12.091847203886655
+  },
+  "direction_index": 35.08602749720939,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 0.8471759975057618,
+    "max_weight_position": 39.97865867698984,
+    "min_weight": 0.4401125141747306,
+    "min_weight_distance": 5.2259833364209065
+   },
+   "mlp.down_proj": {
+    "max_weight": 1.3519553385802354,
+    "max_weight_position": 31.633200061689024,
+    "min_weight": 0.9878781714585595,
+    "min_weight_distance": 12.091847203886655
+   }
+  }
+ },
+ {
+  "edit_id": "E1_015",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "per layer",
+   "direction_index": 19.296943524236,
+   "attn.o_proj.max_weight": 0.8918908902013536,
+   "attn.o_proj.max_weight_position": 28.266824889368294,
+   "attn.o_proj.min_weight": 0.9183284421317637,
+   "attn.o_proj.min_weight_distance": 14.36753983470964,
+   "mlp.down_proj.max_weight": 1.1655713295600512,
+   "mlp.down_proj.max_weight_position": 38.73565577865539,
+   "mlp.down_proj.min_weight": 0.8478917800269873,
+   "mlp.down_proj.min_weight_distance": 27.558618593181123
+  },
+  "direction_index": null,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 0.8918908902013536,
+    "max_weight_position": 28.266824889368294,
+    "min_weight": 0.8190487717501209,
+    "min_weight_distance": 14.36753983470964
+   },
+   "mlp.down_proj": {
+    "max_weight": 1.1655713295600512,
+    "max_weight_position": 38.73565577865539,
+    "min_weight": 0.988278349369094,
+    "min_weight_distance": 27.558618593181123
+   }
+  }
+ },
+ {
+  "edit_id": "E1_016",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "global",
+   "direction_index": 28.49296388133081,
+   "attn.o_proj.max_weight": 1.2490155542750059,
+   "attn.o_proj.max_weight_position": 44.17037488256591,
+   "attn.o_proj.min_weight": 0.06435361122586103,
+   "attn.o_proj.min_weight_distance": 20.098340564577363,
+   "mlp.down_proj.max_weight": 0.012925844870877556,
+   "mlp.down_proj.max_weight_position": 39.32202190551275,
+   "mlp.down_proj.min_weight": 0.14463775824961844,
+   "mlp.down_proj.min_weight_distance": 6.8476160241880795
+  },
+  "direction_index": 28.49296388133081,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.2490155542750059,
+    "max_weight_position": 44.17037488256591,
+    "min_weight": 0.08037866139486706,
+    "min_weight_distance": 20.098340564577363
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.012925844870877556,
+    "max_weight_position": 39.32202190551275,
+    "min_weight": 0.0018695652256060585,
+    "min_weight_distance": 6.8476160241880795
+   }
+  }
+ },
+ {
+  "edit_id": "E1_017",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "per layer",
+   "direction_index": 32.85753063552919,
+   "attn.o_proj.max_weight": 1.0179475469803798,
+   "attn.o_proj.max_weight_position": 34.36455816247215,
+   "attn.o_proj.min_weight": 0.18915615450425882,
+   "attn.o_proj.min_weight_distance": 19.11457415081865,
+   "mlp.down_proj.max_weight": -0.06109644776439227,
+   "mlp.down_proj.max_weight_position": 30.70653065868009,
+   "mlp.down_proj.min_weight": 0.12696036041927206,
+   "mlp.down_proj.min_weight_distance": 6.899459454260184
+  },
+  "direction_index": null,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.0179475469803798,
+    "max_weight_position": 34.36455816247215,
+    "min_weight": 0.192551043473852,
+    "min_weight_distance": 19.11457415081865
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.0,
+    "max_weight_position": 30.70653065868009,
+    "min_weight": 0.0,
+    "min_weight_distance": 6.899459454260184
+   }
+  }
+ },
+ {
+  "edit_id": "E1_018",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "global",
+   "direction_index": 19.27391360033136,
+   "attn.o_proj.max_weight": 1.3136975486519598,
+   "attn.o_proj.max_weight_position": 32.72213426660633,
+   "attn.o_proj.min_weight": 0.9389331825366051,
+   "attn.o_proj.min_weight_distance": 5.11830334680038,
+   "mlp.down_proj.max_weight": 1.1610244456187946,
+   "mlp.down_proj.max_weight_position": 43.107761615530436,
+   "mlp.down_proj.min_weight": 0.5643732188816495,
+   "mlp.down_proj.min_weight_distance": 10.195290491915152
+  },
+  "direction_index": 19.27391360033136,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.3136975486519598,
+    "max_weight_position": 32.72213426660633,
+    "min_weight": 1.2334742202463211,
+    "min_weight_distance": 5.11830334680038
+   },
+   "mlp.down_proj": {
+    "max_weight": 1.1610244456187946,
+    "max_weight_position": 43.107761615530436,
+    "min_weight": 0.6552511035741617,
+    "min_weight_distance": 10.195290491915152
+   }
+  }
+ },
+ {
+  "edit_id": "E1_019",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "global",
+   "direction_index": 31.30902557729243,
+   "attn.o_proj.max_weight": 1.150774148197078,
+   "attn.o_proj.max_weight_position": 42.201519646359756,
+   "attn.o_proj.min_weight": 0.8122505173236649,
+   "attn.o_proj.min_weight_distance": 26.504299009018318,
+   "mlp.down_proj.max_weight": 0.9730208682827504,
+   "mlp.down_proj.max_weight_position": 29.128331021863733,
+   "mlp.down_proj.min_weight": 0.9130639246965606,
+   "mlp.down_proj.min_weight_distance": 6.123926149667983
+  },
+  "direction_index": 31.30902557729243,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.150774148197078,
+    "max_weight_position": 42.201519646359756,
+    "min_weight": 0.9347168971957763,
+    "min_weight_distance": 26.504299009018318
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.9730208682827504,
+    "max_weight_position": 29.128331021863733,
+    "min_weight": 0.8884302528059032,
+    "min_weight_distance": 6.123926149667983
+   }
+  }
+ },
+ {
+  "edit_id": "E1_020",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "per layer",
+   "direction_index": 32.72279557900981,
+   "attn.o_proj.max_weight": 1.485713892256809,
+   "attn.o_proj.max_weight_position": 43.47583659013771,
+   "attn.o_proj.min_weight": 0.8381156466920965,
+   "attn.o_proj.min_weight_distance": 27.435040836973474,
+   "mlp.down_proj.max_weight": -0.2455221610021811,
+   "mlp.down_proj.max_weight_position": 31.23240521977878,
+   "mlp.down_proj.min_weight": 0.9954213221775677,
+   "mlp.down_proj.min_weight_distance": 15.01377921270469
+  },
+  "direction_index": null,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.485713892256809,
+    "max_weight_position": 43.47583659013771,
+    "min_weight": 1.245200059608247,
+    "min_weight_distance": 27.435040836973474
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.0,
+    "max_weight_position": 31.23240521977878,
+    "min_weight": 0.0,
+    "min_weight_distance": 15.01377921270469
+   }
+  }
+ },
+ {
+  "edit_id": "E1_021",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "global",
+   "direction_index": 33.38238880765087,
+   "attn.o_proj.max_weight": 0.9691730231094994,
+   "attn.o_proj.max_weight_position": 45.4661532082512,
+   "attn.o_proj.min_weight": 0.4820185706659258,
+   "attn.o_proj.min_weight_distance": 19.600290491064847,
+   "mlp.down_proj.max_weight": 0.5529256206093147,
+   "mlp.down_proj.max_weight_position": 45.80260320601995,
+   "mlp.down_proj.min_weight": 0.08767110589257343,
+   "mlp.down_proj.min_weight_distance": 24.96060011561919
+  },
+  "direction_index": 33.38238880765087,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 0.9691730231094994,
+    "max_weight_position": 45.4661532082512,
+    "min_weight": 0.4671593953272152,
+    "min_weight_distance": 19.600290491064847
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.5529256206093147,
+    "max_weight_position": 45.80260320601995,
+    "min_weight": 0.048475600635156116,
+    "min_weight_distance": 24.96060011561919
+   }
+  }
+ },
+ {
+  "edit_id": "E1_022",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "global",
+   "direction_index": 24.807213302340948,
+   "attn.o_proj.max_weight": 1.0807924747519835,
+   "attn.o_proj.max_weight_position": 33.67760820123181,
+   "attn.o_proj.min_weight": 0.02421093329954127,
+   "attn.o_proj.min_weight_distance": 15.183547946182074,
+   "mlp.down_proj.max_weight": 1.013049113619739,
+   "mlp.down_proj.max_weight_position": 43.585224993210204,
+   "mlp.down_proj.min_weight": 0.8437873340336637,
+   "mlp.down_proj.min_weight_distance": 16.04115630519641
+  },
+  "direction_index": 24.807213302340948,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.0807924747519835,
+    "max_weight_position": 33.67760820123181,
+    "min_weight": 0.026166994516866413,
+    "min_weight_distance": 15.183547946182074
+   },
+   "mlp.down_proj": {
+    "max_weight": 1.013049113619739,
+    "max_weight_position": 43.585224993210204,
+    "min_weight": 0.8547980108263656,
+    "min_weight_distance": 16.04115630519641
+   }
+  }
+ },
+ {
+  "edit_id": "E1_023",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "global",
+   "direction_index": 25.54440585440431,
+   "attn.o_proj.max_weight": 1.4366689741735434,
+   "attn.o_proj.max_weight_position": 37.7107165308393,
+   "attn.o_proj.min_weight": 0.17497494487847165,
+   "attn.o_proj.min_weight_distance": 23.651787413776255,
+   "mlp.down_proj.max_weight": 0.17442520607127016,
+   "mlp.down_proj.max_weight_position": 37.04518545977181,
+   "mlp.down_proj.min_weight": 0.48894934615221963,
+   "mlp.down_proj.min_weight_distance": 12.274513782863625
+  },
+  "direction_index": 25.54440585440431,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.4366689741735434,
+    "max_weight_position": 37.7107165308393,
+    "min_weight": 0.25138107456462616,
+    "min_weight_distance": 23.651787413776255
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.17442520607127016,
+    "max_weight_position": 37.04518545977181,
+    "min_weight": 0.08528509046101371,
+    "min_weight_distance": 12.274513782863625
+   }
+  }
+ },
+ {
+  "edit_id": "E1_024",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "global",
+   "direction_index": 29.856364947417692,
+   "attn.o_proj.max_weight": 1.0295234782522706,
+   "attn.o_proj.max_weight_position": 41.177064881408164,
+   "attn.o_proj.min_weight": 0.2522830815811875,
+   "attn.o_proj.min_weight_distance": 14.350550212322812,
+   "mlp.down_proj.max_weight": 1.4114145638545341,
+   "mlp.down_proj.max_weight_position": 29.092749266567687,
+   "mlp.down_proj.min_weight": 0.15229010997689585,
+   "mlp.down_proj.min_weight_distance": 1.16868287560261
+  },
+  "direction_index": 29.856364947417692,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.0295234782522706,
+    "max_weight_position": 41.177064881408164,
+    "min_weight": 0.2597313556536655,
+    "min_weight_distance": 14.350550212322812
+   },
+   "mlp.down_proj": {
+    "max_weight": 1.4114145638545341,
+    "max_weight_position": 29.092749266567687,
+    "min_weight": 0.2149444791523995,
+    "min_weight_distance": 1.16868287560261
+   }
+  }
+ },
+ {
+  "edit_id": "E1_025",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "per layer",
+   "direction_index": 24.200301365070402,
+   "attn.o_proj.max_weight": 1.25176286412506,
+   "attn.o_proj.max_weight_position": 46.39996133055146,
+   "attn.o_proj.min_weight": 0.881801170722761,
+   "attn.o_proj.min_weight_distance": 20.077496255858936,
+   "mlp.down_proj.max_weight": -0.0953285894458312,
+   "mlp.down_proj.max_weight_position": 28.27668427440466,
+   "mlp.down_proj.min_weight": 0.275744146548341,
+   "mlp.down_proj.min_weight_distance": 7.315075373384921
+  },
+  "direction_index": null,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.25176286412506,
+    "max_weight_position": 46.39996133055146,
+    "min_weight": 1.1038059590527542,
+    "min_weight_distance": 20.077496255858936
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.0,
+    "max_weight_position": 28.27668427440466,
+    "min_weight": 0.0,
+    "min_weight_distance": 7.315075373384921
+   }
+  }
+ },
+ {
+  "edit_id": "E1_026",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "global",
+   "direction_index": 21.68308935385153,
+   "attn.o_proj.max_weight": 1.0509084268328601,
+   "attn.o_proj.max_weight_position": 34.8931100303606,
+   "attn.o_proj.min_weight": 0.29695550402276394,
+   "attn.o_proj.min_weight_distance": 18.934220792903535,
+   "mlp.down_proj.max_weight": 1.2699242135916728,
+   "mlp.down_proj.max_weight_position": 29.708236182538595,
+   "mlp.down_proj.min_weight": 0.7004533956155441,
+   "mlp.down_proj.min_weight_distance": 21.744171405750613
+  },
+  "direction_index": 21.68308935385153,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.0509084268328601,
+    "max_weight_position": 34.8931100303606,
+    "min_weight": 0.3120730415719219,
+    "min_weight_distance": 18.934220792903535
+   },
+   "mlp.down_proj": {
+    "max_weight": 1.2699242135916728,
+    "max_weight_position": 29.708236182538595,
+    "min_weight": 0.8895227275846868,
+    "min_weight_distance": 21.744171405750613
+   }
+  }
+ },
+ {
+  "edit_id": "E1_027",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "global",
+   "direction_index": 26.461211034789233,
+   "attn.o_proj.max_weight": 1.3551577505400372,
+   "attn.o_proj.max_weight_position": 38.08242679178078,
+   "attn.o_proj.min_weight": 0.18438673119195792,
+   "attn.o_proj.min_weight_distance": 4.95979384040218,
+   "mlp.down_proj.max_weight": 0.49956448854033964,
+   "mlp.down_proj.max_weight_position": 32.98386231931389,
+   "mlp.down_proj.min_weight": 0.04379493493290454,
+   "mlp.down_proj.min_weight_distance": 24.06798229005017
+  },
+  "direction_index": 26.461211034789233,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.3551577505400372,
+    "max_weight_position": 38.08242679178078,
+    "min_weight": 0.2498731078715242,
+    "min_weight_distance": 4.95979384040218
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.49956448854033964,
+    "max_weight_position": 32.98386231931389,
+    "min_weight": 0.02187839427041391,
+    "min_weight_distance": 24.06798229005017
+   }
+  }
+ },
+ {
+  "edit_id": "E1_028",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "per layer",
+   "direction_index": 28.869738913721086,
+   "attn.o_proj.max_weight": 1.3982506217312753,
+   "attn.o_proj.max_weight_position": 45.484086006276314,
+   "attn.o_proj.min_weight": 0.9300937244730679,
+   "attn.o_proj.min_weight_distance": 4.358110747903531,
+   "mlp.down_proj.max_weight": 0.8722111016354721,
+   "mlp.down_proj.max_weight_position": 39.721106363299924,
+   "mlp.down_proj.min_weight": 0.4299954109229591,
+   "mlp.down_proj.min_weight_distance": 4.543154623030869
+  },
+  "direction_index": null,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.3982506217312753,
+    "max_weight_position": 45.484086006276314,
+    "min_weight": 1.3005041285128247,
+    "min_weight_distance": 4.358110747903531
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.8722111016354721,
+    "max_weight_position": 39.721106363299924,
+    "min_weight": 0.37504677105931167,
+    "min_weight_distance": 4.543154623030869
+   }
+  }
+ },
+ {
+  "edit_id": "E1_029",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "per layer",
+   "direction_index": 34.16263705738612,
+   "attn.o_proj.max_weight": 1.2497286365021383,
+   "attn.o_proj.max_weight_position": 36.9753085841526,
+   "attn.o_proj.min_weight": 0.08990929275717274,
+   "attn.o_proj.min_weight_distance": 7.5040756587912005,
+   "mlp.down_proj.max_weight": 0.13548624646134078,
+   "mlp.down_proj.max_weight_position": 30.231539302013868,
+   "mlp.down_proj.min_weight": 0.8357824480991544,
+   "mlp.down_proj.min_weight_distance": 1.9661234284385163
+  },
+  "direction_index": null,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.2497286365021383,
+    "max_weight_position": 36.9753085841526,
+    "min_weight": 0.11236221784629306,
+    "min_weight_distance": 7.5040756587912005
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.13548624646134078,
+    "max_weight_position": 30.231539302013868,
+    "min_weight": 0.11323702675122478,
+    "min_weight_distance": 1.9661234284385163
+   }
+  }
+ },
+ {
+  "edit_id": "E1_030",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "per layer",
+   "direction_index": 41.06223175109621,
+   "attn.o_proj.max_weight": 1.3975470031034738,
+   "attn.o_proj.max_weight_position": 34.688671998182286,
+   "attn.o_proj.min_weight": 0.44510274174611564,
+   "attn.o_proj.min_weight_distance": 23.255871989308098,
+   "mlp.down_proj.max_weight": 0.7915473600006204,
+   "mlp.down_proj.max_weight_position": 29.980584877736124,
+   "mlp.down_proj.min_weight": 0.7465796045272501,
+   "mlp.down_proj.min_weight_distance": 6.106362956277422
+  },
+  "direction_index": null,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.3975470031034738,
+    "max_weight_position": 34.688671998182286,
+    "min_weight": 0.6220520028004234,
+    "min_weight_distance": 23.255871989308098
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.7915473600006204,
+    "max_weight_position": 29.980584877736124,
+    "min_weight": 0.5909531149938521,
+    "min_weight_distance": 6.106362956277422
+   }
+  }
+ },
+ {
+  "edit_id": "E1_031",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "per layer",
+   "direction_index": 28.618875237856134,
+   "attn.o_proj.max_weight": 1.4328984914227858,
+   "attn.o_proj.max_weight_position": 29.92417493868676,
+   "attn.o_proj.min_weight": 0.8559444684013963,
+   "attn.o_proj.min_weight_distance": 7.842092545306764,
+   "mlp.down_proj.max_weight": 1.1810394611424242,
+   "mlp.down_proj.max_weight_position": 43.55272685070378,
+   "mlp.down_proj.min_weight": 0.9669225208274757,
+   "mlp.down_proj.min_weight_distance": 26.711238867167395
+  },
+  "direction_index": null,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.4328984914227858,
+    "max_weight_position": 29.92417493868676,
+    "min_weight": 1.226481537514039,
+    "min_weight_distance": 7.842092545306764
+   },
+   "mlp.down_proj": {
+    "max_weight": 1.1810394611424242,
+    "max_weight_position": 43.55272685070378,
+    "min_weight": 1.1419736529645563,
+    "min_weight_distance": 26.711238867167395
+   }
+  }
+ },
+ {
+  "edit_id": "E1_032",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "global",
+   "direction_index": 35.30335565100839,
+   "attn.o_proj.max_weight": 1.0837769808789832,
+   "attn.o_proj.max_weight_position": 33.26046054571665,
+   "attn.o_proj.min_weight": 0.18153205540516137,
+   "attn.o_proj.min_weight_distance": 11.052482946978811,
+   "mlp.down_proj.max_weight": 1.2187849047323864,
+   "mlp.down_proj.max_weight_position": 35.09249310246272,
+   "mlp.down_proj.min_weight": 0.4520963665794364,
+   "mlp.down_proj.min_weight_distance": 3.7411729372006843
+  },
+  "direction_index": 35.30335565100839,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.0837769808789832,
+    "max_weight_position": 33.26046054571665,
+    "min_weight": 0.1967402629397621,
+    "min_weight_distance": 11.052482946978811
+   },
+   "mlp.down_proj": {
+    "max_weight": 1.2187849047323864,
+    "max_weight_position": 35.09249310246272,
+    "min_weight": 0.5510082270713764,
+    "min_weight_distance": 3.7411729372006843
+   }
+  }
+ },
+ {
+  "edit_id": "E1_033",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "global",
+   "direction_index": 34.259810818933516,
+   "attn.o_proj.max_weight": 1.0230418010883977,
+   "attn.o_proj.max_weight_position": 32.31850782239504,
+   "attn.o_proj.min_weight": 0.08281843575338621,
+   "attn.o_proj.min_weight_distance": 5.1617605864853395,
+   "mlp.down_proj.max_weight": 1.1950415862637396,
+   "mlp.down_proj.max_weight_position": 38.3652851060549,
+   "mlp.down_proj.min_weight": 0.26552328156903915,
+   "mlp.down_proj.min_weight_distance": 21.79769928100049
+  },
+  "direction_index": 34.259810818933516,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.0230418010883977,
+    "max_weight_position": 32.31850782239504,
+    "min_weight": 0.08472672167646798,
+    "min_weight_distance": 5.1617605864853395
+   },
+   "mlp.down_proj": {
+    "max_weight": 1.1950415862637396,
+    "max_weight_position": 38.3652851060549,
+    "min_weight": 0.3173113635962181,
+    "min_weight_distance": 21.79769928100049
+   }
+  }
+ },
+ {
+  "edit_id": "E1_034",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "per layer",
+   "direction_index": 41.01580534720915,
+   "attn.o_proj.max_weight": 1.4446789181041273,
+   "attn.o_proj.max_weight_position": 41.831282492444316,
+   "attn.o_proj.min_weight": 0.5953727616446047,
+   "attn.o_proj.min_weight_distance": 20.740113995367665,
+   "mlp.down_proj.max_weight": 0.1573633931250732,
+   "mlp.down_proj.max_weight_position": 45.2790223691499,
+   "mlp.down_proj.min_weight": 0.7928855581954406,
+   "mlp.down_proj.min_weight_distance": 13.465588663516904
+  },
+  "direction_index": null,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.4446789181041273,
+    "max_weight_position": 41.831282492444316,
+    "min_weight": 0.860122477161394,
+    "min_weight_distance": 20.740113995367665
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.1573633931250732,
+    "max_weight_position": 45.2790223691499,
+    "min_weight": 0.12477116179750222,
+    "min_weight_distance": 13.465588663516904
+   }
+  }
+ },
+ {
+  "edit_id": "E1_035",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "global",
+   "direction_index": 25.616728212537335,
+   "attn.o_proj.max_weight": 0.8215871428468959,
+   "attn.o_proj.max_weight_position": 28.748480089029854,
+   "attn.o_proj.min_weight": 0.30023890923850693,
+   "attn.o_proj.min_weight_distance": 9.927774074709946,
+   "mlp.down_proj.max_weight": 0.478285243383616,
+   "mlp.down_proj.max_weight_position": 36.46418791440307,
+   "mlp.down_proj.min_weight": 0.21694469964825236,
+   "mlp.down_proj.min_weight_distance": 1.494548679735789
+  },
+  "direction_index": 25.616728212537335,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 0.8215871428468959,
+    "max_weight_position": 28.748480089029854,
+    "min_weight": 0.24667242761273342,
+    "min_weight_distance": 9.927774074709946
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.478285243383616,
+    "max_weight_position": 36.46418791440307,
+    "min_weight": 0.10376144847204985,
+    "min_weight_distance": 1.494548679735789
+   }
+  }
+ },
+ {
+  "edit_id": "E1_036",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "global",
+   "direction_index": 19.20474945574619,
+   "attn.o_proj.max_weight": 1.473268368489705,
+   "attn.o_proj.max_weight_position": 45.38385291588642,
+   "attn.o_proj.min_weight": 0.7774692648653518,
+   "attn.o_proj.min_weight_distance": 14.70224257628285,
+   "mlp.down_proj.max_weight": 1.170090927871844,
+   "mlp.down_proj.max_weight_position": 37.37732901980323,
+   "mlp.down_proj.min_weight": 0.6014342313176338,
+   "mlp.down_proj.min_weight_distance": 14.349836589106292
+  },
+  "direction_index": 19.20474945574619,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.473268368489705,
+    "max_weight_position": 45.38385291588642,
+    "min_weight": 1.1454208753990671,
+    "min_weight_distance": 14.70224257628285
+   },
+   "mlp.down_proj": {
+    "max_weight": 1.170090927871844,
+    "max_weight_position": 37.37732901980323,
+    "min_weight": 0.7037327377763395,
+    "min_weight_distance": 14.349836589106292
+   }
+  }
+ },
+ {
+  "edit_id": "E1_037",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "global",
+   "direction_index": 39.683422649916004,
+   "attn.o_proj.max_weight": 1.17368357941324,
+   "attn.o_proj.max_weight_position": 34.38727624712446,
+   "attn.o_proj.min_weight": 0.305641366194894,
+   "attn.o_proj.min_weight_distance": 5.387329074689711,
+   "mlp.down_proj.max_weight": 0.4060537768089246,
+   "mlp.down_proj.max_weight_position": 43.24651809960297,
+   "mlp.down_proj.min_weight": 0.8257004977823005,
+   "mlp.down_proj.min_weight_distance": 17.954029791869992
+  },
+  "direction_index": 39.683422649916004,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.17368357941324,
+    "max_weight_position": 34.38727624712446,
+    "min_weight": 0.35872625269237607,
+    "min_weight_distance": 5.387329074689711
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.4060537768089246,
+    "max_weight_position": 43.24651809960297,
+    "min_weight": 0.3352788056375122,
+    "min_weight_distance": 17.954029791869992
+   }
+  }
+ },
+ {
+  "edit_id": "E1_038",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "per layer",
+   "direction_index": 29.610478607216137,
+   "attn.o_proj.max_weight": 1.2345948217904361,
+   "attn.o_proj.max_weight_position": 31.069086461381882,
+   "attn.o_proj.min_weight": 0.8000348471258192,
+   "attn.o_proj.min_weight_distance": 5.092880723465489,
+   "mlp.down_proj.max_weight": 0.869175548959626,
+   "mlp.down_proj.max_weight_position": 37.98270213493685,
+   "mlp.down_proj.min_weight": 0.5656976159284801,
+   "mlp.down_proj.min_weight_distance": 15.434003854340101
+  },
+  "direction_index": null,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.2345948217904361,
+    "max_weight_position": 31.069086461381882,
+    "min_weight": 0.9877188795134395,
+    "min_weight_distance": 5.092880723465489
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.869175548959626,
+    "max_weight_position": 37.98270213493685,
+    "min_weight": 0.4916905358697884,
+    "min_weight_distance": 15.434003854340101
+   }
+  }
+ },
+ {
+  "edit_id": "E1_039",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "global",
+   "direction_index": 25.279506618198504,
+   "attn.o_proj.max_weight": 1.3038700896878646,
+   "attn.o_proj.max_weight_position": 34.472326606635185,
+   "attn.o_proj.min_weight": 0.06369826823547164,
+   "attn.o_proj.min_weight_distance": 13.335097538780115,
+   "mlp.down_proj.max_weight": 0.771209154047368,
+   "mlp.down_proj.max_weight_position": 43.78345756039865,
+   "mlp.down_proj.min_weight": 0.6962323759045259,
+   "mlp.down_proj.min_weight_distance": 27.023788754988093
+  },
+  "direction_index": 25.279506618198504,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.3038700896878646,
+    "max_weight_position": 34.472326606635185,
+    "min_weight": 0.08305426671714607,
+    "min_weight_distance": 13.335097538780115
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.771209154047368,
+    "max_weight_position": 43.78345756039865,
+    "min_weight": 0.5369407816417185,
+    "min_weight_distance": 27.023788754988093
+   }
+  }
+ },
+ {
+  "edit_id": "E1_040",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "global",
+   "direction_index": 24.477454105603236,
+   "attn.o_proj.max_weight": 1.1624246156935736,
+   "attn.o_proj.max_weight_position": 43.000754466531205,
+   "attn.o_proj.min_weight": 0.5769773634608145,
+   "attn.o_proj.min_weight_distance": 12.666064334377218,
+   "mlp.down_proj.max_weight": -0.08694761440994508,
+   "mlp.down_proj.max_weight_position": 41.464743387837,
+   "mlp.down_proj.min_weight": 0.7636701119750262,
+   "mlp.down_proj.min_weight_distance": 16.87728340893874
+  },
+  "direction_index": 24.477454105603236,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.1624246156935736,
+    "max_weight_position": 43.000754466531205,
+    "min_weight": 0.6706926899848287,
+    "min_weight_distance": 12.666064334377218
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.0,
+    "max_weight_position": 41.464743387837,
+    "min_weight": 0.0,
+    "min_weight_distance": 16.87728340893874
+   }
+  }
+ },
+ {
+  "edit_id": "E1_041",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "per layer",
+   "direction_index": 19.507164348279378,
+   "attn.o_proj.max_weight": 1.397535250904427,
+   "attn.o_proj.max_weight_position": 38.77838158481974,
+   "attn.o_proj.min_weight": 0.5465009526245521,
+   "attn.o_proj.min_weight_distance": 24.27555922696776,
+   "mlp.down_proj.max_weight": 1.455657554580893,
+   "mlp.down_proj.max_weight_position": 41.186929128934366,
+   "mlp.down_proj.min_weight": 0.0757468534205813,
+   "mlp.down_proj.min_weight_distance": 14.022288960731801
+  },
+  "direction_index": null,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.397535250904427,
+    "max_weight_position": 38.77838158481974,
+    "min_weight": 0.7637543459456618,
+    "min_weight_distance": 24.27555922696776
+   },
+   "mlp.down_proj": {
+    "max_weight": 1.455657554580893,
+    "max_weight_position": 41.186929128934366,
+    "min_weight": 0.11026147941740072,
+    "min_weight_distance": 14.022288960731801
+   }
+  }
+ },
+ {
+  "edit_id": "E1_042",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "global",
+   "direction_index": 35.0385753698921,
+   "attn.o_proj.max_weight": 1.2462107485111444,
+   "attn.o_proj.max_weight_position": 33.14022334771195,
+   "attn.o_proj.min_weight": 0.45814240939481277,
+   "attn.o_proj.min_weight_distance": 3.54359879463991,
+   "mlp.down_proj.max_weight": 0.589672226081523,
+   "mlp.down_proj.max_weight_position": 41.07245060537599,
+   "mlp.down_proj.min_weight": 0.7628153870925659,
+   "mlp.down_proj.min_weight_distance": 2.561184309864423
+  },
+  "direction_index": 35.0385753698921,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.2462107485111444,
+    "max_weight_position": 33.14022334771195,
+    "min_weight": 0.5709419949366088,
+    "min_weight_distance": 3.54359879463991
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.589672226081523,
+    "max_weight_position": 41.07245060537599,
+    "min_weight": 0.44981104739611205,
+    "min_weight_distance": 2.561184309864423
+   }
+  }
+ },
+ {
+  "edit_id": "E1_043",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "per layer",
+   "direction_index": 22.86098637429537,
+   "attn.o_proj.max_weight": 0.9643702767778413,
+   "attn.o_proj.max_weight_position": 35.66761107425373,
+   "attn.o_proj.min_weight": 0.08326654902349895,
+   "attn.o_proj.min_weight_distance": 15.997096619453002,
+   "mlp.down_proj.max_weight": 0.6153907200278135,
+   "mlp.down_proj.max_weight_position": 43.1992317614891,
+   "mlp.down_proj.min_weight": 0.16817473589410314,
+   "mlp.down_proj.min_weight_distance": 26.49662648917566
+  },
+  "direction_index": null,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 0.9643702767778413,
+    "max_weight_position": 35.66761107425373,
+    "min_weight": 0.08029978492812737,
+    "min_weight_distance": 15.997096619453002
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.6153907200278135,
+    "max_weight_position": 43.1992317614891,
+    "min_weight": 0.10349317181235951,
+    "min_weight_distance": 26.49662648917566
+   }
+  }
+ },
+ {
+  "edit_id": "E1_044",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "per layer",
+   "direction_index": 29.588430742895454,
+   "attn.o_proj.max_weight": 0.9324180631087436,
+   "attn.o_proj.max_weight_position": 42.478907741792405,
+   "attn.o_proj.min_weight": 0.524227245567099,
+   "attn.o_proj.min_weight_distance": 21.80747602715053,
+   "mlp.down_proj.max_weight": 0.7774929784070537,
+   "mlp.down_proj.max_weight_position": 42.07368033750805,
+   "mlp.down_proj.min_weight": 0.513514864115236,
+   "mlp.down_proj.min_weight_distance": 10.908776785843589
+  },
+  "direction_index": null,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 0.9324180631087436,
+    "max_weight_position": 42.478907741792405,
+    "min_weight": 0.4887989529405062,
+    "min_weight_distance": 21.80747602715053
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.7774929784070537,
+    "max_weight_position": 42.07368033750805,
+    "min_weight": 0.39925420115724825,
+    "min_weight_distance": 10.908776785843589
+   }
+  }
+ },
+ {
+  "edit_id": "E1_045",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "per layer",
+   "direction_index": 39.89357763325337,
+   "attn.o_proj.max_weight": 0.9904203417918606,
+   "attn.o_proj.max_weight_position": 38.50098716028965,
+   "attn.o_proj.min_weight": 0.5991001760819141,
+   "attn.o_proj.min_weight_distance": 1.542654236579709,
+   "mlp.down_proj.max_weight": -0.05517136901548128,
+   "mlp.down_proj.max_weight_position": 42.66985666316624,
+   "mlp.down_proj.min_weight": 0.16455676162552568,
+   "mlp.down_proj.min_weight_distance": 5.2918805909649
+  },
+  "direction_index": null,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 0.9904203417918606,
+    "max_weight_position": 38.50098716028965,
+    "min_weight": 0.5933610011626133,
+    "min_weight_distance": 1.542654236579709
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.0,
+    "max_weight_position": 42.66985666316624,
+    "min_weight": 0.0,
+    "min_weight_distance": 5.2918805909649
+   }
+  }
+ },
+ {
+  "edit_id": "E1_046",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "global",
+   "direction_index": 24.61289442643778,
+   "attn.o_proj.max_weight": 1.450893860933273,
+   "attn.o_proj.max_weight_position": 44.367366058177694,
+   "attn.o_proj.min_weight": 0.7518103836736734,
+   "attn.o_proj.min_weight_distance": 2.918439260252824,
+   "mlp.down_proj.max_weight": 0.7282361629780405,
+   "mlp.down_proj.max_weight_position": 40.871123483731104,
+   "mlp.down_proj.min_weight": 0.1568801585331563,
+   "mlp.down_proj.min_weight_distance": 9.201944458629304
+  },
+  "direction_index": 24.61289442643778,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.450893860933273,
+    "max_weight_position": 44.367366058177694,
+    "min_weight": 1.0907970702580214,
+    "min_weight_distance": 2.918439260252824
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.7282361629780405,
+    "max_weight_position": 40.871123483731104,
+    "min_weight": 0.11424580469757244,
+    "min_weight_distance": 9.201944458629304
+   }
+  }
+ },
+ {
+  "edit_id": "E1_047",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "per layer",
+   "direction_index": 38.18644601724047,
+   "attn.o_proj.max_weight": 1.365217186048267,
+   "attn.o_proj.max_weight_position": 34.67342725422839,
+   "attn.o_proj.min_weight": 0.2102000907640703,
+   "attn.o_proj.min_weight_distance": 15.51481059101642,
+   "mlp.down_proj.max_weight": 0.13522962309925773,
+   "mlp.down_proj.max_weight_position": 42.059955610788,
+   "mlp.down_proj.min_weight": 0.878975685648077,
+   "mlp.down_proj.min_weight_distance": 24.213585047729218
+  },
+  "direction_index": null,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.365217186048267,
+    "max_weight_position": 34.67342725422839,
+    "min_weight": 0.2869687764200144,
+    "min_weight_distance": 15.51481059101642
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.13522962309925773,
+    "max_weight_position": 42.059955610788,
+    "min_weight": 0.1188635506836011,
+    "min_weight_distance": 24.213585047729218
+   }
+  }
+ },
+ {
+  "edit_id": "E1_048",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "per layer",
+   "direction_index": 22.79159821062752,
+   "attn.o_proj.max_weight": 1.4934242761696228,
+   "attn.o_proj.max_weight_position": 36.88069052413145,
+   "attn.o_proj.min_weight": 0.14362963689139796,
+   "attn.o_proj.min_weight_distance": 26.821871197810307,
+   "mlp.down_proj.max_weight": 0.2468984825392151,
+   "mlp.down_proj.max_weight_position": 39.896896342165135,
+   "mlp.down_proj.min_weight": 0.18354737863243442,
+   "mlp.down_proj.min_weight_distance": 18.70993935423471
+  },
+  "direction_index": null,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.4934242761696228,
+    "max_weight_position": 36.88069052413145,
+    "min_weight": 0.21449998651104174,
+    "min_weight_distance": 26.821871197810307
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.2468984825392151,
+    "max_weight_position": 39.896896342165135,
+    "min_weight": 0.04531756925839881,
+    "min_weight_distance": 18.70993935423471
+   }
+  }
+ },
+ {
+  "edit_id": "E1_049",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "global",
+   "direction_index": 38.160437497912646,
+   "attn.o_proj.max_weight": 1.2212024027047683,
+   "attn.o_proj.max_weight_position": 40.31690768095197,
+   "attn.o_proj.min_weight": 0.5913122155629958,
+   "attn.o_proj.min_weight_distance": 12.800577873185793,
+   "mlp.down_proj.max_weight": 0.6579855730550055,
+   "mlp.down_proj.max_weight_position": 31.188421109598636,
+   "mlp.down_proj.min_weight": 0.2658870758481554,
+   "mlp.down_proj.min_weight_distance": 24.118804419774516
+  },
+  "direction_index": 38.160437497912646,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.2212024027047683,
+    "max_weight_position": 40.31690768095197,
+    "min_weight": 0.7221118983942104,
+    "min_weight_distance": 12.800577873185793
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.6579855730550055,
+    "max_weight_position": 31.188421109598636,
+    "min_weight": 0.17494985996986825,
+    "min_weight_distance": 24.118804419774516
+   }
+  }
+ },
+ {
+  "edit_id": "E1_050",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "per layer",
+   "direction_index": 23.94842588364082,
+   "attn.o_proj.max_weight": 0.8001873657282814,
+   "attn.o_proj.max_weight_position": 38.25311830752177,
+   "attn.o_proj.min_weight": 0.7674096355512678,
+   "attn.o_proj.min_weight_distance": 18.309156069223302,
+   "mlp.down_proj.max_weight": 0.8921343489217086,
+   "mlp.down_proj.max_weight_position": 30.708344891099557,
+   "mlp.down_proj.min_weight": 0.48120340216798774,
+   "mlp.down_proj.min_weight_distance": 25.03256464931628
+  },
+  "direction_index": null,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 0.8001873657282814,
+    "max_weight_position": 38.25311830752177,
+    "min_weight": 0.6140714947062695,
+    "min_weight_distance": 18.309156069223302
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.8921343489217086,
+    "max_weight_position": 30.708344891099557,
+    "min_weight": 0.4292980838920489,
+    "min_weight_distance": 25.03256464931628
+   }
+  }
+ },
+ {
+  "edit_id": "E1_051",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "global",
+   "direction_index": 19.21347183210067,
+   "attn.o_proj.max_weight": 1.2265885652352138,
+   "attn.o_proj.max_weight_position": 31.571435336191428,
+   "attn.o_proj.min_weight": 0.916873728888396,
+   "attn.o_proj.min_weight_distance": 20.85946577074466,
+   "mlp.down_proj.max_weight": 0.3793343591756898,
+   "mlp.down_proj.max_weight_position": 36.373525421885404,
+   "mlp.down_proj.min_weight": 0.5673270339067494,
+   "mlp.down_proj.min_weight_distance": 5.888415291681563
+  },
+  "direction_index": 19.21347183210067,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.2265885652352138,
+    "max_weight_position": 31.571435336191428,
+    "min_weight": 1.124626831619078,
+    "min_weight_distance": 20.85946577074466
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.3793343591756898,
+    "max_weight_position": 36.373525421885404,
+    "min_weight": 0.21520663685006164,
+    "min_weight_distance": 5.888415291681563
+   }
+  }
+ },
+ {
+  "edit_id": "E1_052",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "global",
+   "direction_index": 39.49897485325868,
+   "attn.o_proj.max_weight": 1.4995990601699365,
+   "attn.o_proj.max_weight_position": 34.24900306141707,
+   "attn.o_proj.min_weight": 0.8584251629489343,
+   "attn.o_proj.min_weight_distance": 13.286746048185506,
+   "mlp.down_proj.max_weight": 0.15791990091426095,
+   "mlp.down_proj.max_weight_position": 32.80234695719189,
+   "mlp.down_proj.min_weight": 0.8892605508916449,
+   "mlp.down_proj.min_weight_distance": 2.059005111680814
+  },
+  "direction_index": 39.49897485325868,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.4995990601699365,
+    "max_weight_position": 34.24900306141707,
+    "min_weight": 1.2872935675844466,
+    "min_weight_distance": 13.286746048185506
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.15791990091426095,
+    "max_weight_position": 32.80234695719189,
+    "min_weight": 0.14043193808376966,
+    "min_weight_distance": 2.059005111680814
+   }
+  }
+ },
+ {
+  "edit_id": "E1_053",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "per layer",
+   "direction_index": 40.88213045129655,
+   "attn.o_proj.max_weight": 1.3996301287105943,
+   "attn.o_proj.max_weight_position": 42.83380285756482,
+   "attn.o_proj.min_weight": 0.42185251888821784,
+   "attn.o_proj.min_weight_distance": 23.90509101070189,
+   "mlp.down_proj.max_weight": 0.618113670057489,
+   "mlp.down_proj.max_weight_position": 35.98856805775843,
+   "mlp.down_proj.min_weight": 0.3743567384568337,
+   "mlp.down_proj.min_weight_distance": 25.54852189894651
+  },
+  "direction_index": null,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.3996301287105943,
+    "max_weight_position": 42.83380285756482,
+    "min_weight": 0.5904374953084047,
+    "min_weight_distance": 23.90509101070189
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.618113670057489,
+    "max_weight_position": 35.98856805775843,
+    "min_weight": 0.231395017518305,
+    "min_weight_distance": 25.54852189894651
+   }
+  }
+ },
+ {
+  "edit_id": "E1_054",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "per layer",
+   "direction_index": 26.9485958195864,
+   "attn.o_proj.max_weight": 0.9134804705713717,
+   "attn.o_proj.max_weight_position": 44.20796456411826,
+   "attn.o_proj.min_weight": 0.6116143250385697,
+   "attn.o_proj.min_weight_distance": 19.03116486637513,
+   "mlp.down_proj.max_weight": 0.8915920624516811,
+   "mlp.down_proj.max_weight_position": 40.26233996676358,
+   "mlp.down_proj.min_weight": 0.38817905327102653,
+   "mlp.down_proj.min_weight_distance": 14.993044827668738
+  },
+  "direction_index": null,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 0.9134804705713717,
+    "max_weight_position": 44.20796456411826,
+    "min_weight": 0.5586977414444245,
+    "min_weight_distance": 19.03116486637513
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.8915920624516811,
+    "max_weight_position": 40.26233996676358,
+    "min_weight": 0.3460973627064555,
+    "min_weight_distance": 14.993044827668738
+   }
+  }
+ },
+ {
+  "edit_id": "E1_055",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "per layer",
+   "direction_index": 22.349913459406135,
+   "attn.o_proj.max_weight": 0.9355994703974183,
+   "attn.o_proj.max_weight_position": 39.48914575865786,
+   "attn.o_proj.min_weight": 0.9222153671903478,
+   "attn.o_proj.min_weight_distance": 14.080973713207017,
+   "mlp.down_proj.max_weight": 1.0221495935236489,
+   "mlp.down_proj.max_weight_position": 45.9796507313381,
+   "mlp.down_proj.min_weight": 0.11268473248509892,
+   "mlp.down_proj.min_weight_distance": 14.894837989780022
+  },
+  "direction_index": null,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 0.9355994703974183,
+    "max_weight_position": 39.48914575865786,
+    "min_weight": 0.86282420913565,
+    "min_weight_distance": 14.080973713207017
+   },
+   "mlp.down_proj": {
+    "max_weight": 1.0221495935236489,
+    "max_weight_position": 45.9796507313381,
+    "min_weight": 0.11518065350596497,
+    "min_weight_distance": 14.894837989780022
+   }
+  }
+ },
+ {
+  "edit_id": "E1_056",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "per layer",
+   "direction_index": 30.559346889672256,
+   "attn.o_proj.max_weight": 1.4886679284418594,
+   "attn.o_proj.max_weight_position": 33.77982847683431,
+   "attn.o_proj.min_weight": 0.801434306182522,
+   "attn.o_proj.min_weight_distance": 5.357537474116948,
+   "mlp.down_proj.max_weight": 1.296139190274243,
+   "mlp.down_proj.max_weight_position": 31.472433735413357,
+   "mlp.down_proj.min_weight": 0.5424608220906144,
+   "mlp.down_proj.min_weight_distance": 20.47608477439208
+  },
+  "direction_index": null,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.4886679284418594,
+    "max_weight_position": 33.77982847683431,
+    "min_weight": 1.1930695483669738,
+    "min_weight_distance": 5.357537474116948
+   },
+   "mlp.down_proj": {
+    "max_weight": 1.296139190274243,
+    "max_weight_position": 31.472433735413357,
+    "min_weight": 0.7031047307000291,
+    "min_weight_distance": 20.47608477439208
+   }
+  }
+ },
+ {
+  "edit_id": "E1_057",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "per layer",
+   "direction_index": 35.756149867872494,
+   "attn.o_proj.max_weight": 1.4989097422763438,
+   "attn.o_proj.max_weight_position": 43.088011568785106,
+   "attn.o_proj.min_weight": 0.09954521713192266,
+   "attn.o_proj.min_weight_distance": 3.8932185924531537,
+   "mlp.down_proj.max_weight": 1.2189946572155184,
+   "mlp.down_proj.max_weight_position": 33.02286108816534,
+   "mlp.down_proj.min_weight": 0.9874036105317798,
+   "mlp.down_proj.min_weight_distance": 1.3702400044399816
+  },
+  "direction_index": null,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.4989097422763438,
+    "max_weight_position": 43.088011568785106,
+    "min_weight": 0.14920929575605288,
+    "min_weight_distance": 3.8932185924531537
+   },
+   "mlp.down_proj": {
+    "max_weight": 1.2189946572155184,
+    "max_weight_position": 33.02286108816534,
+    "min_weight": 1.203639725753552,
+    "min_weight_distance": 1.3702400044399816
+   }
+  }
+ },
+ {
+  "edit_id": "E1_058",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "global",
+   "direction_index": 20.58961119446423,
+   "attn.o_proj.max_weight": 1.0153508302057894,
+   "attn.o_proj.max_weight_position": 33.80447171830236,
+   "attn.o_proj.min_weight": 0.6939097915324051,
+   "attn.o_proj.min_weight_distance": 17.56118117052602,
+   "mlp.down_proj.max_weight": 0.646847138829871,
+   "mlp.down_proj.max_weight_position": 35.89022917925847,
+   "mlp.down_proj.min_weight": 0.9839357279446512,
+   "mlp.down_proj.min_weight_distance": 22.370817676382043
+  },
+  "direction_index": 20.58961119446423,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.0153508302057894,
+    "max_weight_position": 33.80447171830236,
+    "min_weight": 0.7045618829203537,
+    "min_weight_distance": 17.56118117052602
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.646847138829871,
+    "max_weight_position": 35.89022917925847,
+    "min_weight": 0.636456010413484,
+    "min_weight_distance": 22.370817676382043
+   }
+  }
+ },
+ {
+  "edit_id": "E1_059",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "per layer",
+   "direction_index": 21.741792557533323,
+   "attn.o_proj.max_weight": 1.4231733201204027,
+   "attn.o_proj.max_weight_position": 46.79948201558328,
+   "attn.o_proj.min_weight": 0.007834353226560786,
+   "attn.o_proj.min_weight_distance": 22.18380514156308,
+   "mlp.down_proj.max_weight": 0.6774584282822691,
+   "mlp.down_proj.max_weight_position": 40.552380190941875,
+   "mlp.down_proj.min_weight": 0.29263003635324825,
+   "mlp.down_proj.min_weight_distance": 11.958025835957889
+  },
+  "direction_index": null,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.4231733201204027,
+    "max_weight_position": 46.79948201558328,
+    "min_weight": 0.011149642492440503,
+    "min_weight_distance": 22.18380514156308
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.6774584282822691,
+    "max_weight_position": 40.552380190941875,
+    "min_weight": 0.1982446844960548,
+    "min_weight_distance": 11.958025835957889
+   }
+  }
+ },
+ {
+  "edit_id": "E1_060",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "global",
+   "direction_index": 20.556561224016857,
+   "attn.o_proj.max_weight": 1.0544734444478363,
+   "attn.o_proj.max_weight_position": 37.87047128021287,
+   "attn.o_proj.min_weight": 0.723666948440669,
+   "attn.o_proj.min_weight_distance": 9.897473867637373,
+   "mlp.down_proj.max_weight": 0.7903950758545173,
+   "mlp.down_proj.max_weight_position": 31.890359597577028,
+   "mlp.down_proj.min_weight": 0.9976447001728513,
+   "mlp.down_proj.min_weight_distance": 12.548416845895746
+  },
+  "direction_index": 20.556561224016857,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.0544734444478363,
+    "max_weight_position": 37.87047128021287,
+    "min_weight": 0.7630875797552871,
+    "min_weight_distance": 9.897473867637373
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.7903950758545173,
+    "max_weight_position": 31.890359597577028,
+    "min_weight": 0.788533458468978,
+    "min_weight_distance": 12.548416845895746
+   }
+  }
+ },
+ {
+  "edit_id": "E1_061",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "per layer",
+   "direction_index": 26.41081482805558,
+   "attn.o_proj.max_weight": 1.400554377131662,
+   "attn.o_proj.max_weight_position": 33.702435794764774,
+   "attn.o_proj.min_weight": 0.6755375324303639,
+   "attn.o_proj.min_weight_distance": 25.94669742636066,
+   "mlp.down_proj.max_weight": 0.4393583904750633,
+   "mlp.down_proj.max_weight_position": 34.92778740353849,
+   "mlp.down_proj.min_weight": 0.48831666384899264,
+   "mlp.down_proj.min_weight_distance": 2.358067953047814
+  },
+  "direction_index": null,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.400554377131662,
+    "max_weight_position": 33.702435794764774,
+    "min_weight": 0.9461270479620681,
+    "min_weight_distance": 25.94669742636066
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.4393583904750633,
+    "max_weight_position": 34.92778740353849,
+    "min_weight": 0.21454602347084595,
+    "min_weight_distance": 2.358067953047814
+   }
+  }
+ },
+ {
+  "edit_id": "E1_062",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "global",
+   "direction_index": 31.43285419564819,
+   "attn.o_proj.max_weight": 0.9347825759761974,
+   "attn.o_proj.max_weight_position": 46.41326900865069,
+   "attn.o_proj.min_weight": 0.42719498931764344,
+   "attn.o_proj.min_weight_distance": 25.846650328338118,
+   "mlp.down_proj.max_weight": 0.025589451023715126,
+   "mlp.down_proj.max_weight_position": 30.00484232251897,
+   "mlp.down_proj.min_weight": 0.4771824497080104,
+   "mlp.down_proj.min_weight_distance": 17.005206188897805
+  },
+  "direction_index": 31.43285419564819,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 0.9347825759761974,
+    "max_weight_position": 46.41326900865069,
+    "min_weight": 0.39933443255847084,
+    "min_weight_distance": 25.846650328338118
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.025589451023715126,
+    "max_weight_position": 30.00484232251897,
+    "min_weight": 0.012210836926179539,
+    "min_weight_distance": 17.005206188897805
+   }
+  }
+ },
+ {
+  "edit_id": "E1_063",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "per layer",
+   "direction_index": 31.063182636544344,
+   "attn.o_proj.max_weight": 1.4866600965705852,
+   "attn.o_proj.max_weight_position": 33.80670446727222,
+   "attn.o_proj.min_weight": 0.7219256513578879,
+   "attn.o_proj.min_weight_distance": 16.28172188448692,
+   "mlp.down_proj.max_weight": 0.15960225288308594,
+   "mlp.down_proj.max_weight_position": 34.83158377302228,
+   "mlp.down_proj.min_weight": 0.8126923183641939,
+   "mlp.down_proj.min_weight_distance": 16.845247760107565
+  },
+  "direction_index": null,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.4866600965705852,
+    "max_weight_position": 33.80670446727222,
+    "min_weight": 1.0732580585645002,
+    "min_weight_distance": 16.28172188448692
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.15960225288308594,
+    "max_weight_position": 34.83158377302228,
+    "min_weight": 0.12970752491170345,
+    "min_weight_distance": 16.845247760107565
+   }
+  }
+ },
+ {
+  "edit_id": "E1_064",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "global",
+   "direction_index": 28.599392649986704,
+   "attn.o_proj.max_weight": 1.1079693843025749,
+   "attn.o_proj.max_weight_position": 36.671549520603705,
+   "attn.o_proj.min_weight": 0.3679324280041508,
+   "attn.o_proj.min_weight_distance": 3.5886563089750214,
+   "mlp.down_proj.max_weight": 0.9148344958817731,
+   "mlp.down_proj.max_weight_position": 29.98497847338011,
+   "mlp.down_proj.min_weight": 0.977839506131469,
+   "mlp.down_proj.min_weight_distance": 27.77058317381881
+  },
+  "direction_index": 28.599392649986704,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.1079693843025749,
+    "max_weight_position": 36.671549520603705,
+    "min_weight": 0.40765786572071044,
+    "min_weight_distance": 3.5886563089750214
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.9148344958817731,
+    "max_weight_position": 29.98497847338011,
+    "min_weight": 0.8945613116450645,
+    "min_weight_distance": 27.77058317381881
+   }
+  }
+ },
+ {
+  "edit_id": "E1_065",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "per layer",
+   "direction_index": 39.98480997491127,
+   "attn.o_proj.max_weight": 1.1822815550848342,
+   "attn.o_proj.max_weight_position": 44.22936729794486,
+   "attn.o_proj.min_weight": 0.08839475716675804,
+   "attn.o_proj.min_weight_distance": 17.299952152681406,
+   "mlp.down_proj.max_weight": 0.27492182404473,
+   "mlp.down_proj.max_weight_position": 40.986875496006846,
+   "mlp.down_proj.min_weight": 0.06915093464786926,
+   "mlp.down_proj.min_weight_distance": 4.286226943482935
+  },
+  "direction_index": null,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.1822815550848342,
+    "max_weight_position": 44.22936729794486,
+    "min_weight": 0.10450749096446099,
+    "min_weight_distance": 17.299952152681406
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.27492182404473,
+    "max_weight_position": 40.986875496006846,
+    "min_weight": 0.019011101087790132,
+    "min_weight_distance": 4.286226943482935
+   }
+  }
+ },
+ {
+  "edit_id": "E1_066",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "per layer",
+   "direction_index": 40.68989322125998,
+   "attn.o_proj.max_weight": 1.369735648586156,
+   "attn.o_proj.max_weight_position": 42.33766082277657,
+   "attn.o_proj.min_weight": 0.6373718454925569,
+   "attn.o_proj.min_weight_distance": 16.343746001766554,
+   "mlp.down_proj.max_weight": 0.5757517490712966,
+   "mlp.down_proj.max_weight_position": 35.423867224341905,
+   "mlp.down_proj.min_weight": 0.5157785846375302,
+   "mlp.down_proj.min_weight_distance": 23.784625056721396
+  },
+  "direction_index": null,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.369735648586156,
+    "max_weight_position": 42.33766082277657,
+    "min_weight": 0.8730309381763026,
+    "min_weight_distance": 16.343746001766554
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.5757517490712966,
+    "max_weight_position": 35.423867224341905,
+    "min_weight": 0.2969604222385758,
+    "min_weight_distance": 23.784625056721396
+   }
+  }
+ },
+ {
+  "edit_id": "E1_067",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "global",
+   "direction_index": 22.556895306377918,
+   "attn.o_proj.max_weight": 1.4926796155453865,
+   "attn.o_proj.max_weight_position": 34.75674766507334,
+   "attn.o_proj.min_weight": 0.2718171329034259,
+   "attn.o_proj.min_weight_distance": 7.083200953676129,
+   "mlp.down_proj.max_weight": 0.4339317614254483,
+   "mlp.down_proj.max_weight_position": 28.28486160700046,
+   "mlp.down_proj.min_weight": 0.8210387648279627,
+   "mlp.down_proj.min_weight_distance": 24.968008131651576
+  },
+  "direction_index": 22.556895306377918,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.4926796155453865,
+    "max_weight_position": 34.75674766507334,
+    "min_weight": 0.405735893440935,
+    "min_weight_distance": 7.083200953676129
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.4339317614254483,
+    "max_weight_position": 28.28486160700046,
+    "min_weight": 0.35627479742037227,
+    "min_weight_distance": 24.968008131651576
+   }
+  }
+ },
+ {
+  "edit_id": "E1_068",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "per layer",
+   "direction_index": 34.860534644007984,
+   "attn.o_proj.max_weight": 1.4799474798450594,
+   "attn.o_proj.max_weight_position": 33.7329582239382,
+   "attn.o_proj.min_weight": 0.8952224091873847,
+   "attn.o_proj.min_weight_distance": 25.300588615113874,
+   "mlp.down_proj.max_weight": 1.2762580691176661,
+   "mlp.down_proj.max_weight_position": 30.179349247222024,
+   "mlp.down_proj.min_weight": 0.0448785142215381,
+   "mlp.down_proj.min_weight_distance": 8.108706111718522
+  },
+  "direction_index": null,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.4799474798450594,
+    "max_weight_position": 33.7329582239382,
+    "min_weight": 1.3248821483776925,
+    "min_weight_distance": 25.300588615113874
+   },
+   "mlp.down_proj": {
+    "max_weight": 1.2762580691176661,
+    "max_weight_position": 30.179349247222024,
+    "min_weight": 0.05727656590524994,
+    "min_weight_distance": 8.108706111718522
+   }
+  }
+ },
+ {
+  "edit_id": "E1_069",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "global",
+   "direction_index": 20.42351756141432,
+   "attn.o_proj.max_weight": 1.4042716784241909,
+   "attn.o_proj.max_weight_position": 41.6669551817208,
+   "attn.o_proj.min_weight": 0.3864740331631418,
+   "attn.o_proj.min_weight_distance": 21.606442687203348,
+   "mlp.down_proj.max_weight": 0.020107203635616244,
+   "mlp.down_proj.max_weight_position": 43.72135867885032,
+   "mlp.down_proj.min_weight": 0.046658440288169345,
+   "mlp.down_proj.min_weight_distance": 19.106053993482828
+  },
+  "direction_index": 20.42351756141432,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.4042716784241909,
+    "max_weight_position": 41.6669551817208,
+    "min_weight": 0.5427145392173714,
+    "min_weight_distance": 21.606442687203348
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.020107203635616244,
+    "max_weight_position": 43.72135867885032,
+    "min_weight": 0.0009381707601944621,
+    "min_weight_distance": 19.106053993482828
+   }
+  }
+ },
+ {
+  "edit_id": "E1_070",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "global",
+   "direction_index": 40.40952965768445,
+   "attn.o_proj.max_weight": 1.341405350688987,
+   "attn.o_proj.max_weight_position": 45.58186613670379,
+   "attn.o_proj.min_weight": 0.28993674241056167,
+   "attn.o_proj.min_weight_distance": 11.465202124712995,
+   "mlp.down_proj.max_weight": 0.48861133783841737,
+   "mlp.down_proj.max_weight_position": 46.432423628085395,
+   "mlp.down_proj.min_weight": 0.24140851182096823,
+   "mlp.down_proj.min_weight_distance": 20.55636424503346
+  },
+  "direction_index": 40.40952965768445,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.341405350688987,
+    "max_weight_position": 45.58186613670379,
+    "min_weight": 0.38892269763086196,
+    "min_weight_distance": 11.465202124712995
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.48861133783841737,
+    "max_weight_position": 46.432423628085395,
+    "min_weight": 0.11795493592642468,
+    "min_weight_distance": 20.55636424503346
+   }
+  }
+ },
+ {
+  "edit_id": "E1_071",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "global",
+   "direction_index": 22.78242197748821,
+   "attn.o_proj.max_weight": 1.3459438966731392,
+   "attn.o_proj.max_weight_position": 41.84529756293815,
+   "attn.o_proj.min_weight": 0.8599936055694872,
+   "attn.o_proj.min_weight_distance": 14.264461866235026,
+   "mlp.down_proj.max_weight": 1.2452130090877567,
+   "mlp.down_proj.max_weight_position": 35.798621270370326,
+   "mlp.down_proj.min_weight": 0.16647922577344898,
+   "mlp.down_proj.min_weight_distance": 13.836683964753508
+  },
+  "direction_index": 22.78242197748821,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.3459438966731392,
+    "max_weight_position": 41.84529756293815,
+    "min_weight": 1.1575031445941784,
+    "min_weight_distance": 14.264461866235026
+   },
+   "mlp.down_proj": {
+    "max_weight": 1.2452130090877567,
+    "max_weight_position": 35.798621270370326,
+    "min_weight": 0.20730209767595642,
+    "min_weight_distance": 13.836683964753508
+   }
+  }
+ },
+ {
+  "edit_id": "E1_072",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "per layer",
+   "direction_index": 33.810960919106776,
+   "attn.o_proj.max_weight": 1.0016135749807875,
+   "attn.o_proj.max_weight_position": 35.135009448859954,
+   "attn.o_proj.min_weight": 0.004305353909488052,
+   "attn.o_proj.min_weight_distance": 21.158227026275064,
+   "mlp.down_proj.max_weight": 1.3304602657268323,
+   "mlp.down_proj.max_weight_position": 45.70369031760066,
+   "mlp.down_proj.min_weight": 0.16091860658181256,
+   "mlp.down_proj.min_weight_distance": 10.699819642969883
+  },
+  "direction_index": null,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.0016135749807875,
+    "max_weight_position": 35.135009448859954,
+    "min_weight": 0.004312300920839838,
+    "min_weight_distance": 21.158227026275064
+   },
+   "mlp.down_proj": {
+    "max_weight": 1.3304602657268323,
+    "max_weight_position": 45.70369031760066,
+    "min_weight": 0.21409581207322992,
+    "min_weight_distance": 10.699819642969883
+   }
+  }
+ },
+ {
+  "edit_id": "E1_073",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "per layer",
+   "direction_index": 23.69594742425451,
+   "attn.o_proj.max_weight": 0.9243664222643141,
+   "attn.o_proj.max_weight_position": 40.9540284442126,
+   "attn.o_proj.min_weight": 0.02759281645372369,
+   "attn.o_proj.min_weight_distance": 9.478256137359429,
+   "mlp.down_proj.max_weight": 0.6222968755527869,
+   "mlp.down_proj.max_weight_position": 44.023106254346516,
+   "mlp.down_proj.min_weight": 0.5588605328404311,
+   "mlp.down_proj.min_weight_distance": 14.913744788639963
+  },
+  "direction_index": null,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 0.9243664222643141,
+    "max_weight_position": 40.9540284442126,
+    "min_weight": 0.025505873025524466,
+    "min_weight_distance": 9.478256137359429
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.6222968755527869,
+    "max_weight_position": 44.023106254346516,
+    "min_weight": 0.34777716345636595,
+    "min_weight_distance": 14.913744788639963
+   }
+  }
+ },
+ {
+  "edit_id": "E1_074",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "global",
+   "direction_index": 31.26511524691564,
+   "attn.o_proj.max_weight": 1.2142966136039393,
+   "attn.o_proj.max_weight_position": 29.218554855208907,
+   "attn.o_proj.min_weight": 0.3363043602050073,
+   "attn.o_proj.min_weight_distance": 7.3755464857178055,
+   "mlp.down_proj.max_weight": 1.4377099348968445,
+   "mlp.down_proj.max_weight_position": 40.21713435993033,
+   "mlp.down_proj.min_weight": 0.3511690869633254,
+   "mlp.down_proj.min_weight_distance": 13.356620479123624
+  },
+  "direction_index": 31.26511524691564,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.2142966136039393,
+    "max_weight_position": 29.218554855208907,
+    "min_weight": 0.40837324573717976,
+    "min_weight_distance": 7.3755464857178055
+   },
+   "mlp.down_proj": {
+    "max_weight": 1.4377099348968445,
+    "max_weight_position": 40.21713435993033,
+    "min_weight": 0.5048792851558269,
+    "min_weight_distance": 13.356620479123624
+   }
+  }
+ },
+ {
+  "edit_id": "E1_075",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "per layer",
+   "direction_index": 31.897620749260724,
+   "attn.o_proj.max_weight": 1.1750508062933336,
+   "attn.o_proj.max_weight_position": 28.689841216245103,
+   "attn.o_proj.min_weight": 0.9636645326618936,
+   "attn.o_proj.min_weight_distance": 12.009910316644572,
+   "mlp.down_proj.max_weight": 0.10922626448642891,
+   "mlp.down_proj.max_weight_position": 36.718514618069044,
+   "mlp.down_proj.min_weight": 0.45425866649193747,
+   "mlp.down_proj.min_weight_distance": 11.50313681365747
+  },
+  "direction_index": null,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.1750508062933336,
+    "max_weight_position": 28.689841216245103,
+    "min_weight": 1.1323547861006464,
+    "min_weight_distance": 12.009910316644572
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.10922626448642891,
+    "max_weight_position": 36.718514618069044,
+    "min_weight": 0.04961697725150087,
+    "min_weight_distance": 11.50313681365747
+   }
+  }
+ },
+ {
+  "edit_id": "E1_076",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "per layer",
+   "direction_index": 25.08573829667149,
+   "attn.o_proj.max_weight": 1.3609146116721584,
+   "attn.o_proj.max_weight_position": 32.80102281936457,
+   "attn.o_proj.min_weight": 0.03132396561877315,
+   "attn.o_proj.min_weight_distance": 25.378687051279275,
+   "mlp.down_proj.max_weight": 0.45797908824509015,
+   "mlp.down_proj.max_weight_position": 37.86682062303849,
+   "mlp.down_proj.min_weight": 0.8598755962073215,
+   "mlp.down_proj.min_weight_distance": 2.1084480487143793
+  },
+  "direction_index": null,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.3609146116721584,
+    "max_weight_position": 32.80102281936457,
+    "min_weight": 0.042629242506104705,
+    "min_weight_distance": 25.378687051279275
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.45797908824509015,
+    "max_weight_position": 37.86682062303849,
+    "min_weight": 0.3938050415552324,
+    "min_weight_distance": 2.1084480487143793
+   }
+  }
+ },
+ {
+  "edit_id": "E1_077",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "per layer",
+   "direction_index": 36.160229084596686,
+   "attn.o_proj.max_weight": 0.8571823220670003,
+   "attn.o_proj.max_weight_position": 32.32963035842612,
+   "attn.o_proj.min_weight": 0.6699687609796129,
+   "attn.o_proj.min_weight_distance": 14.436235650042079,
+   "mlp.down_proj.max_weight": -0.16659293257575072,
+   "mlp.down_proj.max_weight_position": 45.88029187520091,
+   "mlp.down_proj.min_weight": 0.018775003261897738,
+   "mlp.down_proj.min_weight_distance": 7.309775577778584
+  },
+  "direction_index": null,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 0.8571823220670003,
+    "max_weight_position": 32.32963035842612,
+    "min_weight": 0.5742853782488556,
+    "min_weight_distance": 14.436235650042079
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.0,
+    "max_weight_position": 45.88029187520091,
+    "min_weight": 0.0,
+    "min_weight_distance": 7.309775577778584
+   }
+  }
+ },
+ {
+  "edit_id": "E1_078",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "per layer",
+   "direction_index": 19.132236519749824,
+   "attn.o_proj.max_weight": 1.1532886832695097,
+   "attn.o_proj.max_weight_position": 29.17546417256523,
+   "attn.o_proj.min_weight": 0.5800448507604543,
+   "attn.o_proj.min_weight_distance": 7.079452806535511,
+   "mlp.down_proj.max_weight": 0.30553307849572553,
+   "mlp.down_proj.max_weight_position": 33.52479853850541,
+   "mlp.down_proj.min_weight": 0.2344507655178254,
+   "mlp.down_proj.min_weight_distance": 8.777616383260462
+  },
+  "direction_index": null,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.1532886832695097,
+    "max_weight_position": 29.17546417256523,
+    "min_weight": 0.6689591621707837,
+    "min_weight_distance": 7.079452806535511
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.30553307849572553,
+    "max_weight_position": 33.52479853850541,
+    "min_weight": 0.07163246414434069,
+    "min_weight_distance": 8.777616383260462
+   }
+  }
+ },
+ {
+  "edit_id": "E1_079",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "per layer",
+   "direction_index": 24.917142864934785,
+   "attn.o_proj.max_weight": 0.9588876775026121,
+   "attn.o_proj.max_weight_position": 33.12190130008878,
+   "attn.o_proj.min_weight": 0.17188692390231175,
+   "attn.o_proj.min_weight_distance": 7.604590760918887,
+   "mlp.down_proj.max_weight": 0.4896667889072617,
+   "mlp.down_proj.max_weight_position": 31.286908486293246,
+   "mlp.down_proj.min_weight": 0.4169101469324147,
+   "mlp.down_proj.min_weight_distance": 18.08871031978291
+  },
+  "direction_index": null,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 0.9588876775026121,
+    "max_weight_position": 33.12190130008878,
+    "min_weight": 0.16482025325375593,
+    "min_weight_distance": 7.604590760918887
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.4896667889072617,
+    "max_weight_position": 31.286908486293246,
+    "min_weight": 0.20414705291125015,
+    "min_weight_distance": 18.08871031978291
+   }
+  }
+ },
+ {
+  "edit_id": "E1_080",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "global",
+   "direction_index": 30.27107942770112,
+   "attn.o_proj.max_weight": 1.259792539707917,
+   "attn.o_proj.max_weight_position": 33.00851253322798,
+   "attn.o_proj.min_weight": 0.09464545289067428,
+   "attn.o_proj.min_weight_distance": 14.309922256748212,
+   "mlp.down_proj.max_weight": 1.2611000279968174,
+   "mlp.down_proj.max_weight_position": 38.292667029228795,
+   "mlp.down_proj.min_weight": 0.22582659690670448,
+   "mlp.down_proj.min_weight_distance": 7.449976157107513
+  },
+  "direction_index": 30.27107942770112,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.259792539707917,
+    "max_weight_position": 33.00851253322798,
+    "min_weight": 0.11923363546894857,
+    "min_weight_distance": 14.309922256748212
+   },
+   "mlp.down_proj": {
+    "max_weight": 1.2611000279968174,
+    "max_weight_position": 38.292667029228795,
+    "min_weight": 0.28478992768147104,
+    "min_weight_distance": 7.449976157107513
+   }
+  }
+ },
+ {
+  "edit_id": "E1_081",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "global",
+   "direction_index": 25.53185535832425,
+   "attn.o_proj.max_weight": 1.3617086480183,
+   "attn.o_proj.max_weight_position": 34.93542286700208,
+   "attn.o_proj.min_weight": 0.44446955166133884,
+   "attn.o_proj.min_weight_distance": 2.825224072525099,
+   "mlp.down_proj.max_weight": 0.4008154991298525,
+   "mlp.down_proj.max_weight_position": 39.85704950463345,
+   "mlp.down_proj.min_weight": 0.5208927709824482,
+   "mlp.down_proj.min_weight_distance": 23.87282707767288
+  },
+  "direction_index": 25.53185535832425,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.3617086480183,
+    "max_weight_position": 34.93542286700208,
+    "min_weight": 0.6052380322780617,
+    "min_weight_distance": 2.825224072525099
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.4008154991298525,
+    "max_weight_position": 39.85704950463345,
+    "min_weight": 0.20878189599446192,
+    "min_weight_distance": 23.87282707767288
+   }
+  }
+ },
+ {
+  "edit_id": "E1_082",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "per layer",
+   "direction_index": 24.824183349283885,
+   "attn.o_proj.max_weight": 1.2779288193757163,
+   "attn.o_proj.max_weight_position": 36.805262986658526,
+   "attn.o_proj.min_weight": 0.9233620370853889,
+   "attn.o_proj.min_weight_distance": 20.20488639657566,
+   "mlp.down_proj.max_weight": 0.5025297525977545,
+   "mlp.down_proj.max_weight_position": 38.7992576597674,
+   "mlp.down_proj.min_weight": 0.785000247366624,
+   "mlp.down_proj.min_weight_distance": 21.866394310735114
+  },
+  "direction_index": null,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.2779288193757163,
+    "max_weight_position": 36.805262986658526,
+    "min_weight": 1.1799909579088874,
+    "min_weight_distance": 20.20488639657566
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.5025297525977545,
+    "max_weight_position": 38.7992576597674,
+    "min_weight": 0.3944859800983256,
+    "min_weight_distance": 21.866394310735114
+   }
+  }
+ },
+ {
+  "edit_id": "E1_083",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "global",
+   "direction_index": 40.65921568867712,
+   "attn.o_proj.max_weight": 0.8724124734121154,
+   "attn.o_proj.max_weight_position": 36.48098644713199,
+   "attn.o_proj.min_weight": 0.5109325711281427,
+   "attn.o_proj.min_weight_distance": 18.886708963180336,
+   "mlp.down_proj.max_weight": 1.4219468706768574,
+   "mlp.down_proj.max_weight_position": 40.81208956190485,
+   "mlp.down_proj.min_weight": 0.46927287810903817,
+   "mlp.down_proj.min_weight_distance": 10.997932404326383
+  },
+  "direction_index": 40.65921568867712,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 0.8724124734121154,
+    "max_weight_position": 36.48098644713199,
+    "min_weight": 0.4457439481247146,
+    "min_weight_distance": 18.886708963180336
+   },
+   "mlp.down_proj": {
+    "max_weight": 1.4219468706768574,
+    "max_weight_position": 40.81208956190485,
+    "min_weight": 0.6672811005206691,
+    "min_weight_distance": 10.997932404326383
+   }
+  }
+ },
+ {
+  "edit_id": "E1_084",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "per layer",
+   "direction_index": 23.582094327882988,
+   "attn.o_proj.max_weight": 1.0329291352247356,
+   "attn.o_proj.max_weight_position": 32.82899235047712,
+   "attn.o_proj.min_weight": 0.0390572069561923,
+   "attn.o_proj.min_weight_distance": 23.915085690907084,
+   "mlp.down_proj.max_weight": 0.4601561447980905,
+   "mlp.down_proj.max_weight_position": 34.08951120108811,
+   "mlp.down_proj.min_weight": 0.8635955258507506,
+   "mlp.down_proj.min_weight_distance": 9.30804597064258
+  },
+  "direction_index": null,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.0329291352247356,
+    "max_weight_position": 32.82899235047712,
+    "min_weight": 0.040343327005553244,
+    "min_weight_distance": 23.915085690907084
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.4601561447980905,
+    "max_weight_position": 34.08951120108811,
+    "min_weight": 0.39738878784036114,
+    "min_weight_distance": 9.30804597064258
+   }
+  }
+ },
+ {
+  "edit_id": "E1_085",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "per layer",
+   "direction_index": 20.139544232390904,
+   "attn.o_proj.max_weight": 0.9945950189761387,
+   "attn.o_proj.max_weight_position": 39.260366032907186,
+   "attn.o_proj.min_weight": 0.13866540912522785,
+   "attn.o_proj.min_weight_distance": 3.621905966409242,
+   "mlp.down_proj.max_weight": 0.3190131232889901,
+   "mlp.down_proj.max_weight_position": 33.86169801530867,
+   "mlp.down_proj.min_weight": 0.5165878448858352,
+   "mlp.down_proj.min_weight_distance": 1.2585019708185103
+  },
+  "direction_index": null,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 0.9945950189761387,
+    "max_weight_position": 39.260366032907186,
+    "min_weight": 0.13791592522024002,
+    "min_weight_distance": 3.621905966409242
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.3190131232889901,
+    "max_weight_position": 33.86169801530867,
+    "min_weight": 0.16479830185015865,
+    "min_weight_distance": 1.2585019708185103
+   }
+  }
+ },
+ {
+  "edit_id": "E1_086",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "global",
+   "direction_index": 30.032301686980936,
+   "attn.o_proj.max_weight": 1.0477496945815625,
+   "attn.o_proj.max_weight_position": 30.958306318556936,
+   "attn.o_proj.min_weight": 0.19919644662820546,
+   "attn.o_proj.min_weight_distance": 19.792894586028815,
+   "mlp.down_proj.max_weight": -0.1648124143213931,
+   "mlp.down_proj.max_weight_position": 46.84802384365341,
+   "mlp.down_proj.min_weight": 0.14234023113431327,
+   "mlp.down_proj.min_weight_distance": 19.320036699346822
+  },
+  "direction_index": 30.032301686980936,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.0477496945815625,
+    "max_weight_position": 30.958306318556936,
+    "min_weight": 0.2087080161164348,
+    "min_weight_distance": 19.792894586028815
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.0,
+    "max_weight_position": 46.84802384365341,
+    "min_weight": 0.0,
+    "min_weight_distance": 19.320036699346822
+   }
+  }
+ },
+ {
+  "edit_id": "E1_087",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "global",
+   "direction_index": 37.82386853516346,
+   "attn.o_proj.max_weight": 1.451281053983939,
+   "attn.o_proj.max_weight_position": 31.89826717592444,
+   "attn.o_proj.min_weight": 0.2049714037360375,
+   "attn.o_proj.min_weight_distance": 15.567709935995097,
+   "mlp.down_proj.max_weight": 1.3171102069843577,
+   "mlp.down_proj.max_weight_position": 39.521107474897875,
+   "mlp.down_proj.min_weight": 0.4256810195837062,
+   "mlp.down_proj.min_weight_distance": 4.88896855711314
+  },
+  "direction_index": 37.82386853516346,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.451281053983939,
+    "max_weight_position": 31.89826717592444,
+    "min_weight": 0.297471114850604,
+    "min_weight_distance": 15.567709935995097
+   },
+   "mlp.down_proj": {
+    "max_weight": 1.3171102069843577,
+    "max_weight_position": 39.521107474897875,
+    "min_weight": 0.5606688158132077,
+    "min_weight_distance": 4.88896855711314
+   }
+  }
+ },
+ {
+  "edit_id": "E1_088",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "per layer",
+   "direction_index": 22.672224161200724,
+   "attn.o_proj.max_weight": 0.8972223324509591,
+   "attn.o_proj.max_weight_position": 28.356247947089237,
+   "attn.o_proj.min_weight": 0.47708760982645615,
+   "attn.o_proj.min_weight_distance": 26.1237319796896,
+   "mlp.down_proj.max_weight": -0.1855892554343072,
+   "mlp.down_proj.max_weight_position": 38.39483828740353,
+   "mlp.down_proj.min_weight": 0.5338728107125684,
+   "mlp.down_proj.min_weight_distance": 2.578828682130987
+  },
+  "direction_index": null,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 0.8972223324509591,
+    "max_weight_position": 28.356247947089237,
+    "min_weight": 0.42805365807194606,
+    "min_weight_distance": 26.1237319796896
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.0,
+    "max_weight_position": 38.39483828740353,
+    "min_weight": 0.0,
+    "min_weight_distance": 2.578828682130987
+   }
+  }
+ },
+ {
+  "edit_id": "E1_089",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "global",
+   "direction_index": 19.603445767070017,
+   "attn.o_proj.max_weight": 1.34332250805118,
+   "attn.o_proj.max_weight_position": 39.35768586641079,
+   "attn.o_proj.min_weight": 0.5239066018051471,
+   "attn.o_proj.min_weight_distance": 21.76050869621835,
+   "mlp.down_proj.max_weight": 1.129762011801187,
+   "mlp.down_proj.max_weight_position": 45.32012483776243,
+   "mlp.down_proj.min_weight": 0.07175433890186023,
+   "mlp.down_proj.min_weight_distance": 10.271744136435053
+  },
+  "direction_index": 19.603445767070017,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.34332250805118,
+    "max_weight_position": 39.35768586641079,
+    "min_weight": 0.7037755303214611,
+    "min_weight_distance": 21.76050869621835
+   },
+   "mlp.down_proj": {
+    "max_weight": 1.129762011801187,
+    "max_weight_position": 45.32012483776243,
+    "min_weight": 0.08106532627322979,
+    "min_weight_distance": 10.271744136435053
+   }
+  }
+ },
+ {
+  "edit_id": "E1_090",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "per layer",
+   "direction_index": 30.077131093232538,
+   "attn.o_proj.max_weight": 1.3373720482901812,
+   "attn.o_proj.max_weight_position": 30.621875291056337,
+   "attn.o_proj.min_weight": 0.5250846826346393,
+   "attn.o_proj.min_weight_distance": 12.493203347630692,
+   "mlp.down_proj.max_weight": 0.43347534771268204,
+   "mlp.down_proj.max_weight_position": 39.472598500474234,
+   "mlp.down_proj.min_weight": 0.9690631271769894,
+   "mlp.down_proj.min_weight_distance": 9.80855614916389
+  },
+  "direction_index": null,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.3373720482901812,
+    "max_weight_position": 30.621875291056337,
+    "min_weight": 0.7022335775408872,
+    "min_weight_distance": 12.493203347630692
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.43347534771268204,
+    "max_weight_position": 39.472598500474234,
+    "min_weight": 0.4200649760085845,
+    "min_weight_distance": 9.80855614916389
+   }
+  }
+ },
+ {
+  "edit_id": "E1_091",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "global",
+   "direction_index": 37.74450724016185,
+   "attn.o_proj.max_weight": 0.9290748560421279,
+   "attn.o_proj.max_weight_position": 40.96668319326255,
+   "attn.o_proj.min_weight": 0.2837526441390956,
+   "attn.o_proj.min_weight_distance": 19.6144892779981,
+   "mlp.down_proj.max_weight": 0.9586546535416716,
+   "mlp.down_proj.max_weight_position": 39.88296442400015,
+   "mlp.down_proj.min_weight": 0.6135241712078623,
+   "mlp.down_proj.min_weight_distance": 2.508347858866194
+  },
+  "direction_index": 37.74450724016185,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 0.9290748560421279,
+    "max_weight_position": 40.96668319326255,
+    "min_weight": 0.26362744700510343,
+    "min_weight_distance": 19.6144892779981
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.9586546535416716,
+    "max_weight_position": 39.88296442400015,
+    "min_weight": 0.5881578017887145,
+    "min_weight_distance": 2.508347858866194
+   }
+  }
+ },
+ {
+  "edit_id": "E1_092",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "global",
+   "direction_index": 39.08274131310729,
+   "attn.o_proj.max_weight": 0.9414579899891993,
+   "attn.o_proj.max_weight_position": 39.16417826785135,
+   "attn.o_proj.min_weight": 0.8702150157597532,
+   "attn.o_proj.min_weight_distance": 2.0215054898109326,
+   "mlp.down_proj.max_weight": 0.4635739062766049,
+   "mlp.down_proj.max_weight_position": 42.5294247227168,
+   "mlp.down_proj.min_weight": 0.8135594453086341,
+   "mlp.down_proj.min_weight_distance": 18.80968613642134
+  },
+  "direction_index": 39.08274131310729,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 0.9414579899891993,
+    "max_weight_position": 39.16417826785135,
+    "min_weight": 0.8192708795955966,
+    "min_weight_distance": 2.0215054898109326
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.4635739062766049,
+    "max_weight_position": 42.5294247227168,
+    "min_weight": 0.3771449300499514,
+    "min_weight_distance": 18.80968613642134
+   }
+  }
+ },
+ {
+  "edit_id": "E1_093",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "per layer",
+   "direction_index": 33.72899650798608,
+   "attn.o_proj.max_weight": 1.1470693035279693,
+   "attn.o_proj.max_weight_position": 28.317621642656178,
+   "attn.o_proj.min_weight": 0.5055801714383915,
+   "attn.o_proj.min_weight_distance": 20.529971599318912,
+   "mlp.down_proj.max_weight": 1.2001849917410532,
+   "mlp.down_proj.max_weight_position": 39.38470523100878,
+   "mlp.down_proj.min_weight": 0.2671778621476615,
+   "mlp.down_proj.min_weight_distance": 23.565426916987974
+  },
+  "direction_index": null,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.1470693035279693,
+    "max_weight_position": 28.317621642656178,
+    "min_weight": 0.579935495129387,
+    "min_weight_distance": 20.529971599318912
+   },
+   "mlp.down_proj": {
+    "max_weight": 1.2001849917410532,
+    "max_weight_position": 39.38470523100878,
+    "min_weight": 0.32066286027508334,
+    "min_weight_distance": 23.565426916987974
+   }
+  }
+ },
+ {
+  "edit_id": "E1_094",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "global",
+   "direction_index": 36.487582601811226,
+   "attn.o_proj.max_weight": 0.862956772329531,
+   "attn.o_proj.max_weight_position": 40.38657170941389,
+   "attn.o_proj.min_weight": 0.7799832767063858,
+   "attn.o_proj.min_weight_distance": 1.0886499256947098,
+   "mlp.down_proj.max_weight": 1.4291582227791797,
+   "mlp.down_proj.max_weight_position": 32.15120315464796,
+   "mlp.down_proj.min_weight": 0.1739126127426367,
+   "mlp.down_proj.min_weight_distance": 2.441160474436221
+  },
+  "direction_index": 36.487582601811226,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 0.862956772329531,
+    "max_weight_position": 40.38657170941389,
+    "min_weight": 0.6730918509375542,
+    "min_weight_distance": 1.0886499256947098
+   },
+   "mlp.down_proj": {
+    "max_weight": 1.4291582227791797,
+    "max_weight_position": 32.15120315464796,
+    "min_weight": 0.2485486405461504,
+    "min_weight_distance": 2.441160474436221
+   }
+  }
+ },
+ {
+  "edit_id": "E1_095",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "per layer",
+   "direction_index": 35.588123453765,
+   "attn.o_proj.max_weight": 0.8001838912639143,
+   "attn.o_proj.max_weight_position": 42.670619164268366,
+   "attn.o_proj.min_weight": 0.6128790115253536,
+   "attn.o_proj.min_weight_distance": 10.40198265453895,
+   "mlp.down_proj.max_weight": 0.44187273172502606,
+   "mlp.down_proj.max_weight_position": 45.77803455845778,
+   "mlp.down_proj.min_weight": 0.7606929649556802,
+   "mlp.down_proj.min_weight_distance": 8.21778142757713
+  },
+  "direction_index": null,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 0.8001838912639143,
+    "max_weight_position": 42.670619164268366,
+    "min_weight": 0.49041591231633885,
+    "min_weight_distance": 10.40198265453895
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.44187273172502606,
+    "max_weight_position": 45.77803455845778,
+    "min_weight": 0.3361294784289759,
+    "min_weight_distance": 8.21778142757713
+   }
+  }
+ },
+ {
+  "edit_id": "E1_096",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "global",
+   "direction_index": 37.66123735690348,
+   "attn.o_proj.max_weight": 1.438661611433654,
+   "attn.o_proj.max_weight_position": 35.150017569002,
+   "attn.o_proj.min_weight": 0.5071979698522511,
+   "attn.o_proj.min_weight_distance": 22.551471438671385,
+   "mlp.down_proj.max_weight": 1.395792858025708,
+   "mlp.down_proj.max_weight_position": 28.52582449270266,
+   "mlp.down_proj.min_weight": 0.4374872601308588,
+   "mlp.down_proj.min_weight_distance": 2.975083262469573
+  },
+  "direction_index": 37.66123735690348,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.438661611433654,
+    "max_weight_position": 35.150017569002,
+    "min_weight": 0.7296862486235174,
+    "min_weight_distance": 22.551471438671385
+   },
+   "mlp.down_proj": {
+    "max_weight": 1.395792858025708,
+    "max_weight_position": 28.52582449270266,
+    "min_weight": 0.6106415931678878,
+    "min_weight_distance": 2.975083262469573
+   }
+  }
+ },
+ {
+  "edit_id": "E1_097",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "per layer",
+   "direction_index": 40.21846701487602,
+   "attn.o_proj.max_weight": 1.3988310848201322,
+   "attn.o_proj.max_weight_position": 30.704995514868,
+   "attn.o_proj.min_weight": 0.8541127650266835,
+   "attn.o_proj.min_weight_distance": 1.6088891442519158,
+   "mlp.down_proj.max_weight": 1.361640387846459,
+   "mlp.down_proj.max_weight_position": 44.37057486719952,
+   "mlp.down_proj.min_weight": 0.688057697561441,
+   "mlp.down_proj.min_weight_distance": 18.18718505809315
+  },
+  "direction_index": null,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.3988310848201322,
+    "max_weight_position": 30.704995514868,
+    "min_weight": 1.1947594856609984,
+    "min_weight_distance": 1.6088891442519158
+   },
+   "mlp.down_proj": {
+    "max_weight": 1.361640387846459,
+    "max_weight_position": 44.37057486719952,
+    "min_weight": 0.936887150168302,
+    "min_weight_distance": 18.18718505809315
+   }
+  }
+ },
+ {
+  "edit_id": "E1_098",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "per layer",
+   "direction_index": 39.84597061855554,
+   "attn.o_proj.max_weight": 1.2231760960722797,
+   "attn.o_proj.max_weight_position": 38.90985612858463,
+   "attn.o_proj.min_weight": 0.3316448463796068,
+   "attn.o_proj.min_weight_distance": 4.856978198792625,
+   "mlp.down_proj.max_weight": 0.5062053012786887,
+   "mlp.down_proj.max_weight_position": 43.20205677218474,
+   "mlp.down_proj.min_weight": 0.8470846217621407,
+   "mlp.down_proj.min_weight_distance": 12.45896924747396
+  },
+  "direction_index": null,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.2231760960722797,
+    "max_weight_position": 38.90985612858463,
+    "min_weight": 0.40566004847709836,
+    "min_weight_distance": 4.856978198792625
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.5062053012786887,
+    "max_weight_position": 43.20205677218474,
+    "min_weight": 0.42879872616764847,
+    "min_weight_distance": 12.45896924747396
+   }
+  }
+ },
+ {
+  "edit_id": "E1_099",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "per layer",
+   "direction_index": 37.635909605960265,
+   "attn.o_proj.max_weight": 0.8356078223444428,
+   "attn.o_proj.max_weight_position": 43.15163534515334,
+   "attn.o_proj.min_weight": 0.8358567241065616,
+   "attn.o_proj.min_weight_distance": 27.63580769685718,
+   "mlp.down_proj.max_weight": 1.2095482613784383,
+   "mlp.down_proj.max_weight_position": 37.49429972942085,
+   "mlp.down_proj.min_weight": 0.6537316893394607,
+   "mlp.down_proj.min_weight_distance": 4.191497257039487
+  },
+  "direction_index": null,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 0.8356078223444428,
+    "max_weight_position": 43.15163534515334,
+    "min_weight": 0.6984484170226437,
+    "min_weight_distance": 27.63580769685718
+   },
+   "mlp.down_proj": {
+    "max_weight": 1.2095482613784383,
+    "max_weight_position": 37.49429972942085,
+    "min_weight": 0.790720028248534,
+    "min_weight_distance": 4.191497257039487
+   }
+  }
+ },
+ {
+  "edit_id": "E1_100",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "per layer",
+   "direction_index": 20.02822560856803,
+   "attn.o_proj.max_weight": 1.0836751948944883,
+   "attn.o_proj.max_weight_position": 43.611431819583856,
+   "attn.o_proj.min_weight": 0.07014268692974368,
+   "attn.o_proj.min_weight_distance": 1.8131153626400962,
+   "mlp.down_proj.max_weight": 0.6619380883921696,
+   "mlp.down_proj.max_weight_position": 40.26847254939909,
+   "mlp.down_proj.min_weight": 0.5483478062785595,
+   "mlp.down_proj.min_weight_distance": 27.811754317504874
+  },
+  "direction_index": null,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.0836751948944883,
+    "max_weight_position": 43.611431819583856,
+    "min_weight": 0.07601188992901306,
+    "min_weight_distance": 1.8131153626400962
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.6619380883921696,
+    "max_weight_position": 40.26847254939909,
+    "min_weight": 0.3629722986620694,
+    "min_weight_distance": 27.811754317504874
+   }
+  }
+ },
+ {
+  "edit_id": "E1_101",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "per layer",
+   "direction_index": 27.714207132568575,
+   "attn.o_proj.max_weight": 0.864553127160126,
+   "attn.o_proj.max_weight_position": 40.25480847241104,
+   "attn.o_proj.min_weight": 0.718158867005337,
+   "attn.o_proj.min_weight_distance": 20.95708411909193,
+   "mlp.down_proj.max_weight": 0.4746609275648257,
+   "mlp.down_proj.max_weight_position": 29.12330847088959,
+   "mlp.down_proj.min_weight": 0.802810593387848,
+   "mlp.down_proj.min_weight_distance": 16.55096883398012
+  },
+  "direction_index": null,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 0.864553127160126,
+    "max_weight_position": 40.25480847241104,
+    "min_weight": 0.6208864942672372,
+    "min_weight_distance": 20.95708411909193
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.4746609275648257,
+    "max_weight_position": 29.12330847088959,
+    "min_weight": 0.381062820916344,
+    "min_weight_distance": 16.55096883398012
+   }
+  }
+ },
+ {
+  "edit_id": "E1_102",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "per layer",
+   "direction_index": 27.924094787567252,
+   "attn.o_proj.max_weight": 0.9943112479880349,
+   "attn.o_proj.max_weight_position": 33.36000689409708,
+   "attn.o_proj.min_weight": 0.22454468413454376,
+   "attn.o_proj.min_weight_distance": 14.111007991698427,
+   "mlp.down_proj.max_weight": 0.0005194093596890825,
+   "mlp.down_proj.max_weight_position": 42.94352498801269,
+   "mlp.down_proj.min_weight": 0.649323731824406,
+   "mlp.down_proj.min_weight_distance": 9.379984177796178
+  },
+  "direction_index": null,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 0.9943112479880349,
+    "max_weight_position": 33.36000689409708,
+    "min_weight": 0.22326730511089732,
+    "min_weight_distance": 14.111007991698427
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.0005194093596890825,
+    "max_weight_position": 42.94352498801269,
+    "min_weight": 0.00033726482377784026,
+    "min_weight_distance": 9.379984177796178
+   }
+  }
+ },
+ {
+  "edit_id": "E1_103",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "per layer",
+   "direction_index": 37.70996170447259,
+   "attn.o_proj.max_weight": 0.9074285891271004,
+   "attn.o_proj.max_weight_position": 41.89292275558939,
+   "attn.o_proj.min_weight": 0.1169346512754087,
+   "attn.o_proj.min_weight_distance": 1.3221543317444948,
+   "mlp.down_proj.max_weight": 1.1101220988214726,
+   "mlp.down_proj.max_weight_position": 44.60259163946477,
+   "mlp.down_proj.min_weight": 0.1526659639046829,
+   "mlp.down_proj.min_weight_distance": 25.67578207240389
+  },
+  "direction_index": null,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 0.9074285891271004,
+    "max_weight_position": 41.89292275558939,
+    "min_weight": 0.10610984562691361,
+    "min_weight_distance": 1.3221543317444948
+   },
+   "mlp.down_proj": {
+    "max_weight": 1.1101220988214726,
+    "max_weight_position": 44.60259163946477,
+    "min_weight": 0.16947786026846975,
+    "min_weight_distance": 25.67578207240389
+   }
+  }
+ },
+ {
+  "edit_id": "E1_104",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "per layer",
+   "direction_index": 33.01226021206972,
+   "attn.o_proj.max_weight": 0.999854573807351,
+   "attn.o_proj.max_weight_position": 36.68959601448893,
+   "attn.o_proj.min_weight": 0.5132981517738331,
+   "attn.o_proj.min_weight_distance": 16.530764911935883,
+   "mlp.down_proj.max_weight": 1.4565891688758716,
+   "mlp.down_proj.max_weight_position": 39.146022439718514,
+   "mlp.down_proj.min_weight": 0.3026744734322162,
+   "mlp.down_proj.min_weight_distance": 24.669903180193938
+  },
+  "direction_index": null,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 0.999854573807351,
+    "max_weight_position": 36.68959601448893,
+    "min_weight": 0.5132235047779269,
+    "min_weight_distance": 16.530764911935883
+   },
+   "mlp.down_proj": {
+    "max_weight": 1.4565891688758716,
+    "max_weight_position": 39.146022439718514,
+    "min_weight": 0.4408723596965739,
+    "min_weight_distance": 24.669903180193938
+   }
+  }
+ },
+ {
+  "edit_id": "E1_105",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "per layer",
+   "direction_index": 38.67922809993479,
+   "attn.o_proj.max_weight": 1.2546413254516804,
+   "attn.o_proj.max_weight_position": 42.96232665058668,
+   "attn.o_proj.min_weight": 0.007691087088660842,
+   "attn.o_proj.min_weight_distance": 16.842474565812473,
+   "mlp.down_proj.max_weight": -0.0730921162533659,
+   "mlp.down_proj.max_weight_position": 44.00539917504505,
+   "mlp.down_proj.min_weight": 0.9079854063764837,
+   "mlp.down_proj.min_weight_distance": 12.668867627879226
+  },
+  "direction_index": null,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.2546413254516804,
+    "max_weight_position": 42.96232665058668,
+    "min_weight": 0.009649555699081745,
+    "min_weight_distance": 16.842474565812473
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.0,
+    "max_weight_position": 44.00539917504505,
+    "min_weight": 0.0,
+    "min_weight_distance": 12.668867627879226
+   }
+  }
+ },
+ {
+  "edit_id": "E1_106",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "global",
+   "direction_index": 35.20130636351114,
+   "attn.o_proj.max_weight": 0.9845100664124371,
+   "attn.o_proj.max_weight_position": 46.66191370045104,
+   "attn.o_proj.min_weight": 0.6701510893569342,
+   "attn.o_proj.min_weight_distance": 2.457397739352494,
+   "mlp.down_proj.max_weight": -0.24879445100970396,
+   "mlp.down_proj.max_weight_position": 36.0110830050347,
+   "mlp.down_proj.min_weight": 0.5735365434675432,
+   "mlp.down_proj.min_weight_distance": 7.924173754830518
+  },
+  "direction_index": 35.20130636351114,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 0.9845100664124371,
+    "max_weight_position": 46.66191370045104,
+    "min_weight": 0.6597704934891624,
+    "min_weight_distance": 2.457397739352494
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.0,
+    "max_weight_position": 36.0110830050347,
+    "min_weight": 0.0,
+    "min_weight_distance": 7.924173754830518
+   }
+  }
+ },
+ {
+  "edit_id": "E1_107",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "global",
+   "direction_index": 25.387528887675906,
+   "attn.o_proj.max_weight": 1.4765963900529169,
+   "attn.o_proj.max_weight_position": 45.767442664173686,
+   "attn.o_proj.min_weight": 0.6259883736224953,
+   "attn.o_proj.min_weight_distance": 22.02602035879726,
+   "mlp.down_proj.max_weight": 0.620555741902738,
+   "mlp.down_proj.max_weight_position": 34.680035089728406,
+   "mlp.down_proj.min_weight": 0.6057944106410543,
+   "mlp.down_proj.min_weight_distance": 9.959944749031196
+  },
+  "direction_index": 25.387528887675906,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.4765963900529169,
+    "max_weight_position": 45.767442664173686,
+    "min_weight": 0.924332172706073,
+    "min_weight_distance": 22.02602035879726
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.620555741902738,
+    "max_weight_position": 34.680035089728406,
+    "min_weight": 0.37592919993589136,
+    "min_weight_distance": 9.959944749031196
+   }
+  }
+ },
+ {
+  "edit_id": "E1_108",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "global",
+   "direction_index": 26.48674719898007,
+   "attn.o_proj.max_weight": 1.066885066665556,
+   "attn.o_proj.max_weight_position": 30.79848824946955,
+   "attn.o_proj.min_weight": 0.08562429321562814,
+   "attn.o_proj.min_weight_distance": 4.868673069973058,
+   "mlp.down_proj.max_weight": 0.6182585345926319,
+   "mlp.down_proj.max_weight_position": 29.21028202488442,
+   "mlp.down_proj.min_weight": 0.47973695813250694,
+   "mlp.down_proj.min_weight_distance": 11.7401443758212
+  },
+  "direction_index": 26.48674719898007,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.066885066665556,
+    "max_weight_position": 30.79848824946955,
+    "min_weight": 0.09135127977554655,
+    "min_weight_distance": 4.868673069973058
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.6182585345926319,
+    "max_weight_position": 29.21028202488442,
+    "min_weight": 0.29660146872493054,
+    "min_weight_distance": 11.7401443758212
+   }
+  }
+ },
+ {
+  "edit_id": "E1_109",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "global",
+   "direction_index": 40.385016123875715,
+   "attn.o_proj.max_weight": 1.2248063951152375,
+   "attn.o_proj.max_weight_position": 39.55030748397009,
+   "attn.o_proj.min_weight": 0.8496060316323808,
+   "attn.o_proj.min_weight_distance": 11.41600819736011,
+   "mlp.down_proj.max_weight": 1.2389115019993486,
+   "mlp.down_proj.max_weight_position": 43.24548854331573,
+   "mlp.down_proj.min_weight": 0.7400759949894292,
+   "mlp.down_proj.min_weight_distance": 5.347154284051021
+  },
+  "direction_index": 40.385016123875715,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.2248063951152375,
+    "max_weight_position": 39.55030748397009,
+    "min_weight": 1.0406029008718187,
+    "min_weight_distance": 11.41600819736011
+   },
+   "mlp.down_proj": {
+    "max_weight": 1.2389115019993486,
+    "max_weight_position": 43.24548854331573,
+    "min_weight": 0.9168886625460162,
+    "min_weight_distance": 5.347154284051021
+   }
+  }
+ },
+ {
+  "edit_id": "E1_110",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "global",
+   "direction_index": 32.44760161321163,
+   "attn.o_proj.max_weight": 0.806483535119178,
+   "attn.o_proj.max_weight_position": 46.04534904034767,
+   "attn.o_proj.min_weight": 0.7949404897814973,
+   "attn.o_proj.min_weight_distance": 27.377505785965834,
+   "mlp.down_proj.max_weight": 0.702609526566971,
+   "mlp.down_proj.max_weight_position": 33.61702743481801,
+   "mlp.down_proj.min_weight": 0.34084932080832664,
+   "mlp.down_proj.min_weight_distance": 27.352908116277238
+  },
+  "direction_index": 32.44760161321163,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 0.806483535119178,
+    "max_weight_position": 46.04534904034767,
+    "min_weight": 0.6411064164083528,
+    "min_weight_distance": 27.377505785965834
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.702609526566971,
+    "max_weight_position": 33.61702743481801,
+    "min_weight": 0.23948397992381198,
+    "min_weight_distance": 27.352908116277238
+   }
+  }
+ },
+ {
+  "edit_id": "E1_111",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "per layer",
+   "direction_index": 41.873740113550426,
+   "attn.o_proj.max_weight": 0.8482169728472222,
+   "attn.o_proj.max_weight_position": 34.90555810193999,
+   "attn.o_proj.min_weight": 0.9564853176129821,
+   "attn.o_proj.min_weight_distance": 19.57562178809754,
+   "mlp.down_proj.max_weight": 1.3815429315354386,
+   "mlp.down_proj.max_weight_position": 33.008446805431404,
+   "mlp.down_proj.min_weight": 0.5898269239372553,
+   "mlp.down_proj.min_weight_distance": 23.41372553139201
+  },
+  "direction_index": null,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 0.8482169728472222,
+    "max_weight_position": 34.90555810193999,
+    "min_weight": 0.8113070806784975,
+    "min_weight_distance": 19.57562178809754
+   },
+   "mlp.down_proj": {
+    "max_weight": 1.3815429315354386,
+    "max_weight_position": 33.008446805431404,
+    "min_weight": 0.8148712175948059,
+    "min_weight_distance": 23.41372553139201
+   }
+  }
+ },
+ {
+  "edit_id": "E1_112",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "per layer",
+   "direction_index": 27.400056744735355,
+   "attn.o_proj.max_weight": 0.9305962889991002,
+   "attn.o_proj.max_weight_position": 28.685637028590964,
+   "attn.o_proj.min_weight": 0.5218747526077614,
+   "attn.o_proj.min_weight_distance": 20.049786766405017,
+   "mlp.down_proj.max_weight": 0.5986623044811938,
+   "mlp.down_proj.max_weight_position": 41.63973933113557,
+   "mlp.down_proj.min_weight": 0.7125324135782105,
+   "mlp.down_proj.min_weight_distance": 15.7657595759176
+  },
+  "direction_index": null,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 0.9305962889991002,
+    "max_weight_position": 28.685637028590964,
+    "min_weight": 0.4856547080991062,
+    "min_weight_distance": 20.049786766405017
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.5986623044811938,
+    "max_weight_position": 41.63973933113557,
+    "min_weight": 0.42656629673027857,
+    "min_weight_distance": 15.7657595759176
+   }
+  }
+ },
+ {
+  "edit_id": "E1_113",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "global",
+   "direction_index": 25.4040602275811,
+   "attn.o_proj.max_weight": 1.2643805754495943,
+   "attn.o_proj.max_weight_position": 35.989828666163234,
+   "attn.o_proj.min_weight": 0.1829639424777032,
+   "attn.o_proj.min_weight_distance": 9.376558589742011,
+   "mlp.down_proj.max_weight": 0.7942180797678937,
+   "mlp.down_proj.max_weight_position": 44.464396436973445,
+   "mlp.down_proj.min_weight": 0.17436079435769025,
+   "mlp.down_proj.min_weight_distance": 26.569050408940473
+  },
+  "direction_index": 25.4040602275811,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.2643805754495943,
+    "max_weight_position": 35.989828666163234,
+    "min_weight": 0.23133605487648484,
+    "min_weight_distance": 9.376558589742011
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.7942180797678937,
+    "max_weight_position": 44.464396436973445,
+    "min_weight": 0.13848049528156936,
+    "min_weight_distance": 26.569050408940473
+   }
+  }
+ },
+ {
+  "edit_id": "E1_114",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "per layer",
+   "direction_index": 40.34745524732075,
+   "attn.o_proj.max_weight": 1.241616023381869,
+   "attn.o_proj.max_weight_position": 40.27005354389739,
+   "attn.o_proj.min_weight": 0.18470092783247505,
+   "attn.o_proj.min_weight_distance": 25.965303344500647,
+   "mlp.down_proj.max_weight": 0.47943840205450616,
+   "mlp.down_proj.max_weight_position": 37.620061887144615,
+   "mlp.down_proj.min_weight": 0.7539211694441045,
+   "mlp.down_proj.min_weight_distance": 8.026412023211716
+  },
+  "direction_index": null,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.241616023381869,
+    "max_weight_position": 40.27005354389739,
+    "min_weight": 0.22932763153029923,
+    "min_weight_distance": 25.965303344500647
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.47943840205450616,
+    "max_weight_position": 37.620061887144615,
+    "min_weight": 0.36145876075334604,
+    "min_weight_distance": 8.026412023211716
+   }
+  }
+ },
+ {
+  "edit_id": "E1_115",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "per layer",
+   "direction_index": 36.44671170629866,
+   "attn.o_proj.max_weight": 1.3282077679212503,
+   "attn.o_proj.max_weight_position": 31.368030264543933,
+   "attn.o_proj.min_weight": 0.9710032450983678,
+   "attn.o_proj.min_weight_distance": 19.548084989495027,
+   "mlp.down_proj.max_weight": 1.1406860550897966,
+   "mlp.down_proj.max_weight_position": 39.63479339425099,
+   "mlp.down_proj.min_weight": 0.8463792596896644,
+   "mlp.down_proj.min_weight_distance": 23.806941638773594
+  },
+  "direction_index": null,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.3282077679212503,
+    "max_weight_position": 31.368030264543933,
+    "min_weight": 1.2896940528163938,
+    "min_weight_distance": 19.548084989495027
+   },
+   "mlp.down_proj": {
+    "max_weight": 1.1406860550897966,
+    "max_weight_position": 39.63479339425099,
+    "min_weight": 0.9654530188452258,
+    "min_weight_distance": 23.806941638773594
+   }
+  }
+ },
+ {
+  "edit_id": "E1_116",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "global",
+   "direction_index": 35.683147988748985,
+   "attn.o_proj.max_weight": 1.32442069618762,
+   "attn.o_proj.max_weight_position": 37.42646751431937,
+   "attn.o_proj.min_weight": 0.6235718819499539,
+   "attn.o_proj.min_weight_distance": 9.910205155216138,
+   "mlp.down_proj.max_weight": 0.6293423333484525,
+   "mlp.down_proj.max_weight_position": 45.0074041261559,
+   "mlp.down_proj.min_weight": 0.9949832664659974,
+   "mlp.down_proj.min_weight_distance": 17.39684205502692
+  },
+  "direction_index": 35.683147988748985,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.32442069618762,
+    "max_weight_position": 37.42646751431937,
+    "min_weight": 0.8258715060151823,
+    "min_weight_distance": 9.910205155216138
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.6293423333484525,
+    "max_weight_position": 45.0074041261559,
+    "min_weight": 0.6261850905603759,
+    "min_weight_distance": 17.39684205502692
+   }
+  }
+ },
+ {
+  "edit_id": "E1_117",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "per layer",
+   "direction_index": 20.058983680869275,
+   "attn.o_proj.max_weight": 1.105812488846001,
+   "attn.o_proj.max_weight_position": 32.118176642972024,
+   "attn.o_proj.min_weight": 0.22365587406408594,
+   "attn.o_proj.min_weight_distance": 3.8519247678132373,
+   "mlp.down_proj.max_weight": 0.9889595973849752,
+   "mlp.down_proj.max_weight_position": 45.090285795764004,
+   "mlp.down_proj.min_weight": 0.3459868282986249,
+   "mlp.down_proj.min_weight_distance": 14.925479012384239
+  },
+  "direction_index": null,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.105812488846001,
+    "max_weight_position": 32.118176642972024,
+    "min_weight": 0.24732145874383463,
+    "min_weight_distance": 3.8519247678132373
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.9889595973849752,
+    "max_weight_position": 45.090285795764004,
+    "min_weight": 0.34216699441471266,
+    "min_weight_distance": 14.925479012384239
+   }
+  }
+ },
+ {
+  "edit_id": "E1_118",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "per layer",
+   "direction_index": 40.05323063939824,
+   "attn.o_proj.max_weight": 1.4051913253291632,
+   "attn.o_proj.max_weight_position": 29.96922567065272,
+   "attn.o_proj.min_weight": 0.7476123509515676,
+   "attn.o_proj.min_weight_distance": 3.947459373394622,
+   "mlp.down_proj.max_weight": 0.23637264258931678,
+   "mlp.down_proj.max_weight_position": 44.49709396309263,
+   "mlp.down_proj.min_weight": 0.25992787896096536,
+   "mlp.down_proj.min_weight_distance": 7.408990817257243
+  },
+  "direction_index": null,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.4051913253291632,
+    "max_weight_position": 29.96922567065272,
+    "min_weight": 1.0505383902660848,
+    "min_weight_distance": 3.947459373394622
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.23637264258931678,
+    "max_weight_position": 44.49709396309263,
+    "min_weight": 0.06143983963263946,
+    "min_weight_distance": 7.408990817257243
+   }
+  }
+ },
+ {
+  "edit_id": "E1_119",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "per layer",
+   "direction_index": 20.91004071855836,
+   "attn.o_proj.max_weight": 0.9503754909044145,
+   "attn.o_proj.max_weight_position": 42.1838892189628,
+   "attn.o_proj.min_weight": 0.8049236669306085,
+   "attn.o_proj.min_weight_distance": 24.33206635019152,
+   "mlp.down_proj.max_weight": 1.4541499106648632,
+   "mlp.down_proj.max_weight_position": 38.31436365197884,
+   "mlp.down_proj.min_weight": 0.021614803897695434,
+   "mlp.down_proj.min_weight_distance": 3.2187891954600887
+  },
+  "direction_index": null,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 0.9503754909044145,
+    "max_weight_position": 42.1838892189628,
+    "min_weight": 0.7649797250997584,
+    "min_weight_distance": 24.33206635019152
+   },
+   "mlp.down_proj": {
+    "max_weight": 1.4541499106648632,
+    "max_weight_position": 38.31436365197884,
+    "min_weight": 0.03143116515687235,
+    "min_weight_distance": 3.2187891954600887
+   }
+  }
+ },
+ {
+  "edit_id": "E1_120",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "per layer",
+   "direction_index": 40.23170989651418,
+   "attn.o_proj.max_weight": 1.4220257193682246,
+   "attn.o_proj.max_weight_position": 39.40860302409155,
+   "attn.o_proj.min_weight": 0.9533784922131212,
+   "attn.o_proj.min_weight_distance": 14.375481846706146,
+   "mlp.down_proj.max_weight": 1.4302017258146504,
+   "mlp.down_proj.max_weight_position": 45.94845962200617,
+   "mlp.down_proj.min_weight": 0.5132643880234737,
+   "mlp.down_proj.min_weight_distance": 8.900611605716904
+  },
+  "direction_index": null,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.4220257193682246,
+    "max_weight_position": 39.40860302409155,
+    "min_weight": 1.3557287362195571,
+    "min_weight_distance": 14.375481846706146
+   },
+   "mlp.down_proj": {
+    "max_weight": 1.4302017258146504,
+    "max_weight_position": 45.94845962200617,
+    "min_weight": 0.7340716135503725,
+    "min_weight_distance": 8.900611605716904
+   }
+  }
+ },
+ {
+  "edit_id": "E1_121",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "global",
+   "direction_index": 23.90634168876519,
+   "attn.o_proj.max_weight": 0.9407475512470671,
+   "attn.o_proj.max_weight_position": 32.00699625470869,
+   "attn.o_proj.min_weight": 0.5739657984376882,
+   "attn.o_proj.min_weight_distance": 2.464025444984739,
+   "mlp.down_proj.max_weight": 0.5707749737328054,
+   "mlp.down_proj.max_weight_position": 35.076532907022525,
+   "mlp.down_proj.min_weight": 0.5975349930063379,
+   "mlp.down_proj.min_weight_distance": 5.848564849427299
+  },
+  "direction_index": 23.90634168876519,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 0.9407475512470671,
+    "max_weight_position": 32.00699625470869,
+    "min_weight": 0.5399569193798229,
+    "min_weight_distance": 2.464025444984739
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.5707749737328054,
+    "max_weight_position": 35.076532907022525,
+    "min_weight": 0.3410580199376246,
+    "min_weight_distance": 5.848564849427299
+   }
+  }
+ },
+ {
+  "edit_id": "E1_122",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "per layer",
+   "direction_index": 20.033603817438642,
+   "attn.o_proj.max_weight": 1.0181038320258677,
+   "attn.o_proj.max_weight_position": 33.28515876698416,
+   "attn.o_proj.min_weight": 0.8352979358990625,
+   "attn.o_proj.min_weight_distance": 4.110294926315952,
+   "mlp.down_proj.max_weight": 0.17819598997768882,
+   "mlp.down_proj.max_weight_position": 42.508547587869465,
+   "mlp.down_proj.min_weight": 0.5238068055411759,
+   "mlp.down_proj.min_weight_distance": 8.804559990176422
+  },
+  "direction_index": null,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.0181038320258677,
+    "max_weight_position": 33.28515876698416,
+    "min_weight": 0.8504200294221332,
+    "min_weight_distance": 4.110294926315952
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.17819598997768882,
+    "max_weight_position": 42.508547587869465,
+    "min_weight": 0.09334027227046057,
+    "min_weight_distance": 8.804559990176422
+   }
+  }
+ },
+ {
+  "edit_id": "E1_123",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "per layer",
+   "direction_index": 28.01018949842676,
+   "attn.o_proj.max_weight": 1.0192763287671607,
+   "attn.o_proj.max_weight_position": 33.73225443505725,
+   "attn.o_proj.min_weight": 0.9965834173506488,
+   "attn.o_proj.min_weight_distance": 23.783587029976136,
+   "mlp.down_proj.max_weight": -0.04699618516605386,
+   "mlp.down_proj.max_weight_position": 34.94212459902006,
+   "mlp.down_proj.min_weight": 0.5031841932332883,
+   "mlp.down_proj.min_weight_distance": 20.616938919941127
+  },
+  "direction_index": null,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.0192763287671607,
+    "max_weight_position": 33.73225443505725,
+    "min_weight": 1.0157938869474004,
+    "min_weight_distance": 23.783587029976136
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.0,
+    "max_weight_position": 34.94212459902006,
+    "min_weight": 0.0,
+    "min_weight_distance": 20.616938919941127
+   }
+  }
+ },
+ {
+  "edit_id": "E1_124",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "per layer",
+   "direction_index": 28.75066358395317,
+   "attn.o_proj.max_weight": 1.4669104959021881,
+   "attn.o_proj.max_weight_position": 37.036505134056156,
+   "attn.o_proj.min_weight": 0.21991728028146873,
+   "attn.o_proj.min_weight_distance": 11.71416522515199,
+   "mlp.down_proj.max_weight": 0.2653245424873527,
+   "mlp.down_proj.max_weight_position": 38.528644702867595,
+   "mlp.down_proj.min_weight": 0.6055067263785825,
+   "mlp.down_proj.min_weight_distance": 26.798995576216733
+  },
+  "direction_index": null,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.4669104959021881,
+    "max_weight_position": 37.036505134056156,
+    "min_weight": 0.3225989666751498,
+    "min_weight_distance": 11.71416522515199
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.2653245424873527,
+    "max_weight_position": 38.528644702867595,
+    "min_weight": 0.16065579514941206,
+    "min_weight_distance": 26.798995576216733
+   }
+  }
+ },
+ {
+  "edit_id": "E1_125",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "per layer",
+   "direction_index": 40.41987204589804,
+   "attn.o_proj.max_weight": 0.9776699743989797,
+   "attn.o_proj.max_weight_position": 35.13783688009369,
+   "attn.o_proj.min_weight": 0.24884847890922845,
+   "attn.o_proj.min_weight_distance": 24.577205553958997,
+   "mlp.down_proj.max_weight": 1.1614520089219795,
+   "mlp.down_proj.max_weight_position": 34.18164538081128,
+   "mlp.down_proj.min_weight": 0.9913129104717354,
+   "mlp.down_proj.min_weight_distance": 19.56063155840431
+  },
+  "direction_index": null,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 0.9776699743989797,
+    "max_weight_position": 35.13783688009369,
+    "min_weight": 0.24329168600441042,
+    "min_weight_distance": 24.577205553958997
+   },
+   "mlp.down_proj": {
+    "max_weight": 1.1614520089219795,
+    "max_weight_position": 34.18164538081128,
+    "min_weight": 1.1513623713376915,
+    "min_weight_distance": 19.56063155840431
+   }
+  }
+ },
+ {
+  "edit_id": "E1_126",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "global",
+   "direction_index": 21.04990222820672,
+   "attn.o_proj.max_weight": 1.1037275733552772,
+   "attn.o_proj.max_weight_position": 43.285260410062506,
+   "attn.o_proj.min_weight": 0.7730408427015845,
+   "attn.o_proj.min_weight_distance": 18.21159599470702,
+   "mlp.down_proj.max_weight": -0.04482247364323799,
+   "mlp.down_proj.max_weight_position": 45.320225542194734,
+   "mlp.down_proj.min_weight": 0.8978441209011714,
+   "mlp.down_proj.min_weight_distance": 23.824286890719854
+  },
+  "direction_index": 21.04990222820672,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.1037275733552772,
+    "max_weight_position": 43.285260410062506,
+    "min_weight": 0.8532264934195384,
+    "min_weight_distance": 18.21159599470702
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.0,
+    "max_weight_position": 45.320225542194734,
+    "min_weight": 0.0,
+    "min_weight_distance": 23.824286890719854
+   }
+  }
+ },
+ {
+  "edit_id": "E1_127",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "per layer",
+   "direction_index": 28.77568048114376,
+   "attn.o_proj.max_weight": 1.43217552873751,
+   "attn.o_proj.max_weight_position": 34.886061128954914,
+   "attn.o_proj.min_weight": 0.2864152647877658,
+   "attn.o_proj.min_weight_distance": 6.904430022469986,
+   "mlp.down_proj.max_weight": 0.009850076812004227,
+   "mlp.down_proj.max_weight_position": 43.87888086867482,
+   "mlp.down_proj.min_weight": 0.3787041126764591,
+   "mlp.down_proj.min_weight_distance": 23.966233223837474
+  },
+  "direction_index": null,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.43217552873751,
+    "max_weight_position": 34.886061128954914,
+    "min_weight": 0.4101969332859124,
+    "min_weight_distance": 6.904430022469986
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.009850076812004227,
+    "max_weight_position": 43.87888086867482,
+    "min_weight": 0.003730264598885026,
+    "min_weight_distance": 23.966233223837474
+   }
+  }
+ },
+ {
+  "edit_id": "E1_128",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "global",
+   "direction_index": 35.24104384797725,
+   "attn.o_proj.max_weight": 1.1749371900929262,
+   "attn.o_proj.max_weight_position": 38.595737495843885,
+   "attn.o_proj.min_weight": 0.588639616386084,
+   "attn.o_proj.min_weight_distance": 12.407288063850109,
+   "mlp.down_proj.max_weight": 0.2405721084536661,
+   "mlp.down_proj.max_weight_position": 38.23672440204285,
+   "mlp.down_proj.min_weight": 0.1658595673959773,
+   "mlp.down_proj.min_weight_distance": 19.041250894156835
+  },
+  "direction_index": 35.24104384797725,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.1749371900929262,
+    "max_weight_position": 38.595737495843885,
+    "min_weight": 0.6916145768540435,
+    "min_weight_distance": 12.407288063850109
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.2405721084536661,
+    "max_weight_position": 38.23672440204285,
+    "min_weight": 0.03990118583566319,
+    "min_weight_distance": 19.041250894156835
+   }
+  }
+ },
+ {
+  "edit_id": "E1_129",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "global",
+   "direction_index": 28.86767900594465,
+   "attn.o_proj.max_weight": 0.9463978422516448,
+   "attn.o_proj.max_weight_position": 45.35238915569542,
+   "attn.o_proj.min_weight": 0.6330582702359023,
+   "attn.o_proj.min_weight_distance": 6.969515641628928,
+   "mlp.down_proj.max_weight": 0.7228171357476671,
+   "mlp.down_proj.max_weight_position": 41.49700080069685,
+   "mlp.down_proj.min_weight": 0.10437852333125319,
+   "mlp.down_proj.min_weight_distance": 10.695839146077795
+  },
+  "direction_index": 28.86767900594465,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 0.9463978422516448,
+    "max_weight_position": 45.35238915569542,
+    "min_weight": 0.5991249809708166,
+    "min_weight_distance": 6.969515641628928
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.7228171357476671,
+    "max_weight_position": 41.49700080069685,
+    "min_weight": 0.07544658526786747,
+    "min_weight_distance": 10.695839146077795
+   }
+  }
+ },
+ {
+  "edit_id": "E1_130",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "global",
+   "direction_index": 30.16617743696377,
+   "attn.o_proj.max_weight": 1.2125517287053627,
+   "attn.o_proj.max_weight_position": 38.606983883795905,
+   "attn.o_proj.min_weight": 0.34811323260022276,
+   "attn.o_proj.min_weight_distance": 4.029525795593953,
+   "mlp.down_proj.max_weight": 0.9802421563654056,
+   "mlp.down_proj.max_weight_position": 43.900996803941226,
+   "mlp.down_proj.min_weight": 0.923197828038447,
+   "mlp.down_proj.min_weight_distance": 17.748296163641115
+  },
+  "direction_index": 30.16617743696377,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.2125517287053627,
+    "max_weight_position": 38.606983883795905,
+    "min_weight": 0.4221053019746121,
+    "min_weight_distance": 4.029525795593953
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.9802421563654056,
+    "max_weight_position": 43.900996803941226,
+    "min_weight": 0.9049574297082661,
+    "min_weight_distance": 17.748296163641115
+   }
+  }
+ },
+ {
+  "edit_id": "E1_131",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "per layer",
+   "direction_index": 37.270998126001324,
+   "attn.o_proj.max_weight": 1.1831663315791938,
+   "attn.o_proj.max_weight_position": 32.62167382680041,
+   "attn.o_proj.min_weight": 0.14227544032017825,
+   "attn.o_proj.min_weight_distance": 11.253709216486659,
+   "mlp.down_proj.max_weight": 0.9397461625644823,
+   "mlp.down_proj.max_weight_position": 36.380593390466714,
+   "mlp.down_proj.min_weight": 0.8513845140407896,
+   "mlp.down_proj.min_weight_distance": 19.771528794778625
+  },
+  "direction_index": null,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.1831663315791938,
+    "max_weight_position": 32.62167382680041,
+    "min_weight": 0.16833551079743983,
+    "min_weight_distance": 11.253709216486659
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.9397461625644823,
+    "max_weight_position": 36.380593390466714,
+    "min_weight": 0.8000853299366586,
+    "min_weight_distance": 19.771528794778625
+   }
+  }
+ },
+ {
+  "edit_id": "E1_132",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "per layer",
+   "direction_index": 33.1937662124147,
+   "attn.o_proj.max_weight": 1.1423538233204222,
+   "attn.o_proj.max_weight_position": 43.00509732686895,
+   "attn.o_proj.min_weight": 0.2953242390422658,
+   "attn.o_proj.min_weight_distance": 1.4810689101210963,
+   "mlp.down_proj.max_weight": -0.13424488781657923,
+   "mlp.down_proj.max_weight_position": 30.40739764104077,
+   "mlp.down_proj.min_weight": 0.9399020730216373,
+   "mlp.down_proj.min_weight_distance": 12.279215816339569
+  },
+  "direction_index": null,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.1423538233204222,
+    "max_weight_position": 43.00509732686895,
+    "min_weight": 0.33736477358912664,
+    "min_weight_distance": 1.4810689101210963
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.0,
+    "max_weight_position": 30.40739764104077,
+    "min_weight": 0.0,
+    "min_weight_distance": 12.279215816339569
+   }
+  }
+ },
+ {
+  "edit_id": "E1_133",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "global",
+   "direction_index": 38.08383110596925,
+   "attn.o_proj.max_weight": 1.2624258041256737,
+   "attn.o_proj.max_weight_position": 45.92937508906264,
+   "attn.o_proj.min_weight": 0.548182772883246,
+   "attn.o_proj.min_weight_distance": 13.607468183742192,
+   "mlp.down_proj.max_weight": -0.04121488422485142,
+   "mlp.down_proj.max_weight_position": 43.55136854973371,
+   "mlp.down_proj.min_weight": 0.679110404786642,
+   "mlp.down_proj.min_weight_distance": 17.317703044236513
+  },
+  "direction_index": 38.08383110596925,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.2624258041256737,
+    "max_weight_position": 45.92937508906264,
+    "min_weight": 0.6920400778649735,
+    "min_weight_distance": 13.607468183742192
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.0,
+    "max_weight_position": 43.55136854973371,
+    "min_weight": 0.0,
+    "min_weight_distance": 17.317703044236513
+   }
+  }
+ },
+ {
+  "edit_id": "E1_134",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "per layer",
+   "direction_index": 40.93297994330438,
+   "attn.o_proj.max_weight": 0.8139153864708453,
+   "attn.o_proj.max_weight_position": 35.1154440767511,
+   "attn.o_proj.min_weight": 0.26603627966571686,
+   "attn.o_proj.min_weight_distance": 14.861669016384592,
+   "mlp.down_proj.max_weight": 0.14391956361109232,
+   "mlp.down_proj.max_weight_position": 29.806096776033794,
+   "mlp.down_proj.min_weight": 0.3901994003437944,
+   "mlp.down_proj.min_weight_distance": 17.252064132033627
+  },
+  "direction_index": null,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 0.8139153864708453,
+    "max_weight_position": 35.1154440767511,
+    "min_weight": 0.21653102137938782,
+    "min_weight_distance": 14.861669016384592
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.14391956361109232,
+    "max_weight_position": 29.806096776033794,
+    "min_weight": 0.056157327418788795,
+    "min_weight_distance": 17.252064132033627
+   }
+  }
+ },
+ {
+  "edit_id": "E1_135",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "global",
+   "direction_index": 20.179434989920978,
+   "attn.o_proj.max_weight": 1.060396635720048,
+   "attn.o_proj.max_weight_position": 38.25875484790093,
+   "attn.o_proj.min_weight": 0.3746867781442541,
+   "attn.o_proj.min_weight_distance": 17.517288008536077,
+   "mlp.down_proj.max_weight": 0.28465512991184827,
+   "mlp.down_proj.max_weight_position": 46.28220752150358,
+   "mlp.down_proj.min_weight": 0.04464179455238204,
+   "mlp.down_proj.min_weight_distance": 8.169535131825182
+  },
+  "direction_index": 20.179434989920978,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.060396635720048,
+    "max_weight_position": 38.25875484790093,
+    "min_weight": 0.3973165989929511,
+    "min_weight_distance": 17.517288008536077
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.28465512991184827,
+    "max_weight_position": 46.28220752150358,
+    "min_weight": 0.01270751582780635,
+    "min_weight_distance": 8.169535131825182
+   }
+  }
+ },
+ {
+  "edit_id": "E1_136",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "per layer",
+   "direction_index": 24.243123558831627,
+   "attn.o_proj.max_weight": 1.3921009867069252,
+   "attn.o_proj.max_weight_position": 33.28395567906129,
+   "attn.o_proj.min_weight": 0.31889436716763875,
+   "attn.o_proj.min_weight_distance": 17.831253548874226,
+   "mlp.down_proj.max_weight": 0.957997472355455,
+   "mlp.down_proj.max_weight_position": 33.94851193503328,
+   "mlp.down_proj.min_weight": 0.39305564362305867,
+   "mlp.down_proj.min_weight_distance": 11.201750961004189
+  },
+  "direction_index": null,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.3921009867069252,
+    "max_weight_position": 33.28395567906129,
+    "min_weight": 0.4439331631893504,
+    "min_weight_distance": 17.831253548874226
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.957997472355455,
+    "max_weight_position": 33.94851193503328,
+    "min_weight": 0.3765463130859367,
+    "min_weight_distance": 11.201750961004189
+   }
+  }
+ },
+ {
+  "edit_id": "E1_137",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "per layer",
+   "direction_index": 19.250576122834506,
+   "attn.o_proj.max_weight": 1.090833505100488,
+   "attn.o_proj.max_weight_position": 42.525718308659535,
+   "attn.o_proj.min_weight": 0.9921931387464348,
+   "attn.o_proj.min_weight_distance": 3.846206313506632,
+   "mlp.down_proj.max_weight": 0.9225214358401965,
+   "mlp.down_proj.max_weight_position": 32.10988929137385,
+   "mlp.down_proj.min_weight": 0.6373155585633403,
+   "mlp.down_proj.min_weight_distance": 27.87650424806149
+  },
+  "direction_index": null,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.090833505100488,
+    "max_weight_position": 42.525718308659535,
+    "min_weight": 1.0823175192754284,
+    "min_weight_distance": 3.846206313506632
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.9225214358401965,
+    "max_weight_position": 32.10988929137385,
+    "min_weight": 0.5879372641691496,
+    "min_weight_distance": 27.87650424806149
+   }
+  }
+ },
+ {
+  "edit_id": "E1_138",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "global",
+   "direction_index": 39.18515200028068,
+   "attn.o_proj.max_weight": 1.1520207351898122,
+   "attn.o_proj.max_weight_position": 43.85924014989285,
+   "attn.o_proj.min_weight": 0.8161504614029987,
+   "attn.o_proj.min_weight_distance": 22.702390156863814,
+   "mlp.down_proj.max_weight": 1.3761250064257011,
+   "mlp.down_proj.max_weight_position": 30.96168437016629,
+   "mlp.down_proj.min_weight": 0.39219481763578923,
+   "mlp.down_proj.min_weight_distance": 9.465674971599917
+  },
+  "direction_index": 39.18515200028068,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.1520207351898122,
+    "max_weight_position": 43.85924014989285,
+    "min_weight": 0.9402222545709871,
+    "min_weight_distance": 22.702390156863814
+   },
+   "mlp.down_proj": {
+    "max_weight": 1.3761250064257011,
+    "max_weight_position": 30.96168437016629,
+    "min_weight": 0.5397090959391772,
+    "min_weight_distance": 9.465674971599917
+   }
+  }
+ },
+ {
+  "edit_id": "E1_139",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "global",
+   "direction_index": 31.414454196544888,
+   "attn.o_proj.max_weight": 1.1246116396963752,
+   "attn.o_proj.max_weight_position": 39.91565191892955,
+   "attn.o_proj.min_weight": 0.21831283426216475,
+   "attn.o_proj.min_weight_distance": 27.655106352162726,
+   "mlp.down_proj.max_weight": 0.9884108567521723,
+   "mlp.down_proj.max_weight_position": 36.10171772032183,
+   "mlp.down_proj.min_weight": 0.3897686702683215,
+   "mlp.down_proj.min_weight_distance": 22.277552357261353
+  },
+  "direction_index": 31.414454196544888,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.1246116396963752,
+    "max_weight_position": 39.91565191892955,
+    "min_weight": 0.2455171545063361,
+    "min_weight_distance": 27.655106352162726
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.9884108567521723,
+    "max_weight_position": 36.10171772032183,
+    "min_weight": 0.38525158531506665,
+    "min_weight_distance": 22.277552357261353
+   }
+  }
+ },
+ {
+  "edit_id": "E1_140",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "per layer",
+   "direction_index": 27.205050647171646,
+   "attn.o_proj.max_weight": 1.4489370203707046,
+   "attn.o_proj.max_weight_position": 31.442877652173642,
+   "attn.o_proj.min_weight": 0.6059707380504319,
+   "attn.o_proj.min_weight_distance": 13.486125591043121,
+   "mlp.down_proj.max_weight": 1.2906940059442698,
+   "mlp.down_proj.max_weight_position": 33.12596119845208,
+   "mlp.down_proj.min_weight": 0.302950975167222,
+   "mlp.down_proj.min_weight_distance": 21.41207108777824
+  },
+  "direction_index": null,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.4489370203707046,
+    "max_weight_position": 31.442877652173642,
+    "min_weight": 0.8780134356226296,
+    "min_weight_distance": 13.486125591043121
+   },
+   "mlp.down_proj": {
+    "max_weight": 1.2906940059442698,
+    "max_weight_position": 33.12596119845208,
+    "min_weight": 0.3910170077433048,
+    "min_weight_distance": 21.41207108777824
+   }
+  }
+ },
+ {
+  "edit_id": "E1_141",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "per layer",
+   "direction_index": 28.287057306494336,
+   "attn.o_proj.max_weight": 1.0089511317492812,
+   "attn.o_proj.max_weight_position": 36.36741274879829,
+   "attn.o_proj.min_weight": 0.49702862848858853,
+   "attn.o_proj.min_weight_distance": 7.18426616365895,
+   "mlp.down_proj.max_weight": 0.16925777294113253,
+   "mlp.down_proj.max_weight_position": 36.488188816853,
+   "mlp.down_proj.min_weight": 0.986692919220851,
+   "mlp.down_proj.min_weight_distance": 11.607050783385269
+  },
+  "direction_index": null,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.0089511317492812,
+    "max_weight_position": 36.36741274879829,
+    "min_weight": 0.5014775972253545,
+    "min_weight_distance": 7.18426616365895
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.16925777294113253,
+    "max_weight_position": 36.488188816853,
+    "min_weight": 0.16700544608410603,
+    "min_weight_distance": 11.607050783385269
+   }
+  }
+ },
+ {
+  "edit_id": "E1_142",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "per layer",
+   "direction_index": 25.17773071677568,
+   "attn.o_proj.max_weight": 1.4879084855748093,
+   "attn.o_proj.max_weight_position": 46.74755585241049,
+   "attn.o_proj.min_weight": 0.6629373024699128,
+   "attn.o_proj.min_weight_distance": 22.138834955276483,
+   "mlp.down_proj.max_weight": 1.2878232801129512,
+   "mlp.down_proj.max_weight_position": 36.682916127433614,
+   "mlp.down_proj.min_weight": 0.015517927451571767,
+   "mlp.down_proj.min_weight_distance": 22.906794626502222
+  },
+  "direction_index": null,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.4879084855748093,
+    "max_weight_position": 46.74755585241049,
+    "min_weight": 0.9863900377490572,
+    "min_weight_distance": 22.138834955276483
+   },
+   "mlp.down_proj": {
+    "max_weight": 1.2878232801129512,
+    "max_weight_position": 36.682916127433614,
+    "min_weight": 0.019984348231237962,
+    "min_weight_distance": 22.906794626502222
+   }
+  }
+ },
+ {
+  "edit_id": "E1_143",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "per layer",
+   "direction_index": 19.29665667129258,
+   "attn.o_proj.max_weight": 1.3086967846964903,
+   "attn.o_proj.max_weight_position": 29.644185907180077,
+   "attn.o_proj.min_weight": 0.6519349155230818,
+   "attn.o_proj.min_weight_distance": 11.383994308696613,
+   "mlp.down_proj.max_weight": -0.1056331883222108,
+   "mlp.down_proj.max_weight_position": 31.630493128818053,
+   "mlp.down_proj.min_weight": 0.042558089487045425,
+   "mlp.down_proj.min_weight_distance": 19.913888693299466
+  },
+  "direction_index": null,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.3086967846964903,
+    "max_weight_position": 29.644185907180077,
+    "min_weight": 0.8531851277764352,
+    "min_weight_distance": 11.383994308696613
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.0,
+    "max_weight_position": 31.630493128818053,
+    "min_weight": 0.0,
+    "min_weight_distance": 19.913888693299466
+   }
+  }
+ },
+ {
+  "edit_id": "E1_144",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "per layer",
+   "direction_index": 37.98651457470744,
+   "attn.o_proj.max_weight": 1.1747168335708347,
+   "attn.o_proj.max_weight_position": 44.29274500750367,
+   "attn.o_proj.min_weight": 0.4363841450368756,
+   "attn.o_proj.min_weight_distance": 9.126115488554602,
+   "mlp.down_proj.max_weight": 0.30929410674855073,
+   "mlp.down_proj.max_weight_position": 34.58893316592055,
+   "mlp.down_proj.min_weight": 0.35730652304236743,
+   "mlp.down_proj.min_weight_distance": 7.788765058049761
+  },
+  "direction_index": null,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.1747168335708347,
+    "max_weight_position": 44.29274500750367,
+    "min_weight": 0.5126278010782344,
+    "min_weight_distance": 9.126115488554602
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.30929410674855073,
+    "max_weight_position": 34.58893316592055,
+    "min_weight": 0.11051280187981949,
+    "min_weight_distance": 7.788765058049761
+   }
+  }
+ },
+ {
+  "edit_id": "E1_145",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "global",
+   "direction_index": 18.926489989428287,
+   "attn.o_proj.max_weight": 1.095816726469924,
+   "attn.o_proj.max_weight_position": 45.40599135467282,
+   "attn.o_proj.min_weight": 0.5542226917014237,
+   "attn.o_proj.min_weight_distance": 22.334663668460106,
+   "mlp.down_proj.max_weight": 0.9548439679957923,
+   "mlp.down_proj.max_weight_position": 31.928157277211334,
+   "mlp.down_proj.min_weight": 0.83202266922289,
+   "mlp.down_proj.min_weight_distance": 3.620006605669305
+  },
+  "direction_index": 18.926489989428287,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.095816726469924,
+    "max_weight_position": 45.40599135467282,
+    "min_weight": 0.6073264957556039,
+    "min_weight_distance": 22.334663668460106
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.9548439679957923,
+    "max_weight_position": 31.928157277211334,
+    "min_weight": 0.7944518269432349,
+    "min_weight_distance": 3.620006605669305
+   }
+  }
+ },
+ {
+  "edit_id": "E1_146",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "per layer",
+   "direction_index": 35.26143503139561,
+   "attn.o_proj.max_weight": 1.2811968006743457,
+   "attn.o_proj.max_weight_position": 30.743869584231593,
+   "attn.o_proj.min_weight": 0.4806262240301241,
+   "attn.o_proj.min_weight_distance": 25.390772488459106,
+   "mlp.down_proj.max_weight": 0.41284486075683324,
+   "mlp.down_proj.max_weight_position": 39.313475341736606,
+   "mlp.down_proj.min_weight": 0.7686545247588883,
+   "mlp.down_proj.min_weight_distance": 4.485832979954143
+  },
+  "direction_index": null,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.2811968006743457,
+    "max_weight_position": 30.743869584231593,
+    "min_weight": 0.6157767805475863,
+    "min_weight_distance": 25.390772488459106
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.41284486075683324,
+    "max_weight_position": 39.313475341736606,
+    "min_weight": 0.31733507024419305,
+    "min_weight_distance": 4.485832979954143
+   }
+  }
+ },
+ {
+  "edit_id": "E1_147",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "per layer",
+   "direction_index": 39.94087317941141,
+   "attn.o_proj.max_weight": 1.4366036593789349,
+   "attn.o_proj.max_weight_position": 31.68215647566185,
+   "attn.o_proj.min_weight": 0.5089858336879041,
+   "attn.o_proj.min_weight_distance": 16.65364033157413,
+   "mlp.down_proj.max_weight": 1.2980568718329035,
+   "mlp.down_proj.max_weight_position": 46.73847719877812,
+   "mlp.down_proj.min_weight": 0.8683139372684584,
+   "mlp.down_proj.min_weight_distance": 4.037857676912318
+  },
+  "direction_index": null,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.4366036593789349,
+    "max_weight_position": 31.68215647566185,
+    "min_weight": 0.7312109112480809,
+    "min_weight_distance": 16.65364033157413
+   },
+   "mlp.down_proj": {
+    "max_weight": 1.2980568718329035,
+    "max_weight_position": 46.73847719877812,
+    "min_weight": 1.1271208731796072,
+    "min_weight_distance": 4.037857676912318
+   }
+  }
+ },
+ {
+  "edit_id": "E1_148",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "per layer",
+   "direction_index": 26.489818722016757,
+   "attn.o_proj.max_weight": 1.149708062526053,
+   "attn.o_proj.max_weight_position": 41.788148487868824,
+   "attn.o_proj.min_weight": 0.2556719480199666,
+   "attn.o_proj.min_weight_distance": 23.242683361436264,
+   "mlp.down_proj.max_weight": 1.1239610379580793,
+   "mlp.down_proj.max_weight_position": 46.261255788401904,
+   "mlp.down_proj.min_weight": 0.3652599087112707,
+   "mlp.down_proj.min_weight_distance": 6.922271259748807
+  },
+  "direction_index": null,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.149708062526053,
+    "max_weight_position": 41.788148487868824,
+    "min_weight": 0.29394810000029753,
+    "min_weight_distance": 23.242683361436264
+   },
+   "mlp.down_proj": {
+    "max_weight": 1.1239610379580793,
+    "max_weight_position": 46.261255788401904,
+    "min_weight": 0.41053790611959307,
+    "min_weight_distance": 6.922271259748807
+   }
+  }
+ },
+ {
+  "edit_id": "E1_149",
+  "set": "E1",
+  "trial": null,
+  "raw_params": {
+   "direction_scope": "per layer",
+   "direction_index": 30.95336054141879,
+   "attn.o_proj.max_weight": 0.8559585101343985,
+   "attn.o_proj.max_weight_position": 37.95497259169366,
+   "attn.o_proj.min_weight": 0.36803195262739463,
+   "attn.o_proj.min_weight_distance": 24.85819561565417,
+   "mlp.down_proj.max_weight": 0.496681732359499,
+   "mlp.down_proj.max_weight_position": 34.811897406693454,
+   "mlp.down_proj.min_weight": 0.13531056393165153,
+   "mlp.down_proj.min_weight_distance": 16.00996382761235
+  },
+  "direction_index": null,
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 0.8559585101343985,
+    "max_weight_position": 37.95497259169366,
+    "min_weight": 0.31502008185279823,
+    "min_weight_distance": 24.85819561565417
+   },
+   "mlp.down_proj": {
+    "max_weight": 0.496681732359499,
+    "max_weight_position": 34.811897406693454,
+    "min_weight": 0.06720628530011342,
+    "min_weight_distance": 16.00996382761235
+   }
+  }
+ }
+]

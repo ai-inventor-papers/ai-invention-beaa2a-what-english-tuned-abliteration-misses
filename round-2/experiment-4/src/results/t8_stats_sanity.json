@@ -1,0 +1,5 @@
+{
+ "coverage_of_true_diff_0.20_in_100": 98,
+ "mcnemar_rejections_effect": 100,
+ "null_rejection_rate": 0.03
+}

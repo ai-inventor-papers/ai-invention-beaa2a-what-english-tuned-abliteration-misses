@@ -1,0 +1,110 @@
+{
+ "en": {
+  "R_set": [
+   236777
+  ],
+  "C_set": [
+   902,
+   1018,
+   2859,
+   3810,
+   11942,
+   17056,
+   26208,
+   39748,
+   67797,
+   83953,
+   100687,
+   117494,
+   119376,
+   137252,
+   137269,
+   180978,
+   230590,
+   236840
+  ],
+  "R_tokens": [
+   "I"
+  ],
+  "C_tokens": [
+   "In",
+   "**",
+   "If",
+   "There",
+   "Access",
+   "Bet",
+   "Donald",
+   "Hero",
+   "Nuclear",
+   "Electronic",
+   "Winning",
+   "Certainly",
+   "Prevent",
+   "Cann",
+   "Hazard",
+   "Gamb",
+   "Violence",
+   "["
+  ],
+  "rule": "remove_overlap",
+  "overlap_removed": [
+   "The",
+   "Sure"
+  ],
+  "refusal_first_token_coverage": 0.9591836734693877,
+  "halfA_kw_refusal_rate_harmful": 0.9090909090909091,
+  "halfA_kw_refusal_rate_benign": 0.20454545454545456,
+  "n_harmful": 44,
+  "n_benign": 44
+ },
+ "sl": {
+  "R_set": [
+   236806
+  ],
+  "C_set": [
+   1018,
+   2035,
+   26208,
+   39748,
+   46130,
+   58141,
+   76964,
+   93183,
+   222713,
+   236796,
+   236797,
+   236847,
+   236855,
+   236953
+  ],
+  "R_tokens": [
+   "O"
+  ],
+  "C_tokens": [
+   "**",
+   "Tr",
+   "Donald",
+   "Hero",
+   "Od",
+   "Kan",
+   "Org",
+   "Jed",
+   "Zam",
+   "D",
+   "N",
+   "V",
+   "K",
+   "Z"
+  ],
+  "rule": "remove_overlap",
+  "overlap_removed": [
+   "Se",
+   "Č"
+  ],
+  "refusal_first_token_coverage": 0.8958333333333334,
+  "halfA_kw_refusal_rate_harmful": 0.8409090909090909,
+  "halfA_kw_refusal_rate_benign": 0.25,
+  "n_harmful": 44,
+  "n_benign": 44
+ }
+}
