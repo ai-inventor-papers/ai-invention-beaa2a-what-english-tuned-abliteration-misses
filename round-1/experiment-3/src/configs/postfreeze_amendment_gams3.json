@@ -1,7 +1,7 @@
 {
  "reason": "T7 failed for the frozen energy-matched random controls: destructive collateral (KL/FLORES NLL) because they were energy-matched on winsorized rather than raw residuals; amendment adds raw-energy-matched randoms as extra conditions (abl:C6r-C11r, add:R*r); the frozen conditions are kept and reported unchanged.",
  "written_at": "2026-09-23T17:42:10",
- "directions_npz": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_3/results/gams3/random_raw.npz",
+ "directions_npz": "../results/gams3/random_raw.npz",
  "directions_sha256": "fcc67ab5cb906251af97e34f536ac1deae504cdb0eb343ead5319611e6aa96f1",
  "meta": {
   "h_star": 34,

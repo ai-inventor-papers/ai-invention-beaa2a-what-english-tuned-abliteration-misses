@@ -1,6 +1,6 @@
 #!/bin/bash
 # When a model's first run finishes its generation stage, stop it and relaunch with the amended pipeline
-cd /ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_3
+cd ..
 declare -A done
 while [ "${done[gams3]}" != 1 ] || [ "${done[gemma]}" != 1 ]; do
   for m in gams3 gemma; do
