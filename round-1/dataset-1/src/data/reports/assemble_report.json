@@ -2,14 +2,14 @@
  "pod_files": {
   "searched": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/** (excluding gen_plan and this artifact)",
   "found": [
-   "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_3/data/dev_carveout_ids.json",
-   "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_3/data/screen_dev.json",
-   "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_3/data/screen_dev_nllb.json",
-   "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_3/data/translations.json",
-   "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_3/data/translations_nllb.json",
-   "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_3/results/gams3/dolly_B_continuations.json",
-   "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_3/results/gemma/dolly_B_continuations.json",
-   "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_3/results_mini/gams3/dolly_B_continuations.json"
+   "../../../../experiment-3/src/data/dev_carveout_ids.json",
+   "../../../../experiment-3/src/data/screen_dev.json",
+   "../../../../experiment-3/src/data/screen_dev_nllb.json",
+   "../../../../experiment-3/src/data/translations.json",
+   "../../../../experiment-3/src/data/translations_nllb.json",
+   "../../../../experiment-3/src/results/gams3/dolly_B_continuations.json",
+   "../../../../experiment-3/src/results/gemma/dolly_B_continuations.json",
+   "../../../../experiment-3/src/results_mini/gams3/dolly_B_continuations.json"
   ],
   "status": "pod files found - see s3_pod_agreement"
  },

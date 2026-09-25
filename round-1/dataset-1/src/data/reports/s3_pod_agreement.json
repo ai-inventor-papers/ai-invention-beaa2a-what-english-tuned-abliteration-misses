@@ -1,5 +1,5 @@
 {
- "pod_file": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_3/data/screen_dev.json",
+ "pod_file": "../../../../experiment-3/src/data/screen_dev.json",
  "pod_file_sha256": "907b95e7194c6eea0a4413f11c67fa43474eb2a7d914829c43cdc5613b043789",
  "pod_translation_prompt": {
   "model": "google/gemini-2.5-flash",
