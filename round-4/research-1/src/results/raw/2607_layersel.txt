@@ -1,0 +1,268 @@
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/pdf/2607.02714v2
+Type: PDF
+Pattern: uniform|norm-based|layer selection|percentage points|spread|selection strateg (35 matches in 46580 chars)
+
+--- Content ---
+
+6647:...he models and depends
+on a combination of factors, such as model architecture, its safety training, reasoning capability,
+etc. Thus, we studied the relationship between them and the character of the refusal change with
+increasing levels of layer modification.
+Our contributions are: (1) The nature of safety alignment is domain-heterogeneous, which enables
+abliteration to affect harm categories non-uniformly. (2) Domain-specific abliteration is achievable:
+on Kimi K2 (1T parameters), we reduce cybersecurity refusal from 100% to 7% while preserving
+100% explicit content refusal and 44–88% refusal in other domains.1 (3) Susceptibility is model-
+specific, not size-dependent, while safety training methodology and architecture are the strongest
+predictors. (4) MMLU capability scores are universally pres...
+--
+8979:...eatures. We build on these findings of the complexity of the refusal geometry: if it occupies a higher-
+dimensional subspace, it should admit domain-selective interventions via the standard abliteration
+pipeline. We verify this empirically across 24 models from 0.6B to 1T parameters and characterize
+when it succeeds.
+Wei et al. [2023] offer an influential framing for why safety training fails non-uniformly: competing
+objectives and mismatched generalization predict that susceptibility is heterogeneous across capability
+domains, which our domain-level results corroborate empirically. Beyond representation-level attacks,
+the literature includes session-bound prompt-level jailbreaks Chao et al. [2023], Zou et al. [2023b],
+Liu et al. [2023], fine-tuning attacks that need only minimal harmful data Ler...
+--
+15135:...tectures where redundant expert
+pathways can partially compensate for the projection. This is a permanent modification of the model
+weights, applied to the down_proj (MLP output) and o_proj (attention output projection) matrices.
+3.1
+Experimental Setup
+To test whether the patterns observed on Kimi K2 generalize, and to identify which model properties
+enable domain-selective abliteration, we ran a uniform protocol across the 24 models below.
+Models: 24 models evaluated on the scientific benchmark and on the custom dataset (see Appendix A
+for the full inventory). Architectures span dense transformers and MoE, sizes range from 0.6B to 1T,
+from 10 developer organizations.
+Technique: Orthogonal projection of the mean-difference refusal direction from model weights
+(W ′ = W −α ˆr(ˆr⊤W)) applied to down_proj and o_proj weight matrices. Uniform layer spread
+selection across 25–95% of model depth at 6 percentiles (5–30%).
+Infrastructure: 8× NVIDIA H200 GPUs (1.1TB total VRAM) on GCP a3-ultragpu instances. Total
+compute: approximately 600 GPU-hours. We used vLLM for inference, speculators for activation
+extraction (vLLM does not support extraction of middle-layer activations), and direct safetensors
+modification for weight application. The pipeline is written fully in Python.
+3.2
+Layer Selection Strategies
+Layer selection is a critical element of the process. Arditi et al. found that abliterating a narrow local
+region of 2–3 middle layers can be as effective as ablating across all layers, and applied their technique
+to all layers’ WO and Wout plus the embedding matrix. We found that this does not generalize to
+the broader set of modern models in our study: refusal in many architectures is distributed more
+widely, particularly in MoE models with hundreds of experts per layer. Thus, in our main experiment
+we opted for uniformly spread layer selection across 25–95% of model depth, which we found to
+4
+
+substantially outperform norm-based selection (targeting layers with the highest refusal signal norm)
+by up to ∼70pp of additional refusal reduction at 30% on the most susceptible models. A detailed
+comparison is provided in Appendix C.
+3.3
+Evaluation Framework
+We evaluate using three complementary datasets:
+Scientific benchmark compilation (360 prompts). Assembled from three established and widely
+cited sources: HarmBench (185) Ma...
+--
+21729:...Table 1: Mean refusal reduction per domain (across 24 models at 30% abliteration).
+Domain
+Mean ∆
+Median ∆
+Misinformation
+−22.3pp
+−17.0pp
+Cybercrime
+−15.5pp
+−11.5pp
+Harassment
+−14.0pp
+−10.0pp
+Chemical/Bio
+−13.3pp
+−8.0pp
+Illegal activities
+−12.3pp
+−6.5pp
+Copyright
+−8.2pp
+−5.0pp
+Table 2: Kimi K2 domain-specific abliteration results across both evaluation datasets obtained at
+(α = 1.0, 30% of layers, uniform layer spread).
+(a) Cross-evaluation dataset
+Domain
+Baseline
+Abliterated
+Cybersecurity
+100%
+7%
+Explicit content
+100%
+100%
+Illegal goods
+100%
+56%
+Misinformation
+100%
+88%
+Violence
+100%
+75%
+Privacy violation
+100%
+44%
+(b) Scientific benchmark
+Domain
+Baseline
+Abliterated
+Cybercrime
+88%
+51%
+Chemical/biological
+100%
+88%
+Copyright
+50%
+40%
+Harassment/bullying
+88%
+74%
+Illegal activities
+91%
+85%
+Misinformation
+98%
+74%
+to...
+--
+28274:...dels with undisclosed RL-based safety (both
+Mistral variants) are fully resistant. Notably, Google’s BOND+WARM+WARP method shows
+extreme variance across model sizes. Architecture type (dense vs. MoE) also partially explains
+susceptibility: having a richer variety of concept representations distributed across experts, MoE
+models are more resistant on average. Within model families, Phi is the most uniformly susceptible,
+Qwen shows the widest intra-family spread (from 1pp to 39pp), and Mistral is consistently resistant.
+Detailed breakdowns by safety training method and model family are provided in Appendix E.
+Gemma-1B
+Gemma-12B
+Gemma-27B
+Phi-4-mini
+OLMoE
+Llama-Maverick
+Qwen3-0.6B
+Qwen3-8B
+Qwen3-14B
+Qwen3-30B
+Qwen3-32B
+Qwen3-235B
+DS-V3
+Llama-1B
+Llama-3B
+Llama-8B
+Mistral-Large
+GLM-4.7
+Kimi-K2
+DS-V2-Lite
+0.4
+0.5
+0.6
+0.7
+0.8
+0.9
+0
+10
+20
+30
+40
+50
+BOND+
+DPO
+DP...
+--
+41673:...rite the updated tensors back. This avoids ever materializing the full model in CPU or GPU memory
+— a hard requirement at trillion-parameter scale, where the Kimi K2 checkpoint alone exceeds 1.1 TB.
+Caching. For each model we cache the extracted activations and the resulting refusal directions, so
+that running multiple downstream configurations (different layer percentiles, strengths α, or layer-
+selection strategies) does not require re-running the extraction pass. This is what made it tractable to
+sweep six abliteration intensities across all 24 models within the 600 GPU-hour budget reported in
+Section 3.
+C
+Layer Selection Strategy
+Layer selection strategy (Figure 7) compares norm-based selection (targeting layers with highest
+refusal signal) to uniform spread (layers distributed across 25–95% of depth). Uniform spread
+consistently matches or outperforms norm-based selection across all 9 tested models, with the gap
+reaching ∼70pp of additional refusal reduction at 30% on the most susceptible models (e.g., Llama-
+3.1-8B, Qwen3-8B, Kimi-K2). On the resistant tier (Mistral-Large), neither method moves refusal at
+any percentile.
+10
+20
+30
+0
+50
+100
+10
+20
+30
+0
+50
+100
+10
+20
+30
+0
+50
+100
+10
+20
+30
+0
+50
+100
+10
+20
+30
+0
+50
+100
+10
+20
+30
+0
+50
+100
+10
+20
+30
+0
+50
+100
+10
+20
+30
+0
+50
+100
+10
+20
+30
+0
+50
+100
+Norm-based
+Uniform spread
+%
+%
+%
+Refusal %
+Qwen3-0.6B
+OLMoE
+Qwen3-8B
+Llama-8B
+Gemma-12B
+Qwen3-30B
+Mistral-Large
+GLM-4.7
+Kimi-K2
+Figure 7: Norm-based vs. uniform spread layer selection across 9 models. Uniform spread (red)
+consistently achieves equal or greater refusal reduction than norm-based (blue).
+D
+Domain-Specificity Analysis
+We extracted per-domain refusal directions for 5 representative models (Qwen3-...
+--
+[10 more matches not shown]

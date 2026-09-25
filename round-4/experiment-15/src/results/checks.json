@@ -1,0 +1,45 @@
+{
+ "files_changed_since_freeze": {
+  "method.py": {
+   "frozen_sha": "6a07ec70463e9c669b7922e2529b4b9f29b48789536b24762f898ad854d50703",
+   "current_sha": "a3463a1304d6c2d84aa41a9a0eda92280f253fb60c1b722e4207a2ef64c60b34",
+   "diff_lines": 31
+  },
+  "gbf.py": {
+   "frozen_sha": "86bd9568855b920e082145a79010f1a6d09f982abca0560fdea01baa1ec618b4",
+   "current_sha": "56fcb84c78461747bc30f9dba7cd2967f7b0fbe2f4cf45ade6b9384aaf05f393",
+   "diff_lines": 40
+  },
+  "judges.py": {
+   "frozen_sha": "8d8078299b98748ee63e4f3fe73c885b71a6ba7a909252dcacd78aa700aacaf3",
+   "current_sha": "69da112576a69db23796f9a591f9b6d436d57c40d5352f956006abaab27de0d6",
+   "diff_lines": 16
+  },
+  "score.py": {
+   "frozen_sha": "05ddefe4bf11f0d00e4b4ba7c36c5241b566a2361987d31dd99d3720da9ec8b0",
+   "current_sha": "753a14f44cbce937fb5f99d2567e70a0b635aa8cdaf035d1ae76112f61cc6479",
+   "diff_lines": 14
+  },
+  "analysis.py": {
+   "frozen_sha": "18b8809f175abdb897e34f18c9db6fde0fd189d8383229650d90e8fe63317c7c",
+   "current_sha": "cfd0e35bb6b4612703657d957db91619f2840da3be411cbbef4a83d501ce1a29",
+   "diff_lines": 115
+  },
+  "rederive.py": {
+   "frozen_sha": "8236c86b711154a1a7706636d6304a354055973b59373dba20987f614f14cf3a",
+   "current_sha": "551dbe257e4450da868d255b6a210488aa837e3b0d67a9133c1b1786db1cb0bc",
+   "diff_lines": 48
+  }
+ },
+ "analysis_py_unchanged": false,
+ "method_py_unchanged": false,
+ "files_created_after_freeze": [
+  "checks.py",
+  "figures.py",
+  "to_schema.py"
+ ],
+ "diff_file": "results/code_changes_since_freeze.diff",
+ "freeze_file_verifies": true,
+ "reselection_rows_all_carry_P7_verdict": true,
+ "n_reselection_rows": 8
+}

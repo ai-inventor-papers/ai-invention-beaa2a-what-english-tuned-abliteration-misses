@@ -1,0 +1,26 @@
+{
+ "stage": "S4b",
+ "probe": {
+  "ok": true,
+  "msg": "OK."
+ },
+ "first20": {
+  "stats": {
+   "sent": 20,
+   "parse_fail": 0,
+   "stopped": null,
+   "cum_usd": 0.021806000000000002
+  },
+  "usd_per_item": 0.0010881,
+  "projected_total_usd": 0.8705240000000001
+ },
+ "rest": {
+  "sent": 780,
+  "parse_fail": 0,
+  "stopped": null,
+  "cum_usd": 0.859928
+ },
+ "n_labelled": 800,
+ "cumulative_usd": 0.859928,
+ "status": "bought"
+}

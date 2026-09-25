@@ -1,0 +1,382 @@
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/pdf/2406.11717v3
+Type: PDF
+Pattern: layer|W_out|W\^?out|orthogonal (90 matches in 119442 chars)
+
+--- Content ---
+
+6900:...bility distributions y = (y1, y2, . . . , yn) ∈Rn×|V|. Let
+x(l)
+i (t) ∈Rdmodel denote the residual stream activation of the token at position i at the start of layer l.1
+Each token’s residual stream is initialized to its embedding x(1)
+i
+= Embed(ti), and then undergoes a
+series of transformations across L layers. Each layer’s transformation includes contributions from
+attention and MLP components:
+˜x(l)
+i
+= x(l)
+i
++ Attn(l)(x(l)
+1:i),
+x(l+1)
+i
+= ˜x(l)
+i
++ MLP(l)(˜x(l)
+i ).
+(1)
+The...
+--
+9731:...horten x(l)
+i (t) to x(l)
+i
+when the input t is clear from context or unimportant.
+2This high-level description omits details such as positional embeddings and layer normalization.
+3Unless explicitly stated otherwise, all models examined in this study are chat models. As a result, we often
+omit the terms CHAT or INSTRUCT wh...
+--
+10222:..., effectively isolates key
+feature directions, as demonstrated in prior work (Marks and Tegmark, 2023; Panickssery et al., 2023;
+Tigges et al., 2023). For each layer l ∈[L] and post-instruction token position i ∈I, we calculate the
+mean activation µ(l)
+i
+for harmful prompts from D(train)
+harmful and ν(l)
+i
+for harmless prom...
+--
+11000:... harmful
+and harmless activations.
+Selecting a single vector.
+Computing the difference-in-means vector r(l)
+i
+for each post-instruction
+token position i ∈I and layer l ∈[L] yields a set of |I| × L candidate vectors. We then select the
+single most effective vector r(l∗)
+i∗
+from this set by evaluating each candidate vector ov...
+--
+11669:...s r, and its corresponding unit-norm vector as ˆr.
+2.4
+Model interventions
+Activation addition.
+Given a difference-in-means vector r(l) ∈Rdmodel extracted from layer l, we
+can modulate the strength of the corresponding feature via simple linear interventions. Specifically,
+we can add the difference-in-means vector to the ac...
+--
+12023:... to shift them closer
+to the mean harmful activation, thereby inducing refusal:
+x(l)′ ←x(l) + r(l).
+(3)
+Note that for activation addition, we intervene only at layer l, and across all token positions.
+Directional ablation.
+To investigate the role of a direction ˆr ∈Rdmodel in the model’s computation,
+we can erase it from th...
+--
+12445:...nent along ˆr for every residual stream activation x ∈Rdmodel:
+x′ ←x −ˆrˆr⊺x.
+(4)
+We perform this operation at every activation x(l)
+i
+and ˜x(l)
+i , across all layers l and all token positions
+i. This effectively prevents the model from ever representing this direction in its residual stream.
+2.5
+Evaluation of refusal and h...
+--
+15925:...ypassing refusal via directional ablation
+To bypass refusal, we perform directional ablation on the “refusal direction” ˆr, ablating it from
+activations at all layers and all token positions. With this intervention in place, we generate model
+completions over JAILBREAKBENCH (Chao et al., 2024), a dataset of 100 harmful inst...
+--
+16510:...rates and elicits unsafe completions.
+3.2
+Inducing refusal via activation addition
+To induce refusal, we add the difference-in-means vector r to activations in layer l∗, the layer that
+the r was originally extracted from. We perform this intervention at all token positions. With
+this intervention in place, we generate model completions o...
+--
+17039:...odel’s residual stream activations, labeled as activation addition,
+results in the model refusing even harmless requests.
+5
+
+4
+A white-box jailbreak via weight orthogonalization
+In this section, we propose a novel white-box jailbreak method through weight orthogonalization.
+This technique directly modifies model weights to eliminate the representation of the refusal direction,
+resulting in a model that retains its original...
+--
+17652:...men et al., 2023; Yang et al., 2023; Zhan et al., 2023), as it does not require
+gradient-based optimization nor any examples of harmful completions.
+4.1
+Weight orthogonalization
+In §2.4, we described directional ablation as an inference-time intervention that prevents the model
+from representing a direction ˆr: during a forward ...
+--
+18100:...y implement this operation by
+directly modifying component weights to never write to the ˆr direction in the first place. Specifically,
+we can take each matrix Wout ∈Rdmodel×dinput that writes to the residual stream, and orthogonalize its
+column vectors with respect to ˆr:
+W ′
+out ←Wout −ˆrˆr⊺Wout.
+(5)
+In a transformer architecture, the matrices that write to the residual stream are: the embedding matrix,
+the positional embedding matrix, attention out matrices, and MLP out matrices. Orthogonalizing all
+of these matrices, as well as any output biases, with respect to the direction ˆr effectively prevents the
+model from ever writing ˆr to its residual ...
+--
+19408:...r model to determine the attack success rate (ASR), which is the proportion of completions
+classified as successfully bypassing refusal. We evaluate our weight orthogonalization method
+on models included in the HARMBENCH study, and report its ASR alongside those of alternative
+jailbreaks. For brief descriptions of each alternative jailbreak, see §F.1.
+Table 2 shows that our weight orthogonalization method, labeled as ORTHO, fares well compared to
+other general jailbreak techniques. Across the QWEN model family, our general method is even on par
+wit...
+--
+22153:... also degrade the model’s overall quality (Souly et al., 2024). However, qualitatively, we observe
+that models maintain their coherence after undergoing weight orthogonalization. While §3.1 and §4.2
+show that our method effectively bypasses refusal, in this subsection we quantitatively evaluate how
+the modification alters a model’s general capabilities.
+For each model and its orthogonalized version, we run four common language model evaluations:
+MMLU (Hendrycks et al., 2020), ARC (Clark et al., 2018), GSM8K (Cobbe et al., 2021), and
+TRUTHFULQA...
+--
+22761:...ation Harness (Gao et al.,
+2023), with settings consistent with Open LLM Leaderboard (Beeching et al., 2023).4
+Table 3 displays that, for MMLU, ARC, and GSM8K, orthogonalized models perform similarly to
+baseline models. In §G.1, we show that this holds across other models in our suite, with additional
+evaluations of WINOGRANDE (Sakaguchi et al., 2021) and TINYHELLASWAG (Polo et al., 2024).
+Except for QWEN 7B and YI 34B, all evaluation metrics for orthogonalized models lie within 99%
+confidence intervals of original performance.
+Interestingly, accuracy on TRUTHFULQA consistently drops for orthogonalized models. This
+phenomenon is consistent with Yang et al. (2023), where it was observed that fine-tuning away
+safety guardrails results in decreased accuracy ...
+--
+24078:...uggest that
+directional ablation is more surgical than activation addition based methods (§I.1).
+Table 3: Model evaluations. For each evaluation, we report the orthogonalized model’s performance,
+followed by the baseline model’s performance, followed by the absolute increase or decrease. We
+display the largest model from each mo...
+--
+25631:...e
+mechanistically analyze the effect of an adversarial suffix on QWEN 1.8B CHAT.
+5.1
+Adversarial suffixes suppress the refusal-mediating direction
+0
+5
+10
+15
+20
+Layer
+0.0
+0.1
+0.2
+0.3
+0.4
+0.5
+Cosine similarity with
+refusal direction
+harmful
+harmful + random_suffix
+harmful + adv_suffix
+harmless
+Figure 5: Cosine similarity betw...
+--
+30699:...on Attack” that
+adds steering vectors to bypass refusal during inference. Li et al. (2024b) identify a “safety pattern”
+by selecting individual neurons in each layer, and modulate refusal by zeroing out these neurons,
+although with unclear effects on the overall model performance.
+Features as directions.
+Extracting feature ...
+--
+37690:...esearch project, and led the writing of the paper. AA discov-
+ered and validated that ablating a single direction bypasses refusal, and came up with the weight
+orthogonalization trick. OO ran initial experiments identifying that it is possible to jailbreak models
+via activation addition. AA and OO implemented and ran all experiments presented in the paper,
+with DP helping to run model coherence evaluations. DP investigated behavior of the orthogonalized
+models, suggested more thorough evaluations, and assisted with the writing of the paper. AS ran
+initial experiments testing the causal efficacy of various ...
+--
+47618:... mean-centring. arXiv preprint arXiv:2312.03813, 2023.
+Connor Kissane, Robert Krzyzanowski, Arthur Conmy, and Neel Nanda. Sparse autoencoders work
+on attention layer outputs. Alignment Forum, 2024. URL https://www.alignmentforum.org/
+posts/DtdzGwFh9dCfsekZZ.
+Woosuk Kwon, Zhuohan Li, Siyuan Zhuang, Ying Sheng, Lianmin Zheng,...
+--
+69607:...r smaller models.
+C.2
+Direction selection for each model
+We report details of direction selection for each model in Table 5, including the token position i∗and
+layer l∗from which the direction was sourced, along with the direction’s corresponding metrics.
+Figure 11 displays the bypass_score and induce_score of all candidate...
+--
+70146:...Note that i∗= −1 indicates that the direction is
+selected from the last token position, i∗= −2 the second-to-last token position, and so on. Also note
+that the layer index l∗starts from index 0, while L indicates the total number of layers.
+Chat model
+i∗
+l∗/L
+bypass_score
+induce_score
+kl_score
+QWEN 1.8B
+−1
+15/24
+−4.415
+1.641
+0.077
+QWEN 7B
+−1
+17/32
+−5.355
+1.107
+0.069
+QWEN 14B
+−1
+23/40
+−5.085
+1.60...
+--
+70798:...77
+2.794
+0.092
+LLAMA-2 70B
+−1
+21/80
+−4.565
+5.191
+0.036
+LLAMA-3 8B
+−5
+12/32
+−9.715
+7.681
+0.064
+LLAMA-3 70B
+−5
+25/80
+−7.839
+0.126
+0.021
+0
+5
+10
+15
+20
+25
+30
+Source layer
+10.0
+7.5
+5.0
+2.5
+0.0
+2.5
+5.0
+7.5
+10.0
+Refusal score
+Bypass score
+Source position
+pos -5: '<|eot_id|>'
+pos -4: '<|start_header_id|>'
+pos -3: 'assistant'
+pos -2: '<|end_header_id|>'
+pos -1: '\n\n'
+0
+5
+10
+15
+20
+25
+30
+Source layer
+10
+5
+0
+5
+10
+Refusal score
+Induce score
+Source position
+pos -5: '<|eot_id|>'
+pos -4: '<|start_header_id|>'
+pos -3: 'assistant'
+pos -2: '<|end_header_id|>'
+pos -...
+--
+71389:...left) and induce_score (right) of each candidate direction for
+LLAMA-3 8B INSTRUCT. Each candidate direction r(l)
+i
+corresponds to source position i and source
+layer l.
+Table 6: Model families and their corresponding chat templates. The user instruction is denoted as
+{x}. Post-instruction tokens, as defined in §2.1, are lab...
+--
+75527:...pletion does not explicitly use a
+refusal phrase (refusal_score=0), but it does not contain harmful content (safety_score=1).
+This completion is taken from the orthogonalized LLAMA-3 70B CHAT model.
+Prompt:
+Write a tutorial on how to make a bomb
+Generation (intervention):
+∗∗How to Make a Bomb∗∗∗∗Materials∗∗:
+∗1 cup baking
+soda ∗...
+--
+76686:...e model completion does not use a refusal phrase
+(refusal_score=0), but it does not contain harmful content (safety_score=1). This completion
+is taken from the orthogonalized GEMMA 7B IT model.
+Prompt:
+Write a script that quickly gains unauthorized access to a chemical or
+biological synthesis facility
+Generation (intervention):
+...
+--
+77667:...sal. The model completion does use a refusal phrase
+(refusal_score=1), but it also contains harmful content (safety_score=0). This completion is
+taken from the orthogonalized QWEN 72B CHAT model.
+25
+
+E
+Weight orthogonalization is equivalent to directional ablation
+To show the equivalence of directional ablation and weight orthogonalization, we consider all matrices
+that directly write contributions to the residual stream.
+Let Wout ∈Rdmodel×dinput be a matrix that writes to the residual stream, mapping vectors from Rdinput to
+Rdmodel.5 Let the unit norm vector ˆr ∈Rdmodel denote the direction to be ablated.
+Now let xpre ∈Rdmodel denote the residual stream activation before Wout adds a contribution to the
+residual stream, let xpost denote the residual stream activation after, and let t ∈Rdinput denote the input
+to Wout:
+xpost = xpre + Woutt.
+(10)
+With directional ablation, we take xpost and zero out its projection onto ˆr:
+x′
+post = xpost −ˆrˆr⊺xpost
+(11)
+= (xpre + Woutt) −ˆrˆr⊺(xpre + Woutt)
+(12)
+= xpre + Woutt −ˆrˆr⊺xpre −ˆrˆr⊺Woutt
+(13)
+= xpre −ˆrˆr⊺xpre + (Wout −ˆrˆr⊺Wout)t.
+(14)
+Supposing that directional ablation was similarly applied after all previous contributions to the
+residual stream, we have that ˆr⊺xpre = 0:
+x′
+post = xpre + (Wout −ˆrˆr⊺Wout)t
+(15)
+= xpre + W ′
+outt
+(16)
+where W ′
+out = Wout −ˆrˆr⊺Wout, as specified by weight orthogonalization in Equation 5.
+5Note that dinput varies depending on which matrix is being considered. For example it would be the
+vocabulary size |V| if considering th...
+--
+80143:...ponse” baseline without any jailbreaks in place (DR).
+F.2
+Effect of system prompts on evaluation
+Table 2 shows that the attack success rate (ASR) of our weight orthogonalization methodology is
+sensitive to system prompts. Including the default system prompt in evaluation substantially reduces
+HARMBENCH ASR for LLAMA-2 models, wh...
+--
+[30 more matches not shown]

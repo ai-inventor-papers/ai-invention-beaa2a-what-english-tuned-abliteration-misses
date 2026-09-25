@@ -1,0 +1,3 @@
+Warning : `load_model` does not return WordVectorModel or SupervisedModel any more, but a `FastText` object which is very similar.
+DISAGREEMENTS: ['dev_L01_c2.5|O_sl', 'dev_L01_c2.5|O_en', 'dev_L01_c2.5|E', 'dev_L02_c2.5|O_sl', 'dev_L02_c2.5|O_en', 'dev_L02_c2.5|E', 'dev_L03_c2.5|O_sl', 'dev_L03_c2.5|O_en', 'dev_L03_c2.5|E', 'dev_L04_c2.5|O_sl', 'dev_L04_c2.5|O_en', 'dev_L04_c2.5|E', 'dev_L05_c2.5|O_sl', 'dev_L05_c2.5|O_en', 'dev_L05_c2.5|E', 'dev_L06_c2.5|O_sl', 'dev_L06_c2.5|O_en', 'dev_L06_c2.5|E', 'dev_L07_c2.5|O_sl', 'dev_L07_c2.5|O_en']
+re-derived 352/499 headline numbers; freeze order {'freeze_sha_matches': True, 'freeze_precedes_every_confirmation_file': True, 'n_confirmation_files': 36}

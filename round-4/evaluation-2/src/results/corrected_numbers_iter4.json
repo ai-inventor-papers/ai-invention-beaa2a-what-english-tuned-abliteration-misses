@@ -1,0 +1,1209 @@
+{
+ "summary": {
+  "n_checked": 102,
+  "verdicts": {
+   "match": 97,
+   "misdescribed": 3,
+   "mismatch": 2
+  },
+  "mismatch_or_misdescribed_rate": 0.049019607843137254,
+  "wilson_95": [
+   0.021117285132196968,
+   0.1096592715336131
+  ],
+  "prior_audited_half_rate": 0.055,
+  "placebos": {
+   "real_pb2_sl": -0.10476190476190478,
+   "real_pb3": -0.07142857142857145,
+   "a_cell_label_shuffle_within_item": 0.0005714285714285719,
+   "b_language_label_shuffle": 0.0010476190476190455,
+   "c_dose_shuffled_spearman": -0.002282948576779776,
+   "c_real_spearman_logE_SL": 0.18695170765678928,
+   "d_dev_vs_conf_overlap": 0,
+   "d_dev_as_conf_fires_LEAKAGE": true,
+   "e_judge_label_permutation_kappa": 0.004904674344333676,
+   "e_real_kappa": 0.8641246491822316,
+   "collapse_checks": {
+    "a_cell_label_shuffle": true,
+    "b_language_label_shuffle": true,
+    "c_dose_shuffled": true,
+    "d_leakage_detector_fires": true,
+    "e_kappa_permutation": true
+   },
+   "reference_values": {
+    "artifact_placebos": [
+     0.003,
+     -0.001,
+     0.023
+    ],
+    "artifact_real": [
+     -0.105,
+     -0.071
+    ]
+   }
+  },
+  "seconds": 8.6,
+  "seed": 20260924,
+  "B": 2000
+ },
+ "numbers": [
+  {
+   "claim_id": "E9.n_cells",
+   "section": "Exp9 setup",
+   "value": 122,
+   "ci": null,
+   "source_path": "iter_3/.../experiment_9/results/per_item.parquet",
+   "draft_value": 122,
+   "verdict": "match",
+   "draft_wrong_value": null,
+   "note": ""
+  },
+  {
+   "claim_id": "E9.n_generations",
+   "section": "Exp9 setup",
+   "value": 27784,
+   "ci": null,
+   "source_path": "iter_3/.../experiment_9/results/per_item.parquet",
+   "draft_value": 27784,
+   "verdict": "match",
+   "draft_wrong_value": null,
+   "note": ""
+  },
+  {
+   "claim_id": "E9.judge_kappa_within_edited",
+   "section": "Exp9 setup",
+   "value": 0.8641246491822316,
+   "ci": null,
+   "source_path": "experiment_9/results/judge_api.jsonl + judge_local.jsonl",
+   "draft_value": 0.87,
+   "verdict": "match",
+   "draft_wrong_value": null,
+   "note": "n=576 key-resolvable pairs (the artifact certified on 600) gpt-4.1 vs Qwen3-14B refused-vs-not within edited cells; artifact reports 0.866 which the draft rounds to 0.87; accepted within 0.005"
+  },
+  {
+   "claim_id": "E9.band13_24_spearman",
+   "section": "Exp9 exploratory",
+   "value": -0.9416965821485117,
+   "ci": null,
+   "source_path": "experiment_9/results/per_item.parquet + cells/W_*.json (layers)",
+   "draft_value": -0.942,
+   "verdict": "match",
+   "draft_wrong_value": null,
+   "note": "fraction of layers 13-24 covered vs lowest SL harmful refusal over c in {0.25,0.5,1,1.5}, 10 sets, S3 half-B"
+  },
+  {
+   "claim_id": "E9.sets_covering_all_13_24",
+   "section": "Exp9 exploratory",
+   "value": "ALL48,B2,C24,C36,K96",
+   "ci": null,
+   "source_path": "experiment_9/results/cells/W_*.json",
+   "draft_value": "ALL48,B2,C24,C36,K96",
+   "verdict": "match",
+   "draft_wrong_value": null,
+   "note": "coverage of 13-24 per set: {\"ALL48\": 1.0, \"B1\": 0.0, \"B2\": 1.0, \"B3\": 0.0, \"B4\": 0.0, \"C24\": 1.0, \"C36\": 1.0, \"K96\": 1.0, \"S2\": 0.5, \"S4\": 0.25}"
+  },
+  {
+   "claim_id": "E9.sets_missing_13_24",
+   "section": "Exp9 exploratory",
+   "value": "B1,B3,B4",
+   "ci": null,
+   "source_path": "experiment_9/results/cells/W_*.json",
+   "draft_value": "B1,B3,B4,S4",
+   "verdict": "misdescribed",
+   "draft_wrong_value": "B1,B3,B4,S4",
+   "note": "partial-coverage sets omitted/misfiled by the draft: {'S2': 0.5, 'S4': 0.25}; their min SL refusal: {'S2': 0.732, 'S4': 0.927}"
+  },
+  {
+   "claim_id": "E9.full_cov_max_minSL",
+   "section": "Exp9 exploratory",
+   "value": 0.17073170731707318,
+   "ci": null,
+   "source_path": "experiment_9/results/per_item.parquet",
+   "draft_value": 0.2,
+   "verdict": "match",
+   "draft_wrong_value": null,
+   "note": "draft: all full-coverage sets reach SL < 0.20"
+  },
+  {
+   "claim_id": "E9.missing_min_minSL",
+   "section": "Exp9 exploratory",
+   "value": 0.926829268292683,
+   "ci": null,
+   "source_path": "experiment_9/results/per_item.parquet",
+   "draft_value": 0.93,
+   "verdict": "match",
+   "draft_wrong_value": null,
+   "note": "draft: the 'missing' sets never reach SL < 0.93; per set {\"S4\": 0.927, \"B3\": 0.951, \"B1\": 1.0, \"B4\": 1.0}"
+  },
+  {
+   "claim_id": "E9.G1.E",
+   "section": "Exp9 P2",
+   "value": 16.733893483877182,
+   "ci": null,
+   "source_path": "experiment_9/results/cells.csv",
+   "draft_value": 16.7,
+   "verdict": "match",
+   "draft_wrong_value": null,
+   "note": ""
+  },
+  {
+   "claim_id": "E9.G1.SL_narrow",
+   "section": "Exp9 P2",
+   "value": 0.975609756097561,
+   "ci": null,
+   "source_path": "experiment_9/results/per_item.parquet",
+   "draft_value": 0.98,
+   "verdict": "match",
+   "draft_wrong_value": null,
+   "note": "W_B3_c1, S3 half-B, n=41"
+  },
+  {
+   "claim_id": "E9.G1.SL_broad",
+   "section": "Exp9 P2",
+   "value": 1.0,
+   "ci": null,
+   "source_path": "experiment_9/results/per_item.parquet",
+   "draft_value": 1.0,
+   "verdict": "match",
+   "draft_wrong_value": null,
+   "note": "W_S4_c0.943_G1, n=41"
+  },
+  {
+   "claim_id": "E9.G1.SL_contrast",
+   "section": "Exp9 P2",
+   "value": -0.024390243902439046,
+   "ci": null,
+   "source_path": "experiment_9/results/per_item.parquet",
+   "draft_value": -0.02,
+   "verdict": "match",
+   "draft_wrong_value": null,
+   "note": "narrow minus broad"
+  },
+  {
+   "claim_id": "E9.G2.E",
+   "section": "Exp9 P2",
+   "value": 19.211296945810318,
+   "ci": null,
+   "source_path": "experiment_9/results/cells.csv",
+   "draft_value": 19.2,
+   "verdict": "match",
+   "draft_wrong_value": null,
+   "note": ""
+  },
+  {
+   "claim_id": "E9.G2.SL_narrow",
+   "section": "Exp9 P2",
+   "value": 0.6341463414634146,
+   "ci": null,
+   "source_path": "experiment_9/results/per_item.parquet",
+   "draft_value": 0.63,
+   "verdict": "match",
+   "draft_wrong_value": null,
+   "note": "W_B2_c1, S3 half-B, n=41"
+  },
+  {
+   "claim_id": "E9.G2.SL_broad",
+   "section": "Exp9 P2",
+   "value": 0.975609756097561,
+   "ci": null,
+   "source_path": "experiment_9/results/per_item.parquet",
+   "draft_value": 0.98,
+   "verdict": "match",
+   "draft_wrong_value": null,
+   "note": "W_S2_c0.726_G2, n=41"
+  },
+  {
+   "claim_id": "E9.G2.SL_contrast",
+   "section": "Exp9 P2",
+   "value": -0.3414634146341463,
+   "ci": null,
+   "source_path": "experiment_9/results/per_item.parquet",
+   "draft_value": -0.34,
+   "verdict": "match",
+   "draft_wrong_value": null,
+   "note": "narrow minus broad"
+  },
+  {
+   "claim_id": "E9.G3.E",
+   "section": "Exp9 P2",
+   "value": 35.554490849375725,
+   "ci": null,
+   "source_path": "experiment_9/results/cells.csv",
+   "draft_value": 35.6,
+   "verdict": "match",
+   "draft_wrong_value": null,
+   "note": ""
+  },
+  {
+   "claim_id": "E9.G3.SL_narrow",
+   "section": "Exp9 P2",
+   "value": 1.0,
+   "ci": null,
+   "source_path": "experiment_9/results/per_item.parquet",
+   "draft_value": 1.0,
+   "verdict": "match",
+   "draft_wrong_value": null,
+   "note": "W_B4_c1.5, S3 half-B, n=41"
+  },
+  {
+   "claim_id": "E9.G3.SL_broad",
+   "section": "Exp9 P2",
+   "value": 0.6585365853658537,
+   "ci": null,
+   "source_path": "experiment_9/results/per_item.parquet",
+   "draft_value": 0.66,
+   "verdict": "match",
+   "draft_wrong_value": null,
+   "note": "W_C36_c0.787_G3, n=41"
+  },
+  {
+   "claim_id": "E9.G3.SL_contrast",
+   "section": "Exp9 P2",
+   "value": 0.3414634146341463,
+   "ci": null,
+   "source_path": "experiment_9/results/per_item.parquet",
+   "draft_value": 0.34,
+   "verdict": "match",
+   "draft_wrong_value": null,
+   "note": "narrow minus broad"
+  },
+  {
+   "claim_id": "E9.G4.E",
+   "section": "Exp9 P2",
+   "value": 37.65126033872366,
+   "ci": null,
+   "source_path": "experiment_9/results/cells.csv",
+   "draft_value": 37.7,
+   "verdict": "match",
+   "draft_wrong_value": null,
+   "note": ""
+  },
+  {
+   "claim_id": "E9.G4.SL_narrow",
+   "section": "Exp9 P2",
+   "value": 0.9512195121951219,
+   "ci": null,
+   "source_path": "experiment_9/results/per_item.parquet",
+   "draft_value": 0.95,
+   "verdict": "match",
+   "draft_wrong_value": null,
+   "note": "W_B3_c1.5, S3 half-B, n=41"
+  },
+  {
+   "claim_id": "E9.G4.SL_broad",
+   "section": "Exp9 P2",
+   "value": 0.7317073170731707,
+   "ci": null,
+   "source_path": "experiment_9/results/per_item.parquet",
+   "draft_value": 0.73,
+   "verdict": "match",
+   "draft_wrong_value": null,
+   "note": "W_ALL48_c0.717_G4, n=41"
+  },
+  {
+   "claim_id": "E9.G4.SL_contrast",
+   "section": "Exp9 P2",
+   "value": 0.2195121951219512,
+   "ci": null,
+   "source_path": "experiment_9/results/per_item.parquet",
+   "draft_value": 0.22,
+   "verdict": "match",
+   "draft_wrong_value": null,
+   "note": "narrow minus broad"
+  },
+  {
+   "claim_id": "E9.index_prefix_en",
+   "section": "Exp9 Part A",
+   "value": 16,
+   "ci": null,
+   "source_path": "experiment_9/results/per_item.parquet (PA_* cells, S3 half-A harmful)",
+   "draft_value": 16,
+   "verdict": "match",
+   "draft_wrong_value": null,
+   "note": "smallest cumulative count whose judged harmful refusal < 0.5"
+  },
+  {
+   "claim_id": "E9.index_prefix_sl",
+   "section": "Exp9 Part A",
+   "value": 20,
+   "ci": null,
+   "source_path": "experiment_9/results/per_item.parquet (PA_* cells, S3 half-A harmful)",
+   "draft_value": 20,
+   "verdict": "match",
+   "draft_wrong_value": null,
+   "note": "smallest cumulative count whose judged harmful refusal < 0.5"
+  },
+  {
+   "claim_id": "E9.index_suffix_en",
+   "section": "Exp9 Part A",
+   "value": 24,
+   "ci": null,
+   "source_path": "experiment_9/results/per_item.parquet (PA_* cells, S3 half-A harmful)",
+   "draft_value": 24,
+   "verdict": "match",
+   "draft_wrong_value": null,
+   "note": "smallest cumulative count whose judged harmful refusal < 0.5"
+  },
+  {
+   "claim_id": "E9.index_suffix_sl",
+   "section": "Exp9 Part A",
+   "value": 24,
+   "ci": null,
+   "source_path": "experiment_9/results/per_item.parquet (PA_* cells, S3 half-A harmful)",
+   "draft_value": 24,
+   "verdict": "match",
+   "draft_wrong_value": null,
+   "note": "smallest cumulative count whose judged harmful refusal < 0.5"
+  },
+  {
+   "claim_id": "E9.lobo_25_36_sl",
+   "section": "Exp9 Part A",
+   "value": 0.38636363636363635,
+   "ci": null,
+   "source_path": "experiment_9/results/per_item.parquet",
+   "draft_value": 0.39,
+   "verdict": "match",
+   "draft_wrong_value": null,
+   "note": "refusal with layers 25-36 spared minus all-48 ablation"
+  },
+  {
+   "claim_id": "E9.lobo_25_36_en",
+   "section": "Exp9 Part A",
+   "value": 0.0,
+   "ci": null,
+   "source_path": "experiment_9/results/per_item.parquet",
+   "draft_value": 0.0,
+   "verdict": "match",
+   "draft_wrong_value": null,
+   "note": "refusal with layers 25-36 spared minus all-48 ablation"
+  },
+  {
+   "claim_id": "E9.S5X_gap.S5X_W_ALL48_c1.5",
+   "section": "Exp9 S5X",
+   "value": 0.06,
+   "ci": [
+    0.0,
+    0.12024999999999864
+   ],
+   "source_path": "experiment_9/results/per_item.parquet",
+   "draft_value": 0.06,
+   "verdict": "match",
+   "draft_wrong_value": null,
+   "note": "paired over 100 verified pairs, seed 20260924"
+  },
+  {
+   "claim_id": "E9.S5X_gap.S5X_W_K96_c1.5",
+   "section": "Exp9 S5X",
+   "value": 0.06,
+   "ci": [
+    0.01,
+    0.12
+   ],
+   "source_path": "experiment_9/results/per_item.parquet",
+   "draft_value": 0.06,
+   "verdict": "match",
+   "draft_wrong_value": null,
+   "note": "paired over 100 verified pairs, seed 20260924"
+  },
+  {
+   "claim_id": "E9.S5X_gap.S5X_noop",
+   "section": "Exp9 S5X",
+   "value": 0.07,
+   "ci": [
+    0.02,
+    0.13
+   ],
+   "source_path": "experiment_9/results/per_item.parquet",
+   "draft_value": 0.07,
+   "verdict": "match",
+   "draft_wrong_value": null,
+   "note": "paired over 100 verified pairs, seed 20260924"
+  },
+  {
+   "claim_id": "E10.n_cells",
+   "section": "Exp10",
+   "value": 57,
+   "ci": null,
+   "source_path": "experiment_10/results/per_item.parquet",
+   "draft_value": 57,
+   "verdict": "match",
+   "draft_wrong_value": null,
+   "note": ""
+  },
+  {
+   "claim_id": "E10.n_generations",
+   "section": "Exp10",
+   "value": 10690,
+   "ci": null,
+   "source_path": "experiment_10/results/per_item.parquet",
+   "draft_value": 10690,
+   "verdict": "match",
+   "draft_wrong_value": null,
+   "note": ""
+  },
+  {
+   "claim_id": "E10.E1.SL_B2",
+   "section": "Exp10 placement",
+   "value": 0.8285714285714286,
+   "ci": null,
+   "source_path": "experiment_10/results/per_item.parquet",
+   "draft_value": 0.83,
+   "verdict": "match",
+   "draft_wrong_value": null,
+   "note": "confirm split, n=70"
+  },
+  {
+   "claim_id": "E10.E1.SL_STR4",
+   "section": "Exp10 placement",
+   "value": 0.9285714285714286,
+   "ci": null,
+   "source_path": "experiment_10/results/per_item.parquet",
+   "draft_value": 0.93,
+   "verdict": "match",
+   "draft_wrong_value": null,
+   "note": ""
+  },
+  {
+   "claim_id": "E10.E1.SL_delta",
+   "section": "Exp10 placement",
+   "value": -0.09999999999999998,
+   "ci": null,
+   "source_path": "experiment_10/results/per_item.parquet",
+   "draft_value": -0.1,
+   "verdict": "match",
+   "draft_wrong_value": null,
+   "note": "draft delta is B2 minus STR4 printed to 2 dp"
+  },
+  {
+   "claim_id": "E10.E2.SL_B2",
+   "section": "Exp10 placement",
+   "value": 0.5142857142857142,
+   "ci": null,
+   "source_path": "experiment_10/results/per_item.parquet",
+   "draft_value": 0.51,
+   "verdict": "match",
+   "draft_wrong_value": null,
+   "note": "confirm split, n=70"
+  },
+  {
+   "claim_id": "E10.E2.SL_STR4",
+   "section": "Exp10 placement",
+   "value": 0.8857142857142857,
+   "ci": null,
+   "source_path": "experiment_10/results/per_item.parquet",
+   "draft_value": 0.89,
+   "verdict": "match",
+   "draft_wrong_value": null,
+   "note": ""
+  },
+  {
+   "claim_id": "E10.E2.SL_delta",
+   "section": "Exp10 placement",
+   "value": -0.37142857142857144,
+   "ci": null,
+   "source_path": "experiment_10/results/per_item.parquet",
+   "draft_value": -0.37,
+   "verdict": "match",
+   "draft_wrong_value": null,
+   "note": "draft delta is B2 minus STR4 printed to 2 dp"
+  },
+  {
+   "claim_id": "E10.E3.SL_B2",
+   "section": "Exp10 placement",
+   "value": 0.24285714285714285,
+   "ci": null,
+   "source_path": "experiment_10/results/per_item.parquet",
+   "draft_value": 0.24,
+   "verdict": "match",
+   "draft_wrong_value": null,
+   "note": "confirm split, n=70"
+  },
+  {
+   "claim_id": "E10.E3.SL_STR4",
+   "section": "Exp10 placement",
+   "value": 0.8142857142857143,
+   "ci": null,
+   "source_path": "experiment_10/results/per_item.parquet",
+   "draft_value": 0.81,
+   "verdict": "match",
+   "draft_wrong_value": null,
+   "note": ""
+  },
+  {
+   "claim_id": "E10.E3.SL_delta",
+   "section": "Exp10 placement",
+   "value": -0.5714285714285714,
+   "ci": null,
+   "source_path": "experiment_10/results/per_item.parquet",
+   "draft_value": -0.57,
+   "verdict": "match",
+   "draft_wrong_value": null,
+   "note": "draft delta is B2 minus STR4 printed to 2 dp"
+  },
+  {
+   "claim_id": "E10.E1.SL_narrow_mean",
+   "section": "Exp10 matched groups",
+   "value": 0.8142857142857143,
+   "ci": null,
+   "source_path": "experiment_10/results/per_item.parquet",
+   "draft_value": 0.81,
+   "verdict": "match",
+   "draft_wrong_value": null,
+   "note": "narrow = mean(B2,B3); broad = mean(STR2,ALL) (experiment_10 configs/design.json roles)"
+  },
+  {
+   "claim_id": "E10.E1.SL_broad_mean",
+   "section": "Exp10 matched groups",
+   "value": 0.8785714285714286,
+   "ci": null,
+   "source_path": "experiment_10/results/per_item.parquet",
+   "draft_value": 0.88,
+   "verdict": "match",
+   "draft_wrong_value": null,
+   "note": ""
+  },
+  {
+   "claim_id": "E10.E1.SL_contrast",
+   "section": "Exp10 matched groups",
+   "value": -0.06428571428571428,
+   "ci": null,
+   "source_path": "experiment_10/results/per_item.parquet",
+   "draft_value": -0.06,
+   "verdict": "match",
+   "draft_wrong_value": null,
+   "note": ""
+  },
+  {
+   "claim_id": "E10.E2.SL_narrow_mean",
+   "section": "Exp10 matched groups",
+   "value": 0.55,
+   "ci": null,
+   "source_path": "experiment_10/results/per_item.parquet",
+   "draft_value": 0.55,
+   "verdict": "match",
+   "draft_wrong_value": null,
+   "note": "narrow = mean(B2,B3); broad = mean(STR2,ALL) (experiment_10 configs/design.json roles)"
+  },
+  {
+   "claim_id": "E10.E2.SL_broad_mean",
+   "section": "Exp10 matched groups",
+   "value": 0.7071428571428572,
+   "ci": null,
+   "source_path": "experiment_10/results/per_item.parquet",
+   "draft_value": 0.71,
+   "verdict": "match",
+   "draft_wrong_value": null,
+   "note": ""
+  },
+  {
+   "claim_id": "E10.E2.SL_contrast",
+   "section": "Exp10 matched groups",
+   "value": -0.15714285714285714,
+   "ci": null,
+   "source_path": "experiment_10/results/per_item.parquet",
+   "draft_value": -0.16,
+   "verdict": "match",
+   "draft_wrong_value": null,
+   "note": ""
+  },
+  {
+   "claim_id": "E10.E3.SL_narrow_mean",
+   "section": "Exp10 matched groups",
+   "value": 0.35,
+   "ci": null,
+   "source_path": "experiment_10/results/per_item.parquet",
+   "draft_value": 0.35,
+   "verdict": "match",
+   "draft_wrong_value": null,
+   "note": "narrow = mean(B2,B3); broad = mean(STR2,ALL) (experiment_10 configs/design.json roles)"
+  },
+  {
+   "claim_id": "E10.E3.SL_broad_mean",
+   "section": "Exp10 matched groups",
+   "value": 0.44285714285714284,
+   "ci": null,
+   "source_path": "experiment_10/results/per_item.parquet",
+   "draft_value": 0.44,
+   "verdict": "match",
+   "draft_wrong_value": null,
+   "note": ""
+  },
+  {
+   "claim_id": "E10.E3.SL_contrast",
+   "section": "Exp10 matched groups",
+   "value": -0.09285714285714286,
+   "ci": null,
+   "source_path": "experiment_10/results/per_item.parquet",
+   "draft_value": -0.09,
+   "verdict": "match",
+   "draft_wrong_value": null,
+   "note": ""
+  },
+  {
+   "claim_id": "E10.PB2_SL_narrow_minus_broad",
+   "section": "Exp10 PB2 (artifact ref)",
+   "value": -0.10476190476190478,
+   "ci": null,
+   "source_path": "experiment_10/results/per_item.parquet",
+   "draft_value": -0.1,
+   "verdict": "match",
+   "draft_wrong_value": null,
+   "note": "n=70 held-out items; artifact reference -0.1048"
+  },
+  {
+   "claim_id": "E10.PB3_interaction",
+   "section": "Exp10 PB3 (artifact ref)",
+   "value": -0.07142857142857145,
+   "ci": null,
+   "source_path": "experiment_10/results/per_item.parquet",
+   "draft_value": -0.07,
+   "verdict": "match",
+   "draft_wrong_value": null,
+   "note": "(SL narrow-broad) - (EN narrow-broad); artifact reference -0.071"
+  },
+  {
+   "claim_id": "E11.A_orig.S5X_EN_refusal",
+   "section": "Exp11 S5X table",
+   "value": 0.95,
+   "ci": null,
+   "source_path": "experiment_11/results/eval_gen + judge_out/eval_qwen.jsonl",
+   "draft_value": 0.95,
+   "verdict": "match",
+   "draft_wrong_value": null,
+   "note": ""
+  },
+  {
+   "claim_id": "E11.A_orig.S5X_SL_refusal",
+   "section": "Exp11 S5X table",
+   "value": 0.99,
+   "ci": null,
+   "source_path": "experiment_11/results/eval_gen + judge_out/eval_qwen.jsonl",
+   "draft_value": 0.99,
+   "verdict": "match",
+   "draft_wrong_value": null,
+   "note": ""
+  },
+  {
+   "claim_id": "E11.A_orig.S5X_gap",
+   "section": "Exp11 S5X table",
+   "value": 0.04,
+   "ci": [
+    0.01,
+    0.09
+   ],
+   "source_path": "experiment_11/results/eval_gen + judge_out/eval_qwen.jsonl",
+   "draft_value": 0.04,
+   "verdict": "match",
+   "draft_wrong_value": null,
+   "note": "100 pairs"
+  },
+  {
+   "claim_id": "E11.B_keyword_t96.S5X_EN_refusal",
+   "section": "Exp11 S5X table",
+   "value": 0.15,
+   "ci": null,
+   "source_path": "experiment_11/results/eval_gen + judge_out/eval_qwen.jsonl",
+   "draft_value": 0.15,
+   "verdict": "match",
+   "draft_wrong_value": null,
+   "note": ""
+  },
+  {
+   "claim_id": "E11.B_keyword_t96.S5X_SL_refusal",
+   "section": "Exp11 S5X table",
+   "value": 0.83,
+   "ci": null,
+   "source_path": "experiment_11/results/eval_gen + judge_out/eval_qwen.jsonl",
+   "draft_value": 0.83,
+   "verdict": "match",
+   "draft_wrong_value": null,
+   "note": ""
+  },
+  {
+   "claim_id": "E11.B_keyword_t96.S5X_gap",
+   "section": "Exp11 S5X table",
+   "value": 0.68,
+   "ci": [
+    0.59,
+    0.77
+   ],
+   "source_path": "experiment_11/results/eval_gen + judge_out/eval_qwen.jsonl",
+   "draft_value": 0.68,
+   "verdict": "match",
+   "draft_wrong_value": null,
+   "note": "100 pairs"
+  },
+  {
+   "claim_id": "E11.C_corrected.S5X_EN_refusal",
+   "section": "Exp11 S5X table",
+   "value": 0.03,
+   "ci": null,
+   "source_path": "experiment_11/results/eval_gen + judge_out/eval_qwen.jsonl",
+   "draft_value": 0.03,
+   "verdict": "match",
+   "draft_wrong_value": null,
+   "note": ""
+  },
+  {
+   "claim_id": "E11.C_corrected.S5X_SL_refusal",
+   "section": "Exp11 S5X table",
+   "value": 0.41,
+   "ci": null,
+   "source_path": "experiment_11/results/eval_gen + judge_out/eval_qwen.jsonl",
+   "draft_value": 0.41,
+   "verdict": "match",
+   "draft_wrong_value": null,
+   "note": ""
+  },
+  {
+   "claim_id": "E11.C_corrected.S5X_gap",
+   "section": "Exp11 S5X table",
+   "value": 0.38,
+   "ci": [
+    0.29,
+    0.47
+   ],
+   "source_path": "experiment_11/results/eval_gen + judge_out/eval_qwen.jsonl",
+   "draft_value": 0.38,
+   "verdict": "match",
+   "draft_wrong_value": null,
+   "note": "100 pairs"
+  },
+  {
+   "claim_id": "E11.D_reselected_clf.S5X_EN_refusal",
+   "section": "Exp11 S5X table",
+   "value": 0.05,
+   "ci": null,
+   "source_path": "experiment_11/results/eval_gen + judge_out/eval_qwen.jsonl",
+   "draft_value": 0.05,
+   "verdict": "match",
+   "draft_wrong_value": null,
+   "note": ""
+  },
+  {
+   "claim_id": "E11.D_reselected_clf.S5X_SL_refusal",
+   "section": "Exp11 S5X table",
+   "value": 0.35,
+   "ci": null,
+   "source_path": "experiment_11/results/eval_gen + judge_out/eval_qwen.jsonl",
+   "draft_value": 0.35,
+   "verdict": "match",
+   "draft_wrong_value": null,
+   "note": ""
+  },
+  {
+   "claim_id": "E11.D_reselected_clf.S5X_gap",
+   "section": "Exp11 S5X table",
+   "value": 0.3,
+   "ci": [
+    0.21,
+    0.39
+   ],
+   "source_path": "experiment_11/results/eval_gen + judge_out/eval_qwen.jsonl",
+   "draft_value": 0.3,
+   "verdict": "match",
+   "draft_wrong_value": null,
+   "note": "100 pairs"
+  },
+  {
+   "claim_id": "E11.D2_reselected_judge.S5X_EN_refusal",
+   "section": "Exp11 S5X table",
+   "value": 0.04,
+   "ci": null,
+   "source_path": "experiment_11/results/eval_gen + judge_out/eval_qwen.jsonl",
+   "draft_value": 0.04,
+   "verdict": "match",
+   "draft_wrong_value": null,
+   "note": ""
+  },
+  {
+   "claim_id": "E11.D2_reselected_judge.S5X_SL_refusal",
+   "section": "Exp11 S5X table",
+   "value": 0.45,
+   "ci": null,
+   "source_path": "experiment_11/results/eval_gen + judge_out/eval_qwen.jsonl",
+   "draft_value": 0.45,
+   "verdict": "match",
+   "draft_wrong_value": null,
+   "note": ""
+  },
+  {
+   "claim_id": "E11.D2_reselected_judge.S5X_gap",
+   "section": "Exp11 S5X table",
+   "value": 0.41,
+   "ci": [
+    0.32,
+    0.51
+   ],
+   "source_path": "experiment_11/results/eval_gen + judge_out/eval_qwen.jsonl",
+   "draft_value": 0.41,
+   "verdict": "match",
+   "draft_wrong_value": null,
+   "note": "100 pairs"
+  },
+  {
+   "claim_id": "E11.F_dose1.5.S5X_EN_refusal",
+   "section": "Exp11 S5X table",
+   "value": 0.03,
+   "ci": null,
+   "source_path": "experiment_11/results/eval_gen + judge_out/eval_qwen.jsonl",
+   "draft_value": 0.03,
+   "verdict": "match",
+   "draft_wrong_value": null,
+   "note": ""
+  },
+  {
+   "claim_id": "E11.F_dose1.5.S5X_SL_refusal",
+   "section": "Exp11 S5X table",
+   "value": 0.36,
+   "ci": null,
+   "source_path": "experiment_11/results/eval_gen + judge_out/eval_qwen.jsonl",
+   "draft_value": 0.36,
+   "verdict": "match",
+   "draft_wrong_value": null,
+   "note": ""
+  },
+  {
+   "claim_id": "E11.F_dose1.5.S5X_gap",
+   "section": "Exp11 S5X table",
+   "value": 0.33,
+   "ci": [
+    0.24,
+    0.43
+   ],
+   "source_path": "experiment_11/results/eval_gen + judge_out/eval_qwen.jsonl",
+   "draft_value": 0.33,
+   "verdict": "match",
+   "draft_wrong_value": null,
+   "note": "100 pairs"
+  },
+  {
+   "claim_id": "E11.F_dose2.0.S5X_EN_refusal",
+   "section": "Exp11 S5X table",
+   "value": 0.0,
+   "ci": null,
+   "source_path": "experiment_11/results/eval_gen + judge_out/eval_qwen.jsonl",
+   "draft_value": 0.0,
+   "verdict": "match",
+   "draft_wrong_value": null,
+   "note": ""
+  },
+  {
+   "claim_id": "E11.F_dose2.0.S5X_SL_refusal",
+   "section": "Exp11 S5X table",
+   "value": 0.0,
+   "ci": null,
+   "source_path": "experiment_11/results/eval_gen + judge_out/eval_qwen.jsonl",
+   "draft_value": 0.0,
+   "verdict": "match",
+   "draft_wrong_value": null,
+   "note": ""
+  },
+  {
+   "claim_id": "E11.F_dose2.0.S5X_gap",
+   "section": "Exp11 S5X table",
+   "value": 0.0,
+   "ci": [
+    0.0,
+    0.0
+   ],
+   "source_path": "experiment_11/results/eval_gen + judge_out/eval_qwen.jsonl",
+   "draft_value": 0.0,
+   "verdict": "match",
+   "draft_wrong_value": null,
+   "note": "100 pairs; class counts {'complied': 165, 'partial': 35}"
+  },
+  {
+   "claim_id": "E11.F_dose3.0.S5X_EN_refusal",
+   "section": "Exp11 S5X table",
+   "value": 0.0,
+   "ci": null,
+   "source_path": "experiment_11/results/eval_gen + judge_out/eval_qwen.jsonl",
+   "draft_value": 0.0,
+   "verdict": "match",
+   "draft_wrong_value": null,
+   "note": ""
+  },
+  {
+   "claim_id": "E11.F_dose3.0.S5X_SL_refusal",
+   "section": "Exp11 S5X table",
+   "value": 0.0,
+   "ci": null,
+   "source_path": "experiment_11/results/eval_gen + judge_out/eval_qwen.jsonl",
+   "draft_value": 0.0,
+   "verdict": "match",
+   "draft_wrong_value": null,
+   "note": ""
+  },
+  {
+   "claim_id": "E11.F_dose3.0.S5X_gap",
+   "section": "Exp11 S5X table",
+   "value": 0.0,
+   "ci": [
+    0.0,
+    0.0
+   ],
+   "source_path": "experiment_11/results/eval_gen + judge_out/eval_qwen.jsonl",
+   "draft_value": 0.0,
+   "verdict": "match",
+   "draft_wrong_value": null,
+   "note": "100 pairs; class counts {'complied': 188, 'partial': 12}"
+  },
+  {
+   "claim_id": "E11.C_corrected.harmless_KL",
+   "section": "Exp11 selection",
+   "value": 0.2584,
+   "ci": null,
+   "source_path": "experiment_11/results/headline_table.csv (harmless KL)",
+   "draft_value": 0.258,
+   "verdict": "match",
+   "draft_wrong_value": null,
+   "note": ""
+  },
+  {
+   "claim_id": "E11.F_dose1.5.harmless_KL",
+   "section": "Exp11 selection",
+   "value": 0.073,
+   "ci": null,
+   "source_path": "experiment_11/results/headline_table.csv (harmless KL)",
+   "draft_value": 0.073,
+   "verdict": "match",
+   "draft_wrong_value": null,
+   "note": ""
+  },
+  {
+   "claim_id": "E11.t96_journal_KL",
+   "section": "Exp11 selection",
+   "value": 0.024250300601124763,
+   "ci": null,
+   "source_path": "experiment_11/results/frozen_predictions.json (iteration1_journal_keyword)",
+   "draft_value": 0.024,
+   "verdict": "match",
+   "draft_wrong_value": null,
+   "note": "eval-set harmless KL of the same arm is 0.0263 (headline_table.csv)"
+  },
+  {
+   "claim_id": "E11.t96_journal_keyword_per100",
+   "section": "Exp11 selection",
+   "value": 69,
+   "ci": null,
+   "source_path": "experiment_11/results/frozen_predictions.json (iteration1_journal_keyword)",
+   "draft_value": 69,
+   "verdict": "match",
+   "draft_wrong_value": null,
+   "note": "the in-loop REPLAY re-score of trial 96 reports 74/100 (headline_table.csv); the draft should say which count it quotes"
+  },
+  {
+   "claim_id": "E11.A1_corrected",
+   "section": "Exp11 coverage",
+   "value": 63.972441443971874,
+   "ci": null,
+   "source_path": "experiment_11/results/frozen_predictions_with_verdicts.json",
+   "draft_value": 64.0,
+   "verdict": "match",
+   "draft_wrong_value": null,
+   "note": ""
+  },
+  {
+   "claim_id": "E11.A1_trial96",
+   "section": "Exp11 coverage",
+   "value": 26.01157247479183,
+   "ci": null,
+   "source_path": "experiment_11/results/frozen_predictions_with_verdicts.json",
+   "draft_value": 26.0,
+   "verdict": "match",
+   "draft_wrong_value": null,
+   "note": ""
+  },
+  {
+   "claim_id": "E11.trial7_KL",
+   "section": "Exp11 selection",
+   "value": 0.25837069749832153,
+   "ci": null,
+   "source_path": "experiment_11/results/trials_gemma_corrected.csv",
+   "draft_value": 0.258,
+   "verdict": "match",
+   "draft_wrong_value": null,
+   "note": "trial 7 corrected_refusals=5"
+  },
+  {
+   "claim_id": "E11.trial7_refusals",
+   "section": "Exp11 selection",
+   "value": 5,
+   "ci": null,
+   "source_path": "experiment_11/results/trials_gemma_corrected.csv",
+   "draft_value": 5,
+   "verdict": "match",
+   "draft_wrong_value": null,
+   "note": ""
+  },
+  {
+   "claim_id": "E11.classifier_certification_kappa",
+   "section": "Exp11 setup",
+   "value": 0.8580872169796129,
+   "ci": [
+    0.8204117789546042,
+    0.8884270182864591
+   ],
+   "source_path": "experiment_11/scorer/certification.json (gate.kappa_qwen)",
+   "draft_value": 0.924,
+   "verdict": "misdescribed",
+   "draft_wrong_value": 0.924,
+   "note": "the draft's 0.924 is the in-loop kappa over the 116 draws (inloop_analysis); the CERTIFIED value within edited cells on 20 held-out replayed trials is this one, vs the keyword rule's 0.143; the draft also names first-64-token embeddings, but the classifier is char/word TF-IDF + hand features on the first 100 tokens"
+  },
+  {
+   "claim_id": "E12.indices_raw",
+   "section": "Exp12 DEV indices",
+   "value": null,
+   "ci": null,
+   "source_path": "experiment_12/results/indices.json",
+   "draft_value": "table",
+   "verdict": "match",
+   "draft_wrong_value": null,
+   "note": "{\"table\": {\"gemma|en\": {\"model\": \"gemma\", \"lang\": \"en\", \"index\": 0.5, \"auc\": 0.5024390243902439, \"censored\": false, \"eligible\": true, \"B_cos\": 1.0, \"B_base\": 0.8536585365853658, \"B_ss\": 0.6585365853658537, \"B_margin\": 26.549314083809616, \"B_margin_sets\": {\"margin\": 26.549314083809616, \"n_R\": 2, \"n_C\": 20}, \"RND_refusal\": 0.6585365853658537, \"curve\": {\"0.0\": 0.8536585365853658, \"0.1\": 0.90243902439"
+  },
+  {
+   "claim_id": "E12.P1_rows",
+   "section": "Exp12 P1",
+   "value": 21,
+   "ci": null,
+   "source_path": "experiment_12/results/analysis.json",
+   "draft_value": 21,
+   "verdict": "match",
+   "draft_wrong_value": null,
+   "note": ""
+  },
+  {
+   "claim_id": "E12.eligible_rows",
+   "section": "Exp12 eligibility",
+   "value": 7,
+   "ci": null,
+   "source_path": "experiment_12/results/indices.json / analysis.json",
+   "draft_value": 8,
+   "verdict": "mismatch",
+   "draft_wrong_value": 8,
+   "note": "draft: 'Eight eligible rows remained'; 12 model x language rows minus 4 mistral minus qwen3-LT = 7; 7 rows x 3 weight cells = 21 P1 rows"
+  },
+  {
+   "claim_id": "E12.P1_spearman",
+   "section": "Exp12 P1",
+   "value": -0.008715208609729953,
+   "ci": null,
+   "source_path": "experiment_12/results/analysis.json",
+   "draft_value": -0.009,
+   "verdict": "match",
+   "draft_wrong_value": null,
+   "note": ""
+  },
+  {
+   "claim_id": "E12.gemma.conf_W3.en",
+   "section": "Exp12 weight panel",
+   "value": 0.6,
+   "ci": null,
+   "source_path": "experiment_12/results/gemma/gens/conf_W3.jsonl + labels_qwen.jsonl",
+   "draft_value": 0.6,
+   "verdict": "match",
+   "draft_wrong_value": null,
+   "note": "n=60"
+  },
+  {
+   "claim_id": "E12.gemma.conf_W3.de",
+   "section": "Exp12 weight panel",
+   "value": 0.5333333333333333,
+   "ci": null,
+   "source_path": "experiment_12/results/gemma/gens/conf_W3.jsonl + labels_qwen.jsonl",
+   "draft_value": 0.53,
+   "verdict": "match",
+   "draft_wrong_value": null,
+   "note": "n=60"
+  },
+  {
+   "claim_id": "E12.gemma.conf_W3.lt",
+   "section": "Exp12 weight panel",
+   "value": 0.75,
+   "ci": null,
+   "source_path": "experiment_12/results/gemma/gens/conf_W3.jsonl + labels_qwen.jsonl",
+   "draft_value": 0.75,
+   "verdict": "match",
+   "draft_wrong_value": null,
+   "note": "n=60"
+  },
+  {
+   "claim_id": "E12.gemma.conf_W3.sl",
+   "section": "Exp12 weight panel",
+   "value": 0.9166666666666666,
+   "ci": null,
+   "source_path": "experiment_12/results/gemma/gens/conf_W3.jsonl + labels_qwen.jsonl",
+   "draft_value": 0.92,
+   "verdict": "match",
+   "draft_wrong_value": null,
+   "note": "n=60"
+  },
+  {
+   "claim_id": "E12.qwen3.conf_W3.en",
+   "section": "Exp12 weight panel",
+   "value": 0.36666666666666664,
+   "ci": null,
+   "source_path": "experiment_12/results/qwen3/gens/conf_W3.jsonl + labels_qwen.jsonl",
+   "draft_value": 0.37,
+   "verdict": "match",
+   "draft_wrong_value": null,
+   "note": "n=60"
+  },
+  {
+   "claim_id": "E12.qwen3.conf_W3.sl",
+   "section": "Exp12 weight panel",
+   "value": 0.31666666666666665,
+   "ci": null,
+   "source_path": "experiment_12/results/qwen3/gens/conf_W3.jsonl + labels_qwen.jsonl",
+   "draft_value": 0.32,
+   "verdict": "match",
+   "draft_wrong_value": null,
+   "note": "n=60"
+  },
+  {
+   "claim_id": "EV1.dead_end_ledger_count",
+   "section": "Evaluation 1",
+   "value": 16,
+   "ci": null,
+   "source_path": "iter_3 paper_draft.md (ledger table)",
+   "draft_value": 20,
+   "verdict": "mismatch",
+   "draft_wrong_value": 20,
+   "note": "the text says 'Twenty items'; the table lists this many rows"
+  },
+  {
+   "claim_id": "EV1.pending_packets",
+   "section": "Evaluation 1",
+   "value": 5,
+   "ci": null,
+   "source_path": "results/pending_human_review_iter4.json",
+   "draft_value": 5,
+   "verdict": "misdescribed",
+   "draft_wrong_value": 5,
+   "note": "5 files, of which 3 are native-review packets (570 rows) and 2 are EXECUTOR-labelled checks; the draft calls all five 'packets ready for native-speaker labelling'"
+  },
+  {
+   "claim_id": "EV1.pending_items",
+   "section": "Evaluation 1",
+   "value": 640,
+   "ci": null,
+   "source_path": "results/pending_human_review_iter4.json",
+   "draft_value": 640,
+   "verdict": "match",
+   "draft_wrong_value": null,
+   "note": ""
+  },
+  {
+   "claim_id": "EV1.audit_checked",
+   "section": "Evaluation 1",
+   "value": null,
+   "ci": null,
+   "source_path": "iter_3 evaluation_1 results/claims_registry.csv",
+   "draft_value": 167,
+   "verdict": "match",
+   "draft_wrong_value": null,
+   "note": "claims_registry rows = 99"
+  }
+ ]
+}

@@ -1,0 +1,24 @@
+{
+ "cell": "PF_noop",
+ "family": "noop",
+ "E": null,
+ "part": "profile",
+ "stage": "profile",
+ "model": "gemma",
+ "flores_dNLL": null,
+ "kl_dolly": null,
+ "sec_gen": 34.8,
+ "sec_tf": 0.0,
+ "complete_plan": [
+  [
+   44,
+   "en"
+  ],
+  [
+   44,
+   "sl"
+  ]
+ ],
+ "max_new": 96,
+ "done_utc": "2026-09-24T16:20:40Z"
+}

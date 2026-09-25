@@ -1,0 +1,47 @@
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/html/2609.04721
+Type: HTML
+Pattern: 0\.515|geometric similarity|cosine (20 matches in 202263 chars)
+
+--- Content ---
+
+2695:... Cross-architecture maps.
+        5. Harm-weighted pool.
+        6. Unequal widths.
+     2. A.2 Recipe for siting the gate on a new model
+     3. A.3 Cross-architecture transfer, ablation test
+     4. A.4 The locus across model scale
+     5. A.5 Gate-strength calibration on a second SSM
+     6. A.6 Geometric similarity is unreliable for cross-architecture transfer
+     7. A.7 A matched random-rotation null for the ceiling transport
+     8. A.8 Category-held-out cross-validation of the transport
+     9. A.9 The causal ablation holds through the rigid rotation
+     10. A.10 A Mamba-2 target: harm is decodable, but ...
+--
+34985:...: Cross-architecture transfer, ablation test (plotted in Figure 2). Removing the mapped direction (Transferred) raises attack success like removing the target’s own (Native). The Random control does not. Random is mapped through WW like Transferred, then orthogonalized to the target’s refusal axis (cosine ≈ 0{\approx}\,0), so it shares the map without inheriting the refusal direction. The effect holds in all six rows: three model pairs (Mamba={=}Falcon-Mamba, Mamba3={=}Falcon3-Mamba), each tested in both directions. Pair / direction | Base | Native | Transferred | Random  
+---|---|---|---|---  
+Llam...
+--
+84627:...s are the undefended rates) and every point passes the coherence screen. With the anchor’s mixer-output layer ranking instead, the anchor’s gain over-steers Falcon3 (Appendix A.20).
+
+### A.5 Gate-strength calibration on a second SSM
+
+Figure 6 calibrates the gate strength on the second SSM.
+
+### A.6 Geometric similarity is unreliable for cross-architecture transfer
+
+A natural metric for the mapped direction is its cosine with the target’s own refusal direction, but this is not reliable. The ridge map is biased toward the target’s refusal axis, so even a _random_ source direction can map to a high cosine, up to 0.515 across our pairs. Such a direction is not always behaviorally inert, so a mapped-random direction is not a clean specificity control. This is why the ablation control in Section 4 orthogonalizes the random direction to the target refusal axis after mapping (cosine ≈ 0{\approx}\,0), removing the leaked component. Two further controls agree that geometry alone is unreliable. Fitting the map on shuffled pairs collapses the held-out cosine (0.17 versus 0.95), and the unmapped source direction is near orthogonal to the target’s (0.01). A cross-architecture transfer claim should therefore rest on the structural and behavioral specificity controls, not on a geometric similarity score.
+
+### A.7 A matched random-rotation null for the ceiling transport
+
+The within-Mamba transport in Section 4 is at ceiling, so we add a _matched_ null that makes the structural claim discriminating: a shuffled-correspondence _orthogonal_ map (a random rotation, not a flexible ridge map) transp...
+--
+90277:...e one requirement is that the rotation be fit the way the ceiling-AUROC structural transport is fit. Orthogonal Procrustes is scale-sensitive, so fitting it on raw activations aligns the high-variance dimensions while under-aligning the refusal direction. The transported direction then reaches only cosine 0.68 (Llama) and 0.35 (Mistral) to the target’s own refusal axis, and ablating it barely moves attack success. Fitting the rotation on standardized activations, exactly as the structural transport does, aligns the refusal direction closely (0.998 to 0.998 into Falcon-Mamba).
+
+Through the standardiz...
+--
+101226:...ction harder does not help: a per-token adaptive gain that boosts on the harmful pivot over-steers into the same degeneration. The roleplay attack instead injects a recoverable _persona_ component at the write site, the direction the wrapper adds to a harmful prompt, which is distinct from refusal (cosine -0.30). Suppressing this persona direction alone is worse (79.5%, it de-personifies the request without inducing refusal), and amplifying refusal alone reaches 38.0% in this single-layer persona-suppression setting (the multi-layer headline gate reaches 30.0%, Table 8). Doing both, amplifying the r...
+--
+102016:...nign-but-spicy prompts, so the gate adds 0.0% over-refusal beyond the base model’s 12.0% on these prompts. Roleplay is therefore a persona-injection problem, not a refusal-strength one, and the two directions are needed together because neither suffices alone. The sign of the persona-versus-refusal cosine is not an artifact of layer choice: across a three-layer sweep per model it is negative at every steered layer in all three non-transformer models, ranging over the sweep from -0.49 to +0.02 (the positive end a single early RWKV layer), against +0.58 to +0.82 in both transformers. Table 11 gives th...
+--
+[8 more matches not shown]

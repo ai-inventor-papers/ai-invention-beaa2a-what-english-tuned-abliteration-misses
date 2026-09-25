@@ -1,0 +1,1268 @@
+{
+ "n_checks": 209,
+ "n_pass": 209,
+ "n_fail": 0,
+ "failures": [],
+ "checks": [
+  {
+   "check": "profile e_raw en h1",
+   "rederived": -0.022727272727272728,
+   "reported": -0.022727272727272728,
+   "ok": true
+  },
+  {
+   "check": "profile e_raw en h12",
+   "rederived": 0.22727272727272727,
+   "reported": 0.22727272727272727,
+   "ok": true
+  },
+  {
+   "check": "profile e_raw en h20",
+   "rederived": 0.3181818181818182,
+   "reported": 0.3181818181818182,
+   "ok": true
+  },
+  {
+   "check": "profile e_raw en h24",
+   "rederived": 0.22727272727272727,
+   "reported": 0.22727272727272727,
+   "ok": true
+  },
+  {
+   "check": "profile e_raw en h30",
+   "rederived": 0.18181818181818182,
+   "reported": 0.18181818181818182,
+   "ok": true
+  },
+  {
+   "check": "profile e_raw en h40",
+   "rederived": 0.045454545454545456,
+   "reported": 0.045454545454545456,
+   "ok": true
+  },
+  {
+   "check": "profile e_raw en h48",
+   "rederived": 0.045454545454545456,
+   "reported": 0.045454545454545456,
+   "ok": true
+  },
+  {
+   "check": "profile split-half en",
+   "rederived": 0.841545560309125,
+   "reported": 0.841545560309125,
+   "ok": true
+  },
+  {
+   "check": "profile e_norm en argmax",
+   "rederived": 19.0,
+   "reported": 19.0,
+   "ok": true
+  },
+  {
+   "check": "profile e_norm en max",
+   "rederived": 0.07189369940161915,
+   "reported": 0.07189369940161915,
+   "ok": true
+  },
+  {
+   "check": "profile e_raw sl h1",
+   "rederived": 0.0,
+   "reported": 0.0,
+   "ok": true
+  },
+  {
+   "check": "profile e_raw sl h12",
+   "rederived": 0.11363636363636363,
+   "reported": 0.11363636363636363,
+   "ok": true
+  },
+  {
+   "check": "profile e_raw sl h20",
+   "rederived": 0.06818181818181818,
+   "reported": 0.06818181818181818,
+   "ok": true
+  },
+  {
+   "check": "profile e_raw sl h24",
+   "rederived": 0.0,
+   "reported": 0.0,
+   "ok": true
+  },
+  {
+   "check": "profile e_raw sl h30",
+   "rederived": 0.045454545454545456,
+   "reported": 0.045454545454545456,
+   "ok": true
+  },
+  {
+   "check": "profile e_raw sl h40",
+   "rederived": 0.022727272727272728,
+   "reported": 0.022727272727272728,
+   "ok": true
+  },
+  {
+   "check": "profile e_raw sl h48",
+   "rederived": 0.0,
+   "reported": 0.0,
+   "ok": true
+  },
+  {
+   "check": "profile split-half sl",
+   "rederived": 0.5124478791657866,
+   "reported": 0.5124478791657866,
+   "ok": true
+  },
+  {
+   "check": "profile e_norm sl argmax",
+   "rederived": 16.0,
+   "reported": 16.0,
+   "ok": true
+  },
+  {
+   "check": "profile e_norm sl max",
+   "rederived": 0.08955223880597014,
+   "reported": 0.08955223880597014,
+   "ok": true
+  },
+  {
+   "check": "energy CF_G1_hiO_L16-23",
+   "rederived": 29.09281785786152,
+   "reported": 29.09281785786152,
+   "ok": true
+  },
+  {
+   "check": "O_en CF_G1_hiO_L16-23",
+   "rederived": 0.14808380082185707,
+   "reported": 0.14808380082185707,
+   "ok": true
+  },
+  {
+   "check": "O_sl CF_G1_hiO_L16-23",
+   "rederived": 0.14633669706306146,
+   "reported": 0.14633669706306146,
+   "ok": true
+  },
+  {
+   "check": "energy CF_G1_loO_L04-11",
+   "rederived": 29.092817857861522,
+   "reported": 29.092817857861522,
+   "ok": true
+  },
+  {
+   "check": "O_en CF_G1_loO_L04-11",
+   "rederived": 0.0015758131042506722,
+   "reported": 0.0015758131042506722,
+   "ok": true
+  },
+  {
+   "check": "O_sl CF_G1_loO_L04-11",
+   "rederived": 0.013447150768445824,
+   "reported": 0.013447150768445824,
+   "ok": true
+  },
+  {
+   "check": "energy CF_G2_hiO_L12-23",
+   "rederived": 36.139851585030556,
+   "reported": 36.139851585030556,
+   "ok": true
+  },
+  {
+   "check": "O_en CF_G2_hiO_L12-23",
+   "rederived": 0.1365968763847097,
+   "reported": 0.1365968763847097,
+   "ok": true
+  },
+  {
+   "check": "O_sl CF_G2_hiO_L12-23",
+   "rederived": 0.15485834576334226,
+   "reported": 0.15485834576334226,
+   "ok": true
+  },
+  {
+   "check": "energy CF_G2_loO_L33-44",
+   "rederived": 36.139851585030556,
+   "reported": 36.139851585030556,
+   "ok": true
+  },
+  {
+   "check": "O_en CF_G2_loO_L33-44",
+   "rederived": 0.039628626819294674,
+   "reported": 0.039628626819294674,
+   "ok": true
+  },
+  {
+   "check": "O_sl CF_G2_loO_L33-44",
+   "rederived": 0.02266270232141923,
+   "reported": 0.02266270232141923,
+   "ok": true
+  },
+  {
+   "check": "energy CF_G3_hiO_L16-31",
+   "rederived": 50.002392902970314,
+   "reported": 50.002392902970314,
+   "ok": true
+  },
+  {
+   "check": "O_en CF_G3_hiO_L16-31",
+   "rederived": 0.18113365182704463,
+   "reported": 0.18113365182704463,
+   "ok": true
+  },
+  {
+   "check": "O_sl CF_G3_hiO_L16-31",
+   "rederived": 0.17570643852460932,
+   "reported": 0.17570643852460932,
+   "ok": true
+  },
+  {
+   "check": "energy CF_G3_loO_L33-48",
+   "rederived": 50.002392902970314,
+   "reported": 50.002392902970314,
+   "ok": true
+  },
+  {
+   "check": "O_en CF_G3_loO_L33-48",
+   "rederived": 0.04576200485951256,
+   "reported": 0.04576200485951256,
+   "ok": true
+  },
+  {
+   "check": "O_sl CF_G3_loO_L33-48",
+   "rederived": 0.023712548046105782,
+   "reported": 0.023712548046105782,
+   "ok": true
+  },
+  {
+   "check": "energy CF_dose_G3loO_x1.5",
+   "rederived": 75.00358935445546,
+   "reported": 75.00358935445546,
+   "ok": true
+  },
+  {
+   "check": "O_en CF_dose_G3loO_x1.5",
+   "rederived": 0.04576200485951256,
+   "reported": 0.04576200485951256,
+   "ok": true
+  },
+  {
+   "check": "O_sl CF_dose_G3loO_x1.5",
+   "rederived": 0.023712548046105786,
+   "reported": 0.023712548046105786,
+   "ok": true
+  },
+  {
+   "check": "energy CF_dose_G3loO_x2",
+   "rederived": 100.00478580594066,
+   "reported": 100.00478580594066,
+   "ok": true
+  },
+  {
+   "check": "O_en CF_dose_G3loO_x2",
+   "rederived": 0.04576200485951256,
+   "reported": 0.04576200485951256,
+   "ok": true
+  },
+  {
+   "check": "O_sl CF_dose_G3loO_x2",
+   "rederived": 0.023712548046105786,
+   "reported": 0.023712548046105786,
+   "ok": true
+  },
+  {
+   "check": "energy CF_G4_hiO_L14-25",
+   "rederived": 25.838849669694902,
+   "reported": 25.838849669694902,
+   "ok": true
+  },
+  {
+   "check": "O_en CF_G4_hiO_L14-25",
+   "rederived": 0.1454573121867981,
+   "reported": 0.1454573121867981,
+   "ok": true
+  },
+  {
+   "check": "O_sl CF_G4_hiO_L14-25",
+   "rederived": 0.12992920594695825,
+   "reported": 0.12992920594695825,
+   "ok": true
+  },
+  {
+   "check": "energy CF_G4_loO_L02-13",
+   "rederived": 25.83884966969489,
+   "reported": 25.83884966969489,
+   "ok": true
+  },
+  {
+   "check": "O_en CF_G4_loO_L02-13",
+   "rederived": 0.012675489277748316,
+   "reported": 0.012675489277748316,
+   "ok": true
+  },
+  {
+   "check": "O_sl CF_G4_loO_L02-13",
+   "rederived": 0.04313227483100662,
+   "reported": 0.04313227483100662,
+   "ok": true
+  },
+  {
+   "check": "energy CF_G5_hiO_L24-31",
+   "rederived": 13.058712592720987,
+   "reported": 13.058712592720987,
+   "ok": true
+  },
+  {
+   "check": "O_en CF_G5_hiO_L24-31",
+   "rederived": 0.10495730774036849,
+   "reported": 0.10495730774036849,
+   "ok": true
+  },
+  {
+   "check": "O_sl CF_G5_hiO_L24-31",
+   "rederived": 0.09849132965062282,
+   "reported": 0.09849132965062282,
+   "ok": true
+  },
+  {
+   "check": "energy CF_G5_loO_L36-43",
+   "rederived": 13.058712592720987,
+   "reported": 13.058712592720987,
+   "ok": true
+  },
+  {
+   "check": "O_en CF_G5_loO_L36-43",
+   "rederived": 0.022820733842419796,
+   "reported": 0.022820733842419796,
+   "ok": true
+  },
+  {
+   "check": "O_sl CF_G5_loO_L36-43",
+   "rederived": 0.025230924320628473,
+   "reported": 0.025230924320628473,
+   "ok": true
+  },
+  {
+   "check": "energy CF_G6_hiO_L09-24",
+   "rederived": 28.793260239064686,
+   "reported": 28.793260239064686,
+   "ok": true
+  },
+  {
+   "check": "O_en CF_G6_hiO_L09-24",
+   "rederived": 0.13235084513935588,
+   "reported": 0.13235084513935588,
+   "ok": true
+  },
+  {
+   "check": "O_sl CF_G6_hiO_L09-24",
+   "rederived": 0.1444688212479335,
+   "reported": 0.1444688212479335,
+   "ok": true
+  },
+  {
+   "check": "energy CF_G6_loO_L27-42",
+   "rederived": 28.793260239064693,
+   "reported": 28.793260239064693,
+   "ok": true
+  },
+  {
+   "check": "O_en CF_G6_loO_L27-42",
+   "rederived": 0.0766076002105755,
+   "reported": 0.0766076002105755,
+   "ok": true
+  },
+  {
+   "check": "O_sl CF_G6_loO_L27-42",
+   "rederived": 0.07861188384722183,
+   "reported": 0.07861188384722183,
+   "ok": true
+  },
+  {
+   "check": "energy CF_G7_hiO_L12-21",
+   "rederived": 36.952778711915016,
+   "reported": 36.952778711915016,
+   "ok": true
+  },
+  {
+   "check": "O_en CF_G7_hiO_L12-21",
+   "rederived": 0.11759986969154851,
+   "reported": 0.11759986969154851,
+   "ok": true
+  },
+  {
+   "check": "O_sl CF_G7_hiO_L12-21",
+   "rederived": 0.15736538377458473,
+   "reported": 0.15736538377458473,
+   "ok": true
+  },
+  {
+   "check": "energy CF_G7_loO_L01-10",
+   "rederived": 36.95277871191503,
+   "reported": 36.95277871191503,
+   "ok": true
+  },
+  {
+   "check": "O_en CF_G7_loO_L01-10",
+   "rederived": 0.0013420539692003048,
+   "reported": 0.0013420539692003048,
+   "ok": true
+  },
+  {
+   "check": "O_sl CF_G7_loO_L01-10",
+   "rederived": 0.014351215253885505,
+   "reported": 0.014351215253885505,
+   "ok": true
+  },
+  {
+   "check": "energy CF_G8_hiO_L16-21",
+   "rederived": 20.13534877449274,
+   "reported": 20.13534877449274,
+   "ok": true
+  },
+  {
+   "check": "O_en CF_G8_hiO_L16-21",
+   "rederived": 0.128506922087164,
+   "reported": 0.128506922087164,
+   "ok": true
+  },
+  {
+   "check": "O_sl CF_G8_hiO_L16-21",
+   "rederived": 0.1519168168755993,
+   "reported": 0.1519168168755993,
+   "ok": true
+  },
+  {
+   "check": "energy CF_G8_loO_L05-10",
+   "rederived": 20.13534877449274,
+   "reported": 20.13534877449274,
+   "ok": true
+  },
+  {
+   "check": "O_en CF_G8_loO_L05-10",
+   "rederived": 0.0020655864862413513,
+   "reported": 0.0020655864862413513,
+   "ok": true
+  },
+  {
+   "check": "O_sl CF_G8_loO_L05-10",
+   "rederived": 0.0,
+   "reported": 0.0,
+   "ok": true
+  },
+  {
+   "check": "matched energy G1",
+   "rederived": 1.0,
+   "reported": 1.0,
+   "ok": true
+  },
+  {
+   "check": "matched count G1",
+   "rederived": 1.0,
+   "reported": 1.0,
+   "ok": true
+  },
+  {
+   "check": "matched energy G2",
+   "rederived": 1.0,
+   "reported": 1.0,
+   "ok": true
+  },
+  {
+   "check": "matched count G2",
+   "rederived": 1.0,
+   "reported": 1.0,
+   "ok": true
+  },
+  {
+   "check": "matched energy G3",
+   "rederived": 1.0,
+   "reported": 1.0,
+   "ok": true
+  },
+  {
+   "check": "matched count G3",
+   "rederived": 1.0,
+   "reported": 1.0,
+   "ok": true
+  },
+  {
+   "check": "matched energy G4",
+   "rederived": 1.0,
+   "reported": 1.0,
+   "ok": true
+  },
+  {
+   "check": "matched count G4",
+   "rederived": 1.0,
+   "reported": 1.0,
+   "ok": true
+  },
+  {
+   "check": "matched energy G5",
+   "rederived": 1.0,
+   "reported": 1.0,
+   "ok": true
+  },
+  {
+   "check": "matched count G5",
+   "rederived": 1.0,
+   "reported": 1.0,
+   "ok": true
+  },
+  {
+   "check": "matched energy G6",
+   "rederived": 1.0,
+   "reported": 1.0,
+   "ok": true
+  },
+  {
+   "check": "matched count G6",
+   "rederived": 1.0,
+   "reported": 1.0,
+   "ok": true
+  },
+  {
+   "check": "matched energy G7",
+   "rederived": 1.0,
+   "reported": 1.0,
+   "ok": true
+  },
+  {
+   "check": "matched count G7",
+   "rederived": 1.0,
+   "reported": 1.0,
+   "ok": true
+  },
+  {
+   "check": "matched energy G8",
+   "rederived": 1.0,
+   "reported": 1.0,
+   "ok": true
+  },
+  {
+   "check": "matched count G8",
+   "rederived": 1.0,
+   "reported": 1.0,
+   "ok": true
+  },
+  {
+   "check": "conf n_items en",
+   "rederived": 58.0,
+   "reported": 58.0,
+   "ok": true
+  },
+  {
+   "check": "conf noop refusal en",
+   "rederived": 0.9137931034482759,
+   "reported": 0.9137931034482759,
+   "ok": true
+  },
+  {
+   "check": "conf residual en CF_G1_hiO_L16-23",
+   "rederived": 0.06896551724137931,
+   "reported": 0.06896551724137931,
+   "ok": true
+  },
+  {
+   "check": "conf residual en CF_G1_loO_L04-11",
+   "rederived": 0.9137931034482759,
+   "reported": 0.9137931034482759,
+   "ok": true
+  },
+  {
+   "check": "conf residual en CF_G2_hiO_L12-23",
+   "rederived": 0.08620689655172414,
+   "reported": 0.08620689655172414,
+   "ok": true
+  },
+  {
+   "check": "conf residual en CF_G2_loO_L33-44",
+   "rederived": 0.896551724137931,
+   "reported": 0.896551724137931,
+   "ok": true
+  },
+  {
+   "check": "conf residual en CF_G3_hiO_L16-31",
+   "rederived": 0.06896551724137931,
+   "reported": 0.06896551724137931,
+   "ok": true
+  },
+  {
+   "check": "conf residual en CF_G3_loO_L33-48",
+   "rederived": 0.9137931034482759,
+   "reported": 0.9137931034482759,
+   "ok": true
+  },
+  {
+   "check": "conf residual en CF_dose_G3loO_x1.5",
+   "rederived": 0.8793103448275862,
+   "reported": 0.8793103448275862,
+   "ok": true
+  },
+  {
+   "check": "conf residual en CF_dose_G3loO_x2",
+   "rederived": 0.8793103448275862,
+   "reported": 0.8793103448275862,
+   "ok": true
+  },
+  {
+   "check": "conf residual en CF_G4_hiO_L14-25",
+   "rederived": 0.1724137931034483,
+   "reported": 0.1724137931034483,
+   "ok": true
+  },
+  {
+   "check": "conf residual en CF_G4_loO_L02-13",
+   "rederived": 0.896551724137931,
+   "reported": 0.896551724137931,
+   "ok": true
+  },
+  {
+   "check": "conf residual en CF_G5_hiO_L24-31",
+   "rederived": 0.6551724137931034,
+   "reported": 0.6551724137931034,
+   "ok": true
+  },
+  {
+   "check": "conf residual en CF_G5_loO_L36-43",
+   "rederived": 0.9137931034482759,
+   "reported": 0.9137931034482759,
+   "ok": true
+  },
+  {
+   "check": "conf residual en CF_G6_hiO_L09-24",
+   "rederived": 0.15517241379310345,
+   "reported": 0.15517241379310345,
+   "ok": true
+  },
+  {
+   "check": "conf residual en CF_G6_loO_L27-42",
+   "rederived": 0.8620689655172413,
+   "reported": 0.8620689655172413,
+   "ok": true
+  },
+  {
+   "check": "conf residual en CF_G7_hiO_L12-21",
+   "rederived": 0.1896551724137931,
+   "reported": 0.1896551724137931,
+   "ok": true
+  },
+  {
+   "check": "conf residual en CF_G7_loO_L01-10",
+   "rederived": 0.9310344827586207,
+   "reported": 0.9310344827586207,
+   "ok": true
+  },
+  {
+   "check": "conf residual en CF_G8_hiO_L16-21",
+   "rederived": 0.3620689655172414,
+   "reported": 0.3620689655172414,
+   "ok": true
+  },
+  {
+   "check": "conf residual en CF_G8_loO_L05-10",
+   "rederived": 0.9310344827586207,
+   "reported": 0.9310344827586207,
+   "ok": true
+  },
+  {
+   "check": "conf spearman O en",
+   "rederived": -0.9595036269374145,
+   "reported": -0.9595036269374145,
+   "ok": true
+  },
+  {
+   "check": "conf spearman B_site en",
+   "rederived": -0.7842051570125499,
+   "reported": -0.7842051570125499,
+   "ok": true
+  },
+  {
+   "check": "conf dR2_O en",
+   "rederived": 0.026131247859506046,
+   "reported": 0.026131247859506157,
+   "ok": true
+  },
+  {
+   "check": "conf R2_O_alone en",
+   "rederived": 0.8725942853769716,
+   "reported": 0.8725942853769716,
+   "ok": true
+  },
+  {
+   "check": "conf n_items sl",
+   "rederived": 60.0,
+   "reported": 60.0,
+   "ok": true
+  },
+  {
+   "check": "conf noop refusal sl",
+   "rederived": 0.9333333333333333,
+   "reported": 0.9333333333333333,
+   "ok": true
+  },
+  {
+   "check": "conf residual sl CF_G1_hiO_L16-23",
+   "rederived": 0.4166666666666667,
+   "reported": 0.4166666666666667,
+   "ok": true
+  },
+  {
+   "check": "conf residual sl CF_G1_loO_L04-11",
+   "rederived": 0.9333333333333333,
+   "reported": 0.9333333333333333,
+   "ok": true
+  },
+  {
+   "check": "conf residual sl CF_G2_hiO_L12-23",
+   "rederived": 0.38333333333333336,
+   "reported": 0.38333333333333336,
+   "ok": true
+  },
+  {
+   "check": "conf residual sl CF_G2_loO_L33-44",
+   "rederived": 0.9166666666666666,
+   "reported": 0.9166666666666666,
+   "ok": true
+  },
+  {
+   "check": "conf residual sl CF_G3_hiO_L16-31",
+   "rederived": 0.26666666666666666,
+   "reported": 0.26666666666666666,
+   "ok": true
+  },
+  {
+   "check": "conf residual sl CF_G3_loO_L33-48",
+   "rederived": 0.9166666666666666,
+   "reported": 0.9166666666666666,
+   "ok": true
+  },
+  {
+   "check": "conf residual sl CF_dose_G3loO_x1.5",
+   "rederived": 0.9333333333333333,
+   "reported": 0.9333333333333333,
+   "ok": true
+  },
+  {
+   "check": "conf residual sl CF_dose_G3loO_x2",
+   "rederived": 0.9166666666666666,
+   "reported": 0.9166666666666666,
+   "ok": true
+  },
+  {
+   "check": "conf residual sl CF_G4_hiO_L14-25",
+   "rederived": 0.5,
+   "reported": 0.5,
+   "ok": true
+  },
+  {
+   "check": "conf residual sl CF_G4_loO_L02-13",
+   "rederived": 0.9333333333333333,
+   "reported": 0.9333333333333333,
+   "ok": true
+  },
+  {
+   "check": "conf residual sl CF_G5_hiO_L24-31",
+   "rederived": 0.9166666666666666,
+   "reported": 0.9166666666666666,
+   "ok": true
+  },
+  {
+   "check": "conf residual sl CF_G5_loO_L36-43",
+   "rederived": 0.9333333333333333,
+   "reported": 0.9333333333333333,
+   "ok": true
+  },
+  {
+   "check": "conf residual sl CF_G6_hiO_L09-24",
+   "rederived": 0.5333333333333333,
+   "reported": 0.5333333333333333,
+   "ok": true
+  },
+  {
+   "check": "conf residual sl CF_G6_loO_L27-42",
+   "rederived": 0.9166666666666666,
+   "reported": 0.9166666666666666,
+   "ok": true
+  },
+  {
+   "check": "conf residual sl CF_G7_hiO_L12-21",
+   "rederived": 0.6166666666666667,
+   "reported": 0.6166666666666667,
+   "ok": true
+  },
+  {
+   "check": "conf residual sl CF_G7_loO_L01-10",
+   "rederived": 0.9333333333333333,
+   "reported": 0.9333333333333333,
+   "ok": true
+  },
+  {
+   "check": "conf residual sl CF_G8_hiO_L16-21",
+   "rederived": 0.7666666666666667,
+   "reported": 0.7666666666666667,
+   "ok": true
+  },
+  {
+   "check": "conf residual sl CF_G8_loO_L05-10",
+   "rederived": 0.9333333333333333,
+   "reported": 0.9333333333333333,
+   "ok": true
+  },
+  {
+   "check": "conf spearman O sl",
+   "rederived": -0.8297784102735298,
+   "reported": -0.8297784102735298,
+   "ok": true
+  },
+  {
+   "check": "conf spearman B_site sl",
+   "rederived": -0.7942773534765759,
+   "reported": -0.7942773534765759,
+   "ok": true
+  },
+  {
+   "check": "conf dR2_O sl",
+   "rederived": 0.05547635101184922,
+   "reported": 0.055476351011849334,
+   "ok": true
+  },
+  {
+   "check": "conf R2_O_alone sl",
+   "rederived": 0.7539704955369564,
+   "reported": 0.7539704955369565,
+   "ok": true
+  },
+  {
+   "check": "matched diff G1 en",
+   "rederived": -0.8333333333333334,
+   "reported": -0.8333333333333334,
+   "ok": true
+  },
+  {
+   "check": "matched res_hi G1 en",
+   "rederived": 0.08333333333333333,
+   "reported": 0.08333333333333333,
+   "ok": true
+  },
+  {
+   "check": "matched diff G1 sl",
+   "rederived": -0.5166666666666667,
+   "reported": -0.5166666666666667,
+   "ok": true
+  },
+  {
+   "check": "matched res_hi G1 sl",
+   "rederived": 0.4166666666666667,
+   "reported": 0.4166666666666667,
+   "ok": true
+  },
+  {
+   "check": "matched diff G2 en",
+   "rederived": -0.8166666666666667,
+   "reported": -0.8166666666666667,
+   "ok": true
+  },
+  {
+   "check": "matched res_hi G2 en",
+   "rederived": 0.08333333333333333,
+   "reported": 0.08333333333333333,
+   "ok": true
+  },
+  {
+   "check": "matched diff G2 sl",
+   "rederived": -0.5333333333333333,
+   "reported": -0.5333333333333333,
+   "ok": true
+  },
+  {
+   "check": "matched res_hi G2 sl",
+   "rederived": 0.38333333333333336,
+   "reported": 0.38333333333333336,
+   "ok": true
+  },
+  {
+   "check": "matched diff G3 en",
+   "rederived": -0.847457627118644,
+   "reported": -0.847457627118644,
+   "ok": true
+  },
+  {
+   "check": "matched res_hi G3 en",
+   "rederived": 0.06779661016949153,
+   "reported": 0.06779661016949153,
+   "ok": true
+  },
+  {
+   "check": "matched diff G3 sl",
+   "rederived": -0.65,
+   "reported": -0.65,
+   "ok": true
+  },
+  {
+   "check": "matched res_hi G3 sl",
+   "rederived": 0.26666666666666666,
+   "reported": 0.26666666666666666,
+   "ok": true
+  },
+  {
+   "check": "matched diff G4 en",
+   "rederived": -0.7333333333333333,
+   "reported": -0.7333333333333333,
+   "ok": true
+  },
+  {
+   "check": "matched res_hi G4 en",
+   "rederived": 0.16666666666666666,
+   "reported": 0.16666666666666666,
+   "ok": true
+  },
+  {
+   "check": "matched diff G4 sl",
+   "rederived": -0.43333333333333335,
+   "reported": -0.43333333333333335,
+   "ok": true
+  },
+  {
+   "check": "matched res_hi G4 sl",
+   "rederived": 0.5,
+   "reported": 0.5,
+   "ok": true
+  },
+  {
+   "check": "matched diff G5 en",
+   "rederived": -0.2542372881355932,
+   "reported": -0.2542372881355932,
+   "ok": true
+  },
+  {
+   "check": "matched res_hi G5 en",
+   "rederived": 0.6610169491525424,
+   "reported": 0.6610169491525424,
+   "ok": true
+  },
+  {
+   "check": "matched diff G5 sl",
+   "rederived": -0.016666666666666666,
+   "reported": -0.016666666666666666,
+   "ok": true
+  },
+  {
+   "check": "matched res_hi G5 sl",
+   "rederived": 0.9166666666666666,
+   "reported": 0.9166666666666666,
+   "ok": true
+  },
+  {
+   "check": "matched diff G6 en",
+   "rederived": -0.7,
+   "reported": -0.7,
+   "ok": true
+  },
+  {
+   "check": "matched res_hi G6 en",
+   "rederived": 0.16666666666666666,
+   "reported": 0.16666666666666666,
+   "ok": true
+  },
+  {
+   "check": "matched diff G6 sl",
+   "rederived": -0.38333333333333336,
+   "reported": -0.38333333333333336,
+   "ok": true
+  },
+  {
+   "check": "matched res_hi G6 sl",
+   "rederived": 0.5333333333333333,
+   "reported": 0.5333333333333333,
+   "ok": true
+  },
+  {
+   "check": "matched diff G7 en",
+   "rederived": -0.7166666666666667,
+   "reported": -0.7166666666666667,
+   "ok": true
+  },
+  {
+   "check": "matched res_hi G7 en",
+   "rederived": 0.21666666666666667,
+   "reported": 0.21666666666666667,
+   "ok": true
+  },
+  {
+   "check": "matched diff G7 sl",
+   "rederived": -0.31666666666666665,
+   "reported": -0.31666666666666665,
+   "ok": true
+  },
+  {
+   "check": "matched res_hi G7 sl",
+   "rederived": 0.6166666666666667,
+   "reported": 0.6166666666666667,
+   "ok": true
+  },
+  {
+   "check": "matched diff G8 en",
+   "rederived": -0.55,
+   "reported": -0.55,
+   "ok": true
+  },
+  {
+   "check": "matched res_hi G8 en",
+   "rederived": 0.38333333333333336,
+   "reported": 0.38333333333333336,
+   "ok": true
+  },
+  {
+   "check": "matched diff G8 sl",
+   "rederived": -0.16666666666666666,
+   "reported": -0.16666666666666666,
+   "ok": true
+  },
+  {
+   "check": "matched res_hi G8 sl",
+   "rederived": 0.7666666666666667,
+   "reported": 0.7666666666666667,
+   "ok": true
+  },
+  {
+   "check": "control residual CF_G1_random en",
+   "rederived": 0.8833333333333333,
+   "reported": 0.8833333333333333,
+   "ok": true
+  },
+  {
+   "check": "control residual CF_G1_random sl",
+   "rederived": 0.9333333333333333,
+   "reported": 0.9333333333333333,
+   "ok": true
+  },
+  {
+   "check": "control residual CF_G1_pc en",
+   "rederived": 0.9166666666666666,
+   "reported": 0.9166666666666666,
+   "ok": true
+  },
+  {
+   "check": "control residual CF_G1_pc sl",
+   "rederived": 0.9166666666666666,
+   "reported": 0.9166666666666666,
+   "ok": true
+  },
+  {
+   "check": "control residual CF_G2_random en",
+   "rederived": 0.9,
+   "reported": 0.9,
+   "ok": true
+  },
+  {
+   "check": "control residual CF_G2_random sl",
+   "rederived": 0.9333333333333333,
+   "reported": 0.9333333333333333,
+   "ok": true
+  },
+  {
+   "check": "control residual CF_G2_pc en",
+   "rederived": 0.9166666666666666,
+   "reported": 0.9166666666666666,
+   "ok": true
+  },
+  {
+   "check": "control residual CF_G2_pc sl",
+   "rederived": 0.9333333333333333,
+   "reported": 0.9333333333333333,
+   "ok": true
+  },
+  {
+   "check": "control residual CF_G3_random en",
+   "rederived": 0.8983050847457628,
+   "reported": 0.8983050847457628,
+   "ok": true
+  },
+  {
+   "check": "control residual CF_G3_random sl",
+   "rederived": 0.9333333333333333,
+   "reported": 0.9333333333333333,
+   "ok": true
+  },
+  {
+   "check": "control residual CF_G3_pc en",
+   "rederived": 0.9322033898305084,
+   "reported": 0.9322033898305084,
+   "ok": true
+  },
+  {
+   "check": "control residual CF_G3_pc sl",
+   "rederived": 0.9333333333333333,
+   "reported": 0.9333333333333333,
+   "ok": true
+  },
+  {
+   "check": "control residual CF_G4_random en",
+   "rederived": 0.9,
+   "reported": 0.9,
+   "ok": true
+  },
+  {
+   "check": "control residual CF_G4_random sl",
+   "rederived": 0.9333333333333333,
+   "reported": 0.9333333333333333,
+   "ok": true
+  },
+  {
+   "check": "control residual CF_G4_pc en",
+   "rederived": 0.9166666666666666,
+   "reported": 0.9166666666666666,
+   "ok": true
+  },
+  {
+   "check": "control residual CF_G4_pc sl",
+   "rederived": 0.9333333333333333,
+   "reported": 0.9333333333333333,
+   "ok": true
+  },
+  {
+   "check": "control residual CF_G5_random en",
+   "rederived": 0.9322033898305084,
+   "reported": 0.9322033898305084,
+   "ok": true
+  },
+  {
+   "check": "control residual CF_G5_random sl",
+   "rederived": 0.9166666666666666,
+   "reported": 0.9166666666666666,
+   "ok": true
+  },
+  {
+   "check": "control residual CF_G5_pc en",
+   "rederived": 0.9322033898305084,
+   "reported": 0.9322033898305084,
+   "ok": true
+  },
+  {
+   "check": "control residual CF_G5_pc sl",
+   "rederived": 0.9333333333333333,
+   "reported": 0.9333333333333333,
+   "ok": true
+  },
+  {
+   "check": "screen spearman O en",
+   "rederived": -0.7096382290456121,
+   "reported": -0.7096382290456121,
+   "ok": true
+  },
+  {
+   "check": "screen spearman O sl",
+   "rederived": -0.6047432514441516,
+   "reported": -0.6047432514441516,
+   "ok": true
+  },
+  {
+   "check": "screen n_cells",
+   "rederived": 46.0,
+   "reported": 46.0,
+   "ok": true
+  },
+  {
+   "check": "outside spearman O en",
+   "rederived": -0.7589709258986453,
+   "reported": -0.7589709258986453,
+   "ok": true
+  },
+  {
+   "check": "outside noop en",
+   "rederived": 0.8717948717948718,
+   "reported": 0.8717948717948718,
+   "ok": true
+  },
+  {
+   "check": "outside spearman O sl",
+   "rederived": -0.9276336570439175,
+   "reported": -0.9276336570439175,
+   "ok": true
+  },
+  {
+   "check": "outside noop sl",
+   "rederived": 0.65,
+   "reported": 0.65,
+   "ok": true
+  },
+  {
+   "check": "outside spearman O de",
+   "rederived": -0.8441622892989753,
+   "reported": -0.8441622892989753,
+   "ok": true
+  },
+  {
+   "check": "outside noop de",
+   "rederived": 0.7297297297297297,
+   "reported": 0.7297297297297297,
+   "ok": true
+  },
+  {
+   "check": "judge kappa within edited",
+   "rederived": 0.8182524271844661,
+   "reported": 0.8182524271844661,
+   "ok": true
+  },
+  {
+   "check": "judge n within edited",
+   "rederived": 780.0,
+   "reported": 780.0,
+   "ok": true
+  },
+  {
+   "check": "api cost",
+   "rederived": 0.97299,
+   "reported": 0.97299,
+   "ok": true
+  },
+  {
+   "check": "placebo: shuffled-O Spearman fails (en); observed beyond 99th pct of |null|",
+   "rederived": 1.0,
+   "reported": 1.0,
+   "ok": true,
+   "placebo_p": 0.0,
+   "null_abs_p99": 0.5815381181358127
+  },
+  {
+   "check": "placebo: label-swapped matched contrast near 0 (en)",
+   "rederived": 1.0,
+   "reported": 1.0,
+   "ok": true,
+   "value": -0.04198446327683615
+  },
+  {
+   "check": "placebo: shuffled-O Spearman fails (sl); observed beyond 99th pct of |null|",
+   "rederived": 1.0,
+   "reported": 1.0,
+   "ok": true,
+   "placebo_p": 0.0,
+   "null_abs_p99": 0.5794309150125294
+  },
+  {
+   "check": "placebo: label-swapped matched contrast near 0 (sl)",
+   "rederived": 1.0,
+   "reported": 1.0,
+   "ok": true,
+   "value": -0.04375
+  },
+  {
+   "check": "freeze precedes every CF generation file",
+   "rederived": 1.0,
+   "reported": 1.0,
+   "ok": true
+  },
+  {
+   "check": "frozen_predictions unchanged since freeze",
+   "rederived": 1.0,
+   "reported": 1.0,
+   "ok": true
+  },
+  {
+   "check": "outside freeze precedes every QCF file",
+   "rederived": 1.0,
+   "reported": 1.0,
+   "ok": true
+  }
+ ]
+}

@@ -1,0 +1,31 @@
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/pdf/2406.11717v3
+Type: PDF
+Pattern: middle layers|narrow|local region|single layer|subset of layers|all layers|2-3|2–3|few layers (2 matches in 119442 chars)
+
+--- Content ---
+
+12441:...he model’s computation,
+we can erase it from the model’s representations using directional ablation. Directional ablation
+“zeroes out” the component along ˆr for every residual stream activation x ∈Rdmodel:
+x′ ←x −ˆrˆr⊺x.
+(4)
+We perform this operation at every activation x(l)
+i
+and ˜x(l)
+i , across all layers l and all token positions
+i. This effectively prevents the model from ever representing this direction in its residual stream.
+2.5
+Evaluation of refusal and harmfulness
+When generating model completions for evaluation, we always use greedy decoding and a maximum
+generation length of 512 tokens, as ...
+--
+15921:...’s ability to refuse harmful requests.
+In §3.2, we show that adding r to the model’s activations induces refusal on harmless instructions.
+3.1
+Bypassing refusal via directional ablation
+To bypass refusal, we perform directional ablation on the “refusal direction” ˆr, ablating it from
+activations at all layers and all token positions. With this intervention in place, we generate model
+completions over JAILBREAKBENCH (Chao et al., 2024), a dataset of 100 harmful instructions.
+Results are shown in Figure 1. Under no intervention, chat models refuse nearly all harmful requests,
+yielding high refusal and saf...

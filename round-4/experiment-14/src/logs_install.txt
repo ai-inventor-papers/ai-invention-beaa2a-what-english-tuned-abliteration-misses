@@ -1,0 +1,6 @@
+  × Failed to download `nvidia-cudnn-cu12==9.19.0.56`
+  ├─▶ Failed to extract archive:
+  │   nvidia_cudnn_cu12-9.19.0.56-py3-none-manylinux_2_27_x86_64.whl
+  ╰─▶ Failed to download distribution due to network timeout. Try increasing
+      UV_HTTP_TIMEOUT (current value: 30s).
+DONE

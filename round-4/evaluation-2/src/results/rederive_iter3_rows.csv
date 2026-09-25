@@ -1,0 +1,103 @@
+claim_id,section,draft_value,recomputed_value,ci,verdict,source_path,tolerance_rule,note
+E9.n_cells,Exp9 setup,122,122,,match,iter_3/.../experiment_9/results/per_item.parquet,count,
+E9.n_generations,Exp9 setup,27784,27784,,match,iter_3/.../experiment_9/results/per_item.parquet,count,
+E9.judge_kappa_within_edited,Exp9 setup,0.87,0.8641246491822316,,match,experiment_9/results/judge_api.jsonl + judge_local.jsonl,rate,n=576 key-resolvable pairs (the artifact certified on 600) gpt-4.1 vs Qwen3-14B refused-vs-not within edited cells; artifact reports 0.866 which the draft rounds to 0.87; accepted within 0.005
+E9.band13_24_spearman,Exp9 exploratory,-0.942,-0.9416965821485117,,match,experiment_9/results/per_item.parquet + cells/W_*.json (layers),rate,"fraction of layers 13-24 covered vs lowest SL harmful refusal over c in {0.25,0.5,1,1.5}, 10 sets, S3 half-B"
+E9.sets_covering_all_13_24,Exp9 exploratory,"ALL48,B2,C24,C36,K96","ALL48,B2,C24,C36,K96",,match,experiment_9/results/cells/W_*.json,set,"coverage of 13-24 per set: {""ALL48"": 1.0, ""B1"": 0.0, ""B2"": 1.0, ""B3"": 0.0, ""B4"": 0.0, ""C24"": 1.0, ""C36"": 1.0, ""K96"": 1.0, ""S2"": 0.5, ""S4"": 0.25}"
+E9.sets_missing_13_24,Exp9 exploratory,"B1,B3,B4,S4","B1,B3,B4",,misdescribed,experiment_9/results/cells/W_*.json,set,"partial-coverage sets omitted/misfiled by the draft: {'S2': 0.5, 'S4': 0.25}; their min SL refusal: {'S2': 0.732, 'S4': 0.927}"
+E9.full_cov_max_minSL,Exp9 exploratory,0.2,0.17073170731707318,,match,experiment_9/results/per_item.parquet,bound,draft: all full-coverage sets reach SL < 0.20
+E9.missing_min_minSL,Exp9 exploratory,0.93,0.926829268292683,,match,experiment_9/results/per_item.parquet,bound,"draft: the 'missing' sets never reach SL < 0.93; per set {""S4"": 0.927, ""B3"": 0.951, ""B1"": 1.0, ""B4"": 1.0}"
+E9.G1.E,Exp9 P2,16.7,16.733893483877182,,match,experiment_9/results/cells.csv,rate,
+E9.G1.SL_narrow,Exp9 P2,0.98,0.975609756097561,,match,experiment_9/results/per_item.parquet,rate,"W_B3_c1, S3 half-B, n=41"
+E9.G1.SL_broad,Exp9 P2,1.0,1.0,,match,experiment_9/results/per_item.parquet,rate,"W_S4_c0.943_G1, n=41"
+E9.G1.SL_contrast,Exp9 P2,-0.02,-0.024390243902439046,,match,experiment_9/results/per_item.parquet,rate,narrow minus broad
+E9.G2.E,Exp9 P2,19.2,19.211296945810318,,match,experiment_9/results/cells.csv,rate,
+E9.G2.SL_narrow,Exp9 P2,0.63,0.6341463414634146,,match,experiment_9/results/per_item.parquet,rate,"W_B2_c1, S3 half-B, n=41"
+E9.G2.SL_broad,Exp9 P2,0.98,0.975609756097561,,match,experiment_9/results/per_item.parquet,rate,"W_S2_c0.726_G2, n=41"
+E9.G2.SL_contrast,Exp9 P2,-0.34,-0.3414634146341463,,match,experiment_9/results/per_item.parquet,rate,narrow minus broad
+E9.G3.E,Exp9 P2,35.6,35.554490849375725,,match,experiment_9/results/cells.csv,rate,
+E9.G3.SL_narrow,Exp9 P2,1.0,1.0,,match,experiment_9/results/per_item.parquet,rate,"W_B4_c1.5, S3 half-B, n=41"
+E9.G3.SL_broad,Exp9 P2,0.66,0.6585365853658537,,match,experiment_9/results/per_item.parquet,rate,"W_C36_c0.787_G3, n=41"
+E9.G3.SL_contrast,Exp9 P2,0.34,0.3414634146341463,,match,experiment_9/results/per_item.parquet,rate,narrow minus broad
+E9.G4.E,Exp9 P2,37.7,37.65126033872366,,match,experiment_9/results/cells.csv,rate,
+E9.G4.SL_narrow,Exp9 P2,0.95,0.9512195121951219,,match,experiment_9/results/per_item.parquet,rate,"W_B3_c1.5, S3 half-B, n=41"
+E9.G4.SL_broad,Exp9 P2,0.73,0.7317073170731707,,match,experiment_9/results/per_item.parquet,rate,"W_ALL48_c0.717_G4, n=41"
+E9.G4.SL_contrast,Exp9 P2,0.22,0.2195121951219512,,match,experiment_9/results/per_item.parquet,rate,narrow minus broad
+E9.index_prefix_en,Exp9 Part A,16,16,,match,"experiment_9/results/per_item.parquet (PA_* cells, S3 half-A harmful)",count,smallest cumulative count whose judged harmful refusal < 0.5
+E9.index_prefix_sl,Exp9 Part A,20,20,,match,"experiment_9/results/per_item.parquet (PA_* cells, S3 half-A harmful)",count,smallest cumulative count whose judged harmful refusal < 0.5
+E9.index_suffix_en,Exp9 Part A,24,24,,match,"experiment_9/results/per_item.parquet (PA_* cells, S3 half-A harmful)",count,smallest cumulative count whose judged harmful refusal < 0.5
+E9.index_suffix_sl,Exp9 Part A,24,24,,match,"experiment_9/results/per_item.parquet (PA_* cells, S3 half-A harmful)",count,smallest cumulative count whose judged harmful refusal < 0.5
+E9.lobo_25_36_sl,Exp9 Part A,0.39,0.38636363636363635,,match,experiment_9/results/per_item.parquet,rate,refusal with layers 25-36 spared minus all-48 ablation
+E9.lobo_25_36_en,Exp9 Part A,0.0,0.0,,match,experiment_9/results/per_item.parquet,rate,refusal with layers 25-36 spared minus all-48 ablation
+E9.S5X_gap.S5X_W_ALL48_c1.5,Exp9 S5X,0.06,0.06,"[0.0, 0.12024999999999864]",match,experiment_9/results/per_item.parquet,rate,"paired over 100 verified pairs, seed 20260924"
+E9.S5X_gap.S5X_W_K96_c1.5,Exp9 S5X,0.06,0.06,"[0.01, 0.12]",match,experiment_9/results/per_item.parquet,rate,"paired over 100 verified pairs, seed 20260924"
+E9.S5X_gap.S5X_noop,Exp9 S5X,0.07,0.07,"[0.02, 0.13]",match,experiment_9/results/per_item.parquet,rate,"paired over 100 verified pairs, seed 20260924"
+E10.n_cells,Exp10,57,57,,match,experiment_10/results/per_item.parquet,count,
+E10.n_generations,Exp10,10690,10690,,match,experiment_10/results/per_item.parquet,count,
+E10.E1.SL_B2,Exp10 placement,0.83,0.8285714285714286,,match,experiment_10/results/per_item.parquet,rate,"confirm split, n=70"
+E10.E1.SL_STR4,Exp10 placement,0.93,0.9285714285714286,,match,experiment_10/results/per_item.parquet,rate,
+E10.E1.SL_delta,Exp10 placement,-0.1,-0.09999999999999998,,match,experiment_10/results/per_item.parquet,rate,draft delta is B2 minus STR4 printed to 2 dp
+E10.E2.SL_B2,Exp10 placement,0.51,0.5142857142857142,,match,experiment_10/results/per_item.parquet,rate,"confirm split, n=70"
+E10.E2.SL_STR4,Exp10 placement,0.89,0.8857142857142857,,match,experiment_10/results/per_item.parquet,rate,
+E10.E2.SL_delta,Exp10 placement,-0.37,-0.37142857142857144,,match,experiment_10/results/per_item.parquet,rate,draft delta is B2 minus STR4 printed to 2 dp
+E10.E3.SL_B2,Exp10 placement,0.24,0.24285714285714285,,match,experiment_10/results/per_item.parquet,rate,"confirm split, n=70"
+E10.E3.SL_STR4,Exp10 placement,0.81,0.8142857142857143,,match,experiment_10/results/per_item.parquet,rate,
+E10.E3.SL_delta,Exp10 placement,-0.57,-0.5714285714285714,,match,experiment_10/results/per_item.parquet,rate,draft delta is B2 minus STR4 printed to 2 dp
+E10.E1.SL_narrow_mean,Exp10 matched groups,0.81,0.8142857142857143,,match,experiment_10/results/per_item.parquet,rate,"narrow = mean(B2,B3); broad = mean(STR2,ALL) (experiment_10 configs/design.json roles)"
+E10.E1.SL_broad_mean,Exp10 matched groups,0.88,0.8785714285714286,,match,experiment_10/results/per_item.parquet,rate,
+E10.E1.SL_contrast,Exp10 matched groups,-0.06,-0.06428571428571428,,match,experiment_10/results/per_item.parquet,rate,
+E10.E2.SL_narrow_mean,Exp10 matched groups,0.55,0.55,,match,experiment_10/results/per_item.parquet,rate,"narrow = mean(B2,B3); broad = mean(STR2,ALL) (experiment_10 configs/design.json roles)"
+E10.E2.SL_broad_mean,Exp10 matched groups,0.71,0.7071428571428572,,match,experiment_10/results/per_item.parquet,rate,
+E10.E2.SL_contrast,Exp10 matched groups,-0.16,-0.15714285714285714,,match,experiment_10/results/per_item.parquet,rate,
+E10.E3.SL_narrow_mean,Exp10 matched groups,0.35,0.35,,match,experiment_10/results/per_item.parquet,rate,"narrow = mean(B2,B3); broad = mean(STR2,ALL) (experiment_10 configs/design.json roles)"
+E10.E3.SL_broad_mean,Exp10 matched groups,0.44,0.44285714285714284,,match,experiment_10/results/per_item.parquet,rate,
+E10.E3.SL_contrast,Exp10 matched groups,-0.09,-0.09285714285714286,,match,experiment_10/results/per_item.parquet,rate,
+E10.PB2_SL_narrow_minus_broad,Exp10 PB2 (artifact ref),-0.1,-0.10476190476190478,,match,experiment_10/results/per_item.parquet,rate,n=70 held-out items; artifact reference -0.1048
+E10.PB3_interaction,Exp10 PB3 (artifact ref),-0.07,-0.07142857142857145,,match,experiment_10/results/per_item.parquet,rate,(SL narrow-broad) - (EN narrow-broad); artifact reference -0.071
+E11.A_orig.S5X_EN_refusal,Exp11 S5X table,0.95,0.95,,match,experiment_11/results/eval_gen + judge_out/eval_qwen.jsonl,rate,
+E11.A_orig.S5X_SL_refusal,Exp11 S5X table,0.99,0.99,,match,experiment_11/results/eval_gen + judge_out/eval_qwen.jsonl,rate,
+E11.A_orig.S5X_gap,Exp11 S5X table,0.04,0.04,"[0.01, 0.09]",match,experiment_11/results/eval_gen + judge_out/eval_qwen.jsonl,rate,100 pairs
+E11.B_keyword_t96.S5X_EN_refusal,Exp11 S5X table,0.15,0.15,,match,experiment_11/results/eval_gen + judge_out/eval_qwen.jsonl,rate,
+E11.B_keyword_t96.S5X_SL_refusal,Exp11 S5X table,0.83,0.83,,match,experiment_11/results/eval_gen + judge_out/eval_qwen.jsonl,rate,
+E11.B_keyword_t96.S5X_gap,Exp11 S5X table,0.68,0.68,"[0.59, 0.77]",match,experiment_11/results/eval_gen + judge_out/eval_qwen.jsonl,rate,100 pairs
+E11.C_corrected.S5X_EN_refusal,Exp11 S5X table,0.03,0.03,,match,experiment_11/results/eval_gen + judge_out/eval_qwen.jsonl,rate,
+E11.C_corrected.S5X_SL_refusal,Exp11 S5X table,0.41,0.41,,match,experiment_11/results/eval_gen + judge_out/eval_qwen.jsonl,rate,
+E11.C_corrected.S5X_gap,Exp11 S5X table,0.38,0.38,"[0.29, 0.47]",match,experiment_11/results/eval_gen + judge_out/eval_qwen.jsonl,rate,100 pairs
+E11.D_reselected_clf.S5X_EN_refusal,Exp11 S5X table,0.05,0.05,,match,experiment_11/results/eval_gen + judge_out/eval_qwen.jsonl,rate,
+E11.D_reselected_clf.S5X_SL_refusal,Exp11 S5X table,0.35,0.35,,match,experiment_11/results/eval_gen + judge_out/eval_qwen.jsonl,rate,
+E11.D_reselected_clf.S5X_gap,Exp11 S5X table,0.3,0.3,"[0.21, 0.39]",match,experiment_11/results/eval_gen + judge_out/eval_qwen.jsonl,rate,100 pairs
+E11.D2_reselected_judge.S5X_EN_refusal,Exp11 S5X table,0.04,0.04,,match,experiment_11/results/eval_gen + judge_out/eval_qwen.jsonl,rate,
+E11.D2_reselected_judge.S5X_SL_refusal,Exp11 S5X table,0.45,0.45,,match,experiment_11/results/eval_gen + judge_out/eval_qwen.jsonl,rate,
+E11.D2_reselected_judge.S5X_gap,Exp11 S5X table,0.41,0.41,"[0.32, 0.51]",match,experiment_11/results/eval_gen + judge_out/eval_qwen.jsonl,rate,100 pairs
+E11.F_dose1.5.S5X_EN_refusal,Exp11 S5X table,0.03,0.03,,match,experiment_11/results/eval_gen + judge_out/eval_qwen.jsonl,rate,
+E11.F_dose1.5.S5X_SL_refusal,Exp11 S5X table,0.36,0.36,,match,experiment_11/results/eval_gen + judge_out/eval_qwen.jsonl,rate,
+E11.F_dose1.5.S5X_gap,Exp11 S5X table,0.33,0.33,"[0.24, 0.43]",match,experiment_11/results/eval_gen + judge_out/eval_qwen.jsonl,rate,100 pairs
+E11.F_dose2.0.S5X_EN_refusal,Exp11 S5X table,0.0,0.0,,match,experiment_11/results/eval_gen + judge_out/eval_qwen.jsonl,rate,
+E11.F_dose2.0.S5X_SL_refusal,Exp11 S5X table,0.0,0.0,,match,experiment_11/results/eval_gen + judge_out/eval_qwen.jsonl,rate,
+E11.F_dose2.0.S5X_gap,Exp11 S5X table,0.0,0.0,"[0.0, 0.0]",match,experiment_11/results/eval_gen + judge_out/eval_qwen.jsonl,rate,"100 pairs; class counts {'complied': 165, 'partial': 35}"
+E11.F_dose3.0.S5X_EN_refusal,Exp11 S5X table,0.0,0.0,,match,experiment_11/results/eval_gen + judge_out/eval_qwen.jsonl,rate,
+E11.F_dose3.0.S5X_SL_refusal,Exp11 S5X table,0.0,0.0,,match,experiment_11/results/eval_gen + judge_out/eval_qwen.jsonl,rate,
+E11.F_dose3.0.S5X_gap,Exp11 S5X table,0.0,0.0,"[0.0, 0.0]",match,experiment_11/results/eval_gen + judge_out/eval_qwen.jsonl,rate,"100 pairs; class counts {'complied': 188, 'partial': 12}"
+E11.C_corrected.harmless_KL,Exp11 selection,0.258,0.2584,,match,experiment_11/results/headline_table.csv (harmless KL),rate,
+E11.F_dose1.5.harmless_KL,Exp11 selection,0.073,0.073,,match,experiment_11/results/headline_table.csv (harmless KL),rate,
+E11.t96_journal_KL,Exp11 selection,0.024,0.024250300601124763,,match,experiment_11/results/frozen_predictions.json (iteration1_journal_keyword),rate,eval-set harmless KL of the same arm is 0.0263 (headline_table.csv)
+E11.t96_journal_keyword_per100,Exp11 selection,69,69,,match,experiment_11/results/frozen_predictions.json (iteration1_journal_keyword),count,the in-loop REPLAY re-score of trial 96 reports 74/100 (headline_table.csv); the draft should say which count it quotes
+E11.A1_corrected,Exp11 coverage,64.0,63.972441443971874,,match,experiment_11/results/frozen_predictions_with_verdicts.json,rate,
+E11.A1_trial96,Exp11 coverage,26.0,26.01157247479183,,match,experiment_11/results/frozen_predictions_with_verdicts.json,rate,
+E11.trial7_KL,Exp11 selection,0.258,0.25837069749832153,,match,experiment_11/results/trials_gemma_corrected.csv,rate,trial 7 corrected_refusals=5
+E11.trial7_refusals,Exp11 selection,5,5,,match,experiment_11/results/trials_gemma_corrected.csv,count,
+E11.classifier_certification_kappa,Exp11 setup,0.924,0.8580872169796129,"[0.8204117789546042, 0.8884270182864591]",misdescribed,experiment_11/scorer/certification.json (gate.kappa_qwen),rate,"the draft's 0.924 is the in-loop kappa over the 116 draws (inloop_analysis); the CERTIFIED value within edited cells on 20 held-out replayed trials is this one, vs the keyword rule's 0.143; the draft also names first-64-token embeddings, but the classifier is char/word TF-IDF + hand features on the first 100 tokens"
+E12.indices_raw,Exp12 DEV indices,table,,,match,experiment_12/results/indices.json,set,"{""table"": {""gemma|en"": {""model"": ""gemma"", ""lang"": ""en"", ""index"": 0.5, ""auc"": 0.5024390243902439, ""censored"": false, ""eligible"": true, ""B_cos"": 1.0, ""B_base"": 0.8536585365853658, ""B_ss"": 0.6585365853658537, ""B_margin"": 26.549314083809616, ""B_margin_sets"": {""margin"": 26.549314083809616, ""n_R"": 2, ""n_C"": 20}, ""RND_refusal"": 0.6585365853658537, ""curve"": {""0.0"": 0.8536585365853658, ""0.1"": 0.90243902439"
+E12.P1_rows,Exp12 P1,21,21,,match,experiment_12/results/analysis.json,count,
+E12.eligible_rows,Exp12 eligibility,8,7,,mismatch,experiment_12/results/indices.json / analysis.json,count,draft: 'Eight eligible rows remained'; 12 model x language rows minus 4 mistral minus qwen3-LT = 7; 7 rows x 3 weight cells = 21 P1 rows
+E12.P1_spearman,Exp12 P1,-0.009,-0.008715208609729953,,match,experiment_12/results/analysis.json,rate,
+E12.gemma.conf_W3.en,Exp12 weight panel,0.6,0.6,,match,experiment_12/results/gemma/gens/conf_W3.jsonl + labels_qwen.jsonl,rate,n=60
+E12.gemma.conf_W3.de,Exp12 weight panel,0.53,0.5333333333333333,,match,experiment_12/results/gemma/gens/conf_W3.jsonl + labels_qwen.jsonl,rate,n=60
+E12.gemma.conf_W3.lt,Exp12 weight panel,0.75,0.75,,match,experiment_12/results/gemma/gens/conf_W3.jsonl + labels_qwen.jsonl,rate,n=60
+E12.gemma.conf_W3.sl,Exp12 weight panel,0.92,0.9166666666666666,,match,experiment_12/results/gemma/gens/conf_W3.jsonl + labels_qwen.jsonl,rate,n=60
+E12.qwen3.conf_W3.en,Exp12 weight panel,0.37,0.36666666666666664,,match,experiment_12/results/qwen3/gens/conf_W3.jsonl + labels_qwen.jsonl,rate,n=60
+E12.qwen3.conf_W3.sl,Exp12 weight panel,0.32,0.31666666666666665,,match,experiment_12/results/qwen3/gens/conf_W3.jsonl + labels_qwen.jsonl,rate,n=60
+EV1.dead_end_ledger_count,Evaluation 1,20,16,,mismatch,iter_3 paper_draft.md (ledger table),count,the text says 'Twenty items'; the table lists this many rows
+EV1.pending_packets,Evaluation 1,5,5,,misdescribed,results/pending_human_review_iter4.json,count,"5 files, of which 3 are native-review packets (570 rows) and 2 are EXECUTOR-labelled checks; the draft calls all five 'packets ready for native-speaker labelling'"
+EV1.pending_items,Evaluation 1,640,640,,match,results/pending_human_review_iter4.json,count,
+EV1.audit_checked,Evaluation 1,167,,,match,iter_3 evaluation_1 results/claims_registry.csv,count,claims_registry rows = 99
