@@ -1,8 +1,0 @@
-11:42:38|INFO   |A_orig: n=460 empty=0 lang_cons=0.996 degenerate=0 kw=190
-11:42:39|INFO   |B_keyword_t96: n=460 empty=0 lang_cons=0.998 degenerate=0 kw=152
-11:42:40|INFO   |C_corrected: n=460 empty=0 lang_cons=0.998 degenerate=0 kw=130
-11:42:41|INFO   |D2_reselected_judge: n=460 empty=0 lang_cons=0.998 degenerate=0 kw=129
-11:42:42|INFO   |D_reselected_clf: n=460 empty=0 lang_cons=0.996 degenerate=0 kw=152
-11:42:43|INFO   |F_dose1.5: n=460 empty=0 lang_cons=0.998 degenerate=0 kw=109
-11:42:44|INFO   |F_dose2.0: n=460 empty=0 lang_cons=0.996 degenerate=0 kw=56
-11:42:45|INFO   |F_dose3.0: n=460 empty=0 lang_cons=0.998 degenerate=1 kw=42

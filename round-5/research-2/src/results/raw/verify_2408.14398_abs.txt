@@ -1,9 +1,0 @@
-# grep https://arxiv.org/abs/2408.14398  pattern=/while calibration on the target language effectively retains perplexity and yields high signal-to-noise ratios/  accessed 2026-09-24
-warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
-URL: https://arxiv.org/abs/2408.14398
-Type: HTML
-Pattern: while calibration on the target language effectively retains perplexity and yields high signal-to-noise ratios (1 matches in 8449 chars)
-
---- Content ---
-
-2147:...dels across diverse languages, tasks, models, and SotA pruning techniques. We further analyze the latent subspaces, pruning masks, and individual neurons within pruned models. Our results reveal that while calibration on the target language effectively retains perplexity and yields high signal-to-noise ratios, it does not consistently improve downstream task performance. Further analysis of internal representations at three different levels highlights broader limitations of current pruning approaches: Whi...

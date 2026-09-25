@@ -1,9 +1,0 @@
-# grep https://arxiv.org/abs/2608.30856  pattern=/their refusals are overall explicit and strongly morally evaluative/  accessed 2026-09-24
-warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
-URL: https://arxiv.org/abs/2608.30856
-Type: HTML
-Pattern: their refusals are overall explicit and strongly morally evaluative (1 matches in 8009 chars)
-
---- Content ---
-
-1893:...xonomy of LLM refusals that is grounded in pragmatic theory. Applying this taxonomy to responses from 16 modern LLMs across 14 harm categories, we find that although models differ in how they refuse, their refusals are overall explicit and strongly morally evaluative, with interactional repair occurring mainly through offering or providing safer alternatives instead of interpersonal facework. This pattern is especially consequential in sensitive harm contexts, wh...

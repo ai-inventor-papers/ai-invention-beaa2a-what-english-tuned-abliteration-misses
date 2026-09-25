@@ -1,6 +1,0 @@
-# Nothing in this artifact is heavy: it produces only text (markdown, JSON, CSV,
-# Python) plus results/raw/, which holds the verbatim primary-source extracts
-# backing every quoted row and is well under the 10 MB auto-keep floor
-# (~1.6 MB across 100 files). No model weights, no caches, no downloads.
-# Therefore there is no path that needs a keep/delete decision.
-entries: []

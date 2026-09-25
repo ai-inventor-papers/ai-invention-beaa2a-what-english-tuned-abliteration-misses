@@ -1,1 +1,0 @@
-analyze exit 0

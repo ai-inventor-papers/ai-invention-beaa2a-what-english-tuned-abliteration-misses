@@ -1,7 +1,0 @@
-P1 {"value": 0.03, "exact_ci95": [0.006229971538306397, 0.08517605297428], "n": 100, "supported_point": true, "supported_ci": false, "p_one_sided_rate_below_0.054": 0.2054365492511811}
-P2 {"gap": 0.38, "ci": [0.29, 0.47], "supported": false}
-P3 {"dnll_token_weighted": 0.0028772580292484307, "sentence_mean": 0.003020527354188358, "ci": [-0.001687331348080194, 0.007732948135810771], "supported_point": true, "supported_ci": true}
-P4 {"original_P4": "NOT TESTED (utility cut before generation)", "P4_prime": {"invalid_en": 0.0, "lang_consistent_en": 1.0, "over_refusal_en": 0.016666666666666666, "over_refusal_orig_en": 0.13333333333333333, "invalid_sl": 0.0, "lang_consistent_sl": 0.9956521739130435, "over_refusal_sl": 0.18333333333
-P5 {"gap_B": 0.68, "gap_C": 0.38, "gap_D": 0.3, "ratio": 1.2666666666666666, "supported": true}
-P6 {"A1_corrected": 63.972441443971874, "A1_trial96": 26.01157247479183, "supported": true}
-P7 {"value": -0.050000000000000044, "ci": [-0.41, 0.12252083333333322], "in_range": true, "ladder_points": [[0.15, 0.6799999999999999, "B_keyword_t96"], [0.03, 0.32999999999999996, "F_dose1.5"], [0.0, 0.0, "F_dose2.0"], [0.0, 0.0, "F_dose3.0"]], "supported": false, "note": "if in_range is false the cor

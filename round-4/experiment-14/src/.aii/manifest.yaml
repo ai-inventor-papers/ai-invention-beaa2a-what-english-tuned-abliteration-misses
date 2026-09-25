@@ -1,9 +1,0 @@
-entries:
-  - path: .venv/
-    delete: regenerable
-    source: "uv venv .venv --python=3.12 && uv pip install --python .venv/bin/python -r pyproject.toml"
-  - path: __pycache__/
-    delete: regenerable
-    source: "python -c 'import common, method'"
-  - path: results/
-    keep: 12,024 judged generations, per-cell energy profiles and the unedited-model KL reference; ~3 GPU-hours, not reproducible inside this run

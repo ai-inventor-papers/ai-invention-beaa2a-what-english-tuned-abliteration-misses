@@ -1,7 +1,0 @@
-Hardware provenance (both Ada Lovelace, compute capability 8.9; identical software pins in env/requirements.lock):
-- previous (interrupted) agent session, host uptime 202 d: NVIDIA L4 23 GB, driver 580.126.20
-    GaMS stages: check, gen, acts, kl, hval (harness validation)   [logs/full_gams.out up to 22:36 UTC]
-- this session, host uptime 50 d: NVIDIA GeForce RTX 4090 24 GB, driver 580.178.04
-    GaMS stages: util, flores, s5acts, rseq; ALL Gemma stages; base_diag; dose
-Every paired original-vs-edited quantity (utility, FLORES, KL, R_seq, activations) was computed within ONE session on ONE GPU
-(one model load, adapter toggled), so the paired deltas never mix hardware.

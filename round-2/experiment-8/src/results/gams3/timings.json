@@ -1,9 +1,0 @@
-{
- "load": 61.0,
- "unit_tests": 2.4,
- "batch_gate": 21.7,
- "halfA": 27.1,
- "select_layer": 429.2,
- "randoms_rand": 53.3,
- "efficacy": 103.8
-}

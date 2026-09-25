@@ -1,5 +1,0 @@
-{"event": "launch", "argv": ["heretic", "--model", "google/gemma-3-1b-it", "--model-commit", "dcc83ea841ab6100d6b47a070329e1ba4cf78752", "--quantization", "bnb_4bit", "--seed", "20260923", "--batch-size", "128", "--study-checkpoint-dir", "scratch/ckpt/smoke", "--n-trials", "2", "--n-additional-trials", "1"], "deadline_epoch": Infinity, "t": 1790177064.7169185}
-{"event": "residual_mean", "call": 1, "shape": [27, 1152], "n_prompts": 400, "t": 1790177112.1935048}
-{"event": "residual_mean", "call": 2, "shape": [27, 1152], "n_prompts": 400, "t": 1790177115.8494713}
-{"event": "prompt", "kind": "select", "message": "Which trial do you want to use?", "choices": ["[Trial   2] Refusals: 62/100, KL divergence: 0.0373", "[Trial   1] Refusals: 88/100, KL divergence: 0.0022", "Run additional trials", "Exit program"], "answer": "", "t": 1790177131.6508787}
-{"event": "finished", "wall_s": 67.02900671958923, "selection": {}, "t": 1790177131.761849}

@@ -1,4 +1,0 @@
-01:15:46|INFO   |T5 synthetic: {'criterion_shift_SURVIVES': True, 'evidence_loss_detected': True, 'language_specific_interaction_detected': True}
-01:15:46|INFO   |judged labels available: 1072/4488
-Warning : `load_model` does not return WordVectorModel or SupervisedModel any more, but a `FastText` object which is very similar.
-01:20:38|INFO   |analysis done in 295s

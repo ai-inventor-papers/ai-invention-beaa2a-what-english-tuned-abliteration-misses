@@ -1,6 +1,0 @@
-{
- "cuts_applied": [],
- "decision_utc": "2026-09-24T00:05Z",
- "basis": "T7 scaling check: pre-run tiktoken projection for the 4 core checkpoints was $6.18 (40 output tokens assumed per call); measured cost after the first 788 calls was $0.00136 per gpt-4.1 call (mean 10.1 completion tokens), so all 5 checkpoints x 960 items project to ~$6.6 for the primary judge (+ ~$0.2 second judge + <$0.1 adjudicator), below the $7.0 cut threshold and the $9.0 hard stop. GPU generation for all 5 checkpoints finished within the time plan. No stage of the frozen cut order was applied.",
- "cut_order_reference": "protocol.yaml:cut_order"
-}

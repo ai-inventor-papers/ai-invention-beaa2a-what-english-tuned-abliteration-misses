@@ -1,3 +1,0 @@
-judge exit 0 00:06:11 gpt-4.1 stopped by run budget after 1072 harmful items (assembled)
-judge2_fill exit 1 00:25:06
-judge2_h100 exit 0 00:57:10 stopped: free-tier daily cap (1000 req) reached

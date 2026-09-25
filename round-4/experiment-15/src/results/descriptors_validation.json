@@ -1,8 +1,0 @@
-{
- "heretic_op_present": true,
- "substitution": "closed form replicated from art_0XmNBGkzsJc_/coverage.py (heretic_op.py not a declared dependency)",
- "n_columns_compared": 31,
- "max_rel_err": 1.7960126157488215e-07,
- "pass": true,
- "worst_column": "attn_A2"
-}
