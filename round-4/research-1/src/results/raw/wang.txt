@@ -1,0 +1,206 @@
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/pdf/2505.17306
+Type: PDF
+Pattern: Slovenian|Slovene|all layers|languages:|14 languages|we select|Gemma|Qwen|Llama (143 matches in 109216 chars)
+
+--- Content ---
+
+725:...nterventions to bypass refusals.
+While this is primarily demonstrated in an English-centric context, appropriate
+refusal behavior is important for any language, but poorly understood. In this paper,
+we investigate the refusal behavior in LLMs across 14 languages using PolyRefuse,
+a multilingual safety dataset created by translating malicious and benign English
+prompts into these languages. We uncover the surprising cross-lingual universality
+of the refusal direction: a vector extracted from English can bypa...
+--
+10278:...Vaswani et al., 2017]
+token position i and layer l when processing text t.
+The candidate refusal vectors are obtained by collecting the difference-in-means vectors across all
+layers at final instruction token positions, such as the [/INST] token for Llama2 [Touvron et al.,
+2023]. The most effective refusal vector is then identified by evaluating the reduction in refusal
+behavior after ablating each candidate from the residual stream and choosing the one with the most
+reduction in refusal behavior, me...
+--
+11590:...behavior. To
+remove refusal tendencies, the vector is ablated from the residual stream by projecting the activation
+onto the refusal vector direction and subsequently subtracting this projection:
+x′
+l ←xl −ˆrˆr⊤xl
+(4)
+This ablation is applied across all layers and token positions to comprehensively eliminate refusal
+behavior from the model. Conversely, to enhance refusal behavior, the refusal vector can be added to
+the activations at all token positions within a specific layer l:
+x′
+l ←xl + αˆrl
+(5)
+3
+
+wh...
+--
+12193:... serves
+as a scaling parameter controlling the intervention strength.
+As demonstrated by Arditi et al. [2024], enhancing refusal behavior requires vector addition at only a
+single layer, whereas removing refusal behavior necessitates ablation across all layers. We adhere to
+this established methodology for vector ablation and addition operations.
+4
+Not All Languages are Safety-Aligned
+English-centric safety alignment has been shown to generalize poorly to other languages [Yong et al.,
+2024, Li et al., 2024a, Deng et al., 2024]. To assess cross-lingual jailbreak vulnerability, we show com-
+pliance rates across 14 languages using three instruction-tuned models: Llama3.1-8B-Instruct,
+Qwen2.5-7B-Instruct, and gemma-2-9B-Instruct. Each model is tested on 572 translated
+harmful prompts per language (see dataset details in §5.1), with responses translated back into
+English and evaluated using WildGuard [Han et al., 2024]. As shown in Table 1, all models exhibit
+v...
+--
+13184:...eptibility across languages.
+Table 1: Crosslingual jailbreak compliance rates (%) based on WildGuard evaluation. Cells high-
+lighted in red indicate languages with success rates exceeding 10%.
+Instruct model
+ar
+de
+en
+es
+fr
+it
+ja
+ko
+nl
+pl
+ru
+th
+yo
+zh
+LLama3.1-8B
+6.1
+3.5
+1.9
+2.4
+2.3
+2.6
+25.0
+29.2
+3.0
+9.1
+3.8
+10.0
+82.9
+11.9
+Qwen2.5-7B
+16.3
+13.5
+9.6
+8.7
+12.4
+9.6
+22.2
+23.4
+16.1
+12.4
+9.6
+21.0
+74.0
+14.9
+gemma2-9B
+3.8
+1.4
+0.4
+2.6
+1.9
+1.0
+5.4
+7.9
+1.7
+2.4
+2.6
+4.5
+56.6
+3.1
+We found that Yoruba (yo) exhibits significant safety misalignment across the models, with particularly
+concerning results on Llama3.1-8B-Instruct (82.9%) and Qwen2.5-7B (74.9%). These high
+percentages indicate a critical absence of refusal capabilities when prompted in Yoruba, leading
+us to classify it as a safety-misaligned language for both models. This vulnerability represents a
+substantial safety gap that...
+--
+17467:...behavior across languages, providing a comprehensive assessment
+of refusal vector transferability.
+5.2
+Cross-lingual Transfer of English Refusal Vectors
+endeesfrit
+nljaplruzhkoarth
+yo
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+Yi-6B-Chat
+endeesfrit
+nljaplruzhkoarth
+yo
+gemma-2b-it
+endeesfrit
+nljaplruzhkoarth
+yo
+Llama-3-8B-Instruct
+endeesfrit
+nljaplruzhkoarth
+yo
+Llama-3-70B-Instruct
+endeesfrit
+nljaplruzhkoarth
+yo
+Llama-3.1-8B-Instruct
+endeesfrit
+nljaplruzhkoarth
+yo
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+gemma-2-9b-it
+endeesfrit
+nljaplruzhkoarth
+yo
+Qwen2.5-3B-Instruct
+endeesfrit
+nljaplruzhkoarth
+yo
+Qwen2.5-7B-Instruct
+endeesfrit
+nljaplruzhkoarth
+yo
+Qwen2.5-14B-Instruct
+endeesfrit
+nljaplruzhkoarth
+yo
+Qwen2.5-32B-Instruct
+Baseline
+EN Ablation
+Figure 1: Compliance rates to harmful queries before and after ablating refusal vectors derived from
+English. Ablation leads to a substantial increase in compliance across all languages and models,
+indicating refusal direction derived from English transfers to other languages.
+We evaluate a diverse set of models spanning multiple sizes, including Yi [Young et al., 2025],
+Qwen2.5 [Qwen et al., 2025], Llama-3 [Grattafiori et al., 2024], and Gemma-2 [Gemma Team et al.,
+2024], to ensure that our findings generalize across different model families and scales. We use
+Wildguard [Han et al., 2024] to classify whether the model refuses or complies with the queries.
+In the case of non-English queries and res...
+--
+19279:....
+Our first key finding is that English-derived refusal vectors lead to a substantial increase in harmful
+compliance across all evaluated models and safety-aligned languages. Even models that initially
+demonstrate strong multilingual safety, such as gemma-2-9B-it and Qwen2.5-14B-Instruct, can
+be successfully jailbroken post-ablation, highlighting that even the most robust multilingual safety
+mechanisms can be compromised by targeting a direction derived solely from English data.
+3These languages not only contain high...
+--
+19936:...models already exhibit partial vulnerability in certain languages, especially low-resource and
+poorly safety-aligned ones like Yoruba, where the model shows high compliance before ablation.
+Yet, the ablation further increases compliance rates (e.g., gemma-2-9B-it increases from 0.57 to
+0.87), confirming that English-derived refusal directions contribute notably to refusal behavior even
+in languages where safety is already suboptimal. Notably, the attack generalizes across language and
+script boundari...
+--
+[113 more matches not shown]

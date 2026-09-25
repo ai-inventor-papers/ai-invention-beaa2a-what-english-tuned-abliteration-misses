@@ -1,0 +1,30 @@
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/abs/2606.25487
+Type: HTML
+Pattern: Abstract (1 matches in 8441 chars)
+
+--- Content ---
+
+986:Skip to main content [](https://arxiv.org/IgnoreMe) [ ](https://arxiv.org/) [ Search ](https://arxiv.org/search) [Submit](https://arxiv.org/user/create) [Donate](https://info.arxiv.org/about/donate.html) [Log in](https://arxiv.org/login)
+
+Search arXiv
+
+Press Enter to search * [Advanced search](https://arxiv.org/search/advanced)
+
+# Computer Science > Computation and Language
+
+**arXiv:2606.25487** (cs) 
+
+[Submitted on 24 Jun 2026 ([v1](https://arxiv.org/abs/2606.25487v1)), last revised 25 Jun 2026 (this version, v2)]
+
+# Title:How Reliable Is Your Jailbreak Judge? Calibration and Adversarial Robustness of Automated ASR Scoring
+
+Authors:[Yang Gao](https://arxiv.org/search/cs?searchtype=author&query=Gao,+Y) (Veyon Solutions)
+
+View a PDF of the paper titled How Reliable Is Your Jailbreak Judge? Calibration and Adversarial Robustness of Automated ASR Scoring, by Yang Gao (Veyon Solutions)
+
+[View PDF](/pdf/2606.25487) [HTML (experimental)](https://arxiv.org/html/2606.25487v2)
+
+> Abstract:Almost every paper on LLM jailbreaks and prompt injection reports an attack-success rate (ASR), and that number is assigned not by people but by an automated judge: either a safety classifier trained for the task, or a general chat model prompted to grade. The judge is rarely checked. We check it. Using 596 human-labeled completions from the HarmBench classifier validation set, we compare the two judge families against human majority votes and then attack them. The two families fail in opposite ways. The dedicated classifier over-flags (precision 0.835, recall 0.974); three different LLM-as-judges keep high precision (0.81 to 0.94) but show erratic recall (0.06 to 0.65), so the same responses produce very different ASR depending on which judge scores them. The two families also differ sharply in robustness. Wrappers that leave the harmful text untouched and only add benign framing flip every LLM-judge between 57% and 100% of the time, and a single prepended refusal sentence accounts for much of this (39% to 88%). The dedicated classifier resists these surface attacks (at most 6.7%), but a white-box GCG attack on its open weights flips 70% of confident true positives (21 of 30; 95% CI 54 to 86%) even at a small optimization budget. A two-annotator audit confirms the attacks leave the harm intact: every one of 80 sampled flips still contained the harmful content. Because a large and growing share of reported ASR comes from LLM-judges, many such numbers are unreliable both on average and under deliberate pressure. We recommend that papers report judge precision and recall on a human-labeled slice, report ASR corrected for judge precision, and include an adversarial check of the judge. Our code is released. 
+
+Comments: | 10 pages, 3 figures, 2 tables, Code: [this http URL]...

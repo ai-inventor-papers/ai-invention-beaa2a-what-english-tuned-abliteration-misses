@@ -1,0 +1,144 @@
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/pdf/2608.08032
+Type: PDF
+Pattern: Slovene|abliterat|weight|orthogonal to|L11|late layer|language-invariant|cosine (26 matches in 22260 chars)
+
+--- Content ---
+
+701:...ul request in English will often comply with the same
+request in a lower-resource language. We trace this gap mechanistically
+in Sarvam-30B, an Indic-multilingual mixture-of-experts reasoning model,
+and find it is not a failure to detect harm. Harm is encoded as an internal
+direction that is nearly language-invariant in mid-network (English-vs-
+Indic cosine ≈0.9 at L11), and steering that direction upstream causally
+controls refusal. But the detection direction is orthogonal to the change that
+actually writes the refusal, which is late and assembled over the course of
+generation rather than read off in a single forward pass. We attribute the
+write to a specific, localizable circuit—a mixture-of-experts writer held in
+check by an attention opposer—and price every way of in...
+--
+3389:...re the model registers harm to where a refusal is produced. We also test how far
+the account generalizes on a second multilingual MoE.
+1
+arXiv:2608.08032v2  [cs.AI]  18 Aug 2026
+
+Published at the Workshop on Actionable Interpretability at COLM 2026
+Figure 1: The behaviour-writing change is late and orthogonal to detection. Left: harm-axis
+projection of the verdict residual, refused vs. complied. Middle: refused−complied separa-
+tion along the harm axis (Cohen d)—a weak mid-layer detection signal. Right: cos(refusal
+direction, harm axis) ≈0 at every layer—the large late residual movement that is the refusal
+is orthogonal to the detection axis.
+2
+Setup
+Model. Sarvam-30B (Sarvam AI, 2025) is a 30B-parameter, 19-layer (L0 dense, L1–18
+MoE, 128 experts, top-6) Indic-multilingual reasoning model that emits an explicit <think>
+trace. We use six languages (English plus Hindi, Bengali, Punjabi, Tamil, Malayalam).
+Data/labels....
+--
+4839:...al., 2024);
+the refusal direction is the verdict-position difference-of-means of refused vs. complied
+generations, constructed independently of ˆvharm. Cost. Fluency cost is WikiText-2 perplexity
+over 64 × 512-token chunks; the base model scores ≈15.
+3
+Harm is detected, shared across languages, and orthogonal to refusal
+Detection lives in a language-agnostic mid-network band.
+A logistic language probe
+over the residual stream falls from 99.6% at L1 to 40% at L11 and recovers to 96% by L18
+(chance 17%): the middle of the network strips surface language. That same band is where
+harm becomes linearly decodable, and the harm axis there is cross-lingually shared—per-
+language harm axes align at 0.95 ± 0.01 Indic↔Indic and 0.90 ± 0.01 English↔Indic at L11
+(Section A). English’s encoding is measurably stronger (axis norm 37.4 vs. 22–25 for any
+Indic language; ∼7pp higher probe accuracy), a quantitative head-start that foreshadows
+the gap.
+But detection is orthogonal to the change that writes refusal.
+We ask, per layer, (i)
+whether refused and complied generations separate along the harm axis, and (ii) whether
+the residual movement when refusing aligns with that axis (Figure 1). They dissociate. Harm
+separation is a weak, middle-layer signal (Cohen d peaks at 0.95 at L9). The residual change
+that accompanies refusal is near-orthogonal to the harm axis at every layer (| cos | ≤0.10,
+max 0.095 at L18; per-language cosines 0.04–0.15, Section A) and its magnitude grows
+monotonically into the late layers (∥∆∥: 2.2 at L4 →13.7 at L11 →81.7 at L18). So “is this
+harmful?” (mid, weak, ∥ˆvharm) and “write the refusal” (late, large, ⊥ˆvharm) are different
+directions in different layers (Zhao et al., 2025). The behaviour lives in a late subspace,
+separate from detection—which is why uniform detection and uneven refusal can coexist.
+2...
+--
+7806:...onfiguration moves the L15–18 band.
+Re-applying detection at every step does.
+Activation addition of ˆvharm at L10, re-applied
+at every decode step, recovers refusal with recovery 0.65 [0.50, 0.78], 16× malicious/benign
+selectivity, and 4% benign knockout; a layer sweep places the causal ceiling at L11–12
+(Section B). This is the positive counterpart to Table 1: the same direction that cannot reach the
+output in one pass does produce refusal when carried across generation. Refusal is therefore
+not a single-pass feed-forward read-out; the decision is realized over the autoregressive
+trajectory. Th...
+--
+10109:...fusal, and an L18 attention opposer pushes
+against it, so damping it raises refusal. The circuit is also language-structured—consistent
+with detection being shared but execution being language-specific, the top-K harm-expert
+routing Jaccard between Indic languages and English collapses from 0.43 at L11 to 0.03 at
+L18 (Section C), a candidate mechanism for the gap itself. Because the circuit exposes three
+handles—amplify writers, damp the opposer, or edit heads surgically—we price each by
+intervening and measuring refusal recovery against WikiText perplexity (Table 2).
+3
+
+Published at the Workshop...
+--
+13899:... routed block scales
+everything at once, so it garbles before it fully flips. The map and the methodology transfer;
+how far the lever moves behaviour is a property of the architecture.
+7
+Discussion
+The cross-lingual safety gap is not a detection failure. Sarvam-30B represents harm in a
+shared, near language-invariant mid-network direction, and that direction causally con-
+trols refusal when steered upstream. The gap appears downstream: the direction a single
+forward pass can read off (detection) is not the direction that produces the behaviour (a late,
+orthogonal, MoE-written change), the link between them is t...
+--
+17797:... encode
+harmfulness and refusal separately. arXiv preprint arXiv:2507.11878, December 2025.
+A
+Cross-lingual detection detail
+Per-language input-position harm axes are diff-of-means with bootstrap CIs over 500 paired
+resamples on the 100 (malicious, benign) twins (Arditi et al., 2024). Cross-lingual cosine
+alignment at L11 (Figure 3): Indic↔Indic 0.95 ± 0.01, English↔Indic 0.90 ± 0.01. The input-
+position harm axis and the output-position refusal axis are orthogonal in every language
+at L11 (EN 0.04, HI 0.06, BN 0.06, PA 0.11, TA 0.15, ML 0.10) and remain so through L0–14;
+weak alignment appears only at the residual-norm-outlier layer L18, replicating Zhao et al.
+(2025) in a non-English MoE setting. During Indic generation the model deliberates in
+English-script tokens inside <think> (ASCII fraction 0.90–0.95), and a logit lens shows the
+residual stream framing its decision in English safety vocabulary (unfortunately, harmful) by
+L9, consistent with Wang et al. (2026)’s universal cross-lingual refusal direction.
+Figure 3: Cross-lingual cosine alignment of input-position harm axes at L11 (bootstrap
+means; std ≤0.014). Indic↔Indic cluster at 0.95 ± 0.01; English↔Indic at 0.90 ± 0.01.
+B
+Upstream steering: dose-response and layer sweep
+We add α ˆvharm to the last-position residual at every generation step, hooking L10, on
+(malicious, comply) and (benign, comply) trajectories from each...
+--
+19313:... malicious-comply trajectories while refusing only 4% [1, 13] of benign prompts (16×
+selectivity); a matched-norm random direction flips only ∼13% (∼6× gap). A layer sweep
+at α=4 gives 87% at L5, 93% at L8, 80% at L10, 47% at L12, 29% at L14: strong leverage
+anywhere in L5–10, dropping sharply past L11–12, consistent with the refuse/comply
+decision committing there. The output-position refusal axis, although correlationally clean,
+does not reliably steer (0–1/5), supporting the upstream harm representation as the causal
+driver (Figure 4).
+6
+
+Published at the Workshop on Actionable Interpretability at COLM 2026
+Figure 4: Left: mal recovery and benign knockout vs. steering magnitude α (Wilson 95%
+CIs); α=4 is the selectivity sweet spot. Right: mal recovery at α=4 vs. hook layer; leverage
+vanishes past L11–12.
+C
+MoE expert routing collapses by the output
+Per prompt we record a top-6 expert-usage fingerprint at each MoE layer and define each
+layer’s harm-relevant expert set as the top-10 experts by |Pearson(usage, harm label)|. The
+mean cross-lingual Jaccard rises through the mid-network, peaks at 0.43 at L11 (+8.7σ
+above the random null 0.041), and collapses to 0.027 at L18 (Figure 5). The collapse is
+harm-specific: a within-harm category signal stays at 0.117 (≈3× null) at L18. The same
+peak→random shape replicates in Qwen3-30B-A3B. Concretely, English’s top-10 harm
+experts at L11 overlap 5–7 of 10 with each Indic language; at L18 that drops to 0–2. The
+shared upstream harm signal is realized through near-disjoint expert sets per language
+by the output—a candidate mechanism for why one language’s safety routing can fail in
+isolation.
+Figure 5: Top-10 harm-correlated expert J...

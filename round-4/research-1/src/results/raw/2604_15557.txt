@@ -1,0 +1,37 @@
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/abs/2604.15557
+Type: HTML
+Pattern: Abstract|logit lens|predict (11 matches in 7147 chars)
+
+--- Content ---
+
+434:Skip to main content [](https://arxiv.org/IgnoreMe) [ ](https://arxiv.org/) [ Search ](https://arxiv.org/search) [Submit](https://arxiv.org/user/create) [Donate](https://info.arxiv.org/about/donate.html) [Log in](https://arxiv.org/login)
+
+Search arXiv
+
+Press Enter to search * [Advanced search](https://arxiv.org/search/advanced)
+
+# Computer Science > Machine Learning
+
+**arXiv:2604.15557** (cs) 
+
+[Submitted on 16 Apr 2026]
+
+# Title:Predicting Where Steering Vectors Succeed
+
+Authors:[Jayadev Billa](https://arxiv.org/search/cs?searchtype=author&query=Billa,+J)
+
+View a PDF of the paper titled Predicting Where Steering Vectors Succeed, by Jayadev Billa
+
+[View PDF](/pdf/2604.15557) [HTML (experimental)](https://arxiv.org/html/2604.15557v1)
+
+> Abstract:Steering vectors work for some concepts and layers but fail for others, and practitioners have no way to predict which setting applies before running an intervention. We introduce the Linear Accessibility Profile (LAP), a per-layer diagnostic that repurposes the logit lens as a predictor of steering vector effectiveness. The key measure, $A_{\mathrm{lin}}$, applies the model's unembedding matrix to intermediate hidden states, requiring no training. Across 24 controlled binary concept families on five models (Pythia-2.8B to Llama-8B), peak $A_{\mathrm{lin}}$ predicts steering effectiveness at $\rho = +0.86$ to $+0.91$ and layer selection at $\rho = +0.63$ to $+0.92$. A three-regime framework explains when difference-of-means steering works, when nonlinear methods are needed, and when no method can work. An entity-steering demo confirms the prediction end-to-end: steering at the LAP-recommended layer redirects completions on Gemma-2-2B and OLMo-2-1B-Instruct, while the middle layer (the standard heuristic) has no effect on either model. 
+
+Comments: | 19 pages, incl. 10 appendix pages, 4 figures, 20 tables  
+---|---  
+Subjects: |  Machine Learning (cs.LG); Computation and Language (cs.CL)  
+Cite as: | [arXiv:2604.15557](https://arxiv.org/abs/2604.15557) [cs.LG]  
+  | (or  [arXiv:2604.15557v1](https://arxiv.org/abs/2604.15557v1) [cs.LG] for this version)   
+  |  <https://doi.org/10.48550/arXiv.2604.15557> Focus to learn more arXiv-issued ...
+--
+[3 more matches not shown]

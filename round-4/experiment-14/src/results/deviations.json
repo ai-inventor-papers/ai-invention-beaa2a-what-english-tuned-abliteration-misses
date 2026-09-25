@@ -1,0 +1,85 @@
+{
+ "n": 10,
+ "deviations": [
+  {
+   "id": "D1_profile_strength",
+   "plan": "measure e_L(h) with a single-layer edit at unit strength c = 1",
+   "done": "c = 2.5 (width 1), chosen on DEV before the freeze",
+   "why": "at c = 1 a single layer moved judged refusal by at most 0.05 and at c = 1.5 by 0.10, below the 0.15 pilot threshold the plan's fallback names; c = 2.5 reached 0.65 with 0.00 degenerate output, so the profile has a measurable dynamic range without buying it with incoherence",
+   "cost": "the profile is a c = 2.5 object: e_L(h) is the write effect AT THAT DOSE, and the 1.0/1.5 pilot cells are kept as the dose-sensitivity record",
+   "evidence": "configs/profile_c.json, results/cells/dev_L*_c1.0, results/cells/dev_L*_c1.5"
+  },
+  {
+   "id": "D2_c_above_heretic_bound",
+   "plan": "Heretic's optimiser bounds max_weight at 1.5",
+   "done": "single-layer probes at c = 2.5 and some matched-energy cells above 1.5",
+   "why": "1.5 is an optimiser search bound, not a property of the operator; the matched-energy design needs whatever scale reaches the target energy on 12 layers",
+   "cost": "cells above the bound are outside the region Heretic's own search explores; each one carries its scale in results/cells/<cell>/meta.json",
+   "evidence": "results/cells/*/meta.json (field c)"
+  },
+  {
+   "id": "D3_anchors_relabelled",
+   "plan": "re-measure the shipped edit, the swapped kernel and the no-op",
+   "done": "their iteration-3 generations are RE-LABELLED here, not regenerated; only the two energy-matched twins A3/A4 were generated",
+   "why": "same model revision, same quantisation, same items, same token budget, same batching code path; regenerating them would have cost ~20 GPU-minutes and produced the same strings",
+   "cost": "the A1/A2 rows inherit the iteration-3 run's numerics; GATE 3 reproduced a stored no-op cell at 0.9166666666666666 first-60-character agreement and an edited cell at 0.7083333333333334, which is the size of the batch/numerics drift this family has already documented",
+   "evidence": "results/reused_cells.json, results/gate3_anchor.json"
+  },
+  {
+   "id": "D4_argmax_not_blind_to_prior_screen",
+   "plan": "the DEV argmax names the winning band out of sample",
+   "done": "the profile is measured here on DEV items only, but the iteration-3 screen had already shown that band 25-36 removes the most Slovene refusal at c = 1 in this checkpoint",
+   "why": "the two panels share a model and a direction family; that ordering was visible before this pod ran, so the band prediction is CORROBORATION, not a surprise",
+   "cost": "the genuinely out-of-sample tests are the rank ordering of O over the strided and hybrid cells (which no prior panel measured), the A1-A4 ladder and the mis-specification screen; the band check is reported but is not the load-bearing claim",
+   "evidence": "results/screen.json, configs/frozen_predictions.json"
+  },
+  {
+   "id": "D5_asr_pipeline",
+   "plan": "RefusEU official guard pipeline (Llama-Guard-3-8B + PolyGuard) ASR",
+   "done": "not run: no S5/S5X generation was produced in this pod",
+   "why": "the GPU budget went to the 48-layer profile and the 28 new confirmation cells; the S5X paired secondary was the declared cut-order item that fell",
+   "cost": "attack success is reported only as judged COMPLIED (+ PARTIAL for the broad reading), which is an upper bound on a guard-scored ASR and is labelled as such",
+   "evidence": "results/cells/*/gens.json (no confirm_s5x split exists)"
+  },
+  {
+   "id": "D6_over_refusal_subset",
+   "plan": "XSTest-safe over-refusal",
+   "done": "over-refusal is measured on the 40 held-out-category HARMLESS twins instead (S6 was never opened; it is a reserved final-evaluation split)",
+   "why": "the frozen data protocol reserves S6/S7 for the evaluation artifact",
+   "cost": "the over-refusal read is on safety-adjacent twins of the harmful items, not on XSTest",
+   "evidence": "results/cells/*/gens.json split confirm_ben"
+  },
+  {
+   "id": "D7_judge_gate",
+   "plan": "SL kappa >= 0.80 makes Slovene confirmatory",
+   "done": "measured within edited arms: SL kappa 0.8297749567224466, EN kappa 0.7212622088655147; confirmatory ['sl'], JUDGE_SENSITIVE ['en']",
+   "why": "the local judge is the only affordable scorer for ~10k generations",
+   "cost": "every rate in a JUDGE_SENSITIVE language is a judge-dependent range, reported beside its Rogan-Gladen correction, and is blocked from confirmatory reading",
+   "evidence": "results/judge_cert.json"
+  },
+  {
+   "id": "D9_sign_convention",
+   "plan": "the frozen threshold reads 'Spearman(O_SL, strict SL residual) >= 0.6'",
+   "done": "evaluated on the removal-aligned statistic -rho; both are printed side by side",
+   "why": "e_L(h) is a refusal DROP, so O predicts REMOVAL and its expected sign against SURVIVING refusal is negative; the frozen sentence omitted the sign",
+   "cost": "none numerically - the threshold is applied to |rho| with the predicted direction checked separately - but it is a post-freeze clarification and is recorded as one",
+   "evidence": "results/analysis_summary.json -> primary.*.rho and primary.*.rho_signed_removal"
+  },
+  {
+   "id": "D10_judge_buy_failed",
+   "plan": "buy a stratified 600-item gpt-4.1 certification inside this pod (cap $3.00) before any confirmatory reading",
+   "done": "NOT bought: the platform's shared OpenRouter key returned aii_openrouter_key_limit for every call; $0.00 spent. Certification fell back to the gpt-4.1 labels already on disk for GaMS3 EDITED arms (iteration-2 cells, same pinned judge and rubric)",
+   "why": "the key's daily limit is shared across every run on the platform and was exhausted at 19:47 UTC",
+   "cost": "the certification is measured on DIFFERENT cells than this pod's own, so it bounds the judge's agreement rather than measuring it on these generations; Slovene passes the 0.80 gate (0.8297749567224466) and English misses it (0.7212622088655147), so English is blocked from confirmatory reading",
+   "evidence": "results/judge_cert.json, results/judge_cert_pool.json, logs/certify.log"
+  },
+  {
+   "id": "D11_post_freeze_rungs",
+   "plan": "the dissociation ladder A1-A4 separates placement from dose",
+   "done": "four extra cells (P_ship/P_swap at E3 and E2) were added AFTER the freeze",
+   "why": "A1-A4 all sit at the refusal floor (judged Slovene strict 0.00-0.20), so the ladder cannot resolve placement at production dose; the added rungs put both production kernels at the two matched energies where the panel is not saturated",
+   "cost": "they are exploratory, are marked so in configs/post_freeze_cells.json, never enter the primary statistic and never enter the Holm family",
+   "evidence": "configs/post_freeze_cells.json, results/analysis_summary.json -> post_freeze_exploratory"
+  }
+ ]
+}

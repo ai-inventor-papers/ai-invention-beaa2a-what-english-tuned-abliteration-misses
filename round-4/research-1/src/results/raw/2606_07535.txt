@@ -1,0 +1,245 @@
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/pdf/2606.07535
+Type: PDF
+Pattern: abliterat|unaligned (12 matches in 75145 chars)
+
+--- Content ---
+
+4062:...airs of “chosen” (preferred) and “rejected” (dis-
+preferred) responses. This eliminates the need for a
+separate reward model, simplifying and stabilizing
+the training process.
+arXiv:2606.07535v1  [cs.CL]  24 Apr 2026
+
+To study alignment dynamics more directly, we
+build on recent advances in refusal abliteration,
+a technique that disables a model’s safety mecha-
+nisms. To uncensor an LLM, one must first identify
+the “refusal direction” by finding the mean differ-
+ence vector between the model’s internal activa-
+tions on harmful and harmless instructions. Once
+identified, this direction can be ablated (r...
+--
+13316:... for English inputs.
+RefusEU is designed
+in such a way that the chosen answer for unsafe
+prompts is always a refusal. To generate these
+samples, the initial prompts were augmented with
+instructions to produce refusals. Further details are
+provided in Appendix B.
+To collect unsafe answers, we use an abliterated
+version of Llama-3.1-70B, named Llama-3.1-70B-
+Instruct-lorablated9. In both cases (safe and unsafe
+answers), we also apply language consistency fil-
+tering, analogous to that employed in the question
+generation step.
+Finally, only pairs in which the refusal answers
+were consistently marked as sa...
+--
+14733:..., unsafe) an-
+swer.
+4
+Methodology
+In this section, we describe our methodology, in-
+cluding the models used, datasets, and the training
+and evaluation procedures.
+8https://huggingface.co/facebook/fasttext-language-identification
+9https://huggingface.co/mlabonne/Llama-3.1-70B-Instruct-lorablated
+4.1
+Abliteration
+The ablation procedure was not performed by the
+authors. Instead, as a starting point, we adopted
+the ablated versions of Llama 3.1–8B–Instruct10
+and Llama 3.1–70B–Instruct, which was previously
+used for compliance answer generation. As shown
+in Table 1, these two models exhibit high initial
+ASR...
+--
+16606:... for each language, starting from the ab-
+lated Llama-8B model. In each setup, the DPO
+method was chosen as the alignment technique,
+using the implementation from the TRL library11.
+The detailed training parameters are provided in
+the Appendix D.
+10https://huggingface.co/mlabonne/NeuralDaredevil-8B-abliterated
+11https://huggingface.co/docs/trl/en/dpo_trainer
+
+Llama 8B
+Llama 70B
+Language
+Instruct
+Ablated
+Balanced
+High-Res
+Only
+English
+Only
+No
+English
+Instruct
+Ablated
+Balanced
+High-Res
+Only
+English
+Only
+No
+English
+High-resource languages
+en
+0.60
+74.71
+1.21
+0.57
+0.94
+2.50
+3.29
+81.14
+0.00
+0.43
+0.05
+2.36
+de...
+--
+18209:...(ASR %) on the RefuseEU test set (lower is better). The “Instruct” column shows the
+reference instruction-tuned model, while “Ablated” represents the safety-ablated baseline. The remaining columns
+correspond to our training variants. Languages are grouped by resource level.
+4.4
+Baselines
+We use the abliterated Llama-3.1-8B and Llama-
+3.1-70B models as baselines and compare their
+performance after the multilingual alignment pro-
+cedure.
+We also evaluate initial instruction-
+tuned Llama models:
+Llama-3.1-8B12, Llama-
+3.1-70B and other open models : Qwen2.5-7B-
+Instruct13, Qwen2.5-14B-Instruct14, gpt-oss-...
+--
+23600:... pro-
+vided in Appendix E. Overall, the results are con-
+sistent across configurations, with only minor per-
+formance differences on the aforementioned bench-
+marks. For every training setup, the ASR scores
+fall below 5%—a substantial reduction from the
+roughly 20% observed for each language in the
+abliterated versions.
+5.2
+Language consistency
+To address RQ2 (which concerns language con-
+sistency in multilingual training), we evaluate lan-
+guage consistency across all experimental setups.
+Figure 4 presents the overview comparison be-
+tween language consistency and ASR. The detailed
+proportions of answ...
+--
+26029:... also observed in the balanced
+and without-English training configurations. For
+the single-language training setups (see Table 11),
+a clear pattern emerges. For high-resourced lan-
+guages, except German, language consistency re-
+mains stable and in many cases exceeds 90%. How-
+ever, training the 8B abliterated Llama model on
+only one language does not guarantee high lan-
+guage consistency for low-resourced languages.
+Even so, it often leads to improvements compared
+to the other training configurations, as reflected by
+the diagonal results.
+5.3
+Global MMLU
+To address RQ3 (regarding general multilingual
+...
+--
+30732:...er-project/EuroLLM-9B-Instruct
+0.2
+0.0
+0.2
+0.4
+0.6
+0.8
+Correctness drop
+0.4
+0.2
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+Fluency drop
+Type / Language
+type
+Balanced
+High Res only
+English only
+No English
+lang
+avg-highR
+avg-lowR
+avg-All
+Figure 6: Drop on fluency and correctness across differ-
+ent trainings and initial abliterated model for 8B model.
+models, a clear trend emerges: for low-resource
+languages, it is more effective to use the translation
+pipeline rather than forcing the model to respond
+in the original language, even when using the orig-
+inal Llama 3.1-Instruct model (See Figure 7). In
+these cases, the drop i...
+--
+42183:....
+John Schulman, Filip Wolski, Prafulla Dhariwal,
+Alec Radford, and Oleg Klimov. 2017.
+Prox-
+imal policy optimization algorithms.
+Preprint,
+arXiv:1707.06347.
+Harethah Abu Shairah, Hasan Abed Al Kader Ham-
+moud, Bernard Ghanem, and George Turkiyyah.
+2025. An embarrassingly simple defense against
+llm abliteration attacks. Preprint, arXiv:2505.19056.
+Zhihong Shao, Peiyi Wang, Qihao Zhu, Runxin Xu,
+Junxiao Song, Xiao Bi, Haowei Zhang, Mingchuan
+Zhang, Y. K. Li, Y. Wu, and Daya Guo. 2024.
+Deepseekmath: Pushing the limits of mathemati-
+cal reasoning in open language models. Preprint,
+arXiv:2402.03300.
+Shival...
+--
+66457:...e differences are
+relatively small.
+F
+Detailed results
+F.1
+Language consistency results
+Table 12 presents language consistency results for
+different variants of Llama 8B and Llama 70B mod-
+els, while Table 13 shows these results for baseline
+open-access models. Figure 8 presents the delta be-
+tween abliterated model language consistency and
+four variants of safety-aligned models for LLama
+8B.
+Balanced
+English only
+High Res only
+No English
+0
+20
+40
+60
+Language
+en
+de
+it
+fr
+es
+pt
+pl
+cs
+sk
+sl
+lt
+lv
+Figure 8: Delta in language consistency between initial
+abliterated model and four model variants of Llama 8B....
+--
+[2 more matches not shown]

@@ -1,0 +1,32 @@
+{
+ "cell": "QPF_noop",
+ "family": "noop",
+ "E": null,
+ "part": "outside_profile",
+ "stage": "outside_profile",
+ "model": "qwen3",
+ "flores_dNLL": null,
+ "kl_dolly": null,
+ "sec_gen": 23.5,
+ "sec_tf": 0.0,
+ "complete_plan": [
+  [
+   24,
+   "en"
+  ],
+  [
+   24,
+   "sl"
+  ],
+  [
+   24,
+   "de"
+  ],
+  [
+   24,
+   "lt"
+  ]
+ ],
+ "max_new": 96,
+ "done_utc": "2026-09-24T19:04:12Z"
+}

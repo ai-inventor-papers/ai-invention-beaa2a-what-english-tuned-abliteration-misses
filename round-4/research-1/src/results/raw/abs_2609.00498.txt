@@ -1,0 +1,49 @@
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/abs/2609.00498
+Type: HTML
+Length: 8022 chars (truncated)
+
+--- Content ---
+
+Skip to main content [](https://arxiv.org/IgnoreMe) [ ](https://arxiv.org/) [ Search ](https://arxiv.org/search) [Submit](https://arxiv.org/user/create) [Donate](https://info.arxiv.org/about/donate.html) [Log in](https://arxiv.org/login)
+
+Search arXiv
+
+Press Enter to search * [Advanced search](https://arxiv.org/search/advanced)
+
+# Computer Science > Artificial Intelligence
+
+**arXiv:2609.00498** (cs) 
+
+[Submitted on 31 Aug 2026]
+
+# Title:Validity-Aware Jailbreak Evaluation for Large Language Models
+
+Authors:[Qilong Wu](https://arxiv.org/search/cs?searchtype=author&query=Wu,+Q), [Sahil Wadhwa](https://arxiv.org/search/cs?searchtype=author&query=Wadhwa,+S), [Pranab Mohanty](https://arxiv.org/search/cs?searchtype=author&query=Mohanty,+P), [Giri Iyengar](https://arxiv.org/search/cs?searchtype=author&query=Iyengar,+G), [Varun Chandrasekaran](https://arxiv.org/search/cs?searchtype=author&query=Chandrasekaran,+V)
+
+View a PDF of the paper titled Validity-Aware Jailbreak Evaluation for Large Language Models, by Qilong Wu and 4 other authors
+
+[View PDF](/pdf/2609.00498) [HTML (experimental)](https://arxiv.org/html/2609.00498v1)
+
+> Abstract:Jailbreak robustness has become central to large language model (LLM) safety evaluation, yet prevailing methodologies rely primarily on refusal behavior, semantic resemblance, and intent-matching heuristics that emphasize linguistic plausibility rather than correctness. We identify a key limitation in existing evaluations: many jailbreak intents depend on instructional validity rather than epistemic factuality, allowing realistic-looking responses to be labeled successful despite being factually or procedurally incorrect. To address this gap, we propose Sequential Epistemic and Action-Level Validation (SEAV), a verification-centric jailbreak evaluation framework that decomposes responses into ordered steps and evaluates both validity and correctness. SEAV combines LLM-as-a-judge mechanisms for semantic interpretation with retrieval-grounded verification using external knowledge sources, assessing whether generated content is factually correct, structurally consistent, and operationally capable of advancing harmful objectives. Empirically, SEAV cuts the false-positive rate on SD-A (a curated strategic-dishonesty diagnostic) by 14.9\,pp vs. the strongest baseline, and reclassifies 22.1\%--51.0\% of sampled prior-labeled successes as invalid across three of four public benchmarks. Together, these results show that enforcing correctness substantially reshapes measured robustness: many previously labeled jailbreak successes are reclassified as invalid, and results are stable across the tested search backends and evaluator models. Code and data are available at [this https URL](https://github.com/Ardor-Wu/SEAV). 
+
+Comments: | To appear on EMNLP 2026 main  
+---|---  
+Subjects: |  Artificial Intelligence (cs.AI)  
+Cite as: | [arXiv:2609.00498](https://arxiv.org/abs/2609.00498) [cs.AI]  
+  | (or  [arXiv:2609.00498v1](https://arxiv.org/abs/2609.00498v1) [cs.AI] for this version)   
+  |  <https://doi.org/10.48550/arXiv.2609.00498> Focus to learn more arXiv-issued DOI via DataCite (pending registration)  
+  
+## Submission history
+
+From: Qilong Wu [[view email](/show-email/e1d0c4c4/2609.00498)]   
+**[v1]** Mon, 31 Aug 2026 23:57:53 UTC (747 KB)  
+
+
+Full-text links:
+
+## Access Paper:
+
+View a PDF of the paper titled Validity-Aware Jailbreak Evaluation for Large Language Models, by Qilong Wu and 4 other authors
+
+  * [View PDF](

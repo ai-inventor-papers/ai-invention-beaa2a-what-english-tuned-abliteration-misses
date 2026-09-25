@@ -1,0 +1,2 @@
+[92m18:50:37[0m|INFO   |[96mmain[0m| 800 items to judge with openai/gpt-4.1; spent so far $0.000
+[92m18:51:37[0m|INFO   |[96mrun[0m| gpt-4.1: cumulative spend $0.973; stopped=False

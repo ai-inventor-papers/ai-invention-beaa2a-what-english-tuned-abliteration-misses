@@ -1,0 +1,2 @@
+Warning : `load_model` does not return WordVectorModel or SupervisedModel any more, but a `FastText` object which is very similar.
+[92m20:10:13[0m|INFO   |[96mmain[0m| VERDICT: {'verdict': 'FALSIFIED', 'min_dR2_O': 0.026131247859506157, 'spearman_O_aligned': {'en': 0.9595036269374145, 'sl': 0.8297784102735298}, 'O_loses_to_Bsite_ci': False, 'O_ties_Bsite': False, 'O_loses_pooled_baseline': False, 'controls_null': True, 'argmax_band_pass': True, 'O_beats_all_nuisances_by_abs_spearman': True, 'thresholds': {'spearman_min': 0.6, 'dR2_min': 0.1, 'falsifier_dR2': 0.05}}

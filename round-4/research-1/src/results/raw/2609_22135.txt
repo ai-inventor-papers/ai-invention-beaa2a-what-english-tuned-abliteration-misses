@@ -1,0 +1,71 @@
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/html/2609.22135
+Type: HTML
+Pattern: multilingual|language-specific|refusal|safety|weight edit|fine-tun|26-fold|normalized depth (20 matches in 77499 chars)
+
+--- Content ---
+
+3939:...ne representation space. The probe-best layer scatters across nearly the full network depth and shifts with architecture, whereas the steering-effective layer does not. It is an architectural invariant, landing in the same narrow mid-to-late band of normalized depth in every model. With paired random-direction controls, the causal gap between the two is roughly twenty-six-fold, ruling out direction quality and random perturbation. A logit-lens analysis ties the dissociation to a staged forward pass (a causal-ha...
+--
+7510:...(a) On Qwen2.5-Omni-7B the probe-accuracy peak (L27) and the steering-effect peak (L20) are 7 layers apart, with the band marking the mid-to-late steering zone [L14, L22]. (b) Across three architectures the steer-best layer stays in a narrow band of normalized depth [0.48,0.74][0.48,0.74], while the probe-best layer scatters across [0.29,1.00][0.29,1.00] (MiniCPM shows a reversed ordering). Full evidence in §5–§6.
+
+We study this probing–steering layer dissociation using emotion as a controlled vehicle, across t...
+--
+11064:...vations and injects them additively, covering truthfulness, general behavior steering, and style or emotion control [27, 54, 41, 23], with roots in controllable text generation [10, 22, 24] and extensions to function vectors, in-context vectors, and refusal or conditional steering [53, 33, 4, 25]. Almost all of these treat steering as _single-layer_ injection with the layer chosen by probing signal or empirical search, tacitly assuming that where a concept can be read is where it can be intervened upon...
+--
+19069:...ach layer is always |α|\lvert\alpha\rvert times the current hidden-state norm ∥h(ℓ)∥\lVert h^{(\ell)}\rVert of that layer (per-layer normalized), making the perturbation magnitude comparable across layers. Cross-model experiments map ℒ\mathcal{L} by normalized depth to L12/16/20/24 for Phi-4 and L14/18/22/27 for MiniCPM. The main experiments use α=+0.12\alpha=+0.12 (some experiments sweep over {±0.04,±0.08,±0.12}\\{\pm 0.04,\pm 0.08,\pm 0.12\\}). Generation uses prefill-suffix + decode-all, with temperature 0.7...
+--
+26751:..., lighter bars the same-condition random control, and error bars are 95% bootstrap CIs. Multi-layer injection (Ours, Baseline-A) rises sharply, while single-layer probe-best L27 (Baseline-C) sits near zero and matches its random control. The roughly 26-fold gap is the empirical signature of the dissociation. Exact values in Table I.
+
+Figure 5 makes the gap visually clear. The main-direction bar for Baseline-C (single-layer probe-best L27) is almost as low as its random-direction control bar, whereas th...
+--
+27546:...=+0.15, about 7 times the single-layer probe-best L27 (+0.02+0.02). With layer count held at one, moving the injection from L27 to the mid-zone L18 alone produces this 7-fold change, and the additional multi-layer gain (§5.2) only stacks on top. The 26-fold gap is dominated by where one injects.
+
+This _readability–intervenability_ gap is the empirical signature of the probing–steering dissociation: the layer where a linear probe reads most easily is not the layer where activation steering is most effec...
+--
+32114:...al-Instruct (32 layers, hidden 3072) and MiniCPM-o-4.5 (36 layers, hidden 4096), which share no lineage with Qwen in LLM backbone, tokenizer, or modality encoder.
+
+The cross-model comparison reveals a striking asymmetry. The probe-best layer sits at normalized depths of 1.00 (Qwen L27), 0.81 (Phi-4 L25), and 0.29 (MiniCPM L10), spanning almost the full network depth. The steer-best layer, by contrast, stays in the mid-to-late residual stream, at normalized depths of 0.74 (Qwen L20), 0.48 (Phi-4 L15), and 0.54 (MiniCPM L19) (Table III, Figure 7). The absolute layer distances between probe peak and steer peak are 7, 10, and 9 layers, all exceeding the pre-registered dissociation threshold from §5.2 (|peak gap|≥5\lvert\text{peak gap}\rvert\geq 5 layers), and the layer-wise Pearson correlations are 0.45, 0.55, and 0.36, short of the _highly correlated_ range.
+
+The steer-best layer of all three architectures lands in the same narrow band of normalized depth [0.48,0.74][0.48,0.74], while the probe-best layer scatters across [0.29,1.00][0.29,1.00], nearly the entire network. This contrast holds across the three models with no counterexample: the steering-effective zone is stable across architectures, the...
+--
+33740:...TABLE III: Cross-architecture probing–steering dissociation across three models (Qwen2.5-Omni, Phi-4-Multimodal, MiniCPM-o-4.5). Probe and steer peaks are measured per model by a layer-wise scan (5 seeds, VAD-BERT); each cell gives the layer and its normalized depth (layer / LmaxL_{\max}). Under the pre-registered criterion (|peak gap|≥5\lvert\text{peak gap}\rvert\geq 5 layers), the gap passes in all three (7 / 10 / 9 layers), and the steering peak (0.48–0.74) is far more concentrated than the probing peak (0.2...
+--
+34444:...546  
+MiniCPM | 36 | L10 (0.29) | L19 (0.54) | 9 | +0.362  
+  
+Fig. 7: Cross-architecture probing–steering dissociation (signature figure). Subplots are Qwen2.5-Omni, Phi-4-Multimodal, and MiniCPM-o-4.5. The probe-best layer (triangle) drifts across normalized depth 0.29–1.00, nearly the full network, while the steer-best layer (star) stays in the steering-effective zone [0.48, 0.74] (band) across all three architectures.
+
+The three subplots of Figure 7 make this invariance immediate: the steer-best stars of all three models fall into the same pale-yellow band (normalized depth [0.48, 0.74]), while the probe-best triangles scatter across 0.29, 0.81, and 1.00. This is the strongest cross-architecture evidence that reading and intervention are functionally distinct operations on the residual stream.
+
+### V-D A Logit-Lens Mec...
+--
+45742:...le mixed-valence emotions have weak effects and low evaluator agreement.
+
+### VI-C Cross-Model Steering Replication
+
+We replicate joy steering on Phi-4-Multimodal and MiniCPM-o-4.5 under the same G15 protocol (layer positions mapped to each model by normalized depth). Table VI shows that Phi-4 replicates a strong effect (Δjoy=+0.415\Delta_{\text{joy}}=+0.415, CI excluding 0, all pre-registered criteria passed), about 25% weaker than Qwen, consistent with the model-size difference (3.8B vs 7B). MiniCPM-o gives a...
+--
+46496:...diagnostics of MiniCPM in §4, jointly marking MiniCPM as a boundary-condition model rather than a simple replication failure.
+
+TABLE VI: Cross-model replication of joy steering (VAD-BERT Δjoy\Delta_{\text{joy}}, α=+0.12\alpha=+0.12, layers mapped by normalized depth). Qwen and Phi-4 replicate a strong effect (CI excludes 0); MiniCPM-o is null (CI contains 0), matching its boundary-condition diagnostics in §4 / §5.5. Model | Injection layers | Δjoy\Delta_{\text{joy}} | 95% CI  
+---|---|---|---  
+Qwen2.5-Omni | L...
+--
+49228:...heuristic. Under the common practice of choosing the layer at the probing peak, it can place intervention at causally inert layers and thus severely underestimate a method’s true controllability. By contrast, the mid-to-late steering-effective zone (normalized depth about 0.50.5–0.750.75) is stable across architectures and provides a layer-selection criterion that does not depend on any single model’s probing curve. The robust gain of multi-layer normalized injection over single-layer injection (§5.2) further s...
+--
+52319:...g the MiniCPM deviation and completing the third factor of HthreshH_{\mathrm{thresh}}. Second, the dissociation framework can in principle transfer to other intervention tasks that require layer selection. Our preliminary exploration shows that on a safety steering task the mid-to-late layers located by the dissociation outperform the probe-best layer, suggesting that the framework has applicability beyond emotion generation. The directions used in that exploration come from safety contrastive activations, not the emotion subspace, and their cross-model stability is unresolved, so we treat it as directional evidence of the framework’s transferability and leave it to future systematic study.
+
+## VIII Limitations
+
+This work has ...
+--
+54398:...eration on the residual stream of omni-modal language models. The layer where a linear probe reads a concept most strongly and the layer where activation steering is most effective are functionally separate: on Qwen2.5-Omni the causal gap is roughly 26-fold (Table I), and across the three independent architectures the probe-best layer scatters across nearly the full network depth while the steer-best layer converges in a narrow mid-to-late band (Table III). A logit-lens account (causal handle, then pro...
+--
+56484:...2022) Flamingo: a visual language model for few-shot learning.  Advances in neural information processing systems 35, pp. 23716–23736.  Cited by: §II-C. 
+  * [4] A. Arditi, O. Obeso, A. Syed, D. Paleka, N. Panickssery, W. Gurnee, and N. Nanda (2024) Refusal in language models is mediated by a single direction.  Advances in Neural Information Processing Systems 37, pp. 136037–136083.  Cited by: §II-A. 
+  * [5] Y. Belinkov (2022) Probing classifiers: promises, shortcomings, and advances.  Computational L...
+--
+61424:...generation.  In Findings of the Association for Computational Linguistics: EMNLP 2021,  pp. 4929–4952.  Cited by: §II-A. 
+  * [25] B. W. Lee, I. Padhi, K. Natesan Ramamurthy, E. Miehling, P. Dognin, M. Nagireddy, and A. Dhurandhar (2025) Programming refusal with conditional activation steering.  In International conference on learning representations,  Vol. 2025, pp. 90960–90985.  Cited by: §II-A. 
+  * [26] J. Li, D. Li, S. Savarese, and S. Hoi (2023) Blip-2: bootstrapping language-image pre-training w...
