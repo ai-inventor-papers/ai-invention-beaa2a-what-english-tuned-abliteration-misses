@@ -1,0 +1,35 @@
+{
+ "cell": "noop",
+ "family": "noop",
+ "E": 0.0,
+ "stage": "screen",
+ "flores_dNLL": {
+  "en": 0.0,
+  "sl": 0.0
+ },
+ "kl_dolly": {
+  "en": 0.0,
+  "sl": 0.0
+ },
+ "sec_gen": 24.4,
+ "sec_tf": 12.2,
+ "complete_plan": [
+  [
+   "B_harm",
+   "en"
+  ],
+  [
+   "B_harm",
+   "sl"
+  ],
+  [
+   "B_ben",
+   "en"
+  ],
+  [
+   "B_ben",
+   "sl"
+  ]
+ ],
+ "done_utc": "2026-09-24T08:52:27Z"
+}

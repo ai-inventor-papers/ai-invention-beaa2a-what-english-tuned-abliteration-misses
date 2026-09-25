@@ -1,0 +1,43 @@
+{
+ "cell": "PA_suffix_04",
+ "family": "act",
+ "E": null,
+ "part": "A",
+ "layers": [
+  45,
+  46,
+  47,
+  48
+ ],
+ "n_layers": 4,
+ "stage": "partA",
+ "flores_dNLL": {
+  "en": -0.017893824577331543,
+  "sl": -0.016119336485862733
+ },
+ "kl_dolly": {
+  "en": 0.004068689330670168,
+  "sl": 0.002164042228541803
+ },
+ "sec_gen": 24.6,
+ "sec_tf": 12.2,
+ "complete_plan": [
+  [
+   "A_harm",
+   "en"
+  ],
+  [
+   "A_harm",
+   "sl"
+  ],
+  [
+   "A_ben",
+   "en"
+  ],
+  [
+   "A_ben",
+   "sl"
+  ]
+ ],
+ "done_utc": "2026-09-24T08:45:00Z"
+}

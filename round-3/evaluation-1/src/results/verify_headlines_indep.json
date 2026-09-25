@@ -1,0 +1,56 @@
+{
+ "kappa_pooled": {
+  "independent": 0.9125865162778775,
+  "pipeline": 0.9125865162778776,
+  "match": true
+ },
+ "kappa_edited": {
+  "independent": 0.7793376334760692,
+  "pipeline": 0.7793376334760691,
+  "match": true
+ },
+ "placebo_shuffled_within_cell_kappa_mean": {
+  "value": 0.0006900584795321434,
+  "placebo_fails_as_expected": true
+ },
+ "s5x_gap_strict": {
+  "independent": 0.69,
+  "pipeline": 0.69,
+  "match": true
+ },
+ "s5x_gap_broad": {
+  "independent": 0.22999999999999998,
+  "pipeline": 0.2299999999999999,
+  "match": true
+ },
+ "placebo_lang_swap_gap_mean": {
+  "value": -0.0018399999999999998,
+  "placebo_fails_as_expected": true
+ },
+ "s5_gap_broad_qwen": {
+  "independent": -0.03869687660010246,
+  "pipeline": -0.0386968766001024,
+  "match": true
+ },
+ "keyword_fp_share": {
+  "independent": 0.7607142857142857,
+  "pipeline": 0.7607142857142857,
+  "match": true
+ },
+ "iter1_gemma_swap_en_sl": {
+  "independent": [
+   53,
+   25
+  ],
+  "pipeline": [
+   53,
+   25
+  ],
+  "match": true
+ },
+ "w0_gap_broad_gpt41": {
+  "independent": 0.37142857142857144,
+  "pipeline": 0.3714285714285714,
+  "match": true
+ }
+}

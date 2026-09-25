@@ -1,0 +1,169 @@
+[
+ {
+  "arm": "A_orig",
+  "role": "orig",
+  "parameters": null,
+  "direction_index": null,
+  "trial": null
+ },
+ {
+  "arm": "B_keyword_t96",
+  "role": "keyword",
+  "trial": 96,
+  "source": "iteration-1 keyword run",
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.2718897313493716,
+    "max_weight_position": 28.419595813573196,
+    "min_weight": 0.8167943387473141,
+    "min_weight_distance": 17.010645784545787
+   },
+   "mlp.down_proj": {
+    "max_weight": 1.040584208786117,
+    "max_weight_position": 30.66550180218407,
+    "min_weight": 0.004965593879631726,
+    "min_weight_distance": 20.50554472467738
+   }
+  },
+  "direction_index": 26.06958022133516,
+  "dose": 1.0,
+  "check_adapter": "../../../round-1/experiment-1/src/adapters/gemma_selected_path2"
+ },
+ {
+  "arm": "C_corrected",
+  "role": "corrected",
+  "trial": 7,
+  "source": "corrected-objective run",
+  "rule_fired": "primary: min KL s.t. refusals<=10",
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.3058603245031022,
+    "max_weight_position": 29.356814435097565,
+    "min_weight": 0.5562072037044168,
+    "min_weight_distance": 18.9284332033305
+   },
+   "mlp.down_proj": {
+    "max_weight": 1.2306890494321627,
+    "max_weight_position": 31.39010548214005,
+    "min_weight": 0.5816751324457782,
+    "min_weight_distance": 16.34098984990031
+   }
+  },
+  "direction_index": null,
+  "dose": 1.0,
+  "means_src": "./directions/gemma_corrected/residual_means_A.pt",
+  "export_adapter": "adapters_corrected"
+ },
+ {
+  "arm": "D_reselected_clf",
+  "role": "reselected",
+  "trial": 98,
+  "source": "post-hoc reselection (classifier_refusals)",
+  "rule_fired": "primary: min KL s.t. refusals<=10",
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.3590090215973143,
+    "max_weight_position": 31.0734481279332,
+    "min_weight": 1.0270291713617283,
+    "min_weight_distance": 18.305494550441615
+   },
+   "mlp.down_proj": {
+    "max_weight": 1.4898383870493686,
+    "max_weight_position": 28.64911386823496,
+    "min_weight": 0.12255471019772274,
+    "min_weight_distance": 20.89653694696317
+   }
+  },
+  "direction_index": 23.630500204028188,
+  "dose": 1.0
+ },
+ {
+  "arm": "D2_reselected_judge",
+  "role": "reselected",
+  "trial": 64,
+  "source": "post-hoc reselection (judge_refused)",
+  "rule_fired": "primary: min KL s.t. refusals<=10",
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.2785537899958694,
+    "max_weight_position": 29.4523198684795,
+    "min_weight": 0.7311901115569625,
+    "min_weight_distance": 15.834562010153956
+   },
+   "mlp.down_proj": {
+    "max_weight": 1.2023673134686175,
+    "max_weight_position": 35.332006013507396,
+    "min_weight": 0.6258803130407297,
+    "min_weight_distance": 19.56883801497514
+   }
+  },
+  "direction_index": null,
+  "dose": 1.0
+ },
+ {
+  "arm": "F_dose1.5",
+  "role": "dose",
+  "trial": 96,
+  "source": "LoRA delta of trial 96 x f",
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.2718897313493716,
+    "max_weight_position": 28.419595813573196,
+    "min_weight": 0.8167943387473141,
+    "min_weight_distance": 17.010645784545787
+   },
+   "mlp.down_proj": {
+    "max_weight": 1.040584208786117,
+    "max_weight_position": 30.66550180218407,
+    "min_weight": 0.004965593879631726,
+    "min_weight_distance": 20.50554472467738
+   }
+  },
+  "direction_index": 26.06958022133516,
+  "dose": 1.5
+ },
+ {
+  "arm": "F_dose2.0",
+  "role": "dose",
+  "trial": 96,
+  "source": "LoRA delta of trial 96 x f",
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.2718897313493716,
+    "max_weight_position": 28.419595813573196,
+    "min_weight": 0.8167943387473141,
+    "min_weight_distance": 17.010645784545787
+   },
+   "mlp.down_proj": {
+    "max_weight": 1.040584208786117,
+    "max_weight_position": 30.66550180218407,
+    "min_weight": 0.004965593879631726,
+    "min_weight_distance": 20.50554472467738
+   }
+  },
+  "direction_index": 26.06958022133516,
+  "dose": 2.0
+ },
+ {
+  "arm": "F_dose3.0",
+  "role": "dose",
+  "trial": 96,
+  "source": "LoRA delta of trial 96 x f",
+  "parameters": {
+   "attn.o_proj": {
+    "max_weight": 1.2718897313493716,
+    "max_weight_position": 28.419595813573196,
+    "min_weight": 0.8167943387473141,
+    "min_weight_distance": 17.010645784545787
+   },
+   "mlp.down_proj": {
+    "max_weight": 1.040584208786117,
+    "max_weight_position": 30.66550180218407,
+    "min_weight": 0.004965593879631726,
+    "min_weight_distance": 20.50554472467738
+   }
+  },
+  "direction_index": 26.06958022133516,
+  "dose": 3.0
+ }
+]

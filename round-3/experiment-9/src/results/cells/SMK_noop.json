@@ -1,0 +1,36 @@
+{
+ "cell": "SMK_noop",
+ "family": "noop",
+ "E": null,
+ "smoke": true,
+ "stage": "smoke",
+ "flores_dNLL": {
+  "en": 0.0,
+  "sl": 0.0
+ },
+ "kl_dolly": {
+  "en": 0.0,
+  "sl": 0.0
+ },
+ "sec_gen": 24.4,
+ "sec_tf": 12.2,
+ "complete_plan": [
+  [
+   "sm_harm",
+   "en"
+  ],
+  [
+   "sm_harm",
+   "sl"
+  ],
+  [
+   "sm_ben",
+   "en"
+  ],
+  [
+   "sm_ben",
+   "sl"
+  ]
+ ],
+ "done_utc": "2026-09-24T08:22:28Z"
+}

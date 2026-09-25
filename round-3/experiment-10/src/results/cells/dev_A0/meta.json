@@ -1,0 +1,8 @@
+{
+ "cell": "dev_A0",
+ "part": "A",
+ "kind": "activation_layerwise",
+ "hidden_indices": [],
+ "control": null,
+ "c": 1.0
+}

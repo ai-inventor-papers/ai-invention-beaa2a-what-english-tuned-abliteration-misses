@@ -1,0 +1,3 @@
+Warning : `load_model` does not return WordVectorModel or SupervisedModel any more, but a `FastText` object which is very similar.
+09:49:07|INFO   |index EN 16 CI [16.0, 16.0] | SL 20 CI [16.0, 24.0] | diff CI [0.0, 8.0]
+09:49:07|INFO   |prefix curves: {'en': {4: 0.95, 8: 0.95, 12: 0.85, 16: 0.25, 20: 0.225, 24: 0.175, 28: 0.1, 32: 0.1, 36: 0.2, 40: 0.15, 44: 0.1, 48: 0.1}, 'sl': {4: 0.875, 8: 0.825, 12: 0.65, 16: 0.55, 20: 0.375, 24: 0.325, 28: 0.225, 32: 0.225, 36: 0.225, 40: 0.25, 44: 0.175, 48: 0.2}}

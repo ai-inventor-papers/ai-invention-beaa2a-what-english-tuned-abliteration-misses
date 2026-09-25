@@ -1,0 +1,105 @@
+warning: The `fitz` API is deprecated and will be removed in future. Use `import pymupdf` instead.
+URL: https://arxiv.org/pdf/2505.17306
+Type: PDF
+Pattern: we (ablate|apply).{0,80}(layer)|Gemma|Qwen2|Llama-3|abliterat|all layers|each layer (98 matches in 109216 chars)
+
+--- Content ---
+
+11590:...e refusal behavior. To
+remove refusal tendencies, the vector is ablated from the residual stream by projecting the activation
+onto the refusal vector direction and subsequently subtracting this projection:
+x′
+l ←xl −ˆrˆr⊤xl
+(4)
+This ablation is applied across all layers and token positions to comprehensively eliminate refusal
+behavior from the model. Conversely, to enhance refusal behavior, the refusal vector can be added to
+the activations at all token positions within a specific layer l:
+x′
+l ←xl + αˆrl
+(5)
+3
+
+where ˆrl re...
+--
+12193:... α ∈[0, 1] serves
+as a scaling parameter controlling the intervention strength.
+As demonstrated by Arditi et al. [2024], enhancing refusal behavior requires vector addition at only a
+single layer, whereas removing refusal behavior necessitates ablation across all layers. We adhere to
+this established methodology for vector ablation and addition operations.
+4
+Not All Languages are Safety-Aligned
+English-centric safety alignment has been shown to generalize poorly to other languages [Yong et al.,
+2024, Li et al., 2024a, Deng et al., 2024]. To assess cross-lingual jailbreak vulnerability, we show com-
+pliance rates across 14 languages using three instruction-tuned models: Llama3.1-8B-Instruct,
+Qwen2.5-7B-Instruct, and gemma-2-9B-Instruct. Each model is tested on 572 translated
+harmful prompts per language (see dataset details in §5.1), with responses translated back into
+English and evaluated using WildGuard [Han et al., 2024]. As shown in Table 1, all models exhibit
+varying lev...
+--
+13257:...mpliance rates (%) based on WildGuard evaluation. Cells high-
+lighted in red indicate languages with success rates exceeding 10%.
+Instruct model
+ar
+de
+en
+es
+fr
+it
+ja
+ko
+nl
+pl
+ru
+th
+yo
+zh
+LLama3.1-8B
+6.1
+3.5
+1.9
+2.4
+2.3
+2.6
+25.0
+29.2
+3.0
+9.1
+3.8
+10.0
+82.9
+11.9
+Qwen2.5-7B
+16.3
+13.5
+9.6
+8.7
+12.4
+9.6
+22.2
+23.4
+16.1
+12.4
+9.6
+21.0
+74.0
+14.9
+gemma2-9B
+3.8
+1.4
+0.4
+2.6
+1.9
+1.0
+5.4
+7.9
+1.7
+2.4
+2.6
+4.5
+56.6
+3.1
+We found that Yoruba (yo) exhibits significant safety misalignment across the models, with particularly
+concerning results on Llama3.1-8B-Instruct (82.9%) and Qwen2.5-7B (74.9%). These high
+percenta...
+--
+[92 more matches not shown]

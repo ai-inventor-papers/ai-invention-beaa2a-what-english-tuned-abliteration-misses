@@ -1,0 +1,12 @@
+Warning : `load_model` does not return WordVectorModel or SupervisedModel any more, but a `FastText` object which is very similar.
+/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_3/gen_art/gen_art_experiment_10/rederive.py:127: RuntimeWarning: Mean of empty slice
+  reps = [float(d[rng.integers(0, len(ks), len(ks))].mean()) for _ in range(n)]
+/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_3/gen_art/gen_art_experiment_10/.venv/lib/python3.12/site-packages/numpy/_core/_methods.py:142: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_3/gen_art/gen_art_experiment_10/rederive.py:128: RuntimeWarning: Mean of empty slice
+  return {"diff": float(d.mean()), "ci": [float(np.percentile(reps, 2.5)), float(np.percentile(reps, 97.5))], "n": len(ks),
+/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_3/gen_art/gen_art_experiment_10/rederive.py:228: RuntimeWarning: Mean of empty slice
+  chk("PB3|interaction", float(inter.mean()),
+/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_3/gen_art/gen_art_experiment_10/rederive.py:230: RuntimeWarning: Mean of empty slice
+  out["PB3_ci"] = [float(np.percentile([inter[rng.integers(0, len(ks), len(ks))].mean() for _ in range(2000)], q))
+rederive: 141/141 headline numbers match; freeze order ok=True; placebos={}

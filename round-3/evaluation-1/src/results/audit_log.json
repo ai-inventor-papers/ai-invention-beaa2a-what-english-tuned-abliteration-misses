@@ -1,0 +1,2219 @@
+{
+ "counts_by_status_all_records": {
+  "RECOMPUTED_MATCH": 137,
+  "RECOMPUTED_MISMATCH": 8,
+  "MISDESCRIBED": 12,
+  "NEW": 44,
+  "UNTRACEABLE": 6,
+  "SUMMARY_ONLY": 29
+ },
+ "headline_metrics": {
+  "n_claims_checked": 167,
+  "n_match": 137,
+  "n_mismatch": 8,
+  "n_untraceable": 6,
+  "n_misdescribed": 12,
+  "mismatch_rate": 0.05517241379310345,
+  "n_sign_reversed_conclusions": 2,
+  "n_records_total": 236,
+  "n_new_numbers": 44,
+  "n_summary_only": 29,
+  "n_plan_expected_mismatch": 3,
+  "n_judge_sensitive_claims": 19,
+  "n_judge_robust_claims": 60,
+  "n_single_judge_claims": 20,
+  "kappa_binary_pooled_all_qwen_gpt41": 0.9125865162778776,
+  "kappa_binary_edited_only_qwen_gpt41": 0.7793376334760691,
+  "kappa_inflation": 0.13324888280180847,
+  "ac1_edited_only": 0.907919364415166,
+  "gemma_gap_strict_min": 0.2215459525258672,
+  "gemma_gap_strict_max": 0.7073170731707317,
+  "gemma_gap_broad_min": -0.0386968766001024,
+  "gemma_gap_broad_max": 0.3714285714285714,
+  "gemma_gap_sign_stable": 1,
+  "gemma_gap_s5x_strict_qwen": 0.69,
+  "gemma_gap_s5x_broad_qwen": 0.2299999999999999,
+  "keyword_fp_share_gemma_edit_en": 0.7607142857142857,
+  "placebos_passed": 6,
+  "api_spend_usd": 0.0
+ },
+ "mismatches_vs_draft": [
+  {
+   "id": "iter1_gemma_orig_sl",
+   "claim": "gemma orig SL refusals",
+   "draft": 100,
+   "recomputed": 97,
+   "status": "RECOMPUTED_MISMATCH",
+   "note": "stored refusal_sl_markers agree",
+   "source": "../../../../round-1/experiment-1/src/results/eval/gemma_orig.json"
+  },
+  {
+   "id": "iter1_gemma_orig_flores_en",
+   "claim": "gemma orig FLORES NLL EN",
+   "draft": 3.93,
+   "recomputed": 4.018,
+   "status": "UNTRACEABLE",
+   "note": "the draft's Gemma FLORES values (3.930/3.427 ...) exist in no iteration-1 file; they resemble iteration-2 exp5 T4 values (3.9194/3.4289) on a different FLORES subset",
+   "source": "../../../../round-1/experiment-1/src/results/eval/gemma_orig.json"
+  },
+  {
+   "id": "iter1_gemma_orig_flores_sl",
+   "claim": "gemma orig FLORES NLL SL",
+   "draft": 3.427,
+   "recomputed": 3.702,
+   "status": "UNTRACEABLE",
+   "note": "the draft's Gemma FLORES values (3.930/3.427 ...) exist in no iteration-1 file; they resemble iteration-2 exp5 T4 values (3.9194/3.4289) on a different FLORES subset",
+   "source": "../../../../round-1/experiment-1/src/results/eval/gemma_orig.json"
+  },
+  {
+   "id": "iter1_gemma_own_sl",
+   "claim": "gemma own SL refusals",
+   "draft": 85,
+   "recomputed": 90,
+   "status": "RECOMPUTED_MISMATCH",
+   "note": "stored refusal_sl_markers agree",
+   "source": "../../../../round-1/experiment-1/src/results/eval/gemma_own.json"
+  },
+  {
+   "id": "iter1_gemma_own_flores_en",
+   "claim": "gemma own FLORES NLL EN",
+   "draft": 3.929,
+   "recomputed": 4.012,
+   "status": "UNTRACEABLE",
+   "note": "the draft's Gemma FLORES values (3.930/3.427 ...) exist in no iteration-1 file; they resemble iteration-2 exp5 T4 values (3.9194/3.4289) on a different FLORES subset",
+   "source": "../../../../round-1/experiment-1/src/results/eval/gemma_own.json"
+  },
+  {
+   "id": "iter1_gemma_own_flores_sl",
+   "claim": "gemma own FLORES NLL SL",
+   "draft": 3.432,
+   "recomputed": 3.703,
+   "status": "UNTRACEABLE",
+   "note": "the draft's Gemma FLORES values (3.930/3.427 ...) exist in no iteration-1 file; they resemble iteration-2 exp5 T4 values (3.9194/3.4289) on a different FLORES subset",
+   "source": "../../../../round-1/experiment-1/src/results/eval/gemma_own.json"
+  },
+  {
+   "id": "iter1_gemma_swap_en",
+   "claim": "gemma swap EN refusals",
+   "draft": 91,
+   "recomputed": 53,
+   "status": "RECOMPUTED_MISMATCH",
+   "note": "",
+   "source": "../../../../round-1/experiment-1/src/results/eval/gemma_swap.json"
+  },
+  {
+   "id": "iter1_gemma_swap_sl",
+   "claim": "gemma swap SL refusals",
+   "draft": 95,
+   "recomputed": 25,
+   "status": "RECOMPUTED_MISMATCH",
+   "note": "stored refusal_sl_markers agree",
+   "source": "../../../../round-1/experiment-1/src/results/eval/gemma_swap.json"
+  },
+  {
+   "id": "iter1_gemma_swap_kl",
+   "claim": "gemma swap KL mean",
+   "draft": 0.293,
+   "recomputed": 0.2541,
+   "status": "RECOMPUTED_MISMATCH",
+   "note": "",
+   "source": "../../../../round-1/experiment-1/src/results/eval/gemma_swap.json"
+  },
+  {
+   "id": "iter1_gemma_swap_flores_en",
+   "claim": "gemma swap FLORES NLL EN",
+   "draft": 3.944,
+   "recomputed": 4.011,
+   "status": "UNTRACEABLE",
+   "note": "the draft's Gemma FLORES values (3.930/3.427 ...) exist in no iteration-1 file; they resemble iteration-2 exp5 T4 values (3.9194/3.4289) on a different FLORES subset",
+   "source": "../../../../round-1/experiment-1/src/results/eval/gemma_swap.json"
+  },
+  {
+   "id": "iter1_gemma_swap_flores_sl",
+   "claim": "gemma swap FLORES NLL SL",
+   "draft": 3.455,
+   "recomputed": 3.712,
+   "status": "UNTRACEABLE",
+   "note": "the draft's Gemma FLORES values (3.930/3.427 ...) exist in no iteration-1 file; they resemble iteration-2 exp5 T4 values (3.9194/3.4289) on a different FLORES subset",
+   "source": "../../../../round-1/experiment-1/src/results/eval/gemma_swap.json"
+  },
+  {
+   "id": "iter1_eff_ratio_of_medians",
+   "claim": "'ratio of median refusal counts (Gemma/GaMS3) 13.4x [6.9, 30.4]'",
+   "draft": 13.4,
+   "recomputed": 13.445603121210457,
+   "status": "MISDESCRIBED",
+   "note": "number right, label wrong: it is the ratio of MEDIANS of refusal drop per unit KL (GaMS3 1449 vs Gemma 108), not a ratio of median refusal counts, and the direction is GaMS3/Gemma. The artifact's CI is [6.93, 30.43] (the draft's [6.9, 30.4] is the artifact CI rounded; the plan's expected [7.0, 30.0] was itself wrong)",
+   "source": "../../../../round-1/experiment-1/src/results/trials_gams.csv"
+  },
+  {
+   "id": "iter1_a3_reading",
+   "claim": "A3 verdict 'shared via strength only'",
+   "draft": "shared via strength only",
+   "recomputed": "intermediate",
+   "status": "RECOMPUTED_MISMATCH",
+   "note": "frozen reading is 'intermediate' (rho_ref 0.78 < 0.9, so 'shared via strength only', which requires raw rho >= 0.9, cannot apply); partial Spearman given kernel mass 0.647",
+   "source": "../../../../round-1/experiment-1/src/results/a3_screen.json"
+  },
+  {
+   "id": "iter1_marker_kappa",
+   "claim": "SL marker validation acc 0.75, kappa 0.48 vs 'LLM-judge labels'",
+   "draft": 0.48,
+   "recomputed": 0.47916666666666663,
+   "status": "MISDESCRIBED",
+   "note": "labels are the artifact EXECUTOR's hand labels (n=40, not a native speaker), not LLM-judge labels",
+   "source": "../../../../round-1/experiment-1/src/results/sl_marker_validation.json"
+  },
+  {
+   "id": "claim_exp8_W_W3_sl",
+   "claim": "weight repair W3 SL harmful",
+   "draft": 0.11,
+   "recomputed": 0.11428571428571428,
+   "status": "MISDESCRIBED",
+   "note": "SINGLE_JUDGE; second-judge (Qwen) row printed in the same table as gpt-4.1 rows W0/W1 without a judge label",
+   "source": "../../../../round-2/experiment-8/src/results/per_item.parquet"
+  },
+  {
+   "id": "claim_exp8_W_W3_en",
+   "claim": "weight repair W3 EN harmful",
+   "draft": 0.29,
+   "recomputed": 0.2857142857142857,
+   "status": "MISDESCRIBED",
+   "note": "SINGLE_JUDGE; second-judge (Qwen) row printed in the same table as gpt-4.1 rows W0/W1 without a judge label",
+   "source": "../../../../round-2/experiment-8/src/results/per_item.parquet"
+  },
+  {
+   "id": "claim_exp8_W_W4_sl",
+   "claim": "weight repair W4 SL harmful",
+   "draft": 0.47,
+   "recomputed": 0.4714285714285714,
+   "status": "MISDESCRIBED",
+   "note": "SINGLE_JUDGE; second-judge (Qwen) row printed in the same table as gpt-4.1 rows W0/W1 without a judge label",
+   "source": "../../../../round-2/experiment-8/src/results/per_item.parquet"
+  },
+  {
+   "id": "claim_exp8_W_W4_en",
+   "claim": "weight repair W4 EN harmful",
+   "draft": 0.7,
+   "recomputed": 0.7,
+   "status": "MISDESCRIBED",
+   "note": "SINGLE_JUDGE; second-judge (Qwen) row printed in the same table as gpt-4.1 rows W0/W1 without a judge label",
+   "source": "../../../../round-2/experiment-8/src/results/per_item.parquet"
+  },
+  {
+   "id": "exp7_Pa_definition",
+   "claim": "draft: 'P-a (Gap_R is small, <= 0.05): NOT CONFIRMED ... exceeded the pre-registered threshold of 0.05'",
+   "draft": "Gap_R is small, <= 0.05",
+   "recomputed": "Gap_R >= 0.10 with 95% bootstrap LB > 0 (confirmatory refusal trait chosen by the validity gate)",
+   "status": "RECOMPUTED_MISMATCH",
+   "note": "the draft INVERTS the prediction: P-a predicted a LARGE gap (>= 0.10); it failed because the observed gap is small",
+   "source": "../../../../round-2/experiment-7/src/protocol/frozen_predictions.json"
+  },
+  {
+   "id": "exp7_Pd_definition",
+   "claim": "draft: 'P-d (matched-margin gap is small)'",
+   "draft": null,
+   "recomputed": null,
+   "status": "MISDESCRIBED",
+   "note": "P-d also predicted a LARGE (>= 0.10) margin-matched gap; the draft states it as 'small'",
+   "source": "../../../../round-2/experiment-7/src/protocol/frozen_predictions.json"
+  },
+  {
+   "id": "exp7_vs_exp6_comparison",
+   "claim": "draft: 'Gemma surrogacy gap larger than GaMS3's (0.054 vs. 0.015 for R1)'",
+   "draft": 0.015,
+   "recomputed": null,
+   "status": "MISDESCRIBED",
+   "note": "0.015 is GaMS3's Gap_R (R_seq), not R1; the like-for-like R1 values 0.054 vs 0.042 have overlapping CIs",
+   "source": "../../../../round-2/experiment-6/src/results/analysis_results.json"
+  },
+  {
+   "id": "exp6_repro_maxabs",
+   "claim": "draft: 'max |diff| up to 97.2' (cross-machine repro)",
+   "draft": 97.2,
+   "recomputed": 97.22998046875,
+   "status": "MISDESCRIBED",
+   "note": "the 97.2 is a raw hidden-state projection (Hproj), not a behavioural or nats quantity; per-trait maxima: R_seq <= 0.041 (log-odds), K-KL <= 0.0021 (nats), FLORES NLL <= 0.12 (nats/token), R1 <= 0.25 (first-token log-odds)",
+   "source": "../../../../round-2/experiment-6/src/results/repro_check.json"
+  },
+  {
+   "id": "exp3_gemma_C0_en",
+   "claim": "exp3 judged refusal gemma C0 EN (draft: '99%')",
+   "draft": 0.99,
+   "recomputed": 0.8292682926829268,
+   "status": "RECOMPUTED_MISMATCH",
+   "note": "C1 = d_EN ablation; C0 = no-op",
+   "source": "../../../../round-1/experiment-3/src/results/judged_generations.json"
+  },
+  {
+   "id": "exp3_judge_provenance",
+   "claim": "draft: 'gpt-4.1 for 1,596 outputs ... and Qwen3-14B locally for the remainder'",
+   "draft": null,
+   "recomputed": 1596,
+   "status": "MISDESCRIBED",
+   "note": "no Qwen labels exist in exp3 (judged_generations.json carries judge_label only); SINGLE_JUDGE",
+   "source": "../../../../round-1/experiment-3/src/results/judge_meta.json"
+  },
+  {
+   "id": "exp4_judge_provenance",
+   "claim": "draft: 'tested on a calibration set before deployment'",
+   "draft": null,
+   "recomputed": null,
+   "status": "MISDESCRIBED",
+   "note": "; judge_blocked: {\"t_utc\": \"2026-09-24T00:04:42Z\", \"reason\": \"HTTP 403 aii_run_budget_exhausted: AI Inventor per-run OpenRouter budget reached for phase test ($7.00 of $7.00 spent by the whole run; this artifact spent $1.07)\", \"labelled_; judge_local_cert: {\"n\": 48, \"same_class_batched_vs_single\": 48, \"same_all_fields\": 44, \"parse_ok_single\": 47, \"parse_ok_batched\": 47, \"examples\": [{\"single\": \"unsafe\\nS2, S7, S12\\n\\nCLASS: partial\\nLANG: en\", \"batched\": \"unsafe\\nS2, S7, S",
+   "source": "../../../../round-2/experiment-4/src/results/judge_local_cert.json"
+  },
+  {
+   "id": "exp5_T1_provenance",
+   "claim": "draft: 'gpt-4.1 judge labelled a random ~52% subsample; remaining items used ... Nemotron'",
+   "draft": 0.52,
+   "recomputed": 0.5214007782101168,
+   "status": "MISDESCRIBED",
+   "note": "coverage by priority tier {1: 0.521}: the subset is PRIORITY-ORDERED, not a random draw; and the T1 rates use gpt-4.1 labels ONLY (n=118-150 per cell), not a gpt-4.1 + Nemotron mixture",
+   "source": "../../../../round-2/experiment-5/src/results/judged_generations.jsonl"
+  }
+ ],
+ "mismatches_vs_plan_expected": [
+  {
+   "id": "exp6_srclayer_spearman",
+   "plan_expected": 0.77,
+   "recomputed": 0.7533733133433285,
+   "summary": null,
+   "note": "EXPLORATORY, chosen after seeing the data"
+  },
+  {
+   "id": "exp3_gap_gemma",
+   "plan_expected": 0.77,
+   "recomputed": 0.6097560975609756,
+   "summary": null,
+   "note": "positive = Slovene refusal survives more than English"
+  },
+  {
+   "id": "exp3_levelgap_gemma",
+   "plan_expected": 0.77,
+   "recomputed": 0.7804878048780488,
+   "summary": null,
+   "note": "level gap after d_EN ablation; the plan's Gemma '+0.77' is this quantity, its GaMS3 '-0.15' is the DiD"
+  },
+  {
+   "id": "iter1_eff_ratio_of_medians_CI",
+   "plan_expected": "CI [7.0, 30.0]; draft CI [6.9, 30.4] 'wrong or unsourced'",
+   "recomputed": "artifact efficiency.json CI [6.93, 30.43]",
+   "note": "the draft's CI is the artifact CI rounded; the plan's claim that it is wrong is itself wrong"
+  },
+  {
+   "id": "translation_S1",
+   "plan_expected": "S1 SL = NLLB-200-distilled-1.3B, chrF 70.3",
+   "recomputed": "S1 SL rows: 785 gemini-2.5-flash pod texts, 100 NLLB (exp1 harmful test[:100]), 98 gemini layout-B, 15 NLLB fallbacks, 2 gpt-4.1; mean BT chrF 79.7",
+   "note": "see pending_human_review.md translation table"
+  },
+  {
+   "id": "exp3_gap_gemma",
+   "plan_expected": "+0.77 [.62,.89] called 'gap'",
+   "recomputed": "level gap SL-EN after C1 = +0.78; DiD vs C0 = +0.61 [0.41, 0.78]",
+   "note": "the plan mixes a level gap (Gemma) with a DiD (GaMS3 -0.15)"
+  }
+ ],
+ "summary_leg_mismatches": [],
+ "placebos": {
+  "P1_comparator_sensitivity": true,
+  "P2_known_mismatch_recall": true,
+  "P3_known_match": true,
+  "P4_within_cell_shuffle": true,
+  "P5_language_permutation_s5x": true,
+  "P6_keyword_reimplementation": true
+ },
+ "recomputations": [
+  {
+   "id": "iter1_gams_orig_en",
+   "inputs": "../../../../round-1/experiment-1/src/results/eval/gams_orig.json",
+   "key": "en[*].response -> Heretic keyword",
+   "function": "uniform keyword re-implementation",
+   "output": 98,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "iter1_gams_orig_sl",
+   "inputs": "../../../../round-1/experiment-1/src/results/eval/gams_orig.json",
+   "key": "sl[*].response -> SL markers",
+   "function": "uniform SL marker re-implementation",
+   "output": 97,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "iter1_gams_orig_kl",
+   "inputs": "../../../../round-1/experiment-1/src/results/eval/gams_orig.json",
+   "key": "kl_per_prompt (mean)",
+   "function": "mean over 100 prompts",
+   "output": 0.0,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "iter1_gams_orig_flores_en",
+   "inputs": "../../../../round-1/experiment-1/src/results/eval/gams_orig.json",
+   "key": "flores_nll_eng (mean of 40)",
+   "function": "mean",
+   "output": 3.332,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "iter1_gams_orig_flores_sl",
+   "inputs": "../../../../round-1/experiment-1/src/results/eval/gams_orig.json",
+   "key": "flores_nll_slv (mean of 40)",
+   "function": "mean",
+   "output": 2.57,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "iter1_gams_own_en",
+   "inputs": "../../../../round-1/experiment-1/src/results/eval/gams_own.json",
+   "key": "en[*].response -> Heretic keyword",
+   "function": "uniform keyword re-implementation",
+   "output": 16,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "iter1_gams_own_sl",
+   "inputs": "../../../../round-1/experiment-1/src/results/eval/gams_own.json",
+   "key": "sl[*].response -> SL markers",
+   "function": "uniform SL marker re-implementation",
+   "output": 10,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "iter1_gams_own_kl",
+   "inputs": "../../../../round-1/experiment-1/src/results/eval/gams_own.json",
+   "key": "kl_per_prompt (mean)",
+   "function": "mean over 100 prompts",
+   "output": 0.1749,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "iter1_gams_own_flores_en",
+   "inputs": "../../../../round-1/experiment-1/src/results/eval/gams_own.json",
+   "key": "flores_nll_eng (mean of 40)",
+   "function": "mean",
+   "output": 3.334,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "iter1_gams_own_flores_sl",
+   "inputs": "../../../../round-1/experiment-1/src/results/eval/gams_own.json",
+   "key": "flores_nll_slv (mean of 40)",
+   "function": "mean",
+   "output": 2.566,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "iter1_gams_swap_en",
+   "inputs": "../../../../round-1/experiment-1/src/results/eval/gams_swap.json",
+   "key": "en[*].response -> Heretic keyword",
+   "function": "uniform keyword re-implementation",
+   "output": 25,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "iter1_gams_swap_sl",
+   "inputs": "../../../../round-1/experiment-1/src/results/eval/gams_swap.json",
+   "key": "sl[*].response -> SL markers",
+   "function": "uniform SL marker re-implementation",
+   "output": 25,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "iter1_gams_swap_kl",
+   "inputs": "../../../../round-1/experiment-1/src/results/eval/gams_swap.json",
+   "key": "kl_per_prompt (mean)",
+   "function": "mean over 100 prompts",
+   "output": 0.046,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "iter1_gams_swap_flores_en",
+   "inputs": "../../../../round-1/experiment-1/src/results/eval/gams_swap.json",
+   "key": "flores_nll_eng (mean of 40)",
+   "function": "mean",
+   "output": 3.336,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "iter1_gams_swap_flores_sl",
+   "inputs": "../../../../round-1/experiment-1/src/results/eval/gams_swap.json",
+   "key": "flores_nll_slv (mean of 40)",
+   "function": "mean",
+   "output": 2.576,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "iter1_gemma_orig_en",
+   "inputs": "../../../../round-1/experiment-1/src/results/eval/gemma_orig.json",
+   "key": "en[*].response -> Heretic keyword",
+   "function": "uniform keyword re-implementation",
+   "output": 100,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "iter1_gemma_orig_sl",
+   "inputs": "../../../../round-1/experiment-1/src/results/eval/gemma_orig.json",
+   "key": "sl[*].response -> SL markers",
+   "function": "uniform SL marker re-implementation",
+   "output": 97,
+   "status": "RECOMPUTED_MISMATCH"
+  },
+  {
+   "id": "iter1_gemma_orig_kl",
+   "inputs": "../../../../round-1/experiment-1/src/results/eval/gemma_orig.json",
+   "key": "kl_per_prompt (mean)",
+   "function": "mean over 100 prompts",
+   "output": 0.0,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "iter1_gemma_orig_flores_en",
+   "inputs": "../../../../round-1/experiment-1/src/results/eval/gemma_orig.json",
+   "key": "flores_nll_eng (mean of 40)",
+   "function": "mean",
+   "output": 4.018,
+   "status": "UNTRACEABLE"
+  },
+  {
+   "id": "iter1_gemma_orig_flores_sl",
+   "inputs": "../../../../round-1/experiment-1/src/results/eval/gemma_orig.json",
+   "key": "flores_nll_slv (mean of 40)",
+   "function": "mean",
+   "output": 3.702,
+   "status": "UNTRACEABLE"
+  },
+  {
+   "id": "iter1_gemma_own_en",
+   "inputs": "../../../../round-1/experiment-1/src/results/eval/gemma_own.json",
+   "key": "en[*].response -> Heretic keyword",
+   "function": "uniform keyword re-implementation",
+   "output": 69,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "iter1_gemma_own_sl",
+   "inputs": "../../../../round-1/experiment-1/src/results/eval/gemma_own.json",
+   "key": "sl[*].response -> SL markers",
+   "function": "uniform SL marker re-implementation",
+   "output": 90,
+   "status": "RECOMPUTED_MISMATCH"
+  },
+  {
+   "id": "iter1_gemma_own_kl",
+   "inputs": "../../../../round-1/experiment-1/src/results/eval/gemma_own.json",
+   "key": "kl_per_prompt (mean)",
+   "function": "mean over 100 prompts",
+   "output": 0.0243,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "iter1_gemma_own_flores_en",
+   "inputs": "../../../../round-1/experiment-1/src/results/eval/gemma_own.json",
+   "key": "flores_nll_eng (mean of 40)",
+   "function": "mean",
+   "output": 4.012,
+   "status": "UNTRACEABLE"
+  },
+  {
+   "id": "iter1_gemma_own_flores_sl",
+   "inputs": "../../../../round-1/experiment-1/src/results/eval/gemma_own.json",
+   "key": "flores_nll_slv (mean of 40)",
+   "function": "mean",
+   "output": 3.703,
+   "status": "UNTRACEABLE"
+  },
+  {
+   "id": "iter1_gemma_swap_en",
+   "inputs": "../../../../round-1/experiment-1/src/results/eval/gemma_swap.json",
+   "key": "en[*].response -> Heretic keyword",
+   "function": "uniform keyword re-implementation",
+   "output": 53,
+   "status": "RECOMPUTED_MISMATCH"
+  },
+  {
+   "id": "iter1_gemma_swap_sl",
+   "inputs": "../../../../round-1/experiment-1/src/results/eval/gemma_swap.json",
+   "key": "sl[*].response -> SL markers",
+   "function": "uniform SL marker re-implementation",
+   "output": 25,
+   "status": "RECOMPUTED_MISMATCH"
+  },
+  {
+   "id": "iter1_gemma_swap_kl",
+   "inputs": "../../../../round-1/experiment-1/src/results/eval/gemma_swap.json",
+   "key": "kl_per_prompt (mean)",
+   "function": "mean over 100 prompts",
+   "output": 0.2541,
+   "status": "RECOMPUTED_MISMATCH"
+  },
+  {
+   "id": "iter1_gemma_swap_flores_en",
+   "inputs": "../../../../round-1/experiment-1/src/results/eval/gemma_swap.json",
+   "key": "flores_nll_eng (mean of 40)",
+   "function": "mean",
+   "output": 4.011,
+   "status": "UNTRACEABLE"
+  },
+  {
+   "id": "iter1_gemma_swap_flores_sl",
+   "inputs": "../../../../round-1/experiment-1/src/results/eval/gemma_swap.json",
+   "key": "flores_nll_slv (mean of 40)",
+   "function": "mean",
+   "output": 3.712,
+   "status": "UNTRACEABLE"
+  },
+  {
+   "id": "iter1_gams_kl_ratio_own_swap",
+   "inputs": "../../../../round-1/experiment-1/src/results/eval/gams_own.json",
+   "key": "kl_per_prompt",
+   "function": "mean(KL_own)/mean(KL_swap); prompt bootstrap B=2000",
+   "output": 3.802435748627156,
+   "status": "NEW"
+  },
+  {
+   "id": "iter1_gemma_kl_ratio_own_swap",
+   "inputs": "../../../../round-1/experiment-1/src/results/eval/gemma_own.json",
+   "key": "kl_per_prompt",
+   "function": "mean(KL_own)/mean(KL_swap); prompt bootstrap B=2000",
+   "output": 0.09543896745848403,
+   "status": "NEW"
+  },
+  {
+   "id": "iter1_gemma_swap_drop_en",
+   "inputs": "../../../../round-1/experiment-1/src/results/eval/gemma_swap.json",
+   "key": null,
+   "function": "paired; exact McNemar p=1.42e-14",
+   "output": -0.47,
+   "status": "NEW"
+  },
+  {
+   "id": "iter1_gemma_swap_drop_sl",
+   "inputs": "../../../../round-1/experiment-1/src/results/eval/gemma_swap.json",
+   "key": null,
+   "function": "paired; exact McNemar p=4.24e-22",
+   "output": -0.72,
+   "status": "NEW"
+  },
+  {
+   "id": "iter1_gams_n_trials",
+   "inputs": "../../../../round-1/experiment-1/src/results/trials_gams.csv",
+   "key": "state==COMPLETE",
+   "function": "count",
+   "output": 116,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "iter1_gemma_n_trials",
+   "inputs": "../../../../round-1/experiment-1/src/results/trials_gemma.csv",
+   "key": "state==COMPLETE",
+   "function": "count",
+   "output": 116,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "iter1_eff_ratio_of_medians",
+   "inputs": "../../../../round-1/experiment-1/src/results/trials_gams.csv",
+   "key": "trials 0-59: (base-refusals)/kl",
+   "function": "median ratio; paired edit bootstrap B=2000 seed 20260924",
+   "output": 13.445603121210457,
+   "status": "MISDESCRIBED"
+  },
+  {
+   "id": "iter1_eff_median_gams",
+   "inputs": "../../../../round-1/experiment-1/src/results/trials_gams.csv",
+   "key": null,
+   "function": "",
+   "output": 1448.7678459159683,
+   "status": "NEW"
+  },
+  {
+   "id": "iter1_eff_median_gemma",
+   "inputs": "../../../../round-1/experiment-1/src/results/trials_gemma.csv",
+   "key": null,
+   "function": "",
+   "output": 107.75030564679803,
+   "status": "NEW"
+  },
+  {
+   "id": "iter1_paired_median_diff",
+   "inputs": "../../../../round-1/experiment-1/src/results/trials_gemma.csv",
+   "key": null,
+   "function": "",
+   "output": 25.0,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "iter1_dominance",
+   "inputs": "../../../../round-1/experiment-1/src/results/trials_gemma.csv",
+   "key": null,
+   "function": "",
+   "output": 60,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "iter1_klmatched_n",
+   "inputs": "../../../../round-1/experiment-1/src/results/trials_gams.csv",
+   "key": null,
+   "function": "",
+   "output": 30,
+   "status": "NEW"
+  },
+  {
+   "id": "iter1_klmatched_gams_med",
+   "inputs": "../../../../round-1/experiment-1/src/results/trials_gams.csv",
+   "key": null,
+   "function": "",
+   "output": 65.0,
+   "status": "NEW"
+  },
+  {
+   "id": "iter1_klmatched_gemma_med",
+   "inputs": "../../../../round-1/experiment-1/src/results/trials_gemma.csv",
+   "key": null,
+   "function": "",
+   "output": 99.0,
+   "status": "NEW"
+  },
+  {
+   "id": "iter1_klmatched_kl_gams",
+   "inputs": "../../../../round-1/experiment-1/src/results/trials_gams.csv",
+   "key": null,
+   "function": "",
+   "output": 0.0101178288459777,
+   "status": "NEW"
+  },
+  {
+   "id": "iter1_klmatched_kl_gemma",
+   "inputs": "../../../../round-1/experiment-1/src/results/trials_gemma.csv",
+   "key": null,
+   "function": "",
+   "output": 0.00976303080096835,
+   "status": "NEW"
+  },
+  {
+   "id": "iter1_a3_rho_ref",
+   "inputs": "../../../../round-1/experiment-1/src/results/trials_gams.csv",
+   "key": null,
+   "function": "",
+   "output": 0.7806405776128458,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "iter1_a3_rho_kl",
+   "inputs": "../../../../round-1/experiment-1/src/results/trials_gemma.csv",
+   "key": null,
+   "function": "",
+   "output": 0.9669352597943877,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "iter1_a3_reading",
+   "inputs": "../../../../round-1/experiment-1/src/results/a3_screen.json",
+   "key": "reading",
+   "function": "",
+   "output": "intermediate",
+   "status": "RECOMPUTED_MISMATCH"
+  },
+  {
+   "id": "iter1_gams_t88_ref",
+   "inputs": "../../../../round-1/experiment-1/src/results/trials_gams.csv",
+   "key": null,
+   "function": "",
+   "output": 16,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "iter1_gams_t88_kl",
+   "inputs": "../../../../round-1/experiment-1/src/results/trials_gams.csv",
+   "key": null,
+   "function": "",
+   "output": 0.1749354153871536,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "iter1_gemma_t96_ref",
+   "inputs": "../../../../round-1/experiment-1/src/results/trials_gemma.csv",
+   "key": null,
+   "function": "",
+   "output": 69,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "iter1_gemma_t96_kl",
+   "inputs": "../../../../round-1/experiment-1/src/results/trials_gemma.csv",
+   "key": null,
+   "function": "",
+   "output": 0.0242503006011247,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "iter1_gemma_min_ref",
+   "inputs": "../../../../round-1/experiment-1/src/results/trials_gemma.csv",
+   "key": null,
+   "function": "",
+   "output": 69,
+   "status": "NEW"
+  },
+  {
+   "id": "iter1_marker_kappa",
+   "inputs": "../../../../round-1/experiment-1/src/results/sl_marker_validation.json",
+   "key": null,
+   "function": "",
+   "output": 0.47916666666666663,
+   "status": "MISDESCRIBED"
+  },
+  {
+   "id": "claim_exp5_T1_gams_orig_en_ref",
+   "inputs": "../../../../round-2/experiment-5/src/results/judged_generations.jsonl",
+   "key": "label==REFUSED",
+   "function": "proportion over labelled items (labels_long.parquet)",
+   "output": 1.0,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "claim_exp5_T1_gams_orig_en_comp",
+   "inputs": "../../../../round-2/experiment-5/src/results/judged_generations.jsonl",
+   "key": "label==COMPLIED",
+   "function": "proportion over labelled items (labels_long.parquet)",
+   "output": 0.0,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "claim_exp5_T1_gams_orig_sl_ref",
+   "inputs": "../../../../round-2/experiment-5/src/results/judged_generations.jsonl",
+   "key": "label==REFUSED",
+   "function": "proportion over labelled items (labels_long.parquet)",
+   "output": 1.0,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "claim_exp5_T1_gams_orig_sl_comp",
+   "inputs": "../../../../round-2/experiment-5/src/results/judged_generations.jsonl",
+   "key": "label==COMPLIED",
+   "function": "proportion over labelled items (labels_long.parquet)",
+   "output": 0.0,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "claim_exp5_T1_gams_edit_en_ref",
+   "inputs": "../../../../round-2/experiment-5/src/results/judged_generations.jsonl",
+   "key": "label==REFUSED",
+   "function": "proportion over labelled items (labels_long.parquet)",
+   "output": 0.05555555555555555,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "claim_exp5_T1_gams_edit_en_comp",
+   "inputs": "../../../../round-2/experiment-5/src/results/judged_generations.jsonl",
+   "key": "label==COMPLIED",
+   "function": "proportion over labelled items (labels_long.parquet)",
+   "output": 0.9285714285714286,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "claim_exp5_T1_gams_edit_sl_ref",
+   "inputs": "../../../../round-2/experiment-5/src/results/judged_generations.jsonl",
+   "key": "label==REFUSED",
+   "function": "proportion over labelled items (labels_long.parquet)",
+   "output": 0.06666666666666667,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "claim_exp5_T1_gams_edit_sl_comp",
+   "inputs": "../../../../round-2/experiment-5/src/results/judged_generations.jsonl",
+   "key": "label==COMPLIED",
+   "function": "proportion over labelled items (labels_long.parquet)",
+   "output": 0.8962962962962963,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "claim_exp5_T1_gemma_orig_en_ref",
+   "inputs": "../../../../round-2/experiment-5/src/results/judged_generations.jsonl",
+   "key": "label==REFUSED",
+   "function": "proportion over labelled items (labels_long.parquet)",
+   "output": 0.9925925925925926,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "claim_exp5_T1_gemma_orig_en_comp",
+   "inputs": "../../../../round-2/experiment-5/src/results/judged_generations.jsonl",
+   "key": "label==COMPLIED",
+   "function": "proportion over labelled items (labels_long.parquet)",
+   "output": 0.007407407407407408,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "claim_exp5_T1_gemma_orig_sl_ref",
+   "inputs": "../../../../round-2/experiment-5/src/results/judged_generations.jsonl",
+   "key": "label==REFUSED",
+   "function": "proportion over labelled items (labels_long.parquet)",
+   "output": 0.9919354838709677,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "claim_exp5_T1_gemma_orig_sl_comp",
+   "inputs": "../../../../round-2/experiment-5/src/results/judged_generations.jsonl",
+   "key": "label==COMPLIED",
+   "function": "proportion over labelled items (labels_long.parquet)",
+   "output": 0.008064516129032258,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "claim_exp5_T1_gemma_edit_en_ref",
+   "inputs": "../../../../round-2/experiment-5/src/results/judged_generations.jsonl",
+   "key": "label==REFUSED",
+   "function": "proportion over labelled items (labels_long.parquet)",
+   "output": 0.7033898305084746,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "claim_exp5_T1_gemma_edit_en_comp",
+   "inputs": "../../../../round-2/experiment-5/src/results/judged_generations.jsonl",
+   "key": "label==COMPLIED",
+   "function": "proportion over labelled items (labels_long.parquet)",
+   "output": 0.2457627118644068,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "claim_exp5_T1_gemma_edit_sl_ref",
+   "inputs": "../../../../round-2/experiment-5/src/results/judged_generations.jsonl",
+   "key": "label==REFUSED",
+   "function": "proportion over labelled items (labels_long.parquet)",
+   "output": 0.9533333333333334,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "claim_exp5_T1_gemma_edit_sl_comp",
+   "inputs": "../../../../round-2/experiment-5/src/results/judged_generations.jsonl",
+   "key": "label==COMPLIED",
+   "function": "proportion over labelled items (labels_long.parquet)",
+   "output": 0.04,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "claim_exp4_gams_orig_S5_en",
+   "inputs": "../../../../round-2/experiment-4/src/results/judge_local",
+   "key": "label==REFUSED",
+   "function": "proportion over labelled items (labels_long.parquet)",
+   "output": 0.9857142857142858,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "claim_exp4_gams_orig_S5_sl",
+   "inputs": "../../../../round-2/experiment-4/src/results/judge_local",
+   "key": "label==REFUSED",
+   "function": "proportion over labelled items (labels_long.parquet)",
+   "output": 0.8714285714285714,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "claim_exp4_gams_orig_S6_en",
+   "inputs": "../../../../round-2/experiment-4/src/results/judge_local",
+   "key": "label==REFUSED",
+   "function": "proportion over labelled items (labels_long.parquet)",
+   "output": 0.1,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "claim_exp4_gams_orig_S6_sl",
+   "inputs": "../../../../round-2/experiment-4/src/results/judge_local",
+   "key": "label==REFUSED",
+   "function": "proportion over labelled items (labels_long.parquet)",
+   "output": 0.10666666666666667,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "claim_exp4_gams_edit_S5_en",
+   "inputs": "../../../../round-2/experiment-4/src/results/judge_local",
+   "key": "label==REFUSED",
+   "function": "proportion over labelled items (labels_long.parquet)",
+   "output": 0.014285714285714285,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "claim_exp4_gams_edit_S5_sl",
+   "inputs": "../../../../round-2/experiment-4/src/results/judge_local",
+   "key": "label==REFUSED",
+   "function": "proportion over labelled items (labels_long.parquet)",
+   "output": 0.0,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "claim_exp4_gams_edit_S6_en",
+   "inputs": "../../../../round-2/experiment-4/src/results/judge_local",
+   "key": "label==REFUSED",
+   "function": "proportion over labelled items (labels_long.parquet)",
+   "output": 0.0,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "claim_exp4_gams_edit_S6_sl",
+   "inputs": "../../../../round-2/experiment-4/src/results/judge_local",
+   "key": "label==REFUSED",
+   "function": "proportion over labelled items (labels_long.parquet)",
+   "output": 0.0,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "claim_exp4_gemma_orig_S5_en",
+   "inputs": "../../../../round-2/experiment-4/src/results/judge_local",
+   "key": "label==REFUSED",
+   "function": "proportion over labelled items (labels_long.parquet)",
+   "output": 0.9714285714285714,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "claim_exp4_gemma_orig_S5_sl",
+   "inputs": "../../../../round-2/experiment-4/src/results/judge_local",
+   "key": "label==REFUSED",
+   "function": "proportion over labelled items (labels_long.parquet)",
+   "output": 0.9392857142857143,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "claim_exp4_gemma_orig_S6_en",
+   "inputs": "../../../../round-2/experiment-4/src/results/judge_local",
+   "key": "label==REFUSED",
+   "function": "proportion over labelled items (labels_long.parquet)",
+   "output": 0.08666666666666667,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "claim_exp4_gemma_orig_S6_sl",
+   "inputs": "../../../../round-2/experiment-4/src/results/judge_local",
+   "key": "label==REFUSED",
+   "function": "proportion over labelled items (labels_long.parquet)",
+   "output": 0.32666666666666666,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "claim_exp4_gemma_edit_S5_en",
+   "inputs": "../../../../round-2/experiment-4/src/results/judge_local",
+   "key": "label==REFUSED",
+   "function": "proportion over labelled items (labels_long.parquet)",
+   "output": 0.2867383512544803,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "claim_exp4_gemma_edit_S5_sl",
+   "inputs": "../../../../round-2/experiment-4/src/results/judge_local",
+   "key": "label==REFUSED",
+   "function": "proportion over labelled items (labels_long.parquet)",
+   "output": 0.7392857142857143,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "claim_exp4_gemma_edit_S6_en",
+   "inputs": "../../../../round-2/experiment-4/src/results/judge_local",
+   "key": "label==REFUSED",
+   "function": "proportion over labelled items (labels_long.parquet)",
+   "output": 0.013333333333333334,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "claim_exp4_gemma_edit_S6_sl",
+   "inputs": "../../../../round-2/experiment-4/src/results/judge_local",
+   "key": "label==REFUSED",
+   "function": "proportion over labelled items (labels_long.parquet)",
+   "output": 0.19333333333333333,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "claim_exp4_community_ref_S5_en",
+   "inputs": "../../../../round-2/experiment-4/src/results/judge_local",
+   "key": "label==REFUSED",
+   "function": "proportion over labelled items (labels_long.parquet)",
+   "output": 0.05357142857142857,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "claim_exp4_community_ref_S5_sl",
+   "inputs": "../../../../round-2/experiment-4/src/results/judge_local",
+   "key": "label==REFUSED",
+   "function": "proportion over labelled items (labels_long.parquet)",
+   "output": 0.11428571428571428,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "claim_exp4_community_ref_S6_en",
+   "inputs": "../../../../round-2/experiment-4/src/results/judge_local",
+   "key": "label==REFUSED",
+   "function": "proportion over labelled items (labels_long.parquet)",
+   "output": 0.006666666666666667,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "claim_exp4_community_ref_S6_sl",
+   "inputs": "../../../../round-2/experiment-4/src/results/judge_local",
+   "key": "label==REFUSED",
+   "function": "proportion over labelled items (labels_long.parquet)",
+   "output": 0.02666666666666667,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "claim_exp8_A0_en_h",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
+   "key": "label==REFUSED",
+   "function": "proportion over labelled items (labels_long.parquet)",
+   "output": 0.9099099099099099,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "claim_exp8_A0_sl_h",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
+   "key": "label==REFUSED",
+   "function": "proportion over labelled items (labels_long.parquet)",
+   "output": 0.990990990990991,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "claim_exp8_A0_en_b",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
+   "key": "label==REFUSED",
+   "function": "proportion over labelled items (labels_long.parquet)",
+   "output": 0.04504504504504504,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "claim_exp8_A0_sl_b",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
+   "key": "label==REFUSED",
+   "function": "proportion over labelled items (labels_long.parquet)",
+   "output": 0.27927927927927926,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "claim_exp8_A1_en_h",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
+   "key": "label==REFUSED",
+   "function": "proportion over labelled items (labels_long.parquet)",
+   "output": 0.22522522522522523,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "claim_exp8_A1_sl_h",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
+   "key": "label==REFUSED",
+   "function": "proportion over labelled items (labels_long.parquet)",
+   "output": 0.8648648648648649,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "claim_exp8_A1_en_b",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
+   "key": "label==REFUSED",
+   "function": "proportion over labelled items (labels_long.parquet)",
+   "output": 0.0,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "claim_exp8_A1_sl_b",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
+   "key": "label==REFUSED",
+   "function": "proportion over labelled items (labels_long.parquet)",
+   "output": 0.1891891891891892,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "claim_exp8_A2_en_h",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
+   "key": "label==REFUSED",
+   "function": "proportion over labelled items (labels_long.parquet)",
+   "output": 0.2072072072072072,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "claim_exp8_A2_sl_h",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
+   "key": "label==REFUSED",
+   "function": "proportion over labelled items (labels_long.parquet)",
+   "output": 0.8272727272727273,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "claim_exp8_A2_en_b",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
+   "key": "label==REFUSED",
+   "function": "proportion over labelled items (labels_long.parquet)",
+   "output": 0.0,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "claim_exp8_A2_sl_b",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
+   "key": "label==REFUSED",
+   "function": "proportion over labelled items (labels_long.parquet)",
+   "output": 0.11711711711711711,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "claim_exp8_A3_en_h",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
+   "key": "label==REFUSED",
+   "function": "proportion over labelled items (labels_long.parquet)",
+   "output": 0.9459459459459459,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "claim_exp8_A3_sl_h",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
+   "key": "label==REFUSED",
+   "function": "proportion over labelled items (labels_long.parquet)",
+   "output": 0.9819819819819819,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "claim_exp8_A3_en_b",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
+   "key": "label==REFUSED",
+   "function": "proportion over labelled items (labels_long.parquet)",
+   "output": 0.036036036036036036,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "claim_exp8_A3_sl_b",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
+   "key": "label==REFUSED",
+   "function": "proportion over labelled items (labels_long.parquet)",
+   "output": 0.1891891891891892,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "claim_exp8_A4_en_h",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
+   "key": "label==REFUSED",
+   "function": "proportion over labelled items (labels_long.parquet)",
+   "output": 0.22522522522522523,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "claim_exp8_A4_sl_h",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
+   "key": "label==REFUSED",
+   "function": "proportion over labelled items (labels_long.parquet)",
+   "output": 0.5495495495495496,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "claim_exp8_A4_en_b",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
+   "key": "label==REFUSED",
+   "function": "proportion over labelled items (labels_long.parquet)",
+   "output": 0.018018018018018018,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "claim_exp8_A4_sl_b",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
+   "key": "label==REFUSED",
+   "function": "proportion over labelled items (labels_long.parquet)",
+   "output": 0.08108108108108109,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "claim_exp8_A7_en_h",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
+   "key": "label==REFUSED",
+   "function": "proportion over labelled items (labels_long.parquet)",
+   "output": 0.2072072072072072,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "claim_exp8_A7_sl_h",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
+   "key": "label==REFUSED",
+   "function": "proportion over labelled items (labels_long.parquet)",
+   "output": 0.8468468468468469,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "claim_exp8_A7_en_b",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
+   "key": "label==REFUSED",
+   "function": "proportion over labelled items (labels_long.parquet)",
+   "output": 0.009009009009009009,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "claim_exp8_A7_sl_b",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
+   "key": "label==REFUSED",
+   "function": "proportion over labelled items (labels_long.parquet)",
+   "output": 0.15315315315315314,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "claim_exp8_A10_en_h",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
+   "key": "label==REFUSED",
+   "function": "proportion over labelled items (labels_long.parquet)",
+   "output": 0.4144144144144144,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "claim_exp8_A10_sl_h",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
+   "key": "label==REFUSED",
+   "function": "proportion over labelled items (labels_long.parquet)",
+   "output": 0.7297297297297297,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "claim_exp8_X1_sl",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
+   "key": "label==REFUSED",
+   "function": "proportion over labelled items (labels_long.parquet)",
+   "output": 0.09523809523809523,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "claim_exp8_X1_en",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
+   "key": "label==REFUSED",
+   "function": "proportion over labelled items (labels_long.parquet)",
+   "output": 0.027777777777777776,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "claim_exp8_depth_Y1_1_12_sl",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
+   "key": "label==REFUSED",
+   "function": "proportion over labelled items (labels_long.parquet)",
+   "output": 0.8198198198198198,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "claim_exp8_depth_Y1_1_12_en",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
+   "key": "label==REFUSED",
+   "function": "proportion over labelled items (labels_long.parquet)",
+   "output": 0.7927927927927928,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "claim_exp8_depth_Y2_13_24_sl",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
+   "key": "label==REFUSED",
+   "function": "proportion over labelled items (labels_long.parquet)",
+   "output": 0.8198198198198198,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "claim_exp8_depth_Y2_13_24_en",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
+   "key": "label==REFUSED",
+   "function": "proportion over labelled items (labels_long.parquet)",
+   "output": 0.45045045045045046,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "claim_exp8_depth_Y3_25_36_sl",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
+   "key": "label==REFUSED",
+   "function": "proportion over labelled items (labels_long.parquet)",
+   "output": 0.7027027027027027,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "claim_exp8_depth_Y3_25_36_en",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
+   "key": "label==REFUSED",
+   "function": "proportion over labelled items (labels_long.parquet)",
+   "output": 0.7207207207207207,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "claim_exp8_depth_Y4_37_48_sl",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
+   "key": "label==REFUSED",
+   "function": "proportion over labelled items (labels_long.parquet)",
+   "output": 0.990990990990991,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "claim_exp8_depth_Y4_37_48_en",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
+   "key": "label==REFUSED",
+   "function": "proportion over labelled items (labels_long.parquet)",
+   "output": 0.8738738738738738,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "claim_exp8_depth_Yc24_1_24_sl",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
+   "key": "label==REFUSED",
+   "function": "proportion over labelled items (labels_long.parquet)",
+   "output": 0.5495495495495496,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "claim_exp8_depth_Yc24_1_24_en",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
+   "key": "label==REFUSED",
+   "function": "proportion over labelled items (labels_long.parquet)",
+   "output": 0.42342342342342343,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "claim_exp8_depth_Yc36_1_36_sl",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
+   "key": "label==REFUSED",
+   "function": "proportion over labelled items (labels_long.parquet)",
+   "output": 0.2072072072072072,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "claim_exp8_depth_Yc36_1_36_en",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
+   "key": "label==REFUSED",
+   "function": "proportion over labelled items (labels_long.parquet)",
+   "output": 0.3783783783783784,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "claim_exp8_depth_X1_sl",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
+   "key": "label==REFUSED",
+   "function": "proportion over labelled items (labels_long.parquet)",
+   "output": 0.23423423423423423,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "claim_exp8_depth_X1_en",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
+   "key": "label==REFUSED",
+   "function": "proportion over labelled items (labels_long.parquet)",
+   "output": 0.36936936936936937,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "claim_exp8_W_W0_sl",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
+   "key": "label==REFUSED",
+   "function": "proportion over labelled items (labels_long.parquet)",
+   "output": 0.8857142857142857,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "claim_exp8_W_W0_en",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
+   "key": "label==REFUSED",
+   "function": "proportion over labelled items (labels_long.parquet)",
+   "output": 0.38571428571428573,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "claim_exp8_W_W1_sl",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
+   "key": "label==REFUSED",
+   "function": "proportion over labelled items (labels_long.parquet)",
+   "output": 0.7571428571428571,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "claim_exp8_W_W1_en",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
+   "key": "label==REFUSED",
+   "function": "proportion over labelled items (labels_long.parquet)",
+   "output": 0.22857142857142856,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "claim_exp8_W_W3_sl",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
+   "key": "label==REFUSED",
+   "function": "proportion over labelled items (labels_long.parquet)",
+   "output": 0.11428571428571428,
+   "status": "MISDESCRIBED"
+  },
+  {
+   "id": "claim_exp8_W_W3_en",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
+   "key": "label==REFUSED",
+   "function": "proportion over labelled items (labels_long.parquet)",
+   "output": 0.2857142857142857,
+   "status": "MISDESCRIBED"
+  },
+  {
+   "id": "claim_exp8_W_W4_sl",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
+   "key": "label==REFUSED",
+   "function": "proportion over labelled items (labels_long.parquet)",
+   "output": 0.4714285714285714,
+   "status": "MISDESCRIBED"
+  },
+  {
+   "id": "claim_exp8_W_W4_en",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
+   "key": "label==REFUSED",
+   "function": "proportion over labelled items (labels_long.parquet)",
+   "output": 0.7,
+   "status": "MISDESCRIBED"
+  },
+  {
+   "id": "claim_exp8_C0_en",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
+   "key": "label==REFUSED",
+   "function": "proportion over labelled items (labels_long.parquet)",
+   "output": 0.014285714285714285,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "claim_exp8_C0_sl",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
+   "key": "label==REFUSED",
+   "function": "proportion over labelled items (labels_long.parquet)",
+   "output": 0.2571428571428571,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "claim_exp8_C1_en",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
+   "key": "label==REFUSED",
+   "function": "proportion over labelled items (labels_long.parquet)",
+   "output": 0.014285714285714285,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "claim_exp8_C1_sl",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
+   "key": "label==REFUSED",
+   "function": "proportion over labelled items (labels_long.parquet)",
+   "output": 0.2,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "claim_exp8_G0_en_h",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
+   "key": "label==REFUSED",
+   "function": "proportion over labelled items (labels_long.parquet)",
+   "output": 0.9318181818181818,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "claim_exp8_G0_sl_h",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
+   "key": "label==REFUSED",
+   "function": "proportion over labelled items (labels_long.parquet)",
+   "output": 0.9512195121951219,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "claim_exp8_G0_en_b",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
+   "key": "label==REFUSED",
+   "function": "proportion over labelled items (labels_long.parquet)",
+   "output": 0.06666666666666667,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "claim_exp8_G0_sl_b",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
+   "key": "label==REFUSED",
+   "function": "proportion over labelled items (labels_long.parquet)",
+   "output": 0.10204081632653061,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "claim_exp8_G1_en_h",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
+   "key": "label==REFUSED",
+   "function": "proportion over labelled items (labels_long.parquet)",
+   "output": 0.574468085106383,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "claim_exp8_G1_sl_h",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
+   "key": "label==REFUSED",
+   "function": "proportion over labelled items (labels_long.parquet)",
+   "output": 0.5,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "claim_exp8_G1_en_b",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
+   "key": "label==REFUSED",
+   "function": "proportion over labelled items (labels_long.parquet)",
+   "output": 0.0,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "claim_exp8_G1_sl_b",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
+   "key": "label==REFUSED",
+   "function": "proportion over labelled items (labels_long.parquet)",
+   "output": 0.041666666666666664,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "claim_exp3_gemma_sl_resid",
+   "inputs": "../../../../round-1/experiment-3/src/results/judged_generations.json",
+   "key": "label==REFUSED",
+   "function": "proportion over labelled items (labels_long.parquet)",
+   "output": 0.8536585365853658,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "exp7_Pa_definition",
+   "inputs": "../../../../round-2/experiment-7/src/protocol/frozen_predictions.json",
+   "key": "predictions.P-a",
+   "function": "",
+   "output": "Gap_R >= 0.10 with 95% bootstrap LB > 0 (confirmatory refusal trait chosen by the validity gate)",
+   "status": "RECOMPUTED_MISMATCH"
+  },
+  {
+   "id": "exp7_Pd_definition",
+   "inputs": "../../../../round-2/experiment-7/src/protocol/frozen_predictions.json",
+   "key": "predictions.P-d",
+   "function": "",
+   "output": null,
+   "status": "MISDESCRIBED"
+  },
+  {
+   "id": "exp7_gap_R1",
+   "inputs": "../../../../round-2/experiment-7/src/results/analysis.json",
+   "key": "verdicts.P-a",
+   "function": "",
+   "output": null,
+   "status": "SUMMARY_ONLY"
+  },
+  {
+   "id": "exp7_placebo_share",
+   "inputs": "../../../../round-2/experiment-7/src/results/rederive.json",
+   "key": "gap_independent.placebo_lang_swap_frac_ge_observed",
+   "function": "",
+   "output": null,
+   "status": "SUMMARY_ONLY"
+  },
+  {
+   "id": "exp6_gap_R1_beside",
+   "inputs": "../../../../round-2/experiment-6/src/results/analysis_results.json",
+   "key": "gap.R1.Gap",
+   "function": "",
+   "output": null,
+   "status": "SUMMARY_ONLY"
+  },
+  {
+   "id": "exp7_vs_exp6_comparison",
+   "inputs": "../../../../round-2/experiment-6/src/results/analysis_results.json",
+   "key": "gap.R.Gap",
+   "function": "",
+   "output": null,
+   "status": "MISDESCRIBED"
+  },
+  {
+   "id": "exp7_slope_R1",
+   "inputs": "../../../../round-2/experiment-7/src/results/panel/edits",
+   "key": "items.R1 (half-B harmful, minus same-trim same-device ORIG)",
+   "function": "OLS with intercept; edit bootstrap B=1000",
+   "output": 0.4357650338904925,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "exp7_slope_R_seq",
+   "inputs": "../../../../round-2/experiment-7/src/results/panel/edits",
+   "key": "items.R_seq (half-B harmful, minus same-trim same-device ORIG)",
+   "function": "OLS with intercept; edit bootstrap B=1000",
+   "output": 0.21960631287763704,
+   "status": "NEW"
+  },
+  {
+   "id": "exp7_slope_lp_ref",
+   "inputs": "../../../../round-2/experiment-7/src/results/panel/edits",
+   "key": "items.lp_ref (half-B harmful, minus same-trim same-device ORIG)",
+   "function": "OLS with intercept; edit bootstrap B=1000",
+   "output": 0.08065049439129407,
+   "status": "NEW"
+  },
+  {
+   "id": "exp7_slope_lp_comp",
+   "inputs": "../../../../round-2/experiment-7/src/results/panel/edits",
+   "key": "items.lp_comp (half-B harmful, minus same-trim same-device ORIG)",
+   "function": "OLS with intercept; edit bootstrap B=1000",
+   "output": 0.8489784439565519,
+   "status": "NEW"
+  },
+  {
+   "id": "exp7_selfjudge_validation",
+   "inputs": "../../../../round-2/experiment-7/src/results/judge_local.json",
+   "key": "validation_vs_gpt41",
+   "function": "",
+   "output": null,
+   "status": "SUMMARY_ONLY"
+  },
+  {
+   "id": "exp6_gapK",
+   "inputs": "../../../../round-2/experiment-6/src/results/analysis_results.json",
+   "key": "$.gap.K.Gap",
+   "function": "located by value in artifact summary (not recomputed)",
+   "output": null,
+   "status": "SUMMARY_ONLY"
+  },
+  {
+   "id": "exp6_gapR",
+   "inputs": "../../../../round-2/experiment-6/src/results/analysis_results.json",
+   "key": "$.gap.R.Gap",
+   "function": "located by value in artifact summary (not recomputed)",
+   "output": null,
+   "status": "SUMMARY_ONLY"
+  },
+  {
+   "id": "exp6_BK",
+   "inputs": "../../../../round-2/experiment-6/src/results/analysis_results.json",
+   "key": "$.B_t.K.B",
+   "function": "located by value in artifact summary (not recomputed)",
+   "output": null,
+   "status": "SUMMARY_ONLY"
+  },
+  {
+   "id": "exp6_gap_heretic_K",
+   "inputs": "../../../../round-2/experiment-6/src/results/analysis_results.json",
+   "key": "$.gap_heretic.K.Gap_Heretic",
+   "function": "located by value in artifact summary (not recomputed)",
+   "output": null,
+   "status": "SUMMARY_ONLY"
+  },
+  {
+   "id": "exp6_ratio_K",
+   "inputs": "../../../../round-2/experiment-6/src/results/analysis_results.json",
+   "key": "$.transfer_slopes.K.ratio_mean_change_SL_over_EN_B",
+   "function": "located by value in artifact summary (not recomputed)",
+   "output": null,
+   "status": "SUMMARY_ONLY"
+  },
+  {
+   "id": "exp6_reverse_gapK",
+   "inputs": "../../../../round-2/experiment-6/src/results/analysis_results.json",
+   "key": "gap.K.reverse_SL_source (R2s_plac - R2s_test)",
+   "function": "difference of stored R2* values",
+   "output": null,
+   "status": "SUMMARY_ONLY"
+  },
+  {
+   "id": "exp6_reselection",
+   "inputs": "../../../../round-2/experiment-6/src/results/analysis_results.json",
+   "key": "reselection.selected",
+   "function": "",
+   "output": null,
+   "status": "SUMMARY_ONLY"
+  },
+  {
+   "id": "exp6_srcnull_R",
+   "inputs": "../../../../round-2/experiment-6/src/results/analysis_results.json",
+   "key": "source_carrier.R.SRC.dR2_C_given_S0_ridge",
+   "function": "",
+   "output": null,
+   "status": "SUMMARY_ONLY"
+  },
+  {
+   "id": "exp6_srcnull_K",
+   "inputs": "../../../../round-2/experiment-6/src/results/analysis_results.json",
+   "key": "source_carrier.K.SRC.dR2_C_given_S0_ridge",
+   "function": "",
+   "output": null,
+   "status": "SUMMARY_ONLY"
+  },
+  {
+   "id": "exp6_srclayer_spearman",
+   "inputs": "../../../../round-2/experiment-6/src/results/panel_edits.jsonl",
+   "key": "KL_sl/KL_en vs direction_index",
+   "function": "Spearman over non-collapsed panel edits (recomputed)",
+   "output": 0.7533733133433285,
+   "status": "NEW"
+  },
+  {
+   "id": "exp6_repro_maxabs",
+   "inputs": "../../../../round-2/experiment-6/src/results/repro_check.json",
+   "key": "edits.*.max_abs",
+   "function": "",
+   "output": 97.22998046875,
+   "status": "MISDESCRIBED"
+  },
+  {
+   "id": "exp6_judge_meta",
+   "inputs": "../../../../round-2/experiment-6/src/results/judge_meta.json",
+   "key": null,
+   "function": "",
+   "output": null,
+   "status": "SUMMARY_ONLY"
+  },
+  {
+   "id": "exp3_gams3_C0_en",
+   "inputs": "../../../../round-1/experiment-3/src/results/judged_generations.json",
+   "key": "judge_label (jbb_harmful)",
+   "function": "proportion",
+   "output": 0.9024390243902439,
+   "status": "NEW"
+  },
+  {
+   "id": "exp3_gams3_C1_en",
+   "inputs": "../../../../round-1/experiment-3/src/results/judged_generations.json",
+   "key": "judge_label (jbb_harmful)",
+   "function": "proportion",
+   "output": 0.4634146341463415,
+   "status": "NEW"
+  },
+  {
+   "id": "exp3_gams3_C0_sl",
+   "inputs": "../../../../round-1/experiment-3/src/results/judged_generations.json",
+   "key": "judge_label (jbb_harmful)",
+   "function": "proportion",
+   "output": 0.926829268292683,
+   "status": "NEW"
+  },
+  {
+   "id": "exp3_gams3_C1_sl",
+   "inputs": "../../../../round-1/experiment-3/src/results/judged_generations.json",
+   "key": "judge_label (jbb_harmful)",
+   "function": "proportion",
+   "output": 0.34146341463414637,
+   "status": "NEW"
+  },
+  {
+   "id": "exp3_gemma_C0_en",
+   "inputs": "../../../../round-1/experiment-3/src/results/judged_generations.json",
+   "key": "judge_label (jbb_harmful)",
+   "function": "proportion",
+   "output": 0.8292682926829268,
+   "status": "RECOMPUTED_MISMATCH"
+  },
+  {
+   "id": "exp3_gemma_C1_en",
+   "inputs": "../../../../round-1/experiment-3/src/results/judged_generations.json",
+   "key": "judge_label (jbb_harmful)",
+   "function": "proportion",
+   "output": 0.07317073170731707,
+   "status": "NEW"
+  },
+  {
+   "id": "exp3_gemma_C0_sl",
+   "inputs": "../../../../round-1/experiment-3/src/results/judged_generations.json",
+   "key": "judge_label (jbb_harmful)",
+   "function": "proportion",
+   "output": 1.0,
+   "status": "NEW"
+  },
+  {
+   "id": "exp3_gemma_C1_sl",
+   "inputs": "../../../../round-1/experiment-3/src/results/judged_generations.json",
+   "key": "judge_label (jbb_harmful)",
+   "function": "proportion",
+   "output": 0.8536585365853658,
+   "status": "NEW"
+  },
+  {
+   "id": "exp3_gap_gams3",
+   "inputs": "../../../../round-1/experiment-3/src/results/judged_generations.json",
+   "key": null,
+   "function": "paired DiD over semantic items, B=2000",
+   "output": -0.14634146341463414,
+   "status": "NEW"
+  },
+  {
+   "id": "exp3_gap_gemma",
+   "inputs": "../../../../round-1/experiment-3/src/results/judged_generations.json",
+   "key": null,
+   "function": "paired DiD over semantic items, B=2000",
+   "output": 0.6097560975609756,
+   "status": "NEW"
+  },
+  {
+   "id": "exp3_levelgap_gams3",
+   "inputs": "../../../../round-1/experiment-3/src/results/judged_generations.json",
+   "key": null,
+   "function": "",
+   "output": -0.12195121951219512,
+   "status": "NEW"
+  },
+  {
+   "id": "exp3_levelgap_gemma",
+   "inputs": "../../../../round-1/experiment-3/src/results/judged_generations.json",
+   "key": null,
+   "function": "",
+   "output": 0.7804878048780488,
+   "status": "NEW"
+  },
+  {
+   "id": "exp3_judge_provenance",
+   "inputs": "../../../../round-1/experiment-3/src/results/judge_meta.json",
+   "key": null,
+   "function": "",
+   "output": 1596,
+   "status": "MISDESCRIBED"
+  },
+  {
+   "id": "exp3_rgate_gams_sp",
+   "inputs": "../../../../round-1/experiment-3/src/results/analysis_summary.json",
+   "key": "validity.gams3.spearman_condition_level",
+   "function": "read from artifact summary by key (not recomputed)",
+   "output": null,
+   "status": "SUMMARY_ONLY"
+  },
+  {
+   "id": "exp3_rgate_gams_auc",
+   "inputs": "../../../../round-1/experiment-3/src/results/analysis_summary.json",
+   "key": "validity.gams3.item_auroc",
+   "function": "read from artifact summary by key (not recomputed)",
+   "output": null,
+   "status": "SUMMARY_ONLY"
+  },
+  {
+   "id": "exp3_rgate_gemma_sp",
+   "inputs": "../../../../round-1/experiment-3/src/results/analysis_summary.json",
+   "key": "validity.gemma.spearman_condition_level",
+   "function": "read from artifact summary by key (not recomputed)",
+   "output": null,
+   "status": "SUMMARY_ONLY"
+  },
+  {
+   "id": "exp3_bridge_gams3",
+   "inputs": "../../../../round-1/experiment-3/src/results/gams3/heretic_bridge.json",
+   "key": "mean_gap",
+   "function": "read from artifact summary by key (not recomputed)",
+   "output": null,
+   "status": "SUMMARY_ONLY"
+  },
+  {
+   "id": "exp3_bridge_gemma",
+   "inputs": "../../../../round-1/experiment-3/src/results/gemma/heretic_bridge.json",
+   "key": "mean_gap",
+   "function": "read from artifact summary by key (not recomputed)",
+   "output": null,
+   "status": "SUMMARY_ONLY"
+  },
+  {
+   "id": "exp3_margin_sl",
+   "inputs": "../../../../round-1/experiment-3/src/results/margin_decomposition_exploratory.json",
+   "key": "gemma.sl.mean_R0",
+   "function": "read from artifact summary by key (not recomputed)",
+   "output": null,
+   "status": "SUMMARY_ONLY"
+  },
+  {
+   "id": "exp3_margin_en",
+   "inputs": "../../../../round-1/experiment-3/src/results/margin_decomposition_exploratory.json",
+   "key": "gemma.en.mean_R0",
+   "function": "read from artifact summary by key (not recomputed)",
+   "output": null,
+   "status": "SUMMARY_ONLY"
+  },
+  {
+   "id": "exp3_benign_sl_twins",
+   "inputs": "../../../../round-1/experiment-3/src/results/margin_decomposition_exploratory.json",
+   "key": "gemma.sl.benign_C0_judged_refusal",
+   "function": "read from artifact summary by key (not recomputed)",
+   "output": null,
+   "status": "SUMMARY_ONLY"
+  },
+  {
+   "id": "exp3_T",
+   "inputs": "../../../../round-1/experiment-3/src/results/verify_numbers.json",
+   "key": "$.gemma.recomputed.T_en->sl",
+   "function": "",
+   "output": null,
+   "status": "SUMMARY_ONLY"
+  },
+  {
+   "id": "exp3_cos",
+   "inputs": "../../../../round-2/experiment-8/src/results/analysis_summary.json",
+   "key": "transfer_predictors.cos_dEN_dSL",
+   "function": "",
+   "output": null,
+   "status": "SUMMARY_ONLY"
+  },
+  {
+   "id": "exp8_cut_A2",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
+   "key": "judge_label",
+   "function": "paired difference A1 - arm",
+   "output": 0.03636363636363636,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "exp8_cut_A4",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
+   "key": "judge_label",
+   "function": "paired difference A1 - arm",
+   "output": 0.3153153153153153,
+   "status": "NEW"
+  },
+  {
+   "id": "exp8_cut_A5",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
+   "key": "judge_label",
+   "function": "paired difference A1 - arm",
+   "output": 0.02040816326530612,
+   "status": "NEW"
+  },
+  {
+   "id": "exp8_cut_A6",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
+   "key": "judge_label",
+   "function": "paired difference A1 - arm",
+   "output": 0.32432432432432434,
+   "status": "NEW"
+  },
+  {
+   "id": "exp8_cut_A7",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
+   "key": "judge_label",
+   "function": "paired difference A1 - arm",
+   "output": 0.018018018018018018,
+   "status": "NEW"
+  },
+  {
+   "id": "exp8_cut_A8",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
+   "key": "judge_label",
+   "function": "paired difference A1 - arm",
+   "output": 0.043478260869565216,
+   "status": "NEW"
+  },
+  {
+   "id": "exp8_cut_A9",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
+   "key": "judge_label",
+   "function": "paired difference A1 - arm",
+   "output": 0.07407407407407407,
+   "status": "NEW"
+  },
+  {
+   "id": "exp8_cut_A10",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
+   "key": "judge_label",
+   "function": "paired difference A1 - arm",
+   "output": 0.13513513513513514,
+   "status": "NEW"
+  },
+  {
+   "id": "exp8_cut_A11",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
+   "key": "judge_label",
+   "function": "paired difference A1 - arm",
+   "output": 0.0,
+   "status": "NEW"
+  },
+  {
+   "id": "exp8_cut_A2d_c0.5",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
+   "key": "judge_label",
+   "function": "paired difference A1 - arm",
+   "output": 0.058823529411764705,
+   "status": "NEW"
+  },
+  {
+   "id": "exp8_F3_p",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
+   "key": null,
+   "function": "exact McNemar n10=11 n01=1",
+   "output": 0.00634765625,
+   "status": "NEW"
+  },
+  {
+   "id": "exp8_F3_holm",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
+   "key": null,
+   "function": "",
+   "output": 0.025390625,
+   "status": "NEW"
+  },
+  {
+   "id": "exp8_auroc_cos",
+   "inputs": "../../../../round-2/experiment-8/src/results/analysis_summary.json",
+   "key": "transfer_predictors.cosine_baseline.auroc",
+   "function": "read from artifact summary by key (not recomputed)",
+   "output": null,
+   "status": "SUMMARY_ONLY"
+  },
+  {
+   "id": "exp8_rprior_cos_lang",
+   "inputs": "../../../../round-2/experiment-8/src/results/audit_headline.json",
+   "key": "geometry.cos_rprior_l",
+   "function": "read from artifact summary by key (not recomputed)",
+   "output": null,
+   "status": "SUMMARY_ONLY"
+  },
+  {
+   "id": "exp8_rprior_cos_shuf",
+   "inputs": "../../../../round-2/experiment-8/src/results/audit_headline.json",
+   "key": "geometry.cos_rprior_shuffled",
+   "function": "read from artifact summary by key (not recomputed)",
+   "output": null,
+   "status": "SUMMARY_ONLY"
+  },
+  {
+   "id": "exp4_official_asr_gemma_edit_en",
+   "inputs": "../../../../round-2/experiment-4/src/results/guard/official_labels.jsonl",
+   "key": "official_unsafe (S5; unadjudicated disagreements excluded)",
+   "function": "proportion",
+   "output": 0.7379032258064516,
+   "status": "NEW"
+  },
+  {
+   "id": "exp4_official_asr_gemma_edit_sl",
+   "inputs": "../../../../round-2/experiment-4/src/results/guard/official_labels.jsonl",
+   "key": "official_unsafe (S5; unadjudicated disagreements excluded)",
+   "function": "proportion",
+   "output": 0.1026785714285714,
+   "status": "NEW"
+  },
+  {
+   "id": "exp4_kappa_pooled_binary",
+   "inputs": "../../../../round-2/experiment-4/src/results/judge",
+   "key": null,
+   "function": "Cohen kappa on the item overlap (all checkpoints pooled)",
+   "output": 0.9125865162778776,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "exp4_kappa_edited_binary",
+   "inputs": "../../../../round-2/experiment-4/src/results/judge",
+   "key": null,
+   "function": "",
+   "output": 0.7793376334760691,
+   "status": "NEW"
+  },
+  {
+   "id": "exp4_kappa_pooled_4class",
+   "inputs": "../../../../round-2/experiment-4/src/results/judge",
+   "key": null,
+   "function": "Cohen kappa on the item overlap (all checkpoints pooled)",
+   "output": 0.8333927298645758,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "exp4_kappa_edited_4class",
+   "inputs": "../../../../round-2/experiment-4/src/results/judge",
+   "key": null,
+   "function": "",
+   "output": 0.7272635915988342,
+   "status": "NEW"
+  },
+  {
+   "id": "exp4_judge_provenance",
+   "inputs": "../../../../round-2/experiment-4/src/results/judge_local_cert.json",
+   "key": null,
+   "function": "",
+   "output": null,
+   "status": "MISDESCRIBED"
+  },
+  {
+   "id": "exp4_rseq_within_edit",
+   "inputs": "../../../../round-2/experiment-4/src/results/rseq/rseq_validity.json",
+   "key": "$.cells.gams|en|edit_ckpts_only.R_seq.spearman",
+   "function": "",
+   "output": null,
+   "status": "SUMMARY_ONLY"
+  },
+  {
+   "id": "exp4_B3_batching",
+   "inputs": "../../../../round-2/experiment-4/src/results/smoke",
+   "key": null,
+   "function": "",
+   "output": null,
+   "status": "SUMMARY_ONLY"
+  },
+  {
+   "id": "exp4_s5x_gap_gemma",
+   "inputs": "../../../../round-2/experiment-4/src/frozen_samples.json",
+   "key": "s5x_pairs x judge_local",
+   "function": "paired; exact McNemar p=3.39e-21",
+   "output": 0.69,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "exp4_s5x_mcnemar",
+   "inputs": "../../../../round-2/experiment-4/src/frozen_samples.json",
+   "key": null,
+   "function": "",
+   "output": 3.3881317890172014e-21,
+   "status": "NEW"
+  },
+  {
+   "id": "exp4_s5x_did_gemma",
+   "inputs": "../../../../round-2/experiment-4/src/frozen_samples.json",
+   "key": null,
+   "function": "",
+   "output": 0.66,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "exp4_s5x_gap_gemma_broad",
+   "inputs": "../../../../round-2/experiment-4/src/frozen_samples.json",
+   "key": null,
+   "function": "",
+   "output": 0.2299999999999999,
+   "status": "NEW"
+  },
+  {
+   "id": "exp4_s5x_gap_community",
+   "inputs": "../../../../round-2/experiment-4/src/frozen_samples.json",
+   "key": null,
+   "function": "",
+   "output": 0.12,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "exp4_ratio_26",
+   "inputs": "../../../../round-2/experiment-4/src/results/judge_local",
+   "key": null,
+   "function": "",
+   "output": 2.578258928571429,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "exp4_invalid_zero",
+   "inputs": "../../../../round-2/experiment-4/src/results/judge_local",
+   "key": null,
+   "function": "max over S5 cells",
+   "output": 0.0,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "exp5_T1_gap25",
+   "inputs": "../../../../round-2/experiment-5/src/results/judged_generations.jsonl",
+   "key": null,
+   "function": "",
+   "output": 0.24994350282485878,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "exp5_agree_4class_kappa",
+   "inputs": "../../../../round-2/experiment-5/src/results/judged_generations.jsonl",
+   "key": null,
+   "function": "pooled over originals + edits",
+   "output": 0.7651863195507912,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "exp5_agree_binary_kappa",
+   "inputs": "../../../../round-2/experiment-5/src/results/judged_generations.jsonl",
+   "key": null,
+   "function": "pooled over originals + edits",
+   "output": 0.8275862068965516,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "exp5_agree_4class_raw_agreement",
+   "inputs": "../../../../round-2/experiment-5/src/results/judged_generations.jsonl",
+   "key": null,
+   "function": "pooled over originals + edits",
+   "output": 0.885,
+   "status": "RECOMPUTED_MATCH"
+  },
+  {
+   "id": "exp5_T1_provenance",
+   "inputs": "../../../../round-2/experiment-5/src/results/judged_generations.jsonl",
+   "key": null,
+   "function": "",
+   "output": 0.5214007782101168,
+   "status": "MISDESCRIBED"
+  }
+ ],
+ "independence": "all numbers recomputed by scripts/ in this workspace from raw per-item files; no prior artifact analysis/audit script was imported or executed",
+ "api_spend_usd": 0.0,
+ "optional_S2j_topup": "ATTEMPTED, BLOCKED: 521 S5X items (gemma_edit 162, community_ref 200, gemma_orig 159; estimate $0.95) were sent with the frozen exp4 gpt-4.1 prompt; every call returned HTTP 403 'aii_run_budget_exhausted' (per-run OpenRouter budget reached). 0 labels, $0 spent, nothing invented (results/topup_gpt41_BLOCKED_no_labels.jsonl, results/topup_cost.json). Within-edit gpt-4.1 vs Qwen overlap therefore stays small in exp4 (354 items; 4 S5X gemma_edit pairs with both members labelled, 0 community_ref)."
+}

@@ -1,0 +1,36 @@
+{
+ "cell": "SMK_X4_L20_c2",
+ "family": "act",
+ "E": null,
+ "smoke": true,
+ "stage": "smoke",
+ "flores_dNLL": {
+  "en": -0.02968907356262207,
+  "sl": 0.0022852033376693725
+ },
+ "kl_dolly": {
+  "en": 0.11859643297269941,
+  "sl": 0.03258778214454651
+ },
+ "sec_gen": 25.4,
+ "sec_tf": 12.5,
+ "complete_plan": [
+  [
+   "sm_harm",
+   "en"
+  ],
+  [
+   "sm_harm",
+   "sl"
+  ],
+  [
+   "sm_ben",
+   "en"
+  ],
+  [
+   "sm_ben",
+   "sl"
+  ]
+ ],
+ "done_utc": "2026-09-24T08:23:44Z"
+}

@@ -1,0 +1,7 @@
+model,checkpoint,en_refusals,sl_refusals,kl_mean,flores_en,flores_sl
+gams,orig,98,97,0.0,3.332,2.57
+gams,own,16,10,0.175,3.334,2.566
+gams,swap,25,25,0.046,3.336,2.576
+gemma,orig,100,97,0.0,4.018,3.702
+gemma,own,69,90,0.024,4.012,3.703
+gemma,swap,53,25,0.254,4.011,3.712

@@ -1,0 +1,29 @@
+{
+ "attempts": [
+  {
+   "model": "google/gemma-3-12b-it",
+   "role": "M1 anchor",
+   "status": "ok",
+   "revision": "96b6f1eccf38110c56df3a15bffe176da04bfd80"
+  },
+  {
+   "model": "Qwen/Qwen3-8B",
+   "role": "M2",
+   "status": "ok",
+   "revision": "b968826d9c46dd6066d109eabc6255188de91218"
+  },
+  {
+   "model": "utter-project/EuroLLM-9B-Instruct",
+   "role": "M3 first choice",
+   "status": "FAILED",
+   "reason": "gated repo: HTTP 403 'Cannot access gated repo' with the run's HF_TOKEN (see logs/dl_eurollm.log)"
+  },
+  {
+   "model": "mistralai/Mistral-7B-Instruct-v0.3",
+   "role": "M3 (next in the recorded fallback order)",
+   "status": "ok",
+   "revision": "c170c708c41dac9275d15a8fff4eca08d52bab71"
+  }
+ ],
+ "note": "M3 fallback order EuroLLM -> Mistral-7B-Instruct-v0.3 -> Llama-3.1-8B-Instruct -> granite-3.3-8b-instruct; the first loadable one is used, no silent substitution."
+}

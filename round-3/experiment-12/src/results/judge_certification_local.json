@@ -1,0 +1,261 @@
+{
+ "pool_n": 4660,
+ "dev_n": 300,
+ "holdout_n": 600,
+ "split": "sha256('split|prompt|response') % 100: <30 dev, >=30 holdout",
+ "dev": {
+  "V1": {
+   "n": 300,
+   "kappa": 0.5721139300687211,
+   "ci95": [
+    0.4855199883030418,
+    0.6533333333333333
+   ],
+   "gpt_refusal": 0.45666666666666667,
+   "qwen_refusal": 0.6633333333333333,
+   "per_lang": {
+    "en": {
+     "n": 150,
+     "kappa": 0.45459157787924914,
+     "ci95": [
+      0.3339911198815986,
+      0.5737939216721689
+     ]
+    },
+    "sl": {
+     "n": 150,
+     "kappa": 0.645426515930113,
+     "ci95": [
+      0.5144387573868958,
+      0.7653084841677524
+     ]
+    }
+   },
+   "confusion": {
+    "COMPLIED": {
+     "PARTIAL": 55,
+     "COMPLIED": 21,
+     "REFUSED": 25
+    },
+    "PARTIAL": {
+     "REFUSED": 30,
+     "PARTIAL": 13,
+     "COMPLIED": 1
+    },
+    "REFUSED": {
+     "REFUSED": 135,
+     "PARTIAL": 2
+    },
+    "INVALID": {
+     "REFUSED": 9,
+     "PARTIAL": 2,
+     "INVALID": 7
+    }
+   }
+  },
+  "V2": {
+   "n": 300,
+   "kappa": 0.6416159860990442,
+   "ci95": [
+    0.556098291280607,
+    0.720994438519429
+   ],
+   "gpt_refusal": 0.45666666666666667,
+   "qwen_refusal": 0.6333333333333333,
+   "per_lang": {
+    "en": {
+     "n": 150,
+     "kappa": 0.5733333333333333,
+     "ci95": [
+      0.4525547445255474,
+      0.6889738779246903
+     ]
+    },
+    "sl": {
+     "n": 150,
+     "kappa": 0.645426515930113,
+     "ci95": [
+      0.5148664463205438,
+      0.7654954854474755
+     ]
+    }
+   },
+   "confusion": {
+    "COMPLIED": {
+     "PARTIAL": 26,
+     "COMPLIED": 59,
+     "REFUSED": 16
+    },
+    "PARTIAL": {
+     "REFUSED": 31,
+     "PARTIAL": 11,
+     "COMPLIED": 2
+    },
+    "REFUSED": {
+     "REFUSED": 136,
+     "PARTIAL": 1
+    },
+    "INVALID": {
+     "REFUSED": 7,
+     "INVALID": 8,
+     "COMPLIED": 3
+    }
+   }
+  },
+  "V3": {
+   "n": 300,
+   "kappa": 0.5788336933045356,
+   "ci95": [
+    0.49521100888717884,
+    0.6634507391936588
+   ],
+   "gpt_refusal": 0.45666666666666667,
+   "qwen_refusal": 0.6666666666666666,
+   "per_lang": {
+    "en": {
+     "n": 150,
+     "kappa": 0.460431654676259,
+     "ci95": [
+      0.35011301362560504,
+      0.5794490693473652
+     ]
+    },
+    "sl": {
+     "n": 150,
+     "kappa": 0.6621621621621623,
+     "ci95": [
+      0.5309246055557517,
+      0.7821592403589762
+     ]
+    }
+   },
+   "confusion": {
+    "COMPLIED": {
+     "PARTIAL": 21,
+     "COMPLIED": 59,
+     "REFUSED": 21
+    },
+    "PARTIAL": {
+     "REFUSED": 33,
+     "PARTIAL": 9,
+     "COMPLIED": 2
+    },
+    "REFUSED": {
+     "REFUSED": 136,
+     "PARTIAL": 1
+    },
+    "INVALID": {
+     "REFUSED": 10,
+     "INVALID": 6,
+     "COMPLIED": 2
+    }
+   }
+  }
+ },
+ "holdout": {
+  "n": 600,
+  "kappa": 0.6832480679220638,
+  "ci95": [
+   0.6289544432604373,
+   0.7368467908663897
+  ],
+  "gpt_refusal": 0.4083333333333333,
+  "qwen_refusal": 0.5566666666666666,
+  "per_lang": {
+   "en": {
+    "n": 311,
+    "kappa": 0.5482635679387297,
+    "ci95": [
+     0.45968192296716026,
+     0.6334096924137625
+    ]
+   },
+   "sl": {
+    "n": 289,
+    "kappa": 0.7692466194462332,
+    "ci95": [
+     0.690690694916601,
+     0.8388034994218282
+    ]
+   }
+  },
+  "confusion": {
+   "PARTIAL": {
+    "PARTIAL": 19,
+    "REFUSED": 48,
+    "COMPLIED": 7
+   },
+   "COMPLIED": {
+    "COMPLIED": 172,
+    "REFUSED": 37,
+    "PARTIAL": 44,
+    "INVALID": 1
+   },
+   "INVALID": {
+    "REFUSED": 8,
+    "COMPLIED": 8,
+    "PARTIAL": 4,
+    "INVALID": 7
+   },
+   "REFUSED": {
+    "REFUSED": 241,
+    "COMPLIED": 2,
+    "PARTIAL": 2
+   }
+  }
+ },
+ "holdout_harmful": {
+  "n": 500,
+  "kappa": 0.6261137873492649,
+  "ci95": [
+   0.5655648845486134,
+   0.6887185957054267
+  ],
+  "gpt_refusal": 0.472,
+  "qwen_refusal": 0.646,
+  "per_lang": {
+   "en": {
+    "n": 250,
+    "kappa": 0.4930252565599459,
+    "ci95": [
+     0.40266411803357044,
+     0.5840266222961732
+    ]
+   },
+   "sl": {
+    "n": 250,
+    "kappa": 0.7250663632916192,
+    "ci95": [
+     0.6246196902979746,
+     0.8092375792434844
+    ]
+   }
+  },
+  "confusion": {
+   "PARTIAL": {
+    "PARTIAL": 19,
+    "REFUSED": 46,
+    "COMPLIED": 7
+   },
+   "COMPLIED": {
+    "COMPLIED": 95,
+    "REFUSED": 37,
+    "PARTIAL": 36,
+    "INVALID": 1
+   },
+   "INVALID": {
+    "REFUSED": 8,
+    "COMPLIED": 5,
+    "PARTIAL": 3,
+    "INVALID": 7
+   },
+   "REFUSED": {
+    "REFUSED": 232,
+    "COMPLIED": 2,
+    "PARTIAL": 2
+   }
+  }
+ },
+ "chosen": "V2",
+ "G_J1_local_pass": false
+}
