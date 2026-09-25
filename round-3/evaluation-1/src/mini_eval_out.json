@@ -48,7 +48,7 @@
       "dataset": "corrected_numbers",
       "examples": [
         {
-          "input": "[Iteration 1 / Experiment 1] gams orig EN refusals | cell=gams:orig lang=en judge=keyword (Heretic markers) | source=/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/results/eval/gams_orig.json::en[*].response -> Heretic keyword",
+          "input": "[Iteration 1 / Experiment 1] gams orig EN refusals | cell=gams:orig lang=en judge=keyword (Heretic markers) | source=../../../round-1/experiment-1/src/results/eval/gams_orig.json::en[*].response -> Heretic keyword",
           "output": "98",
           "predict_draft": "98",
           "predict_recomputed": "98",
@@ -68,7 +68,7 @@
           "eval_abs_diff_vs_draft": 0.0
         },
         {
-          "input": "[Iteration 1 / Experiment 1] gams orig SL refusals | cell=gams:orig lang=sl judge=keyword (iter-1 SL markers) | source=/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/results/eval/gams_orig.json::sl[*].response -> SL markers",
+          "input": "[Iteration 1 / Experiment 1] gams orig SL refusals | cell=gams:orig lang=sl judge=keyword (iter-1 SL markers) | source=../../../round-1/experiment-1/src/results/eval/gams_orig.json::sl[*].response -> SL markers",
           "output": "97",
           "predict_draft": "97",
           "predict_recomputed": "97",
@@ -88,7 +88,7 @@
           "eval_abs_diff_vs_draft": 0.0
         },
         {
-          "input": "[Iteration 1 / Experiment 1] gams orig KL mean | cell=gams:orig lang= judge= | source=/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/results/eval/gams_orig.json::kl_per_prompt (mean)",
+          "input": "[Iteration 1 / Experiment 1] gams orig KL mean | cell=gams:orig lang= judge= | source=../../../round-1/experiment-1/src/results/eval/gams_orig.json::kl_per_prompt (mean)",
           "output": "0.000",
           "predict_draft": "0.0",
           "predict_recomputed": "0.0",

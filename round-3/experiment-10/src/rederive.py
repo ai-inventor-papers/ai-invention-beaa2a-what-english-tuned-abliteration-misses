@@ -230,7 +230,7 @@ def main() -> None:
             out["PB3_ci"] = [float(np.percentile([inter[rng.integers(0, len(ks), len(ks))].mean() for _ in range(2000)], q))
                              for q in (2.5, 97.5)]
     # 4. coverage regression
-    Z = np.load(Path("/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8")
+    Z = np.load(Path(__file__).resolve().parents[3] / "round-2/experiment-8/src"
                 / "directions/gams3_all_layers.npz")
     X, names, y = design_matrix(R, Z["dEN"], Z["dSL"])
     if len(y) >= 8:

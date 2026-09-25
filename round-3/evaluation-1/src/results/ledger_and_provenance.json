@@ -30,7 +30,7 @@
    "status": "NOT RUN",
    "reason": "cut; conformal forecast met 85% coverage in only 50% of trait x holdout cells",
    "number": "coverage 50%",
-   "source": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_6/results/analysis_results.json forecast"
+   "source": "../../../../round-2/experiment-6/src/results/analysis_results.json forecast"
   },
   {
    "item": "language-orthogonalised matched-efficacy arm",
@@ -38,7 +38,7 @@
    "status": "NOT RUN",
    "reason": "cut for time",
    "number": "–",
-   "source": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/deviations.json"
+   "source": "../../../../round-2/experiment-8/src/results/deviations.json"
   },
   {
    "item": "Gemini second judge",
@@ -46,7 +46,7 @@
    "status": "NOT RUN (budget block, HTTP 403 daily key limit)",
    "reason": "OpenRouter key limit",
    "number": "0 judgements",
-   "source": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/results/judge_sl.json"
+   "source": "../../../../round-1/experiment-1/src/results/judge_sl.json"
   },
   {
    "item": "exposure differential D as gap carrier",
@@ -54,7 +54,7 @@
    "status": "CLOSED (failed)",
    "reason": "dR2(D | S0) ~ 0 or negative for every trait",
    "number": "K: dR2 -0.011 [-0.058, 0.027] (exp6); Gemma +0.004 (exp7 P-c)",
-   "source": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_6/README.md ; /ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_7/results/analysis.json verdicts.P-c"
+   "source": "../../../../round-2/experiment-6/src/README.md ; ../../../../round-2/experiment-7/src/results/analysis.json verdicts.P-c"
   },
   {
    "item": "static b1/b2/b3 and LSAR Omega predictors",
@@ -62,7 +62,7 @@
    "status": "CLOSED (failed)",
    "reason": "CV R2 <= 0",
    "number": "CV R2 <= 0",
-   "source": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_6/results/analysis_results.json carrier"
+   "source": "../../../../round-2/experiment-6/src/results/analysis_results.json carrier"
   },
   {
    "item": "r_prior false-refusal direction (Wang et al. style)",
@@ -70,7 +70,7 @@
    "status": "CLOSED (failed; KILL a/c fired)",
    "reason": "cut not larger than random or shuffled controls",
    "number": "cut .036 [-.037,.109] < best random .074 < shuffled .135",
-   "source": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/report_tables.md"
+   "source": "../../../../round-2/experiment-8/src/results/report_tables.md"
   },
   {
    "item": "thin-margin rival explanation",
@@ -78,7 +78,7 @@
    "status": "CLOSED",
    "reason": "margin-matched gap stays small",
    "number": "margin-matched Gap +.057 [.029,.130] Gemma; +.131 GaMS3",
-   "source": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_7/results/analysis.json verdicts.P-d"
+   "source": "../../../../round-2/experiment-7/src/results/analysis.json verdicts.P-d"
   },
   {
    "item": "language-identity direction (A4)",
@@ -86,7 +86,7 @@
    "status": "WORKS BUT UNUSABLE",
    "reason": "cuts SL residual .315 but destroys language modelling",
    "number": "SL harmful .86 -> .55; FLORES dNLL +2.02 EN / +1.93 SL",
-   "source": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/report_tables.md"
+   "source": "../../../../round-2/experiment-8/src/results/report_tables.md"
   },
   {
    "item": "exp3 raw-energy-matched random ablations (T7)",
@@ -94,7 +94,7 @@
    "status": "LESSON",
    "reason": "energy-matched random directions at every layer/position are destructive, so their refusal drops are collateral",
    "number": "see deviations.json",
-   "source": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_3/results/deviations.json"
+   "source": "../../../../round-1/experiment-3/src/results/deviations.json"
   },
   {
    "item": "B3 batching certification",
@@ -102,7 +102,7 @@
    "status": "FAILED (reported)",
    "reason": "batched vs single generations not identical",
    "number": "see smoke/*.json",
-   "source": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/results/smoke"
+   "source": "../../../../round-2/experiment-4/src/results/smoke"
   },
   {
    "item": "gpt-4.1 primary judge coverage",
@@ -110,12 +110,12 @@
    "status": "PARTIAL (budget block)",
    "reason": "OpenRouter daily key limit",
    "number": "exp4 716/3,840; exp6 1,130/2,140; exp8 5,298/12,136 (arm-prioritised)",
-   "source": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/results/judge_blocked.json"
+   "source": "../../../../round-2/experiment-4/src/results/judge_blocked.json"
   }
  ],
  "pending_human_review": [
   {
-   "path": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/results/human_packet/packet.csv",
+   "path": "../../../../round-2/experiment-4/src/results/human_packet/packet.csv",
    "n": 200,
    "language_mix": {
     "sl": 100,
@@ -125,7 +125,7 @@
    "note": "blinded EN/SL behaviour packet (class, harmful, language_ok); NOT yet labelled by a native speaker"
   },
   {
-   "path": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_5/results/native_review_packet_c1u.csv",
+   "path": "../../../../round-2/experiment-5/src/results/native_review_packet_c1u.csv",
    "n": 120,
    "language_mix": {
     "en": 60,
@@ -135,7 +135,7 @@
    "note": "native-review packet for C1 utility/refusal replies; key in *_KEY.csv"
   },
   {
-   "path": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_dataset_1/data/native_review_packet.csv",
+   "path": "../../../../round-1/dataset-1/src/data/native_review_packet.csv",
    "n": 250,
    "language_mix": {
     "en->sl": 229,
@@ -145,7 +145,7 @@
    "note": "translation adequacy/fluency/trigger-preservation packet"
   },
   {
-   "path": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/results/sl_label_sample.json",
+   "path": "../../../../round-1/experiment-1/src/results/sl_label_sample.json",
    "n": 40,
    "language_mix": {
     "sl": 40
@@ -154,7 +154,7 @@
    "note": "labeller: artifact executor (NOT a native speaker) - NATIVE_REVIEW_PENDING"
   },
   {
-   "path": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/results/executor_audit.json",
+   "path": "../../../../round-2/experiment-4/src/results/executor_audit.json",
    "n": 30,
    "language_mix": "EN+SL",
    "status": "EXECUTOR check (NOT native)",

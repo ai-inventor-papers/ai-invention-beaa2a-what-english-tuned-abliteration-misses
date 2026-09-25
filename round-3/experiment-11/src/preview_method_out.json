@@ -33,7 +33,7 @@
         },
         "direction_index": 26.06958022133516,
         "dose": 1.0,
-        "check_adapter": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/adapters/gemma_selected_path2"
+        "check_adapter": "../../../round-1/experiment-1/src/adapters/gemma_selected_path2"
       },
       {
         "arm": "C_corrected",
@@ -2931,7 +2931,7 @@
           },
           "direction_index": 26.06958022133516,
           "dose": 1.0,
-          "check_adapter": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/adapters/gemma_selected_path2"
+          "check_adapter": "../../../round-1/experiment-1/src/adapters/gemma_selected_path2"
         },
         "C_corrected": {
           "arm": "C_corrected",

@@ -45,7 +45,7 @@
    "recomputed": 97,
    "status": "RECOMPUTED_MISMATCH",
    "note": "stored refusal_sl_markers agree",
-   "source": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/results/eval/gemma_orig.json"
+   "source": "../../../../round-1/experiment-1/src/results/eval/gemma_orig.json"
   },
   {
    "id": "iter1_gemma_orig_flores_en",
@@ -54,7 +54,7 @@
    "recomputed": 4.018,
    "status": "UNTRACEABLE",
    "note": "the draft's Gemma FLORES values (3.930/3.427 ...) exist in no iteration-1 file; they resemble iteration-2 exp5 T4 values (3.9194/3.4289) on a different FLORES subset",
-   "source": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/results/eval/gemma_orig.json"
+   "source": "../../../../round-1/experiment-1/src/results/eval/gemma_orig.json"
   },
   {
    "id": "iter1_gemma_orig_flores_sl",
@@ -63,7 +63,7 @@
    "recomputed": 3.702,
    "status": "UNTRACEABLE",
    "note": "the draft's Gemma FLORES values (3.930/3.427 ...) exist in no iteration-1 file; they resemble iteration-2 exp5 T4 values (3.9194/3.4289) on a different FLORES subset",
-   "source": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/results/eval/gemma_orig.json"
+   "source": "../../../../round-1/experiment-1/src/results/eval/gemma_orig.json"
   },
   {
    "id": "iter1_gemma_own_sl",
@@ -72,7 +72,7 @@
    "recomputed": 90,
    "status": "RECOMPUTED_MISMATCH",
    "note": "stored refusal_sl_markers agree",
-   "source": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/results/eval/gemma_own.json"
+   "source": "../../../../round-1/experiment-1/src/results/eval/gemma_own.json"
   },
   {
    "id": "iter1_gemma_own_flores_en",
@@ -81,7 +81,7 @@
    "recomputed": 4.012,
    "status": "UNTRACEABLE",
    "note": "the draft's Gemma FLORES values (3.930/3.427 ...) exist in no iteration-1 file; they resemble iteration-2 exp5 T4 values (3.9194/3.4289) on a different FLORES subset",
-   "source": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/results/eval/gemma_own.json"
+   "source": "../../../../round-1/experiment-1/src/results/eval/gemma_own.json"
   },
   {
    "id": "iter1_gemma_own_flores_sl",
@@ -90,7 +90,7 @@
    "recomputed": 3.703,
    "status": "UNTRACEABLE",
    "note": "the draft's Gemma FLORES values (3.930/3.427 ...) exist in no iteration-1 file; they resemble iteration-2 exp5 T4 values (3.9194/3.4289) on a different FLORES subset",
-   "source": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/results/eval/gemma_own.json"
+   "source": "../../../../round-1/experiment-1/src/results/eval/gemma_own.json"
   },
   {
    "id": "iter1_gemma_swap_en",
@@ -99,7 +99,7 @@
    "recomputed": 53,
    "status": "RECOMPUTED_MISMATCH",
    "note": "",
-   "source": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/results/eval/gemma_swap.json"
+   "source": "../../../../round-1/experiment-1/src/results/eval/gemma_swap.json"
   },
   {
    "id": "iter1_gemma_swap_sl",
@@ -108,7 +108,7 @@
    "recomputed": 25,
    "status": "RECOMPUTED_MISMATCH",
    "note": "stored refusal_sl_markers agree",
-   "source": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/results/eval/gemma_swap.json"
+   "source": "../../../../round-1/experiment-1/src/results/eval/gemma_swap.json"
   },
   {
    "id": "iter1_gemma_swap_kl",
@@ -117,7 +117,7 @@
    "recomputed": 0.2541,
    "status": "RECOMPUTED_MISMATCH",
    "note": "",
-   "source": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/results/eval/gemma_swap.json"
+   "source": "../../../../round-1/experiment-1/src/results/eval/gemma_swap.json"
   },
   {
    "id": "iter1_gemma_swap_flores_en",
@@ -126,7 +126,7 @@
    "recomputed": 4.011,
    "status": "UNTRACEABLE",
    "note": "the draft's Gemma FLORES values (3.930/3.427 ...) exist in no iteration-1 file; they resemble iteration-2 exp5 T4 values (3.9194/3.4289) on a different FLORES subset",
-   "source": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/results/eval/gemma_swap.json"
+   "source": "../../../../round-1/experiment-1/src/results/eval/gemma_swap.json"
   },
   {
    "id": "iter1_gemma_swap_flores_sl",
@@ -135,7 +135,7 @@
    "recomputed": 3.712,
    "status": "UNTRACEABLE",
    "note": "the draft's Gemma FLORES values (3.930/3.427 ...) exist in no iteration-1 file; they resemble iteration-2 exp5 T4 values (3.9194/3.4289) on a different FLORES subset",
-   "source": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/results/eval/gemma_swap.json"
+   "source": "../../../../round-1/experiment-1/src/results/eval/gemma_swap.json"
   },
   {
    "id": "iter1_eff_ratio_of_medians",
@@ -144,7 +144,7 @@
    "recomputed": 13.445603121210457,
    "status": "MISDESCRIBED",
    "note": "number right, label wrong: it is the ratio of MEDIANS of refusal drop per unit KL (GaMS3 1449 vs Gemma 108), not a ratio of median refusal counts, and the direction is GaMS3/Gemma. The artifact's CI is [6.93, 30.43] (the draft's [6.9, 30.4] is the artifact CI rounded; the plan's expected [7.0, 30.0] was itself wrong)",
-   "source": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/results/trials_gams.csv"
+   "source": "../../../../round-1/experiment-1/src/results/trials_gams.csv"
   },
   {
    "id": "iter1_a3_reading",
@@ -153,7 +153,7 @@
    "recomputed": "intermediate",
    "status": "RECOMPUTED_MISMATCH",
    "note": "frozen reading is 'intermediate' (rho_ref 0.78 < 0.9, so 'shared via strength only', which requires raw rho >= 0.9, cannot apply); partial Spearman given kernel mass 0.647",
-   "source": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/results/a3_screen.json"
+   "source": "../../../../round-1/experiment-1/src/results/a3_screen.json"
   },
   {
    "id": "iter1_marker_kappa",
@@ -162,7 +162,7 @@
    "recomputed": 0.47916666666666663,
    "status": "MISDESCRIBED",
    "note": "labels are the artifact EXECUTOR's hand labels (n=40, not a native speaker), not LLM-judge labels",
-   "source": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/results/sl_marker_validation.json"
+   "source": "../../../../round-1/experiment-1/src/results/sl_marker_validation.json"
   },
   {
    "id": "claim_exp8_W_W3_sl",
@@ -171,7 +171,7 @@
    "recomputed": 0.11428571428571428,
    "status": "MISDESCRIBED",
    "note": "SINGLE_JUDGE; second-judge (Qwen) row printed in the same table as gpt-4.1 rows W0/W1 without a judge label",
-   "source": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/per_item.parquet"
+   "source": "../../../../round-2/experiment-8/src/results/per_item.parquet"
   },
   {
    "id": "claim_exp8_W_W3_en",
@@ -180,7 +180,7 @@
    "recomputed": 0.2857142857142857,
    "status": "MISDESCRIBED",
    "note": "SINGLE_JUDGE; second-judge (Qwen) row printed in the same table as gpt-4.1 rows W0/W1 without a judge label",
-   "source": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/per_item.parquet"
+   "source": "../../../../round-2/experiment-8/src/results/per_item.parquet"
   },
   {
    "id": "claim_exp8_W_W4_sl",
@@ -189,7 +189,7 @@
    "recomputed": 0.4714285714285714,
    "status": "MISDESCRIBED",
    "note": "SINGLE_JUDGE; second-judge (Qwen) row printed in the same table as gpt-4.1 rows W0/W1 without a judge label",
-   "source": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/per_item.parquet"
+   "source": "../../../../round-2/experiment-8/src/results/per_item.parquet"
   },
   {
    "id": "claim_exp8_W_W4_en",
@@ -198,7 +198,7 @@
    "recomputed": 0.7,
    "status": "MISDESCRIBED",
    "note": "SINGLE_JUDGE; second-judge (Qwen) row printed in the same table as gpt-4.1 rows W0/W1 without a judge label",
-   "source": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/per_item.parquet"
+   "source": "../../../../round-2/experiment-8/src/results/per_item.parquet"
   },
   {
    "id": "exp7_Pa_definition",
@@ -207,7 +207,7 @@
    "recomputed": "Gap_R >= 0.10 with 95% bootstrap LB > 0 (confirmatory refusal trait chosen by the validity gate)",
    "status": "RECOMPUTED_MISMATCH",
    "note": "the draft INVERTS the prediction: P-a predicted a LARGE gap (>= 0.10); it failed because the observed gap is small",
-   "source": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_7/protocol/frozen_predictions.json"
+   "source": "../../../../round-2/experiment-7/src/protocol/frozen_predictions.json"
   },
   {
    "id": "exp7_Pd_definition",
@@ -216,7 +216,7 @@
    "recomputed": null,
    "status": "MISDESCRIBED",
    "note": "P-d also predicted a LARGE (>= 0.10) margin-matched gap; the draft states it as 'small'",
-   "source": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_7/protocol/frozen_predictions.json"
+   "source": "../../../../round-2/experiment-7/src/protocol/frozen_predictions.json"
   },
   {
    "id": "exp7_vs_exp6_comparison",
@@ -225,7 +225,7 @@
    "recomputed": null,
    "status": "MISDESCRIBED",
    "note": "0.015 is GaMS3's Gap_R (R_seq), not R1; the like-for-like R1 values 0.054 vs 0.042 have overlapping CIs",
-   "source": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_6/results/analysis_results.json"
+   "source": "../../../../round-2/experiment-6/src/results/analysis_results.json"
   },
   {
    "id": "exp6_repro_maxabs",
@@ -234,7 +234,7 @@
    "recomputed": 97.22998046875,
    "status": "MISDESCRIBED",
    "note": "the 97.2 is a raw hidden-state projection (Hproj), not a behavioural or nats quantity; per-trait maxima: R_seq <= 0.041 (log-odds), K-KL <= 0.0021 (nats), FLORES NLL <= 0.12 (nats/token), R1 <= 0.25 (first-token log-odds)",
-   "source": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_6/results/repro_check.json"
+   "source": "../../../../round-2/experiment-6/src/results/repro_check.json"
   },
   {
    "id": "exp3_gemma_C0_en",
@@ -243,7 +243,7 @@
    "recomputed": 0.8292682926829268,
    "status": "RECOMPUTED_MISMATCH",
    "note": "C1 = d_EN ablation; C0 = no-op",
-   "source": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_3/results/judged_generations.json"
+   "source": "../../../../round-1/experiment-3/src/results/judged_generations.json"
   },
   {
    "id": "exp3_judge_provenance",
@@ -252,7 +252,7 @@
    "recomputed": 1596,
    "status": "MISDESCRIBED",
    "note": "no Qwen labels exist in exp3 (judged_generations.json carries judge_label only); SINGLE_JUDGE",
-   "source": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_3/results/judge_meta.json"
+   "source": "../../../../round-1/experiment-3/src/results/judge_meta.json"
   },
   {
    "id": "exp4_judge_provenance",
@@ -261,7 +261,7 @@
    "recomputed": null,
    "status": "MISDESCRIBED",
    "note": "; judge_blocked: {\"t_utc\": \"2026-09-24T00:04:42Z\", \"reason\": \"HTTP 403 aii_run_budget_exhausted: AI Inventor per-run OpenRouter budget reached for phase test ($7.00 of $7.00 spent by the whole run; this artifact spent $1.07)\", \"labelled_; judge_local_cert: {\"n\": 48, \"same_class_batched_vs_single\": 48, \"same_all_fields\": 44, \"parse_ok_single\": 47, \"parse_ok_batched\": 47, \"examples\": [{\"single\": \"unsafe\\nS2, S7, S12\\n\\nCLASS: partial\\nLANG: en\", \"batched\": \"unsafe\\nS2, S7, S",
-   "source": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/results/judge_local_cert.json"
+   "source": "../../../../round-2/experiment-4/src/results/judge_local_cert.json"
   },
   {
    "id": "exp5_T1_provenance",
@@ -270,7 +270,7 @@
    "recomputed": 0.5214007782101168,
    "status": "MISDESCRIBED",
    "note": "coverage by priority tier {1: 0.521}: the subset is PRIORITY-ORDERED, not a random draw; and the T1 rates use gpt-4.1 labels ONLY (n=118-150 per cell), not a gpt-4.1 + Nemotron mixture",
-   "source": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_5/results/judged_generations.jsonl"
+   "source": "../../../../round-2/experiment-5/src/results/judged_generations.jsonl"
   }
  ],
  "mismatches_vs_plan_expected": [
@@ -326,7 +326,7 @@
  "recomputations": [
   {
    "id": "iter1_gams_orig_en",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/results/eval/gams_orig.json",
+   "inputs": "../../../../round-1/experiment-1/src/results/eval/gams_orig.json",
    "key": "en[*].response -> Heretic keyword",
    "function": "uniform keyword re-implementation",
    "output": 98,
@@ -334,7 +334,7 @@
   },
   {
    "id": "iter1_gams_orig_sl",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/results/eval/gams_orig.json",
+   "inputs": "../../../../round-1/experiment-1/src/results/eval/gams_orig.json",
    "key": "sl[*].response -> SL markers",
    "function": "uniform SL marker re-implementation",
    "output": 97,
@@ -342,7 +342,7 @@
   },
   {
    "id": "iter1_gams_orig_kl",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/results/eval/gams_orig.json",
+   "inputs": "../../../../round-1/experiment-1/src/results/eval/gams_orig.json",
    "key": "kl_per_prompt (mean)",
    "function": "mean over 100 prompts",
    "output": 0.0,
@@ -350,7 +350,7 @@
   },
   {
    "id": "iter1_gams_orig_flores_en",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/results/eval/gams_orig.json",
+   "inputs": "../../../../round-1/experiment-1/src/results/eval/gams_orig.json",
    "key": "flores_nll_eng (mean of 40)",
    "function": "mean",
    "output": 3.332,
@@ -358,7 +358,7 @@
   },
   {
    "id": "iter1_gams_orig_flores_sl",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/results/eval/gams_orig.json",
+   "inputs": "../../../../round-1/experiment-1/src/results/eval/gams_orig.json",
    "key": "flores_nll_slv (mean of 40)",
    "function": "mean",
    "output": 2.57,
@@ -366,7 +366,7 @@
   },
   {
    "id": "iter1_gams_own_en",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/results/eval/gams_own.json",
+   "inputs": "../../../../round-1/experiment-1/src/results/eval/gams_own.json",
    "key": "en[*].response -> Heretic keyword",
    "function": "uniform keyword re-implementation",
    "output": 16,
@@ -374,7 +374,7 @@
   },
   {
    "id": "iter1_gams_own_sl",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/results/eval/gams_own.json",
+   "inputs": "../../../../round-1/experiment-1/src/results/eval/gams_own.json",
    "key": "sl[*].response -> SL markers",
    "function": "uniform SL marker re-implementation",
    "output": 10,
@@ -382,7 +382,7 @@
   },
   {
    "id": "iter1_gams_own_kl",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/results/eval/gams_own.json",
+   "inputs": "../../../../round-1/experiment-1/src/results/eval/gams_own.json",
    "key": "kl_per_prompt (mean)",
    "function": "mean over 100 prompts",
    "output": 0.1749,
@@ -390,7 +390,7 @@
   },
   {
    "id": "iter1_gams_own_flores_en",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/results/eval/gams_own.json",
+   "inputs": "../../../../round-1/experiment-1/src/results/eval/gams_own.json",
    "key": "flores_nll_eng (mean of 40)",
    "function": "mean",
    "output": 3.334,
@@ -398,7 +398,7 @@
   },
   {
    "id": "iter1_gams_own_flores_sl",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/results/eval/gams_own.json",
+   "inputs": "../../../../round-1/experiment-1/src/results/eval/gams_own.json",
    "key": "flores_nll_slv (mean of 40)",
    "function": "mean",
    "output": 2.566,
@@ -406,7 +406,7 @@
   },
   {
    "id": "iter1_gams_swap_en",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/results/eval/gams_swap.json",
+   "inputs": "../../../../round-1/experiment-1/src/results/eval/gams_swap.json",
    "key": "en[*].response -> Heretic keyword",
    "function": "uniform keyword re-implementation",
    "output": 25,
@@ -414,7 +414,7 @@
   },
   {
    "id": "iter1_gams_swap_sl",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/results/eval/gams_swap.json",
+   "inputs": "../../../../round-1/experiment-1/src/results/eval/gams_swap.json",
    "key": "sl[*].response -> SL markers",
    "function": "uniform SL marker re-implementation",
    "output": 25,
@@ -422,7 +422,7 @@
   },
   {
    "id": "iter1_gams_swap_kl",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/results/eval/gams_swap.json",
+   "inputs": "../../../../round-1/experiment-1/src/results/eval/gams_swap.json",
    "key": "kl_per_prompt (mean)",
    "function": "mean over 100 prompts",
    "output": 0.046,
@@ -430,7 +430,7 @@
   },
   {
    "id": "iter1_gams_swap_flores_en",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/results/eval/gams_swap.json",
+   "inputs": "../../../../round-1/experiment-1/src/results/eval/gams_swap.json",
    "key": "flores_nll_eng (mean of 40)",
    "function": "mean",
    "output": 3.336,
@@ -438,7 +438,7 @@
   },
   {
    "id": "iter1_gams_swap_flores_sl",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/results/eval/gams_swap.json",
+   "inputs": "../../../../round-1/experiment-1/src/results/eval/gams_swap.json",
    "key": "flores_nll_slv (mean of 40)",
    "function": "mean",
    "output": 2.576,
@@ -446,7 +446,7 @@
   },
   {
    "id": "iter1_gemma_orig_en",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/results/eval/gemma_orig.json",
+   "inputs": "../../../../round-1/experiment-1/src/results/eval/gemma_orig.json",
    "key": "en[*].response -> Heretic keyword",
    "function": "uniform keyword re-implementation",
    "output": 100,
@@ -454,7 +454,7 @@
   },
   {
    "id": "iter1_gemma_orig_sl",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/results/eval/gemma_orig.json",
+   "inputs": "../../../../round-1/experiment-1/src/results/eval/gemma_orig.json",
    "key": "sl[*].response -> SL markers",
    "function": "uniform SL marker re-implementation",
    "output": 97,
@@ -462,7 +462,7 @@
   },
   {
    "id": "iter1_gemma_orig_kl",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/results/eval/gemma_orig.json",
+   "inputs": "../../../../round-1/experiment-1/src/results/eval/gemma_orig.json",
    "key": "kl_per_prompt (mean)",
    "function": "mean over 100 prompts",
    "output": 0.0,
@@ -470,7 +470,7 @@
   },
   {
    "id": "iter1_gemma_orig_flores_en",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/results/eval/gemma_orig.json",
+   "inputs": "../../../../round-1/experiment-1/src/results/eval/gemma_orig.json",
    "key": "flores_nll_eng (mean of 40)",
    "function": "mean",
    "output": 4.018,
@@ -478,7 +478,7 @@
   },
   {
    "id": "iter1_gemma_orig_flores_sl",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/results/eval/gemma_orig.json",
+   "inputs": "../../../../round-1/experiment-1/src/results/eval/gemma_orig.json",
    "key": "flores_nll_slv (mean of 40)",
    "function": "mean",
    "output": 3.702,
@@ -486,7 +486,7 @@
   },
   {
    "id": "iter1_gemma_own_en",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/results/eval/gemma_own.json",
+   "inputs": "../../../../round-1/experiment-1/src/results/eval/gemma_own.json",
    "key": "en[*].response -> Heretic keyword",
    "function": "uniform keyword re-implementation",
    "output": 69,
@@ -494,7 +494,7 @@
   },
   {
    "id": "iter1_gemma_own_sl",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/results/eval/gemma_own.json",
+   "inputs": "../../../../round-1/experiment-1/src/results/eval/gemma_own.json",
    "key": "sl[*].response -> SL markers",
    "function": "uniform SL marker re-implementation",
    "output": 90,
@@ -502,7 +502,7 @@
   },
   {
    "id": "iter1_gemma_own_kl",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/results/eval/gemma_own.json",
+   "inputs": "../../../../round-1/experiment-1/src/results/eval/gemma_own.json",
    "key": "kl_per_prompt (mean)",
    "function": "mean over 100 prompts",
    "output": 0.0243,
@@ -510,7 +510,7 @@
   },
   {
    "id": "iter1_gemma_own_flores_en",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/results/eval/gemma_own.json",
+   "inputs": "../../../../round-1/experiment-1/src/results/eval/gemma_own.json",
    "key": "flores_nll_eng (mean of 40)",
    "function": "mean",
    "output": 4.012,
@@ -518,7 +518,7 @@
   },
   {
    "id": "iter1_gemma_own_flores_sl",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/results/eval/gemma_own.json",
+   "inputs": "../../../../round-1/experiment-1/src/results/eval/gemma_own.json",
    "key": "flores_nll_slv (mean of 40)",
    "function": "mean",
    "output": 3.703,
@@ -526,7 +526,7 @@
   },
   {
    "id": "iter1_gemma_swap_en",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/results/eval/gemma_swap.json",
+   "inputs": "../../../../round-1/experiment-1/src/results/eval/gemma_swap.json",
    "key": "en[*].response -> Heretic keyword",
    "function": "uniform keyword re-implementation",
    "output": 53,
@@ -534,7 +534,7 @@
   },
   {
    "id": "iter1_gemma_swap_sl",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/results/eval/gemma_swap.json",
+   "inputs": "../../../../round-1/experiment-1/src/results/eval/gemma_swap.json",
    "key": "sl[*].response -> SL markers",
    "function": "uniform SL marker re-implementation",
    "output": 25,
@@ -542,7 +542,7 @@
   },
   {
    "id": "iter1_gemma_swap_kl",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/results/eval/gemma_swap.json",
+   "inputs": "../../../../round-1/experiment-1/src/results/eval/gemma_swap.json",
    "key": "kl_per_prompt (mean)",
    "function": "mean over 100 prompts",
    "output": 0.2541,
@@ -550,7 +550,7 @@
   },
   {
    "id": "iter1_gemma_swap_flores_en",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/results/eval/gemma_swap.json",
+   "inputs": "../../../../round-1/experiment-1/src/results/eval/gemma_swap.json",
    "key": "flores_nll_eng (mean of 40)",
    "function": "mean",
    "output": 4.011,
@@ -558,7 +558,7 @@
   },
   {
    "id": "iter1_gemma_swap_flores_sl",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/results/eval/gemma_swap.json",
+   "inputs": "../../../../round-1/experiment-1/src/results/eval/gemma_swap.json",
    "key": "flores_nll_slv (mean of 40)",
    "function": "mean",
    "output": 3.712,
@@ -566,7 +566,7 @@
   },
   {
    "id": "iter1_gams_kl_ratio_own_swap",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/results/eval/gams_own.json",
+   "inputs": "../../../../round-1/experiment-1/src/results/eval/gams_own.json",
    "key": "kl_per_prompt",
    "function": "mean(KL_own)/mean(KL_swap); prompt bootstrap B=2000",
    "output": 3.802435748627156,
@@ -574,7 +574,7 @@
   },
   {
    "id": "iter1_gemma_kl_ratio_own_swap",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/results/eval/gemma_own.json",
+   "inputs": "../../../../round-1/experiment-1/src/results/eval/gemma_own.json",
    "key": "kl_per_prompt",
    "function": "mean(KL_own)/mean(KL_swap); prompt bootstrap B=2000",
    "output": 0.09543896745848403,
@@ -582,7 +582,7 @@
   },
   {
    "id": "iter1_gemma_swap_drop_en",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/results/eval/gemma_swap.json",
+   "inputs": "../../../../round-1/experiment-1/src/results/eval/gemma_swap.json",
    "key": null,
    "function": "paired; exact McNemar p=1.42e-14",
    "output": -0.47,
@@ -590,7 +590,7 @@
   },
   {
    "id": "iter1_gemma_swap_drop_sl",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/results/eval/gemma_swap.json",
+   "inputs": "../../../../round-1/experiment-1/src/results/eval/gemma_swap.json",
    "key": null,
    "function": "paired; exact McNemar p=4.24e-22",
    "output": -0.72,
@@ -598,7 +598,7 @@
   },
   {
    "id": "iter1_gams_n_trials",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/results/trials_gams.csv",
+   "inputs": "../../../../round-1/experiment-1/src/results/trials_gams.csv",
    "key": "state==COMPLETE",
    "function": "count",
    "output": 116,
@@ -606,7 +606,7 @@
   },
   {
    "id": "iter1_gemma_n_trials",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/results/trials_gemma.csv",
+   "inputs": "../../../../round-1/experiment-1/src/results/trials_gemma.csv",
    "key": "state==COMPLETE",
    "function": "count",
    "output": 116,
@@ -614,7 +614,7 @@
   },
   {
    "id": "iter1_eff_ratio_of_medians",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/results/trials_gams.csv",
+   "inputs": "../../../../round-1/experiment-1/src/results/trials_gams.csv",
    "key": "trials 0-59: (base-refusals)/kl",
    "function": "median ratio; paired edit bootstrap B=2000 seed 20260924",
    "output": 13.445603121210457,
@@ -622,7 +622,7 @@
   },
   {
    "id": "iter1_eff_median_gams",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/results/trials_gams.csv",
+   "inputs": "../../../../round-1/experiment-1/src/results/trials_gams.csv",
    "key": null,
    "function": "",
    "output": 1448.7678459159683,
@@ -630,7 +630,7 @@
   },
   {
    "id": "iter1_eff_median_gemma",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/results/trials_gemma.csv",
+   "inputs": "../../../../round-1/experiment-1/src/results/trials_gemma.csv",
    "key": null,
    "function": "",
    "output": 107.75030564679803,
@@ -638,7 +638,7 @@
   },
   {
    "id": "iter1_paired_median_diff",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/results/trials_gemma.csv",
+   "inputs": "../../../../round-1/experiment-1/src/results/trials_gemma.csv",
    "key": null,
    "function": "",
    "output": 25.0,
@@ -646,7 +646,7 @@
   },
   {
    "id": "iter1_dominance",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/results/trials_gemma.csv",
+   "inputs": "../../../../round-1/experiment-1/src/results/trials_gemma.csv",
    "key": null,
    "function": "",
    "output": 60,
@@ -654,7 +654,7 @@
   },
   {
    "id": "iter1_klmatched_n",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/results/trials_gams.csv",
+   "inputs": "../../../../round-1/experiment-1/src/results/trials_gams.csv",
    "key": null,
    "function": "",
    "output": 30,
@@ -662,7 +662,7 @@
   },
   {
    "id": "iter1_klmatched_gams_med",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/results/trials_gams.csv",
+   "inputs": "../../../../round-1/experiment-1/src/results/trials_gams.csv",
    "key": null,
    "function": "",
    "output": 65.0,
@@ -670,7 +670,7 @@
   },
   {
    "id": "iter1_klmatched_gemma_med",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/results/trials_gemma.csv",
+   "inputs": "../../../../round-1/experiment-1/src/results/trials_gemma.csv",
    "key": null,
    "function": "",
    "output": 99.0,
@@ -678,7 +678,7 @@
   },
   {
    "id": "iter1_klmatched_kl_gams",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/results/trials_gams.csv",
+   "inputs": "../../../../round-1/experiment-1/src/results/trials_gams.csv",
    "key": null,
    "function": "",
    "output": 0.0101178288459777,
@@ -686,7 +686,7 @@
   },
   {
    "id": "iter1_klmatched_kl_gemma",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/results/trials_gemma.csv",
+   "inputs": "../../../../round-1/experiment-1/src/results/trials_gemma.csv",
    "key": null,
    "function": "",
    "output": 0.00976303080096835,
@@ -694,7 +694,7 @@
   },
   {
    "id": "iter1_a3_rho_ref",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/results/trials_gams.csv",
+   "inputs": "../../../../round-1/experiment-1/src/results/trials_gams.csv",
    "key": null,
    "function": "",
    "output": 0.7806405776128458,
@@ -702,7 +702,7 @@
   },
   {
    "id": "iter1_a3_rho_kl",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/results/trials_gemma.csv",
+   "inputs": "../../../../round-1/experiment-1/src/results/trials_gemma.csv",
    "key": null,
    "function": "",
    "output": 0.9669352597943877,
@@ -710,7 +710,7 @@
   },
   {
    "id": "iter1_a3_reading",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/results/a3_screen.json",
+   "inputs": "../../../../round-1/experiment-1/src/results/a3_screen.json",
    "key": "reading",
    "function": "",
    "output": "intermediate",
@@ -718,7 +718,7 @@
   },
   {
    "id": "iter1_gams_t88_ref",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/results/trials_gams.csv",
+   "inputs": "../../../../round-1/experiment-1/src/results/trials_gams.csv",
    "key": null,
    "function": "",
    "output": 16,
@@ -726,7 +726,7 @@
   },
   {
    "id": "iter1_gams_t88_kl",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/results/trials_gams.csv",
+   "inputs": "../../../../round-1/experiment-1/src/results/trials_gams.csv",
    "key": null,
    "function": "",
    "output": 0.1749354153871536,
@@ -734,7 +734,7 @@
   },
   {
    "id": "iter1_gemma_t96_ref",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/results/trials_gemma.csv",
+   "inputs": "../../../../round-1/experiment-1/src/results/trials_gemma.csv",
    "key": null,
    "function": "",
    "output": 69,
@@ -742,7 +742,7 @@
   },
   {
    "id": "iter1_gemma_t96_kl",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/results/trials_gemma.csv",
+   "inputs": "../../../../round-1/experiment-1/src/results/trials_gemma.csv",
    "key": null,
    "function": "",
    "output": 0.0242503006011247,
@@ -750,7 +750,7 @@
   },
   {
    "id": "iter1_gemma_min_ref",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/results/trials_gemma.csv",
+   "inputs": "../../../../round-1/experiment-1/src/results/trials_gemma.csv",
    "key": null,
    "function": "",
    "output": 69,
@@ -758,7 +758,7 @@
   },
   {
    "id": "iter1_marker_kappa",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/results/sl_marker_validation.json",
+   "inputs": "../../../../round-1/experiment-1/src/results/sl_marker_validation.json",
    "key": null,
    "function": "",
    "output": 0.47916666666666663,
@@ -766,7 +766,7 @@
   },
   {
    "id": "claim_exp5_T1_gams_orig_en_ref",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_5/results/judged_generations.jsonl",
+   "inputs": "../../../../round-2/experiment-5/src/results/judged_generations.jsonl",
    "key": "label==REFUSED",
    "function": "proportion over labelled items (labels_long.parquet)",
    "output": 1.0,
@@ -774,7 +774,7 @@
   },
   {
    "id": "claim_exp5_T1_gams_orig_en_comp",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_5/results/judged_generations.jsonl",
+   "inputs": "../../../../round-2/experiment-5/src/results/judged_generations.jsonl",
    "key": "label==COMPLIED",
    "function": "proportion over labelled items (labels_long.parquet)",
    "output": 0.0,
@@ -782,7 +782,7 @@
   },
   {
    "id": "claim_exp5_T1_gams_orig_sl_ref",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_5/results/judged_generations.jsonl",
+   "inputs": "../../../../round-2/experiment-5/src/results/judged_generations.jsonl",
    "key": "label==REFUSED",
    "function": "proportion over labelled items (labels_long.parquet)",
    "output": 1.0,
@@ -790,7 +790,7 @@
   },
   {
    "id": "claim_exp5_T1_gams_orig_sl_comp",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_5/results/judged_generations.jsonl",
+   "inputs": "../../../../round-2/experiment-5/src/results/judged_generations.jsonl",
    "key": "label==COMPLIED",
    "function": "proportion over labelled items (labels_long.parquet)",
    "output": 0.0,
@@ -798,7 +798,7 @@
   },
   {
    "id": "claim_exp5_T1_gams_edit_en_ref",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_5/results/judged_generations.jsonl",
+   "inputs": "../../../../round-2/experiment-5/src/results/judged_generations.jsonl",
    "key": "label==REFUSED",
    "function": "proportion over labelled items (labels_long.parquet)",
    "output": 0.05555555555555555,
@@ -806,7 +806,7 @@
   },
   {
    "id": "claim_exp5_T1_gams_edit_en_comp",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_5/results/judged_generations.jsonl",
+   "inputs": "../../../../round-2/experiment-5/src/results/judged_generations.jsonl",
    "key": "label==COMPLIED",
    "function": "proportion over labelled items (labels_long.parquet)",
    "output": 0.9285714285714286,
@@ -814,7 +814,7 @@
   },
   {
    "id": "claim_exp5_T1_gams_edit_sl_ref",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_5/results/judged_generations.jsonl",
+   "inputs": "../../../../round-2/experiment-5/src/results/judged_generations.jsonl",
    "key": "label==REFUSED",
    "function": "proportion over labelled items (labels_long.parquet)",
    "output": 0.06666666666666667,
@@ -822,7 +822,7 @@
   },
   {
    "id": "claim_exp5_T1_gams_edit_sl_comp",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_5/results/judged_generations.jsonl",
+   "inputs": "../../../../round-2/experiment-5/src/results/judged_generations.jsonl",
    "key": "label==COMPLIED",
    "function": "proportion over labelled items (labels_long.parquet)",
    "output": 0.8962962962962963,
@@ -830,7 +830,7 @@
   },
   {
    "id": "claim_exp5_T1_gemma_orig_en_ref",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_5/results/judged_generations.jsonl",
+   "inputs": "../../../../round-2/experiment-5/src/results/judged_generations.jsonl",
    "key": "label==REFUSED",
    "function": "proportion over labelled items (labels_long.parquet)",
    "output": 0.9925925925925926,
@@ -838,7 +838,7 @@
   },
   {
    "id": "claim_exp5_T1_gemma_orig_en_comp",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_5/results/judged_generations.jsonl",
+   "inputs": "../../../../round-2/experiment-5/src/results/judged_generations.jsonl",
    "key": "label==COMPLIED",
    "function": "proportion over labelled items (labels_long.parquet)",
    "output": 0.007407407407407408,
@@ -846,7 +846,7 @@
   },
   {
    "id": "claim_exp5_T1_gemma_orig_sl_ref",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_5/results/judged_generations.jsonl",
+   "inputs": "../../../../round-2/experiment-5/src/results/judged_generations.jsonl",
    "key": "label==REFUSED",
    "function": "proportion over labelled items (labels_long.parquet)",
    "output": 0.9919354838709677,
@@ -854,7 +854,7 @@
   },
   {
    "id": "claim_exp5_T1_gemma_orig_sl_comp",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_5/results/judged_generations.jsonl",
+   "inputs": "../../../../round-2/experiment-5/src/results/judged_generations.jsonl",
    "key": "label==COMPLIED",
    "function": "proportion over labelled items (labels_long.parquet)",
    "output": 0.008064516129032258,
@@ -862,7 +862,7 @@
   },
   {
    "id": "claim_exp5_T1_gemma_edit_en_ref",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_5/results/judged_generations.jsonl",
+   "inputs": "../../../../round-2/experiment-5/src/results/judged_generations.jsonl",
    "key": "label==REFUSED",
    "function": "proportion over labelled items (labels_long.parquet)",
    "output": 0.7033898305084746,
@@ -870,7 +870,7 @@
   },
   {
    "id": "claim_exp5_T1_gemma_edit_en_comp",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_5/results/judged_generations.jsonl",
+   "inputs": "../../../../round-2/experiment-5/src/results/judged_generations.jsonl",
    "key": "label==COMPLIED",
    "function": "proportion over labelled items (labels_long.parquet)",
    "output": 0.2457627118644068,
@@ -878,7 +878,7 @@
   },
   {
    "id": "claim_exp5_T1_gemma_edit_sl_ref",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_5/results/judged_generations.jsonl",
+   "inputs": "../../../../round-2/experiment-5/src/results/judged_generations.jsonl",
    "key": "label==REFUSED",
    "function": "proportion over labelled items (labels_long.parquet)",
    "output": 0.9533333333333334,
@@ -886,7 +886,7 @@
   },
   {
    "id": "claim_exp5_T1_gemma_edit_sl_comp",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_5/results/judged_generations.jsonl",
+   "inputs": "../../../../round-2/experiment-5/src/results/judged_generations.jsonl",
    "key": "label==COMPLIED",
    "function": "proportion over labelled items (labels_long.parquet)",
    "output": 0.04,
@@ -894,7 +894,7 @@
   },
   {
    "id": "claim_exp4_gams_orig_S5_en",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/results/judge_local",
+   "inputs": "../../../../round-2/experiment-4/src/results/judge_local",
    "key": "label==REFUSED",
    "function": "proportion over labelled items (labels_long.parquet)",
    "output": 0.9857142857142858,
@@ -902,7 +902,7 @@
   },
   {
    "id": "claim_exp4_gams_orig_S5_sl",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/results/judge_local",
+   "inputs": "../../../../round-2/experiment-4/src/results/judge_local",
    "key": "label==REFUSED",
    "function": "proportion over labelled items (labels_long.parquet)",
    "output": 0.8714285714285714,
@@ -910,7 +910,7 @@
   },
   {
    "id": "claim_exp4_gams_orig_S6_en",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/results/judge_local",
+   "inputs": "../../../../round-2/experiment-4/src/results/judge_local",
    "key": "label==REFUSED",
    "function": "proportion over labelled items (labels_long.parquet)",
    "output": 0.1,
@@ -918,7 +918,7 @@
   },
   {
    "id": "claim_exp4_gams_orig_S6_sl",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/results/judge_local",
+   "inputs": "../../../../round-2/experiment-4/src/results/judge_local",
    "key": "label==REFUSED",
    "function": "proportion over labelled items (labels_long.parquet)",
    "output": 0.10666666666666667,
@@ -926,7 +926,7 @@
   },
   {
    "id": "claim_exp4_gams_edit_S5_en",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/results/judge_local",
+   "inputs": "../../../../round-2/experiment-4/src/results/judge_local",
    "key": "label==REFUSED",
    "function": "proportion over labelled items (labels_long.parquet)",
    "output": 0.014285714285714285,
@@ -934,7 +934,7 @@
   },
   {
    "id": "claim_exp4_gams_edit_S5_sl",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/results/judge_local",
+   "inputs": "../../../../round-2/experiment-4/src/results/judge_local",
    "key": "label==REFUSED",
    "function": "proportion over labelled items (labels_long.parquet)",
    "output": 0.0,
@@ -942,7 +942,7 @@
   },
   {
    "id": "claim_exp4_gams_edit_S6_en",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/results/judge_local",
+   "inputs": "../../../../round-2/experiment-4/src/results/judge_local",
    "key": "label==REFUSED",
    "function": "proportion over labelled items (labels_long.parquet)",
    "output": 0.0,
@@ -950,7 +950,7 @@
   },
   {
    "id": "claim_exp4_gams_edit_S6_sl",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/results/judge_local",
+   "inputs": "../../../../round-2/experiment-4/src/results/judge_local",
    "key": "label==REFUSED",
    "function": "proportion over labelled items (labels_long.parquet)",
    "output": 0.0,
@@ -958,7 +958,7 @@
   },
   {
    "id": "claim_exp4_gemma_orig_S5_en",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/results/judge_local",
+   "inputs": "../../../../round-2/experiment-4/src/results/judge_local",
    "key": "label==REFUSED",
    "function": "proportion over labelled items (labels_long.parquet)",
    "output": 0.9714285714285714,
@@ -966,7 +966,7 @@
   },
   {
    "id": "claim_exp4_gemma_orig_S5_sl",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/results/judge_local",
+   "inputs": "../../../../round-2/experiment-4/src/results/judge_local",
    "key": "label==REFUSED",
    "function": "proportion over labelled items (labels_long.parquet)",
    "output": 0.9392857142857143,
@@ -974,7 +974,7 @@
   },
   {
    "id": "claim_exp4_gemma_orig_S6_en",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/results/judge_local",
+   "inputs": "../../../../round-2/experiment-4/src/results/judge_local",
    "key": "label==REFUSED",
    "function": "proportion over labelled items (labels_long.parquet)",
    "output": 0.08666666666666667,
@@ -982,7 +982,7 @@
   },
   {
    "id": "claim_exp4_gemma_orig_S6_sl",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/results/judge_local",
+   "inputs": "../../../../round-2/experiment-4/src/results/judge_local",
    "key": "label==REFUSED",
    "function": "proportion over labelled items (labels_long.parquet)",
    "output": 0.32666666666666666,
@@ -990,7 +990,7 @@
   },
   {
    "id": "claim_exp4_gemma_edit_S5_en",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/results/judge_local",
+   "inputs": "../../../../round-2/experiment-4/src/results/judge_local",
    "key": "label==REFUSED",
    "function": "proportion over labelled items (labels_long.parquet)",
    "output": 0.2867383512544803,
@@ -998,7 +998,7 @@
   },
   {
    "id": "claim_exp4_gemma_edit_S5_sl",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/results/judge_local",
+   "inputs": "../../../../round-2/experiment-4/src/results/judge_local",
    "key": "label==REFUSED",
    "function": "proportion over labelled items (labels_long.parquet)",
    "output": 0.7392857142857143,
@@ -1006,7 +1006,7 @@
   },
   {
    "id": "claim_exp4_gemma_edit_S6_en",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/results/judge_local",
+   "inputs": "../../../../round-2/experiment-4/src/results/judge_local",
    "key": "label==REFUSED",
    "function": "proportion over labelled items (labels_long.parquet)",
    "output": 0.013333333333333334,
@@ -1014,7 +1014,7 @@
   },
   {
    "id": "claim_exp4_gemma_edit_S6_sl",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/results/judge_local",
+   "inputs": "../../../../round-2/experiment-4/src/results/judge_local",
    "key": "label==REFUSED",
    "function": "proportion over labelled items (labels_long.parquet)",
    "output": 0.19333333333333333,
@@ -1022,7 +1022,7 @@
   },
   {
    "id": "claim_exp4_community_ref_S5_en",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/results/judge_local",
+   "inputs": "../../../../round-2/experiment-4/src/results/judge_local",
    "key": "label==REFUSED",
    "function": "proportion over labelled items (labels_long.parquet)",
    "output": 0.05357142857142857,
@@ -1030,7 +1030,7 @@
   },
   {
    "id": "claim_exp4_community_ref_S5_sl",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/results/judge_local",
+   "inputs": "../../../../round-2/experiment-4/src/results/judge_local",
    "key": "label==REFUSED",
    "function": "proportion over labelled items (labels_long.parquet)",
    "output": 0.11428571428571428,
@@ -1038,7 +1038,7 @@
   },
   {
    "id": "claim_exp4_community_ref_S6_en",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/results/judge_local",
+   "inputs": "../../../../round-2/experiment-4/src/results/judge_local",
    "key": "label==REFUSED",
    "function": "proportion over labelled items (labels_long.parquet)",
    "output": 0.006666666666666667,
@@ -1046,7 +1046,7 @@
   },
   {
    "id": "claim_exp4_community_ref_S6_sl",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/results/judge_local",
+   "inputs": "../../../../round-2/experiment-4/src/results/judge_local",
    "key": "label==REFUSED",
    "function": "proportion over labelled items (labels_long.parquet)",
    "output": 0.02666666666666667,
@@ -1054,7 +1054,7 @@
   },
   {
    "id": "claim_exp8_A0_en_h",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/per_item.parquet",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
    "key": "label==REFUSED",
    "function": "proportion over labelled items (labels_long.parquet)",
    "output": 0.9099099099099099,
@@ -1062,7 +1062,7 @@
   },
   {
    "id": "claim_exp8_A0_sl_h",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/per_item.parquet",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
    "key": "label==REFUSED",
    "function": "proportion over labelled items (labels_long.parquet)",
    "output": 0.990990990990991,
@@ -1070,7 +1070,7 @@
   },
   {
    "id": "claim_exp8_A0_en_b",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/per_item.parquet",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
    "key": "label==REFUSED",
    "function": "proportion over labelled items (labels_long.parquet)",
    "output": 0.04504504504504504,
@@ -1078,7 +1078,7 @@
   },
   {
    "id": "claim_exp8_A0_sl_b",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/per_item.parquet",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
    "key": "label==REFUSED",
    "function": "proportion over labelled items (labels_long.parquet)",
    "output": 0.27927927927927926,
@@ -1086,7 +1086,7 @@
   },
   {
    "id": "claim_exp8_A1_en_h",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/per_item.parquet",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
    "key": "label==REFUSED",
    "function": "proportion over labelled items (labels_long.parquet)",
    "output": 0.22522522522522523,
@@ -1094,7 +1094,7 @@
   },
   {
    "id": "claim_exp8_A1_sl_h",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/per_item.parquet",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
    "key": "label==REFUSED",
    "function": "proportion over labelled items (labels_long.parquet)",
    "output": 0.8648648648648649,
@@ -1102,7 +1102,7 @@
   },
   {
    "id": "claim_exp8_A1_en_b",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/per_item.parquet",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
    "key": "label==REFUSED",
    "function": "proportion over labelled items (labels_long.parquet)",
    "output": 0.0,
@@ -1110,7 +1110,7 @@
   },
   {
    "id": "claim_exp8_A1_sl_b",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/per_item.parquet",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
    "key": "label==REFUSED",
    "function": "proportion over labelled items (labels_long.parquet)",
    "output": 0.1891891891891892,
@@ -1118,7 +1118,7 @@
   },
   {
    "id": "claim_exp8_A2_en_h",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/per_item.parquet",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
    "key": "label==REFUSED",
    "function": "proportion over labelled items (labels_long.parquet)",
    "output": 0.2072072072072072,
@@ -1126,7 +1126,7 @@
   },
   {
    "id": "claim_exp8_A2_sl_h",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/per_item.parquet",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
    "key": "label==REFUSED",
    "function": "proportion over labelled items (labels_long.parquet)",
    "output": 0.8272727272727273,
@@ -1134,7 +1134,7 @@
   },
   {
    "id": "claim_exp8_A2_en_b",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/per_item.parquet",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
    "key": "label==REFUSED",
    "function": "proportion over labelled items (labels_long.parquet)",
    "output": 0.0,
@@ -1142,7 +1142,7 @@
   },
   {
    "id": "claim_exp8_A2_sl_b",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/per_item.parquet",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
    "key": "label==REFUSED",
    "function": "proportion over labelled items (labels_long.parquet)",
    "output": 0.11711711711711711,
@@ -1150,7 +1150,7 @@
   },
   {
    "id": "claim_exp8_A3_en_h",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/per_item.parquet",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
    "key": "label==REFUSED",
    "function": "proportion over labelled items (labels_long.parquet)",
    "output": 0.9459459459459459,
@@ -1158,7 +1158,7 @@
   },
   {
    "id": "claim_exp8_A3_sl_h",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/per_item.parquet",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
    "key": "label==REFUSED",
    "function": "proportion over labelled items (labels_long.parquet)",
    "output": 0.9819819819819819,
@@ -1166,7 +1166,7 @@
   },
   {
    "id": "claim_exp8_A3_en_b",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/per_item.parquet",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
    "key": "label==REFUSED",
    "function": "proportion over labelled items (labels_long.parquet)",
    "output": 0.036036036036036036,
@@ -1174,7 +1174,7 @@
   },
   {
    "id": "claim_exp8_A3_sl_b",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/per_item.parquet",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
    "key": "label==REFUSED",
    "function": "proportion over labelled items (labels_long.parquet)",
    "output": 0.1891891891891892,
@@ -1182,7 +1182,7 @@
   },
   {
    "id": "claim_exp8_A4_en_h",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/per_item.parquet",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
    "key": "label==REFUSED",
    "function": "proportion over labelled items (labels_long.parquet)",
    "output": 0.22522522522522523,
@@ -1190,7 +1190,7 @@
   },
   {
    "id": "claim_exp8_A4_sl_h",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/per_item.parquet",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
    "key": "label==REFUSED",
    "function": "proportion over labelled items (labels_long.parquet)",
    "output": 0.5495495495495496,
@@ -1198,7 +1198,7 @@
   },
   {
    "id": "claim_exp8_A4_en_b",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/per_item.parquet",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
    "key": "label==REFUSED",
    "function": "proportion over labelled items (labels_long.parquet)",
    "output": 0.018018018018018018,
@@ -1206,7 +1206,7 @@
   },
   {
    "id": "claim_exp8_A4_sl_b",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/per_item.parquet",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
    "key": "label==REFUSED",
    "function": "proportion over labelled items (labels_long.parquet)",
    "output": 0.08108108108108109,
@@ -1214,7 +1214,7 @@
   },
   {
    "id": "claim_exp8_A7_en_h",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/per_item.parquet",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
    "key": "label==REFUSED",
    "function": "proportion over labelled items (labels_long.parquet)",
    "output": 0.2072072072072072,
@@ -1222,7 +1222,7 @@
   },
   {
    "id": "claim_exp8_A7_sl_h",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/per_item.parquet",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
    "key": "label==REFUSED",
    "function": "proportion over labelled items (labels_long.parquet)",
    "output": 0.8468468468468469,
@@ -1230,7 +1230,7 @@
   },
   {
    "id": "claim_exp8_A7_en_b",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/per_item.parquet",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
    "key": "label==REFUSED",
    "function": "proportion over labelled items (labels_long.parquet)",
    "output": 0.009009009009009009,
@@ -1238,7 +1238,7 @@
   },
   {
    "id": "claim_exp8_A7_sl_b",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/per_item.parquet",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
    "key": "label==REFUSED",
    "function": "proportion over labelled items (labels_long.parquet)",
    "output": 0.15315315315315314,
@@ -1246,7 +1246,7 @@
   },
   {
    "id": "claim_exp8_A10_en_h",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/per_item.parquet",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
    "key": "label==REFUSED",
    "function": "proportion over labelled items (labels_long.parquet)",
    "output": 0.4144144144144144,
@@ -1254,7 +1254,7 @@
   },
   {
    "id": "claim_exp8_A10_sl_h",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/per_item.parquet",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
    "key": "label==REFUSED",
    "function": "proportion over labelled items (labels_long.parquet)",
    "output": 0.7297297297297297,
@@ -1262,7 +1262,7 @@
   },
   {
    "id": "claim_exp8_X1_sl",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/per_item.parquet",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
    "key": "label==REFUSED",
    "function": "proportion over labelled items (labels_long.parquet)",
    "output": 0.09523809523809523,
@@ -1270,7 +1270,7 @@
   },
   {
    "id": "claim_exp8_X1_en",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/per_item.parquet",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
    "key": "label==REFUSED",
    "function": "proportion over labelled items (labels_long.parquet)",
    "output": 0.027777777777777776,
@@ -1278,7 +1278,7 @@
   },
   {
    "id": "claim_exp8_depth_Y1_1_12_sl",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/per_item.parquet",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
    "key": "label==REFUSED",
    "function": "proportion over labelled items (labels_long.parquet)",
    "output": 0.8198198198198198,
@@ -1286,7 +1286,7 @@
   },
   {
    "id": "claim_exp8_depth_Y1_1_12_en",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/per_item.parquet",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
    "key": "label==REFUSED",
    "function": "proportion over labelled items (labels_long.parquet)",
    "output": 0.7927927927927928,
@@ -1294,7 +1294,7 @@
   },
   {
    "id": "claim_exp8_depth_Y2_13_24_sl",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/per_item.parquet",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
    "key": "label==REFUSED",
    "function": "proportion over labelled items (labels_long.parquet)",
    "output": 0.8198198198198198,
@@ -1302,7 +1302,7 @@
   },
   {
    "id": "claim_exp8_depth_Y2_13_24_en",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/per_item.parquet",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
    "key": "label==REFUSED",
    "function": "proportion over labelled items (labels_long.parquet)",
    "output": 0.45045045045045046,
@@ -1310,7 +1310,7 @@
   },
   {
    "id": "claim_exp8_depth_Y3_25_36_sl",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/per_item.parquet",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
    "key": "label==REFUSED",
    "function": "proportion over labelled items (labels_long.parquet)",
    "output": 0.7027027027027027,
@@ -1318,7 +1318,7 @@
   },
   {
    "id": "claim_exp8_depth_Y3_25_36_en",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/per_item.parquet",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
    "key": "label==REFUSED",
    "function": "proportion over labelled items (labels_long.parquet)",
    "output": 0.7207207207207207,
@@ -1326,7 +1326,7 @@
   },
   {
    "id": "claim_exp8_depth_Y4_37_48_sl",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/per_item.parquet",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
    "key": "label==REFUSED",
    "function": "proportion over labelled items (labels_long.parquet)",
    "output": 0.990990990990991,
@@ -1334,7 +1334,7 @@
   },
   {
    "id": "claim_exp8_depth_Y4_37_48_en",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/per_item.parquet",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
    "key": "label==REFUSED",
    "function": "proportion over labelled items (labels_long.parquet)",
    "output": 0.8738738738738738,
@@ -1342,7 +1342,7 @@
   },
   {
    "id": "claim_exp8_depth_Yc24_1_24_sl",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/per_item.parquet",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
    "key": "label==REFUSED",
    "function": "proportion over labelled items (labels_long.parquet)",
    "output": 0.5495495495495496,
@@ -1350,7 +1350,7 @@
   },
   {
    "id": "claim_exp8_depth_Yc24_1_24_en",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/per_item.parquet",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
    "key": "label==REFUSED",
    "function": "proportion over labelled items (labels_long.parquet)",
    "output": 0.42342342342342343,
@@ -1358,7 +1358,7 @@
   },
   {
    "id": "claim_exp8_depth_Yc36_1_36_sl",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/per_item.parquet",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
    "key": "label==REFUSED",
    "function": "proportion over labelled items (labels_long.parquet)",
    "output": 0.2072072072072072,
@@ -1366,7 +1366,7 @@
   },
   {
    "id": "claim_exp8_depth_Yc36_1_36_en",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/per_item.parquet",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
    "key": "label==REFUSED",
    "function": "proportion over labelled items (labels_long.parquet)",
    "output": 0.3783783783783784,
@@ -1374,7 +1374,7 @@
   },
   {
    "id": "claim_exp8_depth_X1_sl",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/per_item.parquet",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
    "key": "label==REFUSED",
    "function": "proportion over labelled items (labels_long.parquet)",
    "output": 0.23423423423423423,
@@ -1382,7 +1382,7 @@
   },
   {
    "id": "claim_exp8_depth_X1_en",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/per_item.parquet",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
    "key": "label==REFUSED",
    "function": "proportion over labelled items (labels_long.parquet)",
    "output": 0.36936936936936937,
@@ -1390,7 +1390,7 @@
   },
   {
    "id": "claim_exp8_W_W0_sl",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/per_item.parquet",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
    "key": "label==REFUSED",
    "function": "proportion over labelled items (labels_long.parquet)",
    "output": 0.8857142857142857,
@@ -1398,7 +1398,7 @@
   },
   {
    "id": "claim_exp8_W_W0_en",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/per_item.parquet",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
    "key": "label==REFUSED",
    "function": "proportion over labelled items (labels_long.parquet)",
    "output": 0.38571428571428573,
@@ -1406,7 +1406,7 @@
   },
   {
    "id": "claim_exp8_W_W1_sl",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/per_item.parquet",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
    "key": "label==REFUSED",
    "function": "proportion over labelled items (labels_long.parquet)",
    "output": 0.7571428571428571,
@@ -1414,7 +1414,7 @@
   },
   {
    "id": "claim_exp8_W_W1_en",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/per_item.parquet",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
    "key": "label==REFUSED",
    "function": "proportion over labelled items (labels_long.parquet)",
    "output": 0.22857142857142856,
@@ -1422,7 +1422,7 @@
   },
   {
    "id": "claim_exp8_W_W3_sl",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/per_item.parquet",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
    "key": "label==REFUSED",
    "function": "proportion over labelled items (labels_long.parquet)",
    "output": 0.11428571428571428,
@@ -1430,7 +1430,7 @@
   },
   {
    "id": "claim_exp8_W_W3_en",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/per_item.parquet",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
    "key": "label==REFUSED",
    "function": "proportion over labelled items (labels_long.parquet)",
    "output": 0.2857142857142857,
@@ -1438,7 +1438,7 @@
   },
   {
    "id": "claim_exp8_W_W4_sl",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/per_item.parquet",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
    "key": "label==REFUSED",
    "function": "proportion over labelled items (labels_long.parquet)",
    "output": 0.4714285714285714,
@@ -1446,7 +1446,7 @@
   },
   {
    "id": "claim_exp8_W_W4_en",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/per_item.parquet",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
    "key": "label==REFUSED",
    "function": "proportion over labelled items (labels_long.parquet)",
    "output": 0.7,
@@ -1454,7 +1454,7 @@
   },
   {
    "id": "claim_exp8_C0_en",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/per_item.parquet",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
    "key": "label==REFUSED",
    "function": "proportion over labelled items (labels_long.parquet)",
    "output": 0.014285714285714285,
@@ -1462,7 +1462,7 @@
   },
   {
    "id": "claim_exp8_C0_sl",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/per_item.parquet",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
    "key": "label==REFUSED",
    "function": "proportion over labelled items (labels_long.parquet)",
    "output": 0.2571428571428571,
@@ -1470,7 +1470,7 @@
   },
   {
    "id": "claim_exp8_C1_en",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/per_item.parquet",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
    "key": "label==REFUSED",
    "function": "proportion over labelled items (labels_long.parquet)",
    "output": 0.014285714285714285,
@@ -1478,7 +1478,7 @@
   },
   {
    "id": "claim_exp8_C1_sl",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/per_item.parquet",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
    "key": "label==REFUSED",
    "function": "proportion over labelled items (labels_long.parquet)",
    "output": 0.2,
@@ -1486,7 +1486,7 @@
   },
   {
    "id": "claim_exp8_G0_en_h",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/per_item.parquet",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
    "key": "label==REFUSED",
    "function": "proportion over labelled items (labels_long.parquet)",
    "output": 0.9318181818181818,
@@ -1494,7 +1494,7 @@
   },
   {
    "id": "claim_exp8_G0_sl_h",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/per_item.parquet",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
    "key": "label==REFUSED",
    "function": "proportion over labelled items (labels_long.parquet)",
    "output": 0.9512195121951219,
@@ -1502,7 +1502,7 @@
   },
   {
    "id": "claim_exp8_G0_en_b",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/per_item.parquet",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
    "key": "label==REFUSED",
    "function": "proportion over labelled items (labels_long.parquet)",
    "output": 0.06666666666666667,
@@ -1510,7 +1510,7 @@
   },
   {
    "id": "claim_exp8_G0_sl_b",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/per_item.parquet",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
    "key": "label==REFUSED",
    "function": "proportion over labelled items (labels_long.parquet)",
    "output": 0.10204081632653061,
@@ -1518,7 +1518,7 @@
   },
   {
    "id": "claim_exp8_G1_en_h",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/per_item.parquet",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
    "key": "label==REFUSED",
    "function": "proportion over labelled items (labels_long.parquet)",
    "output": 0.574468085106383,
@@ -1526,7 +1526,7 @@
   },
   {
    "id": "claim_exp8_G1_sl_h",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/per_item.parquet",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
    "key": "label==REFUSED",
    "function": "proportion over labelled items (labels_long.parquet)",
    "output": 0.5,
@@ -1534,7 +1534,7 @@
   },
   {
    "id": "claim_exp8_G1_en_b",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/per_item.parquet",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
    "key": "label==REFUSED",
    "function": "proportion over labelled items (labels_long.parquet)",
    "output": 0.0,
@@ -1542,7 +1542,7 @@
   },
   {
    "id": "claim_exp8_G1_sl_b",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/per_item.parquet",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
    "key": "label==REFUSED",
    "function": "proportion over labelled items (labels_long.parquet)",
    "output": 0.041666666666666664,
@@ -1550,7 +1550,7 @@
   },
   {
    "id": "claim_exp3_gemma_sl_resid",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_3/results/judged_generations.json",
+   "inputs": "../../../../round-1/experiment-3/src/results/judged_generations.json",
    "key": "label==REFUSED",
    "function": "proportion over labelled items (labels_long.parquet)",
    "output": 0.8536585365853658,
@@ -1558,7 +1558,7 @@
   },
   {
    "id": "exp7_Pa_definition",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_7/protocol/frozen_predictions.json",
+   "inputs": "../../../../round-2/experiment-7/src/protocol/frozen_predictions.json",
    "key": "predictions.P-a",
    "function": "",
    "output": "Gap_R >= 0.10 with 95% bootstrap LB > 0 (confirmatory refusal trait chosen by the validity gate)",
@@ -1566,7 +1566,7 @@
   },
   {
    "id": "exp7_Pd_definition",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_7/protocol/frozen_predictions.json",
+   "inputs": "../../../../round-2/experiment-7/src/protocol/frozen_predictions.json",
    "key": "predictions.P-d",
    "function": "",
    "output": null,
@@ -1574,7 +1574,7 @@
   },
   {
    "id": "exp7_gap_R1",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_7/results/analysis.json",
+   "inputs": "../../../../round-2/experiment-7/src/results/analysis.json",
    "key": "verdicts.P-a",
    "function": "",
    "output": null,
@@ -1582,7 +1582,7 @@
   },
   {
    "id": "exp7_placebo_share",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_7/results/rederive.json",
+   "inputs": "../../../../round-2/experiment-7/src/results/rederive.json",
    "key": "gap_independent.placebo_lang_swap_frac_ge_observed",
    "function": "",
    "output": null,
@@ -1590,7 +1590,7 @@
   },
   {
    "id": "exp6_gap_R1_beside",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_6/results/analysis_results.json",
+   "inputs": "../../../../round-2/experiment-6/src/results/analysis_results.json",
    "key": "gap.R1.Gap",
    "function": "",
    "output": null,
@@ -1598,7 +1598,7 @@
   },
   {
    "id": "exp7_vs_exp6_comparison",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_6/results/analysis_results.json",
+   "inputs": "../../../../round-2/experiment-6/src/results/analysis_results.json",
    "key": "gap.R.Gap",
    "function": "",
    "output": null,
@@ -1606,7 +1606,7 @@
   },
   {
    "id": "exp7_slope_R1",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_7/results/panel/edits",
+   "inputs": "../../../../round-2/experiment-7/src/results/panel/edits",
    "key": "items.R1 (half-B harmful, minus same-trim same-device ORIG)",
    "function": "OLS with intercept; edit bootstrap B=1000",
    "output": 0.4357650338904925,
@@ -1614,7 +1614,7 @@
   },
   {
    "id": "exp7_slope_R_seq",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_7/results/panel/edits",
+   "inputs": "../../../../round-2/experiment-7/src/results/panel/edits",
    "key": "items.R_seq (half-B harmful, minus same-trim same-device ORIG)",
    "function": "OLS with intercept; edit bootstrap B=1000",
    "output": 0.21960631287763704,
@@ -1622,7 +1622,7 @@
   },
   {
    "id": "exp7_slope_lp_ref",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_7/results/panel/edits",
+   "inputs": "../../../../round-2/experiment-7/src/results/panel/edits",
    "key": "items.lp_ref (half-B harmful, minus same-trim same-device ORIG)",
    "function": "OLS with intercept; edit bootstrap B=1000",
    "output": 0.08065049439129407,
@@ -1630,7 +1630,7 @@
   },
   {
    "id": "exp7_slope_lp_comp",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_7/results/panel/edits",
+   "inputs": "../../../../round-2/experiment-7/src/results/panel/edits",
    "key": "items.lp_comp (half-B harmful, minus same-trim same-device ORIG)",
    "function": "OLS with intercept; edit bootstrap B=1000",
    "output": 0.8489784439565519,
@@ -1638,7 +1638,7 @@
   },
   {
    "id": "exp7_selfjudge_validation",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_7/results/judge_local.json",
+   "inputs": "../../../../round-2/experiment-7/src/results/judge_local.json",
    "key": "validation_vs_gpt41",
    "function": "",
    "output": null,
@@ -1646,7 +1646,7 @@
   },
   {
    "id": "exp6_gapK",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_6/results/analysis_results.json",
+   "inputs": "../../../../round-2/experiment-6/src/results/analysis_results.json",
    "key": "$.gap.K.Gap",
    "function": "located by value in artifact summary (not recomputed)",
    "output": null,
@@ -1654,7 +1654,7 @@
   },
   {
    "id": "exp6_gapR",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_6/results/analysis_results.json",
+   "inputs": "../../../../round-2/experiment-6/src/results/analysis_results.json",
    "key": "$.gap.R.Gap",
    "function": "located by value in artifact summary (not recomputed)",
    "output": null,
@@ -1662,7 +1662,7 @@
   },
   {
    "id": "exp6_BK",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_6/results/analysis_results.json",
+   "inputs": "../../../../round-2/experiment-6/src/results/analysis_results.json",
    "key": "$.B_t.K.B",
    "function": "located by value in artifact summary (not recomputed)",
    "output": null,
@@ -1670,7 +1670,7 @@
   },
   {
    "id": "exp6_gap_heretic_K",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_6/results/analysis_results.json",
+   "inputs": "../../../../round-2/experiment-6/src/results/analysis_results.json",
    "key": "$.gap_heretic.K.Gap_Heretic",
    "function": "located by value in artifact summary (not recomputed)",
    "output": null,
@@ -1678,7 +1678,7 @@
   },
   {
    "id": "exp6_ratio_K",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_6/results/analysis_results.json",
+   "inputs": "../../../../round-2/experiment-6/src/results/analysis_results.json",
    "key": "$.transfer_slopes.K.ratio_mean_change_SL_over_EN_B",
    "function": "located by value in artifact summary (not recomputed)",
    "output": null,
@@ -1686,7 +1686,7 @@
   },
   {
    "id": "exp6_reverse_gapK",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_6/results/analysis_results.json",
+   "inputs": "../../../../round-2/experiment-6/src/results/analysis_results.json",
    "key": "gap.K.reverse_SL_source (R2s_plac - R2s_test)",
    "function": "difference of stored R2* values",
    "output": null,
@@ -1694,7 +1694,7 @@
   },
   {
    "id": "exp6_reselection",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_6/results/analysis_results.json",
+   "inputs": "../../../../round-2/experiment-6/src/results/analysis_results.json",
    "key": "reselection.selected",
    "function": "",
    "output": null,
@@ -1702,7 +1702,7 @@
   },
   {
    "id": "exp6_srcnull_R",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_6/results/analysis_results.json",
+   "inputs": "../../../../round-2/experiment-6/src/results/analysis_results.json",
    "key": "source_carrier.R.SRC.dR2_C_given_S0_ridge",
    "function": "",
    "output": null,
@@ -1710,7 +1710,7 @@
   },
   {
    "id": "exp6_srcnull_K",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_6/results/analysis_results.json",
+   "inputs": "../../../../round-2/experiment-6/src/results/analysis_results.json",
    "key": "source_carrier.K.SRC.dR2_C_given_S0_ridge",
    "function": "",
    "output": null,
@@ -1718,7 +1718,7 @@
   },
   {
    "id": "exp6_srclayer_spearman",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_6/results/panel_edits.jsonl",
+   "inputs": "../../../../round-2/experiment-6/src/results/panel_edits.jsonl",
    "key": "KL_sl/KL_en vs direction_index",
    "function": "Spearman over non-collapsed panel edits (recomputed)",
    "output": 0.7533733133433285,
@@ -1726,7 +1726,7 @@
   },
   {
    "id": "exp6_repro_maxabs",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_6/results/repro_check.json",
+   "inputs": "../../../../round-2/experiment-6/src/results/repro_check.json",
    "key": "edits.*.max_abs",
    "function": "",
    "output": 97.22998046875,
@@ -1734,7 +1734,7 @@
   },
   {
    "id": "exp6_judge_meta",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_6/results/judge_meta.json",
+   "inputs": "../../../../round-2/experiment-6/src/results/judge_meta.json",
    "key": null,
    "function": "",
    "output": null,
@@ -1742,7 +1742,7 @@
   },
   {
    "id": "exp3_gams3_C0_en",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_3/results/judged_generations.json",
+   "inputs": "../../../../round-1/experiment-3/src/results/judged_generations.json",
    "key": "judge_label (jbb_harmful)",
    "function": "proportion",
    "output": 0.9024390243902439,
@@ -1750,7 +1750,7 @@
   },
   {
    "id": "exp3_gams3_C1_en",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_3/results/judged_generations.json",
+   "inputs": "../../../../round-1/experiment-3/src/results/judged_generations.json",
    "key": "judge_label (jbb_harmful)",
    "function": "proportion",
    "output": 0.4634146341463415,
@@ -1758,7 +1758,7 @@
   },
   {
    "id": "exp3_gams3_C0_sl",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_3/results/judged_generations.json",
+   "inputs": "../../../../round-1/experiment-3/src/results/judged_generations.json",
    "key": "judge_label (jbb_harmful)",
    "function": "proportion",
    "output": 0.926829268292683,
@@ -1766,7 +1766,7 @@
   },
   {
    "id": "exp3_gams3_C1_sl",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_3/results/judged_generations.json",
+   "inputs": "../../../../round-1/experiment-3/src/results/judged_generations.json",
    "key": "judge_label (jbb_harmful)",
    "function": "proportion",
    "output": 0.34146341463414637,
@@ -1774,7 +1774,7 @@
   },
   {
    "id": "exp3_gemma_C0_en",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_3/results/judged_generations.json",
+   "inputs": "../../../../round-1/experiment-3/src/results/judged_generations.json",
    "key": "judge_label (jbb_harmful)",
    "function": "proportion",
    "output": 0.8292682926829268,
@@ -1782,7 +1782,7 @@
   },
   {
    "id": "exp3_gemma_C1_en",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_3/results/judged_generations.json",
+   "inputs": "../../../../round-1/experiment-3/src/results/judged_generations.json",
    "key": "judge_label (jbb_harmful)",
    "function": "proportion",
    "output": 0.07317073170731707,
@@ -1790,7 +1790,7 @@
   },
   {
    "id": "exp3_gemma_C0_sl",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_3/results/judged_generations.json",
+   "inputs": "../../../../round-1/experiment-3/src/results/judged_generations.json",
    "key": "judge_label (jbb_harmful)",
    "function": "proportion",
    "output": 1.0,
@@ -1798,7 +1798,7 @@
   },
   {
    "id": "exp3_gemma_C1_sl",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_3/results/judged_generations.json",
+   "inputs": "../../../../round-1/experiment-3/src/results/judged_generations.json",
    "key": "judge_label (jbb_harmful)",
    "function": "proportion",
    "output": 0.8536585365853658,
@@ -1806,7 +1806,7 @@
   },
   {
    "id": "exp3_gap_gams3",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_3/results/judged_generations.json",
+   "inputs": "../../../../round-1/experiment-3/src/results/judged_generations.json",
    "key": null,
    "function": "paired DiD over semantic items, B=2000",
    "output": -0.14634146341463414,
@@ -1814,7 +1814,7 @@
   },
   {
    "id": "exp3_gap_gemma",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_3/results/judged_generations.json",
+   "inputs": "../../../../round-1/experiment-3/src/results/judged_generations.json",
    "key": null,
    "function": "paired DiD over semantic items, B=2000",
    "output": 0.6097560975609756,
@@ -1822,7 +1822,7 @@
   },
   {
    "id": "exp3_levelgap_gams3",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_3/results/judged_generations.json",
+   "inputs": "../../../../round-1/experiment-3/src/results/judged_generations.json",
    "key": null,
    "function": "",
    "output": -0.12195121951219512,
@@ -1830,7 +1830,7 @@
   },
   {
    "id": "exp3_levelgap_gemma",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_3/results/judged_generations.json",
+   "inputs": "../../../../round-1/experiment-3/src/results/judged_generations.json",
    "key": null,
    "function": "",
    "output": 0.7804878048780488,
@@ -1838,7 +1838,7 @@
   },
   {
    "id": "exp3_judge_provenance",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_3/results/judge_meta.json",
+   "inputs": "../../../../round-1/experiment-3/src/results/judge_meta.json",
    "key": null,
    "function": "",
    "output": 1596,
@@ -1846,7 +1846,7 @@
   },
   {
    "id": "exp3_rgate_gams_sp",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_3/results/analysis_summary.json",
+   "inputs": "../../../../round-1/experiment-3/src/results/analysis_summary.json",
    "key": "validity.gams3.spearman_condition_level",
    "function": "read from artifact summary by key (not recomputed)",
    "output": null,
@@ -1854,7 +1854,7 @@
   },
   {
    "id": "exp3_rgate_gams_auc",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_3/results/analysis_summary.json",
+   "inputs": "../../../../round-1/experiment-3/src/results/analysis_summary.json",
    "key": "validity.gams3.item_auroc",
    "function": "read from artifact summary by key (not recomputed)",
    "output": null,
@@ -1862,7 +1862,7 @@
   },
   {
    "id": "exp3_rgate_gemma_sp",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_3/results/analysis_summary.json",
+   "inputs": "../../../../round-1/experiment-3/src/results/analysis_summary.json",
    "key": "validity.gemma.spearman_condition_level",
    "function": "read from artifact summary by key (not recomputed)",
    "output": null,
@@ -1870,7 +1870,7 @@
   },
   {
    "id": "exp3_bridge_gams3",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_3/results/gams3/heretic_bridge.json",
+   "inputs": "../../../../round-1/experiment-3/src/results/gams3/heretic_bridge.json",
    "key": "mean_gap",
    "function": "read from artifact summary by key (not recomputed)",
    "output": null,
@@ -1878,7 +1878,7 @@
   },
   {
    "id": "exp3_bridge_gemma",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_3/results/gemma/heretic_bridge.json",
+   "inputs": "../../../../round-1/experiment-3/src/results/gemma/heretic_bridge.json",
    "key": "mean_gap",
    "function": "read from artifact summary by key (not recomputed)",
    "output": null,
@@ -1886,7 +1886,7 @@
   },
   {
    "id": "exp3_margin_sl",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_3/results/margin_decomposition_exploratory.json",
+   "inputs": "../../../../round-1/experiment-3/src/results/margin_decomposition_exploratory.json",
    "key": "gemma.sl.mean_R0",
    "function": "read from artifact summary by key (not recomputed)",
    "output": null,
@@ -1894,7 +1894,7 @@
   },
   {
    "id": "exp3_margin_en",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_3/results/margin_decomposition_exploratory.json",
+   "inputs": "../../../../round-1/experiment-3/src/results/margin_decomposition_exploratory.json",
    "key": "gemma.en.mean_R0",
    "function": "read from artifact summary by key (not recomputed)",
    "output": null,
@@ -1902,7 +1902,7 @@
   },
   {
    "id": "exp3_benign_sl_twins",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_3/results/margin_decomposition_exploratory.json",
+   "inputs": "../../../../round-1/experiment-3/src/results/margin_decomposition_exploratory.json",
    "key": "gemma.sl.benign_C0_judged_refusal",
    "function": "read from artifact summary by key (not recomputed)",
    "output": null,
@@ -1910,7 +1910,7 @@
   },
   {
    "id": "exp3_T",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_3/results/verify_numbers.json",
+   "inputs": "../../../../round-1/experiment-3/src/results/verify_numbers.json",
    "key": "$.gemma.recomputed.T_en->sl",
    "function": "",
    "output": null,
@@ -1918,7 +1918,7 @@
   },
   {
    "id": "exp3_cos",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/analysis_summary.json",
+   "inputs": "../../../../round-2/experiment-8/src/results/analysis_summary.json",
    "key": "transfer_predictors.cos_dEN_dSL",
    "function": "",
    "output": null,
@@ -1926,7 +1926,7 @@
   },
   {
    "id": "exp8_cut_A2",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/per_item.parquet",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
    "key": "judge_label",
    "function": "paired difference A1 - arm",
    "output": 0.03636363636363636,
@@ -1934,7 +1934,7 @@
   },
   {
    "id": "exp8_cut_A4",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/per_item.parquet",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
    "key": "judge_label",
    "function": "paired difference A1 - arm",
    "output": 0.3153153153153153,
@@ -1942,7 +1942,7 @@
   },
   {
    "id": "exp8_cut_A5",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/per_item.parquet",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
    "key": "judge_label",
    "function": "paired difference A1 - arm",
    "output": 0.02040816326530612,
@@ -1950,7 +1950,7 @@
   },
   {
    "id": "exp8_cut_A6",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/per_item.parquet",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
    "key": "judge_label",
    "function": "paired difference A1 - arm",
    "output": 0.32432432432432434,
@@ -1958,7 +1958,7 @@
   },
   {
    "id": "exp8_cut_A7",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/per_item.parquet",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
    "key": "judge_label",
    "function": "paired difference A1 - arm",
    "output": 0.018018018018018018,
@@ -1966,7 +1966,7 @@
   },
   {
    "id": "exp8_cut_A8",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/per_item.parquet",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
    "key": "judge_label",
    "function": "paired difference A1 - arm",
    "output": 0.043478260869565216,
@@ -1974,7 +1974,7 @@
   },
   {
    "id": "exp8_cut_A9",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/per_item.parquet",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
    "key": "judge_label",
    "function": "paired difference A1 - arm",
    "output": 0.07407407407407407,
@@ -1982,7 +1982,7 @@
   },
   {
    "id": "exp8_cut_A10",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/per_item.parquet",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
    "key": "judge_label",
    "function": "paired difference A1 - arm",
    "output": 0.13513513513513514,
@@ -1990,7 +1990,7 @@
   },
   {
    "id": "exp8_cut_A11",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/per_item.parquet",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
    "key": "judge_label",
    "function": "paired difference A1 - arm",
    "output": 0.0,
@@ -1998,7 +1998,7 @@
   },
   {
    "id": "exp8_cut_A2d_c0.5",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/per_item.parquet",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
    "key": "judge_label",
    "function": "paired difference A1 - arm",
    "output": 0.058823529411764705,
@@ -2006,7 +2006,7 @@
   },
   {
    "id": "exp8_F3_p",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/per_item.parquet",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
    "key": null,
    "function": "exact McNemar n10=11 n01=1",
    "output": 0.00634765625,
@@ -2014,7 +2014,7 @@
   },
   {
    "id": "exp8_F3_holm",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/per_item.parquet",
+   "inputs": "../../../../round-2/experiment-8/src/results/per_item.parquet",
    "key": null,
    "function": "",
    "output": 0.025390625,
@@ -2022,7 +2022,7 @@
   },
   {
    "id": "exp8_auroc_cos",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/analysis_summary.json",
+   "inputs": "../../../../round-2/experiment-8/src/results/analysis_summary.json",
    "key": "transfer_predictors.cosine_baseline.auroc",
    "function": "read from artifact summary by key (not recomputed)",
    "output": null,
@@ -2030,7 +2030,7 @@
   },
   {
    "id": "exp8_rprior_cos_lang",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/audit_headline.json",
+   "inputs": "../../../../round-2/experiment-8/src/results/audit_headline.json",
    "key": "geometry.cos_rprior_l",
    "function": "read from artifact summary by key (not recomputed)",
    "output": null,
@@ -2038,7 +2038,7 @@
   },
   {
    "id": "exp8_rprior_cos_shuf",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/audit_headline.json",
+   "inputs": "../../../../round-2/experiment-8/src/results/audit_headline.json",
    "key": "geometry.cos_rprior_shuffled",
    "function": "read from artifact summary by key (not recomputed)",
    "output": null,
@@ -2046,7 +2046,7 @@
   },
   {
    "id": "exp4_official_asr_gemma_edit_en",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/results/guard/official_labels.jsonl",
+   "inputs": "../../../../round-2/experiment-4/src/results/guard/official_labels.jsonl",
    "key": "official_unsafe (S5; unadjudicated disagreements excluded)",
    "function": "proportion",
    "output": 0.7379032258064516,
@@ -2054,7 +2054,7 @@
   },
   {
    "id": "exp4_official_asr_gemma_edit_sl",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/results/guard/official_labels.jsonl",
+   "inputs": "../../../../round-2/experiment-4/src/results/guard/official_labels.jsonl",
    "key": "official_unsafe (S5; unadjudicated disagreements excluded)",
    "function": "proportion",
    "output": 0.1026785714285714,
@@ -2062,7 +2062,7 @@
   },
   {
    "id": "exp4_kappa_pooled_binary",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/results/judge",
+   "inputs": "../../../../round-2/experiment-4/src/results/judge",
    "key": null,
    "function": "Cohen kappa on the item overlap (all checkpoints pooled)",
    "output": 0.9125865162778776,
@@ -2070,7 +2070,7 @@
   },
   {
    "id": "exp4_kappa_edited_binary",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/results/judge",
+   "inputs": "../../../../round-2/experiment-4/src/results/judge",
    "key": null,
    "function": "",
    "output": 0.7793376334760691,
@@ -2078,7 +2078,7 @@
   },
   {
    "id": "exp4_kappa_pooled_4class",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/results/judge",
+   "inputs": "../../../../round-2/experiment-4/src/results/judge",
    "key": null,
    "function": "Cohen kappa on the item overlap (all checkpoints pooled)",
    "output": 0.8333927298645758,
@@ -2086,7 +2086,7 @@
   },
   {
    "id": "exp4_kappa_edited_4class",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/results/judge",
+   "inputs": "../../../../round-2/experiment-4/src/results/judge",
    "key": null,
    "function": "",
    "output": 0.7272635915988342,
@@ -2094,7 +2094,7 @@
   },
   {
    "id": "exp4_judge_provenance",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/results/judge_local_cert.json",
+   "inputs": "../../../../round-2/experiment-4/src/results/judge_local_cert.json",
    "key": null,
    "function": "",
    "output": null,
@@ -2102,7 +2102,7 @@
   },
   {
    "id": "exp4_rseq_within_edit",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/results/rseq/rseq_validity.json",
+   "inputs": "../../../../round-2/experiment-4/src/results/rseq/rseq_validity.json",
    "key": "$.cells.gams|en|edit_ckpts_only.R_seq.spearman",
    "function": "",
    "output": null,
@@ -2110,7 +2110,7 @@
   },
   {
    "id": "exp4_B3_batching",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/results/smoke",
+   "inputs": "../../../../round-2/experiment-4/src/results/smoke",
    "key": null,
    "function": "",
    "output": null,
@@ -2118,7 +2118,7 @@
   },
   {
    "id": "exp4_s5x_gap_gemma",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/frozen_samples.json",
+   "inputs": "../../../../round-2/experiment-4/src/frozen_samples.json",
    "key": "s5x_pairs x judge_local",
    "function": "paired; exact McNemar p=3.39e-21",
    "output": 0.69,
@@ -2126,7 +2126,7 @@
   },
   {
    "id": "exp4_s5x_mcnemar",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/frozen_samples.json",
+   "inputs": "../../../../round-2/experiment-4/src/frozen_samples.json",
    "key": null,
    "function": "",
    "output": 3.3881317890172014e-21,
@@ -2134,7 +2134,7 @@
   },
   {
    "id": "exp4_s5x_did_gemma",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/frozen_samples.json",
+   "inputs": "../../../../round-2/experiment-4/src/frozen_samples.json",
    "key": null,
    "function": "",
    "output": 0.66,
@@ -2142,7 +2142,7 @@
   },
   {
    "id": "exp4_s5x_gap_gemma_broad",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/frozen_samples.json",
+   "inputs": "../../../../round-2/experiment-4/src/frozen_samples.json",
    "key": null,
    "function": "",
    "output": 0.2299999999999999,
@@ -2150,7 +2150,7 @@
   },
   {
    "id": "exp4_s5x_gap_community",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/frozen_samples.json",
+   "inputs": "../../../../round-2/experiment-4/src/frozen_samples.json",
    "key": null,
    "function": "",
    "output": 0.12,
@@ -2158,7 +2158,7 @@
   },
   {
    "id": "exp4_ratio_26",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/results/judge_local",
+   "inputs": "../../../../round-2/experiment-4/src/results/judge_local",
    "key": null,
    "function": "",
    "output": 2.578258928571429,
@@ -2166,7 +2166,7 @@
   },
   {
    "id": "exp4_invalid_zero",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/results/judge_local",
+   "inputs": "../../../../round-2/experiment-4/src/results/judge_local",
    "key": null,
    "function": "max over S5 cells",
    "output": 0.0,
@@ -2174,7 +2174,7 @@
   },
   {
    "id": "exp5_T1_gap25",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_5/results/judged_generations.jsonl",
+   "inputs": "../../../../round-2/experiment-5/src/results/judged_generations.jsonl",
    "key": null,
    "function": "",
    "output": 0.24994350282485878,
@@ -2182,7 +2182,7 @@
   },
   {
    "id": "exp5_agree_4class_kappa",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_5/results/judged_generations.jsonl",
+   "inputs": "../../../../round-2/experiment-5/src/results/judged_generations.jsonl",
    "key": null,
    "function": "pooled over originals + edits",
    "output": 0.7651863195507912,
@@ -2190,7 +2190,7 @@
   },
   {
    "id": "exp5_agree_binary_kappa",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_5/results/judged_generations.jsonl",
+   "inputs": "../../../../round-2/experiment-5/src/results/judged_generations.jsonl",
    "key": null,
    "function": "pooled over originals + edits",
    "output": 0.8275862068965516,
@@ -2198,7 +2198,7 @@
   },
   {
    "id": "exp5_agree_4class_raw_agreement",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_5/results/judged_generations.jsonl",
+   "inputs": "../../../../round-2/experiment-5/src/results/judged_generations.jsonl",
    "key": null,
    "function": "pooled over originals + edits",
    "output": 0.885,
@@ -2206,7 +2206,7 @@
   },
   {
    "id": "exp5_T1_provenance",
-   "inputs": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_5/results/judged_generations.jsonl",
+   "inputs": "../../../../round-2/experiment-5/src/results/judged_generations.jsonl",
    "key": null,
    "function": "",
    "output": 0.5214007782101168,

@@ -85,7 +85,7 @@
           "eval_abs_diff_vs_draft": 0.0
         },
         {
-          "input": "[Iteration 1 / Experiment 1] gams orig KL mean | cell=gams:orig lang= judge= | source=/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/results/eval/gams...",
+          "input": "[Iteration 1 / Experiment 1] gams orig KL mean | cell=gams:orig lang= judge= | source=../../../round-1/experiment-1/src/results/eval/gams...",
           "output": "0.000",
           "predict_draft": "0.0",
           "predict_recomputed": "0.0",

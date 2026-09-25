@@ -9,7 +9,7 @@ import pandas as pd
 from scipy.stats import spearmanr
 from sklearn.metrics import cohen_kappa_score
 WS = Path(__file__).resolve().parent
-W4 = Path("/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4")
+W4 = Path(__file__).resolve().parents[3] / "round-2/experiment-4/src"
 df = pd.read_parquet(WS / "results/label_pool.parquet"); d = df[df.source == "exp4"]
 g = d[d.judge_model == "openai/gpt-4.1"].set_index("uid"); q = d[d.judge_model == "Qwen/Qwen3-14B"].set_index("uid")
 pg = {}

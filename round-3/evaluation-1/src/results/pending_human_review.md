@@ -4,11 +4,11 @@ No native-speaker review has been carried out anywhere in the run. Every judge i
 
 | path | n | language mix | status | note |
 |---|---|---|---|---|
-| `/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/results/human_packet/packet.csv` | 200 | {'sl': 100, 'en': 100} | PENDING native review | blinded EN/SL behaviour packet (class, harmful, language_ok); NOT yet labelled by a native speaker |
-| `/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_5/results/native_review_packet_c1u.csv` | 120 | {'en': 60, 'sl': 60} | PENDING native review | native-review packet for C1 utility/refusal replies; key in *_KEY.csv |
-| `/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_dataset_1/data/native_review_packet.csv` | 250 | {'en->sl': 229, 'sl->en': 21} | PENDING native review | translation adequacy/fluency/trigger-preservation packet |
-| `/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/results/sl_label_sample.json` | 40 | {'sl': 40} | EXECUTOR-labelled (NOT native) | labeller: artifact executor (NOT a native speaker) - NATIVE_REVIEW_PENDING |
-| `/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/results/executor_audit.json` | 30 | EN+SL | EXECUTOR check (NOT native) | 30-item executor check of the judge (kappa .67 5-way / .93 binary as reported by exp4) |
+| `../../../../round-2/experiment-4/src/results/human_packet/packet.csv` | 200 | {'sl': 100, 'en': 100} | PENDING native review | blinded EN/SL behaviour packet (class, harmful, language_ok); NOT yet labelled by a native speaker |
+| `../../../../round-2/experiment-5/src/results/native_review_packet_c1u.csv` | 120 | {'en': 60, 'sl': 60} | PENDING native review | native-review packet for C1 utility/refusal replies; key in *_KEY.csv |
+| `../../../../round-1/dataset-1/src/data/native_review_packet.csv` | 250 | {'en->sl': 229, 'sl->en': 21} | PENDING native review | translation adequacy/fluency/trigger-preservation packet |
+| `../../../../round-1/experiment-1/src/results/sl_label_sample.json` | 40 | {'sl': 40} | EXECUTOR-labelled (NOT native) | labeller: artifact executor (NOT a native speaker) - NATIVE_REVIEW_PENDING |
+| `../../../../round-2/experiment-4/src/results/executor_audit.json` | 30 | EN+SL | EXECUTOR check (NOT native) | 30-item executor check of the judge (kappa .67 5-way / .93 binary as reported by exp4) |
 
 ## Translation provenance per set (from gen_art_dataset_1 split files; automated QC only)
 
@@ -32,7 +32,7 @@ No native-speaker review has been carried out anywhere in the run. Every judge i
 | S7_piqa | 3518 | 1759 | {'original': 1759} |  (0) |
 | S7_winogrande | 2534 | 1267 | {'original': 1267} |  (0) |
 
-Notes: S5 (official RefusEU) EN and SL rows that share a row_id are NOT translations (0 of 1,400 pairs grade T; `/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_dataset_1/data/reports/refuseu_correspondence.json`), so paired cross-language claims use S5X only. FLORES+ devtest is human-translated.
+Notes: S5 (official RefusEU) EN and SL rows that share a row_id are NOT translations (0 of 1,400 pairs grade T; `../../../../round-1/dataset-1/src/data/reports/refuseu_correspondence.json`), so paired cross-language claims use S5X only. FLORES+ devtest is human-translated.
 
 ## Cross-machine reproducibility (exp6 repro_check.json), with units
 

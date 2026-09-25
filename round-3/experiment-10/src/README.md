@@ -145,6 +145,6 @@ Model weights live in this run's shared HF cache (`$HF_HUB_CACHE`) and are re-do
 `huggingface-cli download Qwen/Qwen3-14B --revision 40c069824f4251a91eefaf281ebe4c544efd3e18`,
 `huggingface-cli download cis-lmu/glotlid --revision 85cd6716494360367b75f642b5bc78667605d0b4`.
 The iteration-1 core LoRA adapter is read (never modified) from
-`/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/adapters/gams_selected_path2`,
+`../../../round-1/experiment-1/src/adapters/gams_selected_path2`,
 and the frozen per-layer directions from
-`/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/directions/gams3_all_layers.npz`.
+`../../../round-2/experiment-8/src/directions/gams3_all_layers.npz`.

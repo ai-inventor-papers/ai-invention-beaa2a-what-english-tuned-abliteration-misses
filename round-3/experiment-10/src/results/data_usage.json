@@ -1,6 +1,6 @@
 {
  "dataset": "art_qdUCJWbc5kHh",
- "workspace": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_dataset_1",
+ "workspace": "../../../../round-1/dataset-1/src",
  "protocol_hash": "dc33bde4e8ea39ee416af3e9c65eeb9d8583303bdd39130cb8c86831624c9306",
  "blocks": {
   "S1_heretic": {

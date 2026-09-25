@@ -308,8 +308,8 @@ hf download meta-llama/Llama-Guard-3-8B --revision 7327bd9f6efbbe6101dc6cc473630
 ```
 
 The trial-96 LoRA adapter is **read, never modified**, from
-`/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/adapters/gemma_selected_path2`
+`../../../round-1/experiment-1/src/adapters/gemma_selected_path2`
 (`adapter_model.safetensors` SHA-256 `d219c084…`, verified at load). The frozen per-layer directions are read from
-`/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/directions/gemma_all_layers.npz`,
+`../../../round-2/experiment-8/src/directions/gemma_all_layers.npz`,
 and every `S*` data split from
-`/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_dataset_1` (SHA-256 verified at load).
+`../../../round-1/dataset-1/src` (SHA-256 verified at load).

@@ -39,7 +39,7 @@ skipped, the scorer is certified at the on-disk κ = 0.779 instead, and that κ 
 
 Data is **read-only** from the frozen dataset artifact and is SHA-256-verified at load
 (`common.load_split` vs `data/split_manifest.json`); nothing is downloaded:
-`/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_dataset_1`.
+`../../../round-1/dataset-1/src`.
 Two further read-only inputs: the frozen per-layer directions from iteration 2 (`gen_art_experiment_8/directions/`)
 and the trial-96 LoRA adapter (`gen_art_experiment_1/adapters/gemma_selected_path2`, SHA-256 `d219c084…`).
 

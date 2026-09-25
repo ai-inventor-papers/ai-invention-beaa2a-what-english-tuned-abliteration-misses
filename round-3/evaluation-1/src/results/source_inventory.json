@@ -2,7 +2,7 @@
  "n_files": 76,
  "files": [
   {
-   "path": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/results/eval/gams_orig.json",
+   "path": "../../../../round-1/experiment-1/src/results/eval/gams_orig.json",
    "sha256": "df152aaa4e0ad79f3f346567fd96ca0c5a796e1918ee651b2ef4ab2c98992781",
    "size_bytes": 110679,
    "rows": 200,
@@ -26,7 +26,7 @@
    "note": ""
   },
   {
-   "path": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/results/eval/gams_own.json",
+   "path": "../../../../round-1/experiment-1/src/results/eval/gams_own.json",
    "sha256": "1b0addc6848410339fd3ea91c6192bf650d7ff4d5e6fe00cd84728175b07591a",
    "size_bytes": 134337,
    "rows": 200,
@@ -52,7 +52,7 @@
    "note": ""
   },
   {
-   "path": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/results/eval/gams_swap.json",
+   "path": "../../../../round-1/experiment-1/src/results/eval/gams_swap.json",
    "sha256": "370915d9075771f19aab30c3a366e74a111ddf8ea15f5edea617514aafb68e3e",
    "size_bytes": 134733,
    "rows": 200,
@@ -78,7 +78,7 @@
    "note": ""
   },
   {
-   "path": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/results/eval/gemma_orig.json",
+   "path": "../../../../round-1/experiment-1/src/results/eval/gemma_orig.json",
    "sha256": "117ce6f52780e244fdeb3f2b73174af3c532498bbaa26cebaf9aa26233a0c2f9",
    "size_bytes": 137199,
    "rows": 200,
@@ -102,7 +102,7 @@
    "note": ""
   },
   {
-   "path": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/results/eval/gemma_own.json",
+   "path": "../../../../round-1/experiment-1/src/results/eval/gemma_own.json",
    "sha256": "ff5fb77cf62127281e7764df99f104df18ce6ade416fe242452be816fd8fde6e",
    "size_bytes": 136363,
    "rows": 200,
@@ -128,7 +128,7 @@
    "note": ""
   },
   {
-   "path": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/results/eval/gemma_swap.json",
+   "path": "../../../../round-1/experiment-1/src/results/eval/gemma_swap.json",
    "sha256": "4861d367cb6c7b157fca9ce61b2ea164dce1f80e9ca3f0db5be1a6a2c5690620",
    "size_bytes": 134397,
    "rows": 200,
@@ -154,7 +154,7 @@
    "note": ""
   },
   {
-   "path": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_experiment_3/results/judged_generations.json",
+   "path": "../../../../round-1/experiment-3/src/results/judged_generations.json",
    "sha256": "046806bfa6725afeb874c6e8d0542cb6c36c4e1d15c07710120f2281bcd18551",
    "size_bytes": 1474138,
    "rows": 1596,
@@ -180,7 +180,7 @@
    "note": ""
   },
   {
-   "path": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/frozen_samples.json",
+   "path": "../../../../round-2/experiment-4/src/frozen_samples.json",
    "sha256": "c72b89f51aa7dd27de197f342252bd9fe6563805b65f06cf8b86e02eb67bc016",
    "size_bytes": 626106,
    "rows": 960,
@@ -203,7 +203,7 @@
    "note": ""
   },
   {
-   "path": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/results/gen/gams_orig.jsonl",
+   "path": "../../../../round-2/experiment-4/src/results/gen/gams_orig.jsonl",
    "sha256": "67433122ee737c0b44ac059731e472093ed3d2e611640510e987a1203da2b421",
    "size_bytes": 808047,
    "rows": 960,
@@ -224,7 +224,7 @@
    "note": ""
   },
   {
-   "path": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/results/judge/gams_orig.jsonl",
+   "path": "../../../../round-2/experiment-4/src/results/judge/gams_orig.jsonl",
    "sha256": "3ec9bee19bec62e101115ace6cec3d48728a2d4e2ffb10ff68d2ed3e19dbb49f",
    "size_bytes": 50403,
    "rows": 190,
@@ -243,7 +243,7 @@
    "note": "gpt-4.1, seeded random order, blocked at 716/3,840 core items"
   },
   {
-   "path": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/results/judge_local/gams_orig.jsonl",
+   "path": "../../../../round-2/experiment-4/src/results/judge_local/gams_orig.jsonl",
    "sha256": "135fa71d4e142224b95de58f26a7d417d934b2384e0a3010c33963e2a345b119",
    "size_bytes": 293935,
    "rows": 976,
@@ -262,7 +262,7 @@
    "note": "Qwen3-14B local; LAST label per item_key used"
   },
   {
-   "path": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/results/autoscore/gams_orig.jsonl",
+   "path": "../../../../round-2/experiment-4/src/results/autoscore/gams_orig.jsonl",
    "sha256": "25af9079be992446264f04f75589e62c92291908a898013a92ba746b3eb55d54",
    "size_bytes": 305579,
    "rows": 960,
@@ -286,7 +286,7 @@
    "note": ""
   },
   {
-   "path": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/results/gen/gams_edit.jsonl",
+   "path": "../../../../round-2/experiment-4/src/results/gen/gams_edit.jsonl",
    "sha256": "fa375879f4d30d30b8b8363f12a359a473c14c65cc4e8969927925a59a7c7915",
    "size_bytes": 1206836,
    "rows": 960,
@@ -307,7 +307,7 @@
    "note": ""
   },
   {
-   "path": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/results/judge/gams_edit.jsonl",
+   "path": "../../../../round-2/experiment-4/src/results/judge/gams_edit.jsonl",
    "sha256": "97a44a0b7d580c69003167aaacbb0f49cad1bdc45316a0688040ef286c0fe68c",
    "size_bytes": 53199,
    "rows": 189,
@@ -326,7 +326,7 @@
    "note": "gpt-4.1, seeded random order, blocked at 716/3,840 core items"
   },
   {
-   "path": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/results/judge_local/gams_edit.jsonl",
+   "path": "../../../../round-2/experiment-4/src/results/judge_local/gams_edit.jsonl",
    "sha256": "d0c7083917b03dc0ea2cfb5064a92003eed3dc1fa491d5fdfc70b243a754a612",
    "size_bytes": 296269,
    "rows": 964,
@@ -345,7 +345,7 @@
    "note": "Qwen3-14B local; LAST label per item_key used"
   },
   {
-   "path": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/results/autoscore/gams_edit.jsonl",
+   "path": "../../../../round-2/experiment-4/src/results/autoscore/gams_edit.jsonl",
    "sha256": "03a3a5e59d8f927699b20363d88fcc80f089fdbd322fb71f68ceff804842daf7",
    "size_bytes": 308198,
    "rows": 960,
@@ -369,7 +369,7 @@
    "note": ""
   },
   {
-   "path": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/results/gen/gemma_orig.jsonl",
+   "path": "../../../../round-2/experiment-4/src/results/gen/gemma_orig.jsonl",
    "sha256": "7985a97514bed68a48bd35110cbcf2e7f223870e40b05bf67c22331ca8a94c01",
    "size_bytes": 1233708,
    "rows": 960,
@@ -390,7 +390,7 @@
    "note": ""
   },
   {
-   "path": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/results/judge/gemma_orig.jsonl",
+   "path": "../../../../round-2/experiment-4/src/results/judge/gemma_orig.jsonl",
    "sha256": "09da53b1d31c962376463dd2e8219d59d519a1d3081b2a37d5a35285f67cbe58",
    "size_bytes": 45926,
    "rows": 171,
@@ -409,7 +409,7 @@
    "note": "gpt-4.1, seeded random order, blocked at 716/3,840 core items"
   },
   {
-   "path": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/results/judge_local/gemma_orig.jsonl",
+   "path": "../../../../round-2/experiment-4/src/results/judge_local/gemma_orig.jsonl",
    "sha256": "2b671349bd733aea659e963dec755229c4e18834916410c1d35b8cb4f11ffc73",
    "size_bytes": 296029,
    "rows": 968,
@@ -428,7 +428,7 @@
    "note": "Qwen3-14B local; LAST label per item_key used"
   },
   {
-   "path": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/results/autoscore/gemma_orig.jsonl",
+   "path": "../../../../round-2/experiment-4/src/results/autoscore/gemma_orig.jsonl",
    "sha256": "cbcb087fc6384dbd97c73cf04579f93fcf93bfabc9348aeea6a4bae491043657",
    "size_bytes": 307303,
    "rows": 960,
@@ -452,7 +452,7 @@
    "note": ""
   },
   {
-   "path": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/results/gen/gemma_edit.jsonl",
+   "path": "../../../../round-2/experiment-4/src/results/gen/gemma_edit.jsonl",
    "sha256": "cf7c391b49c1d8ef3277c64da0133e95244d7ef46688b557fb385d7c9ace9c59",
    "size_bytes": 1189041,
    "rows": 960,
@@ -473,7 +473,7 @@
    "note": ""
   },
   {
-   "path": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/results/judge/gemma_edit.jsonl",
+   "path": "../../../../round-2/experiment-4/src/results/judge/gemma_edit.jsonl",
    "sha256": "5372c50538994c18521913c54ee3f6b205d4c68b4cdfca790155acd63cfcad51",
    "size_bytes": 45634,
    "rows": 166,
@@ -492,7 +492,7 @@
    "note": "gpt-4.1, seeded random order, blocked at 716/3,840 core items"
   },
   {
-   "path": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/results/judge_local/gemma_edit.jsonl",
+   "path": "../../../../round-2/experiment-4/src/results/judge_local/gemma_edit.jsonl",
    "sha256": "e4ca14aa2689aaf922641f01d63f72df711b22ff2760ec5d3be31bc257074fc9",
    "size_bytes": 297841,
    "rows": 972,
@@ -511,7 +511,7 @@
    "note": "Qwen3-14B local; LAST label per item_key used"
   },
   {
-   "path": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/results/autoscore/gemma_edit.jsonl",
+   "path": "../../../../round-2/experiment-4/src/results/autoscore/gemma_edit.jsonl",
    "sha256": "3d185d11d47e49054e44a858c932acef4bd58e4ab407aa9158ae22e953bcfdea",
    "size_bytes": 307400,
    "rows": 960,
@@ -535,7 +535,7 @@
    "note": ""
   },
   {
-   "path": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/results/gen/community_ref.jsonl",
+   "path": "../../../../round-2/experiment-4/src/results/gen/community_ref.jsonl",
    "sha256": "5e9d685e8ffb517419835a06f80a102dd7f33fdce5f9e8c7b600b3a1def46c14",
    "size_bytes": 1127572,
    "rows": 960,
@@ -556,7 +556,7 @@
    "note": ""
   },
   {
-   "path": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/results/judge_local/community_ref.jsonl",
+   "path": "../../../../round-2/experiment-4/src/results/judge_local/community_ref.jsonl",
    "sha256": "5073018f950fd6ac0929c0dd8c99577c296891a4d782c307b245022f03023907",
    "size_bytes": 301545,
    "rows": 968,
@@ -575,7 +575,7 @@
    "note": "Qwen3-14B local; LAST label per item_key used"
   },
   {
-   "path": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/results/autoscore/community_ref.jsonl",
+   "path": "../../../../round-2/experiment-4/src/results/autoscore/community_ref.jsonl",
    "sha256": "54d9c146ba59256cd925704572d4ce2fe12afd9d3333cbed2c557a992170fe43",
    "size_bytes": 311901,
    "rows": 960,
@@ -599,7 +599,7 @@
    "note": ""
   },
   {
-   "path": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4/results/guard/official_labels.jsonl",
+   "path": "../../../../round-2/experiment-4/src/results/guard/official_labels.jsonl",
    "sha256": "da2625050cede6ece67fb9702ec1c52a1e5b748deb66523f0cba60fcf4d15459",
    "size_bytes": 321336,
    "rows": 3300,
@@ -614,7 +614,7 @@
    "note": "official RefusEU ASR pipeline (harmfulness judge; ASR column only)"
   },
   {
-   "path": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_5/results/judged_generations.jsonl",
+   "path": "../../../../round-2/experiment-5/src/results/judged_generations.jsonl",
    "sha256": "1efa56876d2e9bc3c0f0dd58594bf1e9e26aa792dd5aa4a8b8ad21fddf3f182b",
    "size_bytes": 3587925,
    "rows": 4488,
@@ -638,7 +638,7 @@
    "note": "label = gpt-4.1 (NOT_JUDGED excluded); label2 = nemotron second judge"
   },
   {
-   "path": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_6/results/judged_generations.json",
+   "path": "../../../../round-2/experiment-6/src/results/judged_generations.json",
    "sha256": "41613e36cd8340a80dc5ee7efcaf90455dfa54846a9056a023835c9add43e053",
    "size_bytes": 1789337,
    "rows": 2140,
@@ -667,7 +667,7 @@
    "note": "judge_label = gpt-4.1 (PENDING_JUDGE excluded); judge_local_label = Qwen3-14B"
   },
   {
-   "path": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_7/results/validity/judged.json",
+   "path": "../../../../round-2/experiment-7/src/results/validity/judged.json",
    "sha256": "b64962801b330f26e0afb5e4ba452cef0a6c25f8e0629befee235c7104d77547",
    "size_bytes": 1168824,
    "rows": 2296,
@@ -683,7 +683,7 @@
    "note": "gemma-3-12b-it SELF-judge on its own edits"
   },
   {
-   "path": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_7/results/judged_api_orig.json",
+   "path": "../../../../round-2/experiment-7/src/results/judged_api_orig.json",
    "sha256": "fd83815754f451edb1d4e37867c30080dc3d69f1c4ce64f5ee2b7fe3eea4b946",
    "size_bytes": 228537,
    "rows": 440,
@@ -701,7 +701,7 @@
    "note": "gpt-4.1 on ORIGINAL generations only"
   },
   {
-   "path": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/per_item.parquet",
+   "path": "../../../../round-2/experiment-8/src/results/per_item.parquet",
    "sha256": "deb68cb3a44fe5590b78efe0467dabf9d4ae3ed06a9a5a5bb72f8fce1aaeabff",
    "size_bytes": 284102,
    "rows": 12136,
@@ -735,7 +735,7 @@
    "note": "judge_label = gpt-4.1 (arm-prioritised, NOT random); judge2_label = Qwen3-14B (all)"
   },
   {
-   "path": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/gemma/gens/A0.json",
+   "path": "../../../../round-2/experiment-8/src/results/gemma/gens/A0.json",
    "sha256": "6d576c14ea3e89f158cf1b47ca96b6c8ba001684d9fef12df019a008f19eeeb6",
    "size_bytes": 355889,
    "rows": 444,
@@ -757,7 +757,7 @@
    "note": ""
   },
   {
-   "path": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/gemma/gens/A1.json",
+   "path": "../../../../round-2/experiment-8/src/results/gemma/gens/A1.json",
    "sha256": "3147eb4123bdb9c52d573f801ab4dc92cab55322a4b6fe2aa7ba28e35dfcd753",
    "size_bytes": 355405,
    "rows": 444,
@@ -779,7 +779,7 @@
    "note": ""
   },
   {
-   "path": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/gemma/gens/A10.json",
+   "path": "../../../../round-2/experiment-8/src/results/gemma/gens/A10.json",
    "sha256": "edf441760a487166823561be7f63712d57c4478849d0bca6e56b9da2e64a1fdb",
    "size_bytes": 176701,
    "rows": 222,
@@ -801,7 +801,7 @@
    "note": ""
   },
   {
-   "path": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/gemma/gens/A11.json",
+   "path": "../../../../round-2/experiment-8/src/results/gemma/gens/A11.json",
    "sha256": "b0b271d8390be9e8af8436348d882e2e48476e84989ae4233f5fb717f50d323b",
    "size_bytes": 81135,
    "rows": 111,
@@ -823,7 +823,7 @@
    "note": ""
   },
   {
-   "path": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/gemma/gens/A2.json",
+   "path": "../../../../round-2/experiment-8/src/results/gemma/gens/A2.json",
    "sha256": "80a29d251bed22c765f8f5d0f72bfe35d1e2401a1decef996a287a7bd5afaa20",
    "size_bytes": 355572,
    "rows": 444,
@@ -845,7 +845,7 @@
    "note": ""
   },
   {
-   "path": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/gemma/gens/A2d_c0.5.json",
+   "path": "../../../../round-2/experiment-8/src/results/gemma/gens/A2d_c0.5.json",
    "sha256": "14832ed81971219cfea450e82227b44fccceea4a5f5e9c1df81cf0282bd0bc45",
    "size_bytes": 81498,
    "rows": 111,
@@ -867,7 +867,7 @@
    "note": ""
   },
   {
-   "path": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/gemma/gens/A3.json",
+   "path": "../../../../round-2/experiment-8/src/results/gemma/gens/A3.json",
    "sha256": "648a8b2f16920b24e8a7609e0c9b18818e312dc110bc6d5e1fd20a2e15572c56",
    "size_bytes": 357011,
    "rows": 444,
@@ -889,7 +889,7 @@
    "note": ""
   },
   {
-   "path": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/gemma/gens/A3_c0.5.json",
+   "path": "../../../../round-2/experiment-8/src/results/gemma/gens/A3_c0.5.json",
    "sha256": "d7e49ab6aefc2d19d8a3b3e7f2de6892baeb5a2bf0a05922fa83668a1f8baaa5",
    "size_bytes": 161857,
    "rows": 222,
@@ -911,7 +911,7 @@
    "note": ""
   },
   {
-   "path": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/gemma/gens/A4.json",
+   "path": "../../../../round-2/experiment-8/src/results/gemma/gens/A4.json",
    "sha256": "122876288fbc089c692f80ba2e74eb6a14f638e7648bcacc5800e86f2e95ef9a",
    "size_bytes": 328610,
    "rows": 444,
@@ -933,7 +933,7 @@
    "note": ""
   },
   {
-   "path": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/gemma/gens/A5.json",
+   "path": "../../../../round-2/experiment-8/src/results/gemma/gens/A5.json",
    "sha256": "90a9f934daa0c64c118cca728a4a1a030900c5c670d4653fa5a763638d9d075d",
    "size_bytes": 179482,
    "rows": 222,
@@ -955,7 +955,7 @@
    "note": ""
   },
   {
-   "path": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/gemma/gens/A6.json",
+   "path": "../../../../round-2/experiment-8/src/results/gemma/gens/A6.json",
    "sha256": "1b62228551d85f8e6d45b4b58bf4be8e4de1640d9ceac799ccd30acd3a0715b0",
    "size_bytes": 168674,
    "rows": 222,
@@ -977,7 +977,7 @@
    "note": ""
   },
   {
-   "path": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/gemma/gens/A7.json",
+   "path": "../../../../round-2/experiment-8/src/results/gemma/gens/A7.json",
    "sha256": "a55e686e08dd7ce9db085ad2ba4a245603287dd5511d5f15af292ca0db5d3312",
    "size_bytes": 355152,
    "rows": 444,
@@ -999,7 +999,7 @@
    "note": ""
   },
   {
-   "path": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/gemma/gens/A8.json",
+   "path": "../../../../round-2/experiment-8/src/results/gemma/gens/A8.json",
    "sha256": "bf9cee2457076b4f94aa1fe3bf703567970b6891fe5def643b357587fc7f07c6",
    "size_bytes": 180354,
    "rows": 222,
@@ -1021,7 +1021,7 @@
    "note": ""
   },
   {
-   "path": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/gemma/gens/A9.json",
+   "path": "../../../../round-2/experiment-8/src/results/gemma/gens/A9.json",
    "sha256": "84b138c3db36db9b5c0405709286348d778dfe470e2934ae3922f4c978d4c073",
    "size_bytes": 179805,
    "rows": 222,
@@ -1043,7 +1043,7 @@
    "note": ""
   },
   {
-   "path": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/gemma/gens/ADD.json",
+   "path": "../../../../round-2/experiment-8/src/results/gemma/gens/ADD.json",
    "sha256": "49135cd1c23a2d1706577c8cd3ced2db065969e2d7447a8993ad77c3a66b4ad7",
    "size_bytes": 177236,
    "rows": 222,
@@ -1065,7 +1065,7 @@
    "note": ""
   },
   {
-   "path": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/gemma/gens/W0.json",
+   "path": "../../../../round-2/experiment-8/src/results/gemma/gens/W0.json",
    "sha256": "e518f5f2dbd6756a757ab65654ce8754a7a38805da66e2373708245c7eb39cff",
    "size_bytes": 227924,
    "rows": 280,
@@ -1087,7 +1087,7 @@
    "note": ""
   },
   {
-   "path": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/gemma/gens/W1.json",
+   "path": "../../../../round-2/experiment-8/src/results/gemma/gens/W1.json",
    "sha256": "04cff1a09102d5f25bb5b645faa2b56035d77ad941cb32d62577bc1c8e9001ef",
    "size_bytes": 229923,
    "rows": 280,
@@ -1109,7 +1109,7 @@
    "note": ""
   },
   {
-   "path": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/gemma/gens/W2.json",
+   "path": "../../../../round-2/experiment-8/src/results/gemma/gens/W2.json",
    "sha256": "3dd6b95bcd912b9c12474cf750222ec9d087d82a8907fa1b2008bcf7d49ccc14",
    "size_bytes": 114932,
    "rows": 140,
@@ -1131,7 +1131,7 @@
    "note": ""
   },
   {
-   "path": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/gemma/gens/W3.json",
+   "path": "../../../../round-2/experiment-8/src/results/gemma/gens/W3.json",
    "sha256": "6835a8ba61e31291b24b631f154bc555d547b46c7faae3733d0a7986d6c3a5de",
    "size_bytes": 228778,
    "rows": 280,
@@ -1153,7 +1153,7 @@
    "note": ""
   },
   {
-   "path": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/gemma/gens/W4.json",
+   "path": "../../../../round-2/experiment-8/src/results/gemma/gens/W4.json",
    "sha256": "6765d65db68c3244692ef856fa2bf05e1cef71cf1bcc36a82788822f93334a6d",
    "size_bytes": 227288,
    "rows": 280,
@@ -1175,7 +1175,7 @@
    "note": ""
   },
   {
-   "path": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/gemma/gens/X1.json",
+   "path": "../../../../round-2/experiment-8/src/results/gemma/gens/X1.json",
    "sha256": "21c56eee71d07d2ba7767b5972d29165ab0f06489096e82edf200c0d6dddd6c0",
    "size_bytes": 177575,
    "rows": 222,
@@ -1197,7 +1197,7 @@
    "note": ""
   },
   {
-   "path": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/gemma/gens/X2.json",
+   "path": "../../../../round-2/experiment-8/src/results/gemma/gens/X2.json",
    "sha256": "8a4550257cd06bcfcec7f922dbd127600907ddf283c31b2334dcaeec05b4a21b",
    "size_bytes": 140900,
    "rows": 222,
@@ -1219,7 +1219,7 @@
    "note": ""
   },
   {
-   "path": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/gemma/gens/X3.json",
+   "path": "../../../../round-2/experiment-8/src/results/gemma/gens/X3.json",
    "sha256": "da58db0fde5baf0e448f8cb2d06c055f7bbcd4b99fc37d5a2c01ffdab60b1869",
    "size_bytes": 355172,
    "rows": 444,
@@ -1241,7 +1241,7 @@
    "note": ""
   },
   {
-   "path": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/gemma/gens/X4.json",
+   "path": "../../../../round-2/experiment-8/src/results/gemma/gens/X4.json",
    "sha256": "9653c81c67d9047d4e740f81c7c6b9d48b1dcf850d0d609b48aa8ad0ebbd4c16",
    "size_bytes": 178840,
    "rows": 222,
@@ -1263,7 +1263,7 @@
    "note": ""
   },
   {
-   "path": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/gemma/gens/X5.json",
+   "path": "../../../../round-2/experiment-8/src/results/gemma/gens/X5.json",
    "sha256": "74aa905cfca0ed9fd9d8fa7e2444b62f650adcb59cbe3fce031ea1775803f2ad",
    "size_bytes": 358609,
    "rows": 444,
@@ -1285,7 +1285,7 @@
    "note": ""
   },
   {
-   "path": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/gemma/gens/Y1_1_12.json",
+   "path": "../../../../round-2/experiment-8/src/results/gemma/gens/Y1_1_12.json",
    "sha256": "1530cc13d67b9385237cb11ccc1b5bfa9558e9af1c795fec537e413e186c0150",
    "size_bytes": 179862,
    "rows": 222,
@@ -1307,7 +1307,7 @@
    "note": ""
   },
   {
-   "path": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/gemma/gens/Y2_13_24.json",
+   "path": "../../../../round-2/experiment-8/src/results/gemma/gens/Y2_13_24.json",
    "sha256": "1ab38a9dd19959fa927c930c366e15c0e3afdfe94e57847f54a1f85884056d2b",
    "size_bytes": 180072,
    "rows": 222,
@@ -1329,7 +1329,7 @@
    "note": ""
   },
   {
-   "path": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/gemma/gens/Y3_25_36.json",
+   "path": "../../../../round-2/experiment-8/src/results/gemma/gens/Y3_25_36.json",
    "sha256": "062ea6351aa9ff22a63a9cee7e96c4ce393a206bd98fbd2a97d4435d2d445500",
    "size_bytes": 178966,
    "rows": 222,
@@ -1351,7 +1351,7 @@
    "note": ""
   },
   {
-   "path": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/gemma/gens/Y4_37_48.json",
+   "path": "../../../../round-2/experiment-8/src/results/gemma/gens/Y4_37_48.json",
    "sha256": "e17ab2b41ae4260ab6c2f530f0cc69a4cea0feed414d605b993464d80c07cb09",
    "size_bytes": 181222,
    "rows": 222,
@@ -1373,7 +1373,7 @@
    "note": ""
   },
   {
-   "path": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/gemma/gens/Yc24_1_24.json",
+   "path": "../../../../round-2/experiment-8/src/results/gemma/gens/Yc24_1_24.json",
    "sha256": "c3117437e1f2f2958352db0412a586153c41f02f448dafbe26fe767fab390a0b",
    "size_bytes": 181027,
    "rows": 222,
@@ -1395,7 +1395,7 @@
    "note": ""
   },
   {
-   "path": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/gemma/gens/Yc36_1_36.json",
+   "path": "../../../../round-2/experiment-8/src/results/gemma/gens/Yc36_1_36.json",
    "sha256": "69c817a6a50ac5e07d6d336f5e758de0912fed86621358ebe5e8881db7da56c3",
    "size_bytes": 355583,
    "rows": 444,
@@ -1417,7 +1417,7 @@
    "note": ""
   },
   {
-   "path": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/gemma/gens/halfA_original.json",
+   "path": "../../../../round-2/experiment-8/src/results/gemma/gens/halfA_original.json",
    "sha256": "95b1d5461a55f505ef7205475e4892f9d51f700b3f7d967aec22b87f14dc1d40",
    "size_bytes": 171635,
    "rows": 276,
@@ -1439,7 +1439,7 @@
    "note": ""
   },
   {
-   "path": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/gemma/gens/s2_original.json",
+   "path": "../../../../round-2/experiment-8/src/results/gemma/gens/s2_original.json",
    "sha256": "dc439791efba1fe1485da286b38a8adbcf0bdbcedc55671bf30a632dec3f4118",
    "size_bytes": 179616,
    "rows": 300,
@@ -1461,7 +1461,7 @@
    "note": ""
   },
   {
-   "path": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/gams3/gens/G0.json",
+   "path": "../../../../round-2/experiment-8/src/results/gams3/gens/G0.json",
    "sha256": "19562fbbeb18320620a34c3d7a2146d7f0c1101ea34b490203f8f7a6438eaef7",
    "size_bytes": 322218,
    "rows": 444,
@@ -1483,7 +1483,7 @@
    "note": ""
   },
   {
-   "path": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/gams3/gens/G1.json",
+   "path": "../../../../round-2/experiment-8/src/results/gams3/gens/G1.json",
    "sha256": "2ef418db46dbe0140aefab635bd66c25269f0365ce9074aa045ebdc62ef98534",
    "size_bytes": 354773,
    "rows": 444,
@@ -1505,7 +1505,7 @@
    "note": ""
   },
   {
-   "path": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/gams3/gens/G2.json",
+   "path": "../../../../round-2/experiment-8/src/results/gams3/gens/G2.json",
    "sha256": "081d7cf026b83a1bccabb3d0117dc622d524aebb707b7fbd86f8f40bc0bed0e3",
    "size_bytes": 185955,
    "rows": 222,
@@ -1527,7 +1527,7 @@
    "note": ""
   },
   {
-   "path": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/gams3/gens/G3.json",
+   "path": "../../../../round-2/experiment-8/src/results/gams3/gens/G3.json",
    "sha256": "463d29d2d58d68976047ff34bd824fb6452c39c915f3a84b1be80821a2fba4d3",
    "size_bytes": 177355,
    "rows": 222,
@@ -1549,7 +1549,7 @@
    "note": ""
   },
   {
-   "path": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/gams3/gens/G4.json",
+   "path": "../../../../round-2/experiment-8/src/results/gams3/gens/G4.json",
    "sha256": "767205a38bf61721566cc786d7388f40dc0140e3e4dcb00b88fd01a0390649c0",
    "size_bytes": 178475,
    "rows": 222,
@@ -1571,7 +1571,7 @@
    "note": ""
   },
   {
-   "path": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/gams3/gens/G5.json",
+   "path": "../../../../round-2/experiment-8/src/results/gams3/gens/G5.json",
    "sha256": "f30ae04948bd86516275e298cb56780a852994a1a32a52de98f8ae2c9375b9f6",
    "size_bytes": 179694,
    "rows": 222,
@@ -1593,7 +1593,7 @@
    "note": ""
   },
   {
-   "path": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/gams3/gens/halfA_original.json",
+   "path": "../../../../round-2/experiment-8/src/results/gams3/gens/halfA_original.json",
    "sha256": "044b65b4fc509f591435bc59176f65e0f4ccf18f25b2a4239435a970c5b8e2ee",
    "size_bytes": 168916,
    "rows": 276,
@@ -1615,7 +1615,7 @@
    "note": ""
   },
   {
-   "path": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/community/gens/C0.json",
+   "path": "../../../../round-2/experiment-8/src/results/community/gens/C0.json",
    "sha256": "131c2ee807215fc1284b86768f3c2e3f6b63b36fe3ff6ecdc33dd1e7799196d8",
    "size_bytes": 222279,
    "rows": 280,
@@ -1637,7 +1637,7 @@
    "note": ""
   },
   {
-   "path": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/community/gens/C1.json",
+   "path": "../../../../round-2/experiment-8/src/results/community/gens/C1.json",
    "sha256": "8ce415760282d3aff9c5279891ba0dfb7b78a27b0d3e3dc787db97eee88c8a36",
    "size_bytes": 223510,
    "rows": 280,
@@ -1659,7 +1659,7 @@
    "note": ""
   },
   {
-   "path": "/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_8/results/community/gens/C2.json",
+   "path": "../../../../round-2/experiment-8/src/results/community/gens/C2.json",
    "sha256": "aca6e565fcbc49de78a8142ed89358e557d29f162ad6349e1b9c38d99b83b237",
    "size_bytes": 110204,
    "rows": 140,

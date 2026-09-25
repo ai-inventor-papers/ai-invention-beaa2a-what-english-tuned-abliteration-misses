@@ -60,7 +60,7 @@ def main():
     for a in arms:
         for r in rj(WS / f"results/eval_gen/{a}.jsonl"):
             gen[(a, r["item_key"])] = r
-    fr = json.loads((Path("/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_2/gen_art/gen_art_experiment_4") / "frozen_samples.json").read_text())
+    fr = json.loads((Path(__file__).resolve().parents[3] / "round-2/experiment-4/src" / "frozen_samples.json").read_text())
     pairs = fr["s5x_pairs"]
 
     def s5x(a, swap=False, labels=None):
