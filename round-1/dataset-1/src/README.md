@@ -4,7 +4,7 @@ This repository builds, freezes, hashes and audits every English and Slovene dat
 `cjvt/GaMS3-12B-Instruct` and `google/gemma-3-12b-it` before and after Heretic abliteration. It runs no study model.
 
 **Deliverable for later steps.** These files are text and are kept on the volume:
-- `/ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_1/gen_art/gen_art_dataset_1/full_data_out.json`: 48,696 examples in 10 blocks, schema `exp_sel_data_out`, validated (67.7 MB, under the 100 MB limit, so not split). Also `mini_data_out.json` (3 examples per block) and `preview_data_out.json` (first 3 blocks, strings truncated). Both were made by the aii-json format script.
+- `./full_data_out.json`: 48,696 examples in 10 blocks, schema `exp_sel_data_out`, validated (67.7 MB, under the 100 MB limit, so not split). Also `mini_data_out.json` (3 examples per block) and `preview_data_out.json` (first 3 blocks, strings truncated). Both were made by the aii-json format script.
 - `…/gen_art_dataset_1/data/split_manifest.json`: per-split SHA256, seeds, eligible sets and `protocol_hash`.
 - `…/gen_art_dataset_1/data/splits/<family>.jsonl`: the 17 frozen split families, one JSON row per example.
 
