@@ -1,5 +1,0 @@
-rederive: 318/318 checks match
-{'name': 'placebo:swap_within_item_must_fail', 'rederived': [-0.08536585365853658, 0.07317073170731708], 'analysis': 0.04878048780487805, 'match': True, 'placebo_contains_0': True, 'observed_outside_placebo': False}
-{'name': 'placebo:permute_language_must_fail', 'rederived': [-0.1097560975609756, 0.0975609756097561], 'analysis': -0.11996951219512197, 'match': True, 'placebo_contains_0': True}
-{'name': 'placebo:permute_cell_targets_must_fail', 'rederived': 0.16172080196105834, 'analysis': 0.039756539173519956, 'match': True, 'observed_exceeds_placebo_p95': False}
-{'name': 'placebo:within_cell_permutation_is_vacuous', 'rederived': 0.9512195121951219, 'analysis': 0.9512195121951219, 'match': True}

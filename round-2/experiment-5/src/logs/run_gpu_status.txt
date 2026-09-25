@@ -1,8 +1,0 @@
-gams exit 0 23:06:45 stages=util,flores,s5acts,rseq
-gemma exit 0 23:54:55 stages=check,gen,acts,kl,hval,util,flores,s5acts,rseq
-base_diag exit 0 23:59:26
-readouts_judge exit 0 00:08:47
-gams exit 0 00:14:10 stages=rseq
-gemma exit 0 00:19:31 stages=rseq
-dose gemma exit 0 00:32:12
-dose gams exit 0 00:43:58

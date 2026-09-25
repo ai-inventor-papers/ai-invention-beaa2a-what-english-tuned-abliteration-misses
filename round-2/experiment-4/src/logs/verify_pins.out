@@ -1,8 +1,0 @@
-21:23:34|INFO   |cjvt/GaMS3-12B-Instruct: all shards match iter-1 pins = True
-21:23:34|INFO   |gams: cjvt/GaMS3-12B-Instruct@1d0b27af5748784482600d24779409e7e1dc9adc gated=False
-21:24:34|INFO   |google/gemma-3-12b-it: all shards match iter-1 pins = True
-21:24:34|INFO   |gemma: google/gemma-3-12b-it@96b6f1eccf38110c56df3a15bffe176da04bfd80 gated=manual
-21:24:35|INFO   |community: p-e-w/gemma-3-12b-it-heretic@e037e6e112ea85777fc3858469cdc31fdfceaa13 gated=False
-21:24:35|INFO   |polyguard: ToxicityPrompts/PolyGuard-Qwen@644bfe73ff498c9a14818b72a11187eaf23f0ff1 gated=False
-21:24:35|INFO   |llamaguard: meta-llama/Llama-Guard-3-8B@7327bd9f6efbbe6101dc6cc4736302b3cbb6e425 gated=manual
-21:24:35|INFO   |glotlid: cis-lmu/glotlid@85cd6716494360367b75f642b5bc78667605d0b4 gated=False

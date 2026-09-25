@@ -1,2 +1,0 @@
-Warning : `load_model` does not return WordVectorModel or SupervisedModel any more, but a `FastText` object which is very similar.
-rederive: 476/476 headline numbers match; freeze order ok=True; placebos={'P1_cell_label_within_item': 0.0031666666666666636, 'P2_language_label': -0.0005472179396571964, 'P3_energy_shuffled': 0.022893836525666948}

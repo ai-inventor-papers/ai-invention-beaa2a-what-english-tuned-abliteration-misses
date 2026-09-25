@@ -1,9 +1,0 @@
-{
- "noop_maxdiff": 0.0,
- "span_ablation_max_proj_ratio": 0.00019376244745217264,
- "addition_proj_shift": 49.97612762451172,
- "weight_hook_rel_err_vs_dense_edit": 0.004000055603682995,
- "dense_vs_module_rel_err": 0.0036924700252711773,
- "weight_hook_proj_ratio": 0.00048634919221512973,
- "pass": true
-}

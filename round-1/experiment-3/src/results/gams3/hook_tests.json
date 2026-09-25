@@ -1,6 +1,0 @@
-{
- "a_noop_vs_unhooked_max_abs_logprob_diff": 0.0,
- "a_pass": true,
- "b_max_proj_ratio_after_ablation": 0.0004806692886631936,
- "b_pass": true
-}

@@ -1,6 +1,0 @@
-smoke_community done
-autoscore rc=0
-local_judge rc=0
-polyguard rc=0
-llamaguard rc=1
-ALL_DONE

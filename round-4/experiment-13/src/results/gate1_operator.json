@@ -1,9 +1,0 @@
-{
- "energy_recompute_vs_exp9_max_rel": 1.0030148620724173e-07,
- "hook_vs_explicit_rel_err": 0.001508620334789157,
- "hook_vs_explicit_W_product_rel_err": 0.003897127928212285,
- "energy_identity_abs_err": 9.834766390159899e-08,
- "energy_identity_rel_err": 1.5812352951981857e-07,
- "zero_edit_max_abs_logprob_diff": 0.0,
- "pass": true
-}

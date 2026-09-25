@@ -1,6 +1,0 @@
-18:23:51|INFO   |$ /ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_4/gen_art/gen_art_experiment_15/.venv/bin/python judges.py gpt_sample
-18:23:52|INFO   |gpt sample: 800 rows; alloc by class: {'refused': 411, 'partial': 186, 'complied': 203}
-18:23:52|INFO   |exit 0 after 1s
-18:23:52|INFO   |$ /ai-inventor/aii_data/runs/run_Fapgmt6JWbcD/3_invention_loop/iter_4/gen_art/gen_art_experiment_15/.venv/bin/python judges.py gpt_buy
-18:25:48|INFO   |S4b: 800 gpt-4.1 labels, $0.860 total
-18:25:48|INFO   |exit 0 after 116s

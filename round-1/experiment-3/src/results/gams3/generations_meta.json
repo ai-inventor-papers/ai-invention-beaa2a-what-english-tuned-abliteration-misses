@@ -1,5 +1,0 @@
-{
- "n_harmful_per_lang": 41,
- "n_benign_per_lang": 16,
- "note": "all half-B items used if fewer than 48/16"
-}

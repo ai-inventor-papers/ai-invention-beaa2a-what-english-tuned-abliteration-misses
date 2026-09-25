@@ -1,9 +1,0 @@
-{
- "arm": "B_keyword_t96",
- "adapter": "../../../../../round-1/experiment-1/src/adapters/gemma_selected_path2",
- "n_tensors_file": 192,
- "n_matched": 192,
- "n_missing": 0,
- "max_abs_diff": 0.03125,
- "n_exact": 25
-}
